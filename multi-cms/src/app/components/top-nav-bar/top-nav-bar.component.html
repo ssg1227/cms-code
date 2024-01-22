@@ -1,0 +1,9 @@
+<div class="tab">
+<span style='width: auto; border: 1px inset gray;padding: 5px 5px;margin: 2px ;' *ngFor="let link of Menus">
+    <strong *ngIf="link.param.indexOf('no-link') >=0 ">{{link.label}}</strong>
+    <span *ngIf="link.param.indexOf('inactive') >=0 " style="color:gray">{{link.label}}</span>
+    <a  [ngStyle]="menuStyle(link)" *ngIf="link.param.indexOf('inactive') < 0  && link.param.indexOf('no-link') < 0 && link.param.length===0" routerLink="{{link.path}}">{{link.label.replace('-',':')}}</a>
+    <!--a *ngIf="link.param.length > 0" [routerLink]="['view',link.param]">{{link.label}}</a-->
+    <a *ngIf="link.param.indexOf('inactive') < 0  && link.param.indexOf('no-link') < 0 && link.param.length > 0" [ngStyle]="menuStyle(link)"  [routerLink]="[ViewLink,link.param]">{{link.label.replace('-',':')}}</a>
+</span>
+</div>

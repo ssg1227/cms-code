@@ -1,0 +1,31 @@
+
+/* Style the tab */
+.tab {
+    border: 1px inset #ccc;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    padding:2px;
+    margin: 5px 3px ;
+    display: flex;
+    flex-wrap: wrap;
+    width:81%
+  }
+ul {
+  padding:0px;
+  width:95%;
+}
+/* Style the buttons inside the tab */
+.tab li {
+    background-color: inherit;
+    max-width: 195px;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 6px;
+    font-size: 15px;
+    background-color: #b8e8e8;
+    border:2px gray outset;
+    border-radius: 3px;
+  }
+  

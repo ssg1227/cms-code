@@ -1,0 +1,69 @@
+<!-- Testing:
+  <div>
+<input type="checkbox" [(ngModel)]="newLook"> New styling?{{newLook}}
+</div>
+--->
+<div  *ngIf="newLook==true" >
+  <div id='larger'  style='border:3px outset gray; padding: 5px 0;'   *ngFor="let imageGroup of imageGroups">
+   <div class="card-reader">
+    <div class="card" *ngFor = "let grpImag of imageGroup.imageList">
+      <img  src={{grpImag.image}}  alt="Image 1">
+      <div class="caption" [innerHTML]="grpImag.description"> </div>
+    </div>
+  </div> 
+  </div>
+    <!-- Add more cards with images and captions here -->
+  </div>
+  <!--
+  <div  *ngHide="newLook==true" >
+
+  <div id='larger'   style='border:3px outset gray; padding: 5px 0;'   *ngFor="let imageGroup of imageGroups">
+  <div *ngFor = "let grpImag of imageGroup.imageList">
+    <img  
+    style='width:100%; height:auto;' src={{grpImag.image}}  />
+    <span [innerHTML]="grpImag.description"></span>
+  </div>
+  <! --alt={{source.fileName.substring(35)}}x/ -- >
+</div>
+</div>
+-->
+<!--div  id='larger'  *ngFor="let source of selectedImageList">
+    
+    <img style='width:100%; height:auto;' src={{source.image}} (click)='showFullSize(source)' title={{source.title}}/> 
+ </div>-->
+
+<!--div id="summaryDiv" *ngIf="themeSummary !== ''|| themeHeader !== ''" [ngStyle]="headerStyle()" >
+  <h5 *ngIf="themeHeader !== ''" style='font-size: larger;font-weight: 700;'>{{themeHeader}}</h5>
+  <div *ngIf="themeSummary !== ''" 
+      style='border:none;background-color: inherit; padding: 0; margin:0;' [innerHTML]="themeSummary">
+  </div>
+</div>
+<button  (click)='prevImage()' title='previous' class="btn btn-secondary responser" ><<</button>
+<button  (click)='nextImage()' title='next' class="btn btn-secondary responser"  >>></button>
+<button  (click)='ActualSize = !ActualSize' title='next' class="btn btn-primary responser">toggle size</button>
+
+<button  (click)='toggleSort()' title='next' class="btn btn-primary responser">Toggle Order</button>
+<div  id='larger'  *ngIf="currentImage.iterations.length === 0"> 
+  
+  <img id="actualSize"  src={{currentImage.image}} *ngIf="ActualSize.toString() === 'true'"/> 
+  <img id="smallerSize" src={{currentImage.image}} *ngIf="ActualSize.toString() === 'false'" /> 
+  <div style='float:left;margin-left:5px;border:2px inset goldenrod;max-width: 300px;'>
+    <span [innerHTML]="currentImage.title"></span>
+  </div>
+  
+</div>
+<div  id='larger'  *ngIf="currentImage.iterations.length > 0"> 
+  <img id="actualSize"  src={{currentImage.iterations[currentImage.iterationIndex].fullFileName}} *ngIf="ActualSize.toString() === 'true'"/> 
+  img id="smallerSize" src={{currentImage.image}} *ngIf="ActualSize.toString() === 'false'" /> 
+    
+    <img id="smallerSize" src={{currentImage.iterations[currentImage.iterationIndex].fullFileName}}  *ngIf="ActualSize.toString() === 'false'"/> 
+   alt={{source.fileName.substring(35)}}x/
+   <div style='float:left;margin-left:5px;border:2px inset goldenrod;max-width: 300px;'>
+    <button  *ngIf="currentImage.iterations.length > 0"
+      (click)='navigatedIteration()' 
+      title='next' class="btn btn-primary responser" style='max-width:105px;'>Iterations</button> * 
+      <br/><span [innerHTML]="currentImage.iterations[currentImage.iterationIndex].description"></span>
+      * <em>Click the button on top in this div to see versions or components of the main sketch</em>
+
+  </div>
+</div-->

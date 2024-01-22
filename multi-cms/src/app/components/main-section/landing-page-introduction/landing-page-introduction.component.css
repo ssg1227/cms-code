@@ -1,0 +1,68 @@
+.main-content {
+    float:left; 
+    width:78%; 
+    
+    background-color: beige;
+    font-weight: 800;
+    font-size: 17px;
+    font-family: Garamond, serif;
+    text-shadow: 4px,4px, skyblue;
+    border-radius: 7px;
+}
+.main-text-content {
+    float:left; 
+    min-height: 700px;
+    padding:10px; 
+    background-color: beige;
+    border: 5px inset brown ;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 17px;
+    font-family: Garamond, serif;
+    text-shadow: 14px,14px, skyblue;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, orange, #F4C430, yellow, lightgreen);
+}
+/*.main-content::before {*/
+ .sub-content {
+        content: "";
+    background-size: cover;
+    background: rgba(245,245,220);
+    background-image: url("../../../../assets/all-images/saraswati_pooja.png");
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    padding:10px; 
+    top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.3;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+H1 {
+    color:blue;
+    font-style:italics;
+}
+span { 
+    font-size: x-large;
+}
+@media screen and (min-width:790px) {
+    .main-content {
+        position:fixed;
+        top:5px;
+        left: 5px;
+        margin-right: 0px;
+       
+    }
+    
+}
+
+@media screen and (max-width:1280px) {
+    .sub-content {
+        background-size: contain;
+       
+    }
+    
+}

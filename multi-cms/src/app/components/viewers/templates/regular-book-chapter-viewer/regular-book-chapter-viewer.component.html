@@ -1,0 +1,67 @@
+
+<!--div *ngIf="selectedImageList && selectedImageList.length > 0; else noPics">
+ 
+    <span  id='thumbnails' *ngFor="let source of selectedImageList" >
+      <img  [ngStyle]="thumbnailStyle(source)"
+        *ngIf="source.thumbnail" src={{source.thumbnail}} (click)='showFullSize(source)' title={{source.title}}/>  
+      <img [ngStyle]="thumbnailStyle(source)"
+         *ngIf="source.thumbnail === '' && source.image.indexOf('#TEXT') != 0" src={{source.image}} (click)='showFullSize(source)' title={{source.title}}/>  
+      <span [ngStyle]="thumbnailStyle(source)"
+        *ngIf="source.thumbnail === '' && source.image.indexOf('#TEXT') == 0"  id="thumb-text" [innerHTML]="source.image.replace('#TEXT','')"></span> 
+    </span>
+  </div>
+  <ng-template #noPics>
+    <div> <span  id='thumbnails' class="noImage" ><em> There are no Images here; no thumbnails to display</em></span></div>
+  </ng-template>
+-->
+  <div style='margin-left:5px;border:2px inset goldenrod;width: 100%;min-width:700px;' 
+  *ngIf="selectedImageList && selectedImageList.length > 0; else noPic"> <!-- detail encircling -->
+  <div id="summaryDiv" *ngIf="themeSummary !== ''|| themeHeader !== ''" [ngStyle]="headerStyle()" >
+    <h5 *ngIf="themeHeader !== ''" style='font-size: larger;font-weight: 700;'>{{themeHeader}}</h5>
+    <div *ngIf="themeSummary !== ''" style='font-size: normal;font-weight: 400;width:100%;margin-left: 1px;' [innerHTML]="themeSummary">
+       <span id="summaryspan" 
+            style='border:none;background-color: inherit; padding: 0; margin:0;width: 100%;' >
+        </span> 
+    </div>
+  </div>
+  <button  (click)='prevImage()' title='previous' class="btn btn-secondary responser" ><<</button>
+  <button  (click)='nextImage()' title='next' class="btn btn-secondary responser"  >>></button>
+  <!-- 
+    <button  *ngIf="currentImage.iterations.length > 0" (click)='navigatedIteration()' title='next' class="btn btn-primary responser">Iterations</button>
+  -->
+   <div  id='larger'  *ngIf="currentImage "> 
+   
+    <!-- 
+    <img *ngIf="currentImage.image.indexOf('#TEXT') != 0 && ActualSize.toString() === 'false'"  id="smallerSize" src={{currentImage.image}} /> 
+    -->
+    <div *ngIf="currentImage.image.indexOf('#TEXT') == 0"  
+               id="thumb-text" [innerHTML]="currentImage.image.replace('#TEXT','')"></div> 
+               <br/>
+               <img *ngIf="currentImage.image.indexOf('none') != 0 && ActualSize.toString() === 'false'"  id="smallerSize" src={{currentImage.image}} /> 
+    <div style='margin-left:5px;border:2px inset goldenrod;width: 100%;min-width:700px;'>
+      <span [innerHTML]="currentImage.title"></span>
+    </div>
+    
+  </div>
+  <div><button  (click)='prevImage()' title='previous' class="btn btn-secondary responser" ><<</button>
+    <button  (click)='nextImage()' title='next' class="btn btn-secondary responser"  >>></button></div>
+  </div>
+  
+  <ng-template #noPic>
+   
+  <div id="summaryDiv" *ngIf="themeSummary !== ''|| themeHeader !== ''" [ngStyle]="headerStyle()" >
+    <h5 *ngIf="themeHeader !== ''" style='font-size: larger;font-weight: 700;'>{{themeHeader}}</h5>
+    <div *ngIf="themeSummary !== ''" style='font-size: normal;font-weight: 400;width:100%;'>
+       <span id="summaryspan" 
+            style='border:none;background-color: inherit; padding: 0; margin:0;width: 100%;' [innerHTML]="themeSummary">
+        </span> 
+    </div>
+    <div> No Image available to select </div>
+  </div>
+  <!-- 
+    <button  *ngIf="currentImage.iterations.length > 0" (click)='navigatedIteration()' title='next' class="btn btn-primary responser">Iterations</button>
+  -->
+  
+  </ng-template>
+  
+

@@ -1,0 +1,62 @@
+
+<div [ngClass]="LoggedInClass">
+    <div *ngIf="userNotLoggedIn; else elseBlock" class='login-intro' style='margin:auto;'>
+      <H2>Amrutvani - a Blissful flow of words</H2>
+      <div style="float:right; margin-right: 20px;">- Shantanu Gadkari</div><br/>
+      <div><input type='text' placeholder='User Name (optional)' [(ngModel)]="userId"> 
+      <!--div><input type='password' placeholder='password' [(ngModel)]="password"></div-->
+      &nbsp;&nbsp; <input type='button' value='Enter' (click)='navigateStoragelogin()'> <br/>
+      <!-- View 'Unplugged' (best for cellphones)  <input type='checkbox' value='' (click)='unpluggedSet()'> -->
+      <!-- 
+      Gallery Layout <input type="radio" name="layout" value="card" (click)="unpluggedSet('card')" [ngModel]="picLayout"> Card Layout 
+      <input type="radio" name="layout" value="carousel" (click)="unpluggedSet('carousel')"  [ngModel]="picLayout"> Carousel ('next') layout 
+      -->
+    </div>
+    <!--input type='button' value='Register' (click)='navigateStorageRegisterUser()'-->
+    
+
+    </div>
+    <ng-template #elseBlock>
+    <div >  
+    Welcome {{userId}} 
+    <div id='largeScreenMenus' >
+      <input type='button' value='logout' (click)='navigateStoragelogout()'>
+    
+      <ul>
+          <!--li> <a (click)="setContext('0')">Sketches</a></li>
+          <li> <a (click)="setContext('0')">Blog</a></li-->
+          <li *ngFor="let link of Menus"  >
+            <h6 *ngIf="link.param.indexOf('no-link') >=0 ">{{link.label}}</h6>
+            <span *ngIf="link.param.indexOf('inactive') >=0 "  style="color:gray">{{link.label}}</span>
+            <a  [ngStyle]="menuStyle(link)" *ngIf="link.param.indexOf('inactive') < 0 && link.param.indexOf('no-link') < 0 && link.param.length===0" routerLink="{{link.path}}">{{link.label}}</a>
+            <!--a *ngIf="link.param.length > 0" [routerLink]="['view',link.param]">{{link.label}}</a-->
+            <a *ngIf="link.param.indexOf('inactive') < 0 &&  link.param.indexOf('no-link') < 0 && link.param.length > 0" [ngStyle]="menuStyle(link)"  [routerLink]="[ViewLink,link.param]">{{link.label}}</a>
+          
+          </li>
+      </ul>
+    </div>
+    <div id='smallScreenMenus'>
+      <div class="container" style="width:100%;">
+        <div class="row"  style="width:100%;">
+          <a  routerLink="{{Menus[0].path}}">Home Page</a> 
+        </div>
+        <!--input type='button' value=' << ' (click)='setMenuIndex(-1)'-->
+        <!--a *ngIf="smallScreenIndex===0" routerLink="{{Menus[0].path}}"--> 
+        <div class="row"   style="width:100%; padding: 0; margin:0;">
+          <div class="col-sm tl">
+            <button class="btn btn-secondary" (click)='setMenuIndex(-1)'><<</button>
+          </div>
+          <div class="col-sm tc">
+        <!--a *ngIf="smallScreenIndex > 0" [routerLink]="['view',Menus[smallScreenIndex].param]"-->{{Menus[smallScreenIndex].label}}<!--/a--> </div>
+          <div class="col-sm tr">
+            <button class="btn btn-secondary" (click)='setMenuIndex(1)'>>></button>
+          </div>  
+        </div> 
+      </div>
+    </div>
+    
+      <input type='button' value='logout' (click)='navigateStoragelogout()'>
+      
+    </div>
+        </ng-template>
+  </div>

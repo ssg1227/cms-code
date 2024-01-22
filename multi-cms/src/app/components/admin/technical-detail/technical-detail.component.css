@@ -1,0 +1,21 @@
+#encompass {
+    background-image: linear-gradient(to right,  lightgreen, aliceblue, skyblue);
+    width: 75%;
+    min-height:700px;
+    margin:15px;
+}
+H3 {
+    margin: 5px;
+    border:3px inset lightcyan ;
+    background-color: aquamarine;
+    color: darkblue ;
+    width:auto;
+    padding:10px;
+    opacity: 0.5;
+    
+}
+div {
+    background-color: aliceblue;
+    width:77%;
+    margin:2px;
+}

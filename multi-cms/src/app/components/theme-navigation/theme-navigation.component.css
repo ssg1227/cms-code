@@ -1,0 +1,128 @@
+
+.right-nav-jan31 {
+    float:right; 
+    width:16%; 
+    height:100%; 
+    min-height:480px;
+    padding:5px; 
+    background-color: aliceblue;
+    border: 4px outset darkblue ;
+    border-radius: 7px;
+    font-size:1vw;
+}
+/*
+float:left; 
+    margin:5px;
+    padding:10px; 
+    background-color: beige;
+    border: 4px inset brown ;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 17px;
+    font-family: Garamond, serif;
+    text-shadow: 14px,14px, skyblue;
+    border-radius: 7px;
+    background-image: linear-gradient(to right, orange, #F4C430, yellow, lightgreen);
+*/
+.right-nav {
+    float:right; 
+    width:21%; 
+    margin-right: 5px;
+    height:100%; 
+    min-height: 700px;
+    padding:5px; 
+    background-color: aliceblue;
+    border: 4px outset darkblue ;
+    border-radius: 7px;
+    font-size:1vw;
+    overflow-y: auto;
+   background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
+}
+
+.full-size {
+    width:95%;
+    margin:15px;
+   
+}
+.login-intro {
+    margin:auto;
+    padding-bottom:10px;
+    width:50%;
+    background: skyblue;
+    text-align: center;
+}
+.full-size  div { 
+    margin:5px;
+}
+#smallScreenMenus {
+    display:none;
+}
+@media screen and (min-width:790px) {
+    .right-nav {
+        position:fixed;
+        top:5px;
+        right: 5px;
+        margin-right: 0px;
+       
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .right-nav {
+        width : 60%;
+        font-size: 2.5vw;
+    }
+    
+}
+@media screen and (max-width:550px) {
+    #largeScreenMenus {
+        display:none;
+    }
+    .right-nav {
+        width : 100%;
+        font-size: 4vw;
+        min-height:50px;
+    }
+    .login-intro {
+        margin:auto;
+        padding-bottom:10px;
+        width:90%;
+        background:aliceblue;
+        text-align: center;
+    }
+    #smallScreenMenus {
+        display:block;
+        text-align: center;
+        padding: 5px;
+    }
+    .smallbtns {
+        width: 105px;
+        text-align: center;
+        font-size: smaller;
+    }
+    .tl {
+        background-color: silver;
+        height:75px;
+        width:15%;
+        padding-left: 2px;
+        padding-top: 15px;
+        overflow: auto;
+    }
+    .tc {
+        background-color: silver;
+        height:75px;
+        width:65%;
+        padding-top: 15px;
+        overflow: auto;
+    }
+    .tr {
+        background-color: silver;
+        height:75px;
+        width:15%;
+        padding-right: 2px;
+        padding-top: 15px;
+        overflow: auto;
+        font-size: smaller;
+    }
+}

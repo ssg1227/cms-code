@@ -1,0 +1,114 @@
+/* July 29 changes WIP */
+.card-reader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float:left;
+  }
+  
+  .card {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+.caption {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+/* ... end JULY 29 CHANGES */
+div {
+    float: inline-end;
+    padding:2px;
+    border:3px outset gray;
+    background-color: beige;
+    width:auto;
+}
+div:first-of-type {
+    max-width:80%;
+}
+h5 {
+    margin:2px;
+}
+#smallList {
+    border:2px solid red;
+}
+#summaryDiv {
+    background-color: blanchedalmond;
+    width: 80%;
+    border:inset sandybrown 4px;
+    height:auto;
+    overflow:auto;
+    max-height:100px;
+    color: #9529;
+    font-weight: 600;
+    font-style: italic;
+}
+#thumbnails {
+    float: inline-end;
+    padding:0;
+    border:none;
+    background-color: beige;
+    width:auto;
+}
+#thumbnails > img {
+    max-width: 200px;
+    max-height: 50px;
+}
+#larger {
+    width: 85%;
+    float:left;
+}
+
+#larger > #smallerSize {
+    max-width: 500px;
+    max-height: 500px;
+}
+#larger > #actualSize {
+
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.responser {
+    width:145px;
+    margin:2px;
+    border:3px outset aliceblue;
+    border-radius: 5px;
+}
+@media screen and (max-width:700px) {
+    .summaryDiv {
+        width : 100%;
+        font-size: 3vw;
+    }
+    .responser {
+        width:95%;
+    }
+    
+#larger > #smallerSize {
+    max-width: 400px;
+    max-height: 400px;
+}
+}
+@media screen and (max-width:250px) {
+    .right-nav {
+        width : 100%;
+        font-size: 4vw;
+    }
+    
+#larger > #smallerSize {
+    max-width: 240px;
+    max-height: 240px;
+}
+}

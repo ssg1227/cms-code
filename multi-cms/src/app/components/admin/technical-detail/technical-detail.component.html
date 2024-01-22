@@ -1,0 +1,11 @@
+<!-- 
+    anchor tags dont seem to work here.. event propogates to the root; WIP in finding solution.
+    Instead trying for master detail model.
+    <div [innerHTML]="techDetail"></div>
+-->
+<app-tabbing-container></app-tabbing-container>
+<div id="encompass">
+    <H3>Some Technical Background, History and Aspects</H3> (A living document:Content being built as on {{Today}})
+    <div id="headers"></div>
+    <div id="detail" [innerHTML]="selectedHeader"></div>
+</div>

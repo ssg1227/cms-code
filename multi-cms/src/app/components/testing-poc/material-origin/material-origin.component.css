@@ -1,0 +1,8 @@
+#wrapper {
+    background-color: aliceblue;
+    width: 800px;
+    height: 1000px; 
+    flex-wrap:wrap;
+    flex: 1;
+    overflow-x: hidden;
+}

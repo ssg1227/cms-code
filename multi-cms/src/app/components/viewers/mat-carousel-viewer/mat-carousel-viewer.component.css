@@ -1,0 +1,118 @@
+div {
+    float: inline-end;
+    padding:2px;
+    border:3px outset gray;
+    background-color: beige;
+    width:77%;
+    margin-left: 8px;
+}
+#larger {
+    margin: 5px 0px;
+    background-image: linear-gradient(to right, yellow, beige, blanchedalmond);
+}
+#sub-larger {
+    background-image: url("../../../../assets/all-images/saraswati_pooja.png");
+    background-size: cover;
+    margin-left:5px;
+}
+div:first-of-type {
+    max-width:100%;
+}
+#thumb-text {
+    font-size: x-small;
+    color:darkblue;
+    background-color:aliceblue;
+    width: 50px;
+    padding: 15px 2px;
+    border:2px gray outset;
+}
+h5 {
+    margin:2px;
+}
+#smallList {
+    border:2px solid red;
+}
+#summaryDiv {
+    background-color: blanchedalmond;
+    margin-left: 0;
+    width: 100%;
+    border:inset sandybrown 4px;
+    font-style: normal;
+    height:auto;
+    overflow:hidden;
+    max-height:200px;
+    color: #9529;
+    font-weight: 600;
+    font-style: italic;
+}
+#summaryspan{
+    font-style: normal;
+    width:97%;
+    background-color: white;
+}
+#thumbnails {
+    float: inline-end;
+    padding:0;
+    border:none;
+    width:250px;
+    background-color: beige;
+    width:auto;
+}
+#thumbnails > img {
+    max-width: 200px;
+    max-height: 50px;
+}
+#larger {
+    width: 75%;
+    float:left;
+}
+
+#larger > #smallerSize {
+    max-width: 500px;
+    max-height: 500px;
+}
+#larger > #actualSize {
+
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.responser {
+    width:145px;
+    margin:2px;
+    border:3px outset aliceblue;
+    border-radius: 5px;
+}
+@media screen and (max-width:700px) {
+    .summaryDiv {
+        width : 100%;
+        font-size: 3vw;
+    }
+    .responser {
+        width:95%;
+    }
+    
+#larger > #smallerSize {
+    max-width: 400px;
+    max-height: 400px;
+}
+}
+@media screen and (max-width:250px) {
+    .right-nav {
+        width : 100%;
+        font-size: 4vw;
+    }
+    
+#larger > #smallerSize {
+    max-width: 240px;
+    max-height: 240px;
+}
+}
+.noImage {
+    color: #9529;
+    opacity: 0.8;
+    font-style: italic;
+    border: 2px solid #9529;
+    margin:2px;
+    
+}
