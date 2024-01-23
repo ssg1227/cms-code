@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 
 import { AppConfig } from 'src/assets/data-and-config/app.config'; // multi-view 
-
 import { tabs, tabsWithRoles, MenuTree,TabWithRoles } from 'src/assets/data-and-config/menus-and-other-contexts/menu-tree'
-import { CategoriesService } from './categories.service';
+
+import { KanhaRukhminiList} from 'src/assets/lists/kanha-rukhmini.list';
+import { SundaraKaandam } from  'src/assets/lists/sundara-kaandam.list';
+import { SevenDaysOfPenance } from 'src/assets/lists/seven-days-of-penance';
 import { DeviImageList } from 'src/assets/all-images/religion/devi/devi.image.list' //'../assets/data-/../components/viewers/data/devi.image.list';
 import { MahadevImageList } from 'src/assets/all-images/religion/mahadev/mahadev.image.list';
 import { MahadevFamilyImageList } from 'src/assets/data-and-config/data/mahadev-family.image.list';
-import { KanhaRukhminiList} from 'src/assets/data-and-config/data/kanha-rukhmini.list';
 import { PeopleImageList } from 'src/assets/data-and-config/data/people.image.list';
 import { PlacesScenesObjectsImageList} from 'src/assets/data-and-config/data/places-scenes-objects.image.list';
 import { ThemesMisc } from 'src/assets/data-and-config/data/themes-misc.list';
@@ -39,7 +40,6 @@ import {MumbaiMeriJaanList} from 'src/assets/data-and-config/data/mumbai-meri-ja
 import {MumbaiMeriJaan2List} from 'src/assets/data-and-config/data/mumbai-meri-jaan-2.list';
 import { allImageList, CoreContentElement } from 'src/assets/data-and-config/data/image.list';
 //#### Unorganized #### 
-import { SundaraKaandam } from  'src/assets/data-and-config/data/sundara-kaandam.list';
 // for organizing, genericizing and caching 
 // role .. will add role field to each list later on
 interface ContentList {
@@ -216,14 +216,16 @@ export class CoreContentService {
     // user role changes.. interim. Separated non religious/non guru content  vs ALL content
     this._seeAll = localStorage.getItem('seeAll');
     if (this._seeAll === 'true') {
+      sketchStats.themBasedCounts.push(this.getThemeCounts(new SundaraKaandam(), sketchStats.canvassSize,sketchStats.content));
+      sketchStats.themBasedCounts.push(this.getThemeCounts(new KanhaRukhminiList(), sketchStats.canvassSize,sketchStats.content));
+      sketchStats.themBasedCounts.push(this.getThemeCounts(new SevenDaysOfPenance(), sketchStats.canvassSize,sketchStats.content));
+      
       sketchStats.themBasedCounts[0] = (this.getThemeCounts(new GaneshPreQ42021ImageList(), sketchStats.canvassSize,sketchStats.content));
       sketchStats.themBasedCounts.push(this.getThemeCounts(new GaneshGTEQ42021ImageList(), sketchStats.canvassSize,sketchStats.content));
       sketchStats.themBasedCounts.push(this.getThemeCounts(new GaneshGTEQ12023ImageList(), sketchStats.canvassSize,sketchStats.content));
-      sketchStats.themBasedCounts.push(this.getThemeCounts(new SundaraKaandam(), sketchStats.canvassSize,sketchStats.content));
       sketchStats.themBasedCounts.push(this.getThemeCounts(new DeviImageList(), sketchStats.canvassSize,sketchStats.content));
       sketchStats.themBasedCounts.push(this.getThemeCounts(new MahadevImageList(), sketchStats.canvassSize,sketchStats.content));
       sketchStats.themBasedCounts.push(this.getThemeCounts(new MahadevFamilyImageList(), sketchStats.canvassSize,sketchStats.content));
-      sketchStats.themBasedCounts.push(this.getThemeCounts(new KanhaRukhminiList(), sketchStats.canvassSize,sketchStats.content));
       sketchStats.themBasedCounts.push(this.getThemeCounts(new DattavatarImageList(), sketchStats.canvassSize,sketchStats.content));
       sketchStats.themBasedCounts.push(this.getThemeCounts(new SwamiSamarthaImageList(), sketchStats.canvassSize,sketchStats.content));
       sketchStats.themBasedCounts.push(this.getThemeCounts(new SwamiSamarthaQ22023ImageList(), sketchStats.canvassSize,sketchStats.content));
@@ -334,6 +336,7 @@ export class CoreContentService {
     functionProto(new PlanesQ22023ImageList()) ;
     functionProto(new ThemesMisc());
     functionProto(new SundaraKaandam());
+    functionProto(new SevenDaysOfPenance());
   }
   // optimize 
   loadLists(imageList:any = [])  {
@@ -404,6 +407,7 @@ export class CoreContentService {
       this.contentList.push( { contentFile:new PlanesQ22023ImageList(),contentCategory:'planesQ12023', role:'non-living,  non-religious'}) ;
       this.contentList.push( { contentFile:new ThemesMisc(),contentCategory:'themes-misc', role:'non-living,  non-religious'}) ;
       this.contentList.push( { contentFile:new SundaraKaandam(),contentCategory:'sundara-kaandam', role:'misc'}) ;
+      this.contentList.push( { contentFile:new SevenDaysOfPenance(),contentCategory:'seven-days-of-penance', role:'misc'}) ;
       
       localStorage.setItem("usersContentList", JSON.stringify(this.contentList));
       return ;
@@ -525,6 +529,7 @@ export class CoreContentService {
         this.contentList.push( { contentFile:new PlanesQ22023ImageList(),contentCategory:'planesQ12023', role:'non-living,  non-religious'}) ;
         this.contentList.push( { contentFile:new ThemesMisc(),contentCategory:'themes-misc', role:'non-living,  non-religious'}) ;
         this.contentList.push( { contentFile:new SundaraKaandam(),contentCategory:'sundara-kaandam', role:'misc'}) ;
+        this.contentList.push( { contentFile:new SevenDaysOfPenance(),contentCategory:'seven-days-of-penance', role:'misc'}) ;
       }
       localStorage.setItem("usersContentList", JSON.stringify(this.contentList));
     }
@@ -567,6 +572,7 @@ export class CoreContentService {
     this.contentList.push( { contentFile:new PlanesQ22023ImageList(),contentCategory:'planesQ12023', role:'non-living,  non-religious'}) ;
     this.contentList.push( { contentFile:new ThemesMisc(),contentCategory:'themes-misc', role:'non-living,  non-religious'}) ;
     this.contentList.push( { contentFile:new SundaraKaandam(),contentCategory:'sundara-kaandam', role:'misc'}) ;
+    this.contentList.push( { contentFile:new SevenDaysOfPenance(),contentCategory:'seven-days-of-penance', role:'misc'}) ;
     }
   }
   sortImageList() {

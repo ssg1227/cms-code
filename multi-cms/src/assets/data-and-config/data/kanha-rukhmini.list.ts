@@ -13,7 +13,7 @@ public allImageList:CoreContentElement[]  =  [
              files: [ {
                // 
               
-                                   fullFileName: `assets/all-images/religion/kanha-rukhmini/ShreeKrishnaAug292022-FromSai.jpeg`, 
+                                   fullFileName: `assets/images/ShreeKrishnaAug292022-FromSai.jpeg`, 
                      description: ``,
                      canvassSize: 'A4', content:'color-pencil',
                      dateUploaded: '02-05-2023'

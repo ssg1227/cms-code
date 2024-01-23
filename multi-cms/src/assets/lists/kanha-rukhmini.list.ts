@@ -1,8 +1,8 @@
 
-import { PicDescr, CoreContentElement } from './image.list'
+import { PicDescr, CoreContentElement } from './core.content.interfaces'
 enum PicsIndex  {
 };
-export class ALaxmiVishnuHanumanList {
+export class KanhaRukhminiList {
  bulkImageList:PicDescr[] = [
 ]
 public allImageList:CoreContentElement[]  =  [
@@ -10,7 +10,16 @@ public allImageList:CoreContentElement[]  =  [
         folder:'kanha-rukhmini',
              theme:'Love Story of Rukmini and Krishna',
              themeSummary: `<p>A tale of adventure and romance  </p>`,
-             files: [
+             files: [ {
+               // 
+              
+                     fullFileName: `assets/images/ShreeKrishnaAug292022-FromSai.jpeg`, 
+                     description: ``,
+                     canvassSize: 'A4', content:'color-pencil',
+                     dateUploaded: '02-05-2023'
+                     
+                  },
+           
                {  
                   // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/MahadevJan102022.jpeg
                   // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/Shivji2022ShravanMonday_1.jpeg
