@@ -35,10 +35,10 @@ const userRoles: string[] = [
 export const tabs: string[] = [
  "Quote: 'Singles'",
  "Quotes: 'Sequences'",
- "Narratives",
+ "Narratives, other",
 ];
 export const tabsWithRoles: TabWithRoles[] = [
-    ,{ tab: "Narratives",roles:['non-religious','non-living'] }
+    ,{ tab: "Narratives, other",roles:['non-religious','non-living'] }
    ];
 
 export const MenuTree: MenuItem[] = [
@@ -46,11 +46,12 @@ export const MenuTree: MenuItem[] = [
     { tab:"Quotes: 'Sequences'", label:  `Quotes: 'Sequences'`, child: true, uniqueKey: '', parentKey: 'art', key: 'no-link', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
     { tab:"Quotes: 'Sequences", label:  `-  Faith `, child: false, uniqueKey: '', parentKey: 'art', key: 'inactive: kanha-rukhmini', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
     { tab:"Quotes: 'Sequences", label:  `-  Sur Sagar July 2016 `, child: false, uniqueKey: '', parentKey: 'art', key: 'inactive: kanha-rukhmini', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
-   { tab:"Narratives", label:  'Narratives', child: false, uniqueKey: '', parentKey: 'art', key: 'no-link', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
-    { tab:"Narratives", label:  '- Sundara Kandam (extract of Ramayan)', child: false, uniqueKey: '', parentKey: 'art', key: 'sundara-kaandam', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
-   { tab:"Narratives", label:  `- Krishna and Rukhmini's Love Story `, child: false, uniqueKey: '', parentKey: 'art', key: 'kanha-rukhmini', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
-   { tab:"Narratives", label:  '- Seven Days of Penance (Parikshit)', child: false, uniqueKey: '', parentKey: 'art', key: 'seven-days-of-penance', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
-   { tab:"Narratives", label:  '- The Rhea Story', child: false, uniqueKey: '', parentKey: 'art', key: 'inactive: kanha-rukhmini', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
+   { tab:"Narratives, other", label:  'Narratives, other', child: false, uniqueKey: '', parentKey: 'art', key: 'no-link', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
+    { tab:"Narratives, other", label:  '- Sundara Kandam (extract of Ramayan)', child: false, uniqueKey: '', parentKey: 'art', key: 'sundara-kaandam', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
+    { tab:"Narratives, other", label:  '- Poems', child: false, uniqueKey: '', parentKey: 'art', key: 'poems-others', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
+    { tab:"Narratives, other", label:  `- Krishna and Rukhmini's Love Story `, child: false, uniqueKey: '', parentKey: 'art', key: 'kanha-rukhmini', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
+   { tab:"Narratives, other", label:  '- Seven Days of Penance (Parikshit)', child: false, uniqueKey: '', parentKey: 'art', key: 'seven-days-of-penance', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
+   { tab:"Narratives, other", label:  '- The Rhea Story', child: false, uniqueKey: '', parentKey: 'art', key: 'inactive: kanha-rukhmini', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
    // WIP { tab:"Misc", label:  'Technical', child: false, uniqueKey: '', parentKey: 'art', key: 'technical', roles: ['non-living', 'all'], dateUploaded: '02-03-2022' },
 ];
 /* TODO - Jan 4 2024 - why was this added? one unused reference in category service

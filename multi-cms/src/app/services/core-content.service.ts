@@ -5,7 +5,10 @@ import { tabs, tabsWithRoles, MenuTree,TabWithRoles } from 'src/assets/data-and-
 
 import { KanhaRukhminiList} from 'src/assets/lists/kanha-rukhmini.list';
 import { SundaraKaandam } from  'src/assets/lists/sundara-kaandam.list';
+import { PoemsOthers } from  'src/assets/lists/poems-others.list';
 import { SevenDaysOfPenance } from 'src/assets/lists/seven-days-of-penance';
+
+
 import { DeviImageList } from 'src/assets/all-images/religion/devi/devi.image.list' //'../assets/data-/../components/viewers/data/devi.image.list';
 import { MahadevImageList } from 'src/assets/all-images/religion/mahadev/mahadev.image.list';
 import { MahadevFamilyImageList } from 'src/assets/data-and-config/data/mahadev-family.image.list';
@@ -217,6 +220,7 @@ export class CoreContentService {
     this._seeAll = localStorage.getItem('seeAll');
     if (this._seeAll === 'true') {
       sketchStats.themBasedCounts.push(this.getThemeCounts(new SundaraKaandam(), sketchStats.canvassSize,sketchStats.content));
+      sketchStats.themBasedCounts.push(this.getThemeCounts(new PoemsOthers(), sketchStats.canvassSize,sketchStats.content));
       sketchStats.themBasedCounts.push(this.getThemeCounts(new KanhaRukhminiList(), sketchStats.canvassSize,sketchStats.content));
       sketchStats.themBasedCounts.push(this.getThemeCounts(new SevenDaysOfPenance(), sketchStats.canvassSize,sketchStats.content));
       
@@ -336,6 +340,7 @@ export class CoreContentService {
     functionProto(new PlanesQ22023ImageList()) ;
     functionProto(new ThemesMisc());
     functionProto(new SundaraKaandam());
+    functionProto(new PoemsOthers());
     functionProto(new SevenDaysOfPenance());
   }
   // optimize 
@@ -407,6 +412,7 @@ export class CoreContentService {
       this.contentList.push( { contentFile:new PlanesQ22023ImageList(),contentCategory:'planesQ12023', role:'non-living,  non-religious'}) ;
       this.contentList.push( { contentFile:new ThemesMisc(),contentCategory:'themes-misc', role:'non-living,  non-religious'}) ;
       this.contentList.push( { contentFile:new SundaraKaandam(),contentCategory:'sundara-kaandam', role:'misc'}) ;
+      this.contentList.push( { contentFile:new PoemsOthers(),contentCategory:'poems-others', role:'misc'}) ;
       this.contentList.push( { contentFile:new SevenDaysOfPenance(),contentCategory:'seven-days-of-penance', role:'misc'}) ;
       
       localStorage.setItem("usersContentList", JSON.stringify(this.contentList));
@@ -529,6 +535,7 @@ export class CoreContentService {
         this.contentList.push( { contentFile:new PlanesQ22023ImageList(),contentCategory:'planesQ12023', role:'non-living,  non-religious'}) ;
         this.contentList.push( { contentFile:new ThemesMisc(),contentCategory:'themes-misc', role:'non-living,  non-religious'}) ;
         this.contentList.push( { contentFile:new SundaraKaandam(),contentCategory:'sundara-kaandam', role:'misc'}) ;
+        this.contentList.push( { contentFile:new PoemsOthers(),contentCategory:'poems-others', role:'misc'}) ;
         this.contentList.push( { contentFile:new SevenDaysOfPenance(),contentCategory:'seven-days-of-penance', role:'misc'}) ;
       }
       localStorage.setItem("usersContentList", JSON.stringify(this.contentList));
@@ -572,6 +579,7 @@ export class CoreContentService {
     this.contentList.push( { contentFile:new PlanesQ22023ImageList(),contentCategory:'planesQ12023', role:'non-living,  non-religious'}) ;
     this.contentList.push( { contentFile:new ThemesMisc(),contentCategory:'themes-misc', role:'non-living,  non-religious'}) ;
     this.contentList.push( { contentFile:new SundaraKaandam(),contentCategory:'sundara-kaandam', role:'misc'}) ;
+    this.contentList.push( { contentFile:new PoemsOthers(),contentCategory:'poems-others', role:'misc'}) ;
     this.contentList.push( { contentFile:new SevenDaysOfPenance(),contentCategory:'seven-days-of-penance', role:'misc'}) ;
     }
   }
