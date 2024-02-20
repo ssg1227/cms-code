@@ -1,3 +1,6 @@
-<div class="card" [@cardState]="cardState" (mouseover)="toggleCardState()" (mouseout)="toggleCardState()">
-    kdhsfgkljfdslfjdsl;fjss
+<div 
+  class="card" [@cardState]="cardState" 
+    [ngClass]="toggleSize()"
+    (click)="expand()" (mouseover)="toggleCardState()" (mouseout)="toggleCardState()">
+   <img src="{{imageDetail.fullFileName}}" [ngClass]="toggleSize()">
   </div>

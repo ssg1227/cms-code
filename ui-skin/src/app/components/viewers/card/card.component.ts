@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
@@ -22,10 +22,19 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   ]
 })
 export class CardComponent implements OnInit  {
+  @Input() cardIndex = 0 ;
+  @Input() cardSelected = 0 ;
+  @Input() imageDetail:any = null ;
+  @Output() clickedIndex = new EventEmitter<number>() ;
   cardState = 'default';
   ngOnInit(): void {}
   toggleCardState() {
     this.cardState = this.cardState === 'default' ? 'hover' : 'default';
   }
-
+  expand() {
+    this.clickedIndex.emit(this.cardIndex);
+  }
+  toggleSize() { 
+   return this.cardIndex === this.cardSelected?  'expand':'thumb';
+  }
 }

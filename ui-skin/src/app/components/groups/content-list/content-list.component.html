@@ -1,0 +1,9 @@
+    <div class="outerdiv">
+    <div *ngFor="let k of currentImageList.allImageList[0].files; let i = index;">
+         <app-card 
+         [cardIndex]="i" 
+         (clickedIndex)="compareSelected($event,i)" 
+         [imageDetail]="k"
+         [cardSelected]="currentCellSelected"></app-card>
+    </div>
+</div>
