@@ -3,8 +3,17 @@
 # JourneyOfDrawings
 
 ## Change Log and TODOs 
-#### Multiple cms 
+## Multiple cms 
 - These sources are now modified for multiple cms formats
+### Quick log - to be copied across mult-cms, journey-of-drawings and ui-skins angular projects
+- Start sharing git sources with Saayam.org
+#### Feb 25 - March 2 2024
+- (recap - multi cms is a generalize cms template applied to art gallery, general texts and large blogs)
+- write interface for image elements for art gallery based on existing art-is-worship.web.app/journey-of-drawings.web.app
+- add the 'text description' and 'ierations' to the card component
+- apply this to ui-skin, and apply this and the card component to journey of drawings
+- journey of drawings remove choice of carousel(sequential) vs  card.. keep only card (we will target how irfca switches from card to sequential view)
+
 #### (Jan 3 2024 onward): cleanup, fixing logic and user role based issues...
 ##### card vs carousel - sometimes card view loads
 - Nice to have target of Jan 9 - review and revamp the loadLists logic in core-content.service.ts - use an array 

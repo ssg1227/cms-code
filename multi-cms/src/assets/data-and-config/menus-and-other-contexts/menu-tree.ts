@@ -51,7 +51,7 @@ export const MenuTree: MenuItem[] = [
     { tab:"Narratives, other", label:  '- Poems', child: false, uniqueKey: '', parentKey: 'art', key: 'poems-others', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
     { tab:"Narratives, other", label:  `- Krishna and Rukhmini's Love Story `, child: false, uniqueKey: '', parentKey: 'art', key: 'kanha-rukhmini', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
    { tab:"Narratives, other", label:  '- Seven Days of Penance (Parikshit)', child: false, uniqueKey: '', parentKey: 'art', key: 'seven-days-of-penance', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
-   { tab:"Narratives, other", label:  '- The Rhea Story', child: false, uniqueKey: '', parentKey: 'art', key: 'inactive: kanha-rukhmini', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
+   { tab:"Narratives, other", label:  '- The Rhea Story', child: false, uniqueKey: '', parentKey: 'art', key: 'rhea-story', roles: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
    // WIP { tab:"Misc", label:  'Technical', child: false, uniqueKey: '', parentKey: 'art', key: 'technical', roles: ['non-living', 'all'], dateUploaded: '02-03-2022' },
 ];
 /* TODO - Jan 4 2024 - why was this added? one unused reference in category service
