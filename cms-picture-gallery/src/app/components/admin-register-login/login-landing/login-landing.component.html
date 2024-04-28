@@ -1,1 +1,17 @@
-<p>login-landing works!</p>
+<!-- div *ngIf="userNotLoggedIn; else elseBlock" class='login-intro' style='margin:auto;'-->
+<div class='login-intro' style='margin:auto;'></div>
+    <H2>A Journey of drawings</H2>
+    <div style="float:right; margin-right: 20px;">- Shantanu Gadkari</div><br/>
+    <div><input type='text' placeholder='User Name (optional)'><!-- [(ngModel)]="userId">  -->
+    <!--div><input type='password' placeholder='password' [(ngModel)]="password"></div-->
+    &nbsp;&nbsp; <input type='button' value='Enter' ><!-- (click)='navigateStoragelogin()'>--> <br/>
+    <!-- View 'Unplugged' (best for cellphones)  <input type='checkbox' value='' (click)='unpluggedSet()'> -->
+   <br/>
+    <!--strong>Gallery Layout</strong>:&nbsp; &nbsp; &nbsp; &nbsp;
+    <input type="radio" name="layout" value="card" (click)="unpluggedSet('card')" [ngModel]="picLayout"> Card &nbsp; &nbsp; 
+    <input type="radio" name="layout" value="carousel" (click)="unpluggedSet('carousel')"  [ngModel]="picLayout"> Carousel  &nbsp; &nbsp;  
+
+    <input type="radio" name="layout" value="newcard" (click)="unpluggedSet('new-card')"  [ngModel]="picLayout"> <strong>'New' flex card *</strong>   
+    <br/><em>* work in progress</em>
+    -->
+  </div>

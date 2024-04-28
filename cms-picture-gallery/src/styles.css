@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.root-frame  {
+    position: fixed;
+    top:0 ;
+    left:0 ;
+    width:95%; 
+    margin-right: 5px;
+    height:95%; 
+    padding:5px; 
+    background-color: aliceblue;
+    border: 4px outset darkblue ;
+    border-radius: 7px;
+    font-size:1vw;
+    overflow-y: auto;
+   background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
+}
+
