@@ -1,5 +1,5 @@
 
-import { PicDescr, ImageElement } from '../../image.list'
+import { ImageDetail, ImageElement } from 'src/app/shared/image-detail';
 export class GaneshPreQ42021ImageList {
  sort: string = 'asc'
  // /Users/Shantanu/Documents/GitHub/cms-code/ui-skin/src/assets/images-with-listing/pre-q4-2021ganesh
@@ -314,7 +314,8 @@ iterations:[{
                             <li>I revisited this sketch, adding more detail -- see next </li>
                             </ul>
                             `},
-                                { fullFileName: `${this.imageRoot}Aumkar-Ganesh-sur-niragas-ho-sept-29-2020.jpeg`, 
+        
+                            { fullFileName: `${this.imageRoot}Aumkar-Ganesh-sur-niragas-ho-sept-29-2020.jpeg`, 
                             description: `<ul>
                             <li>Sept 29 2020 Initial version - click iterations to go back </li>
                             </ul>
@@ -324,7 +325,7 @@ iterations:[{
                         evolution: `<b>Landmark because of the theme, the iconic Ganesh Temple at Prabhadevi, Mumbai</b>`,
                         evolutionSequence: 1, evolutionDate: `12-01-2020`,
                         description: 'Siddhivinayak Temple, Prabhadevi, Mumbai, India attempt to sketch',
-                        evolutionary: true,
+                        
                     },
                     { fullFileName: `${this.imageRoot}GaneshRadioZTueFeb232021.jpeg`, 
                     description: `<ul>

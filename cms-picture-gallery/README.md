@@ -1,7 +1,7 @@
 # A Journey Of Drawings
 # Overview 
 "A Journey of Drawings" by Shantanu Gadkari
-#### Initial Log: April 28 2024
+### Initial Log: April 28 2024
 - A place to host the *hundreds* of drawings of mine, drawn from Q3 2020 onwards
 - With my knowledge of JavaScript/Angular and hosting on Google Firebase, the original website is 
 [Art is Worship] https://art-is-worship.web.app/ 
@@ -11,6 +11,10 @@
 - Thus this new code base. 
 - Reference website [IRFCA](https://irfca.org/)
 - **CONTINUED IN CHANGELOG.md**
+
+----------------------------------------
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
 
 ## Development server
