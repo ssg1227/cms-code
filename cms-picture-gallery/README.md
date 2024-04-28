@@ -1,6 +1,9 @@
-# A Journey Of Drawings
+# CMS Picture Gallery
 # Overview 
-"A Journey of Drawings" by Shantanu Gadkari
+"CMS Picture Gallery" by Shantanu Gadkari
+### SET UP
+- global replace 'CMS PICTURE GALLERY' with the name of your app; likewise, the kebab cased 'cms-picture-gallery'
+- login/landing page summary content
 ### Initial Log: April 28 2024
 - A place to host the *hundreds* of drawings of mine, drawn from Q3 2020 onwards
 - With my knowledge of JavaScript/Angular and hosting on Google Firebase, the original website is 
