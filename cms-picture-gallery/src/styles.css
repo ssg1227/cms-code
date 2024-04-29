@@ -15,3 +15,27 @@
    background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
 }
 
+.upper-ten {
+    height: 20%; 
+    display: flex ;
+    border: 2px solid slateblue ;
+    background-color: aliceblue;
+}
+.upper-ten > H2 {
+    margin-left: 10px;
+    color: darkslateblue;
+    text-shadow: 1px 1px gray;
+}
+ #author {
+    font-size: smaller;
+    font-style: italic;
+    margin-left: 20px;
+    color: blue;
+    text-shadow: 1px 1px gray;
+}
+#upper-ten-central-box {
+    margin:auto;
+    border:1px solid aqua;
+    background-color: silver;
+    padding:5px;
+}

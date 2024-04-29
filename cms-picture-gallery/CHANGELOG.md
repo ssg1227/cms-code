@@ -2,6 +2,12 @@
 # LOG OF CHANGES #
 "CMS Picture Gallery" by Shantanu Gadkari
 
+### Log: April 29 2024 (1)
+- Landing/Login + Summary page styling WIP
+- Screen composition to be **Master Detail** - about 10-20% of the top is the summary; the rest is detail (DESIGN EXTRACT)
+  - Login + Summary: Title and login form on top. Summary below
+  - Picture pages: Title and bread crumbs on top. Icons, picture below
+- Creation of login page - login-landing.component *(Login mechanism - Login page and summary write up will be one component (DESIGN EXTRACT) unlike prevous
 ### Log: April 28 2024 (2)
 - Creation of the frame. landing-page.component as the root
 - Creation of login page - login-landing.component *(Login mechanism - Login page and summary write up will be one component  unlike previous)*
