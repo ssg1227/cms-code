@@ -39,3 +39,20 @@
     background-color: silver;
     padding:5px;
 }
+
+.lower-ninety {
+    height: 90%;
+    border: 2px solid slateblue ;
+    background-color: aliceblue;
+    font-size: larger;
+}
+@media screen and (max-width:1028px) {
+    .lower-ninety {
+        height: auto;
+        font-size:large;
+    }
+    .responser {
+        width:95%;
+    }
+    
+}

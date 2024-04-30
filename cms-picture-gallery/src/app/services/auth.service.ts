@@ -75,11 +75,11 @@ export class AuthService {
       loggedinUser =   { userName: 'default',
       userRoles: ["sanatani", "guru"] } ;
     }
-    localStorage.setItem('userThemes', 'all') // loggedinUser.userRoles.toString()) ; QUICK FIX+DEPLOY JAN 4 2024 scrub lists for min religous content and temp freeze roles
+    localStorage.setItem('userThemes', 'all') 
     localStorage.setItem('userId',username);
-    localStorage.setItem('role',this.loginHardCode(username));
+    localStorage.setItem('role',this.roleSetter(username));
   }
-  private loginHardCode(username:string):string { // change logic later on for the technical menu item, merge into general logic above
+  private roleSetter(username:string):string { // change logic later on for the technical menu item, merge into general logic above
     let loggedinUser = username ? 
         this.userList.find((userObject) => userObject.userName === username):
         { userName: 'default',
@@ -116,6 +116,9 @@ export class AuthService {
     
   }
   logout() {
-   // alert('logoit') ;
+   this.clearCaches();
+  }
+  public get LoggedIn() : boolean {
+    return localStorage.getItem('userId') !== null;
   }
 }

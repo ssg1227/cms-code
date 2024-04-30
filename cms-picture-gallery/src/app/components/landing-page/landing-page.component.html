@@ -1,1 +1,4 @@
-<div class="root-frame"><app-login-landing></app-login-landing> </div> 
+<div class="root-frame">
+    <app-login-landing *ngIf="!UserLoggedIn"></app-login-landing> 
+    <app-image-viewer *ngIf="UserLoggedIn"></app-image-viewer>
+</div> 

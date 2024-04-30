@@ -1,13 +1,18 @@
 
 # LOG OF CHANGES #
 "CMS Picture Gallery" by Shantanu Gadkari
-
+### Log: April 29 2024 (2)
+- Login Mechanism, introducing the content pages
+- New logic for tree based drill down
 ### Log: April 29 2024 (1)
-- Landing/Login + Summary page styling WIP
+- Landing/Login + Summary page styling 
 - Screen composition to be **Master Detail** - about 10-20% of the top is the summary; the rest is detail (DESIGN EXTRACT)
   - Login + Summary: Title and login form on top. Summary below
   - Picture pages: Title and bread crumbs on top. Icons, picture below
 - Creation of login page - login-landing.component *(Login mechanism - Login page and summary write up will be one component (DESIGN EXTRACT) unlike prevous
+- ***Completion of combining login page  summary write ups***
+  - Starting consistent look and structure as above. Application title on left edge of 'Master' div(DESIGN EXTRACT) 
+  - Add static text JSON for website title and summary (under 'assets/common-config')
 ### Log: April 28 2024 (2)
 - Creation of the frame. landing-page.component as the root
 - Creation of login page - login-landing.component *(Login mechanism - Login page and summary write up will be one component  unlike previous)*
