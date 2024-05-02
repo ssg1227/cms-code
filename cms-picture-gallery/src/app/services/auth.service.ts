@@ -75,8 +75,9 @@ export class AuthService {
       loggedinUser =   { userName: 'default',
       userRoles: ["sanatani", "guru"] } ;
     }
-    localStorage.setItem('userThemes', 'all') 
+    // localStorage.setItem('userThemes', 'all') 
     localStorage.setItem('userId',username);
+    localStorage.setItem('current-menu','top-level');
     localStorage.setItem('role',this.roleSetter(username));
   }
   private roleSetter(username:string):string { // change logic later on for the technical menu item, merge into general logic above
@@ -103,16 +104,21 @@ export class AuthService {
     return role? role:'' ;
   }
   clearCaches() {
+    /*
     localStorage.removeItem('role') ;
     localStorage.removeItem('optionSelect');
     localStorage.removeItem('userThemes') ;
     localStorage.removeItem("usersContentList")
     localStorage.removeItem('context');
+    */
     localStorage.removeItem('userId');
+    localStorage.removeItem('current-menu');
+    /*
     localStorage.removeItem('userMenu');
     localStorage.removeItem('categories');
     localStorage.removeItem('categorizedMenus');
     localStorage.removeItem('userRegister'); //??
+    */
     
   }
   logout() {
