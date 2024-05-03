@@ -8,5 +8,36 @@
             <input type='button' value='Logout'  (click)='cmsLogout()'>
         </div>
     </div>
-    <div  class="lower-ninety" ></div>
+    <div  class="lower-ninety outerdiv" >
+        <div *ngFor="let grpImag of treeNode; let i = index;">
+          <app-card 
+            [cardIndex]="i" 
+            (clickedIndex)="compareSelected($event,i)" 
+            [imageDetail]="grpImag"
+            [cardSelected]="currentCellSelected"></app-card>
+         
+       </div>
+  <!-- ##### Uncomment later for image expansion. Refer to content list of old code 
+    <div id="modal-container">
+        <span id="close-modal" style="margin:0" (click)="closeModal()">&times;</span>
+         <div id="pic-container"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  == 1">
+           <img id="pic" *ngIf="selectedImage != null" src="{{selectedImage.imageList[0].image}}">
+           <p [innerHTML]="selectedImage.imageList[0].description"></p>
+         </div>    
+        
+        <section id="iterative" *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  > 1"
+            >
+          <div *ngFor="let imageElement of selectedImage.imageList, let j = index">
+            <div id="pic-container" > 
+              <img id="pic" *ngIf="imageElement != null" src="{{imageElement.image}}">
+              <div [innerHTML]="imageElement.description"></div>
+            </div>
+          </div>
+      
+      </section>
+      
+       
+    </div>
+-->
+    </div>
   </div>

@@ -8,17 +8,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // Service Layer 
 import { AuthService } from './services/auth.service';
+import { CoreContentService } from './services/core-content.service';
 // components and tree
 
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { LoginLandingComponent } from './components/admin-register-login/login-landing/login-landing.component';
 import { ImageViewerComponent } from './components/main-content/image-viewer/image-viewer.component';
+import { CardComponent } from './components/main-content/card/card.component'
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     LoginLandingComponent,
     ImageViewerComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,9 +31,10 @@ import { ImageViewerComponent } from './components/main-content/image-viewer/ima
     
     {path:'', component:LandingPageComponent},
     {path:'**', component:LandingPageComponent},
+    {path: 'view/:theme', component: LoginLandingComponent },
   ])
   ],
   providers: [], //, ListsFunnelService, CoreContentService],
-    bootstrap: [AppComponent, AuthService]
+    bootstrap: [AppComponent, AuthService, CoreContentService]
 })
 export class AppModule { }

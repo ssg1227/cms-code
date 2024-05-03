@@ -1,6 +1,18 @@
 
 # LOG OF CHANGES #
 "CMS Picture Gallery" by Shantanu Gadkari
+### Log: May 1 - 3 2024
+- Top Level list *ngFor added to ImageViewer
+- app-card from old code merged for card based
+- displaying blank cards as per the list
+- working refactor based on new JSON fields and logic
+- Start of content json refactor  JSON file tree-detail.ts
+- Interface TreeNode, has key, label, etc. for child nodes parent-key maps to key of a parent element. isLeaf: true element will map to the JSON containing the images.
+- JSONs are lists of TreeNode Elements. 
+### Log: April 30 2024 (1)
+- A **big one**: implementing the tree based navigation on themes, categories, picture lists
+  - New approach using recursion 
+  - New JSON structure 
 ### Log: April 29 2024 (2)
 - Login Mechanism, introducing the content pages
 - New logic for tree based drill down

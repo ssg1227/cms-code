@@ -1,0 +1,13 @@
+<div 
+  class="card"   
+  [ngClass]="toggleCardSize()" 
+ 
+  (mouseover)="toggleCardState()" (mouseout)="toggleCardState()">
+
+ <div class="card-image" *ngIf="imageDetail.isLeaf == true"   (click)="expand()"  > 
+ <img src="{{imageDetail.imageList[0].image}}" [title]="imageDetail.imageList[0].description" [ngClass]="toggleImageSize()" >
+ </div>
+ <div>
+  <div class="caption" *ngIf="isLarge" [innerHTML]="imageDetail.imageList[0].description" style="float: right;"> </div>
+ </div>
+</div>
