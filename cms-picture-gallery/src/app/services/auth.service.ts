@@ -75,7 +75,6 @@ export class AuthService {
       loggedinUser =   { userName: 'default',
       userRoles: ["sanatani", "guru"] } ;
     }
-    // localStorage.setItem('userThemes', 'all') 
     localStorage.setItem('userId',username);
     localStorage.setItem('current-menu','top-level');
     localStorage.setItem('role',this.roleSetter(username));
