@@ -29,9 +29,13 @@ export class CardComponent {
   @Input() cardSelected = 0 ;
   @Input() imageDetail:any = null ;
   @Input() isLarge:boolean = false ;
-  @Output() clickedIndex = new EventEmitter<number>() ;
+  @Output() clickedIndex = new EventEmitter<string>() ;
 
   cardState = 'default';
+  _viewLink = `/view`;
+  get ViewLink():string {
+    return this._viewLink;
+  }
   ngOnInit(): void {
     console.log(JSON.stringify(this.imageDetail.imageList))
   }
@@ -48,7 +52,9 @@ export class CardComponent {
     if (this.isLarge === true) {
       return ;
     }
-    this.clickedIndex.emit(this.cardIndex);
+    this,this.imageDetail.isLeaf === true?
+      this.clickedIndex.emit(this.cardIndex.toString()):
+      this.clickedIndex.emit(this.imageDetail.key);
   }
   
   toggleCardSize() { 

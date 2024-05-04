@@ -1,3 +1,4 @@
+import { BreadCrumb } from "./bread-crumbs";
 // CMS picture gallery hierarchy structure
 // This is a tree structure, where the leaf key will load the 
 // JSON containing a picture list
@@ -5,6 +6,7 @@
 export interface TreeNode {
     key:string; // unique id.. like a primary key, also picture list loader for leaf
     parentKey?:string; // like a foreign key and establishing parent. optional()
+    // better safe than optimal 
     label:string; 
     description?:string ;
     roleBasedDescription?: string;
@@ -12,10 +14,20 @@ export interface TreeNode {
     accessible?:string[]; // roles match users roles many to many match
     children?:TreeNode[]; // noSQL wannabe; unused now
 }
+export interface TreeNodeCollection {
+    parentKey?:string; // like a foreign key and establishing parent. optional()
+    levelIndex?:number;
+    breadCrumb:BreadCrumb[]; // better safe than optimal for now May 3 2024
+    treeNodeElements:TreeNode[];
+}
 
-export const TopLevel:TreeNode[] = 
-[
-    {
+export const TopLevelCollection:TreeNodeCollection = 
+{
+    levelIndex:0,
+    breadCrumb:[
+        {link: '/view', params:'top-level', label: 'HOME'}
+    ],
+    treeNodeElements:[{
         key: "special-lists",
         label: "Special Lists",
         description:'Extracted works from the entire collection like best attempts, something new, latest sketches, etc',
@@ -85,29 +97,36 @@ export const TopLevel:TreeNode[] =
         isLeaf:false,
         accessible:['all']
     },
-];
+    ]
+};
 
-
-export const ShreeGanes:TreeNode[] = 
-[
-    {
-        key: "special-lists",
-        label: "Special Lists",
+export const ShreeGaneshCollection:TreeNodeCollection = 
+{
+    parentKey: 'religious-shree-ganesh',
+    breadCrumb:[
+        {link: '/view', params:'top-level', label: 'HOME'},
+        {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'}
+    ],
+    
+    levelIndex: 1,
+    treeNodeElements:[{
+        key: "shree-ganesh",
+        label: "Shree Ganesh Before Q4 2021",
         description:'Extracted works from the entire collection like best attempts, something new, latest sketches, etc',
         isLeaf:false,
         accessible:['all']
     },
     {
-        key: "religious-shree-ganesh",
-        label: "Religious: Shree Ganesh",
+        key: "shree-ganesh-gte-q4-2021",
+        label: "Shree Ganesh  Q4 2021 to Q1 2023",
         description:'Sketches of, and including Shree Ganesh',
         isLeaf:false,
         accessible:['superuser','sanatan']
     }
     ,
     {
-        key: "religious-other-deities",
-        label: "Religious: Other Deities, etc",
+        key: "shree-ganesh-gte-q1-2023",
+        label: "Shree Ganesh Q1 2023 to Q1 2024",
         description:'Shankar Parvati, Vishnu. Other drawings in this genre',
         isLeaf:false,
         accessible:['superuser','sanatan']
@@ -160,4 +179,5 @@ export const ShreeGanes:TreeNode[] =
         isLeaf:false,
         accessible:['all']
     },
-];
+    ]
+};

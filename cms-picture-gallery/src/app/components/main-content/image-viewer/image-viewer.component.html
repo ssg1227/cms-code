@@ -2,14 +2,16 @@
     <div class="upper-ten">
         <H2>{{appTitle}}<br/><span id="author" >{{appAuthor}}</span></H2> 
         <div id="upper-ten-central-box">
-            <span>Breadcrumbs</span>
+            <span *ngFor="let breadCrumb of breadCrumbs" >  <a   
+                    [routerLink]="[breadCrumb.link,breadCrumb.params]" 
+                            (click)="compareSelected(breadCrumb.params,0)">{{breadCrumb.label}}</a> >>> </span>
         </div>
         <div id="upper-ten-central-box">
             <input type='button' value='Logout'  (click)='cmsLogout()'>
         </div>
     </div>
     <div  class="lower-ninety outerdiv" >
-        <div *ngFor="let grpImag of treeNode; let i = index;">
+        <div *ngFor="let grpImag of treeNodeCollection.treeNodeElements; let i = index;">
           <app-card 
             [cardIndex]="i" 
             (clickedIndex)="compareSelected($event,i)" 

@@ -1,6 +1,12 @@
 
 # LOG OF CHANGES #
 "CMS Picture Gallery" by Shantanu Gadkari
+### Log May 3 2024
+- Page navigation based on tree implemented for node (branch elements)
+- NodeCollection interface introduced. JSON single object with list of TreeNodes - parent key is common - so extracted out of list
+- UI card layout introduced with initial set of data - top level and 1 level down
+- Routing and breadcrumbs added
+- BreadCrumb Interface list info is currently hard coded into the node collection JON
 ### Log: May 1 - 3 2024
 - Top Level list *ngFor added to ImageViewer
 - app-card from old code merged for card based
