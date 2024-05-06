@@ -7,11 +7,11 @@ import { CoreContentService } from 'src/app/services/core-content.service';
 import { TreeNode, TreeNodeCollection } from 'src/assets/content-tree/tree-nodes' ;
 import { BreadCrumb } from 'src/assets/content-tree/bread-crumbs';
 @Component({
-  selector: 'app-image-viewer',
-  templateUrl: './image-viewer.component.html',
-  styleUrls: ['./image-viewer.component.css']
+  selector: 'app-content-viewer',
+  templateUrl: './content-viewer.component.html',
+  styleUrls: ['./content-viewer.component.css']
 })
-export class ImageViewerComponent {
+export class ContentViewerComponent {
   breadCrumbs:BreadCrumb[] = [ 
     { 
       link:'/view',

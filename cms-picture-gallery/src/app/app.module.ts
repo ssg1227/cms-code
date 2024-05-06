@@ -13,14 +13,14 @@ import { CoreContentService } from './services/core-content.service';
 
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { LoginLandingComponent } from './components/admin-register-login/login-landing/login-landing.component';
-import { ImageViewerComponent } from './components/main-content/image-viewer/image-viewer.component';
+import { ContentViewerComponent } from './components/main-content/content-viewer/content-viewer.component';
 import { CardComponent } from './components/main-content/card/card.component'
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     LoginLandingComponent,
-    ImageViewerComponent,
+    ContentViewerComponent,
     CardComponent,
   ],
   imports: [
