@@ -1,19 +1,23 @@
 
 # LOG OF CHANGES #
 "CMS Picture Gallery" by Shantanu Gadkari
+### Log May 7 2024
+- Navigation implementation direction narrowed down.
+- It is now built over the old (menu-tree) logic, using a tree, JSON is a flattened list with key, parent key and leaf parent indicator (true/false)
+- To stitch the image viewing with this logic
 ### Log May 3 2024
 - Page navigation based on tree implemented for node (branch elements)
 - NodeCollection interface introduced. JSON single object with list of TreeNodes - parent key is common - so extracted out of list
 - UI card layout introduced with initial set of data - top level and 1 level down
 - Routing and breadcrumbs added
-- BreadCrumb Interface list info is currently hard coded into the node collection JON
+- BreadCrumb Interface list info is currently hard coded into the node collection JSON
 ### Log: May 1 - 3 2024
 - Top Level list *ngFor added to ImageViewer
 - app-card from old code merged for card based
 - displaying blank cards as per the list
 - working refactor based on new JSON fields and logic
 - Start of content json refactor  JSON file tree-detail.ts
-- Interface TreeNode, has key, label, etc. for child nodes parent-key maps to key of a parent element. isLeaf: true element will map to the JSON containing the images.
+- Interface TreeNode, has key, label, etc. for child nodes parent-key maps to key of a parent element. isLeafParent: true element will map to the JSON containing the images.
 - JSONs are lists of TreeNode Elements. 
 ### Log: April 30 2024 (1)
 - A **big one**: implementing the tree based navigation on themes, categories, picture lists

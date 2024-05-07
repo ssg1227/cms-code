@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { staticText } from 'src/assets/common-config/static-text';
 import  { AuthService } from 'src/app/services/auth.service';
 import { CoreContentService } from 'src/app/services/core-content.service';
-import { TreeNode, TreeNodeCollection } from 'src/assets/content-tree/tree-nodes' ;
+import { TreeNodeElement } from 'src/assets/content-tree/tree-nodes' ;
 import { BreadCrumb } from 'src/assets/content-tree/bread-crumbs';
 @Component({
   selector: 'app-content-viewer',
@@ -12,7 +12,7 @@ import { BreadCrumb } from 'src/assets/content-tree/bread-crumbs';
   styleUrls: ['./content-viewer.component.css']
 })
 export class ContentViewerComponent {
-  breadCrumbs:BreadCrumb[] = [ 
+  breadCrumbs:BreadCrumb[]|undefined = [ 
     { 
       link:'/view',
       params:'top-level',
@@ -23,7 +23,7 @@ export class ContentViewerComponent {
   appTitle= staticText.appTitle;
   appAuthor= staticText.appAuthor;
   appContent = staticText.introContentList[0];
-  treeNodeCollection: TreeNodeCollection = this.coreContentService.setCurrentMenu();
+  currentCardList:TreeNodeElement[] = this.coreContentService.setCurrentCardList() ;
   currentCellSelected = 0 ;
   constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService) {
   
@@ -37,9 +37,8 @@ export class ContentViewerComponent {
       if(isNaN(a)) {
         localStorage.setItem('current-menu',a);
         this.router.navigate([`/view`, a]).then( (e) => {
-          this.treeNodeCollection = this.coreContentService.setCurrentMenu();
+          this.currentCardList = this.coreContentService.setCurrentCardList() ;
           this.breadCrumbs = this.coreContentService.BreadCrumbs ;
-         //  this.breadCrumbs = ``;// this.coreContentService.displayBreadCrumbs();
           if (e) {
             console.log("Navigation is successful!");
           } else {

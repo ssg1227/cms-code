@@ -52,8 +52,9 @@ export class CardComponent {
     if (this.isLarge === true) {
       return ;
     }
-    this,this.imageDetail.isLeaf === true?
-      this.clickedIndex.emit(this.cardIndex.toString()):
+    localStorage.setItem("isParentLeaf", this.imageDetail.isLeafParent.toString());
+   // this,this.imageDetail.isLeafParent === true?
+   //   this.clickedIndex.emit(this.cardIndex.toString()):
       this.clickedIndex.emit(this.imageDetail.key);
   }
   
