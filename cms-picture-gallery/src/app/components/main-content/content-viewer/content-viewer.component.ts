@@ -20,6 +20,7 @@ export class ContentViewerComponent {
       levelIndex: 0},
     
   ];
+  parentDescripion:string| undefined = '';
   appTitle= staticText.appTitle;
   appAuthor= staticText.appAuthor;
   appContent = staticText.introContentList[0];
@@ -39,6 +40,7 @@ export class ContentViewerComponent {
         this.router.navigate([`/view`, a]).then( (e) => {
           this.currentCardList = this.coreContentService.setCurrentCardList() ;
           this.breadCrumbs = this.coreContentService.BreadCrumbs ;
+          this.parentDescripion = this.coreContentService.ParentDescription ;
           if (e) {
             console.log("Navigation is successful!");
           } else {

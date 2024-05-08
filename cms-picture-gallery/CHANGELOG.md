@@ -4,6 +4,7 @@
 ### Log May 7 2024
 - Navigation implementation direction narrowed down.
 - It is now built over the old (menu-tree) logic, using a tree, JSON is a flattened list with key, parent key and leaf parent indicator (true/false)
+- Breadcrumbs currently hard coded as a list with each node
 - To stitch the image viewing with this logic
 ### Log May 3 2024
 - Page navigation based on tree implemented for node (branch elements)

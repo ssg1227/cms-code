@@ -18,6 +18,7 @@ export interface TreeNodeElement {
 }
 
 export const MenuTreeElements:TreeNodeElement[] = [
+    // #### ROOT
     {
         key:'top-level', levelIndex:0,isLeafParent:false,accessible:["all"], // roles match users roles many to many match
         breadCrumb:[
@@ -25,6 +26,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],
         label:"HOME PAGE",
     },
+    // #### LEVEL 1
     {
         parentKey:'top-level',key: "special-lists", levelIndex:1,isLeafParent:false, accessible:['all'],
         label: "Special Lists", 
@@ -34,6 +36,96 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '', params:'special-lists', label: 'Special Lists'}
         ],    
     }, 
+    {
+        parentKey:"top-level", key: "religious-shree-ganesh", levelIndex:1,isLeafParent:false, accessible:['superuser','sanatani'],
+        label: "Religious: Shree Ganesh",
+        description:'Sketches of, and including Shree Ganesh',
+        
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'religious-shree-ganesh', label: 'Shree Ganesh'}
+        ],
+        
+    }, 
+    {
+        parentKey:"top-level", key: "religious-other-deities", levelIndex:1,isLeafParent:false, accessible:['superuser','sanatani'],
+        label: "Religious: Other Deities",
+        description:'Sketches of other Gods and Goddesses',
+        
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'religious-other-deities', label: 'Religious: Other Deities'}
+        ],
+        
+    }, 
+    {
+        parentKey:"top-level", key: "religious-gurus-mystics", levelIndex:1,isLeafParent:false, accessible:['superuser','sanatani','guru'],
+        label: "Religious: Gurus and Mystics",
+        description:'Sketches of Spiritual Masters, Mystics - Lord Dattatreya and Lineage, Sikh Gurus, Others',
+        
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'religious-gurus-mystics', label: 'Religious: Gurus and Mystics'}
+        ],
+        
+    }, 
+    {
+        parentKey:"top-level", key: "religious-shirdi-sai", levelIndex:1,isLeafParent:false, accessible:['superuser','sanatani','guru'],
+        label: "Religious: Shirdi Sai Baba",
+        description:'Sketches of Sadguru Shirdi Sai Baba. Sooo many sketches, this warranted a separate section at this level',
+        
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'religious-gurus-mystics', label: 'Religious: Gurus and Mystics'}
+        ],
+        
+    }, 
+    {
+        parentKey:"top-level", key: "people-places-themes", levelIndex:1,isLeafParent:false, accessible:['superuser','people'],
+        label: "Religious: Shirdi Sai Baba",
+        description:`Pictures of the living - famous human personalities, other living beings (as in May 2024 occasional). Places and famous structures. Events, Misc. Themes. 
+                    (But Mumbai City related drawing warrant a separate, independent group!!)`,
+        roleBasedDescription:`ADD:Also some chosen religious and spirtual themes: NOTS superuser, sanatan,guru'`,
+        
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'}
+        ],
+        
+    }, 
+    {
+        parentKey:"top-level", key: "transport-and-machines", levelIndex:1,isLeafParent:false, accessible:['all'],
+        label: "Transport And Machines",
+        description:`Trains, Cars, Planes, Ships, Military equipment. Anything that is mechanical`,
+        
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'transport-and-machines', label: 'Transport And Machines'}
+        ],
+        
+    }, 
+    {
+        parentKey:"top-level", key: "mumbai-meri-jaan", levelIndex:1,isLeafParent:false, accessible:['all'],
+        label: "Salaam Mumbai",
+        description:`Dedication to the City that is part of me that I am part of. Wherever I am`,
+        
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'mumbai-meri-jaan', label: 'Salaam Mumbai'}
+        ],
+        
+    }, 
+    {
+        parentKey:"top-level", key: "misc", levelIndex:1,isLeafParent:false, accessible:['all'],
+        label: "Misc.",
+        description:`Those items which is pending, or are too few to have a separate category`,
+        
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'misc', label: 'Misc.'}
+        ],
+        
+    },
     { 
         parentKey: "special-lists", key: 'changers', levelIndex:2, isLeafParent: false, isCompiledList:true, accessible: ["all"], 
         label: 'Changers', 
@@ -45,6 +137,28 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '', params:'changers', label: 'Changers'}
         ],
     }, 
+    { 
+        parentKey: "special-lists", key: 'showpieces', levelIndex:2, isLeafParent: false, isCompiledList:true, accessible: ["all"], 
+        label: 'The Best', 
+        description:`A Year-wise extraction of some of my best efforts,.`,
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'special-lists', label: 'Special Lists'},
+            {link: '', params:'showpieces', label: 'The Best'}
+        ],
+    }, 
+     
+    { 
+        parentKey: "special-lists", key: 'latest-uploads', levelIndex:2, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
+        label: 'Latest Uploads', 
+        description:`Images of drawings uploaded the last 60 days. If there are few, then this will upload latest 2-3 sketches from each theme`,
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'special-lists', label: 'Special Lists'},
+            {link: '', params:'latest-uploads', label: 'Latest Uploads'}
+        ],
+    },
+// ### END SPECIAL LISTS
     { 
         parentKey: "changers", key: 'changers-b4-2022', levelIndex:3, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
         label: 'Changers: before 2022', 
@@ -85,73 +199,108 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '', params:'changers-2024', label: 'Changers: 2024'}
         ], 
     },
-    {
-        parentKey:'top-level', key:"religion-and-gurus",  levelIndex:1, isLeafParent: false,  accessible: ["sanatan", "superuser","guru"],
-        label:  'Religion And Gurus',
+// ### END CHANGERS
+
+ { 
+    parentKey: "showpieces", key: 'showpiece',levelIndex:3, isLeafParent: true,  accessible: ["all"],
+    label:  'The Best: before 2022', 
         breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'religion-and-gurus', label: 'Religion And Gurus'},
+            {link: '/view', params:'special-lists', label: 'Special Lists'},
+            {link: '/view', params:'showpieces', label: 'The Best'},
+            {link: '', params:'showpiece', label: 'The Best: before 2022'}
         ], 
-    },
-    {
-        parentKey:"religion-and-gurus", key: "religious-shree-ganesh", levelIndex:2,isLeafParent:false, accessible:['superuser','sanatan'],
-        label: "Religious: Shree Ganesh",
-        description:'Sketches of, and including Shree Ganesh',
-        
+ },
+   { 
+    parentKey: "showpieces", key: 'showpiece-2022',levelIndex:3, isLeafParent: true,  accessible: ["all"],
+    label:  'The Best of 2022', 
         breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '/view', params:'religion-and-gurus', label: 'Religion And Gurus'},
-            {link: '', params:'religious-shree-ganesh', label: 'Shree Ganesh'}
-        ],
-        
+            {link: '/view', params:'special-lists', label: 'Special Lists'},
+            {link: '/view', params:'showpieces', label: 'Changers'},
+            {link: '', params:'showpiece-2022', label: 'The Best of 2022'}
+            ], 
     },
+    { 
+        parentKey: "showpieces", key: 'showpiece-2023',levelIndex:3, isLeafParent: true,  accessible: ["all"],
+        label:  'The Best of 2023', 
+            breadCrumb:[
+                {link: '/view', params:'top-level', label: 'HOME'},
+                {link: '/view', params:'special-lists', label: 'Special Lists'},
+                {link: '/view', params:'showpieces', label: 'Changers'},
+                {link: '', params:'showpiece-2023', label: 'The Best of 2023'}
+            ], 
+    },
+    { 
+        parentKey: "showpieces", key: 'showpiece-2024',levelIndex:3, isLeafParent: true,  accessible: ["all"],
+        label:  'The Best of 2024', 
+            breadCrumb:[
+                {link: '/view', params:'top-level', label: 'HOME'},
+                {link: '/view', params:'special-lists', label: 'Special Lists'},
+                {link: '/view', params:'showpieces', label: 'Changers'},
+                {link: '', params:'showpiece-2024', label: 'The Best of 2024'}
+            ], 
+    },
+ 
+// ### END SHOWPIECES
+    
+   
     {
-        parentKey:"religious-shree-ganesh", key: "shree-ganesh-b4-q4-2021", levelIndex:3, isLeafParent:true, accessible:['superuser','sanatan'],
+        parentKey:"religious-shree-ganesh", key: "shree-ganesh-b4-q4-2021", levelIndex:3, isLeafParent:true, accessible:['superuser','sanatani'],
         label: "Shree Ganesh Before Q4 2021",
         description:'Sketches of, and including Shree Ganesh prior to Q4 2021', 
         breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '/view', params:'religion-and-gurus', label: 'Religion And Gurus'},
             {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
             {link: '', params:'shree-ganesh-b4-q4-2021', label: 'Shree Ganesh Before Q4 2021'}
         ],
         
     },
     {
-        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2023", levelIndex:3, isLeafParent:true, accessible:['superuser','sanatan'],
+        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2023", levelIndex:3, isLeafParent:true, accessible:['superuser','sanatani'],
         label: "Shree Ganesh Q1 2023 onward",
         description:'Sketches of, and including Shree Ganesh Q1 2023 to Q1 2024', 
         breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '/view', params:'religion-and-gurus', label: 'Religion And Gurus'},
             {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
             {link: '', params:'shree-ganesh-gte-q1-2023', label: 'Shree Ganesh Q1 2023 onward'}
         ],
         
     },
     {
-        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2024", levelIndex:3, isLeafParent:true, accessible:['superuser','sanatan'],
+        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2024", levelIndex:3, isLeafParent:true, accessible:['superuser','sanatani'],
         label: "Shree Ganesh Q1 2024 onward",
         description:'Sketches of, and including Shree Ganesh Q1 2023 onward', 
         breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '/view', params:'religion-and-gurus', label: 'Religion And Gurus'},
             {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
             {link: '', params:'shree-ganesh-b4-q4-2021', label: 'Shree Ganesh Q1 2024 onward'}
         ],        
     },
     {
-        parentKey:"religion-and-gurus", key: "devi", levelIndex:2,isLeafParent:false, accessible:['superuser','sanatan'],
+        parentKey:"religion-and-gurus", key: "devi", levelIndex:2,isLeafParent:true, accessible:['superuser','sanatani'],
         label: "Religious: Goddesses",
-        description:'Sketches of, and including Shree Ganesh',
+        description:'Sketches of, and including Durga, Laxmi, Saraswati and Avatars',
         
         breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religion-and-gurus', label: 'Religion And Gurus'},
-            {link: '', params:'religious-shree-ganesh', label: 'Shree Ganesh'}
+            {link: '', params:'devi', label: 'Religious: Goddesses'}
         ],
         
-    },  
+    },
+    {
+        parentKey:"religion-and-gurus", key: "devi", levelIndex:2,isLeafParent:true, accessible:['superuser','sanatani'],
+        label: "Religious: Goddesses",
+        description:'Sketches of, and including Durga, Laxmi, Saraswati and Avatars',
+        
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'religion-and-gurus', label: 'Religion And Gurus'},
+            {link: '', params:'devi', label: 'Religious: Goddesses'}
+        ],
+        
+    },    
 ]
 /*
 
@@ -160,16 +309,8 @@ export const MenuTree: MenuItem[] = [
    
     
    
-    { parentKey: "special-lists", label:  'The Best: before 2022', isLeafParent: false, key: 'showpiece', accessible: ["all"] },
-    { parentKey: "special-lists", label:  '- 2022', isLeafParent: false, key: 'showpiece-2022', accessible: ["all"] },
-    { parentKey: "special-lists", label:  '- 2023', isLeafParent: false, key: 'showpiece-2023', accessible: ["all"] },
-    { parentKey: "special-lists", label:  '- 2024', isLeafParent: false, key: 'showpiece-2024', accessible: ["all"] },
-    { parentKey: "special-lists", label:  'Latest Uploads', isLeafParent: false, key: 'latest-uploads', accessible: ['all'] },
-    { parentKey: "religious-shree-ganesh", accessible:["sanatani"], label:  'Shree Ganesh: pre Q42021 ', isLeafParent: false, ey: 'shree-ganesh',  dateUploaded: '12-11-2021' },
-    { parentKey: "religious-shree-ganesh", accessible:["sanatani"], label:  '- Q4 2021 onward', isLeafParent: true, key: 'shree-ganesh-gte-q4-2021',  dateUploaded: '01-31-2023' },
-    { parentKey: "religious-shree-ganesh", accessible:["sanatani"], label:  '- Q1 2023 onward', isLeafParent: true, key: 'shree-ganesh-gte-q1-2023',  dateUploaded: '03-23-2023' },
-    { parentKey: "religious-shree-ganesh", accessible:["sanatani"], label:  '- Q1 2024 onward', isLeafParent: true, key: 'shree-ganesh-gte-q1-2024',  dateUploaded: '04-09-2024' },
-    { parentKey: "religious-other-deities", label:  'Goddesses', isLeafParent: false, key: 'devi', accessible: ["sanatani"], dateUploaded: '01-29-2023' },
+   
+      { parentKey: "religious-other-deities", label:  'Goddesses', isLeafParent: false, key: 'devi', accessible: ["sanatani"], dateUploaded: '01-29-2023' },
     { parentKey: "religious-other-deities", label:  'Mahadev', isLeafParent: false, key: 'mahadev', accessible: ["sanatani"], dateUploaded: '02-01-2023' },
     { parentKey: "religious-other-deities", label:  'Mahadev and Family', isLeafParent: false, key: 'mahadev-family', accessible: ["sanatani"], dateUploaded: '06-01-2023' },
     { parentKey: "religious-other-deities", label:  'Laxmi, Narayan, Shree Ram, and family, Bajrangbali', isLeafParent: false,  dateUploaded: '02-05-2023', key: 'laxmi-vishnu-hanuman', accessible: ["sanatani"] },
@@ -199,129 +340,3 @@ export const MenuTree: MenuItem[] = [
     { tab:"Admin", label:  'technical', isLeafParent: false, key: 'technical', accessible: ['non-living', 'all'], dateUploaded: '05-12-2021' },
 ];
 */
-// #### IN TRANSIT .. OLDER ITERATION
-/*
-
-export interface TreeNode {
-    key:string; // unique id.. like a primary key, also picture list loader for leaf
-    parentKey?:string; // like a foreign key and establishing parent. optional()
-    // better safe than optimal 
-    label:string; 
-    description?:string ;
-    roleBasedDescription?: string;
-    isLeafParent:boolean;
-    accessible?:string[]; // roles match users roles many to many match
-    isLeafren?:TreeNode[]; // noSQL wannabe; unused now
-}
-export interface TreeNodeCollection {
-    parentKey?:string; // like a foreign key and establishing parent. optional()
-    levelIndex?:number;
-    breadCrumb:BreadCrumb[]; // better safe than optimal for now May 3 2024
-    treeNodeElements:TreeNode[];
-}
-export const TopLevelCollection:TreeNodeCollection = 
-{
-    levelIndex:0,
-    breadCrumb:[
-        {link: '', params:'top-level', label: 'HOME'}
-    ],
-    treeNodeElements:[{
-        key: "special-lists",
-        label: "Special Lists",
-        description:'Extracted works from the entire collection like best attempts, something new, latest sketches, etc',
-        isLeafParent:false,
-        accessible:['all']
-    },
-    {
-        key: "religious-shree-ganesh",
-        label: "Religious: Shree Ganesh",
-        description:'Sketches of, and including Shree Ganesh',
-        isLeafParent:false,
-        accessible:['superuser','sanatan']
-    }
-    ,
-    {
-        key: "religious-other-deities",
-        label: "Religious: Other Deities, etc",
-        description:'Shankar Parvati, Vishnu. Other drawings in this genre',
-        isLeafParent:false,
-        accessible:['superuser','sanatan']
-    }
-    ,
-    {
-        key: "religious-gurus-and-mystics",
-        label: "Religious: Gurus And Mystics",
-        description:`Gurus and Preachers related to Spirituality, like Lord Dattatreya and Avatars, the Sikh Gurus. 
-                        Shirdi Sai sketches being many are under a separate bucket`,
-        isLeafParent:false,
-        accessible:['superuser','guru']
-    }
-    
-    ,
-    {
-        key: "shirdi-sai",
-        label: "Religious: Shirdi Sai Baba",
-        description:`Sadguru Shirdi Sai I have made so many drawings that it makes logical sense to put this in a separate bucket`,
-        isLeafParent:false,
-        accessible:['superuser','guru']
-    }, {
-        key: "otherbeings-places-events",
-        label: "Beings, Places and Themes ",
-
-        description:`Pictures of the living - famous human personalities, other living beings (as in May 2024 occasional). Places and famous structures. Events, Misc. Themes. 
-                  (But Mumbai City related drawing warrant a separate, independent group!!)`,
-        roleBasedDescription:`ADD:Also some chosen religious and spirtual themes: NOTS superuser, sanatan,guru'`,
-       
-        isLeafParent:false,
-        accessible:['superuser','people'],// ??=>, 'all']
-    }, {
-        key: "mumbai-meri-jaan",
-        label: "Salaam Mumbai",
-
-        description:`Dedication to the City that is part of me that I am part of. Wherever I am`,
-        isLeafParent:false,
-        accessible:['superuser','people'],// ??=>, 'all']
-    },
-    {
-        key: "transport-and-machines",
-        label: "Transport and Machines",
-        description:`Trains, Cars, Planes, Ships, Military equipment. Anything that is mechanical`,
-        isLeafParent:false,
-        accessible:['all']
-    },
-    ]
-};
-
-export const ShreeGaneshCollection:TreeNodeCollection = 
-{
-    parentKey: 'religious-shree-ganesh',
-    breadCrumb:[
-        {link: '/view', params:'top-level', label: 'HOME'},
-        {link: '', params:'religious-shree-ganesh', label: 'Shree Ganesh'}
-    ],
-    
-    levelIndex: 1,
-    treeNodeElements:[{
-        key: "shree-ganesh-b4-q4-2021",
-        label: "Shree Ganesh Before Q4 2021",
-        description:'Extracted works from the entire collection like best attempts, something new, latest sketches, etc',
-        isLeafParent:false,
-        accessible:['all']
-    },
-    {
-        key: "shree-ganesh-gte-q4-2021",
-        label: "Shree Ganesh  Q4 2021 to Q1 2023",
-        description:'Sketches of, and including Shree Ganesh',
-        isLeafParent:false,
-        accessible:['superuser','sanatan']
-    }
-    ,
-    {
-        key: "shree-ganesh-gte-q1-2023",
-        label: "Shree Ganesh Q1 2023 to Q1 2024",
-        description:'Shankar Parvati, Vishnu. Other drawings in this genre',
-        isLeafParent:false,
-        accessible:['superuser','sanatan']
-    }
-    ]
-};*/

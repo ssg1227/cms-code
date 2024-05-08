@@ -6,12 +6,15 @@
                     [routerLink]="[breadCrumb.link,breadCrumb.params]" 
                             (click)="compareSelected(breadCrumb.params,0)">{{breadCrumb.label}} >>> </a> 
                 <span *ngIf="breadCrumb.link == ''">{{breadCrumb.label}}</span>
-            </span>
+            </span><br/><div>    {{parentDescripion}}</div>
+        
         </div>
         <div id="upper-ten-central-box">
             <input type='button' value='Logout'  (click)='cmsLogout()'>
         </div>
+        
     </div>
+    <br/>
     <div  class="lower-ninety outerdiv" >
         <div *ngFor="let grpImag of currentCardList; let i = index;">
           <app-card 
