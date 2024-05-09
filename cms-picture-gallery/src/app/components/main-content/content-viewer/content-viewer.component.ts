@@ -24,17 +24,26 @@ export class ContentViewerComponent {
   appTitle= staticText.appTitle;
   appAuthor= staticText.appAuthor;
   appContent = staticText.introContentList[0];
+  isLeafParent = localStorage.getItem("isLeafParent") ;
+  key = localStorage.getItem("key");
   currentCardList:TreeNodeElement[] = this.coreContentService.setCurrentCardList() ;
   currentCellSelected = 0 ;
   constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService) {
   
   }
   ngOnInit() {
+    this.isLeafParent = localStorage.getItem("isLeafParent") ;
+    this.key = localStorage.getItem("key");
+    console.log(`${this.isLeafParent} ${this.key }`) ;
    }
+ 
   cmsLogout(){
     this.authService.logout() ;
    }
    compareSelected(a:any, b:any) {
+    this.isLeafParent = localStorage.getItem("isLeafParent") ;
+    this.key = localStorage.getItem("key");
+    console.log(`${this.isLeafParent} ${this.key }`) ;
       if(isNaN(a)) {
         localStorage.setItem('current-menu',a);
         this.router.navigate([`/view`, a]).then( (e) => {

@@ -3,9 +3,9 @@
   [ngClass]="toggleCardSize()" 
  
   (mouseover)="toggleCardState()" (mouseout)="toggleCardState()" (click)="expand()" >
-  <div [routerLink]="[ViewLink,imageDetail.key]">  
+  <div [routerLink]="[ViewLink,cardInfo.key]">  
     
-    <div [innerHTML]="imageDetail.label"></div>
+    <div [innerHTML]="cardInfo.label"></div>
   </div>
    <!--- WORKING ON STITCHING OLD IMAGE LOGIC INTO THE NEW CARD TREE- BREAD CRUMB STRUCTURE
  <div class="card-image" *ngIf="imageDetail.isLeafParent == true; else isNotLeaf"   (click)="expand()"  > 

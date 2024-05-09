@@ -13,6 +13,7 @@ export interface TreeNodeElement {
     roleBasedDescription?: string;
     isCompiledList?:boolean; // use some criteria to load selected images like latest uploads or top rated
     isLeafParent:boolean; // 'true' = load the image list for that menu kee, 'false' = top or middle node
+    dateUploaded?:string;
     accessible?:string[]; // roles match users roles many to many match
     
 }
@@ -59,13 +60,13 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     }, 
     {
-        parentKey:"top-level", key: "religious-gurus-mystics", levelIndex:1,isLeafParent:false, accessible:['superuser','sanatani','guru'],
+        parentKey:"top-level", key: "religious-gurus-and-mystics", levelIndex:1,isLeafParent:false, accessible:['superuser','sanatani','guru'],
         label: "Religious: Gurus and Mystics",
         description:'Sketches of Spiritual Masters, Mystics - Lord Dattatreya and Lineage, Sikh Gurus, Others',
         
         breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'religious-gurus-mystics', label: 'Religious: Gurus and Mystics'}
+            {link: '', params:'religious-gurus-and-mystics', label: 'Religious: Gurus and Mystics'}
         ],
         
     }, 
@@ -76,20 +77,20 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
         breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'religious-gurus-mystics', label: 'Religious: Gurus and Mystics'}
+            {link: '', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'}
         ],
         
     }, 
     {
-        parentKey:"top-level", key: "people-places-themes", levelIndex:1,isLeafParent:false, accessible:['superuser','people'],
-        label: "Religious: Shirdi Sai Baba",
+        parentKey:"top-level", key: "otherbeings-places-events", levelIndex:1,isLeafParent:false, accessible:['superuser','people'],
+        label: "Beings, Places and Themes",
         description:`Pictures of the living - famous human personalities, other living beings (as in May 2024 occasional). Places and famous structures. Events, Misc. Themes. 
                     (But Mumbai City related drawing warrant a separate, independent group!!)`,
         roleBasedDescription:`ADD:Also some chosen religious and spirtual themes: NOTS superuser, sanatan,guru'`,
         
         breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'}
+            {link: '', params:'otherbeings-places-events', label: 'Beings, Places and Themes'}
         ],
         
     }, 
@@ -126,6 +127,8 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],
         
     },
+    // #### LEVEL 2
+    // special lists - added one more layer 
     { 
         parentKey: "special-lists", key: 'changers', levelIndex:2, isLeafParent: false, isCompiledList:true, accessible: ["all"], 
         label: 'Changers', 
@@ -158,6 +161,138 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '', params:'latest-uploads', label: 'Latest Uploads'}
         ],
     },
+    {
+        parentKey:"religious-shree-ganesh", key: "shree-ganesh-b4-q4-2021", levelIndex:2, isLeafParent:true, accessible:['superuser','sanatani'],
+        label: "Shree Ganesh Before Q4 2021",
+        description:'Sketches of, and including Shree Ganesh prior to Q4 2021', 
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
+            {link: '', params:'shree-ganesh-b4-q4-2021', label: 'Shree Ganesh Before Q4 2021'}
+        ],
+        
+    }
+    ,
+    {
+        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q4-2021", levelIndex:2, isLeafParent:true, accessible:['superuser','sanatani'],
+        label: "Shree Ganesh Q4 2021 onward",
+        description:'Sketches of, and including Shree Ganesh Ganesh Q4 2021 to Q1 2023', 
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
+            {link: '', params:'shree-ganesh-gte-q4-2021', label: 'Shree Ganes Q4 2021 onward'}
+        ],
+        
+    },
+    {
+        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2023", levelIndex:2, isLeafParent:true, accessible:['superuser','sanatani'],
+        label: "Shree Ganesh Q1 2023 onward",
+        description:'Sketches of, and including Shree Ganesh Q1 2023 to Q1 2024', 
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
+            {link: '', params:'shree-ganesh-gte-q1-2023', label: 'Shree Ganesh Q1 2023 onward'}
+        ],
+        
+    },
+    {
+        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2024", levelIndex:2, isLeafParent:true, accessible:['superuser','sanatani'],
+        label: "Shree Ganesh Q1 2024 onward",
+        description:'Sketches of, and including Shree Ganesh Q1 2023 onward', 
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
+            {link: '', params:'shree-ganesh-b4-q4-2021', label: 'Shree Ganesh Q1 2024 onward'}
+        ],        
+    },    
+    {
+        parentKey:"religious-other-deities", key: "devi", levelIndex:2,isLeafParent:true, accessible:['superuser','sanatani'],
+        label: "Goddesses",
+        description:'Sketches of, and including Durga, Laxmi, Saraswati and Avatars',
+        
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'religious-other-deities', label: 'Religious: Other Deities'},
+            {link: '', params:'devi', label: 'Goddesses'}
+        ],
+        
+    },
+    {
+        parentKey:"religious-other-deities", key: "mahadev", levelIndex:2,isLeafParent:true, accessible:['superuser','sanatani'],
+        label: "Mahadev",
+        description:'Sketches of, and related to, Lord Shiva',
+        
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'religious-other-deities', label: 'Religious: Other Deities'},
+            {link: '', params:'mahadev', label: 'Mahadev'}
+        ],
+        
+    },
+    {
+        parentKey:"religious-other-deities", key: "mahadev-family", levelIndex:2,isLeafParent:true, accessible:['superuser','sanatani'],
+        label: "Mahadev Family",
+        description:'Sketches of, and related to groupings of two or more of  Lord Ganesh, Maa Parvati, Lord Shiva and Karthikeya',
+        
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'religious-other-deities', label: 'Religious: Other Deities'},
+            {link: '', params:'mahadev', label: 'Mahadev Family'}
+        ],
+        
+    },
+    {
+        parentKey:"religious-other-deities", key: "laxmi-vishnu-hanuman", levelIndex:2,isLeafParent:true, accessible:['superuser','sanatani'],
+        label: "Narayan, Laxmi, Hanuman",
+        description:'Sketches of, and including Laxmi, Narayan, Shree Ram, and family, Bajrangbali',
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'religious-other-deities', label: 'Religious: Other Deities'},
+            {link: '', params:'laxmi-vishnu-hanuman', label: 'Narayan, Laxmi, Hanuman'}
+        ],
+        
+    }, { 
+        parentKey: "religious-gurus-and-mystics", key: 'dattavatar', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible:['superuser','guru'],
+        label:  'Spiritual Souls:Datta Lineage, Sikhs, East of India',  
+        description:`श्री गुरु स्मरण ... श्री गुरु नमन ... श्री गुरु चरण ... श्री गुरु शरण .. अवधूत चिंतन ... श्री गुरुदेव दत्त
+Guru's of Lord Dattatreya lineage and Sikh Gurus... there are likely to be maybe a couple of sketches of Shirdi Sai here; I have many of them, so have separate sections for the same.. 
+Also increasing numbers of Swami Samartha sketches`,
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'religious-gurus-and-mystics', label: 'Religious: Gurus and Mystics'},
+            {link: '', params:'dattavatar', label: 'Spiritual Souls:Datta Lineage, Sikhs, East of India'}
+        ]
+    },
+    {    parentKey: "religious-gurus-and-mystics", key: 'swami-samartha', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible:['superuser','guru'],
+        label:  'Shree Swami Samartha pre Q2 2023',  
+        description: 'Swami Samartha the 4th Avatar of Shree Dattatreya (sequence include Lord Datta Himself). Drawings before Q2 2023' ,
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'religious-gurus-and-mystics', label: 'Religious: Gurus and Mystics'},
+            {link: '', params:'swami-samartha', label: 'Shree Swami Samartha pre Q2 2023'}
+        ]
+    },
+    {    parentKey: "religious-gurus-and-mystics", key: 'swami-samartha-q2-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible:['superuser','guru'],
+        label:  'Shree Swami Samartha Q2 2023 onward',  
+        description: 'Swami Samartha the 4th Avatar of Shree Dattatreya (sequence include Lord Datta Himself). Drawings from Q2 2023' ,
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'religious-gurus-and-mystics', label: 'Religious: Gurus and Mystics'},
+            {link: '', params:'swami-samartha-q2-2023', label: 'Shree Swami Samartha Q2 2023 onward'}
+        ]
+    },
+    /*
+   
+ 
+    { parentKey: "shirdi-sai", key: 'shirdi-sai-q1-q2-2021', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  'Shirdi Sai: to  Q3 2021', isLeafParent: true, parent: true, accessible: ['superuser',"guru"], dateUploaded: '02-07-2023'  },
+    { parentKey: "shirdi-sai", key: 'shirdi-sai-q3-q4-2021', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  '- Q3 2021 - Q1 2022', isLeafParent: true, accessible: ['superuser',"guru"], dateUploaded: '03-31-2022' },
+    { parentKey: "shirdi-sai", key: 'shirdi-sai-q2-q3-2022', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  '- Q2 Q3 2022', isLeafParent: true, accessible: ['superuser',"guru"], dateUploaded: '02-07-2023' },
+    { parentKey: "shirdi-sai", key: 'shirdi-sai-q4-2022-q1-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  '- Q3,Q4 2022 Q1 2023', isLeafParent: true, accessible: ['superuser',"guru"], dateUploaded: '03-02-2023' },
+    { parentKey: "shirdi-sai", key: 'shirdi-sai-q2-q3-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  '- Q2 Q3 2023', isLeafParent: true, accessible: ['superuser',"guru"], dateUploaded: '06-02-2023' },
+    { parentKey: "shirdi-sai", key: 'shirdi-sai-q4-2023-q1-2024', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  '- Q4 2023 Q1 2024', isLeafParent: true, accessible: ['superuser',"guru"], dateUploaded: '04-14-2024' },
+    { parentKey: "shirdi-sai", key: 'baba-themes-1', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  '- Sai Satcharitra', isLeafParent: true, ccessible: ['superuser',"guru"], dateUploaded: '02-28-2022' },
+     
+    */
 // ### END SPECIAL LISTS
     { 
         parentKey: "changers", key: 'changers-b4-2022', levelIndex:3, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
@@ -245,62 +380,6 @@ export const MenuTreeElements:TreeNodeElement[] = [
 // ### END SHOWPIECES
     
    
-    {
-        parentKey:"religious-shree-ganesh", key: "shree-ganesh-b4-q4-2021", levelIndex:3, isLeafParent:true, accessible:['superuser','sanatani'],
-        label: "Shree Ganesh Before Q4 2021",
-        description:'Sketches of, and including Shree Ganesh prior to Q4 2021', 
-        breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
-            {link: '', params:'shree-ganesh-b4-q4-2021', label: 'Shree Ganesh Before Q4 2021'}
-        ],
-        
-    },
-    {
-        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2023", levelIndex:3, isLeafParent:true, accessible:['superuser','sanatani'],
-        label: "Shree Ganesh Q1 2023 onward",
-        description:'Sketches of, and including Shree Ganesh Q1 2023 to Q1 2024', 
-        breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
-            {link: '', params:'shree-ganesh-gte-q1-2023', label: 'Shree Ganesh Q1 2023 onward'}
-        ],
-        
-    },
-    {
-        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2024", levelIndex:3, isLeafParent:true, accessible:['superuser','sanatani'],
-        label: "Shree Ganesh Q1 2024 onward",
-        description:'Sketches of, and including Shree Ganesh Q1 2023 onward', 
-        breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
-            {link: '', params:'shree-ganesh-b4-q4-2021', label: 'Shree Ganesh Q1 2024 onward'}
-        ],        
-    },
-    {
-        parentKey:"religion-and-gurus", key: "devi", levelIndex:2,isLeafParent:true, accessible:['superuser','sanatani'],
-        label: "Religious: Goddesses",
-        description:'Sketches of, and including Durga, Laxmi, Saraswati and Avatars',
-        
-        breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '/view', params:'religion-and-gurus', label: 'Religion And Gurus'},
-            {link: '', params:'devi', label: 'Religious: Goddesses'}
-        ],
-        
-    },
-    {
-        parentKey:"religion-and-gurus", key: "devi", levelIndex:2,isLeafParent:true, accessible:['superuser','sanatani'],
-        label: "Religious: Goddesses",
-        description:'Sketches of, and including Durga, Laxmi, Saraswati and Avatars',
-        
-        breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '/view', params:'religion-and-gurus', label: 'Religion And Gurus'},
-            {link: '', params:'devi', label: 'Religious: Goddesses'}
-        ],
-        
-    },    
 ]
 /*
 
@@ -309,22 +388,7 @@ export const MenuTree: MenuItem[] = [
    
     
    
-   
-      { parentKey: "religious-other-deities", label:  'Goddesses', isLeafParent: false, key: 'devi', accessible: ["sanatani"], dateUploaded: '01-29-2023' },
-    { parentKey: "religious-other-deities", label:  'Mahadev', isLeafParent: false, key: 'mahadev', accessible: ["sanatani"], dateUploaded: '02-01-2023' },
-    { parentKey: "religious-other-deities", label:  'Mahadev and Family', isLeafParent: false, key: 'mahadev-family', accessible: ["sanatani"], dateUploaded: '06-01-2023' },
-    { parentKey: "religious-other-deities", label:  'Laxmi, Narayan, Shree Ram, and family, Bajrangbali', isLeafParent: false,  dateUploaded: '02-05-2023', key: 'laxmi-vishnu-hanuman', accessible: ["sanatani"] },
-    { parentKey: "religious-gurus-and-mystics", label:  'Spiritual Souls:Datta Lineage, Sikhs, East of India', isLeafParent: false, parent:true, dateUploaded: '02-13-2023', key: 'dattavatar', accessible: ["guru"] },
-    { parentKey: "religious-gurus-and-mystics", label:  'Shree Swami Samartha', isLeafParent: false, key: 'swami-samartha', accessible: ["sanatani"], dateUploaded: '04-24-2023' },
-    { parentKey: "religious-gurus-and-mystics", label:  'Shree Swami Samartha (Q2 2023 onward)', isLeafParent: false, key: 'swami-samartha-q2-2023', accessible: ["guru"], dateUploaded: '04-13-2024' },
-    { parentKey: "shirdi-sai", label:  'Shirdi Sai: to  Q3 2021', isLeafParent: false, parent: true, key: 'shirdi-sai-q1-q2-2021', accessible: ["guru"], dateUploaded: '02-07-2023'  },
-    { parentKey: "shirdi-sai", label:  '- Q3 2021 - Q1 2022', isLeafParent: true, key: 'shirdi-sai-q3-q4-2021', accessible: ["guru"], dateUploaded: '03-31-2022' },
-    { parentKey: "shirdi-sai", label:  '- Q2 Q3 2022', isLeafParent: true, key: 'shirdi-sai-q2-q3-2022', accessible: ["guru"], dateUploaded: '02-07-2023' },
-    { parentKey: "shirdi-sai", label:  '- Q3,Q4 2022 Q1 2023', isLeafParent: true, key: 'shirdi-sai-q4-2022-q1-2023', accessible: ["guru"], dateUploaded: '03-02-2023' },
-    { parentKey: "shirdi-sai", label:  '- Q2 Q3 2023', isLeafParent: true, key: 'shirdi-sai-q2-q3-2023', accessible: ["guru"], dateUploaded: '06-02-2023' },
-    { parentKey: "shirdi-sai", label:  '- Q4 2023 Q1 2024', isLeafParent: true, key: 'shirdi-sai-q4-2023-q1-2024', accessible: ["guru"], dateUploaded: '04-14-2024' },
-    { parentKey: "shirdi-sai", label:  '- Sai Satcharitra', isLeafParent: true, key: 'baba-themes-1', accessible: ["guru"], dateUploaded: '02-28-2022' },
-    { parentKey: "otherbeings-places-events", label:  'Religion and Gurus', isLeafParent: false, key: 'religion-and-guru', accessible: ['people',  'non-religious', 'all'], dateUploaded: '02-02-2023' },
+     { parentKey: "otherbeings-places-events", label:  'Religion and Gurus', isLeafParent: false, key: 'religion-and-guru', accessible: ['people',  'non-religious', 'all'], dateUploaded: '02-02-2023' },
      { parentKey: "otherbeings-places-events", label:  'People', isLeafParent: false, key: 'people-places', accessible: ['people',  'non-religious', 'all'], dateUploaded: '04-14-2024' },
     { parentKey: "otherbeings-places-events", label:  'Places, Scenes and Objects', isLeafParent: false, key: 'places-scenes-objects', accessible: ['non-living',  'non-religious', 'all'], dateUploaded: '06-01-2023' },
     { parentKey: "otherbeings-places-events", label:  'Misc, Themes', isLeafParent: false, key: 'themes-misc', accessible: ['non-living',  'non-religious', 'all'], dateUploaded: '05-14-2023' },

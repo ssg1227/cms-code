@@ -112,6 +112,8 @@ export class AuthService {
     */
     localStorage.removeItem('userId');
     localStorage.removeItem('current-menu');
+    localStorage.removeItem("isLeafParent");
+    localStorage.removeItem("key");
     /*
     localStorage.removeItem('userMenu');
     localStorage.removeItem('categories');

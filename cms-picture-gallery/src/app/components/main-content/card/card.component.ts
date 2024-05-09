@@ -27,6 +27,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 export class CardComponent {
   @Input() cardIndex = 0 ;
   @Input() cardSelected = 0 ;
+  @Input() cardInfo:any = null ;
   @Input() imageDetail:any = null ;
   @Input() isLarge:boolean = false ;
   @Output() clickedIndex = new EventEmitter<string>() ;
@@ -37,7 +38,6 @@ export class CardComponent {
     return this._viewLink;
   }
   ngOnInit(): void {
-    console.log(JSON.stringify(this.imageDetail.imageList))
   }
   toggleCardState() {
     this.cardState = this.cardState === 'default' ? 'hover' : 'default';
@@ -52,10 +52,11 @@ export class CardComponent {
     if (this.isLarge === true) {
       return ;
     }
-    localStorage.setItem("isParentLeaf", this.imageDetail.isLeafParent.toString());
+    localStorage.setItem("isLeafParent", this.cardInfo.isLeafParent.toString());
+    localStorage.setItem("key", this.cardInfo.key);
    // this,this.imageDetail.isLeafParent === true?
    //   this.clickedIndex.emit(this.cardIndex.toString()):
-      this.clickedIndex.emit(this.imageDetail.key);
+      this.clickedIndex.emit(this.cardInfo.key);
   }
   
   toggleCardSize() { 
