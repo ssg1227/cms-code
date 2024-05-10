@@ -54,6 +54,10 @@ export class CardComponent {
     }
     localStorage.setItem("isLeafParent", this.cardInfo.isLeafParent.toString());
     localStorage.setItem("key", this.cardInfo.key);
+    localStorage.setItem("isCompiledList", `false`);
+    if(this.cardInfo.isLeafParent===true && this.cardInfo.isCompiledList===true) {
+      localStorage.setItem("isCompiledList", this.cardInfo.isCompiledList.toString());
+    } 
    // this,this.imageDetail.isLeafParent === true?
    //   this.clickedIndex.emit(this.cardIndex.toString()):
       this.clickedIndex.emit(this.cardInfo.key);

@@ -1,7 +1,18 @@
 
 # LOG OF CHANGES #
 "CMS Picture Gallery" by Shantanu Gadkari
-### Log May 7 2024
+### TODOs
+- revisit logic and try to debug/optimize isLeafParent/ query params to identify leaf page versus branch
+- review and as required, revamp of image load (JSON files on image list are too many; will have to work with the original structure itself)
+- solid authentication logic. adding the admin stuff 
+- in memory - caching, avoiding time outs
+- mail form 
+### Log May 10
+- To see images loading at leaf level for non compiled themes. Merging old code for now.
+- Time permitting, an initial publish (probably use art-is-worship)
+### Log May 7 - 9 2024
+- Base for image loading established.
+- Population of (menu) tree node wip
 - Navigation implementation direction narrowed down.
 - It is now built over the old (menu-tree) logic, using a tree, JSON is a flattened list with key, parent key and leaf parent indicator (true/false)
 - Breadcrumbs currently hard coded as a list with each node

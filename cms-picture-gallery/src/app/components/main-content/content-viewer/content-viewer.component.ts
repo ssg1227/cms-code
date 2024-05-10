@@ -6,6 +6,8 @@ import  { AuthService } from 'src/app/services/auth.service';
 import { CoreContentService } from 'src/app/services/core-content.service';
 import { TreeNodeElement } from 'src/assets/content-tree/tree-nodes' ;
 import { BreadCrumb } from 'src/assets/content-tree/bread-crumbs';
+
+import { ImageElement, ContentList } from 'src/assets/gallery-files/lists-and-other/image-lists/shared/image-detail' ;
 @Component({
   selector: 'app-content-viewer',
   templateUrl: './content-viewer.component.html',
@@ -25,24 +27,66 @@ export class ContentViewerComponent {
   appAuthor= staticText.appAuthor;
   appContent = staticText.introContentList[0];
   isLeafParent = localStorage.getItem("isLeafParent") ;
-  key = localStorage.getItem("key");
+  key = '';
+  isCompiledList = localStorage.getItem("isCompiledList");
   currentCardList:TreeNodeElement[] = this.coreContentService.setCurrentCardList() ;
   currentCellSelected = 0 ;
+  // image listing
+  allImageList:ImageElement[] = [];
+  genImageList:any = null ;
+  imageGroups:any[] = [];
+
+  themeHeader:string ='';
+  themeSummary:string = '';
+  currentIndex:number = 0 ;
+  sortThumbnails:string = '';
+  selectedImageList:any[] = [ ];
+  selectedImage:any = null;
+  currentImage =  this.selectedImageList[0]; // `assets/all-images-demo/starters/su-30-1.jpeg`;
+  iterationIndex = 0;
+  _actualSize:boolean = false;
+  _iterations:boolean = false ;
+  newLook=true ;
+  //..
   constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService) {
   
   }
   ngOnInit() {
     this.isLeafParent = localStorage.getItem("isLeafParent") ;
-    this.key = localStorage.getItem("key");
+    if(localStorage.getItem("key") !== null) {
+      // @ts-ignore: Object is possibly 'null'.
+      this.key = localStorage.getItem('key')|'';
+    }
+    this.isCompiledList = localStorage.getItem("isCompiledList");
+  
     console.log(`${this.isLeafParent} ${this.key }`) ;
+    if (this.isLeafParent === 'true') {
+      const dataReturned = this.coreContentService.loadSelectedContent(this.key);
+        this.genImageList = dataReturned.gen ; 
+        this.allImageList = this.genImageList.allImageList;
+        console.log('test');
+    }
    }
  
   cmsLogout(){
     this.authService.logout() ;
    }
    compareSelected(a:any, b:any) {
+    console.log(`${a} ${b}`)
     this.isLeafParent = localStorage.getItem("isLeafParent") ;
-    this.key = localStorage.getItem("key");
+    if (this.isLeafParent === 'true') {
+      this.imageGroups = [] ;
+      // @ts-ignore: Object is possibly 'null'.
+      this.key = localStorage.getItem('key')|'';
+      const dataReturned = this.coreContentService.loadSelectedContent(a);
+      if (dataReturned !== undefined && dataReturned !== null) {
+       this.genImageList = dataReturned.gen ; 
+        this.allImageList = this.genImageList.allImageList;
+        this.loadImages() ;
+      }
+      console.log('test');
+    }
+   // this.key = localStorage.getItem("key");
     console.log(`${this.isLeafParent} ${this.key }`) ;
       if(isNaN(a)) {
         localStorage.setItem('current-menu',a);
@@ -57,5 +101,73 @@ export class ContentViewerComponent {
           }
         });
       }
+   }
+   loadImages() {
+
+    let foundList:ImageElement[] = [] ;
+    foundList = /*strParam === 'latest-uploads' || 'showpiece' ?*/ this.allImageList ;  
+     //  : this.allImageList.filter(x => x.folder === param.get('theme'));// themed.params.theme.toString()); **later
+        if (foundList !== null && foundList.length > 0) {
+          let foundFolder = foundList[0].folder;
+          this.themeHeader = '';
+          this.themeSummary = '';
+          if(foundList[0].theme) this.themeHeader = foundList[0].theme; 
+          if(foundList[0].themeSummary) this.themeSummary = foundList[0].themeSummary; 
+          this.selectedImageList = [];
+          this.imageGroups = [];
+          foundList[0]
+              .files
+              .forEach( (fileData:any) => {
+                let groupImages:any[] = [] ;
+                let stats = '';
+           //      stats = this.techStats(fileData) ; **LATER 
+                console.log(`STATS for single file ${stats} ${fileData.fullFileName}`);
+                  if(stats.indexOf('Canvass') >= 0) {
+                    fileData.description = `${fileData.description}<br/>(<em> ${stats}}</em>)`;
+                  }    
+                  
+                if(fileData.iterations !== undefined && fileData.iterations.length > 0) {
+                  fileData.iterations.forEach((element:any, index:number) => {
+                    let descrAndStats = index === 0 ?
+                    stats.indexOf('Canvass') >= 0? element.description: `${element.description}<br/>(<em> ${stats}}</em>)` :  element.description;
+                    groupImages.push(
+                        { image: element.fullFileName, 
+                          description:    element.description});
+                          //          description:  index === 0 ? fileData.description:  element.description});
+                 
+                  });
+                  groupImages[0].description =`${groupImages[0].description }<br/>(<em> ${stats}}</em>)`
+                } else {
+                  fileData.fullFileName? 
+                    groupImages.push({ image: fileData.fullFileName, 
+                      description: fileData.description}): 
+                    groupImages.push({ image: `assets/all-images/${foundFolder}/${fileData.fileName}`, 
+               //           description: fileData.description });
+               //  
+                          description: stats === ''? fileData.description: `${fileData.description}<br/>(<em> ${stats}}</em>)`});
+                }
+                this.imageGroups.push({ imageList:groupImages} );
+                fileData.fullFileName? 
+                  this.selectedImageList.push({ 
+                    iterativeText: fileData.iterativeText?`${fileData.iterativeText}`:'',
+                    image: `${fileData.fullFileName}`, 
+                    title: fileData.description,
+                    iterations: fileData.iterations? fileData.iterations:[],
+                    iterationIndex:0 }):
+                  this.selectedImageList.push({ 
+                    image: `assets/all-images/${foundFolder}/${fileData.fileName}`, 
+                    title: fileData.description,
+                    iterations: fileData.iterations? fileData.iterations:[],
+                    iterationIndex:0 
+                   });
+              });
+          }
+          this.currentIndex = 0;
+          this.currentImage = this.selectedImageList[0];
+          if (this.currentImage.iterations !== null && this.currentImage.iterations.length > 0) {
+            //this.currentImage.iterations.unshift(this.currentImage.image );
+            this.currentImage.iterationIndex = 0;
+          
+          }
    }
 }

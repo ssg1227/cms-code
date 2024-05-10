@@ -3,12 +3,12 @@
   [ngClass]="toggleCardSize()" 
  
   (mouseover)="toggleCardState()" (mouseout)="toggleCardState()" (click)="expand()" >
-  <div [routerLink]="[ViewLink,cardInfo.key]">  
+  <div  *ngIf="imageDetail == null;"[routerLink]="[ViewLink,cardInfo.key]">  
     
     <div [innerHTML]="cardInfo.label"></div>
   </div>
-   <!--- WORKING ON STITCHING OLD IMAGE LOGIC INTO THE NEW CARD TREE- BREAD CRUMB STRUCTURE
- <div class="card-image" *ngIf="imageDetail.isLeafParent == true; else isNotLeaf"   (click)="expand()"  > 
+   <!--- WORKING ON STITCHING OLD IMAGE LOGIC INTO THE NEW CARD TREE- BREAD CRUMB STRUCTURE-->
+ <div class="card-image" *ngIf="imageDetail != null;"   (click)="expand()"  > 
  
  <img src="{{imageDetail.imageList[0].image}}" [title]="imageDetail.imageList[0].description" [ngClass]="toggleImageSize()" >
  
@@ -18,11 +18,4 @@
   
  </div>
 
- <ng-template #isNotLeaf>
-  <div [routerLink]="[ViewLink,imageDetail.key]">  
-    
-    <div [innerHTML]="imageDetail.label"></div>
-  </div>
- </ng-template>
- -->
 </div>
