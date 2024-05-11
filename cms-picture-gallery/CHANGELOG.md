@@ -7,9 +7,9 @@
 - solid authentication logic. adding the admin stuff 
 - in memory - caching, avoiding time outs
 - mail form 
-### Log May 10
-- To see images loading at leaf level for non compiled themes. Merging old code for now.
-- Time permitting, an initial publish (probably use art-is-worship)
+### Log May 10 - 11
+- ACHIEVED images loading at leaf level for non compiled themes after Merging old code (for now).
+- INITIAL publish (art-is-worship; previous backed up art-worship-2023)
 ### Log May 7 - 9 2024
 - Base for image loading established.
 - Population of (menu) tree node wip

@@ -74,18 +74,27 @@ export class ContentViewerComponent {
    compareSelected(a:any, b:any) {
     console.log(`${a} ${b}`)
     this.isLeafParent = localStorage.getItem("isLeafParent") ;
-    if (this.isLeafParent === 'true') {
-      this.imageGroups = [] ;
-      // @ts-ignore: Object is possibly 'null'.
-      this.key = localStorage.getItem('key')|'';
-      const dataReturned = this.coreContentService.loadSelectedContent(a);
-      if (dataReturned !== undefined && dataReturned !== null) {
-       this.genImageList = dataReturned.gen ; 
-        this.allImageList = this.genImageList.allImageList;
-        this.loadImages() ;
+    if (this.isLeafParent === 'true' && isNaN(a)) {
+        this.imageGroups = [] ;
+        // @ts-ignore: Object is possibly 'null'.
+        this.key = localStorage.getItem('key')|'';
+        const dataReturned = this.coreContentService.loadSelectedContent(a);
+        if (dataReturned !== undefined && dataReturned !== null) {
+          this.genImageList = dataReturned.gen ; 
+          this.allImageList = this.genImageList.allImageList;
+          this.loadImages() ;
+        }
       }
+      if (this.imageGroups.length > 0 && !isNaN(a)) {
+
+      // @ts-ignore: Object is possibly 'null'.
+        document.getElementById('modal-container').style.display = 'flex';
+     this.currentCellSelected = a  ;
+     this.selectedImage = this.imageGroups[a]
+      }
+       
       console.log('test');
-    }
+   
    // this.key = localStorage.getItem("key");
     console.log(`${this.isLeafParent} ${this.key }`) ;
       if(isNaN(a)) {
@@ -169,5 +178,28 @@ export class ContentViewerComponent {
             this.currentImage.iterationIndex = 0;
           
           }
+   }
+
+  multipleImages(selectedImage:any):string {
+    return  ` <div id="pic-container" >
+     <img id="pic" *ngIf="selectedImage != null" src="{{${selectedImage.imageList[0].image}}}">
+   </div>    
+   <div id="text-container" *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  > 1"
+        [innerHTML]="selectedImage.imageList[0].description">
+  
+  </div>
+  <div id="pic-container" *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  > 1">
+   <img id="pic" *ngIf="selectedImage != null" src="{{selectedImage.imageList[1].image}}">
+ </div>    
+ <div id="text-container" *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  > 1"
+      [innerHTML]="selectedImage.imageList[1].description"><br/>`
+   }
+   public techStats(currentImage:any) {
+     return this.coreContentService.techStatsSpan(currentImage);
+   }
+   closeModal() {
+
+      // @ts-ignore: Object is possibly 'null'.
+     document.getElementById('modal-container').style.display = 'none';
    }
 }

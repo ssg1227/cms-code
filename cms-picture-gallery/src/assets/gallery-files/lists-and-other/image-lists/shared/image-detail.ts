@@ -25,7 +25,7 @@ export   interface ImageElement {
     folder:string;
     theme?:string;
     themeSummary?:string;
-    files:ImageDetail[];
+    files:any[];
 } 
 export   interface ContentList {
     contentFile:any ;

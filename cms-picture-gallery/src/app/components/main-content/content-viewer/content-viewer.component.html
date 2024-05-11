@@ -17,7 +17,7 @@
     <br/>
     <div  class="lower-ninety outerdiv" >
      
-       <div *ngIf="isLeafParent=='true' && imageGroups.length > 0">
+       <div *ngIf="isLeafParent=='true' && imageGroups.length > 0" class="outerdiv" ><!-- have to repeat outerdiv for flex style -->
          <div *ngFor="let grpImag of imageGroups; let i = index;">
           <app-card 
           [cardIndex]="i" 
@@ -34,7 +34,8 @@
             [cardSelected]="currentCellSelected"></app-card>
          
        </div>
-  <!-- ##### Uncomment later for image expansion. Refer to content list of old code 
+     
+  <!-- ##### Uncomment later for image expansion. Refer to content list of old code - -->
     <div id="modal-container">
         <span id="close-modal" style="margin:0" (click)="closeModal()">&times;</span>
          <div id="pic-container"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  == 1">
@@ -55,6 +56,6 @@
       
        
     </div>
--->
+
     </div>
   </div>

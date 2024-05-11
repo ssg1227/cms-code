@@ -7,7 +7,7 @@ import { GaneshPreQ42021ImageList } from 'src/assets/gallery-files/lists-and-oth
 import { GaneshGTEQ12023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q1-2023.image.list' ;
 import { GaneshGTEQ42021ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q4-2021.image.list' ;
 import { GaneshGTEQ12024ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q1-2024.image.list' ;
-
+import { DeviImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/devi.image.list';
 @Injectable({
   providedIn: 'root'
 })
@@ -48,9 +48,9 @@ export class CoreContentService {
       this.contentList.push( { contentFile:new GaneshGTEQ42021ImageList(),contentCategory:'shree-ganesh-gte-q4-2021', role:'sanatani'}) ;
       this.contentList.push( { contentFile:new GaneshGTEQ12023ImageList(),contentCategory:'shree-ganesh-gte-q1-2023', role:'sanatani'}) ;
       this.contentList.push( { contentFile:new GaneshGTEQ12024ImageList(),contentCategory:'shree-ganesh-gte-q1-2024', role:'sanatani'}) ;
-      /*
+      
       this.contentList.push( { contentFile:new DeviImageList(),contentCategory:'devi', role:'sanatani'}) ;
-      this.contentList.push( { contentFile:new MahadevImageList(),contentCategory:'mahadev', role:'sanatani'}) ;
+      /*this.contentList.push( { contentFile:new MahadevImageList(),contentCategory:'mahadev', role:'sanatani'}) ;
       this.contentList.push( { contentFile:new MahadevFamilyImageList(),contentCategory:'mahadev-family', role:'sanatani'}) ;
       this.contentList.push( { contentFile:new LaxmiVishnuHanumanList(),contentCategory:'laxmi-vishnu-hanuman', role:'sanatani'}) ;
       this.contentList.push( { contentFile:new DattavatarImageList(),contentCategory:'dattavatar', role:'guru'}) ;
@@ -107,6 +107,52 @@ export class CoreContentService {
       //break;
     //}
      // revisit this logic
+  }
+  public techStatsSpan(fileDetail:any):string {
+    if (!fileDetail || !fileDetail.canvassSize) {
+      return `<p>..</p>`;
+    }
+    let returnHTML = '';
+    if ((fileDetail.canvassSize && fileDetail.canvassSize.trim() !== '') || 
+        (fileDetail.content && fileDetail.content.trim() !== '')){
+      if (fileDetail.canvassSize && fileDetail.canvassSize.trim() !== '') {
+        returnHTML = `${returnHTML} Canvass: `;
+        switch(fileDetail.canvassSize) {
+          case 'A3': returnHTML = `${returnHTML}A3 (11x17)  `; break ;
+          case 'A4': returnHTML = `${returnHTML}A4 (8.5x11)  `; break ;
+          case 'A5': returnHTML = `${returnHTML}A5 (5.83 x 8.27)  `; break ;
+          case 'soft': returnHTML = `${returnHTML}soft copy only`; break ;
+          case 'portion': returnHTML = `${returnHTML}part of larger drawing`; break ;
+          default: returnHTML = `${returnHTML}other size`; break ;
+        }
+      }
+      if (fileDetail.canvassMaterial && fileDetail.canvassMaterial.trim() !== '') {
+        returnHTML = `${returnHTML}, ${fileDetail.canvassMaterial}: `;
+      }
+      if (fileDetail.content && fileDetail.content.trim() !== '') {
+        returnHTML = `${returnHTML}, Content: `;
+       /* 'color-pencil',
+        'black-white',
+        'color-crayon',
+        'color-pencil black-white',
+        'poem black-white',
+       */
+        switch(fileDetail.content) {
+          case 'watercolor-pencil': returnHTML = `${returnHTML} including WaterColor Pencils`; break ;
+          case 'color-pencil': returnHTML = `${returnHTML}Color Pencils`; break ;
+          case 'black-white': returnHTML = `${returnHTML}Black and white with possible shading`; break ;
+          case 'color-crayon': returnHTML = `${returnHTML}Color Crayons`; break ;
+          case 'color-pencil black-white': returnHTML = `${returnHTML}Combination of color + B&W`; break ;
+          case 'poem black-white': returnHTML = `${returnHTML}Drawing + poetry`; break ;
+          case 'other-combo': returnHTML = `${returnHTML} Mix of different types, like sketch + photo`; break ;
+          default: returnHTML = `${returnHTML}Other`; break ;
+        }
+      }
+      returnHTML = `${returnHTML}`;
+      
+    }
+    console.log(`RRR ${returnHTML}`);
+    return returnHTML ;
   }
   
 }

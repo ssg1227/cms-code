@@ -52,15 +52,22 @@ export class CardComponent {
     if (this.isLarge === true) {
       return ;
     }
-    localStorage.setItem("isLeafParent", this.cardInfo.isLeafParent.toString());
-    localStorage.setItem("key", this.cardInfo.key);
-    localStorage.setItem("isCompiledList", `false`);
-    if(this.cardInfo.isLeafParent===true && this.cardInfo.isCompiledList===true) {
-      localStorage.setItem("isCompiledList", this.cardInfo.isCompiledList.toString());
-    } 
-   // this,this.imageDetail.isLeafParent === true?
-   //   this.clickedIndex.emit(this.cardIndex.toString()):
+    // separation of logic for branch.. 
+    if (this.cardInfo!== null ) {
+      localStorage.setItem("isLeafParent", this.cardInfo.isLeafParent.toString());
+      localStorage.setItem("key", this.cardInfo.key);
+      localStorage.setItem("isCompiledList", `false`);
+      if(this.cardInfo.isLeafParent===true && this.cardInfo.isCompiledList===true) {
+        localStorage.setItem("isCompiledList", this.cardInfo.isCompiledList.toString());
+      } 
       this.clickedIndex.emit(this.cardInfo.key);
+    }
+    //... AND for leaf (actual pic listing)
+    if (this.imageDetail !== null)
+      this.clickedIndex.emit(this.cardIndex.toString());
+   // this,this.imageDetail.isLeafParent === true?
+   //  
+    
   }
   
   toggleCardSize() { 

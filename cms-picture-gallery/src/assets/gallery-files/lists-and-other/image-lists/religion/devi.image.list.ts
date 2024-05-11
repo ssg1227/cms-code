@@ -1,8 +1,8 @@
-import { ImageElement } from '../../shared/image-detail'
-import { NavratriCLass  } from '../../../images/gallery-images/religion/devi/navratri.content'
+import { ImageElement } from '../../image-lists/shared/image-detail'
+import { NavratriCLass  } from './navratri.content'
 export class DeviImageList {
     sort: string = 'asc'
-    imageRoot = `assets/images/gallery-images/religion/devi/`;
+    imageRoot = `assets/gallery-files/images/religion/devi/`;
 navratriClass:NavratriCLass = new  NavratriCLass();    
 public allImageList:ImageElement[]  =  [
     {   
