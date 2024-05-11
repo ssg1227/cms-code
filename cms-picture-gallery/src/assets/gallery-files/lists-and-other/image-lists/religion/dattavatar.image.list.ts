@@ -1,5 +1,5 @@
 
-import { PicDescr, ImageElement } from '../../../data-and-config/data/image.list'
+import { ImageElement } from '../../image-lists/shared/image-detail'
 enum PicsIndex  {
     aumkarGaneshSept2020Final,
     AumGaShivParKashiVishwCTLightNov172020Final,
@@ -9,8 +9,10 @@ enum PicsIndex  {
     MixGenPlaneSept2020,
 };
 export class DattavatarImageList {
- bulkImageList:PicDescr[] = [
-]
+ 
+    sort: string = 'asc';
+    imageRoot = `assets/gallery-files/images/religion/dattavatar/`;
+    
 public allImageList:ImageElement[]  =  [
    { 
         folder:'dattavatar',
@@ -30,22 +32,22 @@ public allImageList:ImageElement[]  =  [
                     <li>The word Datta means "Given", Datta is called so because the divine trinity have "given" themselves in the form of a son to the sage couple Guru Atri and Mata</li>
                         
                     </ul>`,
-                fullFileName: `assets/all-images/religion/dattavatar/DattaGuruJayanti-122623-3.jpeg`,
+                fullFileName: `${this.imageRoot}DattaGuruJayanti-122623-3.jpeg`,
                 description: `<ul>
                     <li></li> </ul>`,
                     dateUploaded: '01-08-2024',
                     iterations:[  {
-                        fullFileName: `assets/all-images/religion/dattavatar/DattaGuruJayanti-122623-3.jpeg`, 
+                        fullFileName: `${this.imageRoot}DattaGuruJayanti-122623-3.jpeg`, 
                         description: `<ul>
                                     <li>Sketched for Datta Jayanti 2023</li> 
                                     <li>December 12-26 2023</li> 
                                     </ul>`} ,{
-                        fullFileName: `assets/all-images/religion/dattavatar/DattaGuruJayanti-122623-2.jpeg`, 
+                        fullFileName: `${this.imageRoot}DattaGuruJayanti-122623-2.jpeg`, 
                         description:  `<ul>
                         <li>Sketched for Datta Jayanti 2023</li> 
                                     <li>December 12-26 2023</li> 
                         </ul>`} ,{
-                            fullFileName: `assets/all-images/religion/dattavatar/DattaGuruJayanti-122623-1.jpeg`, 
+                            fullFileName: `${this.imageRoot}DattaGuruJayanti-122623-1.jpeg`, 
                             description:  `<li>Sketched for Datta Jayanti 2023</li> 
                             <li>December 12-26 2023</li></ul> `}],
             }, {
@@ -58,17 +60,17 @@ public allImageList:ImageElement[]  =  [
                     <li>This sketch is based on the idol in the temple at Girnar, Gujarat (India) where the Lord spent a long time in penance  </li>
                         
                     </ul>`,
-                fullFileName: `assets/all-images/religion/dattavatar/GirnarDatta09252023-1.jpeg`,
+                fullFileName: `${this.imageRoot}GirnarDatta09252023-1.jpeg`,
                 description: `<ul>
                     <li></li> </ul>`,
                     dateUploaded: '10-20-2023',
                     iterations:[  {
-                        fullFileName: `assets/all-images/religion/dattavatar/GirnarDatta09252023-1.jpeg`, 
+                        fullFileName: `${this.imageRoot}GirnarDatta09252023-1.jpeg`, 
                         description: `<ul>
                                     <li>Girnar Datta based sketch. This is completion of an outline started months back </li> 
                                     <li>Sept 25 2023</li> 
                                     </ul>`} ,{
-                        fullFileName: `assets/all-images/religion/dattavatar/GirnarDatta09252023-2photoedit.jpeg`, 
+                        fullFileName: `${this.imageRoot}GirnarDatta09252023-2photoedit.jpeg`, 
                         description:  `<ul>
                         <li>Girnar Datta based sketch. This is completion of an outline started months back </li> 
                         <li>Photo edited version - Sept 25 2023</li> 
@@ -78,7 +80,7 @@ public allImageList:ImageElement[]  =  [
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '07-13-2023',
-fullFileName: `assets/all-images/religion/dattavatar/SaiSwamiShankar-complete07132023.jpeg`
+fullFileName: `${this.imageRoot}SaiSwamiShankar-complete07132023.jpeg`
 ,
 description: `<ul><li> Sketch completed July 13 2023 </li>
 <li> Sai and Shankar sketches were there; added Shankar Maharaj </li>
@@ -89,7 +91,7 @@ description: `<ul><li> Sketch completed July 13 2023 </li>
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '07-13-2023',
-fullFileName: `assets/all-images/religion/dattavatar/SaiGanananMaraharaj0706-132023.jpeg`
+fullFileName: `${this.imageRoot}SaiGanananMaraharaj0706-132023.jpeg`
 ,
 description: `<ul><li> Sketch of Shirdi Sai Sharing Chillum with Gajanan Maharaj </li>
 <li> Started 0706, ended 0713 2023 </li>
@@ -103,7 +105,7 @@ dateUploaded:  '07-06-2023',
 evolution:  `<b>1st sketch of Shankar Maharaj<br/>Also (see gurupoornima 2023 collage). was added to the collage before completion<br/></B>`,
 evolutionSequence:  2,
 evolutionDate:  '06-13-2023',
-fullFileName: `assets/all-images/religion/dattavatar/YogeshwarShankarJuly423.jpeg`,
+fullFileName: `${this.imageRoot}YogeshwarShankarJuly423.jpeg`,
 description: `<ul><li> Yog Yogeshwar Shankar  </li><li> Guru and Mystic - contemporary of Shirdi Sai and Gajanan Maharaj </li><li> 1800 - c.a. 1947 </li><li> Disciple of Shree Swami Samartha </li><li>July 3 2023</li></ul>`,
 },
 {
@@ -113,12 +115,12 @@ dateUploaded:  '07-06-2023',
 evolution:  `<b>Collage concept.<br/>Also, if it may be considered unique, Shankar sketch was added before the individual sketch was completed<br/></B>`,
 evolutionSequence:  2,
 evolutionDate:  '06-13-2023',
-fullFileName: `assets/all-images/religion/dattavatar/Gurupoornima-july3-2023.jpeg`,
+fullFileName: `${this.imageRoot}Gurupoornima-july3-2023.jpeg`,
 description: `<ul><li> Enhanced collage for Gurupoornima 2023 </li><li> Top to bottom, l to r: Shree Ganesh, Devis, Mahadev </li><li> Shripad Vallabh, Nrusimha Saraswati, Dattatreya, Swami Samartha and young Gajanan Maharaj, Shirdi Sai </li><li> Guru Nanak, Guru Gobind Singh, Samartha Guru Ramdas, Ram Thakur, Tembe Swami,  </li><li> Yog Yogeshwar Shankar, Lata, Raje, Pt Bhimsen Joshi, General Bipin Rawat </li></ul>`,
 rating:  1,
 ratingYear:  2023,
 },
-            { fullFileName: `assets/all-images/religion/dattavatar/ShreeDattatreya11x17DattaJayanti120822.jpeg`, 
+            { fullFileName: `${this.imageRoot}ShreeDattatreya11x17DattaJayanti120822.jpeg`, 
             description: `<ul>
             <li><strong><em>"गुरु ब्रह्मा गुरु विष्णू गुरु देवो महेश्वरहा <br/>&nbsp;
             गुरु साक्षात परब्रम्ह तस्मै श्री गुरुवे नमः </em></strong></li>
@@ -143,7 +145,7 @@ ratingYear:  2023,
                     duplicate:true,
                    
             },
-            { fullFileName: `assets/all-images/religion/dattavatar/GajananMaharajPragatDinFeb132023.jpeg`, 
+            { fullFileName: `${this.imageRoot}GajananMaharajPragatDinFeb132023.jpeg`, 
             canvassSize: 'A4', content:'black-white',
                 description: `<ul>
                         <li>Shree Gajanan Maharaj Pragat Din Feb 13 2023</li>
@@ -151,7 +153,7 @@ ratingYear:  2023,
                         </ul>`,
             dateUploaded: '02-13-2023'
         },
-        { fullFileName: `assets/all-images/religion/dattavatar/NrusSaraswatiBabaSwami-SwtiPooja-01262023-color.jpeg`, 
+        { fullFileName: `${this.imageRoot}NrusSaraswatiBabaSwami-SwtiPooja-01262023-color.jpeg`, 
         canvassSize: 'A4', content:'color-pencil',
             description: `<ul>
             <li>Imaginary sketch of Shree Nrusimha Saraswati, Shirdi Sai, Swami Samartha being taken to Shripad Vallabh - Lord Dattatreya's 1st avatar - 
@@ -167,7 +169,7 @@ ratingYear:  2023,
             rating: 1,
            
         },
-        { fullFileName: `assets/all-images/religion/dattavatar/NrusSaraswatiBabaSwami-SwtiPooja-01262023-b&W.jpeg`, 
+        { fullFileName: `${this.imageRoot}NrusSaraswatiBabaSwami-SwtiPooja-01262023-b&W.jpeg`, 
         canvassSize: 'A4', content:'black-white',
             description: `<ul>
             <li>Imaginary sketch of Shree Nrusimha Saraswati, Shirdi Sai, Swami Samartha being taken to Shripad Vallabh - Lord Dattatreya's 1st avatar - 
@@ -182,7 +184,7 @@ ratingYear:  2023,
             rating: 1,
            
         },
-        { fullFileName: `assets/all-images/religion/dattavatar/KurvapurGopuramDec292022.jpeg`, 
+        { fullFileName: `${this.imageRoot}KurvapurGopuramDec292022.jpeg`, 
         canvassSize: 'A4', content:'black-white',
         description: `<ul>
         <li>Kuruvapur Shripad Vallabh Datta Temple Gopuram (See previous 2 sketches)_</li>
@@ -193,7 +195,7 @@ ratingYear:  2023,
         rating: 1,
        
     },
-    { fullFileName: `assets/all-images/religion/dattavatar/KurvapurGopuramWithGurusDec292022.jpeg`, 
+    { fullFileName: `${this.imageRoot}KurvapurGopuramWithGurusDec292022.jpeg`, 
     canvassSize: 'A4', content:'black-white',
     description: `<ul>
     <li>Kuruvapur Shripad Vallabh Datta Temple Gopuram (See previous 3 sketches)</li>
@@ -204,9 +206,9 @@ ratingYear:  2023,
     rating: 1,
    
 },
-        // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/dattavatar/KurvapurGopuramWithGurusDec292022.jpeg
+        // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/${this.imageRoot}KurvapurGopuramWithGurusDec292022.jpeg
         {
-            fullFileName: `assets/all-images/religion/dattavatar/SamarthaRamdasShripadVallabhShivaji10-26-2022-1.jpeg`, 
+            fullFileName: `${this.imageRoot}SamarthaRamdasShripadVallabhShivaji10-26-2022-1.jpeg`, 
             description: `<ul>
             <li>Imaginary scene of Raje Shivaji paying obeisance to Samartha Guru Ramdas and Shripad Vallabh</li>
             <li>Shripad Vallabh's associate Narsimha Verma re-incarnated  Shivaji </li>
@@ -227,7 +229,7 @@ ratingYear:  2023,
            dateUploaded: '01-31-2023',
            duplicate:true,
            
-        },{ fullFileName: `assets/all-images/religion/dattavatar/GuruPoornimaJuly1322-1.png`, 
+        },{ fullFileName: `${this.imageRoot}GuruPoornimaJuly1322-1.png`, 
             description: `<ul>
             <li><strong><em>"गुरु ब्रह्मा गुरु विष्णू गुरु देवो महेश्वरहा <br/>&nbsp;
             गुरु साक्षात परब्रम्ह तस्मै श्री गुरुवे नमः </em></strong></li>
@@ -249,7 +251,7 @@ ratingYear:  2023,
        
         },
         {  
-            fullFileName: `assets/all-images/religion/dattavatar/SwamiDattaOc62022.jpeg`, 
+            fullFileName: `${this.imageRoot}SwamiDattaOc62022.jpeg`, 
             description: 
             `<ul>
                 <li>Taking my time in sketching, needed to draw a really well made sketch of Shre Swami Samartha</li>
@@ -257,11 +259,11 @@ ratingYear:  2023,
                  </ul>`,
                 dateUploaded: '11-17-2022',
                 iterations:[  {
-                    fullFileName: `assets/all-images/religion/dattavatar/SwamiDattaOc62022.jpeg`, 
+                    fullFileName: `${this.imageRoot}SwamiDattaOc62022.jpeg`, 
                     description: `<ul>
                     <li>Taking my time in sketching, needed to draw a really well made sketch of Shre Swami Samartha</li>
                     <li>From a picture with Lord Dattatreya in the background, started around end September and completed Oct 6 2022</li>
-                     </ul>`} ,{ fullFileName: `assets/all-images/religion/dattavatar/SwamiDattaOct12022.jpeg`, 
+                     </ul>`} ,{ fullFileName: `${this.imageRoot}SwamiDattaOct12022.jpeg`, 
                      description: `<ul>
                      <li>Initial checkpoint - Swami and Datta in place</li>
                       </ul>`} 
@@ -269,7 +271,7 @@ ratingYear:  2023,
                 rating:1 ,
     },
     {  
-        fullFileName: `assets/all-images/religion/dattavatar/SwamiDatta-photoready-8x10-proto1.png`, 
+        fullFileName: `${this.imageRoot}SwamiDatta-photoready-8x10-proto1.png`, 
         evolution: `<b> The first of my sketches to be viewed at a physical public place<br/>
                     What better settings than a Swami Samartha event in a temple!!?</b><br/>`,
         evolutionSequence: 2, evolutionDate: `11-13-222`,
@@ -281,7 +283,7 @@ ratingYear:  2023,
              </ul>`,
             dateUploaded: '11-17-2022',
             iterations:[  {
-                fullFileName: `assets/all-images/religion/dattavatar/SwamiDatta-photoready-8x10-proto1.png`, 
+                fullFileName: `${this.imageRoot}SwamiDatta-photoready-8x10-proto1.png`, 
         description: 
         `<ul>
             <li>The previous sketch has been printed on photo paper twice</li>
@@ -289,17 +291,17 @@ ratingYear:  2023,
             <li>Special mention. Nov 13 2022 Swami's physical presence was established at Sunnyvale Hindu Temple...</li>
             <li>..  The 8x10 photo frame shown (with another having Swami's portrait) was donated to the ceremony</li>
              </ul>`,} ,{
-                fullFileName: `assets/all-images/religion/dattavatar/SwamiDatta-photoframe-12x18.jpeg`, 
+                fullFileName: `${this.imageRoot}SwamiDatta-photoframe-12x18.jpeg`, 
                 description: `<ul>
                             <li>12x18 photo frame on my table </li> </ul>`} ,{
-                fullFileName: `assets/all-images/religion/dattavatar/SwamiDatta-photoframe-2-8x10.jpeg`, 
+                fullFileName: `${this.imageRoot}SwamiDatta-photoframe-2-8x10.jpeg`, 
                 description: `<ul> <li>Special mention. Nov 13 2022 Swami's physical presence was established at Sunnyvale Hindu Temple...</li>
                 <li>..  The 8x10 photo frame shown (with another having Swami's portrait) was donated to the ceremony</li> </ul>`}
             ],
             rating:1 ,
 },
          {  
-                fullFileName: `assets/all-images/religion/dattavatar/SwamiRamdasApril16HanumanJayanti22.jpeg`, 
+                fullFileName: `${this.imageRoot}SwamiRamdasApril16HanumanJayanti22.jpeg`, 
                 description: 
                 `<ul>
                     <li>Attempt to draw Samarth Guru Ramdas</li>
@@ -311,43 +313,43 @@ ratingYear:  2023,
                     dateUploaded: '04-19-2022',
             },
                 {  
-                    fullFileName: `assets/all-images/religion/dattavatar/LordDattaJan27-Feb32021-2.jpeg`, 
+                    fullFileName: `${this.imageRoot}LordDattaJan27-Feb32021-2.jpeg`, 
                     description: 
                     `<ul>
                         <li></li> </ul>`,
                         dateUploaded: '02-03-2022',
                         iterations:[  {
-                            fullFileName: `assets/all-images/religion/dattavatar/LordDattaJan27-Feb32021-3.jpeg`, 
+                            fullFileName: `${this.imageRoot}LordDattaJan27-Feb32021-3.jpeg`, 
                             description: `<ul>
                                         <li>Final Feb 3 2022</li> </ul>`} ,{
-                            fullFileName: `assets/all-images/religion/dattavatar/LordDattaJan27-Feb32021-2.jpeg`, 
+                            fullFileName: `${this.imageRoot}LordDattaJan27-Feb32021-2.jpeg`, 
                             description: `<ul>
                                         <li>Version 2 - added halo, shading, etc uploaded Jan 29 2022</li> </ul>`} ,{
-                            fullFileName: `assets/all-images/religion/dattavatar/LordDattaJan27-Feb32021-1.jpeg`, 
+                            fullFileName: `${this.imageRoot}LordDattaJan27-Feb32021-1.jpeg`, 
                             description: `<ul><li></li>
                                         <li>Version 1 - photo taken, minimum share and uploaded Jan 27 2022</li> </ul>`}
                         ],
                         rating:1 ,
             },//
             {  
-                fullFileName: `assets/all-images/religion/dattavatar/SwamiBabaFeb172022-2.jpeg`, description: 
+                fullFileName: `${this.imageRoot}SwamiBabaFeb172022-2.jpeg`, description: 
                 `<ul>
                     <li></li> </ul>`,
                     dateUploaded: '02-28-2022',
                     iterations:[  {
-                        fullFileName: `assets/all-images/religion/dattavatar/SwamiBabaFeb172022-2.jpeg`, 
+                        fullFileName: `${this.imageRoot}SwamiBabaFeb172022-2.jpeg`, 
                         description: `<ul>
                                     <li>What started off as a Sai Satcharit Chapter theme involving daskshina, Baba and Swami, Lord Dattatreya was sketched too</li> 
                                     <li>Feb 17 2022 - final </li> 
                                     </ul>`} ,{
-                        fullFileName: `assets/all-images/religion/dattavatar/SwamiBabaFeb172022-1.jpeg`, 
+                        fullFileName: `${this.imageRoot}SwamiBabaFeb172022-1.jpeg`, 
                         description:  `<ul>
                         <li>What started off as a Sai Satcharit Chapter theme involving daskshina, Baba and Swami, Lord Dattatreya was sketched too</li> 
                         <li>Feb 17 2022 - initial </li> 
                         </ul>`}],
             },
                         
-            {  fullFileName: `assets/all-images/religion/dattavatar/unsigned3DattaGuru12292020.jpeg`, 
+            {  fullFileName: `${this.imageRoot}unsigned3DattaGuru12292020.jpeg`, 
                     rating: 1,
                    description: 
                    `<ul>
@@ -358,7 +360,7 @@ ratingYear:  2023,
                     generic: 'true',
                     genericCategory:51, // 1 Ganesh, 2 Goddesses, 3 shiva (+ family), 4 Narayan + family + Hanuman, 5 Gurus
                     genericDescription:'Shreepad Vallabh second Avatar of Lord Dattatreya ',
-                    fullFileName: `assets/all-images/religion/dattavatar/UnsignedWIPShreepadVallabhFeb-4-2021.jpeg`, 
+                    fullFileName: `${this.imageRoot}UnsignedWIPShreepadVallabhFeb-4-2021.jpeg`, 
                     description: `
                     <ul><li>Second in the lineage. Shreepad Vallabh drawn Feb 4 2021</li></ul>
                     ` },
@@ -366,7 +368,7 @@ ratingYear:  2023,
                         generic: 'true',
                         genericCategory:52, // 1 Ganesh, 2 Goddesses, 3 shiva (+ family), 4 Narayan + family + Hanuman, 5 Gurus
                         genericDescription:'Shree Nrusimha (Narasimha) Saraswati 3rd  Avatar of Lord Dattatreya ',
-                        fullFileName: `assets/all-images/religion/dattavatar/unsigned4NarasimhaSaraswatiJan152021.jpeg`, 
+                        fullFileName: `${this.imageRoot}unsigned4NarasimhaSaraswatiJan152021.jpeg`, 
                         canvassSize: 'A4', content:'black-white',
                         description: `
                         <ul>
@@ -374,7 +376,7 @@ ratingYear:  2023,
                         </ul>
                         ` },
                         {  
-                            fullFileName: `assets/all-images/religion/dattavatar/NarasimhaSaraswatiFeb6-72023-Gurupadyami.jpeg`, 
+                            fullFileName: `${this.imageRoot}NarasimhaSaraswatiFeb6-72023-Gurupadyami.jpeg`, 
                             canvassSize: 'A4', content:'color-pencil',
                             description: `
                             <ul>
@@ -385,14 +387,14 @@ ratingYear:  2023,
                     dateUploaded: '02-07-2023',
                         },
                         {  
-                            fullFileName: `assets/all-images/religion/dattavatar/unsigned5SwamiSamartha12312020.jpeg`, 
+                            fullFileName: `${this.imageRoot}unsigned5SwamiSamartha12312020.jpeg`, 
                             description: `
                             <ul>
                             <li> Shee Swami Samartha - Dec 31 2020</li>
                             </ul>
                             ` },,
                             {  
-                                fullFileName: `assets/all-images/religion/dattavatar/unsigned6ShirdiSaiNov2020.jpeg`, 
+                                fullFileName: `${this.imageRoot}unsigned6ShirdiSaiNov2020.jpeg`, 
                                 description: `
                                 <ul>
                                 <li> One of the first of <em><strong>numerous</strong></em> sketches of Shirdi Sai, one nearing a close resemblance</li>
@@ -400,7 +402,7 @@ ratingYear:  2023,
                                 </ul>
                                 ` },
                                 {  
-                                    fullFileName: `assets/all-images/religion/dattavatar/unsigned7SaiSmilingNov2020.jpeg`, 
+                                    fullFileName: `${this.imageRoot}unsigned7SaiSmilingNov2020.jpeg`, 
                                     canvassSize: 'A4', content:'black-white',
                                     description: `
                                     <ul>
@@ -408,7 +410,7 @@ ratingYear:  2023,
                                     </ul>
                                     ` },
                                     {  
-                                        fullFileName: `assets/all-images/religion/dattavatar/TembeSwamiJuly82021.jpeg`, 
+                                        fullFileName: `${this.imageRoot}TembeSwamiJuly82021.jpeg`, 
                                         description: `
                                         <ul>
                                         <li> Vasudevanand Saraswati, also known as Tembe Swami, is a saint who is regarded as an incarnation of Dattatreya</li>
@@ -423,14 +425,14 @@ ratingYear:  2023,
                     `<ul>
                         <li> Guru Nanak , the founder and 1st Guru of the Sikhs </li>
                     </ul>`,
-                    fullFileName: `assets/all-images/religion/dattavatar/unsigned8GuruNanakji11302020.jpeg`, 
+                    fullFileName: `${this.imageRoot}unsigned8GuruNanakji11302020.jpeg`, 
                                         rating: 1,
                                         description: `
                                         <ul>
                                         <li> Guru Nanak Nov 11 2020 (Jayanti)</li>
                                         </ul>
                                         ` },
-                    { fullFileName: `assets/all-images/religion/dattavatar/unsigned9GuruGobindSinghji12312020.jpeg`, 
+                    { fullFileName: `${this.imageRoot}unsigned9GuruGobindSinghji12312020.jpeg`, 
                     rating: 1,
                     generic:'true',
                     genericCategory: 79, // 1 Ganesh, 2 Goddesses, 3 shiva (+ family), 4 Narayan + family + Hanuman, 5 onward Gurus
@@ -444,7 +446,7 @@ ratingYear:  2023,
                     <li> Guru Gobind Singh Dec 31 2020 (Jayanti)</li>
                     </ul>
                     ` },
-                    { fullFileName: `assets/all-images/religion/dattavatar/SaiSwamiApril2021.jpg`,  description:  `
+                    { fullFileName: `${this.imageRoot}SaiSwamiApril2021.jpg`,  description:  `
                     <ul>
                     <li> Sometime April May 2021</li>
                     </ul>
@@ -455,7 +457,7 @@ ratingYear:  2023,
                     genericDescription: 
                     `<ul>
                         <li>Ram Thakur - Sadguru from Bengal </li>
-                    </ul>`,fullFileName: `assets/all-images/religion/dattavatar/RamThakurJuly2021-1.jpg`,  description:  `
+                    </ul>`,fullFileName: `${this.imageRoot}RamThakurJuly2021-1.jpg`,  description:  `
                     <ul>
                     <li> Initial attempt to draw Ram Thakur - Sadguru from Bengal and my Mom and her family Guru</li>
                     <li>Ramthakur (Bengali: শ্রীশ্রী রামঠাকুর) (2 February 1860 – 1 May 1949) born Ram Chandra Chakraborty (Bengali: রাম চন্দ্র চক্রবর্তী), was an Indian mystic, yogi and spiritual master during 19th-century India.</li>

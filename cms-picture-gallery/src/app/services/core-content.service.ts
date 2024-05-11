@@ -11,6 +11,10 @@ import { DeviImageList} from 'src/assets/gallery-files/lists-and-other/image-lis
 import { LaxmiVishnuHanumanList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/laxmi-vishnu-hanuman.list';
 import { MahadevImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/mahadev.image.list';
 import {MahadevFamilyImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/mahadev-family.image.list';
+import {DattavatarImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/dattavatar.image.list';
+import {SwamiSamarthaImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/swami-samartha.image.list';
+import {SwamiSamarthaQ22023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/swami-samartha-q2-2023.image.list';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -56,10 +60,10 @@ export class CoreContentService {
       this.contentList.push( { contentFile:new MahadevImageList(),contentCategory:'mahadev', role:'sanatani'}) ;
       this.contentList.push( { contentFile:new MahadevFamilyImageList(),contentCategory:'mahadev-family', role:'sanatani'}) ;
       this.contentList.push( { contentFile:new LaxmiVishnuHanumanList(),contentCategory:'laxmi-vishnu-hanuman', role:'sanatani'}) ;
-      /*
       this.contentList.push( { contentFile:new DattavatarImageList(),contentCategory:'dattavatar', role:'guru'}) ;
       this.contentList.push( { contentFile:new SwamiSamarthaImageList(),contentCategory:'swami-samartha', role:'guru'}) ;
       this.contentList.push( { contentFile:new SwamiSamarthaQ22023ImageList(),contentCategory:'swami-samartha-q2-2023', role:'guru'}) ;
+      /*
       this.contentList.push( { contentFile:new ShirdiSaiPreQ32021ImageList(),contentCategory:'shirdi-sai-q1-q2-2021', role:'guru'}) ;
       this.contentList.push( { contentFile:new ShirdiSaiQ3Q42021ImageList(),contentCategory:'shirdi-sai-q3-q4-2021', role:'guru'}) ;
       this.contentList.push( { contentFile:new ShirdiSaiQ2Q32022ImageList(),contentCategory:'shirdi-sai-q2-q3-2022', role:'guru'}) ;

@@ -1,5 +1,5 @@
 
-import { ImageElement } from '../../shared/image-detail'
+import { ImageElement } from '../../image-lists/shared/image-detail'
 enum PicsIndex  {
     aumkarGaneshSept2020Final,
     AumGaShivParKashiVishwCTLightNov172020Final,
@@ -12,7 +12,7 @@ export class SwamiSamarthaImageList { // SwamiSamarthaImageList
  
    
     sort: string = 'asc'
- imageRoot=`assets/images/gallery-images/religion/swami-samartha/`;
+ imageRoot=`assets/gallery-files/images/religion/swami-samartha/`;
     public allImageList:ImageElement[]  =  [
        { 
             folder:'swami-samartha',
@@ -120,25 +120,25 @@ export class SwamiSamarthaImageList { // SwamiSamarthaImageList
                        
                 },
                 {  
-                    fullFileName: `assets/all-images/religion/dattavatar/SwamiBabaFeb172022-2.jpeg`, 
+                    fullFileName: `assets/gallery-files/images/religion/dattavatar/SwamiBabaFeb172022-2.jpeg`, 
                     description: 
                     `<ul>
                         <li></li> </ul>`,
                         dateUploaded: '02-28-2022',
                         iterations:[  {
-                            fullFileName: `assets/all-images/religion/dattavatar/SwamiBabaFeb172022-2.jpeg`, 
+                            fullFileName: `assets/gallery-files/images/religion/dattavatar/SwamiBabaFeb172022-2.jpeg`, 
                             description: `<ul>
                                         <li>What started off as a Sai Satcharit Chapter theme involving daskshina, Baba and Swami, Lord Dattatreya was sketched too</li> 
                                         <li>Feb 17 2022 - final </li> 
                                         </ul>`} ,{
-                            fullFileName: `assets/all-images/religion/dattavatar/SwamiBabaFeb172022-1.jpeg`, 
+                            fullFileName: `assets/gallery-files/images/religion/dattavatar/SwamiBabaFeb172022-1.jpeg`, 
                             description:  `<ul>
                             <li>What started off as a Sai Satcharit Chapter theme involving daskshina, Baba and Swami, Lord Dattatreya was sketched too</li> 
                             <li>Feb 17 2022 - initial </li> 
                             </ul>`}],
                             duplicate:true ,
                 }, {
-                    fullFileName: `assets/all-images/religion/shree-ganesh-gte-q4-2021/GaneshSwamiJan4-72022.jpeg`, 
+                    fullFileName: `assetsgallery-files/images/religion/aumkar-shree-ganesh/gte-q4-2021-ganeshGaneshSwamiJan4-72022.jpeg`, 
                  description: '<p>Quick Sketch Memorial Day weekend 2021</p>',
                  duplicate: true,
                  dateUploaded: '01-07-2022',

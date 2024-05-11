@@ -1,5 +1,5 @@
 
-import { ImageElement } from '../../shared/image-detail'
+import { ImageElement } from '../../image-lists/shared/image-detail'
 enum PicsIndex  {
     aumkarGaneshSept2020Final,
     AumGaShivParKashiVishwCTLightNov172020Final,
@@ -10,7 +10,7 @@ enum PicsIndex  {
 };
 export class SwamiSamarthaQ22023ImageList { // SwamiSamarthaImageList
     sort: string = 'asc'
- imageRoot=`assets/images/gallery-images/religion/swami-samartha-q2-2023/` ;
+ imageRoot=`assets/gallery-files/images/religion/swami-samartha-q2-2023/` ;
 
    
     public allImageList:ImageElement[]  =  [
