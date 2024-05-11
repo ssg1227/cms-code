@@ -78,7 +78,7 @@ public allImageList:ImageElement[]  =  [
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '07-13-2023',
-fullFileName: `assets/all-images//religion/dattavatar/SaiSwamiShankar-complete07132023.jpeg`
+fullFileName: `assets/all-images/religion/dattavatar/SaiSwamiShankar-complete07132023.jpeg`
 ,
 description: `<ul><li> Sketch completed July 13 2023 </li>
 <li> Sai and Shankar sketches were there; added Shankar Maharaj </li>
@@ -89,7 +89,7 @@ description: `<ul><li> Sketch completed July 13 2023 </li>
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '07-13-2023',
-fullFileName: `assets/all-images//religion/dattavatar/SaiGanananMaraharaj0706-132023.jpeg`
+fullFileName: `assets/all-images/religion/dattavatar/SaiGanananMaraharaj0706-132023.jpeg`
 ,
 description: `<ul><li> Sketch of Shirdi Sai Sharing Chillum with Gajanan Maharaj </li>
 <li> Started 0706, ended 0713 2023 </li>
@@ -103,7 +103,7 @@ dateUploaded:  '07-06-2023',
 evolution:  `<b>1st sketch of Shankar Maharaj<br/>Also (see gurupoornima 2023 collage). was added to the collage before completion<br/></B>`,
 evolutionSequence:  2,
 evolutionDate:  '06-13-2023',
-fullFileName: `assets/all-images//religion/dattavatar/YogeshwarShankarJuly423.jpeg`,
+fullFileName: `assets/all-images/religion/dattavatar/YogeshwarShankarJuly423.jpeg`,
 description: `<ul><li> Yog Yogeshwar Shankar  </li><li> Guru and Mystic - contemporary of Shirdi Sai and Gajanan Maharaj </li><li> 1800 - c.a. 1947 </li><li> Disciple of Shree Swami Samartha </li><li>July 3 2023</li></ul>`,
 },
 {
@@ -113,7 +113,7 @@ dateUploaded:  '07-06-2023',
 evolution:  `<b>Collage concept.<br/>Also, if it may be considered unique, Shankar sketch was added before the individual sketch was completed<br/></B>`,
 evolutionSequence:  2,
 evolutionDate:  '06-13-2023',
-fullFileName: `assets/all-images//religion/dattavatar/Gurupoornima-july3-2023.jpeg`,
+fullFileName: `assets/all-images/religion/dattavatar/Gurupoornima-july3-2023.jpeg`,
 description: `<ul><li> Enhanced collage for Gurupoornima 2023 </li><li> Top to bottom, l to r: Shree Ganesh, Devis, Mahadev </li><li> Shripad Vallabh, Nrusimha Saraswati, Dattatreya, Swami Samartha and young Gajanan Maharaj, Shirdi Sai </li><li> Guru Nanak, Guru Gobind Singh, Samartha Guru Ramdas, Ram Thakur, Tembe Swami,  </li><li> Yog Yogeshwar Shankar, Lata, Raje, Pt Bhimsen Joshi, General Bipin Rawat </li></ul>`,
 rating:  1,
 ratingYear:  2023,
