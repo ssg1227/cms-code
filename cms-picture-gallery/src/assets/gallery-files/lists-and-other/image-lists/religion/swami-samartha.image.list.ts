@@ -74,7 +74,7 @@ export class SwamiSamarthaImageList { // SwamiSamarthaImageList
                         dateUploaded: '01-31-2023',
                        
                 },
-                { fullFileName: `assets/all-images/religion/dattavatar/GajananMaharajPragatDinFeb132023.jpeg`, 
+                { fullFileName: `assets/gallery-files/images/religion/dattavatar/GajananMaharajPragatDinFeb132023.jpeg`, 
                 canvassSize: 'A4', content:'black-white',
                     description: `<ul>
                             <li>Shree Gajanan Maharaj Pragat Din Feb 13 2023</li>
@@ -138,19 +138,19 @@ export class SwamiSamarthaImageList { // SwamiSamarthaImageList
                             </ul>`}],
                             duplicate:true ,
                 }, {
-                    fullFileName: `assetsgallery-files/images/religion/aumkar-shree-ganesh/gte-q4-2021-ganeshGaneshSwamiJan4-72022.jpeg`, 
+                    fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q4-2021-ganesh/GaneshSwamiJan4-72022.jpeg`, 
                  description: '<p>Quick Sketch Memorial Day weekend 2021</p>',
                  duplicate: true,
                  dateUploaded: '01-07-2022',
                  iterations:[
                   { 
-                     fullFileName: `assets/all-images/religion/shree-ganesh-gte-q4-2021/GaneshSwamiJan4-72022.jpeg`,
+                     fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q4-2021-ganesh/GaneshSwamiJan4-72022.jpeg`,
                      description: `<ul><li>One of my first sketches for the New Year</li>
                                       <li>'विघ्नहर्ता' red lettering = Vighnaharta = remover of obstacles </li>
                                       <li>'पालनकर्ता ' greenlettering = palankarta = protector </li>
                                       <li>Final version - Jan 6 2022</li>
                                       <li>Will display in Ganesh AS WELL AS Swami Samartha list</li></ul>`},{ 
-                         fullFileName: `assets/all-images/religion/shree-ganesh-gte-q4-2021/GaneshSwamiJan4-72022-p1.jpeg`,
+                         fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q4-2021-ganesh/GaneshSwamiJan4-72022-p1.jpeg`,
                          description: '<ul><li>Almost done</li></ul>',
                   },{ 
                          fullFileName: `assets/all-images/religion/shree-ganesh-gte-q4-2021/GaneshSwamiJan4-72022-p2.jpeg`,

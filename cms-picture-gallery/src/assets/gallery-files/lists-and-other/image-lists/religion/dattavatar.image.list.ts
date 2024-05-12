@@ -133,7 +133,7 @@ ratingYear:  2023,
         },
         
             {  
-                fullFileName: `assets/all-images/religion/swami-samartha/SwamiAndDattavatarsJuly122022.jpeg`, 
+                fullFileName: `assets/gallery-files/images/religion/swami-samartha/SwamiAndDattavatarsJuly122022.jpeg`, 
                 description: 
                 `<ul>
                     <li>Featuring Swami with Lord Dattatreya (top) then clockwise from left bottonm</li> 
@@ -220,7 +220,7 @@ ratingYear:  2023,
             
          },
         {
-           fullFileName: `assets/all-images/religion/shree-ganesh-gte-q4-2021/GaneshShripadVallabhAug302022.jpeg`, 
+           fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q4-2021-ganesh/GaneshShripadVallabhAug302022.jpeg`, 
            description: `<ul>
            <li>Ganesh Chaturthi 2022 (Aug 30/31) special</li>
            <li>Shripad Vallabh jayanti is Ganesh Chaturthi</li>
@@ -239,7 +239,7 @@ ratingYear:  2023,
             </ul>`,
             dateUploaded: '07-13-2022',
            
-        },{  fullFileName: `assets/all-images/religion/shree-ganesh-gte-q4-2021/GaneshDattaOct132022.jpeg`, 
+        },{  fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q4-2021-ganesh/GaneshDattaOct132022.jpeg`, 
         description: `<p>Ganesh Datta <ul>
                         <li>Shree Ganesh represented in Dattatreya avatar</li>
                         <li>October 13 2022</li>
