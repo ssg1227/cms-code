@@ -6,7 +6,8 @@
 - review and as required, revamp of image load (JSON files on image list are too many; will have to work with the original structure itself)
 - solid authentication logic. adding the admin stuff 
 - in memory - caching, avoiding time outs
-- mail form 
+- email form 
+- put hard coded paths behind variables, and find right place to keep these variables (e.g. global version of imageRoot)
 ### Log May 10 - 11
 - ACHIEVED images loading at leaf level for non compiled themes after Merging old code (for now).
 - INITIAL publish (art-is-worship; previous backed up art-worship-2023)

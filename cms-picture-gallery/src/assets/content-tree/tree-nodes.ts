@@ -281,18 +281,81 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'swami-samartha-q2-2023', label: 'Shree Swami Samartha Q2 2023 onward'}
         ]
     },
-    /*
+   
    
  
-    { parentKey: "shirdi-sai", key: 'shirdi-sai-q1-q2-2021', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  'Shirdi Sai: to  Q3 2021', isLeafParent: true, parent: true, accessible: ['superuser',"guru"], dateUploaded: '02-07-2023'  },
-    { parentKey: "shirdi-sai", key: 'shirdi-sai-q3-q4-2021', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  '- Q3 2021 - Q1 2022', isLeafParent: true, accessible: ['superuser',"guru"], dateUploaded: '03-31-2022' },
-    { parentKey: "shirdi-sai", key: 'shirdi-sai-q2-q3-2022', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  '- Q2 Q3 2022', isLeafParent: true, accessible: ['superuser',"guru"], dateUploaded: '02-07-2023' },
-    { parentKey: "shirdi-sai", key: 'shirdi-sai-q4-2022-q1-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  '- Q3,Q4 2022 Q1 2023', isLeafParent: true, accessible: ['superuser',"guru"], dateUploaded: '03-02-2023' },
-    { parentKey: "shirdi-sai", key: 'shirdi-sai-q2-q3-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  '- Q2 Q3 2023', isLeafParent: true, accessible: ['superuser',"guru"], dateUploaded: '06-02-2023' },
-    { parentKey: "shirdi-sai", key: 'shirdi-sai-q4-2023-q1-2024', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  '- Q4 2023 Q1 2024', isLeafParent: true, accessible: ['superuser',"guru"], dateUploaded: '04-14-2024' },
-    { parentKey: "shirdi-sai", key: 'baba-themes-1', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', label:  '- Sai Satcharitra', isLeafParent: true, ccessible: ['superuser',"guru"], dateUploaded: '02-28-2022' },
+    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q1-q2-2021', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible: ['superuser',"guru"], 
+        label:  'Shirdi Sai: to  Q3 2021', 
+        description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
+        &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
+       breadCrumb:[
+           {link: '/view', params:'top-level', label: 'HOME'},
+           {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
+           {link: '', params:'shirdi-sai-q1-q2-2021', label: 'Shirdi Sai: to  Q3 2021'}
+       ]
+     },
+     { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q3-q4-2021', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible: ['superuser',"guru"],
+        label:  'Shirdi Sai: Q3 2021 - Q1 2022', 
+        description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
+        &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
+       breadCrumb:[
+           {link: '/view', params:'top-level', label: 'HOME'},
+           {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
+           {link: '', params:'religious-shirdi-sai', label: 'Shree Swami Samartha Q2 2023 onward'}
+       ] 
+      },
+    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q2-q3-2022', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023',  accessible: ['superuser',"guru"],
+        label:  'Shirdi Sai: Q2 Q3 2022', 
+        description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
+        &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
+       breadCrumb:[
+           {link: '/view', params:'top-level', label: 'HOME'},
+           {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
+           {link: '', params:'shirdi-sai-q2-q3-2022', label: 'Shirdi Sai: Q2 Q3 2022'}
+       ] 
+       },
+    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q4-2022-q1-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible: ['superuser',"guru"],
+        label:  'Shirdi Sai:- Q3,Q4 2022 Q1 2023', 
+        description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
+        &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
+       breadCrumb:[
+           {link: '/view', params:'top-level', label: 'HOME'},
+           {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
+           {link: '', params:'shirdi-sai-q4-2022-q1-2023', label: 'Shirdi Sai:- Q3,Q4 2022 Q1 2023'}
+       ] 
+      },
+    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q2-q3-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023',  accessible: ['superuser',"guru"],
+        label:  'Shirdi Sai: Q2 Q3 2023', 
+        description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
+        &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
+       breadCrumb:[
+           {link: '/view', params:'top-level', label: 'HOME'},
+           {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
+           {link: '', params:'shirdi-sai-q2-q3-2023', label: 'Shirdi Sai: Q2 Q3 2023'}
+       ] 
+      },
+    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q4-2023-q1-2024', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible: ['superuser',"guru"],
+        label:  'Shirdi Sai: Q4 2023 - Q1 2024', 
+        description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
+        &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
+       breadCrumb:[
+           {link: '/view', params:'top-level', label: 'HOME'},
+           {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
+           {link: '', params:'religious-shirdi-sai', label: 'Shirdi Sai: Q4 2023 - Q1 2024'}
+       ] 
+       },
+    { parentKey: "religious-shirdi-sai", key: 'baba-themes-1', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible: ['superuser',"guru"],
+        label:  'Shirdi Sai: Sai Satcharitra', 
+        description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
+        &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
+       breadCrumb:[
+           {link: '/view', params:'top-level', label: 'HOME'},
+           {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
+           {link: '', params:'baba-themes-1', label: 'Shirdi Sai: Sai Satcharitra'}
+       ] 
+       },
      
-    */
+
 // ### END SPECIAL LISTS
     { 
         parentKey: "changers", key: 'changers-b4-2022', levelIndex:3, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
