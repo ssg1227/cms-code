@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Router } from '@angular/router';
-import { staticText } from 'src/assets/common-config/static-text';
+import { staticText } from 'src/assets/common-config/static-text-other-constants';
 import  { AuthService } from 'src/app/services/auth.service';
 import { CoreContentService } from 'src/app/services/core-content.service';
 import { TreeNodeElement } from 'src/assets/content-tree/tree-nodes' ;
@@ -66,8 +66,13 @@ export class ContentViewerComponent {
         this.allImageList = this.genImageList.allImageList;
         console.log('test');
     }
+    const summary = this.coreContentService.SketchStats ;
    }
- 
+   get StatsSummary():string {
+    const summary = this.coreContentService.SketchStats ;
+    return `<p> Image Numbers:<br/> Subjects: ${summary.subjects}<br/> Total Counts:${summary.totalCounts}`;
+    
+   }
   cmsLogout(){
     this.authService.logout() ;
    }
@@ -129,7 +134,7 @@ export class ContentViewerComponent {
               .forEach( (fileData:any) => {
                 let groupImages:any[] = [] ;
                 let stats = '';
-           //      stats = this.techStats(fileData) ; **LATER 
+                  stats = this.techStats(fileData) ;  
                 console.log(`STATS for single file ${stats} ${fileData.fullFileName}`);
                   if(stats.indexOf('Canvass') >= 0) {
                     fileData.description = `${fileData.description}<br/>(<em> ${stats}}</em>)`;

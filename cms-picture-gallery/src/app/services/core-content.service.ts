@@ -27,7 +27,13 @@ import { ShirdiSaiQ2Q32023ImageList } from 'src/assets/gallery-files/lists-and-o
 })
 export class CoreContentService {
   contentList:ContentList[]= [] ;
-
+  sketchStats = {
+    subjects: 0,
+    totalCounts :0 ,
+    canvassSize:[],
+    content:[],
+    themBasedCounts: [{name:'', count:0}],
+  };
   allImageList:ImageElement[] = [];
   genImageList:any = null ;
   constructor() {
@@ -35,12 +41,25 @@ export class CoreContentService {
    }
   private breadCrumbs?:BreadCrumb[] =[] ;
   private parentDescription?:string ='';
+  // gets 
   get BreadCrumbs():BreadCrumb[]| undefined{
     return this.breadCrumbs;
   } 
   get ParentDescription():string| undefined{
     return this.parentDescription;
   } 
+  get ContentList(): ContentList[] {
+    if (this.contentList.length === 0) {
+      this.loadContentList() ;
+    }
+    return this.contentList ;
+  }
+  get SketchStats():any {
+    if (this.contentList.length === 0 ) {
+      this.loadContentList() ;
+    }
+    return this.sketchStats;
+  }
   setCurrentCardList():TreeNodeElement[]  {
     let retCardList:TreeNodeElement[] = [];
     let currentParentKey =  localStorage.getItem('current-menu') ;
@@ -52,25 +71,24 @@ export class CoreContentService {
     return retCardList ;
   }
 
-  loadContentList() {
+  loadContentList() { // loads the raw list; also collects statistics
     
       // in the future considering adding role in the ImageList object.. right now
     // QUICK FIX+DEPLOY JAN 4 2024 scrub lists for min religous content and temp freeze roles
     /**/ 
-    //if (this.Scrub === false) {
       this.contentList.push( { contentFile:new GaneshPreQ42021ImageList(),contentCategory:'shree-ganesh-b4-q4-2021', role:'sanatani'}) ;
       this.contentList.push( { contentFile:new GaneshGTEQ42021ImageList(),contentCategory:'shree-ganesh-gte-q4-2021', role:'sanatani'}) ;
       this.contentList.push( { contentFile:new GaneshGTEQ12023ImageList(),contentCategory:'shree-ganesh-gte-q1-2023', role:'sanatani'}) ;
-      this.contentList.push( { contentFile:new GaneshGTEQ12024ImageList(),contentCategory:'shree-ganesh-gte-q1-2024', role:'sanatani'}) ;
+      this.contentList.push( { contentFile:new GaneshGTEQ12024ImageList(),contentCategory:'shree-ganesh-gte-q1-2024', role:'sanatani',latest:true}) ;
       
-      this.contentList.push( { contentFile:new DeviImageList(),contentCategory:'devi', role:'sanatani'}) ;
-      this.contentList.push( { contentFile:new MahadevImageList(),contentCategory:'mahadev', role:'sanatani'}) ;
-      this.contentList.push( { contentFile:new MahadevFamilyImageList(),contentCategory:'mahadev-family', role:'sanatani'}) ;
-      this.contentList.push( { contentFile:new LaxmiVishnuHanumanList(),contentCategory:'laxmi-vishnu-hanuman', role:'sanatani'}) ;
-      this.contentList.push( { contentFile:new DattavatarImageList(),contentCategory:'dattavatar', role:'guru'}) ;
+      this.contentList.push( { contentFile:new DeviImageList(),contentCategory:'devi', role:'sanatani',latest:true}) ;
+      this.contentList.push( { contentFile:new MahadevImageList(),contentCategory:'mahadev', role:'sanatani',latest:true}) ;
+      this.contentList.push( { contentFile:new MahadevFamilyImageList(),contentCategory:'mahadev-family', role:'sanatani',latest:true}) ;
+      this.contentList.push( { contentFile:new LaxmiVishnuHanumanList(),contentCategory:'laxmi-vishnu-hanuman', role:'sanatani',latest:true}) ;
+      this.contentList.push( { contentFile:new DattavatarImageList(),contentCategory:'dattavatar', role:'guru',latest:true}) ;
       this.contentList.push( { contentFile:new SwamiSamarthaImageList(),contentCategory:'swami-samartha', role:'guru'}) ;
-      this.contentList.push( { contentFile:new SwamiSamarthaQ22023ImageList(),contentCategory:'swami-samartha-q2-2023', role:'guru'}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiQ42023Q12024ImageList(),contentCategory:'shirdi-sai-q4-2023-q1-2024', role:'guru'}) ;
+      this.contentList.push( { contentFile:new SwamiSamarthaQ22023ImageList(),contentCategory:'swami-samartha-q2-2023', role:'guru',latest:true}) ;
+      this.contentList.push( { contentFile:new ShirdiSaiQ42023Q12024ImageList(),contentCategory:'shirdi-sai-q4-2023-q1-2024', role:'guru',latest:true}) ;
       this.contentList.push( { contentFile:new ShirdiSaiThemeList1(),contentCategory:'baba-themes-1', role:'guru'}) ;
       this.contentList.push( { contentFile:new ShirdiSaiPreQ32021ImageList(),contentCategory:'shirdi-sai-q1-q2-2021', role:'guru'}) ;
       this.contentList.push( { contentFile:new ShirdiSaiQ3Q42021ImageList(),contentCategory:'shirdi-sai-q3-q4-2021', role:'guru'}) ;
@@ -100,29 +118,137 @@ export class CoreContentService {
     this.contentList.push( { contentFile:new AnimateToBeOrganized1ImageList(),contentCategory:'animate-to-be-oragnized1', role:'misc'}) ;
     */
     //}
+    let me = this;
+    this.contentList.forEach((contentItem:ContentList) =>{
+      me.collectThemeBasedStats(contentItem);
+    });
   }
   loadSelectedContent(strParam:string):any {
       if (this.contentList === null || this.contentList.length === 0) {
         this.loadContentList();
       }
-        // switch (strParam) {
-    // .. 
-      // default: 
-      
-      // @ts-ignore: Object is possibly 'null'.
-      this.genImageList = this.contentList.find(cl => cl.contentCategory === strParam)? 
-          this.contentList.find(cl => cl.contentCategory === strParam)?.contentFile: null;
-      if (this.genImageList === null || this.genImageList.allImageList === null) {
-        return ;
-      }
-      if(this.genImageList !== undefined && this.genImageList.allImageList !== null) { // first aid; need to NOT reach this function for a node
-        this.allImageList = this.genImageList.allImageList ;
-        return { all:  this.allImageList, gen: this.genImageList };
-      }
-      else return null ;
-      //break;
-    //}
+        switch (strParam) {
+          // .. 
+            case 'latest-uploads-themewise':
+              this.genImageList = { 
+                allImageList: [ 
+                    { 
+                      folder:'',
+                      theme:'latest-uploads-themewise',
+                      themeSummary: `Uploads latest by theme`,
+                      files: [],
+                    }
+                ]} ;
+                const latestImageLists:any = [];
+               // this.loadLists(latestImageLists) ;
+                this.ContentList.forEach((latestImageList:any) => {
+                  if(latestImageList.latest && latestImageList.latest === true)
+                    this.loadLatestUploads(latestImageList);
+                })
+                return { all:  this.allImageList, gen: this.genImageList };
+                console.log(`#### LATEST UPLOAD .. RETURN AFTER SORT`);
+                
+              break;
+            default: 
+            
+            // @ts-ignore: Object is possibly 'null'.
+            this.genImageList = this.contentList.find(cl => cl.contentCategory === strParam)? 
+                this.contentList.find(cl => cl.contentCategory === strParam)?.contentFile: null;
+            if (this.genImageList === null || this.genImageList.allImageList === null) {
+              return ;
+            }
+            if(this.genImageList !== undefined && this.genImageList.allImageList !== null) { // first aid; need to NOT reach this function for a node
+              this.allImageList = this.genImageList.allImageList ;
+              return { all:  this.allImageList, gen: this.genImageList };
+            }
+            else return null ;
+            break;
+        }
      // revisit this logic
+    }
+  collectThemeBasedStats(contentList:ContentList) {
+    let themeCount = {
+      name: contentList.contentFile.allImageList[0].theme,
+      count: 0
+    };
+    if(contentList.contentFile.allImageList && contentList.contentFile.allImageList[0].files) {
+      contentList.contentFile.allImageList[0].files.forEach((fileItem:any) => {
+        if(!fileItem.duplicate || fileItem.duplicate === false) {
+          themeCount.count++ ;
+          this.sketchStats.totalCounts++ ;
+        }
+      });
+    }
+    this.sketchStats.subjects++ ;
+    
+    this.sketchStats.themBasedCounts.push(themeCount) ;
+  }
+  getLatestUploads(lastXDays = false) { 
+    this.ContentList.forEach((contentItem:ContentList) =>{
+      /*
+       // @ts-ignore: Object is possibly 'null'.
+       this.genImageList = this.contentList.find(cl => cl.contentCategory === strParam)? 
+       this.contentList.find(cl => cl.contentCategory === strParam)?.contentFile: null;
+   if (this.genImageList === null || this.genImageList.allImageList === null) {
+     return ;
+   }
+   if(this.genImageList !== undefined && this.genImageList.allImageList !== null) { // first aid; need to NOT reach this function for a node
+     this.allImageList = this.genImageList.allImageList ;
+     return { all:  this.allImageList, gen: this.genImageList };
+   }
+   */
+    });
+
+    
+  }
+  loadLatestUploads(currentList:any)  {
+
+    let daysBack = 30 ;
+    console.log(`LATEST ${JSON.stringify(this.contentList)}`);
+    if(currentList.contentFile.allImageList && currentList.contentFile.allImageList[0].files && 
+        currentList.contentFile.allImageList[0].files.length > 0) {
+          currentList.contentFile.allImageList[0].files.sort(function(a:any, b:any) {
+            const aDate = new Date(a.dateUploaded).getTime();
+            const bDate = new Date(b.dateUploaded).getTime();
+            let c = bDate  -  aDate ; // aDate - bDate ;
+            return  c ;
+          });
+          currentList.contentFile.allImageList[0].files.slice(0,3).forEach(
+              (fileItem:any) =>  this.genImageList.allImageList[0].files.push(fileItem)) ;
+    }
+    
+    
+    console.log(`Loading latest`);
+ //   return latestUploadList ;
+  }
+
+  // Custom List functions
+  // Process compilations from existing theme based list
+  // 1. find images loaded 'latestLimit/customLimit' or less days ago
+  daysAgoUploaded(source:any, customLimit = -1, minRange=-1) {
+    const firstDayOfYear =  source.dateUploaded ? new Date(source.dateUploaded): new Date('01-01-1990') ;
+    const today = new Date();
+  
+    const diff = Math.abs(today.getTime() - firstDayOfYear.getTime());
+    const diffDays = Math.ceil(diff / (1000 * 3600 * 24)); 
+    // return customLimit === -1 ?  diffDays <= this.latestLimit: diffDays <= customLimit;
+  
+   // to avoid duplication.. if I had few sketches of 30 days or less but also wanted to include, say, 90 days old
+   // use minRange to filter out double entry
+   return customLimit === -1 ?  diffDays <= 60: minRange > 0
+          ? diffDays >= minRange && diffDays <= customLimit : diffDays <= customLimit;
+  }
+  sortImages(asc=true) {
+    this.genImageList.allImageList[0].files.sort(function(a:any, b:any) {
+      const aDate = a.dateUploaded ? 
+              new Date(a.dateUploaded).getTime():
+              new Date('12-01-2015').getTime();
+      const bDate = b.dateUploaded ? 
+              new Date(b.dateUploaded).getTime():
+              new Date('12-01-2015').getTime(); // new Date(b.dateUploaded).getTime();
+      let c = asc === true ? bDate  -  aDate : aDate - bDate ; // aDate - bDate ;
+      return  c ;
+    });
   }
   public techStatsSpan(fileDetail:any):string {
     if (!fileDetail || !fileDetail.canvassSize) {

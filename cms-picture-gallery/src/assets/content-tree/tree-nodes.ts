@@ -9,6 +9,7 @@ export interface TreeNodeElement {
     levelIndex?:number ; // unused for now (May 2024)
     breadCrumb:BreadCrumb[]; // better safe than optimal for now May 3 2024
     label:string; 
+   // emptyMessage:string;
     description?:string ;
     roleBasedDescription?: string;
     isCompiledList?:boolean; // use some criteria to load selected images like latest uploads or top rated
@@ -154,7 +155,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     { 
         parentKey: "special-lists", key: 'latest-uploads', levelIndex:2, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
         label: 'Latest Uploads', 
-        description:`Images of drawings uploaded the last 60 days. If there are few, then this will upload latest 2-3 sketches from each theme`,
+        description:`Images of latest drawings uploaded`,
         breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
@@ -357,6 +358,7 @@ Also increasing numbers of Swami Samartha sketches`,
      
 
 // ### END SPECIAL LISTS
+
     { 
         parentKey: "changers", key: 'changers-b4-2022', levelIndex:3, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
         label: 'Changers: before 2022', 
@@ -439,7 +441,29 @@ Also increasing numbers of Swami Samartha sketches`,
                 {link: '', params:'showpiece-2024', label: 'The Best of 2024'}
             ], 
     },
- 
+    { 
+        parentKey: "latest-uploads", key: 'latest-uploads-themewise', levelIndex:3, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
+        label: 'Latest Uploads: Theme', 
+        description:`Images of latest drawings uploaded by theme`,
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'special-lists', label: 'Special Lists'},
+            {link: '/view', params:'latest-uploads', label: 'Latest Uploads'},
+            {link: '', params:'latest-uploads-themewise', label: 'Latest Uploads: Theme'}
+        ],
+    }
+    ,
+    { 
+        parentKey: "latest-uploads", key: 'latest-uploads-timewise', levelIndex:3, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
+        label: 'Latest Uploads: By Timeline', 
+        description:`Images of drawings uploaded the last 60 days.`,
+        breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'special-lists', label: 'Special Lists'},
+            {link: '/view', params:'latest-uploads', label: 'Latest Uploads'},
+            {link: '', params:'latest-uploads-timewise', label: 'Latest Uploads: By Timeline'}
+        ],
+    },
 // ### END SHOWPIECES
     
    

@@ -4,7 +4,8 @@ interface StaticText {
      appAuthor:string;
      introContentList:string[];
 }
-export  const staticText:StaticText = {
+export const latestUploads = 60;
+export const staticText:StaticText = {
     appTitle:"A Journey of Drawings", 
     appAuthor:"- by Shantanu Gadkari",
  introContentList: [

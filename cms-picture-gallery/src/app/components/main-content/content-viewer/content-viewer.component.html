@@ -12,7 +12,7 @@
         <div id="upper-ten-central-box">
             <input type='button' value='Logout'  (click)='cmsLogout()'>
         </div>
-        
+        <div  id="upper-ten-right-box" [innerHTML]="StatsSummary"> </div>
     </div>
     <br/>
     <div  class="lower-ninety outerdiv" >
@@ -37,9 +37,9 @@
      
   <!-- ##### Uncomment later for image expansion. Refer to content list of old code - -->
     <div id="modal-container">
-        <span id="close-modal" style="margin:0" (click)="closeModal()">&times;</span>
+        <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
          <div id="pic-container"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  == 1">
-           <img id="pic" *ngIf="selectedImage != null" src="{{selectedImage.imageList[0].image}}">
+           <p><img id="pic" *ngIf="selectedImage != null" src="{{selectedImage.imageList[0].image}}"></p>
            <p [innerHTML]="selectedImage.imageList[0].description"></p>
          </div>    
         

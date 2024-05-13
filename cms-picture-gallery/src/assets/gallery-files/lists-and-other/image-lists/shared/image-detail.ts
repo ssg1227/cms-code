@@ -31,4 +31,5 @@ export   interface ContentList {
     contentFile:any ;
     contentCategory:string ;
     role:string; // maybe multiple, but for now keep it flattened as a csv string
+    latest?:boolean; // for latest uploads
   }

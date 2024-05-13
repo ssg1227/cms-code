@@ -40,6 +40,14 @@
     padding:5px;
 }
 
+#upper-ten-right-box {
+    margin:auto;
+    margin-top: 4px;
+    margin-right: 5px; 
+    border:1px solid aqua;
+    background-color: silver;
+    padding:5px;
+}
 .lower-ninety {
     height: 90%;
     border: 2px solid slateblue ;
@@ -59,5 +67,10 @@
     
     height: auto;
     font-size: x-large;
+}
+#upper-ten-right-box {
+    
+    height: auto;
+    font-size: large;
 }
 }

@@ -8,9 +8,14 @@
 - in memory - caching, avoiding time outs
 - email form 
 - put hard coded paths behind variables, and find right place to keep these variables (e.g. global version of imageRoot)
-### Log May 10 - 11
+### Log May 13
+- Special lists and summary numbers
+- latest uploads - new logic - two categories - 60 days or less, latest per theme
+- Responsive styling
+### Log May 10 - 12
 - ACHIEVED images loading at leaf level for non compiled themes after Merging old code (for now).
 - INITIAL publish (art-is-worship; previous backed up art-worship-2023)
+- ALL relgious themes, except common user compilation, uploaded
 ### Log May 7 - 9 2024
 - Base for image loading established.
 - Population of (menu) tree node wip

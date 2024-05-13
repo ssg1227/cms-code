@@ -1,6 +1,6 @@
 import { Component, Input, OnInit  } from '@angular/core';
 import  { AuthService } from 'src/app/services/auth.service'
-import { staticText } from 'src/assets/common-config/static-text';
+import { staticText } from 'src/assets/common-config/static-text-other-constants';
 
 import { Router } from '@angular/router';
 /*eslint-disable */
