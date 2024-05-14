@@ -10,6 +10,7 @@
 - put hard coded paths behind variables, and find right place to keep these variables (e.g. global version of imageRoot)
 ### Log May 13 - 14
 - Authentication piece
+  - roles: list of strings - 
 - LOGIC IMPLEMENTED Special lists and summary numbers  except for latest uploads timeline
 - latest uploads - new logic - two categories - 60 days or less, latest per theme
 - Responsive styling
