@@ -465,7 +465,58 @@ Also increasing numbers of Swami Samartha sketches`,
         ],
     },
 // ### END SHOWPIECES
+ {
+    parentKey:"otherbeings-places-events", key: "religion-and-guru", levelIndex:2,isLeafParent:true, accessible:['superuser','people'],
+    label: "Some Religious : Deites, Spiritual Mystics..",
+    description:`A collection of selected sketches of Gods and Godesses, Saints and Gurus`,
     
+    emptyMessage: 'Empty Content or Error', breadCrumb:[
+        {link: '/view', params:'top-level', label: 'HOME'},
+        {link: '/view', params:'otherbeings-places-events', label: 'Beings, Places and Themes'},
+        {link: '', params:'religion-and-guru', label: 'Some Religious : Deites, Spiritual Mystics..'}
+    ],
+    
+},
+{
+    parentKey:"otherbeings-places-events", key: "people-places", levelIndex:2,isLeafParent:true, accessible:['superuser','people'],
+    label: "Famous Personalities",
+    description:`Faces, figures sketching started almost at the start of my 'pandemic caused' reconnect with this hobby
+    Some off the spur of the moment, spontaneous, others due to their deaths (and we have had a lot of that!!)
+    Some, in fact, many are <em><strong>pretty out of shape</strong></em>, but <em>still</em> included because of the significance`,
+    roleBasedDescription:`ADD:Also some chosen religious and spirtual themes: NOTS superuser, sanatan,guru'`,
+    
+    emptyMessage: 'Empty Content or Error', breadCrumb:[
+        {link: '/view', params:'top-level', label: 'HOME'},
+        {link: '/view', params:'otherbeings-places-events', label: 'Beings, Places and Themes'},
+        {link: '', params:'people-places', label: 'Famous Personalities'}
+    ],
+    
+}, {
+    parentKey:"otherbeings-places-events", key: "places-scenes-objects", levelIndex:2,isLeafParent:true, accessible:['superuser','people'],
+    label: "Places, Scenes and Objects",
+    description:`Faces, figures sketching started almost at the start of my 'pandemic caused' reconnect with this hobby
+    Some off the spur of the moment, spontaneous, others due to their deaths (and we have had a lot of that!!)
+    Some, in fact, many are <em><strong>pretty out of shape</strong></em>, but <em>still</em> included because of the significance`,
+    roleBasedDescription:`ADD:Also some chosen religious and spirtual themes: NOTS superuser, sanatan,guru'`,
+    
+    emptyMessage: 'Empty Content or Error', breadCrumb:[
+        {link: '/view', params:'top-level', label: 'HOME'},
+        {link: '/view', params:'otherbeings-places-events', label: 'Beings, Places and Themes'},
+        {link: '', params:'places-scenes-objects', label: 'Places, Scenes and Objects'}
+    ],
+    
+}, {
+    parentKey:"otherbeings-places-events", key: "themes-misc", levelIndex:2,isLeafParent:true, accessible:['superuser','people'],
+    label: "Themes and Pending formal categorization",
+    description:`Some theme sketches with components, some as-yet 'one-off' or uncategorized sketches`,
+    
+    emptyMessage: 'Empty Content or Error', breadCrumb:[
+        {link: '/view', params:'top-level', label: 'HOME'},
+        {link: '/view', params:'otherbeings-places-events', label: 'Beings, Places and Themes'},
+        {link: '', params:'themes-misc', label: 'Themes and Pending formal categorization'}
+    ],
+    
+}, 
    
 ]
 /*
