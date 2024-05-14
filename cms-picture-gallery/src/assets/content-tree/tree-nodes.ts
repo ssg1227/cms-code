@@ -9,7 +9,7 @@ export interface TreeNodeElement {
     levelIndex?:number ; // unused for now (May 2024)
     breadCrumb:BreadCrumb[]; // better safe than optimal for now May 3 2024
     label:string; 
-   // emptyMessage:string;
+    emptyMessage?:string;
     description?:string ;
     roleBasedDescription?: string;
     isCompiledList?:boolean; // use some criteria to load selected images like latest uploads or top rated
@@ -23,7 +23,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     // #### ROOT
     {
         key:'top-level', levelIndex:0,isLeafParent:false,accessible:["all"], // roles match users roles many to many match
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '', params:'top-level', label: 'HOME'}
         ],
         label:"HOME PAGE",
@@ -33,7 +33,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         parentKey:'top-level',key: "special-lists", levelIndex:1,isLeafParent:false, accessible:['all'],
         label: "Special Lists", 
         description:'Extracted works from the entire collection like best attempts, something new, latest sketches, etc',
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'special-lists', label: 'Special Lists'}
         ],    
@@ -43,7 +43,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         label: "Religious: Shree Ganesh",
         description:'Sketches of, and including Shree Ganesh',
         
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'religious-shree-ganesh', label: 'Shree Ganesh'}
         ],
@@ -54,7 +54,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         label: "Religious: Other Deities",
         description:'Sketches of other Gods and Goddesses',
         
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'religious-other-deities', label: 'Religious: Other Deities'}
         ],
@@ -65,7 +65,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         label: "Religious: Gurus and Mystics",
         description:'Sketches of Spiritual Masters, Mystics - Lord Dattatreya and Lineage, Sikh Gurus, Others',
         
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'religious-gurus-and-mystics', label: 'Religious: Gurus and Mystics'}
         ],
@@ -76,7 +76,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         label: "Religious: Shirdi Sai Baba",
         description:'Sketches of Sadguru Shirdi Sai Baba. Sooo many sketches, this warranted a separate section at this level',
         
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'}
         ],
@@ -89,7 +89,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
                     (But Mumbai City related drawing warrant a separate, independent group!!)`,
         roleBasedDescription:`ADD:Also some chosen religious and spirtual themes: NOTS superuser, sanatan,guru'`,
         
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'otherbeings-places-events', label: 'Beings, Places and Themes'}
         ],
@@ -100,7 +100,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         label: "Transport And Machines",
         description:`Trains, Cars, Planes, Ships, Military equipment. Anything that is mechanical`,
         
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'transport-and-machines', label: 'Transport And Machines'}
         ],
@@ -111,7 +111,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         label: "Salaam Mumbai",
         description:`Dedication to the City that is part of me that I am part of. Wherever I am`,
         
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'mumbai-meri-jaan', label: 'Salaam Mumbai'}
         ],
@@ -122,7 +122,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         label: "Misc.",
         description:`Those items which is pending, or are too few to have a separate category`,
         
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'misc', label: 'Misc.'}
         ],
@@ -135,7 +135,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         label: 'Changers', 
         description:`These are landmark sketches which I consider a significant change or turn in the progress of my sketches, or maybe a special reason. 
                     These may not be my best efforts but are a new element or entity that was introduced in these drawings.`,
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '', params:'changers', label: 'Changers'}
@@ -145,7 +145,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         parentKey: "special-lists", key: 'showpieces', levelIndex:2, isLeafParent: false, isCompiledList:true, accessible: ["all"], 
         label: 'The Best', 
         description:`A Year-wise extraction of some of my best efforts,.`,
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '', params:'showpieces', label: 'The Best'}
@@ -153,10 +153,10 @@ export const MenuTreeElements:TreeNodeElement[] = [
     }, 
      
     { 
-        parentKey: "special-lists", key: 'latest-uploads', levelIndex:2, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
+        parentKey: "special-lists", key: 'latest-uploads', levelIndex:2, isLeafParent: false, isCompiledList:true, accessible: ["all"], 
         label: 'Latest Uploads', 
         description:`Images of latest drawings uploaded`,
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '', params:'latest-uploads', label: 'Latest Uploads'}
@@ -166,7 +166,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         parentKey:"religious-shree-ganesh", key: "shree-ganesh-b4-q4-2021", levelIndex:2, isLeafParent:true, accessible:['superuser','sanatani'],
         label: "Shree Ganesh Before Q4 2021",
         description:'Sketches of, and including Shree Ganesh prior to Q4 2021', 
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
             {link: '', params:'shree-ganesh-b4-q4-2021', label: 'Shree Ganesh Before Q4 2021'}
@@ -178,7 +178,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q4-2021", levelIndex:2, isLeafParent:true, accessible:['superuser','sanatani'],
         label: "Shree Ganesh Q4 2021 onward",
         description:'Sketches of, and including Shree Ganesh Ganesh Q4 2021 to Q1 2023', 
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
             {link: '', params:'shree-ganesh-gte-q4-2021', label: 'Shree Ganes Q4 2021 onward'}
@@ -189,7 +189,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2023", levelIndex:2, isLeafParent:true, accessible:['superuser','sanatani'],
         label: "Shree Ganesh Q1 2023 onward",
         description:'Sketches of, and including Shree Ganesh Q1 2023 to Q1 2024', 
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
             {link: '', params:'shree-ganesh-gte-q1-2023', label: 'Shree Ganesh Q1 2023 onward'}
@@ -200,7 +200,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2024", levelIndex:2, isLeafParent:true, accessible:['superuser','sanatani'],
         label: "Shree Ganesh Q1 2024 onward",
         description:'Sketches of, and including Shree Ganesh Q1 2023 onward', 
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
             {link: '', params:'shree-ganesh-b4-q4-2021', label: 'Shree Ganesh Q1 2024 onward'}
@@ -211,7 +211,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         label: "Goddesses",
         description:'Sketches of, and including Durga, Laxmi, Saraswati and Avatars',
         
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religious-other-deities', label: 'Religious: Other Deities'},
             {link: '', params:'devi', label: 'Goddesses'}
@@ -223,7 +223,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         label: "Mahadev",
         description:'Sketches of, and related to, Lord Shiva',
         
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religious-other-deities', label: 'Religious: Other Deities'},
             {link: '', params:'mahadev', label: 'Mahadev'}
@@ -235,7 +235,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         label: "Mahadev Family",
         description:'Sketches of, and related to groupings of two or more of  Lord Ganesh, Maa Parvati, Lord Shiva and Karthikeya',
         
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religious-other-deities', label: 'Religious: Other Deities'},
             {link: '', params:'mahadev', label: 'Mahadev Family'}
@@ -246,7 +246,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         parentKey:"religious-other-deities", key: "laxmi-vishnu-hanuman", levelIndex:2,isLeafParent:true, accessible:['superuser','sanatani'],
         label: "Narayan, Laxmi, Hanuman",
         description:'Sketches of, and including Laxmi, Narayan, Shree Ram, and family, Bajrangbali',
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religious-other-deities', label: 'Religious: Other Deities'},
             {link: '', params:'laxmi-vishnu-hanuman', label: 'Narayan, Laxmi, Hanuman'}
@@ -258,7 +258,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         description:`श्री गुरु स्मरण ... श्री गुरु नमन ... श्री गुरु चरण ... श्री गुरु शरण .. अवधूत चिंतन ... श्री गुरुदेव दत्त
 Guru's of Lord Dattatreya lineage and Sikh Gurus... there are likely to be maybe a couple of sketches of Shirdi Sai here; I have many of them, so have separate sections for the same.. 
 Also increasing numbers of Swami Samartha sketches`,
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religious-gurus-and-mystics', label: 'Religious: Gurus and Mystics'},
             {link: '', params:'dattavatar', label: 'Spiritual Souls:Datta Lineage, Sikhs, East of India'}
@@ -267,7 +267,7 @@ Also increasing numbers of Swami Samartha sketches`,
     {    parentKey: "religious-gurus-and-mystics", key: 'swami-samartha', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible:['superuser','guru'],
         label:  'Shree Swami Samartha pre Q2 2023',  
         description: 'Swami Samartha the 4th Avatar of Shree Dattatreya (sequence include Lord Datta Himself). Drawings before Q2 2023' ,
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religious-gurus-and-mystics', label: 'Religious: Gurus and Mystics'},
             {link: '', params:'swami-samartha', label: 'Shree Swami Samartha pre Q2 2023'}
@@ -276,7 +276,7 @@ Also increasing numbers of Swami Samartha sketches`,
     {    parentKey: "religious-gurus-and-mystics", key: 'swami-samartha-q2-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible:['superuser','guru'],
         label:  'Shree Swami Samartha Q2 2023 onward',  
         description: 'Swami Samartha the 4th Avatar of Shree Dattatreya (sequence include Lord Datta Himself). Drawings from Q2 2023' ,
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religious-gurus-and-mystics', label: 'Religious: Gurus and Mystics'},
             {link: '', params:'swami-samartha-q2-2023', label: 'Shree Swami Samartha Q2 2023 onward'}
@@ -289,7 +289,7 @@ Also increasing numbers of Swami Samartha sketches`,
         label:  'Shirdi Sai: to  Q3 2021', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
-       breadCrumb:[
+       emptyMessage: 'Empty Content or Error', breadCrumb:[
            {link: '/view', params:'top-level', label: 'HOME'},
            {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
            {link: '', params:'shirdi-sai-q1-q2-2021', label: 'Shirdi Sai: to  Q3 2021'}
@@ -299,7 +299,7 @@ Also increasing numbers of Swami Samartha sketches`,
         label:  'Shirdi Sai: Q3 2021 - Q1 2022', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
-       breadCrumb:[
+       emptyMessage: 'Empty Content or Error', breadCrumb:[
            {link: '/view', params:'top-level', label: 'HOME'},
            {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
            {link: '', params:'religious-shirdi-sai', label: 'Shree Swami Samartha Q2 2023 onward'}
@@ -309,7 +309,7 @@ Also increasing numbers of Swami Samartha sketches`,
         label:  'Shirdi Sai: Q2 Q3 2022', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
-       breadCrumb:[
+       emptyMessage: 'Empty Content or Error', breadCrumb:[
            {link: '/view', params:'top-level', label: 'HOME'},
            {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
            {link: '', params:'shirdi-sai-q2-q3-2022', label: 'Shirdi Sai: Q2 Q3 2022'}
@@ -319,7 +319,7 @@ Also increasing numbers of Swami Samartha sketches`,
         label:  'Shirdi Sai:- Q3,Q4 2022 Q1 2023', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
-       breadCrumb:[
+       emptyMessage: 'Empty Content or Error', breadCrumb:[
            {link: '/view', params:'top-level', label: 'HOME'},
            {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
            {link: '', params:'shirdi-sai-q4-2022-q1-2023', label: 'Shirdi Sai:- Q3,Q4 2022 Q1 2023'}
@@ -329,7 +329,7 @@ Also increasing numbers of Swami Samartha sketches`,
         label:  'Shirdi Sai: Q2 Q3 2023', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
-       breadCrumb:[
+       emptyMessage: 'Empty Content or Error', breadCrumb:[
            {link: '/view', params:'top-level', label: 'HOME'},
            {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
            {link: '', params:'shirdi-sai-q2-q3-2023', label: 'Shirdi Sai: Q2 Q3 2023'}
@@ -339,7 +339,7 @@ Also increasing numbers of Swami Samartha sketches`,
         label:  'Shirdi Sai: Q4 2023 - Q1 2024', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
-       breadCrumb:[
+       emptyMessage: 'Empty Content or Error', breadCrumb:[
            {link: '/view', params:'top-level', label: 'HOME'},
            {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
            {link: '', params:'religious-shirdi-sai', label: 'Shirdi Sai: Q4 2023 - Q1 2024'}
@@ -349,7 +349,7 @@ Also increasing numbers of Swami Samartha sketches`,
         label:  'Shirdi Sai: Sai Satcharitra', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
-       breadCrumb:[
+       emptyMessage: 'Empty Content or Error', breadCrumb:[
            {link: '/view', params:'top-level', label: 'HOME'},
            {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
            {link: '', params:'baba-themes-1', label: 'Shirdi Sai: Sai Satcharitra'}
@@ -362,7 +362,7 @@ Also increasing numbers of Swami Samartha sketches`,
     { 
         parentKey: "changers", key: 'changers-b4-2022', levelIndex:3, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
         label: 'Changers: before 2022', 
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '/view', params:'changers', label: 'Changers'},
@@ -372,7 +372,7 @@ Also increasing numbers of Swami Samartha sketches`,
     { 
         parentKey: "changers", key: 'changers-2022', levelIndex:3,  isLeafParent: true, isCompiledList:true, accessible: ["all"],
         label:  'Changers: 2022',
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '/view', params:'changers', label: 'Changers'},
@@ -382,7 +382,7 @@ Also increasing numbers of Swami Samartha sketches`,
     { 
         parentKey: "changers",key: 'changers-2023', levelIndex:3,  isLeafParent: true,  accessible: ["all"],
         label:  'Changers: 2023',  
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '/view', params:'changers', label: 'Changers'},
@@ -392,7 +392,7 @@ Also increasing numbers of Swami Samartha sketches`,
     { 
         parentKey: "changers",key: 'changers-2024', levelIndex:3, isLeafParent: true,  accessible: ["all"],
         label:  'Changers: 2024', 
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '/view', params:'changers', label: 'Changers'},
@@ -404,7 +404,7 @@ Also increasing numbers of Swami Samartha sketches`,
  { 
     parentKey: "showpieces", key: 'showpiece',levelIndex:3, isLeafParent: true,  accessible: ["all"],
     label:  'The Best: before 2022', 
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '/view', params:'showpieces', label: 'The Best'},
@@ -414,7 +414,7 @@ Also increasing numbers of Swami Samartha sketches`,
    { 
     parentKey: "showpieces", key: 'showpiece-2022',levelIndex:3, isLeafParent: true,  accessible: ["all"],
     label:  'The Best of 2022', 
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '/view', params:'showpieces', label: 'Changers'},
@@ -424,7 +424,7 @@ Also increasing numbers of Swami Samartha sketches`,
     { 
         parentKey: "showpieces", key: 'showpiece-2023',levelIndex:3, isLeafParent: true,  accessible: ["all"],
         label:  'The Best of 2023', 
-            breadCrumb:[
+            emptyMessage: 'Empty Content or Error', breadCrumb:[
                 {link: '/view', params:'top-level', label: 'HOME'},
                 {link: '/view', params:'special-lists', label: 'Special Lists'},
                 {link: '/view', params:'showpieces', label: 'Changers'},
@@ -434,7 +434,7 @@ Also increasing numbers of Swami Samartha sketches`,
     { 
         parentKey: "showpieces", key: 'showpiece-2024',levelIndex:3, isLeafParent: true,  accessible: ["all"],
         label:  'The Best of 2024', 
-            breadCrumb:[
+            emptyMessage: 'Empty Content or Error', breadCrumb:[
                 {link: '/view', params:'top-level', label: 'HOME'},
                 {link: '/view', params:'special-lists', label: 'Special Lists'},
                 {link: '/view', params:'showpieces', label: 'Changers'},
@@ -445,7 +445,7 @@ Also increasing numbers of Swami Samartha sketches`,
         parentKey: "latest-uploads", key: 'latest-uploads-themewise', levelIndex:3, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
         label: 'Latest Uploads: Theme', 
         description:`Images of latest drawings uploaded by theme`,
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '/view', params:'latest-uploads', label: 'Latest Uploads'},
@@ -457,7 +457,7 @@ Also increasing numbers of Swami Samartha sketches`,
         parentKey: "latest-uploads", key: 'latest-uploads-timewise', levelIndex:3, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
         label: 'Latest Uploads: By Timeline', 
         description:`Images of drawings uploaded the last 60 days.`,
-        breadCrumb:[
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '/view', params:'latest-uploads', label: 'Latest Uploads'},

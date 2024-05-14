@@ -15,8 +15,8 @@
         <div  id="upper-ten-right-box" [innerHTML]="StatsSummary"> </div>
     </div>
     <br/>
+   
     <div  class="lower-ninety outerdiv" >
-     
        <div *ngIf="isLeafParent=='true' && imageGroups.length > 0" class="outerdiv" ><!-- have to repeat outerdiv for flex style -->
          <div *ngFor="let grpImag of imageGroups; let i = index;">
           <app-card 
@@ -25,6 +25,7 @@
           [imageDetail]="grpImag"
           [cardSelected]="currentCellSelected"></app-card>
      </div>
+    
        </div>
         <div *ngFor="let card of currentCardList; let i = index;">
           <app-card 
@@ -34,7 +35,7 @@
             [cardSelected]="currentCellSelected"></app-card>
          
        </div>
-     
+       <div *ngIf="isLeafParent=='true' && imageGroups.length == 0">EMPTY CONTENT; </div> 
   <!-- ##### Uncomment later for image expansion. Refer to content list of old code - -->
     <div id="modal-container">
         <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>

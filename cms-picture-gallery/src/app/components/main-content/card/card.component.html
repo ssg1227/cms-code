@@ -8,7 +8,7 @@
     <div [innerHTML]="cardInfo.label"></div>
   </div>
    <!--- WORKING ON STITCHING OLD IMAGE LOGIC INTO THE NEW CARD TREE- BREAD CRUMB STRUCTURE-->
- <div class="card-image" *ngIf="imageDetail != null;"   (click)="expand()"  > 
+ <div class="card-image" *ngIf="imageDetail != null; "   (click)="expand()"  > 
  
  <img src="{{imageDetail.imageList[0].image}}" [title]="imageDetail.imageList[0].description" [ngClass]="toggleImageSize()" >
  

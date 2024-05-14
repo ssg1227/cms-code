@@ -76,6 +76,12 @@ export class ContentViewerComponent {
   cmsLogout(){
     this.authService.logout() ;
    }
+   noContent = false ;
+   isEmptyList():boolean {
+     
+    this.noContent = (this.isLeafParent === 'true' && this.imageGroups.length === 0) || (this.currentCardList == null || this.currentCardList.length ===0)
+    return this.noContent ;
+   }
    compareSelected(a:any, b:any) {
     console.log(`${a} ${b}`)
     this.isLeafParent = localStorage.getItem("isLeafParent") ;

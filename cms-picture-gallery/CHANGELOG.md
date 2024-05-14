@@ -8,8 +8,8 @@
 - in memory - caching, avoiding time outs
 - email form 
 - put hard coded paths behind variables, and find right place to keep these variables (e.g. global version of imageRoot)
-### Log May 13
-- Special lists and summary numbers
+### Log May 13 - 14
+- Special lists and summary numbers LOGIC IMPLEMENTED except for latest uploads timeline
 - latest uploads - new logic - two categories - 60 days or less, latest per theme
 - Responsive styling
 ### Log May 10 - 12

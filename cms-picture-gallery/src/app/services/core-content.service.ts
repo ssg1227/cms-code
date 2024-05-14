@@ -36,6 +36,7 @@ export class CoreContentService {
   };
   allImageList:ImageElement[] = [];
   genImageList:any = null ;
+  topUploadsList: any =   { all: null, gen: null };
   constructor() {
     this.loadContentList();
    }
@@ -127,8 +128,68 @@ export class CoreContentService {
       if (this.contentList === null || this.contentList.length === 0) {
         this.loadContentList();
       }
+      let yearSelected = 0 ;
+      let themeYear = 'before 2022';
         switch (strParam) {
           // .. 
+          case 'showpiece': 
+          case 'showpiece-2022': 
+          case 'showpiece-2023': 
+            if (strParam.indexOf('-') > 0) {
+              themeYear =  strParam.split('-')[1] ;
+              yearSelected = parseInt(themeYear);
+            }
+            this.genImageList = { 
+            allImageList: [ 
+                { 
+                  folder:'',
+                  theme:`Showpiece - ${themeYear}`,
+                  themeSummary: `&nbsp;&nbsp;These are some which are, what I consider my best efforts. Almost all the better ones, I have taken my time over..<br/>
+                                &nbsp;&nbsp;My attitude and approach to sketching have changed; I RARELY try to finish a sketch at one sitting, but do it in bits and pieces..`,
+                  files: [],
+                }
+            ]} ; 
+            // later this.loadMultipleThemes(this.loadTopUploads) ;
+            this.ContentList.forEach((latestImageList:any) => {
+          
+              this.loadTopUploads(latestImageList,yearSelected);
+            });
+            this.sortImageList() ;
+            return { all:  this.allImageList, gen: this.genImageList };
+          break;
+          case 'changers-b4-2022':  
+          case 'changers-2022':  
+          case 'changers-2023': 
+          if (strParam.indexOf('b4') < 0 && strParam.indexOf('-') > 0) {
+            themeYear =  strParam.split('-')[1] ;
+            yearSelected = parseInt(themeYear);
+          }
+          this.genImageList = { 
+            allImageList: [ 
+                { 
+                  folder:'',
+                  theme:`INTRODUCTION: Milestones in a Journey.. (${themeYear})`,
+                  themeSummary: `These are landmark sketches which I consider a significant change or turn in the progress of my sketches, or maybe a special reason. 
+                                  <i><u>These may not be my best efforts</u></i> but are a new element or entity that was introduced in these drawings.`,
+                  files: [],
+                }
+            ]} ;
+           // let milestoneImageLists:any = [];
+            this.ContentList.forEach((milestoneImageList:any) => {
+              yearSelected ==0 ? 
+                this.getMilestoneSketches(milestoneImageList,0, 1): 
+                this.getMilestoneSketches(milestoneImageList,yearSelected);
+            })
+            
+          this.genImageList.allImageList[0].files.sort(function(a:any, b:any) {
+            const aDate = new Date(a.evolutionDate).getTime();
+            const bDate = new Date(b.evolutionDate).getTime();
+            let c = aDate  -  bDate ; // aDate - bDate ;
+            return  c ;
+          });
+
+          return { all:  this.allImageList, gen: this.genImageList };
+          break ;
             case 'latest-uploads-themewise':
               this.genImageList = { 
                 allImageList: [ 
@@ -183,24 +244,7 @@ export class CoreContentService {
     
     this.sketchStats.themBasedCounts.push(themeCount) ;
   }
-  getLatestUploads(lastXDays = false) { 
-    this.ContentList.forEach((contentItem:ContentList) =>{
-      /*
-       // @ts-ignore: Object is possibly 'null'.
-       this.genImageList = this.contentList.find(cl => cl.contentCategory === strParam)? 
-       this.contentList.find(cl => cl.contentCategory === strParam)?.contentFile: null;
-   if (this.genImageList === null || this.genImageList.allImageList === null) {
-     return ;
-   }
-   if(this.genImageList !== undefined && this.genImageList.allImageList !== null) { // first aid; need to NOT reach this function for a node
-     this.allImageList = this.genImageList.allImageList ;
-     return { all:  this.allImageList, gen: this.genImageList };
-   }
-   */
-    });
 
-    
-  }
   loadLatestUploads(currentList:any)  {
 
     let daysBack = 30 ;
@@ -216,12 +260,77 @@ export class CoreContentService {
           currentList.contentFile.allImageList[0].files.slice(0,3).forEach(
               (fileItem:any) =>  this.genImageList.allImageList[0].files.push(fileItem)) ;
     }
-    
-    
     console.log(`Loading latest`);
  //   return latestUploadList ;
   }
-
+  
+  loadTopUploads(currentList:any, year=0) {
+    console.log(`YEAR ${year}`);
+    if(currentList.contentFile.allImageList && currentList.contentFile.allImageList[0].files) {
+      currentList.contentFile.allImageList[0].files.forEach((fileItem:any) => {
+        if (fileItem.rating  && fileItem.rating === 1) {
+          let fileYear= fileItem.ratingYear ? fileItem.ratingYear : 
+            fileItem.dateUploaded ? new Date(fileItem.dateUploaded).getFullYear() : 1990 ;
+            let ratingYear = year === 0 ? 2021 : year ;
+            if (year === 0 ) {
+              if(fileYear <= ratingYear) {
+                this.genImageList.allImageList[0].files.push(fileItem);
+              }
+            } else {
+              if(fileYear === ratingYear) {
+                this.genImageList.allImageList[0].files.push(fileItem);
+              }
+            }
+        }
+      });
+    }
+  }
+  
+  getMilestoneSketches(currentList:any, year=0, sequence=0, range=[] )  {
+    /*
+    evolution: `<ul><li><b>Not the first</b>, but traditionally, one starts something with Lord Ganesh.</li>
+                                <li>(as will be repeated later)My first color pencil sketch and, also duplicated with black and white sketch using 'glass trace'</li>`,
+                evolutionDate
+    */
+    if(currentList.contentFile.allImageList && currentList.contentFile.allImageList[0].files) {
+      currentList.contentFile.allImageList[0].files.forEach((fileItem:any) => {
+        // get evolution text
+        if (fileItem.evolution ) {
+          if (year !== 0) {
+            if (fileItem.evolutionDate) {
+              if (year === new Date(fileItem.evolutionDate).getFullYear()) {
+                if (fileItem.iterations && fileItem.iterations.length > 0) {
+                  fileItem.iterations[0].description = `${fileItem.evolution} ${fileItem.iterations[0].description}`;
+                } else {
+                  fileItem.description = `${fileItem.evolution} ${fileItem.description}`;
+                
+                }
+                if(!fileItem.dateUploaded) {
+                  fileItem.dateUploaded = fileItem.evolutionDate;
+                }
+                this.genImageList.allImageList[0].files.push(fileItem);
+              }
+            }
+          } else if(range && range.length > 1) {
+          } else {
+            if (fileItem.evolutionSequence && fileItem.evolutionSequence === sequence){
+                if (fileItem.iterations && fileItem.iterations.length > 0) {
+                  fileItem.iterations[0].description = `${fileItem.evolution} ${fileItem.iterations[0].description}`;
+                } else {
+                  fileItem.description = `${fileItem.evolution} ${fileItem.description}`;
+                
+                }
+                if(!fileItem.dateUploaded) {
+                  fileItem.dateUploaded = fileItem.evolutionDate;
+                }
+                this.genImageList.allImageList[0].files.push(fileItem);
+            }
+          }
+        }
+      });
+    }
+     //   return latestUploadList ;
+  }
   // Custom List functions
   // Process compilations from existing theme based list
   // 1. find images loaded 'latestLimit/customLimit' or less days ago
@@ -238,18 +347,23 @@ export class CoreContentService {
    return customLimit === -1 ?  diffDays <= 60: minRange > 0
           ? diffDays >= minRange && diffDays <= customLimit : diffDays <= customLimit;
   }
-  sortImages(asc=true) {
+
+  sortImageList() {
+     
     this.genImageList.allImageList[0].files.sort(function(a:any, b:any) {
       const aDate = a.dateUploaded ? 
               new Date(a.dateUploaded).getTime():
-              new Date('12-01-2015').getTime();
+              new Date('01-01-1990').getTime();
       const bDate = b.dateUploaded ? 
               new Date(b.dateUploaded).getTime():
-              new Date('12-01-2015').getTime(); // new Date(b.dateUploaded).getTime();
-      let c = asc === true ? bDate  -  aDate : aDate - bDate ; // aDate - bDate ;
+              new Date('01-01-1990').getTime(); // new Date(b.dateUploaded).getTime();
+      console.log(`compared: A: ${a.dateUploaded ? new Date(a.dateUploaded) :  new Date('01-01-1990')}, ${a.fullFileName}`);
+      console.log(`compared: B: ${b.dateUploaded ? new Date(b.dateUploaded) :  new Date('01-01-1990')}, ${b.fullFileName}`);
+      let c = bDate  -  aDate ; // aDate - bDate ;
       return  c ;
     });
   }
+
   public techStatsSpan(fileDetail:any):string {
     if (!fileDetail || !fileDetail.canvassSize) {
       return `<p>..</p>`;

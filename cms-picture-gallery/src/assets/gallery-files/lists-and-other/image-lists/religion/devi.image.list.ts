@@ -16,6 +16,7 @@ public allImageList:ImageElement[]  =  [
           `${this.imageRoot}EkviraAai-Q12021-1.jpg`, 
           evolution: `- <b> Most likely  First Devi sketch, and what was more appropriate than the Kuldaivat</b><br/>`,
           evolutionDate: `12-27-2020`,
+          dateUploaded:'12-27-2020',
           evolutionSequence: 1, 
           description: `<ul><li>Our Family 'Kuldaivat' - Shree Ekvira Aai</li>
           <li>Temple at Karle Caves, Lonavla, Mumbai Pune. Sketched across end 2020-start 2021</li></ul> `,
