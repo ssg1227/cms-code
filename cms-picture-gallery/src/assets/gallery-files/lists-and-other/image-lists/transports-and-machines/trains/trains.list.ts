@@ -1,5 +1,5 @@
 
-import {   ImageElement } from  '../../image-lists/shared/image-detail'
+import {   ImageElement } from  '../../shared/image-detail'
 enum PicsIndex  {
     aumkarGaneshSept2020Final,
     AumGaShivParKashiVishwCTLightNov172020Final,
@@ -10,7 +10,7 @@ enum PicsIndex  {
 };
 export class TrainImageList { // SwamiSamarthaImageList
     sort: string = 'asc'
-    imageRoot=`assets/gallery-files/images/trains/`;
+    imageRoot=`assets/gallery-files/images/transports-and-machines/trains/`;
 public allImageList:ImageElement[]  =  [
    { 
      folder:'trains',

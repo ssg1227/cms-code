@@ -507,16 +507,27 @@ Also increasing numbers of Swami Samartha sketches`,
     
 }, {
     parentKey:"otherbeings-places-events", key: "themes-misc", levelIndex:2,isLeafParent:true, accessible:['superuser','people'],
-    label: "Themes and Pending formal categorization",
-    description:`Some theme sketches with components, some as-yet 'one-off' or uncategorized sketches`,
+    label: "Themes",
+    description:`Some theme sketches with components, some as-yet 'one-off's`,
     
     emptyMessage: 'Empty Content or Error', breadCrumb:[
         {link: '/view', params:'top-level', label: 'HOME'},
         {link: '/view', params:'otherbeings-places-events', label: 'Beings, Places and Themes'},
-        {link: '', params:'themes-misc', label: 'Themes and Pending formal categorization'}
+        {link: '', params:'themes-misc', label: 'Themes'}
     ],
     
-}, 
+},  {
+    parentKey:"otherbeings-places-events", key: "animate-to-be-oragnized1", levelIndex:2,isLeafParent:true, accessible:['superuser'],
+    label: "Uncategorized sketches",
+    description:`Pending formal categorization`,
+    
+    emptyMessage: 'Empty Content or Error', breadCrumb:[
+        {link: '/view', params:'top-level', label: 'HOME'},
+        {link: '/view', params:'otherbeings-places-events', label: 'Beings, Places and Themes'},
+        {link: '', params:'animate-to-be-oragnized1', label: 'Uncategorized sketches'}
+    ],
+    
+},
  { 
     parentKey: 'salaam-mumbai',   key: 'mumbai-meri-jaan', levelIndex:2,isLeafParent:true,  accessible: ['non-living',  'non-religious', 'all'], 
         label:  'Mumbai Meri Jaan',
@@ -532,17 +543,31 @@ Also increasing numbers of Swami Samartha sketches`,
                     {link: '/view', params:'top-level', label: 'HOME'},
                     {link: '/view', params:'salaam-mumbai', label: 'Salaam Mumbai'},
                     {link: ' ', params:'mumbai-meri-jaan', label: 'Mumbai Meri Jaan(2)'}
-                ],},{
-        parentKey:"transport-and-machines", key: "railways", levelIndex:2,isLeafParent:false, accessible:['all'],
-        label: "Railways",
-        description:`Railways: As on June 2024 this is mainly Indian Railways`,
-        
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '/view', params:'transport-and-machines', label: 'Transport And Machines'},
-            {link: '', params:'railways', label: 'Railways'}
-        ],
-    }, {
+                ],},
+    // #### TRANSPORT AND MACHINE DESCENDANTS
+        {
+            parentKey:"transport-and-machines", key: "railways", levelIndex:2,isLeafParent:false, accessible:['all'],
+            label: "Railways",
+            description:`Railways: As on June 2024 this is mainly Indian Railways`,
+            
+            emptyMessage: 'Empty Content or Error', breadCrumb:[
+                {link: '/view', params:'top-level', label: 'HOME'},
+                {link: '/view', params:'transport-and-machines', label: 'Transport And Machines'},
+                {link: '', params:'railways', label: 'Railways'}
+            ],
+        },  {
+            parentKey:"transport-and-machines", key: "machines-others", levelIndex:2,isLeafParent:false, accessible:['all'],
+            label: "Other Machines",
+            description:`As on June 2024, this covers aircraft, ships and cars`,
+            
+            emptyMessage: 'Empty Content or Error', breadCrumb:[
+                {link: '/view', params:'top-level', label: 'HOME'},
+                {link: '/view', params:'transport-and-machines', label: 'Transport And Machines'},
+                {link: '', params:'machines-others', label: 'Other Machines'}
+            ],
+        },
+     // #### RAIL AND DESCENDANTS   
+        {
         parentKey:"railways", key: "trains", levelIndex:3,isLeafParent:true, accessible:['all'],
         label: "General Scenes",
         description:`Railways: General Scenes`,
@@ -576,6 +601,29 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'trains-ir-special-trains', label: 'Landmark Trains'}
         ],
     }
+    ,  {
+        parentKey:"machines-others", key: "planes", levelIndex:3,isLeafParent:true, accessible:['all'],
+        label: "Aircraft, Ships and Cars",
+        description:`Planes, ships and cars`,
+        
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'transport-and-machines', label: 'Transport And Machines'},
+            {link: '/view', params:'machines-others', label: 'Other Machines'},
+            {link: '', params:'planes-ships-cars', label: 'Planes, ships and cars'}
+        ],
+    },  {
+        parentKey:"machines-others", key: "planes-ships-cars-2", levelIndex:3,isLeafParent:true, accessible:['all'],
+        label: "Aircraft, Ships and Cars(2)",
+        description:`Planes, ships and cars `,
+        
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'transport-and-machines', label: 'Transport And Machines'},
+            {link: '/view', params:'machines-others', label: 'Other Machines'},
+            {link: '', params:'planes-ships-cars-2', label: 'Planes, ships and cars(2)'}
+        ],
+    },
 ]
 /*
 

@@ -25,10 +25,14 @@ import { ShirdiSaiQ2Q32023ImageList } from 'src/assets/gallery-files/lists-and-o
 import { PeopleImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/people.image.list';
 import { PlacesScenesObjectsImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/places-scenes-objects.image.list';
 import { ThemesMisc } from 'src/assets/gallery-files/lists-and-other/image-lists/themes-misc.list';
+import { AnimateToBeOrganized1ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/animate-to-be-organized-1.list';
 
-import { TrainImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/trains/trains.list';
-import { TrainsIndianRailwaySpecialTrains } from 'src/assets/gallery-files/lists-and-other/image-lists/trains/trains-indian-railway-special-trains';
-import { TrainsIndianRailwayAlcos } from 'src/assets/gallery-files/lists-and-other/image-lists/trains/trains-indian-railway-alcos';
+import { TrainImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains.list';
+import { TrainsIndianRailwaySpecialTrains } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains-indian-railway-special-trains';
+import { TrainsIndianRailwayAlcos } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains-indian-railway-alcos';
+
+import {  PlanesShipsCarsImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/planes-ships-cars.image.list';
+import {  PlanesShipsCars2ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/planes-ships-cars-2.image.list';
 import { MumbaiMeriJaanList } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan.list';
 import { MumbaiMeriJaan2List } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan-2.list';
 @Injectable({
@@ -115,6 +119,11 @@ export class CoreContentService {
       this.contentList.push( { contentFile:new TrainsIndianRailwaySpecialTrains(),contentCategory:'trains-ir-special-trains', role:'non-living,  non-religious'}) ;
       this.contentList.push( { contentFile:new MumbaiMeriJaanList(),contentCategory:'mumbai-meri-jaan', role:'non-living,  non-religious'}) ;
       this.contentList.push( { contentFile:new MumbaiMeriJaan2List(),contentCategory:'mumbai-meri-jaan-2', role:'non-living,  non-religious'}) ;
+      this.contentList.push( { contentFile:new AnimateToBeOrganized1ImageList(),contentCategory:'animate-to-be-oragnized1', role:'misc'}) ;
+
+      this.contentList.push( { contentFile:new PlanesShipsCarsImageList(),contentCategory:'planes-ships-cars', role:'non-living,  non-religious'}) ;
+      this.contentList.push( { contentFile:new PlanesShipsCars2ImageList(),contentCategory:'planes-ships-cars-2', role:'non-living,  non-religious'}) ;
+    
    /*
          
       */
@@ -129,9 +138,7 @@ export class CoreContentService {
    
     this.contentList.push( { contentFile:new PlacesScenesObjectsImageList(),contentCategory:'places-scenes-objects', role:'non-living,  non-religious'}) ;
     this.contentList.push( { contentFile:new PlanesImageList(),contentCategory:'planes', role:'non-living,  non-religious'}) ;
-    this.contentList.push( { contentFile:new PlanesQ22023ImageList(),contentCategory:'planesQ12023', role:'non-living,  non-religious'}) ;
     this.contentList.push( { contentFile:new ThemesMisc(),contentCategory:'themes-misc', role:'non-living,  non-religious'}) ;
-    this.contentList.push( { contentFile:new AnimateToBeOrganized1ImageList(),contentCategory:'animate-to-be-oragnized1', role:'misc'}) ;
     */
     //}
     let me = this;
