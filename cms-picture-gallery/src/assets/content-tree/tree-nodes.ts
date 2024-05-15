@@ -96,6 +96,17 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     }, 
     {
+        parentKey:"top-level", key: "salaam-mumbai", levelIndex:1,isLeafParent:false, accessible:['all'],
+        label: "Salaam Mumbai",
+        description:`Dedication to the City that is part of me that I am part of. Wherever I am`,
+        
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'salaam-mumbai', label: 'Salaam Mumbai'}
+        ],
+        
+    }, 
+    {
         parentKey:"top-level", key: "transport-and-machines", levelIndex:1,isLeafParent:false, accessible:['all'],
         label: "Transport And Machines",
         description:`Trains, Cars, Planes, Ships, Military equipment. Anything that is mechanical`,
@@ -103,17 +114,6 @@ export const MenuTreeElements:TreeNodeElement[] = [
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'transport-and-machines', label: 'Transport And Machines'}
-        ],
-        
-    }, 
-    {
-        parentKey:"top-level", key: "mumbai-meri-jaan", levelIndex:1,isLeafParent:false, accessible:['all'],
-        label: "Salaam Mumbai",
-        description:`Dedication to the City that is part of me that I am part of. Wherever I am`,
-        
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'mumbai-meri-jaan', label: 'Salaam Mumbai'}
         ],
         
     }, 
@@ -517,7 +517,65 @@ Also increasing numbers of Swami Samartha sketches`,
     ],
     
 }, 
-   
+ { 
+    parentKey: 'salaam-mumbai',   key: 'mumbai-meri-jaan', levelIndex:2,isLeafParent:true,  accessible: ['non-living',  'non-religious', 'all'], 
+        label:  'Mumbai Meri Jaan',
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'salaam-mumbai', label: 'Salaam Mumbai'},
+            {link: ' ', params:'mumbai-meri-jaan', label: 'Mumbai Meri Jaan'}
+        ],},
+        { 
+            parentKey: 'salaam-mumbai',   key: 'mumbai-meri-jaan-2', levelIndex:2,isLeafParent:true,  accessible: ['non-living',  'non-religious', 'all'], 
+                label:  'Mumbai Meri Jaan(2)',
+                emptyMessage: 'Empty Content or Error', breadCrumb:[
+                    {link: '/view', params:'top-level', label: 'HOME'},
+                    {link: '/view', params:'salaam-mumbai', label: 'Salaam Mumbai'},
+                    {link: ' ', params:'mumbai-meri-jaan', label: 'Mumbai Meri Jaan(2)'}
+                ],},{
+        parentKey:"transport-and-machines", key: "railways", levelIndex:2,isLeafParent:false, accessible:['all'],
+        label: "Railways",
+        description:`Railways: As on June 2024 this is mainly Indian Railways`,
+        
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'transport-and-machines', label: 'Transport And Machines'},
+            {link: '', params:'railways', label: 'Railways'}
+        ],
+    }, {
+        parentKey:"railways", key: "trains", levelIndex:3,isLeafParent:true, accessible:['all'],
+        label: "General Scenes",
+        description:`Railways: General Scenes`,
+        
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'transport-and-machines', label: 'Transport And Machines'},
+            {link: '/view', params:'railways', label: 'Railways'},
+            {link: '', params:'trains', label: 'General Scenes'}
+        ],
+    }, {
+        parentKey:"railways", key: "trains-ir-alcos", levelIndex:3,isLeafParent:true, accessible:['all'],
+        label: "ALCO WDMx: a tribute",
+        description:`Dedicated to the legendary Indian Railway workhorse the WDM2 and later variants (Wide - broad guage, Diesel - diesel electric loco, Mixed - Goods and Passenger) On collaboration with Alco (USA) the first locos entered service in 1962 imported, then manufacture began in 1964j`,
+        
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'transport-and-machines', label: 'Transport And Machines'},
+            {link: '/view', params:'railways', label: 'Railways'},
+            {link: '', params:'trains-ir-alcos', label: 'ALCO WDMx: a tribute'}
+        ],
+    }, {
+        parentKey:"railways", key: "trains-ir-special-trains", levelIndex:3,isLeafParent:true, accessible:['all'],
+        label: "Landmark Trains",
+        description:`Some Special and Legendary Trains. As most of this category domain, it covers IR`,
+        
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'transport-and-machines', label: 'Transport And Machines'},
+            {link: '/view', params:'railways', label: 'Railways'},
+            {link: '', params:'trains-ir-special-trains', label: 'Landmark Trains'}
+        ],
+    }
 ]
 /*
 

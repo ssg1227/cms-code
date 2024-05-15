@@ -21,9 +21,16 @@ import { ShirdiSaiQ3Q42021ImageList } from 'src/assets/gallery-files/lists-and-o
 import { ShirdiSaiQ2Q32022ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q2-q3-2022.list';
 import { ShirdiSaiQ42022Q12023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q4-2022-q1-2023.list';
 import { ShirdiSaiQ2Q32023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q2-q3-2023.list';
+
 import { PeopleImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/people.image.list';
 import { PlacesScenesObjectsImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/places-scenes-objects.image.list';
 import { ThemesMisc } from 'src/assets/gallery-files/lists-and-other/image-lists/themes-misc.list';
+
+import { TrainImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/trains/trains.list';
+import { TrainsIndianRailwaySpecialTrains } from 'src/assets/gallery-files/lists-and-other/image-lists/trains/trains-indian-railway-special-trains';
+import { TrainsIndianRailwayAlcos } from 'src/assets/gallery-files/lists-and-other/image-lists/trains/trains-indian-railway-alcos';
+import { MumbaiMeriJaanList } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan.list';
+import { MumbaiMeriJaan2List } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan-2.list';
 @Injectable({
   providedIn: 'root'
 })
@@ -102,6 +109,12 @@ export class CoreContentService {
       this.contentList.push( { contentFile: new PeopleImageList(),contentCategory:'people-places', role:'non-living,  non-religious'}) ;
       this.contentList.push( { contentFile: new PlacesScenesObjectsImageList(),contentCategory:'places-scenes-objects', role:'non-living,  non-religious'}) ;
       this.contentList.push( { contentFile: new ThemesMisc(),contentCategory:'themes-misc', role:'non-living,  non-religious'}) ;
+
+      this.contentList.push( { contentFile:new TrainImageList(),contentCategory:'trains', role:'non-living,  non-religious'}) ;
+      this.contentList.push( { contentFile:new TrainsIndianRailwayAlcos(),contentCategory:'trains-ir-alcos', role:'non-living,  non-religious'}) ;
+      this.contentList.push( { contentFile:new TrainsIndianRailwaySpecialTrains(),contentCategory:'trains-ir-special-trains', role:'non-living,  non-religious'}) ;
+      this.contentList.push( { contentFile:new MumbaiMeriJaanList(),contentCategory:'mumbai-meri-jaan', role:'non-living,  non-religious'}) ;
+      this.contentList.push( { contentFile:new MumbaiMeriJaan2List(),contentCategory:'mumbai-meri-jaan-2', role:'non-living,  non-religious'}) ;
    /*
          
       */
@@ -113,11 +126,7 @@ export class CoreContentService {
     this.contentList.push( { contentFile:this.filterReligiousAndGuruLists(),contentCategory:'religion-and-guru', role:'non-living,  non-religious'}) ;
   }
     this.contentList.push( { contentFile:new PeopleImageList(),contentCategory:'people-places', role:'people,  non-religious'}) ;
-    this.contentList.push( { contentFile:new TrainImageList(),contentCategory:'trains', role:'non-living,  non-religious'}) ;
-    this.contentList.push( { contentFile:new TrainsIndianRailwayAlcos(),contentCategory:'trains-ir-alcos', role:'non-living,  non-religious'}) ;
-    this.contentList.push( { contentFile:new TrainsIndianRailwaySpecialTrains(),contentCategory:'trains-ir-special-trains', role:'non-living,  non-religious'}) ;
-    this.contentList.push( { contentFile:new MumbaiMeriJaanList(),contentCategory:'mumbai-meri-jaan', role:'non-living,  non-religious'}) ;
-    this.contentList.push( { contentFile:new MumbaiMeriJaan2List(),contentCategory:'mumbai-meri-jaan-2', role:'non-living,  non-religious'}) ;
+   
     this.contentList.push( { contentFile:new PlacesScenesObjectsImageList(),contentCategory:'places-scenes-objects', role:'non-living,  non-religious'}) ;
     this.contentList.push( { contentFile:new PlanesImageList(),contentCategory:'planes', role:'non-living,  non-religious'}) ;
     this.contentList.push( { contentFile:new PlanesQ22023ImageList(),contentCategory:'planesQ12023', role:'non-living,  non-religious'}) ;

@@ -38,7 +38,7 @@ public allImageList:ImageElement[]  =  [
                 </ul>`,
                 dateUploaded: '02-02-2023',
                 },
-                { fullFileName: `assets/all-images/mumbai-meri-jaan-2/RepublicDayOverMumbai01262023-final.jpeg`,
+                { fullFileName: `assets/gallery-files/images/salaam-mumbai/mumbai-meri-jaan-2/RepublicDayOverMumbai01262023-final.jpeg`,
                 canvassSize: 'A3', content:'color-pencil',
                   evolution:
                   `<p>color pencils on 11x17 sheet,  <br/>
@@ -60,7 +60,7 @@ public allImageList:ImageElement[]  =  [
                   rating: 1,
                   dateUploaded: '01-29-2023',
                   iterations: [{
-                   fullFileName: `assets/all-images/mumbai-meri-jaan-2/RepublicDayOverMumbai01262023-final.jpeg`, 
+                   fullFileName: `assets/gallery-files/images/salaam-mumbai/mumbai-meri-jaan-2/RepublicDayOverMumbai01262023-final.jpeg`, 
                    description: `<ul>
                    <li>Republic Day special <br/>
                    - INS Kolkata and Brahmaputra<br/>
