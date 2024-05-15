@@ -8,9 +8,15 @@
 - in memory - caching, avoiding time outs
 - email form 
 - put hard coded paths behind variables, and find right place to keep these variables (e.g. global version of imageRoot)
-### Log May 13 - 14
 - Authentication piece
-  - roles: list of strings - 
+### Log May 15-16
+- *SCRAMBLE* to completion
+   - AUTHENTICATION
+   - LATEST UPLOADS - Timeline
+   - Completion of existing uploaded lists and images. Add one Ganesh and Guru
+  - Styling - frames of images - black and white, combo, water colors
+- roles: list of strings - 
+### Log May 13 - 14
 - ** Styling tweak ** Black and white sketches have a different border and background (However sketch specs need to be givenl many are missing)
 - LOGIC IMPLEMENTED Special lists and summary numbers  except for latest uploads timeline
 - latest uploads - new logic - two categories - 60 days or less, latest per theme

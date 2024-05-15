@@ -69,15 +69,33 @@ export class CardComponent {
    //  
     
   }
-  
-  toggleCardSize() { 
-    let returnClass = this.imageDetail !== null && this.imageDetail.imageList[0].description.toLowerCase().indexOf('black and white') >= 0 ? 
-      'card-mono': 'card';
-    returnClass = this.isLarge === true ? `${returnClass} expand` :  `${returnClass} thumb`
-  // return this.isLarge === true ?  'expand':'thumb';
-    return returnClass;
+  getCardCSS() {
+    let returnCardCSS = 'card-default';
+     
+    if (this.imageDetail !== null) {
+      if(this.imageDetail.imageList[0].description.toLowerCase().indexOf('black and white') >= 0||
+         this.imageDetail.imageList[0].description.toLowerCase().indexOf('black-white') >= 0) {
+            returnCardCSS = 'card-default card-mono'
+      } else if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('combination of color') >= 0){
+        returnCardCSS = 'card-default card-mix'
+      }
+    }
+    returnCardCSS = this.isLarge === true ? `${returnCardCSS} expand` :  `${returnCardCSS} thumb`
+    return returnCardCSS ;
   }
+
   selectImageBorder() {
+    let returnCardImageCSS = 'card-image';
+     
+    if (this.imageDetail !== null) {
+      if(this.imageDetail.imageList[0].description.toLowerCase().indexOf('black and white') >= 0||
+         this.imageDetail.imageList[0].description.toLowerCase().indexOf('black-white') >= 0) {
+            returnCardImageCSS = 'card-image card-image-mono'
+      } else if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('combination of color') >= 0){
+        returnCardImageCSS = 'card-image card-image-mix'
+      }
+    }
+    return returnCardImageCSS ;
    return this.imageDetail.imageList[0].description.toLowerCase().indexOf('black and white') >= 0 ?
     'card-image-mono': 'card-image';
   }
