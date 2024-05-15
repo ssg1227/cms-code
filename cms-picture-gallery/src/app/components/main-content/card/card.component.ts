@@ -71,7 +71,15 @@ export class CardComponent {
   }
   
   toggleCardSize() { 
-   return this.isLarge === true ?  'expand':'thumb';
+    let returnClass = this.imageDetail !== null && this.imageDetail.imageList[0].description.toLowerCase().indexOf('black and white') >= 0 ? 
+      'card-mono': 'card';
+    returnClass = this.isLarge === true ? `${returnClass} expand` :  `${returnClass} thumb`
+  // return this.isLarge === true ?  'expand':'thumb';
+    return returnClass;
+  }
+  selectImageBorder() {
+   return this.imageDetail.imageList[0].description.toLowerCase().indexOf('black and white') >= 0 ?
+    'card-image-mono': 'card-image';
   }
   toggleImageSize() { 
     

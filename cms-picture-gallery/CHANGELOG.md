@@ -11,6 +11,7 @@
 ### Log May 13 - 14
 - Authentication piece
   - roles: list of strings - 
+- ** Styling tweak ** Black and white sketches have a different border and background (However sketch specs need to be givenl many are missing)
 - LOGIC IMPLEMENTED Special lists and summary numbers  except for latest uploads timeline
 - latest uploads - new logic - two categories - 60 days or less, latest per theme
 - Responsive styling
