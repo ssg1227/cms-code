@@ -235,6 +235,7 @@ export class CoreContentService {
             default: 
             
             // @ts-ignore: Object is possibly 'null'.
+            console.log(strParam) ;
             this.genImageList = this.contentList.find(cl => cl.contentCategory === strParam)? 
                 this.contentList.find(cl => cl.contentCategory === strParam)?.contentFile: null;
             if (this.genImageList === null || this.genImageList.allImageList === null) {

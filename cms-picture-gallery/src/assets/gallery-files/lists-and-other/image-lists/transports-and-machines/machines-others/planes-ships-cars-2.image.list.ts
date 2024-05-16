@@ -168,7 +168,7 @@ iterations: [
             <li>Likewise the Aircraft carrier starts with CV6 - WW2 USS Enterprise </li>
             <li>Jan 10 2022/li></ul> `,
             dateUploaded: '01-10-2022' }, { 
-                fullFileName: `assets/all-images/mumbai-meri-jaan/MumbaiWaterFrontKashinClassApr42021.jpeg`,
+                fullFileName: `assets/gallery-files/images/salaam-mumbai/mumbai-meri-jaan/MumbaiWaterFrontKashinClassApr42021.jpeg`,
                 canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul>
                 <li>Starting out D51 INS Rajput - Navy Kashin Class destroyer - but little digressed</li>
                 <li>Imaginary scene in front of Gateway of India Taj Timeline</li>
@@ -180,7 +180,7 @@ iterations: [
               },
             ,
             { 
-                fullFileName:   `assets/all-images/mix-gen-plane-sept-2020.jpeg`, 
+                fullFileName:   `${this.imageRoot}mix-gen-plane-sept-2020.jpeg`, 
                 evolution: `<b>Generally the first sketch that I drew and shared</b>(after the quick Ganesh one)<br/>`,
                 evolutionSequence: 1, evolutionDate: `09-01-2019`,
                 canvassSize: 'A4', content:'black-white', description: `<ul><li>The One that started it ALL!!</li>
@@ -189,24 +189,24 @@ iterations: [
             ,
             {
                     fullFileName: 
-                `assets/all-images/blackbirdSept42021.jpeg`, 
+                `${this.imageRoot}blackbirdSept42021.jpeg`, 
                 canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul>
                 <li>Spontaneousm unplanned sketch attempt for SR-71 blackbird. Sept 2021</li>
                             </ul> `,
                dateUploaded: '12-12-2021'
 
             }, { fullFileName: 
-                `assets/all-images/spitfire-sept-2020.jpeg`, 
+                `${this.imageRoot}spitfire-sept-2020.jpeg`, 
                 canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>Spitfire attempt  Sept   2020</li>
                 <li>In school used to read a lot of Commando comics and would be inspired to draw</li>
                 <li>WW2 dogfights with, particularly spitfires was a favorite theme then</li>
                             </ul> ` }, {  
-                 fullFileName: `assets/all-images/planes_firefightdc10-sept-2020.jpeg`, 
+                 fullFileName: `${this.imageRoot}planes_firefightdc10-sept-2020.jpeg`, 
                  description:`<ul><li>General DC 10 firefighter  Sept   2020</li></ul> `
             },
             {
                     fullFileName: 
-                `assets/all-images/su-30-a-1.jpeg`, 
+                `${this.imageRoot}su-30-a-1.jpeg`, 
                 canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>..Switching to Q2 2021, and attempts to draw contemprary aircraft</li>
                 <li>Attempted Su 30</li>
                             </ul> `,

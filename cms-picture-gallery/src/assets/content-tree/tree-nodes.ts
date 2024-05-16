@@ -602,7 +602,7 @@ Also increasing numbers of Swami Samartha sketches`,
         ],
     }
     ,  {
-        parentKey:"machines-others", key: "planes", levelIndex:3,isLeafParent:true, accessible:['all'],
+        parentKey:"machines-others", key: "planes-ships-cars", levelIndex:3,isLeafParent:true, accessible:['all'],
         label: "Aircraft, Ships and Cars",
         description:`Planes, ships and cars`,
         
