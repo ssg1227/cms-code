@@ -13,7 +13,8 @@
 - *SCRAMBLE* to completion
    - AUTHENTICATION
    - LATEST UPLOADS - Timeline
-   - Completion of existing uploaded lists and images. Add one Ganesh and Guru
+   - DONE (May 15) Completion of existing uploaded lists and images. 
+   - Add one Ganesh and Guru atleast (and get time wise latest uploads functional)
   - Styling - frames of images - black and white, combo, water colors
 - roles: list of strings - 
 ### Log May 13 - 14
