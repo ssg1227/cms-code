@@ -36,6 +36,14 @@ export class AuthService {
       userName: 'shantanu',
       userRoles: ["admin", "all"] 
     },
+    { 
+      userName: 'super',
+      userRoles: ["superuser"] 
+    },
+    { 
+      userName: 'saint',
+      userRoles: ["guru"] 
+    },
 
     { 
       userName: 'pandit',
@@ -65,16 +73,18 @@ export class AuthService {
   constructor() { }
   login(username:string){
     this.clearCaches() ;
-   
+    
     // neew logic to get user roles Dec 18 2023. localstorage for roles used by categories.service.ts
     let loggedinUser = username ? 
-    this.userList.find((userObject) => userObject.userName === username):
-    { userName: 'default',
-    userRoles: ["sanatani", "guru"] } ;
+    this.userList.find((userObject) => userObject.userName === username): { userName: 'default', userRoles: ["non-religious"] } ;
+    console.log(`${JSON.stringify(loggedinUser)}`)
+    /* Doesnt make sense 
     if (!loggedinUser ) {
       loggedinUser =   { userName: 'default',
       userRoles: ["sanatani", "guru"] } ;
     }
+    */
+    localStorage.setItem('user-object',JSON.stringify(loggedinUser)) ;
     localStorage.setItem('userId',username);
     localStorage.setItem('current-menu','top-level');
     localStorage.setItem('role',this.roleSetter(username));
@@ -83,7 +93,7 @@ export class AuthService {
     let loggedinUser = username ? 
         this.userList.find((userObject) => userObject.userName === username):
         { userName: 'default',
-        userRoles: ["sanatani", "guru"] } ;
+        userRoles: ["non-religious"] } ;
     if (!loggedinUser ) {
       loggedinUser =   { userName: 'default',
       userRoles: ["sanatani", "guru"] } ;
@@ -110,6 +120,7 @@ export class AuthService {
     localStorage.removeItem("usersContentList")
     localStorage.removeItem('context');
     */
+    localStorage.removeItem('user-object');
     localStorage.removeItem('userId');
     localStorage.removeItem('current-menu');
     localStorage.removeItem("isLeafParent");

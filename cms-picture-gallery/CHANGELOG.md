@@ -10,9 +10,20 @@
 - put hard coded paths behind variables, and find right place to keep these variables (e.g. global version of imageRoot)
 - Authentication piece
 ### Log May 15-16
+- **--MAY16 2024 7:00 PM PST functionally complete--** 
 - *SCRAMBLE* to completion
-   - AUTHENTICATION
-   - LATEST UPLOADS - Timeline
+   - AUTHENTICATION *IMPLEMENTED*
+     roles: 
+      * global  = top level
+      * superuser = see all + admin
+      * all  = see all images but no admin
+      * admin = admin. Not sure on image list viewing
+      * sanatani = religious
+      * guru = guru 
+      * non-religious = self explanatory. However a selected bunch of religious / guru images for art's sake
+      * living = (assumed non religious)
+      * non-living = also self explanatory
+   - LATEST UPLOADS - Timeline *IMPLEMENTED 90 days hard code *
    - DONE (May 15) Completion of existing uploaded lists and images. 
    - Add one Ganesh and Guru atleast (and get time wise latest uploads functional)
   - Styling - frames of images - black and white, combo, water colors

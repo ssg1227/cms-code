@@ -15,14 +15,14 @@ export interface TreeNodeElement {
     isCompiledList?:boolean; // use some criteria to load selected images like latest uploads or top rated
     isLeafParent:boolean; // 'true' = load the image list for that menu kee, 'false' = top or middle node
     dateUploaded?:string;
-    accessible?:string[]; // roles match users roles many to many match
+    roles?:string[]; // roles match users roles many to many match
     
 }
 
 export const MenuTreeElements:TreeNodeElement[] = [
     // #### ROOT
     {
-        key:'top-level', levelIndex:0,isLeafParent:false,accessible:["all"], // roles match users roles many to many match
+        key:'top-level', levelIndex:0,isLeafParent:false, roles:["all"], // roles match users roles many to many match
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '', params:'top-level', label: 'HOME'}
         ],
@@ -30,7 +30,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     },
     // #### LEVEL 1
     {
-        parentKey:'top-level',key: "special-lists", levelIndex:1,isLeafParent:false, accessible:['all'],
+        parentKey:'top-level',key: "special-lists", levelIndex:1,isLeafParent:false, roles:['all'],
         label: "Special Lists", 
         description:'Extracted works from the entire collection like best attempts, something new, latest sketches, etc',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -39,7 +39,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],    
     }, 
     {
-        parentKey:"top-level", key: "religious-shree-ganesh", levelIndex:1,isLeafParent:false, accessible:['superuser','sanatani'],
+        parentKey:"top-level", key: "religious-shree-ganesh", levelIndex:1,isLeafParent:false, roles:['superuser','sanatani'],
         label: "Religious: Shree Ganesh",
         description:'Sketches of, and including Shree Ganesh',
         
@@ -50,7 +50,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     }, 
     {
-        parentKey:"top-level", key: "religious-other-deities", levelIndex:1,isLeafParent:false, accessible:['superuser','sanatani'],
+        parentKey:"top-level", key: "religious-other-deities", levelIndex:1,isLeafParent:false, roles:['superuser','sanatani'],
         label: "Religious: Other Deities",
         description:'Sketches of other Gods and Goddesses',
         
@@ -61,7 +61,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     }, 
     {
-        parentKey:"top-level", key: "religious-gurus-and-mystics", levelIndex:1,isLeafParent:false, accessible:['superuser','sanatani','guru'],
+        parentKey:"top-level", key: "religious-gurus-and-mystics", levelIndex:1,isLeafParent:false, roles:['superuser','guru'],
         label: "Religious: Gurus and Mystics",
         description:'Sketches of Spiritual Masters, Mystics - Lord Dattatreya and Lineage, Sikh Gurus, Others',
         
@@ -72,7 +72,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     }, 
     {
-        parentKey:"top-level", key: "religious-shirdi-sai", levelIndex:1,isLeafParent:false, accessible:['superuser','sanatani','guru'],
+        parentKey:"top-level", key: "religious-shirdi-sai", levelIndex:1,isLeafParent:false, roles:['superuser','guru'],
         label: "Religious: Shirdi Sai Baba",
         description:'Sketches of Sadguru Shirdi Sai Baba. Sooo many sketches, this warranted a separate section at this level',
         
@@ -83,7 +83,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     }, 
     {
-        parentKey:"top-level", key: "otherbeings-places-events", levelIndex:1,isLeafParent:false, accessible:['superuser','people'],
+        parentKey:"top-level", key: "otherbeings-places-events", levelIndex:1,isLeafParent:false, roles:['all'],
         label: "Beings, Places and Themes",
         description:`Pictures of the living - famous human personalities, other living beings (as in May 2024 occasional). Places and famous structures. Events, Misc. Themes. 
                     (But Mumbai City related drawing warrant a separate, independent group!!)`,
@@ -96,7 +96,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     }, 
     {
-        parentKey:"top-level", key: "salaam-mumbai", levelIndex:1,isLeafParent:false, accessible:['all'],
+        parentKey:"top-level", key: "salaam-mumbai", levelIndex:1,isLeafParent:false, roles:['all'],
         label: "Salaam Mumbai",
         description:`Dedication to the City that is part of me that I am part of. Wherever I am`,
         
@@ -107,7 +107,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     }, 
     {
-        parentKey:"top-level", key: "transport-and-machines", levelIndex:1,isLeafParent:false, accessible:['all'],
+        parentKey:"top-level", key: "transport-and-machines", levelIndex:1,isLeafParent:false, roles:['all'],
         label: "Transport And Machines",
         description:`Trains, Cars, Planes, Ships, Military equipment. Anything that is mechanical`,
         
@@ -118,7 +118,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     }, 
     {
-        parentKey:"top-level", key: "misc", levelIndex:1,isLeafParent:false, accessible:['all'],
+        parentKey:"top-level", key: "misc", levelIndex:1,isLeafParent:false, roles:['all'],
         label: "Misc.",
         description:`Those items which is pending, or are too few to have a separate category`,
         
@@ -131,7 +131,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     // #### LEVEL 2
     // special lists - added one more layer 
     { 
-        parentKey: "special-lists", key: 'changers', levelIndex:2, isLeafParent: false, isCompiledList:true, accessible: ["all"], 
+        parentKey: "special-lists", key: 'changers', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["all"], 
         label: 'Changers', 
         description:`These are landmark sketches which I consider a significant change or turn in the progress of my sketches, or maybe a special reason. 
                     These may not be my best efforts but are a new element or entity that was introduced in these drawings.`,
@@ -142,7 +142,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],
     }, 
     { 
-        parentKey: "special-lists", key: 'showpieces', levelIndex:2, isLeafParent: false, isCompiledList:true, accessible: ["all"], 
+        parentKey: "special-lists", key: 'showpieces', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["all"], 
         label: 'The Best', 
         description:`A Year-wise extraction of some of my best efforts,.`,
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -153,7 +153,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     }, 
      
     { 
-        parentKey: "special-lists", key: 'latest-uploads', levelIndex:2, isLeafParent: false, isCompiledList:true, accessible: ["all"], 
+        parentKey: "special-lists", key: 'latest-uploads', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["all"], 
         label: 'Latest Uploads', 
         description:`Images of latest drawings uploaded`,
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -163,7 +163,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],
     },
     {
-        parentKey:"religious-shree-ganesh", key: "shree-ganesh-b4-q4-2021", levelIndex:2, isLeafParent:true, accessible:['superuser','sanatani'],
+        parentKey:"religious-shree-ganesh", key: "shree-ganesh-b4-q4-2021", levelIndex:2, isLeafParent:true, roles:['superuser','sanatani'],
         label: "Shree Ganesh Before Q4 2021",
         description:'Sketches of, and including Shree Ganesh prior to Q4 2021', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -175,7 +175,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     }
     ,
     {
-        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q4-2021", levelIndex:2, isLeafParent:true, accessible:['superuser','sanatani'],
+        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q4-2021", levelIndex:2, isLeafParent:true, roles:['superuser','sanatani'],
         label: "Shree Ganesh Q4 2021 onward",
         description:'Sketches of, and including Shree Ganesh Ganesh Q4 2021 to Q1 2023', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -186,7 +186,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     },
     {
-        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2023", levelIndex:2, isLeafParent:true, accessible:['superuser','sanatani'],
+        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2023", levelIndex:2, isLeafParent:true, roles:['superuser','sanatani'],
         label: "Shree Ganesh Q1 2023 onward",
         description:'Sketches of, and including Shree Ganesh Q1 2023 to Q1 2024', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -197,7 +197,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     },
     {
-        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2024", levelIndex:2, isLeafParent:true, accessible:['superuser','sanatani'],
+        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2024", levelIndex:2, isLeafParent:true, roles:['superuser','sanatani'],
         label: "Shree Ganesh Q1 2024 onward",
         description:'Sketches of, and including Shree Ganesh Q1 2023 onward', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -207,7 +207,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],        
     },    
     {
-        parentKey:"religious-other-deities", key: "devi", levelIndex:2,isLeafParent:true, accessible:['superuser','sanatani'],
+        parentKey:"religious-other-deities", key: "devi", levelIndex:2,isLeafParent:true, roles:['superuser','sanatani'],
         label: "Goddesses",
         description:'Sketches of, and including Durga, Laxmi, Saraswati and Avatars',
         
@@ -219,7 +219,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     },
     {
-        parentKey:"religious-other-deities", key: "mahadev", levelIndex:2,isLeafParent:true, accessible:['superuser','sanatani'],
+        parentKey:"religious-other-deities", key: "mahadev", levelIndex:2,isLeafParent:true, roles:['superuser','sanatani'],
         label: "Mahadev",
         description:'Sketches of, and related to, Lord Shiva',
         
@@ -231,7 +231,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     },
     {
-        parentKey:"religious-other-deities", key: "mahadev-family", levelIndex:2,isLeafParent:true, accessible:['superuser','sanatani'],
+        parentKey:"religious-other-deities", key: "mahadev-family", levelIndex:2,isLeafParent:true, roles:['superuser','sanatani'],
         label: "Mahadev Family",
         description:'Sketches of, and related to groupings of two or more of  Lord Ganesh, Maa Parvati, Lord Shiva and Karthikeya',
         
@@ -243,7 +243,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     },
     {
-        parentKey:"religious-other-deities", key: "laxmi-vishnu-hanuman", levelIndex:2,isLeafParent:true, accessible:['superuser','sanatani'],
+        parentKey:"religious-other-deities", key: "laxmi-vishnu-hanuman", levelIndex:2,isLeafParent:true, roles:['superuser','sanatani'],
         label: "Narayan, Laxmi, Hanuman",
         description:'Sketches of, and including Laxmi, Narayan, Shree Ram, and family, Bajrangbali',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -253,7 +253,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],
         
     }, { 
-        parentKey: "religious-gurus-and-mystics", key: 'dattavatar', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible:['superuser','guru'],
+        parentKey: "religious-gurus-and-mystics", key: 'dattavatar', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', roles:['superuser','guru'],
         label:  'Spiritual Souls:Datta Lineage, Sikhs, East of India',  
         description:`श्री गुरु स्मरण ... श्री गुरु नमन ... श्री गुरु चरण ... श्री गुरु शरण .. अवधूत चिंतन ... श्री गुरुदेव दत्त
 Guru's of Lord Dattatreya lineage and Sikh Gurus... there are likely to be maybe a couple of sketches of Shirdi Sai here; I have many of them, so have separate sections for the same.. 
@@ -264,7 +264,7 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'dattavatar', label: 'Spiritual Souls:Datta Lineage, Sikhs, East of India'}
         ]
     },
-    {    parentKey: "religious-gurus-and-mystics", key: 'swami-samartha', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible:['superuser','guru'],
+    {    parentKey: "religious-gurus-and-mystics", key: 'swami-samartha', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', roles:['superuser','guru'],
         label:  'Shree Swami Samartha pre Q2 2023',  
         description: 'Swami Samartha the 4th Avatar of Shree Dattatreya (sequence include Lord Datta Himself). Drawings before Q2 2023' ,
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -273,7 +273,7 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'swami-samartha', label: 'Shree Swami Samartha pre Q2 2023'}
         ]
     },
-    {    parentKey: "religious-gurus-and-mystics", key: 'swami-samartha-q2-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible:['superuser','guru'],
+    {    parentKey: "religious-gurus-and-mystics", key: 'swami-samartha-q2-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', roles:['superuser','guru'],
         label:  'Shree Swami Samartha Q2 2023 onward',  
         description: 'Swami Samartha the 4th Avatar of Shree Dattatreya (sequence include Lord Datta Himself). Drawings from Q2 2023' ,
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -285,7 +285,7 @@ Also increasing numbers of Swami Samartha sketches`,
    
    
  
-    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q1-q2-2021', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible: ['superuser',"guru"], 
+    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q1-q2-2021', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', roles: ['superuser',"guru"], 
         label:  'Shirdi Sai: to  Q3 2021', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
@@ -295,7 +295,7 @@ Also increasing numbers of Swami Samartha sketches`,
            {link: '', params:'shirdi-sai-q1-q2-2021', label: 'Shirdi Sai: to  Q3 2021'}
        ]
      },
-     { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q3-q4-2021', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible: ['superuser',"guru"],
+     { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q3-q4-2021', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', roles: ['superuser',"guru"],
         label:  'Shirdi Sai: Q3 2021 - Q1 2022', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
@@ -305,7 +305,7 @@ Also increasing numbers of Swami Samartha sketches`,
            {link: '', params:'religious-shirdi-sai', label: 'Shree Swami Samartha Q2 2023 onward'}
        ] 
       },
-    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q2-q3-2022', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023',  accessible: ['superuser',"guru"],
+    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q2-q3-2022', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023',  roles: ['superuser',"guru"],
         label:  'Shirdi Sai: Q2 Q3 2022', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
@@ -315,7 +315,7 @@ Also increasing numbers of Swami Samartha sketches`,
            {link: '', params:'shirdi-sai-q2-q3-2022', label: 'Shirdi Sai: Q2 Q3 2022'}
        ] 
        },
-    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q4-2022-q1-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible: ['superuser',"guru"],
+    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q4-2022-q1-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', roles: ['superuser',"guru"],
         label:  'Shirdi Sai:- Q3,Q4 2022 Q1 2023', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
@@ -325,7 +325,7 @@ Also increasing numbers of Swami Samartha sketches`,
            {link: '', params:'shirdi-sai-q4-2022-q1-2023', label: 'Shirdi Sai:- Q3,Q4 2022 Q1 2023'}
        ] 
       },
-    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q2-q3-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023',  accessible: ['superuser',"guru"],
+    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q2-q3-2023', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023',  roles: ['superuser',"guru"],
         label:  'Shirdi Sai: Q2 Q3 2023', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
@@ -335,7 +335,7 @@ Also increasing numbers of Swami Samartha sketches`,
            {link: '', params:'shirdi-sai-q2-q3-2023', label: 'Shirdi Sai: Q2 Q3 2023'}
        ] 
       },
-    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q4-2023-q1-2024', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible: ['superuser',"guru"],
+    { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q4-2023-q1-2024', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', roles: ['superuser',"guru"],
         label:  'Shirdi Sai: Q4 2023 - Q1 2024', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
@@ -345,7 +345,7 @@ Also increasing numbers of Swami Samartha sketches`,
            {link: '', params:'religious-shirdi-sai', label: 'Shirdi Sai: Q4 2023 - Q1 2024'}
        ] 
        },
-    { parentKey: "religious-shirdi-sai", key: 'baba-themes-1', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', accessible: ['superuser',"guru"],
+    { parentKey: "religious-shirdi-sai", key: 'baba-themes-1', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', roles: ['superuser',"guru"],
         label:  'Shirdi Sai: Sai Satcharitra', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
         &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
@@ -360,7 +360,7 @@ Also increasing numbers of Swami Samartha sketches`,
 // ### END SPECIAL LISTS
 
     { 
-        parentKey: "changers", key: 'changers-b4-2022', levelIndex:3, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
+        parentKey: "changers", key: 'changers-b4-2022', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["all"], 
         label: 'Changers: before 2022', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -370,7 +370,7 @@ Also increasing numbers of Swami Samartha sketches`,
         ],
     },
     { 
-        parentKey: "changers", key: 'changers-2022', levelIndex:3,  isLeafParent: true, isCompiledList:true, accessible: ["all"],
+        parentKey: "changers", key: 'changers-2022', levelIndex:3,  isLeafParent: true, isCompiledList:true, roles: ["all"],
         label:  'Changers: 2022',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -380,7 +380,7 @@ Also increasing numbers of Swami Samartha sketches`,
         ], 
     },
     { 
-        parentKey: "changers",key: 'changers-2023', levelIndex:3,  isLeafParent: true,  accessible: ["all"],
+        parentKey: "changers",key: 'changers-2023', levelIndex:3,  isLeafParent: true,  roles: ["all"],
         label:  'Changers: 2023',  
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -390,7 +390,7 @@ Also increasing numbers of Swami Samartha sketches`,
         ], 
     },
     { 
-        parentKey: "changers",key: 'changers-2024', levelIndex:3, isLeafParent: true,  accessible: ["all"],
+        parentKey: "changers",key: 'changers-2024', levelIndex:3, isLeafParent: true,  roles: ["all"],
         label:  'Changers: 2024', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -402,7 +402,7 @@ Also increasing numbers of Swami Samartha sketches`,
 // ### END CHANGERS
 
  { 
-    parentKey: "showpieces", key: 'showpiece',levelIndex:3, isLeafParent: true,  accessible: ["all"],
+    parentKey: "showpieces", key: 'showpiece',levelIndex:3, isLeafParent: true,  roles: ["all"],
     label:  'The Best: before 2022', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -412,7 +412,7 @@ Also increasing numbers of Swami Samartha sketches`,
         ], 
  },
    { 
-    parentKey: "showpieces", key: 'showpiece-2022',levelIndex:3, isLeafParent: true,  accessible: ["all"],
+    parentKey: "showpieces", key: 'showpiece-2022',levelIndex:3, isLeafParent: true,  roles: ["all"],
     label:  'The Best of 2022', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -422,7 +422,7 @@ Also increasing numbers of Swami Samartha sketches`,
             ], 
     },
     { 
-        parentKey: "showpieces", key: 'showpiece-2023',levelIndex:3, isLeafParent: true,  accessible: ["all"],
+        parentKey: "showpieces", key: 'showpiece-2023',levelIndex:3, isLeafParent: true,  roles: ["all"],
         label:  'The Best of 2023', 
             emptyMessage: 'Empty Content or Error', breadCrumb:[
                 {link: '/view', params:'top-level', label: 'HOME'},
@@ -432,7 +432,7 @@ Also increasing numbers of Swami Samartha sketches`,
             ], 
     },
     { 
-        parentKey: "showpieces", key: 'showpiece-2024',levelIndex:3, isLeafParent: true,  accessible: ["all"],
+        parentKey: "showpieces", key: 'showpiece-2024',levelIndex:3, isLeafParent: true,  roles: ["all"],
         label:  'The Best of 2024', 
             emptyMessage: 'Empty Content or Error', breadCrumb:[
                 {link: '/view', params:'top-level', label: 'HOME'},
@@ -442,7 +442,7 @@ Also increasing numbers of Swami Samartha sketches`,
             ], 
     },
     { 
-        parentKey: "latest-uploads", key: 'latest-uploads-themewise', levelIndex:3, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
+        parentKey: "latest-uploads", key: 'latest-uploads-themewise', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["all"], 
         label: 'Latest Uploads: Theme', 
         description:`Images of latest drawings uploaded by theme`,
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -454,7 +454,7 @@ Also increasing numbers of Swami Samartha sketches`,
     }
     ,
     { 
-        parentKey: "latest-uploads", key: 'latest-uploads-timewise', levelIndex:3, isLeafParent: true, isCompiledList:true, accessible: ["all"], 
+        parentKey: "latest-uploads", key: 'latest-uploads-timewise', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["all"], 
         label: 'Latest Uploads: By Timeline', 
         description:`Images of drawings uploaded the last 60 days.`,
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -466,7 +466,7 @@ Also increasing numbers of Swami Samartha sketches`,
     },
 // ### END SHOWPIECES
  {
-    parentKey:"otherbeings-places-events", key: "religion-and-guru", levelIndex:2,isLeafParent:true, accessible:['superuser','people'],
+    parentKey:"otherbeings-places-events", key: "religion-and-guru", levelIndex:2,isLeafParent:true, roles:['non-religious'],
     label: "Some Religious : Deites, Spiritual Mystics..",
     description:`A collection of selected sketches of Gods and Godesses, Saints and Gurus`,
     
@@ -478,7 +478,7 @@ Also increasing numbers of Swami Samartha sketches`,
     
 },
 {
-    parentKey:"otherbeings-places-events", key: "people-places", levelIndex:2,isLeafParent:true, accessible:['superuser','people'],
+    parentKey:"otherbeings-places-events", key: "people-places", levelIndex:2,isLeafParent:true, roles:['all'],
     label: "Famous Personalities",
     description:`Faces, figures sketching started almost at the start of my 'pandemic caused' reconnect with this hobby
     Some off the spur of the moment, spontaneous, others due to their deaths (and we have had a lot of that!!)
@@ -492,7 +492,7 @@ Also increasing numbers of Swami Samartha sketches`,
     ],
     
 }, {
-    parentKey:"otherbeings-places-events", key: "places-scenes-objects", levelIndex:2,isLeafParent:true, accessible:['superuser','people'],
+    parentKey:"otherbeings-places-events", key: "places-scenes-objects", levelIndex:2,isLeafParent:true, roles:['superuser','living'],
     label: "Places, Scenes and Objects",
     description:`Faces, figures sketching started almost at the start of my 'pandemic caused' reconnect with this hobby
     Some off the spur of the moment, spontaneous, others due to their deaths (and we have had a lot of that!!)
@@ -506,7 +506,7 @@ Also increasing numbers of Swami Samartha sketches`,
     ],
     
 }, {
-    parentKey:"otherbeings-places-events", key: "themes-misc", levelIndex:2,isLeafParent:true, accessible:['superuser','people'],
+    parentKey:"otherbeings-places-events", key: "themes-misc", levelIndex:2,isLeafParent:true, roles:['superuser','non-living'],
     label: "Themes",
     description:`Some theme sketches with components, some as-yet 'one-off's`,
     
@@ -517,7 +517,7 @@ Also increasing numbers of Swami Samartha sketches`,
     ],
     
 },  {
-    parentKey:"otherbeings-places-events", key: "animate-to-be-oragnized1", levelIndex:2,isLeafParent:true, accessible:['superuser'],
+    parentKey:"otherbeings-places-events", key: "animate-to-be-oragnized1", levelIndex:2,isLeafParent:true, roles:['superuser','all'],
     label: "Uncategorized sketches",
     description:`Pending formal categorization`,
     
@@ -529,7 +529,7 @@ Also increasing numbers of Swami Samartha sketches`,
     
 },
  { 
-    parentKey: 'salaam-mumbai',   key: 'mumbai-meri-jaan', levelIndex:2,isLeafParent:true,  accessible: ['non-living',  'non-religious', 'all'], 
+    parentKey: 'salaam-mumbai',   key: 'mumbai-meri-jaan', levelIndex:2,isLeafParent:true,  roles: ['non-living',  'non-religious', 'all'], 
         label:  'Mumbai Meri Jaan',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -537,7 +537,7 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: ' ', params:'mumbai-meri-jaan', label: 'Mumbai Meri Jaan'}
         ],},
         { 
-            parentKey: 'salaam-mumbai',   key: 'mumbai-meri-jaan-2', levelIndex:2,isLeafParent:true,  accessible: ['non-living',  'non-religious', 'all'], 
+            parentKey: 'salaam-mumbai',   key: 'mumbai-meri-jaan-2', levelIndex:2,isLeafParent:true,  roles: ['non-living',  'non-religious', 'all'], 
                 label:  'Mumbai Meri Jaan(2)',
                 emptyMessage: 'Empty Content or Error', breadCrumb:[
                     {link: '/view', params:'top-level', label: 'HOME'},
@@ -546,7 +546,7 @@ Also increasing numbers of Swami Samartha sketches`,
                 ],},
     // #### TRANSPORT AND MACHINE DESCENDANTS
         {
-            parentKey:"transport-and-machines", key: "railways", levelIndex:2,isLeafParent:false, accessible:['all'],
+            parentKey:"transport-and-machines", key: "railways", levelIndex:2,isLeafParent:false, roles:['non-living',  'non-religious','all'],
             label: "Railways",
             description:`Railways: As on June 2024 this is mainly Indian Railways`,
             
@@ -556,7 +556,7 @@ Also increasing numbers of Swami Samartha sketches`,
                 {link: '', params:'railways', label: 'Railways'}
             ],
         },  {
-            parentKey:"transport-and-machines", key: "machines-others", levelIndex:2,isLeafParent:false, accessible:['all'],
+            parentKey:"transport-and-machines", key: "machines-others", levelIndex:2,isLeafParent:false, roles:['non-living',  'non-religious','all'],
             label: "Other Machines",
             description:`As on June 2024, this covers aircraft, ships and cars`,
             
@@ -568,7 +568,7 @@ Also increasing numbers of Swami Samartha sketches`,
         },
      // #### RAIL AND DESCENDANTS   
         {
-        parentKey:"railways", key: "trains", levelIndex:3,isLeafParent:true, accessible:['all'],
+        parentKey:"railways", key: "trains", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','all'],
         label: "General Scenes",
         description:`Railways: General Scenes`,
         
@@ -579,7 +579,7 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'trains', label: 'General Scenes'}
         ],
     }, {
-        parentKey:"railways", key: "trains-ir-alcos", levelIndex:3,isLeafParent:true, accessible:['all'],
+        parentKey:"railways", key: "trains-ir-alcos", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','all'],
         label: "ALCO WDMx: a tribute",
         description:`Dedicated to the legendary Indian Railway workhorse the WDM2 and later variants (Wide - broad guage, Diesel - diesel electric loco, Mixed - Goods and Passenger) On collaboration with Alco (USA) the first locos entered service in 1962 imported, then manufacture began in 1964j`,
         
@@ -590,7 +590,7 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'trains-ir-alcos', label: 'ALCO WDMx: a tribute'}
         ],
     }, {
-        parentKey:"railways", key: "trains-ir-special-trains", levelIndex:3,isLeafParent:true, accessible:['all'],
+        parentKey:"railways", key: "trains-ir-special-trains", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','all'],
         label: "Landmark Trains",
         description:`Some Special and Legendary Trains. As most of this category domain, it covers IR`,
         
@@ -602,7 +602,7 @@ Also increasing numbers of Swami Samartha sketches`,
         ],
     }
     ,  {
-        parentKey:"machines-others", key: "planes-ships-cars", levelIndex:3,isLeafParent:true, accessible:['all'],
+        parentKey:"machines-others", key: "planes-ships-cars", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','all'],
         label: "Aircraft, Ships and Cars",
         description:`Planes, ships and cars`,
         
@@ -613,7 +613,7 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'planes-ships-cars', label: 'Planes, ships and cars'}
         ],
     },  {
-        parentKey:"machines-others", key: "planes-ships-cars-2", levelIndex:3,isLeafParent:true, accessible:['all'],
+        parentKey:"machines-others", key: "planes-ships-cars-2", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','all'],
         label: "Aircraft, Ships and Cars(2)",
         description:`Planes, ships and cars `,
         
@@ -625,26 +625,3 @@ Also increasing numbers of Swami Samartha sketches`,
         ],
     },
 ]
-/*
-
-export const MenuTree: MenuItem[] = [
-    { tab:"Admin", label:  'Technical', isLeafParent: false, key: 'technical', accessible: ['non-living', 'all'], dateUploaded: '05-12-2021' },
-   
-    
-   
-     { parentKey: "otherbeings-places-events", label:  'Religion and Gurus', isLeafParent: false, key: 'religion-and-guru', accessible: ['people',  'non-religious', 'all'], dateUploaded: '02-02-2023' },
-     { parentKey: "otherbeings-places-events", label:  'People', isLeafParent: false, key: 'people-places', accessible: ['people',  'non-religious', 'all'], dateUploaded: '04-14-2024' },
-    { parentKey: "otherbeings-places-events", label:  'Places, Scenes and Objects', isLeafParent: false, key: 'places-scenes-objects', accessible: ['non-living',  'non-religious', 'all'], dateUploaded: '06-01-2023' },
-    { parentKey: "otherbeings-places-events", label:  'Misc, Themes', isLeafParent: false, key: 'themes-misc', accessible: ['non-living',  'non-religious', 'all'], dateUploaded: '05-14-2023' },
-    { tab:"Misc", label:  'Anim Unorganized', isLeafParent: false, key: 'animate-to-be-oragnized1', accessible: ['non-living',  'non-religious', 'all'], dateUploaded: '02-03-2022' },
-   // WIP { tab:"Misc", label:  'Technical', isLeafParent: false, key: 'technical', accessible: ['non-living', 'all'], dateUploaded: '02-03-2022' },
-    { parentKey: "transport-and-machines", label:  'Rail', isLeafParent: false,  key: 'trains', accessible: ['non-living', 'non-religious',  'all'], dateUploaded: '02-08-2023' },
-    { parentKey: "transport-and-machines", label:  ' - IR WDM2', isLeafParent: true, key: 'trains-ir-alcos', accessible: ['non-living', 'non-religious',  'all'], dateUploaded: '11-28-2022' },
-    { parentKey: "transport-and-machines", label:  ' - IR trains)', isLeafParent: true, key: 'trains-ir-special-trains', accessible: ['non-living',  'non-religious', 'all'], dateUploaded: '02-02-2023' },
-    { parentKey: "mumbai-meri-jaan", label:  'Mumbai Meri Jaan', isLeafParent: false, key: 'mumbai-meri-jaan', accessible: ['non-living',  'non-religious', 'all'], dateUploaded: '11-28-2022' },
-    { parentKey: "mumbai-meri-jaan", label:  ' - Q1 2023 onward', isLeafParent: true, key: 'mumbai-meri-jaan-2', accessible: ['non-living',  'non-religious', 'all'], dateUploaded: '01-29-2023' },
-    { parentKey: "transport-and-machines", label:  'Aircraft, Ships and Cars', isLeafParent: false, key: 'planes', accessible: ['non-living', 'non-religious',  'all'], dateUploaded: '02-14-2023' },
-    { parentKey: "transport-and-machines", label:  '- Q2 2023 onward', isLeafParent: false, key: 'planesQ12023', accessible: ['non-living', 'non-religious', 'all'], dateUploaded: '05-12-2023' },
-    { tab:"Admin", label:  'technical', isLeafParent: false, key: 'technical', accessible: ['non-living', 'all'], dateUploaded: '05-12-2021' },
-];
-*/

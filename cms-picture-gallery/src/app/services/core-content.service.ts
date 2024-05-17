@@ -50,6 +50,8 @@ export class CoreContentService {
   allImageList:ImageElement[] = [];
   genImageList:any = null ;
   topUploadsList: any =   { all: null, gen: null };
+   // @ts-ignore: Object is possibly 'null'.
+  userObject = JSON.parse(localStorage.getItem("user-object")) ;
   constructor() {
     this.loadContentList();
    }
@@ -66,7 +68,9 @@ export class CoreContentService {
     if (this.contentList.length === 0) {
       this.loadContentList() ;
     }
-    return this.contentList ;
+  //  if (this.userObject.userRoles.find((x:string) => x === 'all' || x === 'superuser') !== undefined)
+     return this.contentList ;
+  //  let 
   }
   get SketchStats():any {
     if (this.contentList.length === 0 ) {
@@ -74,73 +78,83 @@ export class CoreContentService {
     }
     return this.sketchStats;
   }
+  get UserMenus(): TreeNodeElement[] {
+    let userMenu: TreeNodeElement[] = [] ;
+    if (this.userObject !== null && this.userObject.userRoles) {
+        if (this.userObject.userRoles.find((x:string) => x === 'all' || x === 'superuser') !== undefined) {
+          console.log(`SUOPER`)
+          return MenuTreeElements;
+        }
+        MenuTreeElements.forEach((menuItem: TreeNodeElement) => {
+            menuItem.roles?.forEach((role:string) => {
+              if (role === 'all' || this.userObject.userRoles.find((x:string) => x === role) !== undefined) {
+                userMenu.push(menuItem) ;
+              }
+            }) ;// || x === 'superuser') !== undefined) 
+            
+        });
+    }
+    return userMenu;
+  }
   setCurrentCardList():TreeNodeElement[]  {
+    console.log(`${JSON.stringify(this.UserMenus)}`);
     let retCardList:TreeNodeElement[] = [];
     let currentParentKey =  localStorage.getItem('current-menu') ;
-    retCardList = MenuTreeElements.filter((x) => x.parentKey === currentParentKey) ;
+    //retCardList = MenuTreeElements.filter((x) => x.parentKey === currentParentKey) ;
+     retCardList = this.UserMenus.filter((x) => x.parentKey === currentParentKey) ;
     
-    let currentParent = MenuTreeElements.find((x) => x.key === currentParentKey) ;
+    // retCardList = this.UserMenus.filter((x) => x.parentKey === currentParentKey) ;
+    let currentParent = this.UserMenus.find((x) => x.key === currentParentKey) ;
+    // let currentParent = MenuTreeElements.find((x) => x.key === currentParentKey) ;
     this.breadCrumbs  = currentParent?.breadCrumb ;
     this.parentDescription = currentParent?.description !== undefined ? currentParent?.description: currentParent?.label;
     return retCardList ;
   }
 
   loadContentList() { // loads the raw list; also collects statistics
-    
+    let userNameRoles:any  = null ;
+     // @ts-ignore: Object is possibly 'null'.
+    if(localStorage.getItem('user-object')) {
+      console.log(localStorage.getItem('user-object')) ;
+       // @ts-ignore: Object is possibly 'null'.
+      userNameRoles = JSON.parse(localStorage.getItem('user-object'));
+    }
       // in the future considering adding role in the ImageList object.. right now
     // QUICK FIX+DEPLOY JAN 4 2024 scrub lists for min religous content and temp freeze roles
     /**/ 
-      this.contentList.push( { contentFile:new GaneshPreQ42021ImageList(),contentCategory:'shree-ganesh-b4-q4-2021', role:'sanatani'}) ;
-      this.contentList.push( { contentFile:new GaneshGTEQ42021ImageList(),contentCategory:'shree-ganesh-gte-q4-2021', role:'sanatani'}) ;
-      this.contentList.push( { contentFile:new GaneshGTEQ12023ImageList(),contentCategory:'shree-ganesh-gte-q1-2023', role:'sanatani'}) ;
-      this.contentList.push( { contentFile:new GaneshGTEQ12024ImageList(),contentCategory:'shree-ganesh-gte-q1-2024', role:'sanatani',latest:true}) ;
+      this.contentList.push( { contentFile:new GaneshPreQ42021ImageList(),contentCategory:'shree-ganesh-b4-q4-2021', roles:['sanatani']}) ;
+      this.contentList.push( { contentFile:new GaneshGTEQ42021ImageList(),contentCategory:'shree-ganesh-gte-q4-2021', roles:['sanatani']}) ;
+      this.contentList.push( { contentFile:new GaneshGTEQ12023ImageList(),contentCategory:'shree-ganesh-gte-q1-2023', roles:['sanatani']}) ;
+      this.contentList.push( { contentFile:new GaneshGTEQ12024ImageList(),contentCategory:'shree-ganesh-gte-q1-2024', roles:['sanatani'],latest:true}) ;
       
-      this.contentList.push( { contentFile:new DeviImageList(),contentCategory:'devi', role:'sanatani',latest:true}) ;
-      this.contentList.push( { contentFile:new MahadevImageList(),contentCategory:'mahadev', role:'sanatani',latest:true}) ;
-      this.contentList.push( { contentFile:new MahadevFamilyImageList(),contentCategory:'mahadev-family', role:'sanatani',latest:true}) ;
-      this.contentList.push( { contentFile:new LaxmiVishnuHanumanList(),contentCategory:'laxmi-vishnu-hanuman', role:'sanatani',latest:true}) ;
-      this.contentList.push( { contentFile:new DattavatarImageList(),contentCategory:'dattavatar', role:'guru',latest:true}) ;
-      this.contentList.push( { contentFile:new SwamiSamarthaImageList(),contentCategory:'swami-samartha', role:'guru'}) ;
-      this.contentList.push( { contentFile:new SwamiSamarthaQ22023ImageList(),contentCategory:'swami-samartha-q2-2023', role:'guru',latest:true}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiQ42023Q12024ImageList(),contentCategory:'shirdi-sai-q4-2023-q1-2024', role:'guru',latest:true}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiThemeList1(),contentCategory:'baba-themes-1', role:'guru'}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiPreQ32021ImageList(),contentCategory:'shirdi-sai-q1-q2-2021', role:'guru'}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiQ3Q42021ImageList(),contentCategory:'shirdi-sai-q3-q4-2021', role:'guru'}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiQ2Q32022ImageList(),contentCategory:'shirdi-sai-q2-q3-2022', role:'guru'}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiQ42022Q12023ImageList(),contentCategory:'shirdi-sai-q4-2022-q1-2023', role:'guru'}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiQ2Q32023ImageList(),contentCategory:'shirdi-sai-q2-q3-2023', role:'guru'}) ;
+      this.contentList.push( { contentFile:new DeviImageList(),contentCategory:'devi', roles:['sanatani'],latest:true}) ;
+      this.contentList.push( { contentFile:new MahadevImageList(),contentCategory:'mahadev', roles:['sanatani'],latest:true}) ;
+      this.contentList.push( { contentFile:new MahadevFamilyImageList(),contentCategory:'mahadev-family', roles:['sanatani'],latest:true}) ;
+      this.contentList.push( { contentFile:new LaxmiVishnuHanumanList(),contentCategory:'laxmi-vishnu-hanuman', roles:['sanatani'],latest:true}) ;
+      this.contentList.push( { contentFile:new DattavatarImageList(),contentCategory:'dattavatar', roles:['guru'],latest:true}) ;
+      this.contentList.push( { contentFile:new SwamiSamarthaImageList(),contentCategory:'swami-samartha', roles:['guru']}) ;
+      this.contentList.push( { contentFile:new SwamiSamarthaQ22023ImageList(),contentCategory:'swami-samartha-q2-2023', roles:['guru'],latest:true}) ;
+      this.contentList.push( { contentFile:new ShirdiSaiQ42023Q12024ImageList(),contentCategory:'shirdi-sai-q4-2023-q1-2024', roles:['guru'],latest:true}) ;
+      this.contentList.push( { contentFile:new ShirdiSaiThemeList1(),contentCategory:'baba-themes-1', roles:['guru']}) ;
+      this.contentList.push( { contentFile:new ShirdiSaiPreQ32021ImageList(),contentCategory:'shirdi-sai-q1-q2-2021', roles:['guru']}) ;
+      this.contentList.push( { contentFile:new ShirdiSaiQ3Q42021ImageList(),contentCategory:'shirdi-sai-q3-q4-2021', roles:['guru']}) ;
+      this.contentList.push( { contentFile:new ShirdiSaiQ2Q32022ImageList(),contentCategory:'shirdi-sai-q2-q3-2022', roles:['guru']}) ;
+      this.contentList.push( { contentFile:new ShirdiSaiQ42022Q12023ImageList(),contentCategory:'shirdi-sai-q4-2022-q1-2023', roles:['guru']}) ;
+      this.contentList.push( { contentFile:new ShirdiSaiQ2Q32023ImageList(),contentCategory:'shirdi-sai-q2-q3-2023', roles:['guru']}) ;
 
-      this.contentList.push( { contentFile: new PeopleImageList(),contentCategory:'people-places', role:'non-living,  non-religious'}) ;
-      this.contentList.push( { contentFile: new PlacesScenesObjectsImageList(),contentCategory:'places-scenes-objects', role:'non-living,  non-religious'}) ;
-      this.contentList.push( { contentFile: new ThemesMisc(),contentCategory:'themes-misc', role:'non-living,  non-religious'}) ;
+      this.contentList.push( { contentFile: new PlacesScenesObjectsImageList(),contentCategory:'places-scenes-objects', roles:['non-living,  non-religious'],latest:true}) ;
+      this.contentList.push( { contentFile: new ThemesMisc(),contentCategory:'themes-misc', roles:['non-living,  non-religious'],latest:true}) ;
 
-      this.contentList.push( { contentFile:new TrainImageList(),contentCategory:'trains', role:'non-living,  non-religious'}) ;
-      this.contentList.push( { contentFile:new TrainsIndianRailwayAlcos(),contentCategory:'trains-ir-alcos', role:'non-living,  non-religious'}) ;
-      this.contentList.push( { contentFile:new TrainsIndianRailwaySpecialTrains(),contentCategory:'trains-ir-special-trains', role:'non-living,  non-religious'}) ;
-      this.contentList.push( { contentFile:new MumbaiMeriJaanList(),contentCategory:'mumbai-meri-jaan', role:'non-living,  non-religious'}) ;
-      this.contentList.push( { contentFile:new MumbaiMeriJaan2List(),contentCategory:'mumbai-meri-jaan-2', role:'non-living,  non-religious'}) ;
-      this.contentList.push( { contentFile:new AnimateToBeOrganized1ImageList(),contentCategory:'animate-to-be-oragnized1', role:'misc'}) ;
+      this.contentList.push( { contentFile:new TrainImageList(),contentCategory:'trains', roles:['non-living,  non-religious'],latest:true}) ;
+      this.contentList.push( { contentFile:new TrainsIndianRailwayAlcos(),contentCategory:'trains-ir-alcos', roles:['non-living,  non-religious'],latest:true}) ;
+      this.contentList.push( { contentFile:new TrainsIndianRailwaySpecialTrains(),contentCategory:'trains-ir-special-trains', roles:['non-living,  non-religious'],latest:true}) ;
+      this.contentList.push( { contentFile:new MumbaiMeriJaanList(),contentCategory:'mumbai-meri-jaan', roles:['non-living,  non-religious']}) ;
+      this.contentList.push( { contentFile:new MumbaiMeriJaan2List(),contentCategory:'mumbai-meri-jaan-2', roles:['non-living,  non-religious'],latest:true}) ;
+      this.contentList.push( { contentFile:new AnimateToBeOrganized1ImageList(),contentCategory:'animate-to-be-oragnized1', roles:['misc']}) ;
 
-      this.contentList.push( { contentFile:new PlanesShipsCarsImageList(),contentCategory:'planes-ships-cars', role:'non-living,  non-religious'}) ;
-      this.contentList.push( { contentFile:new PlanesShipsCars2ImageList(),contentCategory:'planes-ships-cars-2', role:'non-living,  non-religious'}) ;
-    
-   /*
-         
-      */
-  //  }
-    /**/
-   // QUICK FIX+DEPLOY JAN 4 2024 scrub lists for min religous content and temp freeze roles
-   /*
-   if (this.Scrub === true) {
-    this.contentList.push( { contentFile:this.filterReligiousAndGuruLists(),contentCategory:'religion-and-guru', role:'non-living,  non-religious'}) ;
-  }
-    this.contentList.push( { contentFile:new PeopleImageList(),contentCategory:'people-places', role:'people,  non-religious'}) ;
-   
-    this.contentList.push( { contentFile:new PlacesScenesObjectsImageList(),contentCategory:'places-scenes-objects', role:'non-living,  non-religious'}) ;
-    this.contentList.push( { contentFile:new PlanesImageList(),contentCategory:'planes', role:'non-living,  non-religious'}) ;
-    this.contentList.push( { contentFile:new ThemesMisc(),contentCategory:'themes-misc', role:'non-living,  non-religious'}) ;
-    */
-    //}
+      this.contentList.push( { contentFile:new PlanesShipsCarsImageList(),contentCategory:'planes-ships-cars', roles:['non-living,  non-religious'],latest:true}) ;
+      this.contentList.push( { contentFile:new PlanesShipsCars2ImageList(),contentCategory:'planes-ships-cars-2', roles:['non-living,  non-religious'],latest:true}) ;
+ 
     let me = this;
     this.contentList.forEach((contentItem:ContentList) =>{
       me.collectThemeBasedStats(contentItem);
@@ -212,6 +226,26 @@ export class CoreContentService {
 
           return { all:  this.allImageList, gen: this.genImageList };
           break ;
+          case 'latest-uploads-timewise':
+            this.genImageList = { 
+              allImageList: [ 
+                  { 
+                    folder:'',
+                    theme:'latest-uploads-timewise',
+                    themeSummary: `Uploads latest by time`,
+                    files: [],
+                  }
+              ]} ;
+             // this.loadLists(latestImageLists) ;
+              this.ContentList.forEach((latestImageList:any) => {
+                 if(latestImageList.contentFile.allImageList && 
+                      latestImageList.contentFile.allImageList[0].files)
+                  this.loadLatestUploadsTimeLine(latestImageList.contentFile);
+              })
+              return { all:  this.allImageList, gen: this.genImageList };
+              console.log(`#### LATEST UPLOAD .. RETURN AFTER SORT`);
+              
+            break;
             case 'latest-uploads-themewise':
               this.genImageList = { 
                 allImageList: [ 
@@ -268,6 +302,38 @@ export class CoreContentService {
     this.sketchStats.themBasedCounts.push(themeCount) ;
   }
 
+
+  loadLatestUploadsTimeLine(currentList:any)  {
+    console.log('timeline');
+    let daysBack = 90 ;
+    if(currentList.allImageList && currentList.allImageList[0].files) {
+      currentList.allImageList[0].files.forEach((fileItem:any) => {
+        if (!fileItem.duplicate && this.daysAgoUploaded(fileItem, daysBack)) {
+          this.genImageList.allImageList[0].files.push(fileItem);
+        }
+      });
+      this.allImageList  = this.genImageList.allImageList ; 
+    this.allImageList[0].folder = '';
+    this.allImageList[0].theme = 'latest-uploads';
+    this.allImageList[0].themeSummary = 'Quick referral showing latest uploads of 90 days or less'
+    /*
+      if (this.genImageList.allImageList[0].files.length <= 5) {
+        daysBack = 90 ;
+        currentList.allImageList[0].files.forEach((fileItem:any) => {
+          if (!fileItem.duplicate && this.daysAgoUploaded(fileItem, daysBack, 30)) {
+            this.genImageList.allImageList[0].files.push(fileItem);
+          }
+        });
+        this.allImageList[0].themeSummary = 'Latest and last uploads reaching back to 90 days (normally latest uploads are 30 days or less, but uploads may not have taken place a while)'
+    
+      }
+      */
+    }
+    
+    
+    console.log(`Loading latest`);
+ //   return latestUploadList ;
+  }
   loadLatestUploads(currentList:any)  {
 
     let daysBack = 30 ;
