@@ -21,6 +21,7 @@ import { ShirdiSaiQ3Q42021ImageList } from 'src/assets/gallery-files/lists-and-o
 import { ShirdiSaiQ2Q32022ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q2-q3-2022.list';
 import { ShirdiSaiQ42022Q12023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q4-2022-q1-2023.list';
 import { ShirdiSaiQ2Q32023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q2-q3-2023.list';
+import {ShirdiSaiQ2Q32024ImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q2-q3-2024.list';
 
 import { PeopleImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/people.image.list';
 import { PlacesScenesObjectsImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/places-scenes-objects.image.list';
@@ -79,6 +80,7 @@ export class CoreContentService {
     return this.sketchStats;
   }
   get UserMenus(): TreeNodeElement[] {
+    return MenuTreeElements;
     let userMenu: TreeNodeElement[] = [] ;
     if (this.userObject !== null && this.userObject.userRoles) {
         if (this.userObject.userRoles.find((x:string) => x === 'all' || x === 'superuser') !== undefined) {
@@ -141,7 +143,7 @@ export class CoreContentService {
       this.contentList.push( { contentFile:new ShirdiSaiQ2Q32022ImageList(),contentCategory:'shirdi-sai-q2-q3-2022', roles:['guru']}) ;
       this.contentList.push( { contentFile:new ShirdiSaiQ42022Q12023ImageList(),contentCategory:'shirdi-sai-q4-2022-q1-2023', roles:['guru']}) ;
       this.contentList.push( { contentFile:new ShirdiSaiQ2Q32023ImageList(),contentCategory:'shirdi-sai-q2-q3-2023', roles:['guru']}) ;
-
+      this.contentList.push( { contentFile:new ShirdiSaiQ2Q32024ImageList(),contentCategory:'shirdi-sai-q2-q3-2024', roles:['guru']}) ;
       this.contentList.push( { contentFile: new PlacesScenesObjectsImageList(),contentCategory:'places-scenes-objects', roles:['non-living,  non-religious'],latest:true}) ;
       this.contentList.push( { contentFile: new ThemesMisc(),contentCategory:'themes-misc', roles:['non-living,  non-religious'],latest:true}) ;
 
@@ -196,6 +198,7 @@ export class CoreContentService {
           case 'changers-b4-2022':  
           case 'changers-2022':  
           case 'changers-2023': 
+          case 'changers-2024': 
           if (strParam.indexOf('b4') < 0 && strParam.indexOf('-') > 0) {
             themeYear =  strParam.split('-')[1] ;
             yearSelected = parseInt(themeYear);
@@ -384,7 +387,7 @@ export class CoreContentService {
     if(currentList.contentFile.allImageList && currentList.contentFile.allImageList[0].files) {
       currentList.contentFile.allImageList[0].files.forEach((fileItem:any) => {
         // get evolution text
-        if (fileItem.evolution ) {
+        if (fileItem.evolution && (fileItem.duplicate === undefined || fileItem.duplicate === false) ) {
           if (year !== 0) {
             if (fileItem.evolutionDate) {
               if (year === new Date(fileItem.evolutionDate).getFullYear()) {

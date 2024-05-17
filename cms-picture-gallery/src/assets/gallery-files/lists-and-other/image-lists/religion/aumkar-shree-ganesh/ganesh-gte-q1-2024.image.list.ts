@@ -10,7 +10,26 @@ public allImageList:ImageElement[]  =  [
         theme:'Shree Ganesh',
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
-        files: [ 
+        files: [ ,
+            {
+            canvassSize:  'A4',
+            
+            content:  'black-white',
+            dateUploaded:  '04-09-2024',
+            
+            evolution:  `<b>Commemorative Sketch<br/>First new sketch uploaded to the new-look card based version of this gallery May 2024</B>`,
+            evolutionSequence:  4,
+            evolutionDate:  '05-16-2024',
+            fullFileName: `${this.imageRoot}SaiSamadhiMandir051624.jpeg`,
+            description: `<ul><li>Attempt to sketch Ganesh Idol and Sai of Shirdi Samadhi Mandir (photographed)</li><li>May 16 2024</li></ul>`,
+            
+            iterations: [
+            {fullFileName: `${this.imageRoot}SaiSamadhiMandir051624.jpeg`, 
+                  description: `<ul><li>Attempt to sketch Ganesh Idol and Sai of Shirdi Samadhi Mandir (photographed)</li><li>May 16 2024</li></ul>` },
+            {fullFileName: `${this.imageRoot}SaiSamadhiMandir051624-scan.jpeg`, 
+                  description: `<ul><li>Attempt to sketch Ganesh Idol and Sai of Shirdi Samadhi Mandir (scan)</li><li>May 16 2024</li></ul>` },
+            ]
+            },
 {
 
    generic: 'true',
