@@ -24,6 +24,18 @@ public allImageList:ImageElement[]  =  [
         `,
         files: [
             {
+                canvassSize:  'A4',
+                content:  'color-pencil black-white',
+                dateUploaded:  '05-16-2024',
+                fullFileName: `assets/gallery-files/images/religion/mahadev/ShankarPunyatithi2024.jpeg`,
+                evolution:  `<b>Merge of two previous sketches with resizing of one</B>`,
+                evolutionSequence:  4,
+                evolutionDate:  '05-16-2024',
+                duplicate:true,
+                 description: `<ul><li>YogYogeshwar Shankar Maharaj Samadhi Anniversary (Lunar Calendar)</li><li>May 15 2024</li></ul>`,
+                
+               },
+            {
                 generic: 'true',
                 genericCategory:50, // 1 Ganesh, 2 Goddesses, 3 shiva (+ family), 4 Narayan + family + Hanuman, 5 Gurus
                 genericDescription: 

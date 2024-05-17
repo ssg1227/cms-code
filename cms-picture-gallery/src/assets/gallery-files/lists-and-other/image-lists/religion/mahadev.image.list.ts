@@ -11,7 +11,17 @@ export class MahadevImageList {
          theme:'Mahadev',
          themeSummary:
          ``,
-         files: [
+         files: [{
+          canvassSize:  'A4',
+          content:  'color-pencil black-white',
+          dateUploaded:  '05-16-2024',
+          fullFileName: `${this.imageRoot}ShankarPunyatithi2024.jpeg`,
+          evolution:  `<b>Merge of two previous sketches with resizing of one</B>`,
+          evolutionSequence:  4,
+          evolutionDate:  '05-16-2024',
+           description: `<ul><li>YogYogeshwar Shankar Maharaj Samadhi Anniversary (Lunar Calendar)</li><li>May 15 2024</li></ul>`,
+          
+         },
           {
             canvassSize:  'A4',
             content:  'black-white',

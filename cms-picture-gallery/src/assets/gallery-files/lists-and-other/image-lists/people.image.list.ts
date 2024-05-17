@@ -4,7 +4,7 @@ export class PeopleImageList {
    sort: string = 'asc'
     imageRoot=`assets/gallery-files/images/people-places/`
     public allImageList:ImageElement[]  =  [
-
+     
 { 
     folder:'people-places',
     theme:'Famous Persons',
@@ -13,7 +13,16 @@ export class PeopleImageList {
          Some off the spur of the moment, spontaneous, others due to their deaths (and we have had a lot of that!!)
          Some, in fact, many are <em><strong>pretty out of shape</strong></em>, but <em>still</em> included because of the significance`,
      files: [
-
+      
+{
+   canvassSize:  'A4',
+   content:  'black-white',
+   dateUploaded:  '05-17-2024',
+   fullFileName: `${this.imageRoot}RDBurmanMay22024.jpeg`,
+   description: `<ul><li> RD Burman Legendary Indian Cineman Music Director </li>
+   </ul>
+   `,
+},
 {
    canvassSize:  'A4',
    content:  'black-white',
