@@ -12,6 +12,7 @@ public allImageList:ImageElement[]  =  [
         `Vigneshwar, Aumkar, Gamapati, Vignahartha - The Lord Ganesh, remover of Obstacles.`,
         files: [
          {
+            canvassSize: 'A4', content:'black-white',
             fullFileName: `${this.imageRoot}/GaneshSept92022.jpeg`, 
             description: `<ul>
             <li>Andheri (Mumbai) Sarvajanik Ganesh based sketch, Sept 9 2022</li>
@@ -21,6 +22,7 @@ public allImageList:ImageElement[]  =  [
          },
 
          {
+            canvassSize: 'A4', content:'color-pencil',
             fullFileName: `${this.imageRoot}/GaneshShiv0423-2022.jpeg`, 
             description: `<ul>
             <li>Dont remember context April 23 2022</li>
@@ -29,6 +31,7 @@ public allImageList:ImageElement[]  =  [
             
          },
          {
+            canvassSize: 'A4', content:'color-pencil',
             fullFileName: `${this.imageRoot}/GaneshShripadVallabhAug302022.jpeg`, 
             description: `<ul>
             <li>Ganesh Chaturthi 2022 (Aug 30/31) special</li>
@@ -60,7 +63,9 @@ public allImageList:ImageElement[]  =  [
                                     <li>Sketched and uploaded June 17 2022 ('Juneteenth')</li>
                                     </ul>`,}       ],
          },
-         {  fullFileName: `${this.imageRoot}/GaneshDattaOct132022.jpeg`, 
+         {  
+            canvassSize: 'A4', content:'black-white',
+            fullFileName: `${this.imageRoot}/GaneshDattaOct132022.jpeg`, 
         description: `<p>Ganesh Datta <ul>
                         <li>Shree Ganesh represented in Dattatreya avatar</li>
                         <li>October 13 2022</li>
@@ -102,6 +107,7 @@ public allImageList:ImageElement[]  =  [
                                  </ul></strong>`,}],
          },
          {
+            canvassSize: 'A4', content:'black-white',
             fullFileName: `${this.imageRoot}/GaneshLataFeb7-8-2022.jpeg`, 
             description: `<ul>
                         <li>On the occasion of the sad passing of Lata Mangeshkar</li>
@@ -109,7 +115,6 @@ public allImageList:ImageElement[]  =  [
                      </ul>`,
             dateUploaded: '02-08-2022',
             rating: 1,
-            canvassSize: 'A4', content:'color-crayon',
             evolution: `<b>a unique format where the original was without Shree Ganesh sketch and I chose to place that version under 'people' theme</b> `,
             evolutionSequence: 2, evolutionDate: '02-08-2022', iterations:[
                { 
@@ -119,17 +124,20 @@ public allImageList:ImageElement[]  =  [
                                  </ul>`,}],
          },
         {
-            fullFileName: `${this.imageRoot}/GaneshJayanti02042022_collage.jpeg`, 
+         canvassSize: 'A4', content:'black-white',
+         fullFileName: `${this.imageRoot}/GaneshJayanti02042022_collage.jpeg`, 
             description: '<p>Feb 4 2022 Ganesh Jayanti.. Part of a collage with Pt Bhimsen Joshi 100th birth anniversary (see next)</p>',
             dateUploaded: '02-04-2022',
          },
          {
-            fullFileName: `${this.imageRoot}/GaneshJayanti_Bhimsen_collage040222.jpeg`, 
+            canvassSize: 'soft',  content:'color-pencil black-white',
+         fullFileName: `${this.imageRoot}/GaneshJayanti_Bhimsen_collage040222.jpeg`, 
             description: '<p>Feb 4 2022 Ganesh Jayanti and Pt Bhimsen Joshi 100th birth anniversary</p>',
             dateUploaded: '02-04-2022',
          },
          
            {
+            canvassSize: 'A4', content:'black-white',
             fullFileName: `${this.imageRoot}/GaneshPaushChaturthiJan21_2022_1.jpeg`, 
             description: '<p>Quick Sketch Memorial Day weekend 2021</p>',
             dateUploaded: '02-02-2022',
@@ -180,7 +188,10 @@ public allImageList:ImageElement[]  =  [
                      fullFileName: `${this.imageRoot}/GaneshSwamiJan4-72022-frame.jpeg`,
                      description: `<ul><li>Start</li></ul>`}
              ] 
-         }, {  fullFileName: `${this.imageRoot}/GaneshSwamiDec-Cal-2022.png`, 
+         }, {  
+            
+            canvassSize: 'soft',  content:'color-pencil',
+            fullFileName: `${this.imageRoot}/GaneshSwamiDec-Cal-2022.png`, 
             description: `<ul>
          <li>HAPPY NEW YEAR 2022 </li>
          <li>Dec 30 2021</li>
@@ -188,7 +199,8 @@ public allImageList:ImageElement[]  =  [
 ,
 dateUploaded: '12-30-2021',
 },
-         {  fullFileName: `${this.imageRoot}/GaneshNov2021.jpeg`, 
+         {  
+            canvassSize: 'A4',  content:'black-white',fullFileName: `${this.imageRoot}/GaneshNov2021.jpeg`, 
         description: `<p>General Ganesh Snap<ul>
                         <li>Still from Ganesh Video - Vishwavinayak (Ajay-Atul) list 1st song</li>
                         <li>Nov 2021</li>

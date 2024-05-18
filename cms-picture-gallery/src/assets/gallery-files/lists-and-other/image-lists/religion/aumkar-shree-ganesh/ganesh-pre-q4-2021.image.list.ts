@@ -276,6 +276,7 @@ iterations:[{
                 
                    description: '<p>Quick Sketch Memorial Day weekend 2020</p>' },
                 {  
+                    canvassSize: 'A4', content:'black-white',
                     fullFileName: `${this.imageRoot}Aumkar-Ganesh-sept-2020-final.jpeg`, 
                     description: `
                     <ul><li>One of my first 'properly, patiently' drawn sketches, Sept 2020</li></ul>
@@ -294,6 +295,7 @@ iterations:[{
                     `},
                 ] },
                         {  
+                            canvassSize: 'A4', content:'black-white',
                             fullFileName: `${this.imageRoot}Aumkar-Ganesh-sur-niragas-ho-Nov2-2020FINAL.jpeg`, 
                             description: `
                             <ul>
@@ -319,12 +321,15 @@ iterations:[{
                             </ul>
                             `}], },
                     { 
+                        canvassSize: 'A4', content:'black-white',
                         fullFileName: `${this.imageRoot}ShreeSiddhivinayakQ42020.jpeg`, 
                         evolution: `<b>Landmark because of the theme, the iconic Ganesh Temple at Prabhadevi, Mumbai</b>`,
                         evolutionSequence: 1, evolutionDate: `12-01-2020`,
                         description: 'Siddhivinayak Temple, Prabhadevi, Mumbai, India attempt to sketch',
                     },
-                    { fullFileName: `${this.imageRoot}GaneshRadioZTueFeb232021.jpeg`, 
+                    { 
+                        canvassSize: 'A4', content:'black-white',
+                        fullFileName: `${this.imageRoot}GaneshRadioZTueFeb232021.jpeg`, 
                     description: `<ul>
                             <li>Based off of the idol of Ganeshotsav Bay Area. Organized primarily by Radio Zindagi and some Bay Area personalities like Amit and Renuka Inamdar</li>
                             <li>This is a 15 foot idol which is sort of permanent 
@@ -335,7 +340,9 @@ iterations:[{
                             <li><em> One benefit of this website is a realization that this is a good handle of re-discovering unfinished work</em></li>
                             </ul>`
                      },
-                    { fullFileName: `${this.imageRoot}DictationOfMahabharatMarch092021.jpeg`, 
+                    { 
+                        canvassSize: 'A4', content:'black-white',
+                        fullFileName: `${this.imageRoot}DictationOfMahabharatMarch092021.jpeg`, 
                     description: `<ul>
                     <li>Attempt to depict a famous secene related to Mahabharat</li>
                     <li>Lord Brahma recommended Shree Ganesh to Sage Vyas for putting pen and paper to the Latter's Magnificent Poem</li>
@@ -367,11 +374,13 @@ iterations:[{
                     </ul>
                     `}],},
                     {  
+                        canvassSize: 'A4', content:'black-white',
                         fullFileName: `${this.imageRoot}GeneralGaneshSnap.jpeg`,
                         description: '<p>Quick Sketch Q1 2021 trying out shading pencils</p>',
                     },
                     
        {  
+        canvassSize: 'A4', content:'black-white',
         fullFileName: `${this.imageRoot}GaneshKaliTandav_Pandemic04292021.jpeg`, 
         description: '<p>Quick Sketch Memorial Day weekend 2020</p>',
         iterations:[  {

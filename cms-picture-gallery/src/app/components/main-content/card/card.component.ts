@@ -76,7 +76,10 @@ export class CardComponent {
       if(this.imageDetail.imageList[0].description.toLowerCase().indexOf('black and white') >= 0||
          this.imageDetail.imageList[0].description.toLowerCase().indexOf('black-white') >= 0) {
             returnCardCSS = 'card-default card-mono'
-      } else if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('combination of color') >= 0){
+      } else if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('watercolor') >= 0 || 
+      this.imageDetail.imageList[0].description.toLowerCase().indexOf('water color') >= 0){
+        returnCardCSS = 'card-default card-watercolor'
+      } else  if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('combination of color') >= 0){
         returnCardCSS = 'card-default card-mix'
       }
     }
@@ -91,8 +94,16 @@ export class CardComponent {
       if(this.imageDetail.imageList[0].description.toLowerCase().indexOf('black and white') >= 0||
          this.imageDetail.imageList[0].description.toLowerCase().indexOf('black-white') >= 0) {
             returnCardImageCSS = 'card-image card-image-mono'
-      } else if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('combination of color') >= 0){
+      } else if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('watercolor') >= 0 || 
+      this.imageDetail.imageList[0].description.toLowerCase().indexOf('water color') >= 0){
+        returnCardImageCSS = 'card-image card-image-watercolor'
+      } else  if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('combination of color') >= 0){
         returnCardImageCSS = 'card-image card-image-mix'
+      } else  if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('crayon') >= 0){
+        returnCardImageCSS = 'card-image card-image-crayon'
+      }
+      if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('soft copy') >= 0 ){
+        returnCardImageCSS = `${returnCardImageCSS} card-image-softcopy`
       }
     }
     return returnCardImageCSS ;

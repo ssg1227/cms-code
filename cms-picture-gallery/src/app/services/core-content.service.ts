@@ -51,6 +51,9 @@ export class CoreContentService {
   allImageList:ImageElement[] = [];
   genImageList:any = null ;
   topUploadsList: any =   { all: null, gen: null };
+  get TEST():boolean {
+    return true ;
+  }
    // @ts-ignore: Object is possibly 'null'.
   userObject = JSON.parse(localStorage.getItem("user-object")) ;
   constructor() {

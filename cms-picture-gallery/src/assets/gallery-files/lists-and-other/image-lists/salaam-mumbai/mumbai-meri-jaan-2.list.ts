@@ -9,6 +9,43 @@ public allImageList:ImageElement[]  =  [
                 theme:'Salaam Mumbai',
                 themeSummary: `This long overdue dedication to the City that is part of me that I am part of.. How could I have waited soooo long. <br/><b>Posts Q1 2023 onward</b>`,
                 files: [
+                  ,   { fullFileName: `${this.imageRoot}ScottishApril42024-final.jpeg`,
+                  evolution:
+                  `<p>'School has always been special in most peoples hearts; I am no exception</p>`,
+                    evolutionSequence: 4, evolutionDate: `04-04-2024`,
+                    canvassSize: 'A3', content:'black-white',
+                   description: `<ul>
+                  <li>Bombay Scottish aireal view.</li>
+                  <li>No words enough to describe what this institute MY SCOOL means to me </li>
+                  <li>This sketch was a long time in getting complete having started begining 2024</li>
+                  <li>The reference pic has new construction; I wanted to try capture the 70s and 80s layout, so had to 
+                      partly extrapolate and scratch my memory</li>
+                  <li>Date completed April 4 2024 </li>
+                  </ul>`,
+                  rating: 1,
+                  dateUploaded: '05-17-2024',
+                  iterations: [{
+                   fullFileName: `${this.imageRoot}ScottishApril42024-final.jpeg`, 
+                   description:  `<ul>
+                   <li>Bombay Scottish aireal view.</li>
+                   <li>No words enough to describe what this institute MY SCOOL means to me </li>
+                   <li>This sketch was a long time in getting complete having started begining 2024</li>
+                   <li>The reference pic has new construction; I wanted to try capture the 70s and 80s layout, so had to 
+                       partly extrapolate and scratch my memory</li>
+                   <li>Date completed April 4 2024 </li>
+                   </ul>`,
+                 },  {
+                   fullFileName: `${this.imageRoot}ScottishApril42024.jpeg`, 
+                   description: `<ul>
+                   <li>Bombay Scottish aireal view.</li>
+                   <li>No words enough to describe what this institute MY SCOOL means to me </li>
+                   <li>This sketch was a long time in getting complete having started begining 2024</li>
+                   <li>The reference pic has new construction; I wanted to try capture the 70s and 80s layout, so had to 
+                       partly extrapolate and scratch my memory</li>
+                   <li>Date completed April 4 2024 </li>
+                   </ul>`
+                 },]
+                  },
 {
 canvassSize:  'A4',
 content:  'color-pencil',

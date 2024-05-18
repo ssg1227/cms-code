@@ -9,6 +9,15 @@
 - email form 
 - put hard coded paths behind variables, and find right place to keep these variables (e.g. global version of imageRoot)
 - Authentication piece
+
+### Log May 17-19
+- **May 20 public release** 
+  - Uploaded images categories complete, so descrption is complete as also styling based on categorization
+  - Authentication applied to list loading and menus
+  - Pop up image styling
+  - Not showstopper, but Menus having latest uploaded highlighted
+  - Nice to have tooltip on thumbnails without html tags
+  - Data scrubbed github repo
 ### Log May 15-16
 - **--MAY16 2024 7:00 PM PST functionally complete--** 
 - *SCRAMBLE* to completion

@@ -20,6 +20,12 @@
   background-color: lightgray;
 }
 
+.card-watercolor {
+  
+  border: 7px outset rgb(0, 110,175) ;
+  background-color: aquamarine;
+  
+  }
 .card-mix {
   border: 7px outset darkslateblue;
   background-color: lightblue;
@@ -43,6 +49,21 @@ margin:auto;
   
   }
 
+  .card-image-crayon { 
+    border: 7px groove rgb(255, 0, 3);
+    border-radius: 10px;
+    
+    }
+  .card-image-watercolor {
+    border: 5px solid darkcyan;
+    border-radius: 10px;
+    
+    }
+    .card-image-softcopy {
+      border: 2px dashed blue;
+      border-radius: 10px;
+      
+      }
 .card-image-mix {
   border: 5px solid slateblue;
   border-radius: 10px;
