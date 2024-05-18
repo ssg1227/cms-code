@@ -248,8 +248,8 @@ fullFileName: `${this.imageRoot}KedarnathTemple03012022.jpeg`,
 }, {  
   canvassSize:  'A4',
   content:  'black-white',
-  fullFileName: `assets/gallery-files/images/religion/shirdi-sai-pre-q3-2021/SaiTemplateKhanderaya-May2021-Sai.jpeg`, 
-  // /Users/Shantanu/Documents/GitHub/cms-code/cms-picture-gallery/src/assets/gallery-files/images/religion/shirdi-sai-pre-q3-2021
+  fullFileName: `assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-pre-q3-2021/SaiTemplateKhanderaya-May2021-Sai.jpeg`, 
+  // /Users/Shantanu/Documents/GitHub/cms-code/cms-picture-gallery/src/assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-pre-q3-2021
             description: `
                 <ul>
                 <li>Khanderaya sketched based off sketch based off one of the three Sai templates I created</li>

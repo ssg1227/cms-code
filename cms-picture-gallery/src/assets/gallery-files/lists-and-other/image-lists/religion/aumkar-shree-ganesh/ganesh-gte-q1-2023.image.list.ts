@@ -23,7 +23,7 @@ public allImageList:ImageElement[]  =  [
          
        </ul>`,
 canvassSize:  'A4',
-content:  'color-pencil black-white',
+content:  'color-pencil',
 dateUploaded:  '10-19-2023',
 fullFileName: `${this.imageRoot}SarvajanikKhetwadi-Ganesotsav2023.jpeg`,
 description: `<ul><li> From a collection of Sarvajanik Ganesh idols, published in 2023, this sketch is based on the Khetwadi 2nd Gully Ganes </li>
@@ -36,7 +36,7 @@ dateUploaded:  '07-07-2023',
 evolution:  `<b>Probably 1st Sai Ganesh combo<br/></B>`,
 evolutionSequence:  2,
 evolutionDate:  '06-13-2023',
-fullFileName: `assets/all-images//GaneshSai4June2223-3.jpeg`,
+fullFileName: `${this.imageRoot}GaneshSai4June2223-3.jpeg`,
 description: `<ul><li> June 22 2023 - thursday pradosh </li><li> Sketch with Shree Ganesh after a long time </li><li> Also 1st Ganesh Sai combo </li><li> Final - with 'Bel leave' on Baba forehead (Mahadev likes Bel leaves).. sort of Dwarkamai effect </li></ul>`,
 rating:  1,
 ratingYear:  2023,
@@ -99,6 +99,8 @@ iterations: [
                 ] 
            },
          {
+            
+            canvassSize: 'A4', content:  'black-white',
             fullFileName: `${this.imageRoot}Ganesh-Sai-Veena-Saraswati-pooja-012623.jpeg`, 
             description: `<ul>
             <li>SHree Ganesh with Baba theme (als completed) on Jan 26 2023 Saraswati Pooja - (Baba with Veena)</li>

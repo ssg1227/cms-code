@@ -57,12 +57,14 @@ public allImageList:ImageElement[]  =  [
               // 
                     fullFileName: `${this.imageRoot}ShreeKrishnaAug292022-FromSai.jpeg`, 
                     description: `<ul>
-                    <li>Krishna playing flute - thursday aug 29 2022 - this sketch is coverted from a black and white Shirdi Sai sketch (latter only a soft copy)</li>`,
+                    <li>Krishna playing flute - thursday aug 29 2022 - this sketch is coverted from a black-and-white Shirdi Sai sketch (latter only a software copy)</li>`,
                     canvassSize: 'A4', content:'color-pencil',
                     dateUploaded: '02-05-2023'
                     
                  }, {  
-                    fullFileName: `${this.imageRoot}HanumanAugust62022.jpeg`, 
+                  canvassSize:  'A4',
+                  content:  'black-white',
+                  fullFileName: `${this.imageRoot}HanumanAugust62022.jpeg`, 
                     description: `<ul>   <li>Hamuman Sketch with a different kind of poses</li>
                     <li>Used Arnold Schwarzenegger's body builder poses for sketching as a reference</li>
                     <li>Aug 6 2022</li>
@@ -116,7 +118,9 @@ public allImageList:ImageElement[]  =  [
                 ]
                 },
                 {  
-                    fullFileName: `${this.imageRoot}Hanuman1Jan1stWeek2022.jpeg`, 
+                  canvassSize:  'A4',
+                  content:  'black-white',
+                  fullFileName: `${this.imageRoot}Hanuman1Jan1stWeek2022.jpeg`, 
                     description: `<ul>
                                 <li><strong>LATEST UPDATED (June 2 2021)</strong></li>
                                 <li>Shree Narsimha Jayanti was May 26, when I release the first iteration (next sketch)</li>
@@ -140,7 +144,9 @@ public allImageList:ImageElement[]  =  [
                    </ul>`,
                    canvassSize: 'A4', content:'black-white',
                    dateUploaded: '02-05-2023'},
-                {  fullFileName: `${this.imageRoot}LaxmiNarayanRarePicFeb232021.jpeg`, 
+                {  canvassSize:  'A4',
+                content:  'black-white',
+                fullFileName: `${this.imageRoot}LaxmiNarayanRarePicFeb232021.jpeg`, 
                 evolution: `<b>Sketch on recommendation, and drawn with lot of care, with the shading set gifted by my wife on my birthday 1227</b>`,
                 evolutionSequence: 1, evolutionDate: `03-23-2021`,
                 rating: 1,
@@ -150,7 +156,9 @@ public allImageList:ImageElement[]  =  [
                                     <li>I have mentioned dates in the image name and this says Feb 23 2021 (Feb 23 is my parents' wedding anniv)</li>
                                     </ul>`},
                     
-                    {  fullFileName: `${this.imageRoot}LaxmiNarsimhaJayanti526_fn_6022021.jpeg`, 
+                    {  canvassSize:  'A4',
+                    content:  'black-white',
+                    fullFileName: `${this.imageRoot}LaxmiNarsimhaJayanti526_fn_6022021.jpeg`, 
                                     description: `<ul>
                                                     <li><strong>LATEST UPDATED (June 2 2021)</strong></li>
                                                     <li>Shree Narsimha Jayanti was May 26, when I release the first iteration (next sketch)</li>
@@ -173,7 +181,9 @@ public allImageList:ImageElement[]  =  [
                                                                     </ul>`},
                        ]},// VithuRakhumabaiQ12021-WIP.jpg
                        {
-                           fullFileName: `${this.imageRoot}VithuRakhumabaiQ12021-WIP.jpg`, 
+                        canvassSize:  'A4',
+                        content:  'black-white',
+                        fullFileName: `${this.imageRoot}VithuRakhumabaiQ12021-WIP.jpg`, 
                            description: `<ul>
                                            <li>Vithal Rakhumabai Q1 2021</li>
                                            </ul>`,
@@ -188,14 +198,21 @@ public allImageList:ImageElement[]  =  [
                                                     
                 
               {  
-                 fullFileName: `${this.imageRoot}ShreeRamShivlingRamnavmi2021.jpg`, 
+               canvassSize:  'A4',
+               content:  'color-pencil',
+               fullFileName: `${this.imageRoot}ShreeRamShivlingRamnavmi2021.jpg`, 
                  description: `<ul><li>Sketched for RamNavmi April 21 2021</li></ul>`},
-                {  fullFileName: `${this.imageRoot}ShreeRamRamNavmi042212021.jpeg`, 
+                {  canvassSize:  'A4',
+                content:  'black-white',
+                fullFileName: `${this.imageRoot}ShreeRamRamNavmi042212021.jpeg`, 
                                                                                                         description: `<ul>
                                                                                                                         <li>Sketched for RamNavmi April 21 2021</li>
                                                                                                                         </ul>`},
-                {  fullFileName: `${this.imageRoot}HanumanOct2020.jpg`, description: 'Theoretically WIP - Oct 2020'},
-                       {  fullFileName: `${this.imageRoot}BalHanumanp-hanumanjnti04272021.jpeg`, 
+                {  canvassSize:  'A4',
+                content:  'black-white',
+                fullFileName: `${this.imageRoot}HanumanOct2020.jpg`, description: 'Theoretically WIP - Oct 2020'},
+                       {  canvassSize:  'A4',
+                       content:  'black-white',fullFileName: `${this.imageRoot}BalHanumanp-hanumanjnti04272021.jpeg`, 
                             description: `<ul><li>.... AND HANUMAN JAYANTI following,  April 27 2021</li></ul>`}
               ]
     }

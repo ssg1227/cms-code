@@ -12,6 +12,7 @@ public allImageList:ImageElement[]  =  [
     ``,
     files: [  ,
       { 
+        canvassSize: 'A4', content:  'black-white',
         fullFileName: 
           `${this.imageRoot}EkviraAai-Q12021-1.jpg`, 
           evolution: `- <b> Most likely  First Devi sketch, and what was more appropriate than the Kuldaivat</b><br/>`,
@@ -86,11 +87,14 @@ public allImageList:ImageElement[]  =  [
             rating: 1,
             dateUploaded: '01-25-2023',
               },
-          { fullFileName: 
+          { canvassSize: 'A4', content:  'black-white',
+            fullFileName: 
             `${this.imageRoot}ThreeDevisMahalaxmiTempleQ12021-1.jpg`, 
             description: `<ul><li>Mahalaxmi Temple Mumnbai </li>
             <li>Mahakali, Mahalaxmi, Mahasaraswati -  Sketched  start 2021</li></ul> ` },
-           { fullFileName: 
+           { 
+            canvassSize: 'soft', content:  'black-white',
+           fullFileName: 
         `${this.imageRoot}navratri-2020/NavDurgaNavratri2020.png`, 
 
         evolution: `- <b> Navratri collage</b><br/>`,
@@ -128,7 +132,8 @@ public allImageList:ImageElement[]  =  [
                          { fullFileName: `${this.imageRoot}navratri-2020/9SiddidhatriNavratri2020.jpeg`, 
                            description: `<h5>9.Siddhidatri</h5>${this.navratriClass.frameText[10]}` }
         ] },
-        { fullFileName: 
+        { canvassSize: 'A4', content:  'black-white',
+          fullFileName: 
             `${this.imageRoot}DeviMaaMay13-18-2021.jpeg`, 
 
         evolution: `- <b> First Devi full body sketch, first tiger sketch</b><br/>`,

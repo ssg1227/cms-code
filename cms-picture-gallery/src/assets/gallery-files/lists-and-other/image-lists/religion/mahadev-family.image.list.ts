@@ -105,14 +105,16 @@ export class MahadevFamilyImageList {
                  </br>first with numbered description</b><br/>`,
                }]
              },
-         {  fullFileName: `${this.imageRoot}/AumGaShivParKashiVishwCTLightNov172020Final.jpeg`, 
+         {  canvassSize:  'A4',
+         content:  'black-white',fullFileName: `${this.imageRoot}/AumGaShivParKashiVishwCTLightNov172020Final.jpeg`, 
          evolution: `<b>Sketch of a sculpture which has always drawn, intrigued and fascinated me... <br/></b>`,
          evolutionSequence: 1, evolutionDate: `11-17-2020`,
                 description: 
          `Attempt to sketch <em>based on</em> the sculpture overlooking the main shivling room Kashi Vishweshwar Temple Citilight, Mumbai
          <br/>Nov 17 2020`},
          {  
-            evolution: `<b>A first in sketching action figures, and in dance poses, with the best possible subjects :) <br/></b>`,
+            canvassSize:  'A4',
+              content:  'black-white',evolution: `<b>A first in sketching action figures, and in dance poses, with the best possible subjects :) <br/></b>`,
             evolutionSequence: 1, evolutionDate: `02-14-2021`,
             fullFileName: `${this.imageRoot}/MahadevParvatiDanceFeb142021.jpeg`, 
             description: `<ul>
@@ -122,7 +124,8 @@ export class MahadevFamilyImageList {
                              </ul>`,
              },
     {  
-     fullFileName: `${this.imageRoot}/MahadevParvatiDanceMarch112021Shivratri.jpeg`, 
+      canvassSize:  'A4',
+      content:  'black-white',fullFileName: `${this.imageRoot}/MahadevParvatiDanceMarch112021Shivratri.jpeg`, 
         description: `<ul>
                                 <li>Another dancing poses Mahadev and consort (Sati/ Parvati)</li>
                                 <li>Search and found pics of two dancers in this pose and drew with Mahadev and Parvati </li>
@@ -130,7 +133,8 @@ export class MahadevFamilyImageList {
                         </ul>`,
         },
         {  
-         fullFileName: `${this.imageRoot}/MahadevParvatiDancePoseQ1Q22021i.jpg`, 
+         canvassSize:  'A4',
+              content:  'black-white',fullFileName: `${this.imageRoot}/MahadevParvatiDancePoseQ1Q22021i.jpg`, 
          description: `<ul>
                                  <li>Another dancing poses Mahadev and consort (Sati/ Parvati)</li>
                                  <li>Like the neighbor, searched and found pics of two dancers in this pose and drew with Mahadev and Parvati </li>
@@ -138,13 +142,15 @@ export class MahadevFamilyImageList {
                          </ul>`,
          },
         {  
-         fullFileName: `${this.imageRoot}/GaneshMahadevParvatiMarch122021Shivratri+1.jpeg`, 
+         canvassSize:  'A4',
+              content:  'black-white',fullFileName: `${this.imageRoot}/GaneshMahadevParvatiMarch122021Shivratri+1.jpeg`, 
             description: `<ul>
                             <li>Inspired by the Laxmi Narayan sketch </li>
                             <li>Around Shivratri - March 11 2021 (Attempt to sketch Mt Kailash in the background)</li>
                             </ul>`,
             }, {  
-               fullFileName: `${this.imageRoot}/NandiSept62021-RefreshMarch122.jpeg`, 
+               canvassSize:  'A4',
+              content:  'black-white',fullFileName: `${this.imageRoot}/NandiSept62021-RefreshMarch122.jpeg`, 
                   description: `<ul>
                                   <li>Nandi - the Bull - Mahadev's vehicke</li>
                                   <li>Based on the huge statue in Chamunda Hills Mysore, southern India</li>

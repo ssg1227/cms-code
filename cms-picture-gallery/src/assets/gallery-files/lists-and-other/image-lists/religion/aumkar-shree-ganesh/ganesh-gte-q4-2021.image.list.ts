@@ -132,7 +132,7 @@ public allImageList:ImageElement[]  =  [
          {
             canvassSize: 'soft',  content:'color-pencil black-white',
          fullFileName: `${this.imageRoot}/GaneshJayanti_Bhimsen_collage040222.jpeg`, 
-            description: '<p>Feb 4 2022 Ganesh Jayanti and Pt Bhimsen Joshi 100th birth anniversary</p>',
+            description: '<p>soft copy only Feb 4 2022 Ganesh Jayanti and Pt Bhimsen Joshi 100th birth anniversary</p>',
             dateUploaded: '02-04-2022',
          },
          

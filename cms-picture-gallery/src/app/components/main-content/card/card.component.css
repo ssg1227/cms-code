@@ -30,6 +30,9 @@
   border: 7px outset darkslateblue;
   background-color: lightblue;
 }
+.card-other {
+  background-color: lightgreen;
+}
 .expand {
   width: 80%;
   height:100px;

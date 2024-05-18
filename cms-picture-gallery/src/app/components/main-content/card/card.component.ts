@@ -102,8 +102,11 @@ export class CardComponent {
       } else  if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('crayon') >= 0){
         returnCardImageCSS = 'card-image card-image-crayon'
       }
-      if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('soft copy') >= 0 ){
+      if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('soft copy only') >= 0 ){
         returnCardImageCSS = `${returnCardImageCSS} card-image-softcopy`
+      }
+      if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('content: other') >= 0 ){
+        returnCardImageCSS = `${returnCardImageCSS} card-other`
       }
     }
     return returnCardImageCSS ;
