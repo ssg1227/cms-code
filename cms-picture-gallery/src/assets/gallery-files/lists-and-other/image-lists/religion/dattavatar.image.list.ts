@@ -63,6 +63,8 @@ public allImageList:ImageElement[]  =  [
                             description:  `<li>Sketched for Datta Jayanti 2023</li> 
                             <li>December 12-26 2023</li></ul> `}],
             }, {
+                canvassSize:  'A4',
+                content:  'color-pencil black-white',
                 generic: 'true',
                 genericCategory:50, // 1 Ganesh, 2 Goddesses, 3 shiva (+ family), 4 Narayan + family + Hanuman, 5 Gurus
                 genericDescription: 
@@ -145,6 +147,8 @@ ratingYear:  2023,
         },
         
             {  
+                canvassSize:  'A4',
+                content:  'black-white',
                 fullFileName: `assets/gallery-files/images/religion/swami-samartha/SwamiAndDattavatarsJuly122022.jpeg`, 
                 description: 
                 `<ul>
@@ -220,7 +224,9 @@ ratingYear:  2023,
 },
         // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/${this.imageRoot}KurvapurGopuramWithGurusDec292022.jpeg
         {
-            fullFileName: `${this.imageRoot}SamarthaRamdasShripadVallabhShivaji10-26-2022-1.jpeg`, 
+            canvassSize:  'A4',
+                content:  'black-white',
+                fullFileName: `${this.imageRoot}SamarthaRamdasShripadVallabhShivaji10-26-2022-1.jpeg`, 
             description: `<ul>
             <li>Imaginary scene of Raje Shivaji paying obeisance to Samartha Guru Ramdas and Shripad Vallabh</li>
             <li>Shripad Vallabh's associate Narsimha Verma re-incarnated  Shivaji </li>
@@ -241,7 +247,10 @@ ratingYear:  2023,
            dateUploaded: '01-31-2023',
            duplicate:true,
            
-        },{ fullFileName: `${this.imageRoot}GuruPoornimaJuly1322-1.png`, 
+        },{ 
+            canvassSize:  'soft',
+                content:  'color-pencil black-white',
+                fullFileName: `${this.imageRoot}GuruPoornimaJuly1322-1.png`, 
             description: `<ul>
             <li><strong><em>"गुरु ब्रह्मा गुरु विष्णू गुरु देवो महेश्वरहा <br/>&nbsp;
             गुरु साक्षात परब्रम्ह तस्मै श्री गुरुवे नमः </em></strong></li>
@@ -251,7 +260,10 @@ ratingYear:  2023,
             </ul>`,
             dateUploaded: '07-13-2022',
            
-        },{  fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q4-2021-ganesh/GaneshDattaOct132022.jpeg`, 
+        },{  
+            canvassSize:  'A4',
+            content:  'black-white',
+            fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q4-2021-ganesh/GaneshDattaOct132022.jpeg`, 
         description: `<p>Ganesh Datta <ul>
                         <li>Shree Ganesh represented in Dattatreya avatar</li>
                         <li>October 13 2022</li>
@@ -263,7 +275,12 @@ ratingYear:  2023,
        
         },
         {  
+             
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}SwamiDattaOc62022.jpeg`, 
+            rating:1,
+            ratingYear:2022,
             description: 
             `<ul>
                 <li>Taking my time in sketching, needed to draw a really well made sketch of Shre Swami Samartha</li>
@@ -280,10 +297,11 @@ ratingYear:  2023,
                      <li>Initial checkpoint - Swami and Datta in place</li>
                       </ul>`} 
                 ],
-                rating:1 ,
     },
     {  
-        fullFileName: `${this.imageRoot}SwamiDatta-photoready-8x10-proto1.png`, 
+        canvassSize:  'A4',
+content:  'black-white',
+fullFileName: `${this.imageRoot}SwamiDatta-photoready-8x10-proto1.png`, 
         evolution: `<b> The first of my sketches to be viewed at a physical public place<br/>
                     What better settings than a Swami Samartha event in a temple!!?</b><br/>`,
         evolutionSequence: 2, evolutionDate: `11-13-222`,
@@ -313,7 +331,9 @@ ratingYear:  2023,
             rating:1 ,
 },
          {  
-                fullFileName: `${this.imageRoot}SwamiRamdasApril16HanumanJayanti22.jpeg`, 
+            canvassSize:  'A4',
+            content:  'black-white',
+            fullFileName: `${this.imageRoot}SwamiRamdasApril16HanumanJayanti22.jpeg`, 
                 description: 
                 `<ul>
                     <li>Attempt to draw Samarth Guru Ramdas</li>
@@ -325,7 +345,9 @@ ratingYear:  2023,
                     dateUploaded: '04-19-2022',
             },
                 {  
-                    fullFileName: `${this.imageRoot}LordDattaJan27-Feb32021-2.jpeg`, 
+                    canvassSize:  'A4',
+                    content:  'black-white',
+                fullFileName: `${this.imageRoot}LordDattaJan27-Feb32021-2.jpeg`, 
                     description: 
                     `<ul>
                         <li></li> </ul>`,
@@ -344,6 +366,8 @@ ratingYear:  2023,
                         rating:1 ,
             },//
             {  
+                canvassSize:  'A4',
+                content:  'black-white',
                 fullFileName: `${this.imageRoot}SwamiBabaFeb172022-2.jpeg`, description: 
                 `<ul>
                     <li></li> </ul>`,
@@ -361,7 +385,9 @@ ratingYear:  2023,
                         </ul>`}],
             },
                         
-            {  fullFileName: `${this.imageRoot}unsigned3DattaGuru12292020.jpeg`, 
+            {  canvassSize:  'A4',
+            content:  'black-white',
+            fullFileName: `${this.imageRoot}unsigned3DattaGuru12292020.jpeg`, 
                     rating: 1,
                    description: 
                    `<ul>
@@ -369,6 +395,8 @@ ratingYear:  2023,
                     <li>Released on Shree Datta Jayanti Dec 29 2020</li> </ul>`
                 },
                 {  
+                    canvassSize:  'A4',
+                    content:  'black-white',
                     generic: 'true',
                     genericCategory:51, // 1 Ganesh, 2 Goddesses, 3 shiva (+ family), 4 Narayan + family + Hanuman, 5 Gurus
                     genericDescription:'Shreepad Vallabh second Avatar of Lord Dattatreya ',
@@ -399,6 +427,8 @@ ratingYear:  2023,
                     dateUploaded: '02-07-2023',
                         },
                         {  
+                            canvassSize:  'A4',
+content:  'black-white',
                             fullFileName: `${this.imageRoot}unsigned5SwamiSamartha12312020.jpeg`, 
                             description: `
                             <ul>
@@ -406,6 +436,8 @@ ratingYear:  2023,
                             </ul>
                             ` },,
                             {  
+                                canvassSize:  'A4',
+                                content:  'black-white',
                                 fullFileName: `${this.imageRoot}unsigned6ShirdiSaiNov2020.jpeg`, 
                                 description: `
                                 <ul>
@@ -422,6 +454,8 @@ ratingYear:  2023,
                                     </ul>
                                     ` },
                                     {  
+                                        canvassSize:  'A4',
+                                        content:  'black-white',
                                         fullFileName: `${this.imageRoot}TembeSwamiJuly82021.jpeg`, 
                                         description: `
                                         <ul>
@@ -430,6 +464,9 @@ ratingYear:  2023,
                                         </ul>
                                         ` },
                                     {  
+                    
+                                        canvassSize:  'A4',
+                                        content:  'black-white',
                                         generic:'true',
                     genericCategory: 70, // 1 Ganesh, 2 Goddesses, 3 shiva (+ family), 4 Narayan + family + Hanuman, 5 onward Gurus
                     
@@ -444,7 +481,10 @@ ratingYear:  2023,
                                         <li> Guru Nanak Nov 11 2020 (Jayanti)</li>
                                         </ul>
                                         ` },
-                    { fullFileName: `${this.imageRoot}unsigned9GuruGobindSinghji12312020.jpeg`, 
+                    { 
+                    canvassSize:  'A4',
+                    content:  'black-white',
+                    fullFileName: `${this.imageRoot}unsigned9GuruGobindSinghji12312020.jpeg`, 
                     rating: 1,
                     generic:'true',
                     genericCategory: 79, // 1 Ganesh, 2 Goddesses, 3 shiva (+ family), 4 Narayan + family + Hanuman, 5 onward Gurus
@@ -458,12 +498,19 @@ ratingYear:  2023,
                     <li> Guru Gobind Singh Dec 31 2020 (Jayanti)</li>
                     </ul>
                     ` },
-                    { fullFileName: `${this.imageRoot}SaiSwamiApril2021.jpg`,  description:  `
+                    { 
+                        canvassSize:  'A4',
+                        content:  'black-white',
+                        fullFileName: `${this.imageRoot}SaiSwamiApril2021.jpg`,  description:  `
                     <ul>
                     <li> Sometime April May 2021</li>
                     </ul>
                     ` },
-                    { generic:'true',
+                    { 
+                        canvassSize:  'A4',
+                        content:  'black-white',
+
+                        generic:'true',
                     genericCategory: 69, // 1 Ganesh, 2 Goddesses, 3 shiva (+ family), 4 Narayan + family + Hanuman, 5 onward Gurus
                     
                     genericDescription: 

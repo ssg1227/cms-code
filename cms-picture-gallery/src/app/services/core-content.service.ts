@@ -248,6 +248,11 @@ export class CoreContentService {
                       latestImageList.contentFile.allImageList[0].files)
                   this.loadLatestUploadsTimeLine(latestImageList.contentFile);
               })
+              this.genImageList.allImageList[0].files.sort(function(a:any, b:any) {
+                const aDate = new Date(a.dateUploaded);
+                const bDate = new Date(b.dateUploaded);
+                return(bDate.getTime()  -  aDate.getTime()) ; // aDate - bDate ;
+              });
               return { all:  this.allImageList, gen: this.genImageList };
               console.log(`#### LATEST UPLOAD .. RETURN AFTER SORT`);
               
