@@ -140,7 +140,10 @@ export class ContentViewerComponent {
               .forEach( (fileData:any) => {
                 let groupImages:any[] = [] ;
                 let stats = '';
-                  stats = this.techStats(fileData) ;  
+                let cardstyle = { outer: ``, image:``}; // move chosing card style logic to core content service 
+                let cardImageStyle = ``;
+                console.log(`STATS: ${JSON.stringify(fileData)}`);
+                stats = this.techStats(fileData, cardstyle) ;  
                 console.log(`STATS for single file ${stats} ${fileData.fullFileName}`);
                   if(stats.indexOf('Canvass') >= 0) {
                     fileData.description = `${fileData.description}<br/>(<em> ${stats}}</em>)`;
@@ -152,7 +155,9 @@ export class ContentViewerComponent {
                     stats.indexOf('Canvass') >= 0? element.description: `${element.description}<br/>(<em> ${stats}}</em>)` :  element.description;
                     groupImages.push(
                         { image: element.fullFileName, 
-                          description:    element.description});
+                          description:    element.description,
+                          cardStyle: cardstyle
+                        });
                           //          description:  index === 0 ? fileData.description:  element.description});
                  
                   });
@@ -160,11 +165,13 @@ export class ContentViewerComponent {
                 } else {
                   fileData.fullFileName? 
                     groupImages.push({ image: fileData.fullFileName, 
-                      description: fileData.description}): 
+                      description: fileData.description,
+                      cardStyle: cardstyle}): 
                     groupImages.push({ image: `assets/all-images/${foundFolder}/${fileData.fileName}`, 
                //           description: fileData.description });
                //  
-                          description: stats === ''? fileData.description: `${fileData.description}<br/>(<em> ${stats}}</em>)`});
+                          description: stats === ''? fileData.description: `${fileData.description}<br/>(<em> ${stats}}</em>)`,
+                          cardStyle: cardstyle});
                 }
                 this.imageGroups.push({ imageList:groupImages} );
                 fileData.fullFileName? 
@@ -205,8 +212,8 @@ export class ContentViewerComponent {
  <div id="text-container" *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  > 1"
       [innerHTML]="selectedImage.imageList[1].description"><br/>`
    }
-   public techStats(currentImage:any) {
-     return this.coreContentService.techStatsSpan(currentImage);
+   public techStats(currentImage:any, stylingObject:any = null) {
+     return this.coreContentService.techStatsSpan(currentImage, stylingObject);
    }
    closeModal() {
 

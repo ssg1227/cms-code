@@ -459,7 +459,9 @@ export class CoreContentService {
     });
   }
 
-  public techStatsSpan(fileDetail:any):string {
+  public techStatsSpan(fileDetail:any, stylingObject:any = {outer:``, image:``}):string {
+
+    // stylingObject:any = null=> move chosing card style logic to core content service 
     if (!fileDetail || !fileDetail.canvassSize) {
       return `<p>..</p>`;
     }
@@ -487,16 +489,49 @@ export class CoreContentService {
         'color-crayon',
         'color-pencil black-white',
         'poem black-white',
+        let cardstyle = { outer: ``, image:``};
+        let returnCardCSS = 'card-default';
+     
+ 
        */
+        stylingObject.outer = 'card-default' ;
+        stylingObject.image = `card-image` ;
         switch(fileDetail.content) {
-          case 'watercolor-pencil': returnHTML = `${returnHTML} including WaterColor Pencils`; break ;
-          case 'color-pencil': returnHTML = `${returnHTML}Color Pencils`; break ;
-          case 'black-white': returnHTML = `${returnHTML}Black and white with possible shading`; break ;
-          case 'color-crayon': returnHTML = `${returnHTML}Color Crayons`; break ;
-          case 'color-pencil black-white': returnHTML = `${returnHTML}Combination of color + B&W`; break ;
-          case 'poem black-white': returnHTML = `${returnHTML}Drawing + poetry`; break ;
-          case 'other-combo': returnHTML = `${returnHTML} Mix of different types, like sketch + photo`; break ;
-          default: returnHTML = `${returnHTML}Other`; break ;
+          case 'watercolor-pencil': 
+                  returnHTML = `${returnHTML} including WaterColor Pencils`; 
+                  stylingObject.outer = 'card-default card-watercolor' ;
+                  stylingObject.image = `${stylingObject.image}  card-image-watercolor` ;
+                  break ;
+          case 'color-pencil': returnHTML = `${returnHTML}Color Pencils`; 
+                  stylingObject.outer = 'card-default' ;
+                  stylingObject.image = `${stylingObject.image}` ;
+                  break ;
+          case 'black-white': returnHTML = `${returnHTML}Black and white with possible shading`;
+                  stylingObject.outer = 'card-default card-mono' ;
+                  stylingObject.image = `${stylingObject.image} card-image-mono` ;
+                  break ;
+          case 'color-crayon': returnHTML = `${returnHTML}Color Crayons`; 
+                  stylingObject.outer = 'card-default' ;
+                  stylingObject.image = `${stylingObject.image}  card-image-crayon` ;
+                  break ;
+          case 'color-pencil black-white': returnHTML = `${returnHTML}Combination of color + B&W`; 
+                  stylingObject.outer = 'card-default card-mix' ;
+                  stylingObject.image = `${stylingObject.image} card-image-mix` ;
+                  break ;
+          case 'poem black-white': returnHTML = `${returnHTML}Drawing + poetry`; 
+                  stylingObject.outer = 'card-default' ;
+                  stylingObject.image = `${stylingObject.image}` ;
+                  break ;
+          case 'other-combo': returnHTML = `${returnHTML} Mix of different types, like sketch + photo`; 
+                  stylingObject.outer = 'card-default' ;
+                  stylingObject.image = `${stylingObject.image}` ;
+                  break ;
+          default: returnHTML = `${returnHTML}Other`; 
+                  stylingObject.outer = 'card-default' ;
+                  stylingObject.image = `${stylingObject.image} card-other` ;break ;
+        }
+        if(fileDetail.canvassSize === 'soft') {
+          stylingObject.image = `${stylingObject.image} card-image-softcopy`
         }
       }
       returnHTML = `${returnHTML}`;

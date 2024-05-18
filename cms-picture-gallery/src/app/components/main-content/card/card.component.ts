@@ -69,7 +69,13 @@ export class CardComponent {
    //  
     
   }
-  getCardCSS() {
+  getCardCSS() { 
+    // move chosing card style logic to core content service 
+    if (this.imageDetail !== null && this.imageDetail.imageList[0].cardStyle && this.imageDetail.imageList[0].cardStyle.outer) {
+      return this.imageDetail.imageList[0].cardStyle.outer;
+    }
+
+    // below redundant code 
     let returnCardCSS = 'card-default';
      
     if (this.imageDetail !== null) {
@@ -87,10 +93,17 @@ export class CardComponent {
     return returnCardCSS ;
   }
 
-  selectImageBorder() {
+  selectImageBorder() { 
+    // move chosing card style logic to core content service 
+    if (this.imageDetail.imageList[0].cardStyle && this.imageDetail.imageList[0].cardStyle.image) {
+      return this.imageDetail.imageList[0].cardStyle.image ;
+
+    }
+    // below redundant code 
     let returnCardImageCSS = 'card-image';
-     
+    
     if (this.imageDetail !== null) {
+      console.log(`${JSON.stringify(this.imageDetail)}`);
       if(this.imageDetail.imageList[0].description.toLowerCase().indexOf('black and white') >= 0||
          this.imageDetail.imageList[0].description.toLowerCase().indexOf('black-white') >= 0) {
             returnCardImageCSS = 'card-image card-image-mono'
