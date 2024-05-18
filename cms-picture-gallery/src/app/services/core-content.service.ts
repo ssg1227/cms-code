@@ -102,7 +102,6 @@ export class CoreContentService {
     return userMenu;
   }
   setCurrentCardList():TreeNodeElement[]  {
-    console.log(`${JSON.stringify(this.UserMenus)}`);
     let retCardList:TreeNodeElement[] = [];
     let currentParentKey =  localStorage.getItem('current-menu') ;
     //retCardList = MenuTreeElements.filter((x) => x.parentKey === currentParentKey) ;
@@ -503,7 +502,6 @@ export class CoreContentService {
       returnHTML = `${returnHTML}`;
       
     }
-    console.log(`RRR ${returnHTML}`);
     return returnHTML ;
   }
   
