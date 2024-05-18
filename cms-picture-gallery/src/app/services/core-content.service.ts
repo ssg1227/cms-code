@@ -531,7 +531,9 @@ export class CoreContentService {
                   stylingObject.image = `${stylingObject.image} card-other` ;break ;
         }
         if(fileDetail.canvassSize === 'soft') {
+          
           stylingObject.image = `${stylingObject.image} card-image-softcopy`
+          console.log(`####fileDetail.canvassSize ${stylingObject.image}`)
         }
       }
       returnHTML = `${returnHTML}`;
