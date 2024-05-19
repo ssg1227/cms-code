@@ -72,6 +72,7 @@ export class SwamiSamarthaImageList { // SwamiSamarthaImageList
                         - Gajanan Maharaj (after Swami)</li>
                     <li>july 12 2022 </li></ul>`,
                         dateUploaded: '01-31-2023',
+                        canvassSize: 'A4', content:'black-white',
                        
                 },
                 { fullFileName: `assets/gallery-files/images/religion/dattavatar/GajananMaharajPragatDinFeb132023.jpeg`, 
@@ -84,7 +85,7 @@ export class SwamiSamarthaImageList { // SwamiSamarthaImageList
                 duplicate: true,
             },{  
                     fullFileName: `${this.imageRoot}SwamiMauliUploadFeb52023-photo.jpeg`, 
-                    canvassSize: 'A4', content:'color-pencil black-white',
+                    canvassSize: 'A4', content:'color-pencil',
                     description: 
                     `<ul>
                         <li>Swami Aai photo - dont remember when sketched.. uploaded Feb 5 2023</li> </ul>`,
@@ -104,6 +105,7 @@ export class SwamiSamarthaImageList { // SwamiSamarthaImageList
                 // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/${this.imageRoot}SwamiMauliUploadFeb52023-photo.jpeg
                 // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/${this.imageRoot}SwamiMauliUploadFeb52023-scan.jpeg
                 {  
+                    canvassSize: 'A4', content:'color-pencil',
                     fullFileName: `${this.imageRoot}SwamiSamarthaKhandoba-champaShashti-11-28-29-2022.jpeg`, 
                     description: 
                     `<ul>
@@ -112,6 +114,7 @@ export class SwamiSamarthaImageList { // SwamiSamarthaImageList
                        
                 },
                 {  
+                    canvassSize: 'A4', content:'black-white',
                     fullFileName: `${this.imageRoot}SwamiStandingApril82022.jpeg`, 
                     description: 
                     `<ul>
@@ -120,6 +123,7 @@ export class SwamiSamarthaImageList { // SwamiSamarthaImageList
                        
                 },
                 {  
+                    canvassSize: 'A4', content:'black-white',
                     fullFileName: `assets/gallery-files/images/religion/dattavatar/SwamiBabaFeb172022-2.jpeg`, 
                     description: 
                     `<ul>
@@ -161,24 +165,31 @@ export class SwamiSamarthaImageList { // SwamiSamarthaImageList
                              description: `<ul><li>Start</li></ul>`}
                      ] 
                  },{  
+                    canvassSize: 'A4', content:'black-white',
                     fullFileName: `${this.imageRoot}Swami-april28-2021.jpg`, 
                     description: `<ul><li>Typical Swami image</li></ul>`}, 
                     
                 {  
+                    canvassSize: 'A4', content:'black-white',
                     fullFileName: `${this.imageRoot}SwamiSamarthaDeviMarch082021.jpeg`,
                     description: `<ul><li>Swami's Devi Roop sketched 1st week March 2021</li></ul>`  
                 }, 
                     
                 {  
-                    fullFileName: `${this.imageRoot}SwamiSamarthaKhanderayaMarch12021Shivratri+1.jpeg`,
+                    canvassSize: 'A4', content:'black-white',
+                     fullFileName: `${this.imageRoot}SwamiSamarthaKhanderayaMarch12021Shivratri+1.jpeg`,
                     description: `<ul><li>Swami's KHandoba Roop sketched around Shivratri - March 2021</li></ul>`  
                 },
-                     {  fullFileName: `${this.imageRoot}SwamiDadarMathJubne8-9-2021.jpeg`, 
+                     {  
+                        
+                        canvassSize: 'A4', content:'black-white',
+                     fullFileName: `${this.imageRoot}SwamiDadarMathJubne8-9-2021.jpeg`, 
             description: `<ul>
                     <li> Attempt to capture Swami's face as per tyhe pictures in the 'Matth' at Shivaji Park, Dadar, Mumbai</li>
                     <li> June 8-9 2021</li>
                              </ul>`,
-       }, {  fullFileName: `${this.imageRoot}SwamicolorQ1Q2_2021.jpg`, 
+       }, {  canvassSize: 'A4', content:'color-pencil',
+       fullFileName: `${this.imageRoot}SwamicolorQ1Q2_2021.jpg`, 
        description: '<ul><li>Using a format of which a copy is in my home in Mumbai - this format is probably one of the oldest renditions</li><li>Released on Shree Datta Jayanti Dec 29 2020</li> </ul>',
     iterations:[
         { 
@@ -187,7 +198,9 @@ export class SwamiSamarthaImageList { // SwamiSamarthaImageList
      },{ 
             fullFileName: `${this.imageRoot}SwamicolorQ1Q2_2021-adj1.png`,
             description: '<ul><li>95% height adjusted - Mac paintbrush </li><li>Using color pencils approx Q1 - Q2 2021 - more Q1</li></ul>'},
-        ] }, {  fullFileName: `${this.imageRoot}SwamiOctNov2021.jpeg`, 
+        ] }, {  
+            canvassSize: 'A4', content:'color-pencil',
+            fullFileName: `${this.imageRoot}SwamiOctNov2021.jpeg`, 
         description: '<ul><li>olor</li> </ul>',
         dateUploaded: '12-09-2021',
         rating: 1,
@@ -200,8 +213,10 @@ export class SwamiSamarthaImageList { // SwamiSamarthaImageList
              description: '<ul><li>initial iteration</li></ul>'},
          ] },
         // SwamicolorQ1Q2_2021-adj1.png
-       {  fullFileName: `${this.imageRoot}Swami-June5-2021-v2.jpeg`, 
-                       description: '<ul><li>Using a format of which a copy is in my home in Mumbai - this format is probably one of the oldest renditions</li><li>Released on Shree Datta Jayanti Dec 29 2020</li> </ul>',
+       { 
+            canvassSize: 'A4', content:'black-white',
+            fullFileName: `${this.imageRoot}Swami-June5-2021-v2.jpeg`, 
+            description: '<ul><li>Using a format of which a copy is in my home in Mumbai - this format is probably one of the oldest renditions</li><li>Released on Shree Datta Jayanti Dec 29 2020</li> </ul>',
                     iterations:[
                         { 
                             fullFileName: `${this.imageRoot}Swami-June5-2021-v2.jpeg`,

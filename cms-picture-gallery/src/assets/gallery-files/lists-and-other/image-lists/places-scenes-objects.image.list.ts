@@ -12,7 +12,7 @@ export class PlacesScenesObjectsImageList {
                 Mumbai gets her due place and a dedicated theme; all Mumbai related sketches will be found in 'Mumbai Meri Jaan'`,
                 files: [ 
                   { 
-                        fullFileName:`assets/all-images/trains/Sept22-dudhsagar-falls.jpeg`,
+                        fullFileName:`assets/gallery-files/images/transports-and-machines/trains/Sept22-dudhsagar-falls.jpeg`,
                         duplicate:true,
                         description:  
                         `<ul><li>attempt to capture 'Dudhsagar falls railway bridge, Indian Rail, Konkan railway</li><li>Completed Sept 22 2023</li></ul>`,

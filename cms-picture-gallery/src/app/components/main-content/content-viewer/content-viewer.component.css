@@ -18,19 +18,19 @@
     border: 9px solid gold;
     border-radius: 15px;
     background-color: rgb(248, 248, 255);
-    top: 0;
+    top: 25px;
     left: 0;
     margin:12px;
     margin-top: -15px;
-    width: 90%;
+    width: auto;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    overflow-y: auto;
+    overflow-y: scroll;
    /*align-items: center;
     justify-content: center;
     */
    
 }
+
 #close-modal  {
     position: relative;
     top: 0;
@@ -38,8 +38,8 @@
     
     background-color: white;
     width:35px;
-    height:35px;
-    font-size:xx-large;
+    height:15px;
+    font-size:large;
     color:red;
     border: 1px solid red;
 }
@@ -60,11 +60,16 @@
     height:100% ;
 
 }
-#pic  {
+#modalpic  {
     width: 40%;
     height:100%;
     object-fit: contain;
+    margin-right: 50px;
+    border:2px rgb(25, 80,80) inset;
     float:left ;
+}
+#modaltext  {
+padding:20px;border: 1px solid gray; margin-left:20px;
 }
 @media screen and (max-width:550px) {
 
@@ -73,6 +78,21 @@
         padding:2px;
         overflow-y: auto;
     }
+
+#close-modal  {
+    
+    height:35px;
+    font-size:xx-large;
+    color:red;
+    margin-bottom: 2px;
+}
+#modalpic {
+    width:95% ;
+}
+
+#modaltext {
+    width:95% ;
+}
 #pic-container,
 #text-container {
     border:inset 2px gray ;
@@ -80,7 +100,7 @@
     background-color: silver;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     height: 99%;
 }
 }

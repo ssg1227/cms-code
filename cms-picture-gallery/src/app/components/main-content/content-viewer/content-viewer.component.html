@@ -38,18 +38,20 @@
        <div *ngIf="isLeafParent=='true' && imageGroups.length == 0">EMPTY CONTENT; </div> 
   <!-- ##### Uncomment later for image expansion. Refer to content list of old code - -->
     <div id="modal-container">
-        <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
+      <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
+      <!---
          <div id="pic-container"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  == 1">
            <p><img id="pic" *ngIf="selectedImage != null" src="{{selectedImage.imageList[0].image}}"></p>
            <p [innerHTML]="selectedImage.imageList[0].description"></p>
          </div>    
-        
-        <section id="iterative" *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  > 1"
-            >
-          <div *ngFor="let imageElement of selectedImage.imageList, let j = index">
+        -->
+        <section  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  >= 1"> <!-- && selectedImage.imageList.length  > 1"-->
+          
+          <div id="iterative" *ngFor="let imageElement of selectedImage.imageList, let j = index">
             <div id="pic-container" > 
-              <img id="pic" *ngIf="imageElement != null" src="{{imageElement.image}}">
-              <div [innerHTML]="imageElement.description"></div>
+              <img id="modalpic" *ngIf="imageElement != null" src="{{imageElement.image}}">
+              <div  id="modaltext" style="padding:20px;border: 1px solid gray; margin-left:20px;"> <p [innerHTML]="imageElement.description"> </p>
+            </div>
             </div>
           </div>
       
