@@ -12,7 +12,7 @@
 
 ### Log May 17-19
 - **May 20 public release** 
-  - **May 19 morning** Modal styling changed correction - image was tiny for small screens, descripti
+  - **May 19 morning** Modal styling changed correction: addressed image was tiny for small screens, description was spilling onto image for large screens, 
   - **May 18 morning COMPLETED** Move logic of Styling - frames of images - black and white, combo, water colors - to service layer
   - Uploaded images categories complete, so descrption is complete as also styling based on categorization
   - Authentication applied to list loading and menus
