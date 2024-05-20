@@ -198,12 +198,12 @@ public allImageList:ImageElement[]  =  [
                            <li>May 20, 2021</li>
                            <li><em>(This was pushed here so one can get a back to back view of Baba with throne (immediate neighbor) and without (this)</em></li></ul>
                            ` },
-                    {  fullFileName: `${this.imageRoot}Milpitas-Baba-with-throne-June6-8-2021-shared.jpeg`, 
+                    {  canvassSize: 'A4', content:'black-white',fullFileName: `${this.imageRoot}Milpitas-Baba-with-throne-June6-8-2021-shared.jpeg`, 
                     description: '<ul><li>Using a format of which a copy is in my home in Mumbai - this format is probably one of the oldest renditions</li><li>Released on Shree Datta Jayanti Dec 29 2020</li> </ul>',
                  iterations:[
                      { 
                          fullFileName: `${this.imageRoot}Milpitas-Baba-with-throne-June6-8-2021-shared.jpeg`,
-                         canvassSize: 'A4', content:'black-white',description: `<ul><li>With Covid going on Baba at Milpitas is rarely seen with the 'simhasana' throne..</li>
+                         description: `<ul><li>With Covid going on Baba at Milpitas is rarely seen with the 'simhasana' throne..</li>
                          <li>This is an attempt to capture how this looks - June 6-8 2021 </li></ul>`,
                   },{ 
                          fullFileName: `${this.imageRoot}Milpitas-Baba-with-throne-June6-8-2021-v2.jpeg`,
@@ -212,7 +212,7 @@ public allImageList:ImageElement[]  =  [
                             fullFileName: `${this.imageRoot}Milpitas-Baba-with-throne-June6-8-2021-start.jpeg`,
                             description: '<ul><li>initial iteration</li></ul>'}
                      ] }, {  
-                        fullFileName: `${this.imageRoot}General-Baba-on-Stone-June-4-5-2021-v2.jpeg`, 
+                        canvassSize: 'A4', content:'black-white', fullFileName: `${this.imageRoot}General-Baba-on-Stone-June-4-5-2021-v2.jpeg`, 
                         description: '<ul><li>General Baba sketch - 1st week June 2021 - most likely will add more and refine..</li> </ul>',
                         iterations:[
                             { fullFileName: `${this.imageRoot}General-Baba-on-Stone-June-4-5-2021-v2.jpeg`, 

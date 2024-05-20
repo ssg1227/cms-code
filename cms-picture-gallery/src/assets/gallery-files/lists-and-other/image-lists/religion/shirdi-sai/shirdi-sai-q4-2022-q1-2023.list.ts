@@ -245,7 +245,7 @@ public allImageList:ImageElement[]  =  [
              </ul>`,
          }]
          },  {
-                fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q1-2023/Ganesh-Sai-Veena-Saraswati-pooja-012623.jpeg`, 
+            canvassSize: 'A4', content:'black-white',fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q1-2023/Ganesh-Sai-Veena-Saraswati-pooja-012623.jpeg`, 
                 description: `<ul>
                 <li>SHree Ganesh with Baba theme (als completed) on Jan 26 2023 Saraswati Pooja - (Baba with Veena)</li>
                 <li>scanned</li></ul>`,

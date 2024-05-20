@@ -20,14 +20,16 @@ public allImageList:ImageElement[]  =  [
         `<p> <em><strong>Soo many sketches of Shirdi Sai!!!</strong> that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha</em><br/>
         &nbsp;&nnbsp; * Of late (June 2021) I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
         files: [ // SaiMarch32022.jpeg
-        { fullFileName: `${this.imageRoot}SaiMarch32022.jpeg`, 
+        { canvassSize: 'A4', content:'black-white',
+        fullFileName: `${this.imageRoot}SaiMarch32022.jpeg`, 
             description: `<ul>
             <li>Simply .. Baba</li><li> March 3 2022</li>
             </ul>`,
             dateUploaded: '03-22-2022',
             rating: 1,
         },
-            { fullFileName: `${this.imageRoot}BabaUnpluggedFeb2422-final.jpeg`, 
+            { canvassSize: 'A4', content:'black-white',
+            fullFileName: `${this.imageRoot}BabaUnpluggedFeb2422-final.jpeg`, 
             description: `<ul>
             <li>Simply .. Baba</li><li> Feb 24 2022</li>
             </ul>`,
@@ -54,6 +56,7 @@ public allImageList:ImageElement[]  =  [
                     </ul>`
                 }]
             }, {
+                canvassSize: 'A4', content:'color-pencil',
                 fullFileName: `${this.imageRoot}BabaFeb102022-1.jpeg`, 
                 description: `<ul>
                 <li>Simply .. Baba</li><li> Feb 10 2022</li>
@@ -94,6 +97,7 @@ public allImageList:ImageElement[]  =  [
                 ]
             },
             {
+                canvassSize: 'A4', content:'black-white',
                 fullFileName: `${this.imageRoot}BabaThursdayJan272021.jpeg`, 
                 description: `<ul>
                 <li>Simply .. Baba</li><li> Jan 27 2022</li>
@@ -101,6 +105,7 @@ public allImageList:ImageElement[]  =  [
                 dateUploaded: '01-27-2022',
             },
             {
+                canvassSize: 'A4', content:'black-white',
                 fullFileName: `${this.imageRoot}SaiThu01202022.jpeg`, 
                 description: `<ul>
                 <li>Simply .. Baba</li><li> Jan 20 2022</li>
@@ -108,12 +113,14 @@ public allImageList:ImageElement[]  =  [
                 dateUploaded: '01-22-2022',
             },
             {
+                canvassSize: 'A4', content:'black-white',
                 fullFileName: `${this.imageRoot}Baba12302021.jpeg`, 
                 description: `<ul>
                 <li>End Sketch in this category 2021 - at least the 1st iteration, if I decide to imoprove.. </li><li>Will use as a template</li><li> Dec 30 2021</li>
                 </ul>`,
                 dateUploaded: '12/30/2021',
-            },{  fullFileName: `${this.imageRoot}BabaUnpluggedDec2021_shared.jpeg`,
+            },{  canvassSize: 'A4', content:'black-white',
+            fullFileName: `${this.imageRoot}BabaUnpluggedDec2021_shared.jpeg`,
             description: '<p>Baba Sketch Dec - shared 9th - 2021</p>' ,
             dateUploaded: '12-09-2021',
             iterations:[{
@@ -124,7 +131,8 @@ public allImageList:ImageElement[]  =  [
                 description: `..`
             } ]
             
-            }, {  fullFileName: `${this.imageRoot}Baba-July2-2021-3.jpeg`,
+            }, {  canvassSize: 'A4', content:'black-white',
+            fullFileName: `${this.imageRoot}Baba-July2-2021-3.jpeg`,
             description: '<p>Baba smiling pic - July 2 2021 </p>',
             iterations:[{
                 fullFileName: `${this.imageRoot}Baba-July2-2021-3.jpeg`, 
@@ -142,7 +150,8 @@ public allImageList:ImageElement[]  =  [
                 <li>Baba smiling pic - July 2 2021</li><li> (will move to a new section for Q3-Q4 2021 soon)</li></ul>`
             },]
             
-            },{  fullFileName: `${this.imageRoot}BabaSamadhiMandirDassera20201Final.jpeg`, 
+            },{ canvassSize: 'A4', content:'color-pencil',
+            fullFileName: `${this.imageRoot}BabaSamadhiMandirDassera20201Final.jpeg`, 
             description: `<ul><li> Baba sketched for Dassera 2021</li>
                        </ul>` ,
                        dateUploaded: '12-08-2021',
@@ -157,7 +166,8 @@ public allImageList:ImageElement[]  =  [
                 
                 },
             // BabaSamadhiMandirDassera20201Final
-            {  fullFileName: `${this.imageRoot}BabaVeenaQ32021Final.jpeg`, 
+            {  canvassSize: 'A4', content:'black-white',
+            fullFileName: `${this.imageRoot}BabaVeenaQ32021Final.jpeg`, 
             description: `<ul><li> General Baba Theme</li>
                        </ul>` ,
                        dateUploaded: '12-08-2021',
@@ -169,11 +179,13 @@ public allImageList:ImageElement[]  =  [
                 ]
                 
                 }, {
-                fullFileName: `${this.imageRoot}BabaThanksgiving11262021.jpeg`, 
+                    canvassSize: 'A4', content:'black-white',
+                    fullFileName: `${this.imageRoot}BabaThanksgiving11262021.jpeg`, 
                 description: `<b> Tried Thanksgiving Theme 2021</b>` ,
                 dateUploaded: '12-06-2021',
                     
-                    },{  fullFileName: `${this.imageRoot}BabaOct2021Portrait.jpeg`, 
+                    },{  canvassSize: 'A4', content:'color-pencil',
+                    fullFileName: `${this.imageRoot}BabaOct2021Portrait.jpeg`, 
                 description: `<ul><li> Baba in color </li>
                            </ul>` ,
                            dateUploaded: '12-06-2021',
@@ -185,7 +197,8 @@ public allImageList:ImageElement[]  =  [
                             description: `<ul><li>Photo taken portrait mode contour light</li></ul>` },
                     ]
                     
-                    },{  fullFileName: `${this.imageRoot}BabaMilpitasSept23_2021.jpeg`, 
+                    },{  canvassSize: 'A4', content:'black-white',
+                    fullFileName: `${this.imageRoot}BabaMilpitasSept23_2021.jpeg`, 
                            description: ` <ul><li><strong> Milpitas CA Temple Sai</strong></li>
                            <li>Sept 23 2021</li>
                            <li>Variation - Sai Yantra is larger than the one present and add hookah</li></ul>`

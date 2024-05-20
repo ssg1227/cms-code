@@ -12,14 +12,14 @@
     border-radius: 7px;
     font-size:1vw;
     overflow-y: auto;
-   background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
+    background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
 }
 
 .upper-ten {
     height: 20%; 
     display: flex ;
     border: 2px solid slateblue ;
-    background-color: aliceblue;
+    background-color: rgb(195, 205, 231);
 }
 .upper-ten > H2 {
     margin-left: 10px;
@@ -52,7 +52,17 @@
     height: 90%;
     border: 2px solid slateblue ;
     background-color: aliceblue;
+    background: silver;
     font-size: larger;
+    font-weight: 900;
+}
+@media screen and (min-width:1029px) {
+    .upper-ten {
+        background-image: linear-gradient(to right, aliceblue, #9198f5, lightblue, skyblue);
+    }
+    .lower-ninety {
+        background: radial-gradient(#f77775, #a2a9f6);
+    }
 }
 @media screen and (max-width:1028px) {
     .lower-ninety {

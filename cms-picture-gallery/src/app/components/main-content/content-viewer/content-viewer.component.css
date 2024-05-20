@@ -5,7 +5,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #f4f4f4;
     width: 100%;
     min-width: 450px;
     overflow: scroll;
@@ -70,6 +69,10 @@
 }
 #modaltext  {
 padding:20px;border: 1px solid gray; margin-left:20px;
+}
+
+@media screen and (min-width:1029px) {
+   
 }
 @media screen and (max-width:550px) {
 

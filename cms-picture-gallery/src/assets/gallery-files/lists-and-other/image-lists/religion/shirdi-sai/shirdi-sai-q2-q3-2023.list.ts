@@ -40,7 +40,7 @@ fullFileName: `${this.imageRoot}SaiVithalAshadiEkadashi06292023.jpeg`,
 description: `<ul><li> Ashadi Ekadashi Thu June 29 2023 </li><li> Sai With Vithal theme </li></ul>`,
 },
 {
-canvassSize:  '',
+canvassSize:  'A3',
 content:  'black-white',
 dateUploaded:  '07-10-2023',
 evolution:  `<b>A first: Baba Milpitas on A3<br/></B>`,

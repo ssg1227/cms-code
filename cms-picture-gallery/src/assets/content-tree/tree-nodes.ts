@@ -302,7 +302,7 @@ Also increasing numbers of Swami Samartha sketches`,
        emptyMessage: 'Empty Content or Error', breadCrumb:[
            {link: '/view', params:'top-level', label: 'HOME'},
            {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
-           {link: '', params:'religious-shirdi-sai', label: 'Shree Swami Samartha Q2 2023 onward'}
+           {link: '', params:'religious-shirdi-sai', label: 'Shirdi Sai: Q3 2021 - Q1 2022'}
        ] 
       },
     { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q2-q3-2022', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023',  roles: ['superuser',"guru"],

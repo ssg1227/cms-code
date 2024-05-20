@@ -19,7 +19,7 @@ public allImageList:ImageElement[]  =  [
         `<p> <em><strong>Soo many sketches of Shirdi Sai!!!</strong> that I needed to make separate sections <br/> This is based on Sai Satcharitra (Note - the sketches mostly wont cover all sub stories in a chapter)... `,
         files: [ 
             {  
-                fullFileName: `assets/gallery-files/images/religion/dattavatar/SwamiBabaFeb172022-2.jpeg`, description: 
+                canvassSize: 'A4', content:'black-white',fullFileName: `assets/gallery-files/images/religion/dattavatar/SwamiBabaFeb172022-2.jpeg`, description: 
                 `<ul>
                     <li></li> </ul>`,
                     dateUploaded: '02-28-2022',
@@ -35,7 +35,7 @@ public allImageList:ImageElement[]  =  [
                         <li>Feb 17 2022 - initial </li> 
                         </ul>`}],
                         duplicate:true ,
-            },{  fullFileName: `${this.imageRoot}Chapt7BhagojiShinde3_01122022.jpeg`, 
+            },{  canvassSize: 'A4', content:'black-white',fullFileName: `${this.imageRoot}Chapt7BhagojiShinde3_01122022.jpeg`, 
             description: `<b> Chapt 7 - Bhagoji Shinde </b>` ,
             dateUploaded: '01-13-2022',
             iterations:[
@@ -57,32 +57,32 @@ public allImageList:ImageElement[]  =  [
             ]
                 
                 },
-            {  fullFileName: `${this.imageRoot}Chapt7BhagojiShinde1_01122022.jpeg`, 
+            {  canvassSize: 'A4', content:'black-white',fullFileName: `${this.imageRoot}Chapt7BhagojiShinde1_01122022.jpeg`, 
             description: `<b> Chapt 36 - two gentlemen from Goa, Mrs Aurangabadkar </b>` ,
             dateUploaded: '01-06-2022',
                 
                 },
-            {  fullFileName: `${this.imageRoot}baba-ya-sai-dec1-2021.jpeg`, 
+            {  canvassSize: 'A4', content:'black-white',fullFileName: `${this.imageRoot}baba-ya-sai-dec1-2021.jpeg`, 
         description: `<b> 'Ya Sai - Mhalsapatti'</b>` ,
         dateUploaded: '12-05-2021',
             
             },
             // BabaDiwaliLampsWaterNov2021.jpeg
-            {  fullFileName: `${this.imageRoot}BabaDiwaliLampsWaterNov2021.jpeg`, 
+            {  canvassSize: 'A4', content:'black-white',fullFileName: `${this.imageRoot}BabaDiwaliLampsWaterNov2021.jpeg`, 
         description: `<b> 'The 'most famous' Shirdi Sai story</b>` ,
         dateUploaded: '12-09-2021',
             
             }, {  
-                fullFileName: `${this.imageRoot}SaiLizardsChapt15.jpeg`,
+                canvassSize: 'A4', content:'black-white',fullFileName: `${this.imageRoot}SaiLizardsChapt15.jpeg`,
                 description: `<b> 'Lizard Sisters Shirdi-Aurangabad' </b>` ,
                 dateUploaded: '12-05-2021',},
             ,  {  
-                        fullFileName: `${this.imageRoot}BabaShirdiReturnChandPatil112021.jpeg`, 
+                canvassSize: 'A4', content:'black-white',  fullFileName: `${this.imageRoot}BabaShirdiReturnChandPatil112021.jpeg`, 
                        
                 description: `<b> 'Baba Return. Chand Patil and lost mare'</b>` ,
                 dateUploaded: '12-05-2021',
                                
-                               },{  fullFileName: `${this.imageRoot}BabaGrindingWheat112021.jpeg`, 
+                               },{  canvassSize: 'A4', content:'black-white',fullFileName: `${this.imageRoot}BabaGrindingWheat112021.jpeg`, 
                                description: `<ul><li> 1st Chapter Sai Satcharit Theme - Baba grinding wheat which He used to sprinkle on the perimeters of Shirdi to ward of Cholera epidemic</li>
                                            <li> With Covid, very relevant </li>
                                            <li><em>
@@ -100,7 +100,7 @@ public allImageList:ImageElement[]  =  [
                                    ]
                                    
                                    },
-                    {  fullFileName: `${this.imageRoot}BabaBaijBaiNov2021.jpeg`, 
+                    { canvassSize: 'A4', content:'black-white', fullFileName: `${this.imageRoot}BabaBaijBaiNov2021.jpeg`, 
                                    
                     dateUploaded: '12-06-2021',
                     description: '<ul><li>Feeding Baba - BaiayajiBai..</li> </ul>',

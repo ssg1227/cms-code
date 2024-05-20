@@ -106,14 +106,15 @@ export class ShirdiSaiQ2Q32022ImageList {
             }
              ]
         },
-        ,{ fullFileName: `${this.imageRoot}BabaSleepingJuly142022.jpeg`, description: `<ul>
+        ,{ canvassSize: 'A4', content:'black-white',
+        fullFileName: `${this.imageRoot}BabaSleepingJuly142022.jpeg`, description: `<ul>
         <li>“Happy with my devotees.. taking some time off… DND ..Shama, wake me only if anything critical”</li>
         <li>(July 14 2022)</li>
         </ul>`,
         dateUploaded: '07-23-2022',
        
     },
-        { fullFileName: `assets/gallery-files/images/religion/dattavatar/GuruPoornimaJuly1322-1.png`, 
+        { canvassSize: 'soft', content:'color-pencil black-white',fullFileName: `assets/gallery-files/images/religion/dattavatar/GuruPoornimaJuly1322-1.png`, 
             description: `<ul>
             <li><strong><em>"गुरु ब्रह्मा गुरु विष्णू गुरु देवो महेश्वरहा <br/>&nbsp;
             गुरु साक्षात परब्रम्ह तस्मै श्री गुरुवे नमः </em></strong></li>
@@ -124,7 +125,7 @@ export class ShirdiSaiQ2Q32022ImageList {
             dateUploaded: '07-13-2022',
             duplicate: true,
            
-        },{ fullFileName: `${this.imageRoot}ShreeSaiSamarth070722.jpeg`, 
+        },{ canvassSize: 'A4', content:'black-white', fullFileName: `${this.imageRoot}ShreeSaiSamarth070722.jpeg`, 
             description: `<ul>
             <li><strong><em>"गुरु ब्रह्मा गुरु विष्णू गुरु देवो महेश्वरहा <br/>&nbsp;
             गुरु साक्षात परब्रम्ह तस्मै श्री गुरुवे नमः </em></strong></li>
@@ -134,7 +135,7 @@ export class ShirdiSaiQ2Q32022ImageList {
             </ul>`,
             dateUploaded: '06-30-2022',
            
-        },{ fullFileName: `${this.imageRoot}NrusimhaSaraswatSai06302022.jpeg`, 
+        },{ canvassSize: 'A4', content:'color-pencil',fullFileName: `${this.imageRoot}NrusimhaSaraswatSai06302022.jpeg`, 
             description: `<ul>
             <li><strong><em>"गुरु ब्रह्मा गुरु विष्णू गुरु देवो महेश्वरहा <br/>&nbsp;
             गुरु साक्षात परब्रम्ह तस्मै श्री गुरुवे नमः </em></strong></li>
@@ -144,7 +145,7 @@ export class ShirdiSaiQ2Q32022ImageList {
             </ul>`,
             dateUploaded: '06-30-2022',
            
-        },{ fullFileName: `${this.imageRoot}ShreepadVallabhSaiBaba2062322.jpeg`, 
+        },{ canvassSize: 'A4', content:'color-pencil',fullFileName: `${this.imageRoot}ShreepadVallabhSaiBaba2062322.jpeg`, 
             description: `<ul>
             <li><strong><em>"गुरु ब्रह्मा गुरु विष्णू गुरु देवो महेश्वरहा <br/>&nbsp;
             गुरु साक्षात परब्रम्ह तस्मै श्री गुरुवे नमः </em></strong></li>
@@ -175,7 +176,7 @@ export class ShirdiSaiQ2Q32022ImageList {
              ]
         },
         {
-            fullFileName: `${this.imageRoot}BabaParaBrahmaJune162022_2.jpeg`, 
+            canvassSize: 'A4', content:'black-white', fullFileName: `${this.imageRoot}BabaParaBrahmaJune162022_2.jpeg`, 
         description: `<ul>
         <li><strong><em>"गुरु ब्रह्मा गुरु विष्णू गुरु देवो महेश्वरहा <br/>&nbsp;
         गुरु साक्षात परब्रम्ह तस्मै श्री गुरुवे नमः </em></strong></li>
@@ -205,7 +206,7 @@ export class ShirdiSaiQ2Q32022ImageList {
            }
          ]
         },
-        { fullFileName: `${this.imageRoot}SaiThu04142022.jpeg`, 
+        { canvassSize: 'A4', content:'color-pencil',fullFileName: `${this.imageRoot}SaiThu04142022.jpeg`, 
             description: `<ul>
             <li>Simply .. Baba.. April Trayodashi</li><li> April 14 2022</li>
             </ul>`,
@@ -224,7 +225,7 @@ export class ShirdiSaiQ2Q32022ImageList {
                    </ul>`
                }
              ]
-        },{ fullFileName: `${this.imageRoot}SaiThu04072022-portrait-contour.jpeg`, 
+        },{ canvassSize: 'A4', content:'color-pencil',fullFileName: `${this.imageRoot}SaiThu04072022-portrait-contour.jpeg`, 
         description: `<ul>
         <li><li> April 7 2022</li>
         </ul>`,

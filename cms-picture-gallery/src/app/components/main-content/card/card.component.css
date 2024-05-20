@@ -8,6 +8,8 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   background-color: beige;
+
+ /* background: radial-gradient(beige, goldenrod);*/
 }
 
 .card-color-pencil {
@@ -17,7 +19,7 @@
 
 .card-mono {
   border: 7px outset gray ;
-  background-color: lightgray;
+  background: lightgray;
 }
 
 .card-watercolor {
@@ -90,6 +92,14 @@ img {
 max-width: 99%;
 max-height: 99%;
 object-fit: contain;
+}
+
+@media screen and (min-width:1029px) {
+  /*
+  .card-default {
+    background: radial-gradient(beige, rgb(255, 205, 125) );
+  }
+  */
 }
 /* Before removing expansion in this component <= March 5 2024 
 .card {
