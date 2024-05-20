@@ -11,12 +11,25 @@
 
  /* background: radial-gradient(beige, goldenrod);*/
 }
-
+H2,H3,H4 {
+  align-content: center;
+  margin-left:  20px;
+  margin-right:  20px;
+  text-align: center;
+  color:maroon;
+  text-shadow: 2px 2px gray;
+  background-color: rgb(245,197, 177);
+  box-shadow: 0 4px 8px  rgba(25,25,0,0.7);;
+}
 .card-color-pencil {
   background-color: beige;
   border: 7px outset rgb(146, 3, 3);
 }
-
+#node-card {
+  padding: 3px;
+  text-align:justify;
+  font-style: italic;
+}
 .card-mono {
   border: 7px outset gray ;
   background: lightgray;

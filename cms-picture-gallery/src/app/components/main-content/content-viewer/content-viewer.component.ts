@@ -83,7 +83,6 @@ export class ContentViewerComponent {
     return this.noContent ;
    }
    compareSelected(a:any, b:any) {
-    console.log(`${a} ${b}`)
     this.isLeafParent = localStorage.getItem("isLeafParent") ;
     if (this.isLeafParent === 'true' && isNaN(a)) {
         this.imageGroups = [] ;
@@ -107,7 +106,9 @@ export class ContentViewerComponent {
       console.log('test');
    
    // this.key = localStorage.getItem("key");
-    console.log(`${this.isLeafParent} ${this.key }`) ;
+      console.log(`######${this.isLeafParent} ${this.key }`) ;
+      // @ts-ignore: Object is possibly 'null'.
+      localStorage.setItem("isLeafParent",this.isLeafParent) ;
       if(isNaN(a)) {
         localStorage.setItem('current-menu',a);
         this.router.navigate([`/view`, a]).then( (e) => {
@@ -142,12 +143,10 @@ export class ContentViewerComponent {
                 let stats = '';
                 let cardstyle = { outer: ``, image:``}; // move chosing card style logic to core content service 
                 let cardImageStyle = ``;
-                console.log(`STATS: ${JSON.stringify(fileData)}`);
                 stats = this.techStats(fileData, cardstyle) ;  
-                console.log(`STATS for single file ${stats} ${fileData.fullFileName}`);
-                  if(stats.indexOf('Canvass') >= 0) {
+                if(stats.indexOf('Canvass') >= 0) {
                     fileData.description = `${fileData.description}<br/>(<em> ${stats}}</em>)`;
-                  }    
+                }    
                   
                 if(fileData.iterations !== undefined && fileData.iterations.length > 0) {
                   fileData.iterations.forEach((element:any, index:number) => {

@@ -5,7 +5,7 @@
   (mouseover)="toggleCardState()" (mouseout)="toggleCardState()" (click)="expand()" >
   <div  *ngIf="imageDetail == null;"[routerLink]="[ViewLink,cardInfo.key]">  
     
-    <div [innerHTML]="cardInfo.label"></div>
+    <div id="node-card"><h3>{{cardInfo.label}}</h3>{{cardInfo.description}}</div>
   </div>
    <!--- WORKING ON STITCHING OLD IMAGE LOGIC INTO THE NEW CARD TREE- BREAD CRUMB STRUCTURE-->
  <div class="card-image" [ngClass]="selectImageBorder()" *ngIf="imageDetail != null; "   (click)="expand()"  > 
