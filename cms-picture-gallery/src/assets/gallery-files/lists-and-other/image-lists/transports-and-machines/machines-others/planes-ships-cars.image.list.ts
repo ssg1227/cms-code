@@ -123,11 +123,11 @@ export class PlanesShipsCarsImageList {
                                     <li>sept 2- 6 2022</li></ul> `}] },
                 { 
                     fullFileName:   `${this.imageRoot}BismarkJuly152022.jpeg`, 
-                    canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>Attempt on Bismark (or Tirpitz) 07-15-2022</li></ul> `,
+                    canvassSize: 'A4', content:'black-white', description: `<ul><li>Attempt on Bismark (or Tirpitz) 07-15-2022</li></ul> `,
                     dateUploaded: '07-23-2022', },
                     ,
                     {
-                        canvassSize: 'A4', content:'color-pencil', 
+                        canvassSize: 'A4', content:'black-white', 
                         fullFileName: 
                         `${this.imageRoot}IAFSu30INMig29Feb92023-finish.jpeg`, 
                         description: `<ul> 
@@ -180,8 +180,8 @@ export class PlanesShipsCarsImageList {
             <li>Likewise the Aircraft carrier starts with CV6 - WW2 USS Enterprise </li>
             <li>Jan 10 2022/li></ul> `,
             dateUploaded: '01-10-2022' }, { 
-                fullFileName: `assets/all-images/mumbai-meri-jaan/MumbaiWaterFrontKashinClassApr42021.jpeg`,
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul>
+                fullFileName: `assets/gallery-files/images/salaam-mumbai/mumbai-meri-jaan/MumbaiWaterFrontKashinClassApr42021.jpeg`,
+                canvassSize: 'A4', content:'black-white', description: `<ul>
                 <li>Starting out D51 INS Rajput - Navy Kashin Class destroyer - but little digressed</li>
                 <li>Imaginary scene in front of Gateway of India Taj Timeline</li>
                 <li>Repeated in Mumbai and ships theme</li>
@@ -202,24 +202,24 @@ export class PlanesShipsCarsImageList {
             {
                     fullFileName: 
                 `${this.imageRoot}blackbirdSept42021.jpeg`, 
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul>
+                canvassSize: 'A4', content:'black-white', description: `<ul>
                 <li>Spontaneousm unplanned sketch attempt for SR-71 blackbird. Sept 2021</li>
                             </ul> `,
                dateUploaded: '12-12-2021'
 
             }, { fullFileName: 
                 `${this.imageRoot}spitfire-sept-2020.jpeg`, 
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>Spitfire attempt  Sept   2020</li>
+                canvassSize: 'A4', content:'black-white', description: `<ul><li>Spitfire attempt  Sept   2020</li>
                 <li>In school used to read a lot of Commando comics and would be inspired to draw</li>
                 <li>WW2 dogfights with, particularly spitfires was a favorite theme then</li>
                             </ul> ` }, {  
-                 fullFileName: `${this.imageRoot}planes_firefightdc10-sept-2020.jpeg`, 
+                                canvassSize: 'A4', content:'black-white',fullFileName: `${this.imageRoot}planes_firefightdc10-sept-2020.jpeg`, 
                  description:`<ul><li>General DC 10 firefighter  Sept   2020</li></ul> `
             },
             {
                     fullFileName: 
                 `${this.imageRoot}Russian-mig-29-su-30-1.jpeg`, 
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>..Switching to Q2 2021, and attempts to draw contemprary aircraft</li>
+                canvassSize: 'A4', content:'black-white', description: `<ul><li>..Switching to Q2 2021, and attempts to draw contemprary aircraft</li>
                 <li>Something in between a Sukoi Su30 and Mig 29</li>
                             </ul> `,
                 iterations:[
@@ -236,7 +236,7 @@ export class PlanesShipsCarsImageList {
             {
                     fullFileName: 
                 `${this.imageRoot}su-30-a-1.jpeg`, 
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>..Switching to Q2 2021, and attempts to draw contemprary aircraft</li>
+                canvassSize: 'A4', content:'black-white', description: `<ul><li>..Switching to Q2 2021, and attempts to draw contemprary aircraft</li>
                 <li>Attempted Su 30</li>
                             </ul> `,
                
@@ -245,7 +245,7 @@ export class PlanesShipsCarsImageList {
             {
                     fullFileName: 
                 `${this.imageRoot}SailingShipPreQ302020.jpg`, 
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>Another of my favorite themes as a kid, a full sailed sailing ship - sketch before Qe3 2020</li>
+                canvassSize: 'A4', content:'black-white', description: `<ul><li>Another of my favorite themes as a kid, a full sailed sailing ship - sketch before Qe3 2020</li>
                             </ul> `,
                
 
@@ -253,7 +253,7 @@ export class PlanesShipsCarsImageList {
             {
                     fullFileName: 
                 `${this.imageRoot}SilveGhostQ1Q22021.jpg`, 
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>Around start 2021 - venturing into very rarely visited theme - automobiles * </li>
+                canvassSize: 'A4', content:'black-white', description: `<ul><li>Around start 2021 - venturing into very rarely visited theme - automobiles * </li>
                                   <li>Appropriate to start this with an attempt at a Rolls - the Silver Ghost
                             </ul> 
                             <br/>* Though I've drawn tanks as a kid`,
@@ -263,7 +263,7 @@ export class PlanesShipsCarsImageList {
             {
                     fullFileName: 
                 `${this.imageRoot}ProwlerWIPMay2021.jpg`, 
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>A friend of mine bought one of these way back in 2000 - plymouth prowler</li>
+                canvassSize: 'A4', content:'black-white', description: `<ul><li>A friend of mine bought one of these way back in 2000 - plymouth prowler</li>
                                  <li>Remember his 3 year (then) daughet calling it a 'monster'</li>
                                  <li>(also remember the price gouging of the dealer)</li>
                                  <li>WIP - well, um - technically</li>
@@ -273,7 +273,7 @@ export class PlanesShipsCarsImageList {
             },
             {
                     fullFileName:  `${this.imageRoot}OurAcuraJune21-2021-3-scene.jpeg`, 
-                    canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>A most fascinating car - attempt to draw 2011 Acura TL (tech package)</li>
+                    canvassSize: 'A4', content:'black-white', description: `<ul><li>A most fascinating car - attempt to draw 2011 Acura TL (tech package)</li>
                                      <li>Had this car since Feb 2011 (see date sketched) and the car is still 'maska'</li>
                                      <li>Very very work in progress, June 21 2021 (note Summer Solstice)</li>
                                 </ul> `,

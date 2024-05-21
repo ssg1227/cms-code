@@ -96,7 +96,7 @@ iterations: [
 },
 {
 canvassSize:  'A4',
-content:  'color-pencil',
+content:  'color-pencil black-white',
 dateUploaded:  '07-07-2023',
 fullFileName: `${this.imageRoot}Canberras07042023.jpeg`,
 description: `<ul><li> Another of 'inspired by friends and groups on social media' drawing </li><li> Attempt to show IAF canberra bombers </li><li> Tongue in cheek - flying over (3rd) Canberra - capital of Australia </li><li>July 3 2023</li></ul>`,
@@ -140,7 +140,7 @@ iterations: [
                      Boeing 737-200<br/>
                         </li></ul> `,
                     dateUploaded: '05-10-2023',
-                },
+                },/*
             {
                     fullFileName: 
                 `${this.imageRoot}QueenElizabethApril10-1620222_final.jpeg`, 
@@ -169,7 +169,7 @@ iterations: [
             <li>Jan 10 2022/li></ul> `,
             dateUploaded: '01-10-2022' }, { 
                 fullFileName: `assets/gallery-files/images/salaam-mumbai/mumbai-meri-jaan/MumbaiWaterFrontKashinClassApr42021.jpeg`,
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul>
+                canvassSize: 'A4', content:'color-pencil', description: `<ul>
                 <li>Starting out D51 INS Rajput - Navy Kashin Class destroyer - but little digressed</li>
                 <li>Imaginary scene in front of Gateway of India Taj Timeline</li>
                 <li>Repeated in Mumbai and ships theme</li>
@@ -190,14 +190,14 @@ iterations: [
             {
                     fullFileName: 
                 `${this.imageRoot}blackbirdSept42021.jpeg`, 
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul>
+                canvassSize: 'A4', content:'color-pencil', description: `<ul>
                 <li>Spontaneousm unplanned sketch attempt for SR-71 blackbird. Sept 2021</li>
                             </ul> `,
                dateUploaded: '12-12-2021'
 
             }, { fullFileName: 
                 `${this.imageRoot}spitfire-sept-2020.jpeg`, 
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>Spitfire attempt  Sept   2020</li>
+                canvassSize: 'A4', content:'color-pencil', description: `<ul><li>Spitfire attempt  Sept   2020</li>
                 <li>In school used to read a lot of Commando comics and would be inspired to draw</li>
                 <li>WW2 dogfights with, particularly spitfires was a favorite theme then</li>
                             </ul> ` }, {  
@@ -207,7 +207,7 @@ iterations: [
             {
                     fullFileName: 
                 `${this.imageRoot}su-30-a-1.jpeg`, 
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>..Switching to Q2 2021, and attempts to draw contemprary aircraft</li>
+                canvassSize: 'A4', content:'color-pencil', description: `<ul><li>..Switching to Q2 2021, and attempts to draw contemprary aircraft</li>
                 <li>Attempted Su 30</li>
                             </ul> `,
                
@@ -216,7 +216,7 @@ iterations: [
             {
                     fullFileName: 
                 `${this.imageRoot}SailingShipPreQ302020.jpg`, 
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>Another of my favorite themes as a kid, a full sailed sailing ship - sketch before Qe3 2020</li>
+                canvassSize: 'A4', content:'color-pencil', description: `<ul><li>Another of my favorite themes as a kid, a full sailed sailing ship - sketch before Qe3 2020</li>
                             </ul> `,
                
 
@@ -224,7 +224,7 @@ iterations: [
             {
                     fullFileName: 
                 `${this.imageRoot}SilveGhostQ1Q22021.jpg`, 
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>Around start 2021 - venturing into very rarely visited theme - automobiles * </li>
+                canvassSize: 'A4', content:'color-pencil', description: `<ul><li>Around start 2021 - venturing into very rarely visited theme - automobiles * </li>
                                   <li>Appropriate to start this with an attempt at a Rolls - the Silver Ghost
                             </ul> 
                             <br/>* Though I've drawn tanks as a kid`,
@@ -234,7 +234,7 @@ iterations: [
             {
                     fullFileName: 
                 `${this.imageRoot}ProwlerWIPMay2021.jpg`, 
-                canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>A friend of mine bought one of these way back in 2000 - plymouth prowler</li>
+                canvassSize: 'A4', content:'color-pencil', description: `<ul><li>A friend of mine bought one of these way back in 2000 - plymouth prowler</li>
                                  <li>Remember his 3 year (then) daughet calling it a 'monster'</li>
                                  <li>(also remember the price gouging of the dealer)</li>
                                  <li>WIP - well, um - technically</li>
@@ -244,7 +244,7 @@ iterations: [
             },
             {
                     fullFileName:  `${this.imageRoot}OurAcuraJune21-2021-3-scene.jpeg`, 
-                    canvassSize: 'A3 A4', content:'black-white color-pencil', description: `<ul><li>A most fascinating car - attempt to draw 2011 Acura TL (tech package)</li>
+                    canvassSize: 'A4', content:'color-pencil', description: `<ul><li>A most fascinating car - attempt to draw 2011 Acura TL (tech package)</li>
                                      <li>Had this car since Feb 2011 (see date sketched) and the car is still 'maska'</li>
                                      <li>Very very work in progress, June 21 2021 (note Summer Solstice)</li>
                                 </ul> `,
@@ -272,7 +272,7 @@ iterations: [
                                   </ul> `,}
                   ] 
     
-            },
+            },*/
          ]
         }
         ]
