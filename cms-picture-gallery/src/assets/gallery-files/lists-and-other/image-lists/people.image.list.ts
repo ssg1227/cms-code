@@ -89,6 +89,8 @@ fullFileName: `${this.imageRoot}SachinJUne232023.jpeg`,
 description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt to sketch SRT... </li><li> Coming just on the eve of 40th anniv of India's 1983 Cricket World Cup Triumph (June 25) which inspired Sachin to take up cricket </li></ul>`,
 },
       {  
+         canvassSize:  'A4',
+         content:  'black-white',
          fullFileName: `assets/gallery-files/images/religion/dattavatar/SwamiRamdasApril16HanumanJayanti22.jpeg`, 
          description: 
          `<ul>
@@ -114,6 +116,8 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
           evolutionSequence: 2, evolutionDate: '05-15-2022',
           rating: 1,
   },{
+         canvassSize:  'A4',
+         content:  'black-white',
          fullFileName: `${this.imageRoot}ShivjayantiTithiMarch2122.jpeg`, 
          description: `<ul>
                         <li>Shiv Jayanti by Tithi, 2022</li>
@@ -126,6 +130,8 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
          
       },
       {
+         canvassSize:  'A4',
+         content:  'black-white',
          fullFileName: `${this.imageRoot}GreatPersonsRaje locked version 09292020.jpeg`, 
          description: `<p>My first 'non religious' person sketch.. Choice was obvious, wasnt it? </p>`,
          evolution: '<b>Description below says it all..</b><br/>',
@@ -134,6 +140,8 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
          
       },
       {
+         canvassSize:  'A4',
+         content:  'black-white',
          fullFileName: `${this.imageRoot}BhimsenLataFeb2022-4.jpeg`, 
          description: `<ul>
                         <li>Based off a Lata Bhimsen photo </li>
@@ -156,6 +164,8 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
          ]
       },
       {
+         canvassSize:  'A4',
+         content:  'black-white',
          fullFileName: `${this.imageRoot}LataFeb7-8-2022.jpeg`, 
          description: `<ul>
                         <li>On the occasion of the sad passing of Lata Mangeshkar</li>
@@ -168,17 +178,22 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
          evolutionSequence: 2, evolutionDate: '02-08-2022',
          },
       {
+         canvassSize:  'A4',
+         content:  'black-white',
          fullFileName: `${this.imageRoot}PtBhimsenJoshi04022022_100th.jpeg`, 
          description: `<p><p>Feb 4 2022 Pt Bhimsen Joshi 100th birth anniversary part of collage with Ganesh Jayanti collage(See next) </p></p>`,
          dateUploaded: '02-04-2022',
          
       },{
+         canvassSize: 'soft', content:'poem black-white',   
          fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q4-2021-ganesh/GaneshJayanti_Bhimsen_collage040222.jpeg`, 
          description: '<p>Feb 4 2022 Ganesh Jayanti collage with Pt Bhimsen Joshi 100th birth anniversary</p>',
          dateUploaded: '02-04-2022',
          duplicate: true,
       },
       {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}ShivajiJayantiTithi03312021.jpeg`, 
             description: `<ul>
                            <li>MAHARAJ!!!! </li>
@@ -188,6 +203,8 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
                           </ul>`
          },
          {
+            canvassSize:  'A4',
+            content:  'color-pencil black-white',
             fullFileName: `${this.imageRoot}ShivbaHorseTithiJayanti_wip_03_31_2021-color2.jpg`, 
             description: '<p> Maharaj on horseback attempt based on Masunda Lake, Thane statue</p>',
             iterations:[ 
@@ -214,6 +231,8 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
                         ] 
          },
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}ShivajiMaharajNov2021Final.jpeg`, 
             description: '<p>From imagination</p>',
             dateUploaded: '12-08-2021',
@@ -237,6 +256,8 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
                         ] 
          },
          {
+            canvassSize:  'A4',
+            content:  'color-pencil black-white',
             fullFileName: `${this.imageRoot}GeneralBipinRawatDec152021_2.jpeg`, 
             description: '<p>From imagination</p>',
             dateUploaded: '12-15-2021',
@@ -265,6 +286,8 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
          },
          // GeneralBipinRawatDec152021_2.jpeg
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}UnsignedWIPPtBhimsenJoshiJan242021.jpeg`, 
             description: `<ul>
                               <li>BHARAT RATNA Pt. Bhimsen Joshi </li>
@@ -286,6 +309,8 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
             ] 
          },
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}PtBhimsenJoshi06142021-3.jpeg`, 
             description: '<p>Tuning the Veena</p>',
             iterations:[
@@ -300,10 +325,14 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
                       description: `<ul><li>June 13-14 2021 - start</li></ul>`}
                    ] },
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}PtJiQ12021.jpg`, 
             description: `<ul><li>BHARAT RATNA Pt. Bhimsen Joshi 'practise' sketch before the one on Jan 24 2021</li></ul>` 
          },
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}GandhiShastri20202.jpg`, 
             description: `<ul>
                            <li>Mahatma Gandhi, Lal Bahadur on their birth anniversary, which is the same date Oct 2</li>
@@ -311,10 +340,14 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
                           </ul>` 
          },
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}UnsignedWIPBalasaheb_NetajiJan232021.jpeg`, 
             description: '<p>Bal Thackeray and Netaji attempt - their birth anniv Jan 23 2021</p>' 
          }, //
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}LataYoungOct2020.jpg`, 
             description: `<ul>
                            <li><em>This sketch is sooo inaccurate that I almost passed sharing it)</em></li>
@@ -322,6 +355,8 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
                            </ul>` 
          },
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}BigBOct2020.jpg`, 
             description: `<ul>
                            <li>Haiiin Haaainin. Ye Kya baat hui na bhai?></li>
@@ -329,10 +364,14 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
                            </ul>` 
          }, //BigBOct2020
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}UnsignedWIPActressNutanAttemptJan2021.jpeg`, 
             description: '<p>Attempt to sketch Nutan Jan 2021</p>' 
          },
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}ConneryOct312020.jpg`, 
             description: 
                         `<ul>
@@ -342,6 +381,8 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
                         </ul>` 
          },
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}AndersonOct2020.jpg`, 
             description: 
                         `<ul>
@@ -351,6 +392,8 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
                             * watched live streaming of 50th anniversary of 'Aqualung' in March (?) 2021` 
          },
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}VanHalenOct62020.jpg`, 
             description: 
                         `<ul>
@@ -358,13 +401,20 @@ description: `<ul><li> Old Bombay Friday sketch June 23 2023 </li><li> Attempt t
                            <li> Diddnt listen to much Van Halen, but liked very much what I heard</li></ul>` 
          },
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}JohnLennon.jpg`, 
             description: '<p>Quick Lennon sketch <em>Think</em> Q1 2021</p>' 
          },
          {
+            canvassSize:  'A4',
+            content:  'black-white',
             fullFileName: `${this.imageRoot}Freddy.jpg`, 
                                                     description: '<p>Quick Freddy Mercury sketch <em>Think</em> Q1 2021</p>' },
-                                                    {fullFileName: `${this.imageRoot}MalcolmM04192021.jpg`, 
+         {
+            canvassSize:  'A4',
+            content:  'black-white',
+         fullFileName: `${this.imageRoot}MalcolmM04192021.jpg`, 
                                                                  description: '<p>Badly drawn Malcolm Marshal sketch April 18 2021 - his birthday/p>' }
              ]
           },

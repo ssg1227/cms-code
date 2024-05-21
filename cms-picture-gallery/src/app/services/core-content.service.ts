@@ -530,7 +530,7 @@ export class CoreContentService {
                   stylingObject.image = `${stylingObject.image} card-image-mix` ;
                   break ;
           case 'poem black-white': returnHTML = `${returnHTML}Drawing + poetry`; 
-                  stylingObject.outer = 'card-default' ;
+                  stylingObject.outer = 'card-default card-mix' ;
                   stylingObject.image = `${stylingObject.image}` ;
                   break ;
           case 'other-combo': returnHTML = `${returnHTML} Mix of different types, like sketch + photo`; 
@@ -541,7 +541,7 @@ export class CoreContentService {
                   stylingObject.outer = 'card-default' ;
                   stylingObject.image = `${stylingObject.image} card-other` ;break ;
         }
-        if(fileDetail.canvassSize === 'soft') {
+        if(fileDetail.canvassSize === 'soft' || fileDetail.content ==='other-combo' ) {
           
           stylingObject.image = `${stylingObject.image} card-image-softcopy`
           console.log(`####fileDetail.canvassSize ${stylingObject.image}`)

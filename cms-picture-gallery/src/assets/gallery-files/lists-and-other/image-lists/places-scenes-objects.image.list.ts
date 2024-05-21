@@ -408,7 +408,8 @@ ratingYear:  2023,
                      <li>worth posting prior iteration</li>
                      </ul>`
                      }]
-                 } ,{  fullFileName: `${this.imageRoot}IAFHerculesJuly10-final-1.jpeg`, 
+                 } ,{  canvassSize: 'A4', content:'black-white',
+                 fullFileName: `${this.imageRoot}IAFHerculesJuly10-final-1.jpeg`, 
          description: '<p>Inspirational Sketch</p>',
          iterations:[{
              fullFileName: `${this.imageRoot}IAFHerculesJuly10-final-1.jpeg`, 
@@ -439,7 +440,7 @@ ratingYear:  2023,
          description: '<p>General Jet fighter and Navy scene - completely fictitious - Feb 11 2021</p>',
          canvassSize: 'A4', content:'black-white',
         dateUploaded: '02-08-2023' }
-         ,{  fullFileName: `${this.imageRoot}TankerInStormJuly9-2021-2.jpeg`, 
+         ,{  canvassSize: 'A4', content:'black-white', fullFileName: `${this.imageRoot}TankerInStormJuly9-2021-2.jpeg`, 
          description: '<p>Inspirational Sketch</p>',
          iterations:[{
              fullFileName: `${this.imageRoot}TankerInStormJuly9-2021-2.jpeg`, 
@@ -463,22 +464,22 @@ ratingYear:  2023,
              </ul>`
              }]
          },{
-                        fullFileName: `${this.imageRoot}GeneralNatureScene.jpg`,
+            canvassSize: 'A4', content:'black-white', fullFileName: `${this.imageRoot}GeneralNatureScene.jpg`,
                         description: '<p>General scene</p>' 
                   },
                   {
-                        fullFileName: `${this.imageRoot}shadingpractise.jpg`, 
+                        canvassSize: 'A4', content:'black-white',fullFileName: `${this.imageRoot}shadingpractise.jpg`, 
                         description: `<p>Trying out the 'H' and the 'B' shading pencil combos </p>`,
                   },
                   {     
-                        fullFileName: `${this.imageRoot}GeneralRaiderAttacksWW2.jpg`, 
+                        canvassSize: 'A4', content:'black-white',fullFileName: `${this.imageRoot}GeneralRaiderAttacksWW2.jpg`, 
                         description: `<ul>
                         <li>Q1-Q2 2021 - having read lot of commando comics as a kid, a favorite theme of mine - aerial combat WW2</li>
                         <li>Probably Battle of Britain German Bombers being attacked by Brit Spitfires and defended by Me-109s</li>
                         <li>See attempt to draw cliffs of Dover</li></ul>`,
                   },
                   {
-                        fullFileName: `${this.imageRoot}NaviTaskForceOutsideSF.jpg`, 
+                        canvassSize: 'A4', content:'black-white',fullFileName: `${this.imageRoot}NaviTaskForceOutsideSF.jpg`, 
                         description: `<ul>
                                           <li>Seemingly attempting to sketch a US supercarrier force outside SFO, it is not so</li>
                                           <li>The bridge, for example is NOT the Golden Gate</li>
@@ -522,7 +523,7 @@ ratingYear:  2023,
                                                },
                                           ]
                                     },{
-                         fullFileName: `${this.imageRoot}GoldenGateAirShowJune222021_2.jpeg`, 
+                                          canvassSize: 'A4', content:'black-white', fullFileName: `${this.imageRoot}GoldenGateAirShowJune222021_2.jpeg`, 
                          description: `<ul><li>Completely fictitious (I guess they'd NEVER close down sea traffic in the Bay)</li>
                                           <li>Air Show theme - attempt to sketch two 'thrust vectored' aircraft types</li></ul>`,
                          iterations: [
@@ -547,7 +548,9 @@ ratingYear:  2023,
                          ]
                    },
                    {   
-                        fullFileName:  `assets/all-images/ships/OurAcuraJune21-2021-3-scene.jpeg`, 
+                        canvassSize: 'A4', content:'black-white',
+                        // /Users/Shantanu/Documents/GitHub/cms-code/cms-picture-gallery/src/assets/gallery-files/images/transports-and-machines/machines-others/planes-ships-cars/OurAcuraJune21-2021-3-scene.jpeg
+                        fullFileName:  `assets/gallery-files/images/transports-and-machines/machines-others/planes-ships-cars/OurAcuraJune21-2021-3-scene.jpeg`, 
                         description: `<ul><li>In two places - under 'cars' as well as in 'places, scenes and objects'</li>
                                      <li> was just a car, added backdrop - attempt at SF end of Golden Gate 06/23/2021</li>
                                      <li>A most fascinating car - attempt to draw 2011 Acura TL (tech package)</li>
