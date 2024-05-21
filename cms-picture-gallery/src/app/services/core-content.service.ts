@@ -161,9 +161,14 @@ export class CoreContentService {
       this.contentList.push( { contentFile:new PlanesShipsCars2ImageList(),contentCategory:'planes-ships-cars-2', roles:['non-living,  non-religious'],latest:true}) ;
  
     let me = this;
+    this.sketchStats.totalCounts = 0;
+    this.sketchStats.subjects = 0;
     this.contentList.forEach((contentItem:ContentList) =>{
       me.collectThemeBasedStats(contentItem);
     });
+  }
+  clearContentList() {
+    this.contentList = [];
   }
   loadSelectedContent(strParam:string):any {
       if (this.contentList === null || this.contentList.length === 0) {
@@ -296,6 +301,7 @@ export class CoreContentService {
      // revisit this logic
     }
   collectThemeBasedStats(contentList:ContentList) {
+    
     let themeCount = {
       name: contentList.contentFile.allImageList[0].theme,
       count: 0

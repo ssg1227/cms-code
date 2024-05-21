@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
+import { CoreContentService } from './core-content.service';
 
+import { Router } from '@angular/router';
 interface User {
   userName: string;
   userRoles: string[] ;
@@ -70,7 +72,7 @@ export class AuthService {
     "technician",
     "other"
   ]
-  constructor() { }
+  constructor(private router:Router, private coreContentService:CoreContentService) { }
   login(username:string){
     this.clearCaches() ;
     
@@ -96,7 +98,7 @@ export class AuthService {
         userRoles: ["non-religious"] } ;
     if (!loggedinUser ) {
       loggedinUser =   { userName: 'default',
-      userRoles: ["sanatani", "guru"] } ;
+      userRoles: ["non-religious"] } ;
     }
     // alert(JSON.stringify(loggedinUser));
     let selectedIndex = 2 ;
@@ -125,6 +127,8 @@ export class AuthService {
     localStorage.removeItem('current-menu');
     localStorage.removeItem("isLeafParent");
     localStorage.removeItem("key");
+    this.coreContentService.clearContentList() ;
+
     /*
     localStorage.removeItem('userMenu');
     localStorage.removeItem('categories');
@@ -135,6 +139,14 @@ export class AuthService {
   }
   logout() {
    this.clearCaches();
+   this.router.navigate([`/home`]).then( (e) => {
+    
+    if (e) {
+      console.log("Navigation is successful!");
+    } else {
+      console.log("Navigation has failed!");
+    }
+  });
   }
   public get LoggedIn() : boolean {
     return localStorage.getItem('userId') !== null;
