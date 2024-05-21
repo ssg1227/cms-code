@@ -11,7 +11,11 @@
 - Authentication piece
 
 ### Log May 17-19
-- **May 20 public release** 
+- **May 20 wider(public?) release** 
+  - **EOD (approx PST)**
+    - **PENDING** in place working role based authentication
+    - image lists with sketch canvass and content complete for correct frame and background styling
+    - some basic aesthetic branch card styling (am 05/20 - think almost there)
   - **May 19 morning** Modal styling changed correction: addressed image was tiny for small screens, description was spilling onto image for large screens, 
   - **May 18 morning COMPLETED** Move logic of Styling - frames of images - black and white, combo, water colors - to service layer
   - Uploaded images categories complete, so descrption is complete as also styling based on categorization
