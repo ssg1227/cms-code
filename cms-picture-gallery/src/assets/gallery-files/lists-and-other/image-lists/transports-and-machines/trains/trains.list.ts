@@ -189,14 +189,16 @@ provides luxury facilities for low income people (This scenario is completely fi
 
         },
         { 
-            fullFileName:`${this.imageRoot}IndianRailTurntable-09212021.jpeg`,
+             
+            canvassSize: 'A4', content:'black-white',fullFileName:`${this.imageRoot}IndianRailTurntable-09212021.jpeg`,
             description: 
                 `<ul><li>I think Kalyan Steam turntable with a WG steam loco</li>
                 <li>Sketched sometime Sept 21 2021</li></ul>`,
             dateUploaded: '01-30-2023'
         },
         { 
-            fullFileName:`${this.imageRoot}pre-q3-2020-steamloco.png`,
+             
+            canvassSize: 'A4', content:'black-white',fullFileName:`${this.imageRoot}pre-q3-2020-steamloco.png`,
             description: 
                 `<ul><li>Probably some time in 2015-2016... after school and college</li>
                 <li>WP steam loco - see the changes in later versions</li></ul>`
@@ -226,12 +228,16 @@ provides luxury facilities for low income people (This scenario is completely fi
             ]
         },
         // 
-        { fullFileName:`${this.imageRoot}steamloco1-sept11-2020.jpeg`, description: '<div>Sept 11 2020</div>' },
-        { fullFileName:`${this.imageRoot}famous-trains-bct-ndls-rajdhani-90s-sept-oct-2020.jpeg`, 
+        {  
+            canvassSize: 'A4', content:'black-white',fullFileName:`${this.imageRoot}steamloco1-sept11-2020.jpeg`, description: '<div>Sept 11 2020</div>' },
+        {  
+            canvassSize: 'A4', content:'black-white',fullFileName:`${this.imageRoot}famous-trains-bct-ndls-rajdhani-90s-sept-oct-2020.jpeg`, 
         description: '<ul><li>Attempt to draw Mumbai - Delhi Rajdhani -  pre LHB, double diesel days - around Q3/Q4 2020</li></ul>' },
-        {   fullFileName:`${this.imageRoot}famous-trains-taj-express-steam-power-sept-oct-2020.jpeg`, 
+        {    
+            canvassSize: 'A4', content:'black-white',fullFileName:`${this.imageRoot}famous-trains-taj-express-steam-power-sept-oct-2020.jpeg`, 
                 description: '<ul><li>Attempt to draw Taj Express - around Q3/Q4 2020</li></ul>',
-     },{        fullFileName:`${this.imageRoot}trains-delhi-agra-taj-exp-steam-sept2020-FINAL.jpeg`, 
+     },{         
+        canvassSize: 'A4', content:'black-white',fullFileName:`${this.imageRoot}trains-delhi-agra-taj-exp-steam-sept2020-FINAL.jpeg`, 
                 description: '<ul><li>Attempt to draw Taj Express - around Q3/Q4 2020</li></ul>',
                 iterations: [
                     {   fullFileName:`${this.imageRoot}trains-delhi-agra-taj-exp-steam-sept2020-FINAL.jpeg`, 
@@ -241,7 +247,8 @@ provides luxury facilities for low income people (This scenario is completely fi
                     {   fullFileName:`${this.imageRoot}trains-delhi-agra-taj-exp-steam-sept2020.jpeg`, 
                     description: '<ul><li>Pre </li></ul>'}
                 ]},{   
-                    fullFileName:`${this.imageRoot}LatestSteamSceneQ2_2021.jpg`, 
+                    
+              canvassSize: 'A4', content:'black-white', fullFileName:`${this.imageRoot}LatestSteamSceneQ2_2021.jpg`, 
                     description: `<ul><li>This is where my drawing of trains has reached Q2 2021 - lot of emphasis on shading and surroundings</li>
                     <li>Have a couple of iterations which I feel will be worth posting</li> </ul>`,
             },,

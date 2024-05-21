@@ -36,6 +36,7 @@ public allImageList:ImageElement[]  =  [
                   }, {  
                     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/MahadevJan102022.jpeg
                     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/Shivji2022ShravanMonday_1.jpeg
+                    canvassSize: 'soft', content:'black-white',
                     fullFileName: `${this.imageRoot}mumbai-theme2.png`, 
                     description: 
                        `<ul>
@@ -50,6 +51,7 @@ public allImageList:ImageElement[]  =  [
                  ,  {  
                     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/MahadevJan102022.jpeg
                     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/Shivji2022ShravanMonday_1.jpeg
+                    canvassSize: 'A4', content:'black-white',
                     fullFileName: `${this.imageRoot}vjti.jpeg`, 
                     description: 
                     `<ul>
@@ -77,6 +79,7 @@ public allImageList:ImageElement[]  =  [
                   }, {  
                     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/MahadevJan102022.jpeg
                     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/Shivji2022ShravanMonday_1.jpeg
+                    canvassSize: 'A4', content:'black-white',
                     fullFileName: `${this.imageRoot}kite-flying.jpeg`, 
                     description: 
                        `<ul>
@@ -94,6 +97,7 @@ public allImageList:ImageElement[]  =  [
                   }, {  
                     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/MahadevJan102022.jpeg
                     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/Shivji2022ShravanMonday_1.jpeg
+                    canvassSize: 'A4', content:'black-white',
                     fullFileName: `${this.imageRoot}launch-ride.jpeg`, 
                     description: 
                        `<ul>
@@ -106,6 +110,7 @@ public allImageList:ImageElement[]  =  [
                   }, {  
                     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/MahadevJan102022.jpeg
                     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/Shivji2022ShravanMonday_1.jpeg
+                    canvassSize: 'A4', content:'black-white',
                     fullFileName: `${this.imageRoot}nehru-planetarium.jpeg`, 
                     description: 
                        `<ul>
@@ -116,6 +121,7 @@ public allImageList:ImageElement[]  =  [
                  
                   }, 
                   { 
+                    canvassSize: 'other', content:'other',
                     fullFileName: `${this.imageRoot}GatewayPrintFrameJuly2022.jpeg`,
                     iterativeText: 'Components *',
                     evolution: `
@@ -146,7 +152,8 @@ public allImageList:ImageElement[]  =  [
                     dateUploaded: '07-23-2022',
                 },
                 { 
-                    fullFileName: `${this.imageRoot}ButcherIslandElephantaFeb232022-final.jpeg`,
+                  canvassSize: 'A4', content:'black-white',
+                  fullFileName: `${this.imageRoot}ButcherIslandElephantaFeb232022-final.jpeg`,
                     description: '<p>Inspirational Sketch</p>',
                     dateUploaded: '02-24-2022',
                     iterations:[
@@ -164,7 +171,8 @@ public allImageList:ImageElement[]  =  [
                           },]
                     },
                     { 
-                    fullFileName: `${this.imageRoot}GatewayOfIndiaOutlineJan232022_5.jpeg`,
+                      canvassSize: 'A4', content:'black-white',
+                      fullFileName: `${this.imageRoot}GatewayOfIndiaOutlineJan232022_5.jpeg`,
                     description: '<p>Inspirational Sketch</p>',
                     dateUploaded: '01-15-2022',
                     iterations:[
@@ -209,7 +217,8 @@ public allImageList:ImageElement[]  =  [
                                       
                           ]
               },  { 
-                fullFileName: `${this.imageRoot}MumbaiTheme26112020_finalVer1.png`,
+                canvassSize: 'soft', content:'black-white',
+                    fullFileName: `${this.imageRoot}MumbaiTheme26112020_finalVer1.png`,
                 description: `<ul>
                 <li>26/11 Tribute - the complete compilation</li>
                 <li>..continuing from the 1st sketch, compilation which is 9 A4 size sketches 'stitched' together.. </li>
@@ -218,7 +227,8 @@ public allImageList:ImageElement[]  =  [
               </ul>`,
                 dateUploaded: '01-15-2022',
             },  { 
-              fullFileName: `${this.imageRoot}MumbaiTheme1_GodsNov2020.jpeg`,
+              canvassSize: 'A4', content:'black-white',
+                fullFileName: `${this.imageRoot}MumbaiTheme1_GodsNov2020.jpeg`,
               description: `<ul>
               <li>Top left corner piece</li>
               <li>Shree Siddhivinayak Prabhadevi</li>
@@ -230,7 +240,8 @@ public allImageList:ImageElement[]  =  [
               <li>Nov 2020 timeframe</li>
             </ul>`,
               dateUploaded: '01-15-2022',
-          },  { 
+          },  {  
+            canvassSize: 'A4', content:'black-white',
             fullFileName: `${this.imageRoot}MumbaiTheme2_PlacesofWorshipNov2020.jpeg`,
             description: `<ul>
             <li>Top center piece</li>
@@ -241,7 +252,8 @@ public allImageList:ImageElement[]  =  [
             <li>Nov 2020 timeframe</li>
           </ul>`,
             dateUploaded: '01-15-2022',
-        } , { 
+        } , {  
+          canvassSize: 'A4', content:'black-white',
           fullFileName: `${this.imageRoot}MumbaiTheme3_LifelinesNov2020.jpeg`,
           description: `<ul>
           <li>Top right piece</li>
@@ -252,7 +264,8 @@ public allImageList:ImageElement[]  =  [
           <li>(center) 'Dabbawala haathgadi'</li>
         </ul>`,
           dateUploaded: '01-15-2022',
-      }, { 
+      }, {  
+        canvassSize: 'A4', content:'black-white',
         fullFileName: `${this.imageRoot}MumbaiTheme4_SocialGathering.jpeg`,
         description: `<ul>
         <li>Center left piece</li>
@@ -263,7 +276,8 @@ public allImageList:ImageElement[]  =  [
         <li>Ganapati Visarjan - lalbaugh</li>
       </ul>`,
         dateUploaded: '01-15-2022',
-    }, { 
+    }, {  
+      canvassSize: 'A4', content:'black-white',
       fullFileName: `${this.imageRoot}MumbaiTheme5_FoodieNov2020.jpeg`,
       description: `<ul>
       <li>Center right piece - food</li>
@@ -280,7 +294,8 @@ public allImageList:ImageElement[]  =  [
       <li>Fish Patra</li>
     </ul>`,
       dateUploaded: '01-15-2022',
-  }, { 
+  }, {  
+    canvassSize: 'A4', content:'black-white',
     fullFileName: `${this.imageRoot}MumbaiTheme6_MumbaiSitesOldNov2020.jpeg`,
     description: `<ul>
       <li>Bottom Left piece - old and cultural</li>
@@ -294,7 +309,8 @@ public allImageList:ImageElement[]  =  [
       <li>High court</li>
   </ul>`,
     dateUploaded: '01-15-2022',
-}, { 
+}, {  
+  canvassSize: 'A4', content:'black-white',
   fullFileName: `${this.imageRoot}MumbaiTheme7_MumbaiSitesMidNov2020.jpeg`,
   description: `<ul>
   <li>Bottom Center piece 'middle age' architecture</li>
@@ -308,7 +324,8 @@ public allImageList:ImageElement[]  =  [
   <li>Raja Shivaji statue Shivaji Park</li>
 </ul>`,
   dateUploaded: '01-15-2022',
-}, { 
+}, {  
+  canvassSize: 'A4', content:'black-white',
   fullFileName: `${this.imageRoot}MumbaiTheme8_MumbaiTodayNov2020.jpeg`,
   description: `<ul>
   <li>Bottom Right and last piece Mumbai New Look!!</li>
@@ -319,7 +336,8 @@ public allImageList:ImageElement[]  =  [
   <li>Metro</li>
 </ul>`,
   dateUploaded: '01-15-2022',
-}, { 
+}, {  
+  canvassSize: 'A4', content:'black-white',
   fullFileName: `${this.imageRoot}MumbaiWaterFrontKashinClassApr42021.jpeg`,
   description: `<ul>
   <li>Starting out D51 INS Rajput - Navy Kashin Class destroyer - but little digressed</li>

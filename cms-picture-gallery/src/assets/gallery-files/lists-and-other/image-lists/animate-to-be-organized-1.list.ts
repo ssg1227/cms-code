@@ -13,7 +13,8 @@ public allImageList:ImageElement[]  =  [
         `Vigneshwar, Aumkar, Gamapati, Vignahartha - The Lord Ganesh, remover of Obstacles. Sketches Q1 2023 onward`,
         files: [
         {
-            fullFileName: `${this.imageRoot}WhatsApp Image 2023-02-05 at 6.57.47 AM (1).jpeg`, 
+         canvassSize:  'A4',
+         content:  'black-white',fullFileName: `${this.imageRoot}WhatsApp Image 2023-02-05 at 6.57.47 AM (1).jpeg`, 
             description: `<ul>
             <li>3. Ishwar eBook candidate Durga adhyaya one Shree Narayan Asleep Madhiu Kaitabh MISSNG HARD COPY April 8 2022</li>
             </ul>`,
@@ -21,7 +22,8 @@ public allImageList:ImageElement[]  =  [
             
          },
          {
-            fullFileName: `${this.imageRoot}WhatsApp Image 2023-02-05 at 6.57.47 AM (2).jpeg`, 
+            canvassSize:  'A4',
+content:  'black-white',fullFileName: `${this.imageRoot}WhatsApp Image 2023-02-05 at 6.57.47 AM (2).jpeg`, 
              description: `<ul>
             <li>4. Ishwar eBook candidate Durga adhyaya one Shree Narayan killings Madhiu Kaitabh April 20 2022
             </li>
@@ -29,7 +31,8 @@ public allImageList:ImageElement[]  =  [
              dateUploaded: '01-23-2023',
             
          }, {
-            fullFileName: `${this.imageRoot}WhatsApp Image 2023-02-05 at 6.57.47 AM.jpeg`, 
+            canvassSize:  'A4',
+content:  'black-white',fullFileName: `${this.imageRoot}WhatsApp Image 2023-02-05 at 6.57.47 AM.jpeg`, 
             description: `<ul>
             <li>1. Ishwar eBook candidate Durga adhyaya one pundit and king depressed 03-30-2022
             </li>
@@ -38,7 +41,8 @@ public allImageList:ImageElement[]  =  [
             
          },
          {
-            fullFileName: `${this.imageRoot}WhatsApp Image 2023-02-05 at 6.59.54 AM.jpeg`, 
+            canvassSize:  'A4',
+content:  'black-white',fullFileName: `${this.imageRoot}WhatsApp Image 2023-02-05 at 6.59.54 AM.jpeg`, 
              description: `<ul>
             <li>2. Ishwar eBook candidate Durga adhyaya one Pundit and king at Ashram  03-30-2022
             </li>

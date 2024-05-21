@@ -120,6 +120,8 @@ CURRENT Mirage 2000, Mig29 Tejas, Rafalle , Su 30
                   },]
                 },
                 {
+                    canvassSize:  'A4',
+                    content:  'black-white',
                     fullFileName: `${this.imageRoot}MiscManOnTheMove-mid2021.jpeg`,  description: `<ul>
                     <li>Generic 'humans on the move' theme - </li>
                     </ul>`,
@@ -135,6 +137,7 @@ CURRENT Mirage 2000, Mig29 Tejas, Rafalle , Su 30
                    dateUploaded: '02-02-2023',
                    },
                 {
+                    canvassSize: 'soft', content:'poem black-white',   
                     fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q4-2021-ganesh/GaneshJayanti_Bhimsen_collage040222.jpeg`, 
                     description: '<p>Feb 4 2022 Ganesh Jayanti collage with Pt Bhimsen Joshi 100th birth anniversary</p>',
                     dateUploaded: '02-04-2022',
@@ -144,25 +147,31 @@ CURRENT Mirage 2000, Mig29 Tejas, Rafalle , Su 30
                     evolutionSequence: 2, evolutionDate: '04-02-2022',
                     duplicate: true,
                  },
-                 {  fullFileName: `${this.imageRoot}Golden-Gate-cal-2022.png`, 
+                 {  canvassSize: 'soft', content:'color-pencil',   
+                    fullFileName: `${this.imageRoot}Golden-Gate-cal-2022.png`, 
              description: `<ul>
           <li>HAPPY NEW YEAR 2022 </li>
           <li>Dec 30 2021</li>
       </ul>`
  ,
  dateUploaded: '12-30-2021',
- },   {  fullFileName: `${this.imageRoot}sydney-cal-2022.png`, 
+ },   {  canvassSize: 'soft', content:'color-pencil',   
+ fullFileName: `${this.imageRoot}sydney-cal-2022.png`, 
  description: `<ul>
 <li>HAPPY NEW YEAR 2022 </li>
 <li>Dec 30 2021</li>
 </ul>`
 ,
 dateUploaded: '12-30-2021',
-},{  fullFileName: `${this.imageRoot}MaryEaster2021.jpg`,
+},{  canvassSize:  'A4',
+content:  'black-white',
+fullFileName: `${this.imageRoot}MaryEaster2021.jpg`,
                     description: `<ul>
                                     <li>Easter 2021. Attempt at Mother Mary</li>
                                     </ul>`},
-                    {  fullFileName: `${this.imageRoot}anticovidthemeMay72021.jpg`,
+                    {  canvassSize:  'A4',
+                    content:  'black-white',
+                    fullFileName: `${this.imageRoot}anticovidthemeMay72021.jpg`,
                        description: `<ul>
                                         <li>Around May 2021, there was a drive to come up with some artwork against Covid</li>
                                         <li>This has two three aspects - 1 based on the Iwo Jima memorial, Arlington, VA</li>
@@ -170,7 +179,9 @@ dateUploaded: '12-30-2021',
                                         <li>'Here comes the Sun' puntentional - The Beatles' number has positive lyrics</li>
                                     </ul>`
                     },,
-                    {  fullFileName: `${this.imageRoot}MemorialTheme2021Mobile.jpg`,
+                    {  canvassSize:  'A4',
+                    content:  'black-white',
+                    fullFileName: `${this.imageRoot}MemorialTheme2021Mobile.jpg`,
                        description: `<ul>
                                         <li>Using the previous, created this for Memorial Day 2021 - this for narrow screen sizes</li>
                                     </ul>`,
@@ -189,12 +200,16 @@ dateUploaded: '12-30-2021',
                             },
                         ]
                     }, {
-                            fullFileName: `${this.imageRoot}SachinPose.jpg`,
+                        canvassSize:  'A4',
+                        content:  'black-white',
+                        fullFileName: `${this.imageRoot}SachinPose.jpg`,
                             description: `<ul>
                                          <li>Attempt to draw cricket - drawn off a Sachin Tendulkar shot - May 2021</li>
                                      </ul>`,
                         }, {
-                            fullFileName: `${this.imageRoot}Sunnypose.jpg`,
+                            canvassSize:  'A4',
+                    content:  'black-white',
+                    fullFileName: `${this.imageRoot}Sunnypose.jpg`,
                             description: `<ul>
                                          <li>Attempt to draw cricket - drawn off a Sunny Gavaskar shot - May 2021</li>
                                      </ul>`,
