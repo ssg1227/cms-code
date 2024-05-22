@@ -199,7 +199,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     {
         parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte-q1-2024", levelIndex:2, isLeafParent:true, roles:['superuser','sanatani'],
         label: "Shree Ganesh Q1 2024 onward",
-        description:'Sketches of, and including Shree Ganesh Q1 2023 onward', 
+        description:'Sketches of, and including Shree Ganesh Q1 2024 onward. featuring the first of watercolor pencil drawings', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
