@@ -251,7 +251,7 @@ provides luxury facilities for low income people (This scenario is completely fi
               canvassSize: 'A4', content:'black-white', fullFileName:`${this.imageRoot}LatestSteamSceneQ2_2021.jpg`, 
                     description: `<ul><li>General, but tending to IR's WG locomotive</li><li>This is where my drawing of trains has reached Q2 2021 - lot of emphasis on shading and surroundings</li>
                     <li>Have a couple of iterations which I feel will be worth posting</li> </ul>`,
-            },,
+            },
             {  fullFileName: `${this.imageRoot}TajExpressQ32021.jpeg`, 
             canvassSize: 'A4', content:'black-white',
             description: `<p>Q3 2021< - Taj express (again)</p>`

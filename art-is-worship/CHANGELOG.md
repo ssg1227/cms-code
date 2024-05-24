@@ -11,6 +11,9 @@
 - Authentication piece
 
 ### Log May 17-19
+- **May 24** 
+  - Getting automated upload of images and lists update to work - full stack using angular, java spring boot
+  - Added a new list - steam (IR locomotives)
 - **May 20 wider(public?) release** 
   - **EOD (approx PST)**
     - **PENDING** in place working role based authentication

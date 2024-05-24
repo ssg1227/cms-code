@@ -19,7 +19,54 @@ public allImageList:ImageElement[]  =  [
     files: [ 
       // ${this.imageRoot}Deccan-Queen-11-25to12-01-2022-raw.jpeg 
       // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/${this.imageRoot}Deccan-Queen-11-25to12-07-2022-FINAL.png 
-       
+      {  
+        fullFileName: `${this.imageRoot}TajExpressMay242024-1-scan.jpeg`, 
+        description: 
+        `<ul>
+            <liThe Taj Express was started in 1964 to serve tourists traveling from Delhi to Agra. It reduced the traveling time from over three hours to around two and a half hours.</li> 
+            <li>A long time traditional blue and cream livery and the famous WP5 steam loco used way past Diesel-Electric locos and Electrification, the train is now hauled by Electric Locos]
+             and extended to Jhansi </li> 
+            <li>The train now has the LHB coaches </li> 
+            <li>This is the final version - completed May 24 2024 and scaanned</li>
+        </ul>`,
+            dateUploaded: '05-24-2024',
+            evolution: `Unique conbination of watercolor pencil image of the loco shrunk and copied from another sketch, and the train and scene drawn 'around it<br/>`,
+            evolutionSequence: 3, evolutionDate: '05-24-2024',
+            rating:1,
+            canvassSize:'A4',
+            content: 'color-pencil',
+
+            iterations:[    {  
+                fullFileName: `${this.imageRoot}TajExpressMay242024-1-scan.jpeg`, 
+                description: 
+                `<ul>
+                    <liThe Taj Express was started in 1964 to serve tourists traveling from Delhi to Agra. It reduced the traveling time from over three hours to around two and a half hours.</li> 
+                    <li>A long time traditional blue and cream livery and the famous WP5 steam loco used way past Diesel-Electric locos and Electrification, the train is now hauled by Electric Locos]
+                     and extended to Jhansi </li> 
+                    <li>The train now has the LHB coaches </li> 
+                    <li>This is the final version - completed May 24 2024 and scaanned</li>
+                </ul>`}, 
+                  {  
+                    fullFileName: `${this.imageRoot}TajExpressMay242024-1.jpeg`, 
+                    description: 
+                    `<ul>
+                        <liThe Taj Express was started in 1964 to serve tourists traveling from Delhi to Agra. It reduced the traveling time from over three hours to around two and a half hours.</li> 
+                        <li>A long time traditional blue and cream livery and the famous WP5 steam loco used way past Diesel-Electric locos and Electrification, the train is now hauled by Electric Locos]
+                         and extended to Jhansi </li> 
+                        <li>The train now has the LHB coaches </li> 
+                        <li>This is the penultimate version - May 24 2024 and photographed by iPhone</li>
+                    </ul>`}, 
+                    {  
+                      fullFileName: `${this.imageRoot}TajExpressMay-22-2024-base.jpeg`, 
+                        description: 
+                        `<ul>
+                            <liThe Taj Express was started in 1964 to serve tourists traveling from Delhi to Agra. It reduced the traveling time from over three hours to around two and a half hours.</li> 
+                            <li>A long time traditional blue and cream livery and the famous WP5 steam loco used way past Diesel-Electric locos and Electrification, the train is now hauled by Electric Locos]
+                             and extended to Jhansi </li> 
+                            <li>The train now has the LHB coaches </li> 
+                            <li>This is the base 'template' watercolor pencil image of the loco shrunk and copied from another sketch, and the train and scene drawn 'around' </li>
+                        </ul>`}]
+      },
         {  
             fullFileName: `${this.imageRoot}Deccan-Queen-11-25to12-07-2022-FINAL.png`, description: 
             `<ul>

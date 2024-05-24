@@ -18,7 +18,20 @@ public allImageList:ImageElement[]  =  [
      themeSummary:
             `Dedicated to the Glorious Steam Era of the Indian Railway as on May 2024 mostly focussed on WP and WG locos`,
     files: [ ,
-        { 
+        {
+            canvassSize: 'A4',
+            content: 'black-white',
+            dateUploaded: '05-24-2024',
+            fullFileName: `assets/gallery-files/images/transports-and-machines/trains/steam/WGMay172024-3.jpeg`,
+            description: `<ul><li> WG Steam locomotive, Good trains workhorse of the IR during the Steam Era </li><li> One sitting May 17 2024 </li></ul>`,
+            rating: 1,
+            ratingYear: 2024,
+            iterations: [
+            {fullFileName: `assets/gallery-files/images/transports-and-machines/trains/steam/WGMay172024-3.jpeg`, description: `<ul><li> WG Steam locomotive, Good trains workhorse of the IR during the Steam Era </li><li> One sitting May 17 2024 </li></ul>` },
+            {fullFileName: `assets/gallery-files/images/transports-and-machines/trains/steam/WGMay172024-2.jpeg`, description: `<ul><li> WG Steam locomotive, Good trains workhorse of the IR during the Steam Era </li><li> One sitting May 17 2024 </li></ul>` },
+            {fullFileName: `assets/gallery-files/images/transports-and-machines/trains/steam/WGMay172024-1.jpeg`, description: `<ul><li> WG Steam locomotive, Good trains workhorse of the IR during the Steam Era </li><li> One sitting May 17 2024 </li></ul>` },
+            ]
+            },{ 
              
             canvassSize: 'A4', content:'black-white',fullFileName:`assets/gallery-files/images/transports-and-machines/trains/IndianRailTurntable-09212021.jpeg`,
             duplicate:true,
