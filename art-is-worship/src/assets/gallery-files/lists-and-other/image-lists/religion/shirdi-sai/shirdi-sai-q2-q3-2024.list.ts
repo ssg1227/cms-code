@@ -18,7 +18,22 @@ public allImageList:ImageElement[]  =  [
         themeSummary: 
         `<p> <em><strong>Soo many sketches of Shirdi Sai!!!</strong> that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha</em><br/>
         &nbsp;&nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
-        files: [ {
+        files: [  {
+            canvassSize: 'A3',
+            content: 'color-pencil',
+            dateUploaded: '05-24-2024',
+            evolution: `<b>Drawn on 11x17 - had to scan in parts and stitch since I have a regular A4 scanner<br/></B>`,
+            evolutionSequence: 3,
+            evolutionDate: '05-24-2024',
+            fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q1-2024/GuruInBayAreaWithGanesh0510-2224.jpeg`,
+            description: `<ul><li> Attempt to symbolize the astitva of the Guru in Bay Area, Northern California (and surrounding) </li><li> The lower portion attempts to show Golden Gate Bridge, Prescribed burning process to try prevent wildfires, Altamont pass windmills..(Earth, Water, Air, Fire, Wind..) </li><li> Drawn on 11x17 - had to scan in parts and stitch since I have a regular A4 scanner </li><li> Original May 10, added Ganesh May 22 2023 </li></ul>`,
+            rating: 1,
+            duplicate:true,
+            ratingYear: 2024,
+            iterations: [
+            {fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q1-2024/GuruInBayAreaWithGanesh0510-2224.jpeg`, description: `<ul><li> Attempt to symbolize that in the presence, the astitva of the Guru in Bay Area, Northern California (and surrounding) </li><li> The lower portion attempts to show Golden Gate Bridge, Prescribed burning process to try prevent wildfires, Altamont pass windmills..(Earth, Water, Air, Fire, Wind..) </li><li> Drawn on 11x17 - had to scan in parts and stitch since I have a regular A4 scanner </li><li> Original May 10, added Ganesh May 22 2023 </li></ul>` },
+            {fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q1-2024/GuruInBayArea051024.jpeg`, description: `<ul><li> Attempt to symbolize that in the presence, the astitva of the Guru in Bay Area, Northern California (and surrounding) </li><li> The lower portion attempts to show Golden Gate Bridge, Prescribed burning process to try prevent wildfires, Altamont pass windmills..(Earth, Water, Air, Fire, Wind..) </li><li> Drawn on 11x17 - had to scan in parts and stitch since I have a regular A4 scanner </li><li> Original May 10, added Ganesh May 22 2023 </li><li> THIS IS THE ORIGINAL (without Ganesh ji) but added in this sequence anyway </li></ul>` },
+           ]},{
             canvassSize:  'A4',
             content:  'black-white',
             dateUploaded:  '04-14-2024',
