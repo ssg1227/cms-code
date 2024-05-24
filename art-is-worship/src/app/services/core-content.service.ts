@@ -31,7 +31,7 @@ import { AnimateToBeOrganized1ImageList } from 'src/assets/gallery-files/lists-a
 import { TrainImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains.list';
 import { TrainsIndianRailwaySpecialTrains } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains-indian-railway-special-trains';
 import { TrainsIndianRailwayAlcos } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains-indian-railway-alcos';
-
+import {TrainsIndianRailwaySteam } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains-indian-railway-steam';
 import {  PlanesShipsCarsImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/planes-ships-cars.image.list';
 import {  PlanesShipsCars2ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/planes-ships-cars-2.image.list';
 import { MumbaiMeriJaanList } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan.list';
@@ -152,6 +152,7 @@ export class CoreContentService {
 
       this.contentList.push( { contentFile:new TrainImageList(),contentCategory:'trains', roles:['non-living,  non-religious'],latest:true}) ;
       this.contentList.push( { contentFile:new TrainsIndianRailwayAlcos(),contentCategory:'trains-ir-alcos', roles:['non-living,  non-religious'],latest:true}) ;
+      this.contentList.push( { contentFile:new TrainsIndianRailwaySteam(),contentCategory:'trains-ir-steam', roles:['non-living,  non-religious'],latest:true}) ;
       this.contentList.push( { contentFile:new TrainsIndianRailwaySpecialTrains(),contentCategory:'trains-ir-special-trains', roles:['non-living,  non-religious'],latest:true}) ;
       this.contentList.push( { contentFile:new MumbaiMeriJaanList(),contentCategory:'mumbai-meri-jaan', roles:['non-living,  non-religious']}) ;
       this.contentList.push( { contentFile:new MumbaiMeriJaan2List(),contentCategory:'mumbai-meri-jaan-2', roles:['non-living,  non-religious'],latest:true}) ;
@@ -181,6 +182,7 @@ export class CoreContentService {
           case 'showpiece': 
           case 'showpiece-2022': 
           case 'showpiece-2023': 
+          case 'showpiece-2024': 
             if (strParam.indexOf('-') > 0) {
               themeYear =  strParam.split('-')[1] ;
               yearSelected = parseInt(themeYear);
@@ -374,7 +376,7 @@ export class CoreContentService {
     console.log(`YEAR ${year}`);
     if(currentList.contentFile.allImageList && currentList.contentFile.allImageList[0].files) {
       currentList.contentFile.allImageList[0].files.forEach((fileItem:any) => {
-        if (fileItem.rating  && fileItem.rating === 1) {
+        if (fileItem.rating  && fileItem.rating === 1 && !fileItem.duplicate) {
           let fileYear= fileItem.ratingYear ? fileItem.ratingYear : 
             fileItem.dateUploaded ? new Date(fileItem.dateUploaded).getFullYear() : 1990 ;
             let ratingYear = year === 0 ? 2021 : year ;

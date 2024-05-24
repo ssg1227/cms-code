@@ -600,6 +600,17 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'trains-ir-alcos', label: 'ALCO WDMx: a tribute'}
         ],
     }, {
+        parentKey:"railways", key: "trains-ir-steam", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','all'],
+        label: "Indian Railways: The Glorious Steam Era",
+        description:`Dedicated to the Glorious Steam Era of the Indian Railway as on May 2024 mostly focussed on WP and WG locos`,
+        
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'transport-and-machines', label: 'Transport And Machines'},
+            {link: '/view', params:'railways', label: 'Railways'},
+            {link: '', params:'trains-ir-steam', label: 'Indian Railways: The Glorious Steam Era'}
+        ],
+    }, {
         parentKey:"railways", key: "trains-ir-special-trains", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','all'],
         label: "Landmark Trains",
         description:`Some Special and Legendary Trains. As most of this category domain, it covers IR`,
