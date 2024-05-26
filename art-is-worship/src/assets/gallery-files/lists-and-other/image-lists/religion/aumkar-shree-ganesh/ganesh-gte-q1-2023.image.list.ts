@@ -12,6 +12,15 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2023 onward`,
         files: [
+{
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '05-26-2024',
+fullFileName: `${this.imageRoot}GaneshDec72023.jpeg`,
+description: `<ul><li> Based out of black and white version Jan 2022 </li><li> December 7 2023 </li></ul>`,
+rating:  1,
+ratingYear:  2023,
+},
          {
 
    generic: 'true',
