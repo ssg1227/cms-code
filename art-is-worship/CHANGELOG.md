@@ -8,8 +8,23 @@
 - in memory - caching, avoiding time outs
 - email form 
 - put hard coded paths behind variables, and find right place to keep these variables (e.g. global version of imageRoot)
+### May 27-31
+- *** Crossed unique 400 image sets May 27 4:30 PM PST**
+- **Automated full stack image loader and list updating app issues**
+    - in inserting JSON to list file, sometimes, it screws up the structure.. eats up some commas, etc
+    - Have to refresh browser for new image (set) upload... need to revisit reset and refresh logic
+    - Add canvassMaterial
 - Authentication piece
-
+- Compile Summary text to place below below thumnbnails and/or tooltip (which is showing html tagged description)
+- **RESOLVED - Total based on sketch (Object) not jpegs uploades** Check counts - it should be total counts of file JSON objects across lists (not jpeg, because that pulls in iterations as well; duplicate logic is handled)
+- Scrub data, replace with neutral content for public share
+###  Log May 22 - 26
+- (trivial but) collaborative user added to the Git account and development continued on my original Macbook air
+- **Automated full stack image loader and list updating programs updated and being used to upload images and update image lists**
+  - Angular form based app as front end
+  - Java Spring boot app to update 
+  - this is file handling - moving files (images from download folder to assets/... in the app) and inserting text in list files
+  - **--Still some logic changes required-- but.. WORKING**
 ### Log May 17-19
 - **May 24** 
   - Getting automated upload of images and lists update to work - full stack using angular, java spring boot

@@ -18,8 +18,22 @@ public allImageList:ImageElement[]  =  [
         themeSummary: 
         `<p> <em><strong>Soo many sketches of Shirdi Sai!!!</strong> that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha</em><br/>
         &nbsp;&nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
-        files: [  {
-            canvassSize: 'A3',
+        files: [  
+{
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '05-27-2024',
+fullFileName: `${this.imageRoot}BabaMay22024.jpeg`,
+description: `<ul><li> General Baba on Stone </li></ul>`,
+},
+{
+canvassSize:  'soft',
+content:  'black-white',
+dateUploaded:  '05-27-2024',
+fullFileName: `${this.imageRoot}SaiMay232024-soft.jpeg`,
+description: `<ul><li> Based of the larger sketch themed 'Guru in Bay Area' (see previous) </li><li> May 23 2024  </li></ul>`,
+},
+     {      canvassSize: 'A3',
             content: 'color-pencil',
             dateUploaded: '05-24-2024',
             evolution: `<b>Drawn on 11x17 - had to scan in parts and stitch since I have a regular A4 scanner<br/></B>`,

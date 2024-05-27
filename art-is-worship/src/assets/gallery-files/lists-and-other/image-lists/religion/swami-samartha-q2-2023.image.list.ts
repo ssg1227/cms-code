@@ -19,8 +19,17 @@ export class SwamiSamarthaQ22023ImageList { // SwamiSamarthaImageList
             theme:'SHree Swami Samartha',
             themeSummary:
             `Swami Samartha the 4th Avatar of Shree Dattatreya (sequence include Lord Datta himself). Swami sketches have become numerous, so created this new category Q2 2023 - July 8 2023.`,
-            files: [  {
-                canvassSize:  'A5',
+            files: [  
+{
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  '05-27-2024',
+fullFileName: `${this.imageRoot}SwamiFrmNrusimhaSaraswatiColor042524.jpeg`,
+description: `<ul><li> Based on a black and white sketch of Nrusimha Saraswati (Jan 13-14 2024) </li><li> Made two light copies of the above </li><li> One was colored to the3rd avatar, the other evolved into Swami drawing (this) </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},
+           {     canvassSize:  'A5',
                 content:  'watercolor-pencil',
                 canvassMaterial: 'watercolor paper',
                 dateUploaded:  '04-13-2024',

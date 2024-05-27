@@ -13,6 +13,29 @@ export class PeopleImageList {
          Some off the spur of the moment, spontaneous, others due to their deaths (and we have had a lot of that!!)
          Some, in fact, many are <em><strong>pretty out of shape</strong></em>, but <em>still</em> included because of the significance`,
      files: [
+{
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  '05-27-2024',
+fullFileName: `${this.imageRoot}ShivajiWCFeb212024.jpeg`,
+description: `<ul><li> RAJE!!! Water colored copy of earlier sketch  </li><li> Feb 21 2024 color version of sketch on  Shiv Jayanti March 31 2021 </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},
+{
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  '05-27-2024',
+fullFileName: `${this.imageRoot}ShivbaRamdasMar182024.jpeg`,
+description: `<ul><li> Color pencil version of the same sketched in March 2022 </li></ul>`,
+rating:  1,
+ratingYear:  2021,
+},
+{
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '05-27-2024',
+fullFileName:  `${this.imageRoot}UstaadZakirHussainApril262024.jpeg`, description: `<ul><li> Sketch of Ustad Zakir Hussain, renowned Tabla, son of the legendary Allah Rakha </li><li> Started on the heels of the Shankar Mahadevan sketch, this 'project' was put on backburner </li><li> Partly because I wasn't 'getting it right' FINALLY complete on April 26 2024 </li></ul>` },
       
 {
    canvassSize:  'A4',

@@ -15,7 +15,17 @@ public allImageList:ImageElement[]  =  [
    { 
      folder:'trains',
      files: [ 
-        { 
+        {
+            canvassSize:  'A4',
+            content:  'color-pencil black-white',
+            dateUploaded:  '05-27-2024',
+            fullFileName: `${this.imageRoot}BatasiaLoopApril192022-2.jpeg`,
+            description: `<ul><li> Batasia Loop, a point on the Darjeeling Himalayan Railway (Siliguru <->Darjeeling) </li><li> This is at or nearest the highest point  - Ghum </li><li> I travelled on this toy train when I was a kid with parents and brother </li><li> The sketch is based on a more recent photo, the Central portion having the Gorkha War memorial added later on </li><li> April 19 2024 .. final </li></ul>`,
+            iterations: [
+            {fullFileName: `${this.imageRoot}BatasiaLoopApril192022-2.jpeg`, description: `<ul><li> Batasia Loop, a point on the Darjeeling Himalayan Railway (Siliguru <->Darjeeling) </li><li> This is at or nearest the highest point  - Ghum </li><li> I travelled on this toy train when I was a kid with parents and brother </li><li> The sketch is based on a more recent photo, the Central portion having the Gorkha War memorial added later on </li><li> April 19 2024 .. final </li></ul>` },
+            {fullFileName: `${this.imageRoot}BatasiaLoopApril192022-1.jpeg`, description: `<ul><li> Batasia Loop, a point on the Darjeeling Himalayan Railway (Siliguru <->Darjeeling) </li><li> This is at or nearest the highest point  - Ghum </li><li> I travelled on this toy train when I was a kid with parents and brother </li><li> The sketch is based on a more recent photo, the Central portion having the Gorkha War memorial added later on </li><li> April 19 2024  </li></ul>` },
+            ]
+            },{ 
             fullFileName:`${this.imageRoot}Sept22-dudhsagar-falls.jpeg`,
             description:  
             `<ul><li>attempt to capture 'Dudhsagar falls railway bridge, Indian Rail, Konkan railway</li><li>Completed Sept 22 2023</li></ul>`,

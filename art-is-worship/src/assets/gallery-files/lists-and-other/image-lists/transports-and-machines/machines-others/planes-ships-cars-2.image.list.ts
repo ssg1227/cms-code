@@ -10,6 +10,45 @@ export class PlanesShipsCars2ImageList {
         themeSummary: `My first steps, my first love in this passion for sketching these are planes which I started drawing as a kid. <br/>
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
+
+{
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  '05-27-2024',
+fullFileName: `${this.imageRoot}SantMariaBasedWCFeb142024-3-photoedit-msg.jpeg`,
+description: `<ul><li> Feb 14 2024 St. Val's special - probably started week before </li><li> Based on Christopher Columbus' Santa Maria </li><li> With the Shivaji navy warship(Gurav), also for photo print and frame </li><li> (will upload pic of photo frames later) </li><li> Final with signature </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}SantMariaBasedWCFeb142024-3-photoedit-msg.jpeg`, description: `<ul><li> Feb 14 2024 St. Val's special - probably started week before </li><li> Based on Christopher Columbus' Santa Maria </li><li> With the Shivaji navy warship(Gurav), also for photo print and frame </li><li> (will upload pic of photo frames later) </li><li> Final with signature </li></ul>` },
+{fullFileName: `${this.imageRoot}SantMariaBasedWCFeb142024-2-photoedit.jpeg`, description: `<ul><li> Feb 14 2024 St. Val's special - probably started week before </li><li> Based on Christopher Columbus' Santa Maria </li><li> With the Shivaji navy warship(Gurav), also for photo print and frame </li><li> (will upload pic of photo frames later) </li><li> As the Final, photo-edited, but  before signature </li></ul>` },
+{fullFileName: `${this.imageRoot}SantMariaBasedWCFeb142024-2.jpeg`, description: `<ul><li> Feb 14 2024 St. Val's special - probably started week before </li><li> Based on Christopher Columbus' Santa Maria </li><li> With the Shivaji navy warship(Gurav), also for photo print and frame </li><li> (will upload pic of photo frames later) </li><li> As the Final, photo-edited, but  before signature </li></ul>` },
+{fullFileName: `${this.imageRoot}SantMariaBasedWCFeb142024-1.jpeg`, description: `<ul><li> Feb 14 2024 St. Val's special - probably started week before </li><li> Based on Christopher Columbus' Santa Maria </li><li> With the Shivaji navy warship(Gurav), also for photo print and frame </li><li> (will upload pic of photo frames later) </li><li> initial </li></ul>` },
+]
+},
+{
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  '05-27-2024',
+fullFileName: `${this.imageRoot}Guravtfeb192024ShivJayanti-3.jpeg`,
+description: `<ul><li> On the occasion if Shiv Jayanti, a special mention on the Maratha navy: </li><li> The Maratha Navy was the naval wing of the armed forces of the Maratha Empire , which existed from around mid-17th century to mid-18th century in the Indian Subcontinent 37 km a day Historian Sir Jadunath Sarkar noted:� “Nothing proves Chhatrapati Shivaji Maharaj's genius as a born statesman more clearly than his creation of a navy and naval bases.” </li><li> the navy possessed around 85 assorted Gallivats (warboat) ranging from 30 to 150 tons and 3 three-masted Gurabs/Grabs (warship).  </li><li> two masted Gurab </li><li> Feb 19 2024. Final </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}Guravtfeb192024ShivJayanti-3.jpeg`, description: `<ul><li> On the occasion if Shiv Jayanti, a special mention on the Maratha navy: </li><li> The Maratha Navy was the naval wing of the armed forces of the Maratha Empire , which existed from around mid-17th century to mid-18th century in the Indian Subcontinent 37 km a day Historian Sir Jadunath Sarkar noted:� “Nothing proves Chhatrapati Shivaji Maharaj's genius as a born statesman more clearly than his creation of a navy and naval bases.” </li><li> the navy possessed around 85 assorted Gallivats (warboat) ranging from 30 to 150 tons and 3 three-masted Gurabs/Grabs (warship).  </li><li> two masted Gurab </li><li> Feb 19 2024. Final </li></ul>` },
+{fullFileName: `${this.imageRoot}Guravtfeb192024ShivJayanti-2.jpeg`, description: `<ul><li> On the occasion if Shiv Jayanti, a special mention on the Maratha navy: </li><li> The Maratha Navy was the naval wing of the armed forces of the Maratha Empire , which existed from around mid-17th century to mid-18th century in the Indian Subcontinent 37 km a day Historian Sir Jadunath Sarkar noted:� “Nothing proves Chhatrapati Shivaji Maharaj's genius as a born statesman more clearly than his creation of a navy and naval bases.” </li><li> the navy possessed around 85 assorted Gallivats (warboat) ranging from 30 to 150 tons and 3 three-masted Gurabs/Grabs (warship).  </li><li> two masted Gurab </li><li> Feb 19 2024. zoomed in </li></ul>` },
+{fullFileName: `${this.imageRoot}Guravtfeb192024ShivJayanti-1.jpeg`, description: `<ul><li> On the occasion if Shiv Jayanti, a special mention on the Maratha navy: </li><li> The Maratha Navy was the naval wing of the armed forces of the Maratha Empire , which existed from around mid-17th century to mid-18th century in the Indian Subcontinent 37 km a day Historian Sir Jadunath Sarkar noted:� “Nothing proves Chhatrapati Shivaji Maharaj's genius as a born statesman more clearly than his creation of a navy and naval bases.” </li><li> the navy possessed around 85 assorted Gallivats (warboat) ranging from 30 to 150 tons and 3 three-masted Gurabs/Grabs (warship).  </li><li> two masted Gurab </li><li> Feb 11 2024. initial base </li></ul>` },
+]
+},
+{
+canvassSize:  'A4',
+content:  'color-pencil black-white',
+dateUploaded:  '05-27-2024',
+fullFileName: `${this.imageRoot}RollsMarch152024.jpeg`,
+description: `<ul><li>  2019 Rolls Royce Phantom </li><li> On the heels of Shankar( Mahadevan)'s Grammy win </li><li> Was looking for something inspirational and not much into cars so far, so.. :)  </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},
 {
 canvassSize:  'A4',
 content:  'black-white',

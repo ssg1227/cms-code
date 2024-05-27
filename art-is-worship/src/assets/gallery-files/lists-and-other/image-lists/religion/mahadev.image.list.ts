@@ -11,8 +11,15 @@ export class MahadevImageList {
          theme:'Mahadev',
          themeSummary:
          ``,
-         files: [{
-          canvassSize:  'A4',
+         files: [
+{
+canvassSize:  'A5',
+content:  'watercolor-pencil',
+dateUploaded:  '05-27-2024',
+fullFileName: `${this.imageRoot}TrishulDamruWCPA5032524.jpeg`,
+description: `<ul><li> Partly practice sketch on Watercolor paper </li><li> March 25 2024 </li></ul>`,
+},
+       {   canvassSize:  'A4',
           content:  'color-pencil black-white',
           dateUploaded:  '05-16-2024',
           fullFileName: `${this.imageRoot}ShankarPunyatithi2024.jpeg`,

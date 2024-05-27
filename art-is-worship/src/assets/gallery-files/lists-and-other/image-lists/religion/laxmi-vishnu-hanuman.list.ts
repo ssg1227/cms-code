@@ -11,6 +11,13 @@ public allImageList:ImageElement[]  =  [
              theme:'Lord Narayan, Maa Laxmi and Avatars, Shree Hanuman',
              themeSummary: `<p>Laxmi and avatars, Rukhmini, Sita, Narayan, Ram, Vithal, Narsimha, Hanuman and others.   </p>`,
              files: [
+{
+canvassSize:  'A5',
+content:  'watercolor-pencil',
+dateUploaded:  '05-27-2024',
+fullFileName: `${this.imageRoot}RamLallaWCPA5041624.jpeg`,
+description: `<ul><li> Sort of commemoratory drawing for the inauguration of Ram Mandir in Ayodhya India Jan 2024 </li><li> Ram - Watercolor paper </li><li> April 16 2024 (RamNavmi) </li></ul>`,
+},
                {  
                   // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/${this.imageRoot}mahadev/MahadevJan102022.jpeg
                   // /Users/Shantanu/Documents/GitHub/cms-code/cms-picture-gallery/src/assets/gallery-files/images/religion/mahadev-family

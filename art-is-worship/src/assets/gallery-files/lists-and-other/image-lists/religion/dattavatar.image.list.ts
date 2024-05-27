@@ -23,11 +23,67 @@ public allImageList:ImageElement[]  =  [
            there are likely to be maybe a couple of sketches of Shirdi Sai here; I have many of them, so have separate sections for the same..
         `,
         files: [
+{
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  '05-27-2024',
+fullFileName: `assets/gallery-files/images/religion/swami-samartha-q2-2023/SwamiFrmNrusimhaSaraswatiColor042524.jpeg`,
+description: `<ul><li> Based on a black and white sketch of Nrusimha Saraswati (Jan 13-14 2024) </li><li> Made two light copies of the above </li><li> One was colored to the3rd avatar, the other evolved into Swami drawing (this) </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+duplicate:true,
+},
+{
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '05-27-2024',
+fullFileName: `${this.imageRoot}NrusimhaSaraswatiColorFromBW042524-2.jpeg`,
+description: `<ul><li> Copied light the black and white version (Jan 13-14 2024) to generate color version </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}NrusimhaSaraswatiColorFromBW042524-2.jpeg`, description: `<ul><li> Copied light the black and white version (Jan 13-14 2024) to generate color version </li></ul>` },
+{fullFileName: `${this.imageRoot}NrusimhaSaraswatiColorFromBW042524-1.jpeg`, description: `<ul><li> Copied light the black and white version (Jan 13-14 2024) to generate color version </li><li> April 16-25 2024 </li></ul>` },
+]},
+{
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '05-27-2024',
+fullFileName: `${this.imageRoot}NrusimhaSaraswatiJan13-142024-5.jpeg`,
+description: `<ul><li> On the occasion of Nrusimha Saraswati Jayanti Jan 13 2024 </li><li> Completed Jan 14.. final version </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}NrusimhaSaraswatiJan13-142024-5.jpeg`, description: `<ul><li> On the occasion of Nrusimha Saraswati Jayanti Jan 13 2024 </li><li> Completed Jan 14.. final version </li></ul>` },
+{fullFileName: `${this.imageRoot}NrusimhaSaraswatiJan13-142024-4.jpeg`, description: `<ul><li> On the occasion of Nrusimha Saraswati Jayanti Jan 13 2024 </li><li> Completed Jan 14.. penultimate version </li></ul>` },
+{fullFileName: `${this.imageRoot}NrusimhaSaraswatiJan13-142024-3.jpeg`, description: `<ul><li> On the occasion of Nrusimha Saraswati Jayanti Jan 13 2024 </li><li> Completed Jan 14.. interim version </li></ul>` },
+{fullFileName: `${this.imageRoot}NrusimhaSaraswatiJan13-142024-2.jpeg`, description: `<ul><li> On the occasion of Nrusimha Saraswati Jayanti Jan 13 2024 </li><li> Completed Jan 14.. interim version </li></ul>` },
+{fullFileName: `${this.imageRoot}NrusimhaSaraswatiJan13-142024-1.jpeg`, description: `<ul><li> On the occasion of Nrusimha Saraswati Jayanti Jan 13 2024 </li><li> Completed Jan 13.. initial  capture shared for keeping the date  </li></ul>` },
+]
+},
+{
+canvassSize:  'A3',
+content:  'soft',
+dateUploaded:  '05-26-2024',
+evolution:  `Drawn on 11x17 - had to scan in parts and stitch since I have a regular A4 scanner<`,
+evolutionSequence:  4,
+evolutionDate:  '05-26-2024',
+fullFileName: `${this.imageRoot}GuruinBayAreaScanMay102024-final.jpeg`,
+description: `<ul><li> Two sets of this drawing.. One is under Ganesh after Q1 2024 </li><li> This is the scanned version. the final 'stitched' version from components </li><li> Included, following the full sketch are the different components </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}GuruinBayAreaScanMay102024-final.jpeg`, description: `<ul><li> Two sets of this drawing.. One is under Ganesh after Q1 2024 </li><li> This is the scanned version. the final 'stitched' version from components </li><li> Included, following the full sketch are the different components </li></ul>` },
+{fullFileName: `${this.imageRoot}GuruinBayAreaScanMay102024-left.jpeg`, description: `<ul><li> Two sets of this drawing.. One is under Ganesh after Q1 2024 </li><li> This is the scanned version. the final 'stitched' version from components </li><li> The left part </li></ul>` },
+{fullFileName: `${this.imageRoot}GuruinBayAreaScanMay102024-center.jpeg`, description: `<ul><li> Two sets of this drawing.. One is under Ganesh after Q1 2024 </li><li> This is the scanned version. the final 'stitched' version from components </li><li> The central part </li></ul>` },
+{fullFileName: `${this.imageRoot}GuruinBayAreaScanMay102024-right.jpeg`, description: `<ul><li> Two sets of this drawing.. One is under Ganesh after Q1 2024 </li><li> This is the scanned version. the final 'stitched' version from components </li><li> The right part </li></ul>` },
+]
+},
             {
                 canvassSize: 'A3',
                 content: 'color-pencil',
                 dateUploaded: '05-24-2024',
-                evolution: `<b>Drawn on 11x17 - had to scan in parts and stitch since I have a regular A4 scanner<br/></B>`,
+                evolution: `<b>br/></B>`,
                 evolutionSequence: 3,
                 evolutionDate: '05-24-2024',
                 fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q1-2024/GuruInBayAreaWithGanesh0510-2224.jpeg`,
