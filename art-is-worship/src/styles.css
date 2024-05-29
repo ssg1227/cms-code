@@ -16,7 +16,14 @@
 }
 
 .upper-ten {
-    height: 20%; 
+    /* height: 20%;  part of non-scrollable header, height changed to below*/
+    height: 15%; 
+    /* non scrollable header adds */
+    position: fixed;
+    top:0 ;
+    left:0 ;
+    width:95%; 
+    /* end non scrollable header adds */
     display: flex ;
     border: 2px solid slateblue ;
     background-color: rgb(195, 205, 231);
@@ -49,7 +56,12 @@
     padding:5px;
 }
 .lower-ninety {
-    height: 90%;
+    /* height: 90%; added below for fixed header changes */
+    position: fixed;
+    top:200px ;
+    left:0 ;
+    height: 80%;
+    /* .. end */
     border: 2px solid slateblue ;
     background-color: aliceblue;
     background: silver;
@@ -66,7 +78,7 @@
 }
 @media screen and (max-width:1028px) {
     .lower-ninety {
-        height: auto;
+        /* height: auto; part of non-scrollable header */
         font-size: x-large;
     }
     .responser {
