@@ -9,6 +9,7 @@
 - email form 
 - put hard coded paths behind variables, and find right place to keep these variables (e.g. global version of imageRoot)
 ### May 27-31
+- Fixed header styling changes
 - **Thumbnail label and tooltip**
   - tooltip - stripped of most if not all html tags
   - label below thumbnail image 
