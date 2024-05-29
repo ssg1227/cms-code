@@ -9,6 +9,7 @@
 - email form 
 - put hard coded paths behind variables, and find right place to keep these variables (e.g. global version of imageRoot)
 ### May 27-31
+- AddedCanvassMaterial to automated upload
 - *** Crossed unique 400 image sets May 27 4:30 PM PST**
 - **Automated full stack image loader and list updating app issues**
     - in inserting JSON to list file, sometimes, it screws up the structure.. eats up some commas, etc
