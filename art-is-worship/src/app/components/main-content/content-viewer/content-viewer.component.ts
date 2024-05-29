@@ -154,6 +154,7 @@ export class ContentViewerComponent {
                     stats.indexOf('Canvass') >= 0? element.description: `${element.description}<br/>(<em> ${stats}}</em>)` :  element.description;
                     groupImages.push(
                         { image: element.fullFileName, 
+                          summaryLabel: element.summaryLabel ? element.summaryLabel: '',
                           description:    element.description,
                           cardStyle: cardstyle
                         });
@@ -165,6 +166,7 @@ export class ContentViewerComponent {
                   fileData.fullFileName? 
                     groupImages.push({ image: fileData.fullFileName, 
                       description: fileData.description,
+                      summaryLabel: fileData.summaryLabel ? fileData.summaryLabel: '',
                       cardStyle: cardstyle}): 
                     groupImages.push({ image: `assets/all-images/${foundFolder}/${fileData.fileName}`, 
                //           description: fileData.description });
@@ -177,11 +179,13 @@ export class ContentViewerComponent {
                   this.selectedImageList.push({ 
                     iterativeText: fileData.iterativeText?`${fileData.iterativeText}`:'',
                     image: `${fileData.fullFileName}`, 
+                    summaryLabel: fileData.summaryLabel ? fileData.summaryLabel: '',
                     title: fileData.description,
                     iterations: fileData.iterations? fileData.iterations:[],
                     iterationIndex:0 }):
                   this.selectedImageList.push({ 
-                    image: `assets/all-images/${foundFolder}/${fileData.fileName}`, 
+                    image: `assets/all-images/${foundFolder}/${fileData.fileName}`,
+                    summaryLabel: fileData.summaryLabel ? fileData.summaryLabel: '', 
                     title: fileData.description,
                     iterations: fileData.iterations? fileData.iterations:[],
                     iterationIndex:0 

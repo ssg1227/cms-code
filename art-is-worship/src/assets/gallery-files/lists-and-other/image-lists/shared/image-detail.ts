@@ -2,6 +2,7 @@ export interface ImageDetail {
     imageFileName?: string; // to replace the one below with this
     fullFileName?:string; // to remove this 
     description?: string;
+    summaryLabel?:string;
     iterativeText?: string;
     footNote?: string;
     canvassSize?: string;

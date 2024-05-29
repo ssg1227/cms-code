@@ -15,6 +15,23 @@ public allImageList:ImageElement[]  =  [
    { 
      folder:'trains',
      files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '05-29-2024',
+summaryLabel:  `Indian Railway first Passenger Loco WCP 'Sir Roger Lumley'`,
+fullFileName: `${this.imageRoot}RogerLumleyLoco-4-020924.jpeg`,
+description: `<ul><li> Indian Railway first Passenger Loco WCP 'Sir Roger Lumley' </li><li> the first pasenger class (WCP) electric loco that ran on the Indian Railways. </li><li> Sketched Feb 8-9 2024 </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}RogerLumleyLoco-4-020924.jpeg`, description: `<ul><li> Indian Railway first Passenger Loco WCP 'Sir Roger Lumley' </li><li> the first pasenger class (WCP) electric loco that ran on the Indian Railways. </li><li> Sketched Feb 8-9 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}RogerLumleyLoco-3-020924.jpeg`, description: `<ul><li> Indian Railway first Passenger Loco WCP 'Sir Roger Lumley' </li><li> the first pasenger class (WCP) electric loco that ran on the Indian Railways. </li><li> Sketched Feb 8-9 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}RogerLumleyLoco-2-020824.jpeg`, description: `<ul><li> Indian Railway first Passenger Loco WCP 'Sir Roger Lumley' </li><li> the first pasenger class (WCP) electric loco that ran on the Indian Railways. </li><li> Sketched Feb 8-9 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}RogerLumleyLoco-1-020824.jpeg`, description: `<ul><li> Indian Railway first Passenger Loco WCP 'Sir Roger Lumley' </li><li> the first pasenger class (WCP) electric loco that ran on the Indian Railways. </li><li> Sketched Feb 8-9 2024 </li></ul>` },
+]
+},
         {
             canvassSize:  'A4',
             content:  'color-pencil black-white',

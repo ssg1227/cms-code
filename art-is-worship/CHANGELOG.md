@@ -14,7 +14,8 @@
   - label below thumbnail image 
     - the description is &lt;li> - extracted the first &lt;li>&lt;/li> content stripped off html tags as label
     - changed card height to auto with min hieght
-    - **TODO** add a summary label field to replace the above logic (if summarylabel not there USE the logic)
+    - added a summary label field to replace the above logic (if summarylabel not there USING the logic to extract initial text of description)
+    - factored in summary label into automation
 - Added CanvassMaterial to automated upload
 - *** Crossed unique 400 image sets May 27 4:30 PM PST**
 - **Automated full stack image loader and list updating app issues**

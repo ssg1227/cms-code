@@ -15,7 +15,8 @@ public allImageList:ImageElement[]  =  [
             // assets/all-images/religion/shree-ganesh-gte-q4-2021/GaneshDattaOct132022.jpeg
             {
                 fullFileName: `${this.imageRoot}Ashtavinayak-color.jpg`, 
-                description: '<p>Quick Sketch Memorial Day weekend 2021 HAHAH</p>',
+                summaryLabel:'Ashtavinayak (Sept 2021)',
+                description: '<p>Quick Sketch Memorial Day weekend 2021</p>',
                 iterativeText: 'Black and White / Color *',
                 footNote: '* Click to see color OR Black and white version',
                 canvassSize: 'A4', content:'color-pencil black-white',
@@ -25,6 +26,7 @@ public allImageList:ImageElement[]  =  [
                 iterations:[  
                 { 
                     fullFileName: `${this.imageRoot}Ashtavinayak-color.jpg`, 
+                    summaryLabel:'Ashtavinayak (Sept 2021)',
                     description: `<ul>
                                     <li><strong>GANAPATI BAPPA MORYA</strong></li>
                                     <li>My first attempt using color pencils, staying 'traditional' with something to do with Lord Ganesh</li>
@@ -50,6 +52,7 @@ public allImageList:ImageElement[]  =  [
                     ]
         },
         {  fullFileName: `${this.imageRoot}DancingGanpatiGaneshChaturthi09102021.jpeg`, 
+        summaryLabel:'Ganesh Chaturthi (Sept 2021)',
         canvassSize: 'A4', content:'black-white',
                 description: `<p>GANESH CHATURTHI 2021!!<ul>
                         <li>Took my time on this one - probably a month before official release Sept 10 2021 (Ganesh Chaturthi)</li>
@@ -63,6 +66,7 @@ public allImageList:ImageElement[]  =  [
        
         },
         {  fullFileName: `${this.imageRoot}GauriGanpatiGaneshChaturthi09102021.jpeg`, 
+        summaryLabel:'Gauri Ganesh Chaturthi (Sept 2021)',
         canvassSize: 'A4', content:'black-white',
         description: `<p>GANESH CHATURTHI 2021!! Gauri<ul>
                         <li>Ganesh visarjan (completion of SHree's sojourn) takes place generally 1.5. 2.5, 5, 7 and 10 days after Chaturthi</li>
@@ -78,7 +82,8 @@ public allImageList:ImageElement[]  =  [
        
         },
         {  fullFileName: `${this.imageRoot}DancingGanapatiAnantChaturdashi2021.jpeg`, 
-        canvassSize: 'A4', content:'black-white',
+        canvassSize: 'A4', content:'black-white', 
+        summaryLabel:'Anant Chaturdashi Ganesh Idol (Sept 2021)',
         description: `<p>GANESH CHATURTHI 2021!! Visarjan<ul>
                         
                         <li>10th Day is Anant Chaturdashi, a big event * in all places where Ganapati is celebrated, Esp. MUMBAI</li>
@@ -92,6 +97,7 @@ public allImageList:ImageElement[]  =  [
             rating: 1,
         },
             {  fullFileName: `${this.imageRoot}DancingGanapatiAnantChaturdashi2021COLOR2.jpeg`, 
+            summaryLabel:'Anant Chaturdashi Ganesh Idol color (Sept 2021)', 
             canvassSize: 'A4', content:'color-pencil',
             description: `<p>GANESH CHATURTHI 2021!! Visarjan Color<ul>
                         
@@ -101,6 +107,7 @@ public allImageList:ImageElement[]  =  [
             dateUploaded: '09-12-2021',
             rating: 1,
             iterations:[  {
+                summaryLabel:'Anant Chaturdashi Ganesh Idol color (Sept 2021)', 
                 fullFileName: `${this.imageRoot}DancingGanapatiAnantChaturdashi2021COLOR2.jpeg`, 
                 description: `<p>GANESH CHATURTHI 2021!! Visarjan Color<ul>
                         

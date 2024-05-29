@@ -54,6 +54,10 @@ export class CardComponent {
     return sansHTMLtag ;
   }
   get ImageLabel():string {
+    if (this.imageDetail.imageList[0].summaryLabel && this.imageDetail.imageList[0].summaryLabel.trim !== '') {
+      
+      return this.imageDetail.imageList[0].summaryLabel
+    }
     let aInd =   this.imageDetail.imageList[0].description.trim().replace(`\n`,'').replace('<ul>','')
     .replace('<li>','').trim() ;
 

@@ -20,6 +20,15 @@ public allImageList:ImageElement[]  =  [
         &nbsp;&nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
         files: [  
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '05-29-2024',
+summaryLabel:  `Baba post Ramnavmi 2024`,
+fullFileName: `${this.imageRoot}BabaApril182024.jpeg`,
+description: `<ul><li> Baba post Ramnavmi 2024 </li><li> April 18 2024 </li></ul>`,
+},
+{
 canvassMaterial:  'Watercolor paper',
 canvassSize:  'A5',
 content:  '',
