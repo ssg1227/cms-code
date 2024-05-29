@@ -10,7 +10,8 @@
    <!--- WORKING ON STITCHING OLD IMAGE LOGIC INTO THE NEW CARD TREE- BREAD CRUMB STRUCTURE-->
  <div class="card-image" [ngClass]="selectImageBorder()" *ngIf="imageDetail != null; "   (click)="expand()"  > 
  
- <img  src="{{imageDetail.imageList[0].image}}" [title]="imageDetail.imageList[0].description" [ngClass]="toggleImageSize()" >
+ <img  src="{{imageDetail.imageList[0].image}}" [title]="ToolTip" [ngClass]="toggleImageSize()" ><br/>
+ <span [innerHTML]="ImageLabel"></span>
  
  </div>
  <div>

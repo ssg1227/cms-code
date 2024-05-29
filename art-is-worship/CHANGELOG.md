@@ -9,6 +9,12 @@
 - email form 
 - put hard coded paths behind variables, and find right place to keep these variables (e.g. global version of imageRoot)
 ### May 27-31
+- **Thumbnail label and tooltip**
+  - tooltip - stripped of most if not all html tags
+  - label below thumbnail image 
+    - the description is &lt;li> - extracted the first &lt;li>&lt;/li> content stripped off html tags as label
+    - changed card height to auto with min hieght
+    - **TODO** add a summary label field to replace the above logic (if summarylabel not there USE the logic)
 - Added CanvassMaterial to automated upload
 - *** Crossed unique 400 image sets May 27 4:30 PM PST**
 - **Automated full stack image loader and list updating app issues**

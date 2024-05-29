@@ -48,6 +48,19 @@ export class CardComponent {
   get CardSelected():boolean {
     return this.cardIndex === this.cardSelected;
   }
+  get ToolTip():string {
+    let sansHTMLtag = '';
+    sansHTMLtag = this.imageDetail.imageList[0].description.replace(/<[^>]*>/g,'');
+    return sansHTMLtag ;
+  }
+  get ImageLabel():string {
+    let aInd =   this.imageDetail.imageList[0].description.trim().replace(`\n`,'').replace('<ul>','')
+    .replace('<li>','').trim() ;
+
+    aInd = aInd.substring(0, aInd.search('</li>') ) ;
+    return aInd ;
+
+  }
   expand() {
     if (this.isLarge === true) {
       return ;
@@ -88,7 +101,9 @@ export class CardComponent {
       } else  if (this.imageDetail.imageList[0].description.toLowerCase().indexOf('combination of color') >= 0){
         returnCardCSS = 'card-default card-mix'
       }
+      returnCardCSS = `${returnCardCSS} card-image-modifier` ;// image label height:auto
     }
+    
     returnCardCSS = this.isLarge === true ? `${returnCardCSS} expand` :  `${returnCardCSS} thumb`
     return returnCardCSS ;
   }
