@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+.root-frame  {
+    position: fixed;
+    top:0 ;
+    left:0 ;
+    width:95%; 
+    margin-right: 5px;
+    height:95%; 
+    padding:5px; 
+    background-color: aliceblue;
+    border: 4px outset darkblue ;
+    border-radius: 7px;
+    font-size:1vw;
+    overflow-y: auto;
+    background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
+}
+
+.upper-ten {
+    height: 20%; 
+    display: flex ;
+    border: 2px solid slateblue ;
+    background-color: rgb(195, 205, 231);
+}
+.upper-ten > H2 {
+    margin-left: 10px;
+    color: darkslateblue;
+    text-shadow: 1px 1px gray;
+}
+ #author {
+    font-size: smaller;
+    font-style: italic;
+    margin-left: 20px;
+    color: blue;
+    text-shadow: 1px 1px gray;
+}
+#upper-ten-central-box {
+    margin:auto;
+    border:1px solid aqua;
+    background-color: silver;
+    padding:5px;
+}
+
+#upper-ten-right-box {
+    margin:auto;
+    margin-top: 4px;
+    margin-right: 5px; 
+    border:1px solid aqua;
+    background-color: silver;
+    padding:5px;
+}
+.lower-ninety {
+    height: 90%;
+    border: 2px solid slateblue ;
+    background-color: aliceblue;
+    background: silver;
+    font-size: larger;
+    font-weight: 900;
+}
+@media screen and (min-width:1029px) {
+    .upper-ten {
+        background-image: linear-gradient(to right, aliceblue, #9198f5, lightblue, skyblue);
+    }
+    .lower-ninety {
+        background: radial-gradient(#f77775, #a2a9f6);
+    }
+}
+@media screen and (max-width:1028px) {
+    .lower-ninety {
+        height: auto;
+        font-size: x-large;
+    }
+    .responser {
+        width:95%;
+    }
+    
+#upper-ten-central-box {
+    
+    height: auto;
+    font-size: x-large;
+}
+#upper-ten-right-box {
+    
+    height: auto;
+    font-size: large;
+}
+}
