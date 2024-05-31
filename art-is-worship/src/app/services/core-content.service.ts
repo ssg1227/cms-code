@@ -61,7 +61,11 @@ export class CoreContentService {
    }
   private breadCrumbs?:BreadCrumb[] =[] ;
   private parentDescription?:string ='';
+  private testMode = false ;
   // gets 
+  get TestMode():boolean {
+    return this.testMode ;
+  }
   get BreadCrumbs():BreadCrumb[]| undefined{
     return this.breadCrumbs;
   } 
@@ -92,7 +96,7 @@ export class CoreContentService {
         }
         MenuTreeElements.forEach((menuItem: TreeNodeElement) => {
             menuItem.roles?.forEach((role:string) => {
-              if (role === 'all' || this.userObject.userRoles.find((x:string) => x === role) !== undefined) {
+              if (role === 'any' || this.userObject.userRoles.find((x:string) => x === role) !== undefined) {
                 userMenu.push(menuItem) ;
               }
             }) ;// || x === 'superuser') !== undefined) 
@@ -126,28 +130,37 @@ export class CoreContentService {
       // in the future considering adding role in the ImageList object.. right now
     // QUICK FIX+DEPLOY JAN 4 2024 scrub lists for min religous content and temp freeze roles
     /**/ 
-      this.contentList.push( { contentFile:new GaneshPreQ42021ImageList(),contentCategory:'shree-ganesh-b4-q4-2021', roles:['sanatani']}) ;
-      this.contentList.push( { contentFile:new GaneshGTEQ42021ImageList(),contentCategory:'shree-ganesh-gte-q4-2021', roles:['sanatani']}) ;
-      this.contentList.push( { contentFile:new GaneshGTEQ12023ImageList(),contentCategory:'shree-ganesh-gte-q1-2023', roles:['sanatani']}) ;
-      this.contentList.push( { contentFile:new GaneshGTEQ12024ImageList(),contentCategory:'shree-ganesh-gte-q1-2024', roles:['sanatani'],latest:true}) ;
-      
-      this.contentList.push( { contentFile:new DeviImageList(),contentCategory:'devi', roles:['sanatani'],latest:true}) ;
-      this.contentList.push( { contentFile:new MahadevImageList(),contentCategory:'mahadev', roles:['sanatani'],latest:true}) ;
-      this.contentList.push( { contentFile:new MahadevFamilyImageList(),contentCategory:'mahadev-family', roles:['sanatani'],latest:true}) ;
-      this.contentList.push( { contentFile:new LaxmiVishnuHanumanList(),contentCategory:'laxmi-vishnu-hanuman', roles:['sanatani'],latest:true}) ;
-      this.contentList.push( { contentFile:new DattavatarImageList(),contentCategory:'dattavatar', roles:['guru'],latest:true}) ;
-      this.contentList.push( { contentFile:new SwamiSamarthaImageList(),contentCategory:'swami-samartha', roles:['guru']}) ;
-      this.contentList.push( { contentFile:new SwamiSamarthaQ22023ImageList(),contentCategory:'swami-samartha-q2-2023', roles:['guru'],latest:true}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiQ42023Q12024ImageList(),contentCategory:'shirdi-sai-q4-2023-q1-2024', roles:['guru'],latest:true}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiThemeList1(),contentCategory:'baba-themes-1', roles:['guru']}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiPreQ32021ImageList(),contentCategory:'shirdi-sai-q1-q2-2021', roles:['guru']}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiQ3Q42021ImageList(),contentCategory:'shirdi-sai-q3-q4-2021', roles:['guru']}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiQ2Q32022ImageList(),contentCategory:'shirdi-sai-q2-q3-2022', roles:['guru']}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiQ42022Q12023ImageList(),contentCategory:'shirdi-sai-q4-2022-q1-2023', roles:['guru']}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiQ2Q32023ImageList(),contentCategory:'shirdi-sai-q2-q3-2023', roles:['guru']}) ;
-      this.contentList.push( { contentFile:new ShirdiSaiQ2Q32024ImageList(),contentCategory:'shirdi-sai-q2-q3-2024', roles:['guru']}) ;
-      this.contentList.push( { contentFile:new PeopleImageList(),contentCategory:'people-places', roles:['all'],latest:true}) ;
-      this.contentList.push( { contentFile: new PlacesScenesObjectsImageList(),contentCategory:'places-scenes-objects', roles:['non-living,  non-religious'],latest:true}) ;
+    let isSuper = true ;// is super is a two role authentication either they see religious/guru content or they dont
+    if (this.userObject !== null && this.userObject.userRoles) {
+      if (this.userObject.userRoles.find((x:string) => x === 'all' || x === 'superuser') !== undefined) {
+        isSuper = true ;
+      }
+    }
+    if (isSuper === true) {
+
+          this.contentList.push( { contentFile:new GaneshPreQ42021ImageList(),contentCategory:'shree-ganesh-b4-q4-2021', roles:['sanatani']}) ;
+          this.contentList.push( { contentFile:new GaneshGTEQ42021ImageList(),contentCategory:'shree-ganesh-gte-q4-2021', roles:['sanatani']}) ;
+          this.contentList.push( { contentFile:new GaneshGTEQ12023ImageList(),contentCategory:'shree-ganesh-gte-q1-2023', roles:['sanatani']}) ;
+          this.contentList.push( { contentFile:new GaneshGTEQ12024ImageList(),contentCategory:'shree-ganesh-gte-q1-2024', roles:['sanatani'],latest:true}) ;
+          
+          this.contentList.push( { contentFile:new DeviImageList(),contentCategory:'devi', roles:['sanatani'],latest:true}) ;
+          this.contentList.push( { contentFile:new MahadevImageList(),contentCategory:'mahadev', roles:['sanatani'],latest:true}) ;
+          this.contentList.push( { contentFile:new MahadevFamilyImageList(),contentCategory:'mahadev-family', roles:['sanatani'],latest:true}) ;
+          this.contentList.push( { contentFile:new LaxmiVishnuHanumanList(),contentCategory:'laxmi-vishnu-hanuman', roles:['sanatani'],latest:true}) ;
+          this.contentList.push( { contentFile:new DattavatarImageList(),contentCategory:'dattavatar', roles:['guru'],latest:true}) ;
+          this.contentList.push( { contentFile:new SwamiSamarthaImageList(),contentCategory:'swami-samartha', roles:['guru']}) ;
+          this.contentList.push( { contentFile:new SwamiSamarthaQ22023ImageList(),contentCategory:'swami-samartha-q2-2023', roles:['guru'],latest:true}) ;
+          this.contentList.push( { contentFile:new ShirdiSaiQ42023Q12024ImageList(),contentCategory:'shirdi-sai-q4-2023-q1-2024', roles:['guru'],latest:true}) ;
+          this.contentList.push( { contentFile:new ShirdiSaiThemeList1(),contentCategory:'baba-themes-1', roles:['guru']}) ;
+          this.contentList.push( { contentFile:new ShirdiSaiPreQ32021ImageList(),contentCategory:'shirdi-sai-q1-q2-2021', roles:['guru']}) ;
+          this.contentList.push( { contentFile:new ShirdiSaiQ3Q42021ImageList(),contentCategory:'shirdi-sai-q3-q4-2021', roles:['guru']}) ;
+          this.contentList.push( { contentFile:new ShirdiSaiQ2Q32022ImageList(),contentCategory:'shirdi-sai-q2-q3-2022', roles:['guru']}) ;
+          this.contentList.push( { contentFile:new ShirdiSaiQ42022Q12023ImageList(),contentCategory:'shirdi-sai-q4-2022-q1-2023', roles:['guru']}) ;
+          this.contentList.push( { contentFile:new ShirdiSaiQ2Q32023ImageList(),contentCategory:'shirdi-sai-q2-q3-2023', roles:['guru']}) ;
+          this.contentList.push( { contentFile:new ShirdiSaiQ2Q32024ImageList(),contentCategory:'shirdi-sai-q2-q3-2024', roles:['guru']}) ;
+          this.contentList.push( { contentFile:new PeopleImageList(),contentCategory:'people-places', roles:['all'],latest:true}) ;
+          this.contentList.push( { contentFile: new PlacesScenesObjectsImageList(),contentCategory:'places-scenes-objects', roles:['non-living,  non-religious'],latest:true}) ;
+      }
       this.contentList.push( { contentFile: new ThemesMisc(),contentCategory:'themes-misc', roles:['non-living,  non-religious'],latest:true}) ;
 
       this.contentList.push( { contentFile:new TrainImageList(),contentCategory:'trains', roles:['non-living,  non-religious'],latest:true}) ;

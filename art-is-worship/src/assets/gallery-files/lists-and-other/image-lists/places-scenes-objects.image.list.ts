@@ -11,6 +11,19 @@ export class PlacesScenesObjectsImageList {
                 themeSummary:`</strong>Scenes, Objects, Structures, (some may be items containing mix modes of transport or something like an air dogfight)<br/>
                 Mumbai gets her due place and a dedicated theme; all Mumbai related sketches will be found in 'Mumbai Meri Jaan'`,
                 files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil black-white',
+dateUploaded:  '05-31-2024',
+summaryLabel:  `Celebrating the Worlds first single-piece 3d printed semi-cryogenic engine powered rocket ... AGNIBAAN `,
+fullFileName: `${this.imageRoot}AgnibaanMay312024-scan-2.jpeg`,
+description: `<ul><li> Celebrating the Worlds first single-piece 3d printed semi-cryogenic engine powered rocket ... AGNIBAAN  </li><li> Launched May 31 </li><li> Sketch on May 31  </li></ul>`,
+iterations: [
+{fullFileName: `${this.imageRoot}AgnibaanMay312024-scan-2.jpeg`, description: `<ul><li> Celebrating the Worlds first single-piece 3d printed semi-cryogenic engine powered rocket ... AGNIBAAN  </li><li> Launched May 31 </li><li> Sketch on May 31  </li><li> Scan version </li></ul>` },
+{fullFileName: `${this.imageRoot}AgnibaanMay312024-photo-1.jpeg`, description: `<ul><li> Celebrating the Worlds first single-piece 3d printed semi-cryogenic engine powered rocket ... AGNIBAAN  </li><li> Launched May 31 </li><li> Sketch on May 31  </li><li> Photographed </li></ul>` },
+]
+},
                   { 
                         fullFileName:`assets/gallery-files/images/transports-and-machines/trains/Sept22-dudhsagar-falls.jpeg`,
                         duplicate:true,

@@ -36,7 +36,7 @@ export class AuthService {
   userList: User[] = [
     { 
       userName: 'shantanu',
-      userRoles: ["admin", "all"] 
+      userRoles: ["superuser"] 
     },
     { 
       userName: 'super',

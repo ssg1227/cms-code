@@ -14,7 +14,8 @@ import { CoreContentService } from './services/core-content.service';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { LoginLandingComponent } from './components/admin-register-login/login-landing/login-landing.component';
 import { ContentViewerComponent } from './components/main-content/content-viewer/content-viewer.component';
-import { CardComponent } from './components/main-content/card/card.component'
+import { CardComponent } from './components/main-content/card/card.component';
+import { MailFormComponent } from './components/misc/mail-form/mail-form.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { CardComponent } from './components/main-content/card/card.component'
     LoginLandingComponent,
     ContentViewerComponent,
     CardComponent,
+    MailFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,10 @@ import { CardComponent } from './components/main-content/card/card.component'
     {path:'', component:LandingPageComponent},
     {path:'**', component:LandingPageComponent},
     {path: 'view/:theme', component: LoginLandingComponent },
+    {path: 'contact', component: MailFormComponent },
+
+    {path: 'view/contact', component: MailFormComponent },
+    {path: 'contact/contact', component: MailFormComponent },
   ])
   ],
   providers: [], //, ListsFunnelService, CoreContentService],

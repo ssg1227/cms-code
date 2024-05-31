@@ -47,9 +47,11 @@ export class ContentViewerComponent {
   _actualSize:boolean = false;
   _iterations:boolean = false ;
   newLook=true ;
+  showContactPage = false ;
   //..
   constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService) {
   
+      // @ts-ignore: Object is possibly 'null'.
   }
   ngOnInit() {
     this.isLeafParent = localStorage.getItem("isLeafParent") ;
@@ -67,12 +69,45 @@ export class ContentViewerComponent {
         console.log('test');
     }
     const summary = this.coreContentService.SketchStats ;
+    if(this.coreContentService.TestMode === true)  {
+      // @ts-ignore: Object is possibly 'null'.
+      document.getElementById('modal-container').style.display = 'flex';
+      // @ts-ignore: Object is possibly 'null'.
+      document.getElementById('modal-container').style.width = '1000px';
+      const testDataReturned = this.coreContentService.loadSelectedContent('shree-ganesh-gte-q1-2024');
+      if (testDataReturned !== undefined && testDataReturned !== null) {
+        this.genImageList = testDataReturned.gen ; 
+        this.allImageList = this.genImageList.allImageList;
+        this.loadImages() ;
+        ;
+     this.selectedImage = this.imageGroups[0]
+      }
+    }
    }
    get StatsSummary():string {
     const summary = this.coreContentService.SketchStats ;
     return `<p> Image Numbers:<br/> Subjects: ${summary.subjects}<br/> Total Counts:${summary.totalCounts}`;
     
    }
+   get ImageLabel():string {
+    let AInd = '';
+    if(this.selectedImage !== null) { 
+     
+    if (this.selectedImage.imageList[0].summaryLabel && this.selectedImage.imageList[0].summaryLabel.trim !== '') {
+      
+      AInd =  this.selectedImage.imageList[0].summaryLabel
+    }
+    
+     else {
+     AInd =   this.selectedImage.imageList[0].description.trim().replace(`\n`,'').replace('<ul>','')
+     .replace('<li>','').trim() ;
+
+     AInd = AInd.substring(0, AInd.search('</li>') ) ;
+      }
+    } 
+    return AInd ;
+
+  }
   cmsLogout(){
     this.authService.logout() ;
    }
@@ -83,6 +118,7 @@ export class ContentViewerComponent {
     return this.noContent ;
    }
    compareSelected(a:any, b:any) {
+    console.log(`######${a} ${b }`) ;
     this.isLeafParent = localStorage.getItem("isLeafParent") ;
     if (this.isLeafParent === 'true' && isNaN(a)) {
         this.imageGroups = [] ;
@@ -110,17 +146,25 @@ export class ContentViewerComponent {
       // @ts-ignore: Object is possibly 'null'.
       localStorage.setItem("isLeafParent",this.isLeafParent) ;
       if(isNaN(a)) {
-        localStorage.setItem('current-menu',a);
-        this.router.navigate([`/view`, a]).then( (e) => {
-          this.currentCardList = this.coreContentService.setCurrentCardList() ;
-          this.breadCrumbs = this.coreContentService.BreadCrumbs ;
-          this.parentDescripion = this.coreContentService.ParentDescription ;
-          if (e) {
-            console.log("Navigation is successful!");
-          } else {
-            console.log("Navigation has failed!");
-          }
-        });
+        if(a === 'contact') {
+         this.showContactPage = true ;
+
+      // @ts-ignore: Object is possibly 'null'.
+         document.getElementById('modal-container').style.display = 'flex';
+        } else {
+          this.showContactPage = false ;
+          localStorage.setItem('current-menu',a);
+          this.router.navigate([`/view`, a]).then( (e) => {
+            this.currentCardList = this.coreContentService.setCurrentCardList() ;
+            this.breadCrumbs = this.coreContentService.BreadCrumbs ;
+            this.parentDescripion = this.coreContentService.ParentDescription ;
+            if (e) {
+              console.log("Navigation is successful!");
+            } else {
+              console.log("Navigation has failed!");
+            }
+          });
+        }
       }
    }
    loadImages() {
@@ -218,9 +262,25 @@ export class ContentViewerComponent {
    public techStats(currentImage:any, stylingObject:any = null) {
      return this.coreContentService.techStatsSpan(currentImage, stylingObject);
    }
+   next() {
+    this.currentCellSelected++;
+    if (this.currentCellSelected >= this.imageGroups.length) {
+      this.currentCellSelected = 0;
+    }
+    this.selectedImage = this.imageGroups[this.currentCellSelected];
+   }
+
+   previous() {
+    this.currentCellSelected--;
+    if (this.currentCellSelected <=0)  {
+      this.currentCellSelected = this.imageGroups.length-1;
+    }
+    this.selectedImage = this.imageGroups[this.currentCellSelected];
+   }
    closeModal() {
 
       // @ts-ignore: Object is possibly 'null'.
      document.getElementById('modal-container').style.display = 'none';
+     this.showContactPage = false ;
    }
 }

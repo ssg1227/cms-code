@@ -16,7 +16,7 @@
     </div>
     <br/>
    
-    <div  class="lower-ninety outerdiv" >
+    <div class="lower-ninety outerdiv" ><!--  *ngIf="showContactPage == false" ; else showEmail-->
        <div *ngIf="isLeafParent=='true' && imageGroups.length > 0" class="outerdiv" ><!-- have to repeat outerdiv for flex style -->
          <div *ngFor="let grpImag of imageGroups; let i = index;">
           <app-card 
@@ -38,14 +38,19 @@
        <div *ngIf="isLeafParent=='true' && imageGroups.length == 0">EMPTY CONTENT; </div> 
   <!-- ##### Uncomment later for image expansion. Refer to content list of old code - -->
     <div id="modal-container">
+      <div id='modal-top-5'>
       <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
-      <!---
+      <button  id="prev" (click)="previous()"><<<</button>{{ImageLabel}}
+      <button  id="next" (click)="next()">>>></button>
+    </div>
+      <!---<app-mail-form   *ngIf="showContactPage == true"></app-mail-form>
+     
          <div id="pic-container"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  == 1">
            <p><img id="pic" *ngIf="selectedImage != null" src="{{selectedImage.imageList[0].image}}"></p>
            <p [innerHTML]="selectedImage.imageList[0].description"></p>
          </div>    
         -->
-        <section  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  >= 1"> <!-- && selectedImage.imageList.length  > 1"-->
+        <section id="modal-lower-95"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  >= 1"> <!-- && selectedImage.imageList.length  > 1"-->
           
           <div id="iterative" *ngFor="let imageElement of selectedImage.imageList, let j = index">
             <div id="pic-container" > 
@@ -61,4 +66,8 @@
     </div>
 
     </div>
+    <ng-template #showEmail>
+      eewrewe
+      <app-mail-form></app-mail-form>
+    </ng-template>
   </div>

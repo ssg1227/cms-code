@@ -1,8 +1,11 @@
 <div 
   class="card"   
   [ngClass]="getCardCSS()" 
- 
+
   (mouseover)="toggleCardState()" (mouseout)="toggleCardState()" (click)="expand()" >
+  <!--div *ngIf="cardInfo.key=='contact'">
+    <app-mail-form></app-mail-form>
+  </div-->
   <div  *ngIf="imageDetail == null;"[routerLink]="[ViewLink,cardInfo.key]">  
     
     <div id="node-card"><h3>{{cardInfo.label}}</h3>{{cardInfo.description}}</div>

@@ -22,7 +22,7 @@ export interface TreeNodeElement {
 export const MenuTreeElements:TreeNodeElement[] = [
     // #### ROOT
     {
-        key:'top-level', levelIndex:0,isLeafParent:false, roles:["all"], // roles match users roles many to many match
+        key:'top-level', levelIndex:0,isLeafParent:false, roles:["any"], // roles match users roles many to many match
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '', params:'top-level', label: 'HOME'}
         ],
@@ -30,7 +30,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     },
     // #### LEVEL 1
     {
-        parentKey:'top-level',key: "special-lists", levelIndex:1,isLeafParent:false, roles:['all'],
+        parentKey:'top-level',key: "special-lists", levelIndex:1,isLeafParent:false, roles:['any'],
         label: "Special Lists", 
         description:'Extracted works from the entire collection like best attempts, something new, latest sketches, etc',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -83,7 +83,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     }, 
     {
-        parentKey:"top-level", key: "otherbeings-places-events", levelIndex:1,isLeafParent:false, roles:['all'],
+        parentKey:"top-level", key: "otherbeings-places-events", levelIndex:1,isLeafParent:false, roles:['any'],
         label: "Beings, Places and Themes",
         description:`Pictures of the living - famous human personalities, other living beings (as in May 2024 occasional). Places and famous structures. Events, Misc. Themes. 
                     (But Mumbai City related drawing warrant a separate, independent group!!)`,
@@ -96,7 +96,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     }, 
     {
-        parentKey:"top-level", key: "salaam-mumbai", levelIndex:1,isLeafParent:false, roles:['all'],
+        parentKey:"top-level", key: "salaam-mumbai", levelIndex:1,isLeafParent:false, roles:['any'],
         label: "Salaam Mumbai",
         description:`Dedication to the City that is part of me that I am part of. Wherever I am`,
         
@@ -107,7 +107,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     }, 
     {
-        parentKey:"top-level", key: "transport-and-machines", levelIndex:1,isLeafParent:false, roles:['all'],
+        parentKey:"top-level", key: "transport-and-machines", levelIndex:1,isLeafParent:false, roles:['any'],
         label: "Transport And Machines",
         description:`Trains, Cars, Planes, Ships, Military equipment. Anything that is mechanical`,
         
@@ -118,7 +118,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         
     }, 
     {
-        parentKey:"top-level", key: "misc", levelIndex:1,isLeafParent:false, roles:['all'],
+        parentKey:"top-level", key: "misc", levelIndex:1,isLeafParent:false, roles:['any'],
         label: "Misc.",
         description:`Those items which is pending, or are too few to have a separate category`,
         
@@ -127,11 +127,23 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '', params:'misc', label: 'Misc.'}
         ],
         
-    },
+    }/*, 
+    
+    {
+        parentKey:"top-level", key: "contact", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Contact us",
+        description:`Email`,
+        
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: 'contact', params:'misc', label: 'Misc.'}
+        ],
+        
+    }*/, 
     // #### LEVEL 2
     // special lists - added one more layer 
     { 
-        parentKey: "special-lists", key: 'changers', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["all"], 
+        parentKey: "special-lists", key: 'changers', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["any"], 
         label: 'Changers', 
         description:`These are landmark sketches which I consider a significant change or turn in the progress of my sketches, or maybe a special reason. 
                     These may not be my best efforts but are a new element or entity that was introduced in these drawings.`,
@@ -142,7 +154,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],
     }, 
     { 
-        parentKey: "special-lists", key: 'showpieces', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["all"], 
+        parentKey: "special-lists", key: 'showpieces', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["any"], 
         label: 'The Best', 
         description:`A Year-wise extraction of some of my best efforts,.`,
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -153,7 +165,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     }, 
      
     { 
-        parentKey: "special-lists", key: 'latest-uploads', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["all"], 
+        parentKey: "special-lists", key: 'latest-uploads', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["any"], 
         label: 'Latest Uploads', 
         description:`Images of latest drawings uploaded`,
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -370,7 +382,7 @@ Also increasing numbers of Swami Samartha sketches`,
 // ### END SPECIAL LISTS
 
     { 
-        parentKey: "changers", key: 'changers-b4-2022', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["all"], 
+        parentKey: "changers", key: 'changers-b4-2022', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["any"], 
         label: 'Changers: before 2022', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -380,7 +392,7 @@ Also increasing numbers of Swami Samartha sketches`,
         ],
     },
     { 
-        parentKey: "changers", key: 'changers-2022', levelIndex:3,  isLeafParent: true, isCompiledList:true, roles: ["all"],
+        parentKey: "changers", key: 'changers-2022', levelIndex:3,  isLeafParent: true, isCompiledList:true, roles: ["any"],
         label:  'Changers: 2022',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -390,7 +402,7 @@ Also increasing numbers of Swami Samartha sketches`,
         ], 
     },
     { 
-        parentKey: "changers",key: 'changers-2023', levelIndex:3,  isLeafParent: true,  roles: ["all"],
+        parentKey: "changers",key: 'changers-2023', levelIndex:3,  isLeafParent: true,  roles: ["any"],
         label:  'Changers: 2023',  
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -400,7 +412,7 @@ Also increasing numbers of Swami Samartha sketches`,
         ], 
     },
     { 
-        parentKey: "changers",key: 'changers-2024', levelIndex:3, isLeafParent: true,  roles: ["all"],
+        parentKey: "changers",key: 'changers-2024', levelIndex:3, isLeafParent: true,  roles: ["any"],
         label:  'Changers: 2024', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -412,7 +424,7 @@ Also increasing numbers of Swami Samartha sketches`,
 // ### END CHANGERS
 
  { 
-    parentKey: "showpieces", key: 'showpiece',levelIndex:3, isLeafParent: true,  roles: ["all"],
+    parentKey: "showpieces", key: 'showpiece',levelIndex:3, isLeafParent: true,  roles: ["any"],
     label:  'The Best: before 2022', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -422,7 +434,7 @@ Also increasing numbers of Swami Samartha sketches`,
         ], 
  },
    { 
-    parentKey: "showpieces", key: 'showpiece-2022',levelIndex:3, isLeafParent: true,  roles: ["all"],
+    parentKey: "showpieces", key: 'showpiece-2022',levelIndex:3, isLeafParent: true,  roles: ["any"],
     label:  'The Best of 2022', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -432,7 +444,7 @@ Also increasing numbers of Swami Samartha sketches`,
             ], 
     },
     { 
-        parentKey: "showpieces", key: 'showpiece-2023',levelIndex:3, isLeafParent: true,  roles: ["all"],
+        parentKey: "showpieces", key: 'showpiece-2023',levelIndex:3, isLeafParent: true,  roles: ["any"],
         label:  'The Best of 2023', 
             emptyMessage: 'Empty Content or Error', breadCrumb:[
                 {link: '/view', params:'top-level', label: 'HOME'},
@@ -442,7 +454,7 @@ Also increasing numbers of Swami Samartha sketches`,
             ], 
     },
     { 
-        parentKey: "showpieces", key: 'showpiece-2024',levelIndex:3, isLeafParent: true,  roles: ["all"],
+        parentKey: "showpieces", key: 'showpiece-2024',levelIndex:3, isLeafParent: true,  roles: ["any"],
         label:  'The Best of 2024', 
             emptyMessage: 'Empty Content or Error', breadCrumb:[
                 {link: '/view', params:'top-level', label: 'HOME'},
@@ -452,7 +464,7 @@ Also increasing numbers of Swami Samartha sketches`,
             ], 
     },
     { 
-        parentKey: "latest-uploads", key: 'latest-uploads-themewise', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["all"], 
+        parentKey: "latest-uploads", key: 'latest-uploads-themewise', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["any"], 
         label: 'Latest Uploads: Theme', 
         description:`Images of latest drawings uploaded by theme`,
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -464,7 +476,7 @@ Also increasing numbers of Swami Samartha sketches`,
     }
     ,
     { 
-        parentKey: "latest-uploads", key: 'latest-uploads-timewise', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["all"], 
+        parentKey: "latest-uploads", key: 'latest-uploads-timewise', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["any"], 
         label: 'Latest Uploads: By Timeline', 
         description:`Images of drawings uploaded the last 60 days.`,
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -488,7 +500,7 @@ Also increasing numbers of Swami Samartha sketches`,
     
 },
 {
-    parentKey:"otherbeings-places-events", key: "people-places", levelIndex:2,isLeafParent:true, roles:['all'],
+    parentKey:"otherbeings-places-events", key: "people-places", levelIndex:2,isLeafParent:true, roles:['any'],
     label: "Famous Personalities",
     description:`Faces, figures sketching started almost at the start of my 'pandemic caused' reconnect with this hobby
     Some off the spur of the moment, spontaneous, others due to their deaths (and we have had a lot of that!!)
@@ -502,7 +514,7 @@ Also increasing numbers of Swami Samartha sketches`,
     ],
     
 }, {
-    parentKey:"otherbeings-places-events", key: "places-scenes-objects", levelIndex:2,isLeafParent:true, roles:['superuser','living'],
+    parentKey:"otherbeings-places-events", key: "places-scenes-objects", levelIndex:2,isLeafParent:true, roles:['superuser','living','any'],
     label: "Places, Scenes and Objects",
     description:`Faces, figures sketching started almost at the start of my 'pandemic caused' reconnect with this hobby
     Some off the spur of the moment, spontaneous, others due to their deaths (and we have had a lot of that!!)
@@ -516,7 +528,7 @@ Also increasing numbers of Swami Samartha sketches`,
     ],
     
 }, {
-    parentKey:"otherbeings-places-events", key: "themes-misc", levelIndex:2,isLeafParent:true, roles:['superuser','non-living'],
+    parentKey:"otherbeings-places-events", key: "themes-misc", levelIndex:2,isLeafParent:true, roles:['superuser','non-living','any'],
     label: "Themes",
     description:`Some theme sketches with components, some as-yet 'one-off's`,
     
@@ -527,7 +539,7 @@ Also increasing numbers of Swami Samartha sketches`,
     ],
     
 },  {
-    parentKey:"otherbeings-places-events", key: "animate-to-be-oragnized1", levelIndex:2,isLeafParent:true, roles:['superuser','all'],
+    parentKey:"otherbeings-places-events", key: "animate-to-be-oragnized1", levelIndex:2,isLeafParent:true, roles:['superuser','any'],
     label: "Uncategorized sketches",
     description:`Pending formal categorization`,
     
@@ -539,7 +551,7 @@ Also increasing numbers of Swami Samartha sketches`,
     
 },
  { 
-    parentKey: 'salaam-mumbai',   key: 'mumbai-meri-jaan', levelIndex:2,isLeafParent:true,  roles: ['non-living',  'non-religious', 'all'], 
+    parentKey: 'salaam-mumbai',   key: 'mumbai-meri-jaan', levelIndex:2,isLeafParent:true,  roles: ['non-living',  'non-religious', 'any'], 
         label:  'Mumbai Meri Jaan',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -547,7 +559,7 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: ' ', params:'mumbai-meri-jaan', label: 'Mumbai Meri Jaan'}
         ],},
         { 
-            parentKey: 'salaam-mumbai',   key: 'mumbai-meri-jaan-2', levelIndex:2,isLeafParent:true,  roles: ['non-living',  'non-religious', 'all'], 
+            parentKey: 'salaam-mumbai',   key: 'mumbai-meri-jaan-2', levelIndex:2,isLeafParent:true,  roles: ['non-living',  'non-religious', 'any'], 
                 label:  'Mumbai Meri Jaan(2)',
                 emptyMessage: 'Empty Content or Error', breadCrumb:[
                     {link: '/view', params:'top-level', label: 'HOME'},
@@ -556,7 +568,7 @@ Also increasing numbers of Swami Samartha sketches`,
                 ],},
     // #### TRANSPORT AND MACHINE DESCENDANTS
         {
-            parentKey:"transport-and-machines", key: "railways", levelIndex:2,isLeafParent:false, roles:['non-living',  'non-religious','all'],
+            parentKey:"transport-and-machines", key: "railways", levelIndex:2,isLeafParent:false, roles:['non-living',  'non-religious','any'],
             label: "Railways",
             description:`Railways: As on June 2024 this is mainly Indian Railways`,
             
@@ -566,7 +578,7 @@ Also increasing numbers of Swami Samartha sketches`,
                 {link: '', params:'railways', label: 'Railways'}
             ],
         },  {
-            parentKey:"transport-and-machines", key: "machines-others", levelIndex:2,isLeafParent:false, roles:['non-living',  'non-religious','all'],
+            parentKey:"transport-and-machines", key: "machines-others", levelIndex:2,isLeafParent:false, roles:['non-living',  'non-religious','any'],
             label: "Other Machines",
             description:`As on June 2024, this covers aircraft, ships and cars`,
             
@@ -578,7 +590,7 @@ Also increasing numbers of Swami Samartha sketches`,
         },
      // #### RAIL AND DESCENDANTS   
         {
-        parentKey:"railways", key: "trains", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','all'],
+        parentKey:"railways", key: "trains", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "General Scenes",
         description:`Railways: General Scenes`,
         
@@ -589,7 +601,7 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'trains', label: 'General Scenes'}
         ],
     }, {
-        parentKey:"railways", key: "trains-ir-alcos", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','all'],
+        parentKey:"railways", key: "trains-ir-alcos", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "ALCO WDMx: a tribute",
         description:`Dedicated to the legendary Indian Railway workhorse the WDM2 and later variants (Wide - broad guage, Diesel - diesel electric loco, Mixed - Goods and Passenger) On collaboration with Alco (USA) the first locos entered service in 1962 imported, then manufacture began in 1964j`,
         
@@ -600,7 +612,7 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'trains-ir-alcos', label: 'ALCO WDMx: a tribute'}
         ],
     }, {
-        parentKey:"railways", key: "trains-ir-steam", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','all'],
+        parentKey:"railways", key: "trains-ir-steam", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "Indian Railways: The Glorious Steam Era",
         description:`Dedicated to the Glorious Steam Era of the Indian Railway as on May 2024 mostly focussed on WP and WG locos`,
         
@@ -611,7 +623,7 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'trains-ir-steam', label: 'Indian Railways: The Glorious Steam Era'}
         ],
     }, {
-        parentKey:"railways", key: "trains-ir-special-trains", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','all'],
+        parentKey:"railways", key: "trains-ir-special-trains", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "Landmark Trains",
         description:`Some Special and Legendary Trains. As most of this category domain, it covers IR`,
         
@@ -623,7 +635,7 @@ Also increasing numbers of Swami Samartha sketches`,
         ],
     }
     ,  {
-        parentKey:"machines-others", key: "planes-ships-cars", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','all'],
+        parentKey:"machines-others", key: "planes-ships-cars", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "Aircraft, Ships and Cars",
         description:`Planes, ships and cars`,
         
@@ -634,7 +646,7 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'planes-ships-cars', label: 'Planes, ships and cars'}
         ],
     },  {
-        parentKey:"machines-others", key: "planes-ships-cars-2", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','all'],
+        parentKey:"machines-others", key: "planes-ships-cars-2", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "Aircraft, Ships and Cars(2)",
         description:`Planes, ships and cars `,
         

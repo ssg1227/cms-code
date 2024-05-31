@@ -22,6 +22,28 @@ public allImageList:ImageElement[]  =  [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '05-31-2024',
+summaryLabel:  `Baba - color pencil filled previous sketch April 4`,
+fullFileName: `${this.imageRoot}SaiMay3024-2.jpeg`,
+description: `<ul><li> Baba - color pencil filled previous sketch April 4 </li></ul>`,
+iterations: [
+{fullFileName: `${this.imageRoot}SaiMay3024-2.jpeg`, description: `<ul><li> Baba - color pencil filled previous sketch April 4 </li></ul>` },
+{fullFileName: `${this.imageRoot}SaiMay3024-1.jpeg`, description: `<ul><li> Baba - color pencil filled previous sketch April 4 </li></ul>` },
+]
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'soft',
+content:  'black-white',
+dateUploaded:  '05-29-2024',
+summaryLabel:  `Baba April 4 2024`,
+fullFileName: `${this.imageRoot}BabaApril424.jpeg`,
+description: `<ul><li> Baba April 4 2024 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '05-29-2024',
 summaryLabel:  `Baba post Ramnavmi 2024`,
