@@ -1,5 +1,5 @@
 
-# LOG OF CHANGES #
+# LOG OF CHANGES April 28 #
 "CMS Picture Gallery" by Shantanu Gadkari
 ### TODOs
 - revisit logic and try to debug/optimize isLeafParent/ query params to identify leaf page versus branch
@@ -8,6 +8,18 @@
 - in memory - caching, avoiding time outs
 - email form 
 - put hard coded paths behind variables, and find right place to keep these variables (e.g. global version of imageRoot)
+### Practices
+- Maintaining this log
+- console.log should try to keep reference - classname method name
+### June 1 - 8
+- Authentication piece ETA JUNE 3 AM 
+- Scrub Data and share on Saayam ETA JUNE 4 AM
+- Performance:
+  - Pagination - keep a max 15 page limit, ETA JUNE  4 EOD
+  - Split - keep a max 15 page limit, generate menus dynamically ETA JUNE 7
+  - Pre-load special lists (if 15 page limit doesnt work for mobile displays)
+  - dynamic load on demand
+
 ### May 27-31
 - Prev ('<<<'') Next('>>>') buttons on expanded modal
 - Fixed header styling changes

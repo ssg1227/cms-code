@@ -55,8 +55,17 @@ export class CoreContentService {
     return true ;
   }
    // @ts-ignore: Object is possibly 'null'.
-  userObject = JSON.parse(localStorage.getItem("user-object")) ;
+  userObject =   { 
+    userName: 'default',
+    userRoles: ["any"] 
+  };// JSON.parse(localStorage.getItem("user-object")) ;
   constructor() {
+     // @ts-ignore: Object is possibly 'null'.
+     let tempUaer =  localStorage.getItem('user-object') ;
+     // @ts-ignore: Object is possibly 'null'.
+     if (tempUaer !== null && tempUaer !== undefined) {
+      this.userObject = JSON.parse(tempUaer);
+     }
     this.loadContentList();
    }
   private breadCrumbs?:BreadCrumb[] =[] ;
@@ -122,22 +131,34 @@ export class CoreContentService {
   loadContentList() { // loads the raw list; also collects statistics
     let userNameRoles:any  = null ;
      // @ts-ignore: Object is possibly 'null'.
-    if(localStorage.getItem('user-object')) {
+    if(localStorage.getItem('user-object') !== 'undefined' && localStorage.getItem('user-object') !== null) {
       console.log(localStorage.getItem('user-object')) ;
        // @ts-ignore: Object is possibly 'null'.
-      userNameRoles = JSON.parse(localStorage.getItem('user-object'));
+       this.userObject  = JSON.parse(localStorage.getItem('user-object'));
     }
       // in the future considering adding role in the ImageList object.. right now
     // QUICK FIX+DEPLOY JAN 4 2024 scrub lists for min religous content and temp freeze roles
     /**/ 
-    let isSuper = true ;// is super is a two role authentication either they see religious/guru content or they dont
+    let isSuper = false ;// is super is a two role authentication either they see religious/guru content or they dont
+    let isSanatani = false ;
+    let isGuru = false ;
     if (this.userObject !== null && this.userObject.userRoles) {
       if (this.userObject.userRoles.find((x:string) => x === 'all' || x === 'superuser') !== undefined) {
         isSuper = true ;
       }
-    }
-    if (isSuper === true) {
+      if (this.userObject.userRoles.find((x:string) => x === 'sanatani') !== undefined) {
+        isSanatani = true ;
+      }
 
+      if (this.userObject.userRoles.find((x:string) => x === 'guru') !== undefined) {
+        isGuru = true ;
+      }
+    }
+    isSuper = true ; // backup - to debug logic
+    if (isSuper === true || isSanatani === true || isGuru === true) {
+        console.log(`Content service load lists ${isSuper} ${isSanatani} ${isGuru}`)
+        if (isSuper === true || isSanatani === true ) {
+          console.log(`Content service load lists ${isSuper} ${isSanatani} ${isGuru}`)
           this.contentList.push( { contentFile:new GaneshPreQ42021ImageList(),contentCategory:'shree-ganesh-b4-q4-2021', roles:['sanatani']}) ;
           this.contentList.push( { contentFile:new GaneshGTEQ42021ImageList(),contentCategory:'shree-ganesh-gte-q4-2021', roles:['sanatani']}) ;
           this.contentList.push( { contentFile:new GaneshGTEQ12023ImageList(),contentCategory:'shree-ganesh-gte-q1-2023', roles:['sanatani']}) ;
@@ -147,6 +168,9 @@ export class CoreContentService {
           this.contentList.push( { contentFile:new MahadevImageList(),contentCategory:'mahadev', roles:['sanatani'],latest:true}) ;
           this.contentList.push( { contentFile:new MahadevFamilyImageList(),contentCategory:'mahadev-family', roles:['sanatani'],latest:true}) ;
           this.contentList.push( { contentFile:new LaxmiVishnuHanumanList(),contentCategory:'laxmi-vishnu-hanuman', roles:['sanatani'],latest:true}) ;
+        }  
+        if (isSuper === true || isGuru === true ) {
+          console.log(`Content service load lists ${isSuper} ${isSanatani} ${isGuru}`)
           this.contentList.push( { contentFile:new DattavatarImageList(),contentCategory:'dattavatar', roles:['guru'],latest:true}) ;
           this.contentList.push( { contentFile:new SwamiSamarthaImageList(),contentCategory:'swami-samartha', roles:['guru']}) ;
           this.contentList.push( { contentFile:new SwamiSamarthaQ22023ImageList(),contentCategory:'swami-samartha-q2-2023', roles:['guru'],latest:true}) ;
@@ -158,9 +182,10 @@ export class CoreContentService {
           this.contentList.push( { contentFile:new ShirdiSaiQ42022Q12023ImageList(),contentCategory:'shirdi-sai-q4-2022-q1-2023', roles:['guru']}) ;
           this.contentList.push( { contentFile:new ShirdiSaiQ2Q32023ImageList(),contentCategory:'shirdi-sai-q2-q3-2023', roles:['guru']}) ;
           this.contentList.push( { contentFile:new ShirdiSaiQ2Q32024ImageList(),contentCategory:'shirdi-sai-q2-q3-2024', roles:['guru']}) ;
-          this.contentList.push( { contentFile:new PeopleImageList(),contentCategory:'people-places', roles:['all'],latest:true}) ;
-          this.contentList.push( { contentFile: new PlacesScenesObjectsImageList(),contentCategory:'places-scenes-objects', roles:['non-living,  non-religious'],latest:true}) ;
+        }
       }
+      this.contentList.push( { contentFile:new PeopleImageList(),contentCategory:'people-places', roles:['all'],latest:true}) ;
+      this.contentList.push( { contentFile: new PlacesScenesObjectsImageList(),contentCategory:'places-scenes-objects', roles:['non-living,  non-religious'],latest:true}) ;
       this.contentList.push( { contentFile: new ThemesMisc(),contentCategory:'themes-misc', roles:['non-living,  non-religious'],latest:true}) ;
 
       this.contentList.push( { contentFile:new TrainImageList(),contentCategory:'trains', roles:['non-living,  non-religious'],latest:true}) ;

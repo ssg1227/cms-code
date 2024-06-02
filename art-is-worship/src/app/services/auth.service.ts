@@ -78,8 +78,8 @@ export class AuthService {
     
     // neew logic to get user roles Dec 18 2023. localstorage for roles used by categories.service.ts
     let loggedinUser = username ? 
-    this.userList.find((userObject) => userObject.userName === username): { userName: 'default', userRoles: ["non-religious"] } ;
-    console.log(`${JSON.stringify(loggedinUser)}`)
+    this.userList.find((userObject) => userObject.userName === username): { userName: 'default', userRoles: ["any"] } ;
+    console.log(`Auth service ${JSON.stringify(loggedinUser)}`)
     /* Doesnt make sense 
     if (!loggedinUser ) {
       loggedinUser =   { userName: 'default',
@@ -91,6 +91,7 @@ export class AuthService {
     localStorage.setItem('current-menu','top-level');
     localStorage.setItem('role',this.roleSetter(username));
   }
+  
   private roleSetter(username:string):string { // change logic later on for the technical menu item, merge into general logic above
     let loggedinUser = username ? 
         this.userList.find((userObject) => userObject.userName === username):
