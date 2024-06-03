@@ -59,13 +59,16 @@ export class CoreContentService {
     userName: 'default',
     userRoles: ["any"] 
   };// JSON.parse(localStorage.getItem("user-object")) ;
-  constructor() {
-     // @ts-ignore: Object is possibly 'null'.
-     let tempUaer =  localStorage.getItem('user-object') ;
-     // @ts-ignore: Object is possibly 'null'.
-     if (tempUaer !== null && tempUaer !== undefined) {
-      this.userObject = JSON.parse(tempUaer);
+  get CurrentUser():any {
+    // @ts-ignore: Object is possibly 'null'.
+    let storedUser =  localStorage.getItem('user-object') ;
+    // @ts-ignore: Object is possibly 'null'.
+    if (storedUser !== null && storedUser !== undefined) {
+      this.userObject = JSON.parse(storedUser);
      }
+    return this.userObject ;
+  }
+  constructor() { 
     this.loadContentList();
    }
   private breadCrumbs?:BreadCrumb[] =[] ;
@@ -95,25 +98,34 @@ export class CoreContentService {
     }
     return this.sketchStats;
   }
+  userMenu: TreeNodeElement[] = [] ;
   get UserMenus(): TreeNodeElement[] {
-    return MenuTreeElements;
-    let userMenu: TreeNodeElement[] = [] ;
+    
+  //  return MenuTreeElements; // backup in case authentication breaks 
+    
+  // redundancy - revisit for one time logic - use a Get - currently not working
+  if(localStorage.getItem('user-object') !== 'undefined' && localStorage.getItem('user-object') !== null) {
+    console.log(`core service: Loadcontent lost ${localStorage.getItem('user-object')}`) ;
+     // @ts-ignore: Object is possibly 'null'.
+     this.userObject  = JSON.parse(localStorage.getItem('user-object'));
+  } 
     if (this.userObject !== null && this.userObject.userRoles) {
         if (this.userObject.userRoles.find((x:string) => x === 'all' || x === 'superuser') !== undefined) {
           console.log(`SUOPER`)
-          return MenuTreeElements;
+          this.userMenu =  MenuTreeElements;
         }
         MenuTreeElements.forEach((menuItem: TreeNodeElement) => {
             menuItem.roles?.forEach((role:string) => {
               if (role === 'any' || this.userObject.userRoles.find((x:string) => x === role) !== undefined) {
-                userMenu.push(menuItem) ;
+                this.userMenu.push(menuItem) ;
               }
             }) ;// || x === 'superuser') !== undefined) 
             
         });
     }
-    return userMenu;
+    return this.userMenu;
   }
+   
   setCurrentCardList():TreeNodeElement[]  {
     let retCardList:TreeNodeElement[] = [];
     let currentParentKey =  localStorage.getItem('current-menu') ;
@@ -130,16 +142,17 @@ export class CoreContentService {
 
   loadContentList() { // loads the raw list; also collects statistics
     let userNameRoles:any  = null ;
-     // @ts-ignore: Object is possibly 'null'.
+    // redundancy - revisit for one time logic - use a Get - currently not working
+    // @ts-ignore: Object is possibly 'null'.
     if(localStorage.getItem('user-object') !== 'undefined' && localStorage.getItem('user-object') !== null) {
-      console.log(localStorage.getItem('user-object')) ;
+      console.log(`core service: Loadcontent lost ${localStorage.getItem('user-object')}`) ;
        // @ts-ignore: Object is possibly 'null'.
        this.userObject  = JSON.parse(localStorage.getItem('user-object'));
     }
       // in the future considering adding role in the ImageList object.. right now
     // QUICK FIX+DEPLOY JAN 4 2024 scrub lists for min religous content and temp freeze roles
     /**/ 
-    let isSuper = false ;// is super is a two role authentication either they see religious/guru content or they dont
+    let isSuper = false ;// make true   in case authentication breaks is super is a two role authentication either they see religious/guru content or they dont
     let isSanatani = false ;
     let isGuru = false ;
     if (this.userObject !== null && this.userObject.userRoles) {
@@ -154,7 +167,7 @@ export class CoreContentService {
         isGuru = true ;
       }
     }
-    isSuper = true ; // backup - to debug logic
+    // isSuper = true ; // backup - to debug logic
     if (isSuper === true || isSanatani === true || isGuru === true) {
         console.log(`Content service load lists ${isSuper} ${isSanatani} ${isGuru}`)
         if (isSuper === true || isSanatani === true ) {
@@ -206,8 +219,10 @@ export class CoreContentService {
       me.collectThemeBasedStats(contentItem);
     });
   }
-  clearContentList() {
+  clearContent() {
+   
     this.contentList = [];
+    this.userMenu = [] ; 
   }
   loadSelectedContent(strParam:string):any {
       if (this.contentList === null || this.contentList.length === 0) {

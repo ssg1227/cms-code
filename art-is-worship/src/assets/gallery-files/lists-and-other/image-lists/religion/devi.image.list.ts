@@ -11,6 +11,24 @@ public allImageList:ImageElement[]  =  [
     themeSummary:
     ``,
     files: [  ,
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-crayon',
+dateUploaded:  '06-02-2024',
+summaryLabel:  `Shree Ganesh, Baba and Maa Saraswati`,
+fullFileName: `${this.imageRoot}GaneshBabaSaraswatiJun22024.jpeg`,
+description: `<ul><li> Shree Ganesh, Baba and Maa Saraswati </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-crayon',
+dateUploaded:  '06-02-2024',
+summaryLabel:  `Shree Ganesh, Baba and Maa Saraswati`,
+fullFileName: `${this.imageRoot}GaneshBabaSaraswatiJun22024.jpeg`,
+description: `<ul><li> Shree Ganesh, Baba and Maa Saraswati  June 2 2024 </li></ul>`,
+},
       { 
         canvassSize: 'A4', content:  'black-white',
         fullFileName: 

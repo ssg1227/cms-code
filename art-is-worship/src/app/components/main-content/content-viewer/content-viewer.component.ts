@@ -99,8 +99,14 @@ export class ContentViewerComponent {
     }
     
      else {
-     AInd =   this.selectedImage.imageList[0].description.trim().replace(`\n`,'').replace('<ul>','')
-     .replace('<li>','').trim() ;
+     AInd =   this.selectedImage.imageList[0].description.trim().replace(`\n`,'')
+                                        .replace('<ul>','')
+                                        .replace('<b>','')
+                                        .replace('<p>','')
+                                        .replace('</p>','')
+                                        .replace('<br/>','')
+                                        .replace('<li>','')
+                                        .trim() ;
 
      AInd = AInd.substring(0, AInd.search('</li>') ) ;
       }

@@ -18,7 +18,16 @@ public allImageList:ImageElement[]  =  [
         themeSummary: 
         `<p> <em><strong>Soo many sketches of Shirdi Sai!!!</strong> that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha</em><br/>
         &nbsp;&nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
-        files: [  
+        files: [  {
+            canvassMaterial:  'Plain paper',
+            canvassSize:  'A4',
+            content:  'color-crayon',
+            dateUploaded:  '06-02-2024',
+            summaryLabel:  `Shree Ganesh, Baba and Maa Saraswati`,
+            duplicate:true,
+            fullFileName: `assets/gallery-files/images/religion/devi/GaneshBabaSaraswatiJun22024.jpeg`,
+            description: `<ul><li> Shree Ganesh, Baba and Maa Saraswati June 2 2024</li></ul>`,
+            },
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',

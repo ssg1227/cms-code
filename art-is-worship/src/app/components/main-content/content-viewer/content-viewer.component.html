@@ -40,7 +40,9 @@
     <div id="modal-container">
       <div id='modal-top-5'>
       <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
-      <button  id="prev" (click)="previous()"><<<</button>{{ImageLabel}}
+      <button  id="prev" (click)="previous()"><<<</button>
+        <div id="title">{{ImageLabel}}</div> 
+        <div id="sequence">{{currentCellSelected + 1}} of {{imageGroups.length}}</div>
       <button  id="next" (click)="next()">>>></button>
     </div>
       <!---<app-mail-form   *ngIf="showContactPage == true"></app-mail-form>

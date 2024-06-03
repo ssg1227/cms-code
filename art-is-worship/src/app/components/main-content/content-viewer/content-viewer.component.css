@@ -47,6 +47,7 @@
     left:0 ;
     height:95%;
     width:95%;
+    margin-top: 10px;
 }
 #close-modal  {
     position: relative;
@@ -75,6 +76,21 @@
     height:45px;
     padding:5px;
     margin:5px 100px;
+}
+
+#title {
+    padding:5px ;
+    font-size: smaller;
+    background-color: beige;
+    border: 2px inset rgb(120,120,60);
+}
+
+#sequence {
+    padding:5px ;
+    font-size: smaller;
+    background-color: skyblue;
+    border: 2px inset darkslateblue;
+    color:darkblue;
 }
 #mutiple-container {
     overflow-y: scroll;
@@ -131,13 +147,18 @@ padding:20px;border: 1px solid gray; margin-left:20px;
     width:25px;
     height:15px;
     padding:1px;
-    margin:2;
+    margin:2 5;
 }
 #next {
     width:25px;
     height:15px;
     padding:1px;
     margin:2;
+}
+#title {
+    padding:5px ;
+    background-color: beige;
+    border: 2px inset rgb(120,120,60);
 }
 #modal-top-5 {
     flex-wrap:wrap;

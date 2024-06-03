@@ -19,7 +19,27 @@ export class SwamiSamarthaQ22023ImageList { // SwamiSamarthaImageList
             theme:'SHree Swami Samartha',
             themeSummary:
             `Swami Samartha the 4th Avatar of Shree Dattatreya (sequence include Lord Datta himself). Swami sketches have become numerous, so created this new category Q2 2023 - July 8 2023.`,
-            files: [  
+            files: [ {
+                canvassMaterial:  'Plain paper',
+                canvassSize:  'A4',
+                content:  'black-white',
+                dateUploaded:  '06-02-2024',
+                evolution:  `<b>1st of Panchamukhi Hanuman<br/></B>`,
+                evolutionSequence:  4,
+                duoplicate:true, 
+                evolutionDate:  '06-02-2024',
+                summaryLabel:  `Swami Samartha with Panchamukhi Hanuman Narasimha (lion),Hayagriva (horse), Garuda (human face), Varaha - boar `,
+                fullFileName: `assets/gallery-files/images/religion/laxmi-vishnu-hanuman/Swami5MMaruti-1-OnlySwami53124.jpeg`,
+                description: `<ul><li> Panchamukhi Hanuman Narasimha (lion),Hayagriva (horse), Garuda (human face), Varaha - boar  </li><li> With Swami Samartha in foreground </li><li> Final pic scanned  </li></ul>`,
+                rating:  1,
+                ratingYear:  2024,
+                iterations: [
+                    {fullFileName: `assets/gallery-files/images/religion/laxmi-vishnu-hanuman/Swami5MMaruti-1-OnlySwami53124.jpeg`, description: `<ul><li> Initial capture of Shree Swami Samartha</li><li> part of Panchamukhi Hanuman Narasimha (lion),Hayagriva (horse), Garuda (human face), Varaha - boar  </li><li> May 31 2024 </li><li> only face </li></ul>` },
+                    {fullFileName: `assets/gallery-files/images/religion/laxmi-vishnu-hanuman/Swami5MMaruti-4-Swami5faceMaruti-final06224.jpeg`, description: `<ul><li> Panchamukhi Hanuman Narasimha (lion),Hayagriva (horse), Garuda (human face), Varaha - boar  </li><li> With Swami Samartha in foreground </li><li> Final pic scanned  </li></ul>` },
+                {fullFileName: `assets/gallery-files/images/religion/laxmi-vishnu-hanuman/Swami5MMaruti-3-Swami5faceMaruti-outline06124.jpeg`, description: `<ul><li> Panchamukhi Hanuman Narasimha (lion),Hayagriva (horse), Garuda (human face), Varaha - boar  </li><li> With Swami Samartha in foreground </li><li> Maruti body outline June 1 2024 </li></ul>` },
+                {fullFileName: `assets/gallery-files/images/religion/laxmi-vishnu-hanuman/Swami5MMaruti-2-Swami5faceMaruti-head06124.jpeg`, description: `<ul><li> Panchamukhi Hanuman Narasimha (lion),Hayagriva (horse), Garuda (human face), Varaha - boar  </li><li> With Swami Samartha in foreground </li><li> only face, May 31-June 1 2024 </li></ul>` },
+                ]
+                }, 
 {
 canvassSize:  'A4',
 content:  '',

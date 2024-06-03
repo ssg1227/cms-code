@@ -12,6 +12,15 @@ public allImageList:ImageElement[]  =  [
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ ,
             {
+                  canvassMaterial:  'Plain paper',
+                  canvassSize:  'A4',
+                  content:  'color-crayon',
+                  dateUploaded:  '06-02-2024',
+                  summaryLabel:  `Shree Ganesh, Baba and Maa Saraswati`,
+                  duplicate:true,
+                  fullFileName: `assets/gallery-files/images/religion/devi/GaneshBabaSaraswatiJun22024.jpeg`,
+                  description: `<ul><li> Shree Ganesh, Baba and Maa Saraswati June 2 2024</li></ul>`,
+                  }, {
                   canvassSize: 'A3',
                   content: 'color-pencil',
                   dateUploaded: '05-24-2024',

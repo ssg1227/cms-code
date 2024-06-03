@@ -128,7 +128,7 @@ export class AuthService {
     localStorage.removeItem('current-menu');
     localStorage.removeItem("isLeafParent");
     localStorage.removeItem("key");
-    this.coreContentService.clearContentList() ;
+    this.coreContentService.clearContent() ;
 
     /*
     localStorage.removeItem('userMenu');

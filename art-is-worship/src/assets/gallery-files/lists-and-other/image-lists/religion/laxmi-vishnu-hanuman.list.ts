@@ -12,6 +12,26 @@ public allImageList:ImageElement[]  =  [
              themeSummary: `<p>Laxmi and avatars, Rukhmini, Sita, Narayan, Ram, Vithal, Narsimha, Hanuman and others.   </p>`,
              files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '06-02-2024',
+evolution:  `<b>1st of Panchamukhi Hanuman<br/></B>`,
+evolutionSequence:  4,
+evolutionDate:  '06-02-2024',
+summaryLabel:  `Panchamukhi Hanuman Narasimha (lion),Hayagriva (horse), Garuda (human face), Varaha - boar `,
+fullFileName: `${this.imageRoot}Swami5MMaruti-4-Swami5faceMaruti-final06224.jpeg`,
+description: `<ul><li> Panchamukhi Hanuman Narasimha (lion),Hayagriva (horse), Garuda (human face), Varaha - boar  </li><li> With Swami Samartha in foreground </li><li> Final pic scanned  </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}Swami5MMaruti-4-Swami5faceMaruti-final06224.jpeg`, description: `<ul><li> Panchamukhi Hanuman Narasimha (lion),Hayagriva (horse), Garuda (human face), Varaha - boar  </li><li> With Swami Samartha in foreground </li><li> Final pic scanned  </li></ul>` },
+{fullFileName: `${this.imageRoot}Swami5MMaruti-3-Swami5faceMaruti-outline06124.jpeg`, description: `<ul><li> Panchamukhi Hanuman Narasimha (lion),Hayagriva (horse), Garuda (human face), Varaha - boar  </li><li> With Swami Samartha in foreground </li><li> Maruti body outline June 1 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}Swami5MMaruti-2-Swami5faceMaruti-head06124.jpeg`, description: `<ul><li> Panchamukhi Hanuman Narasimha (lion),Hayagriva (horse), Garuda (human face), Varaha - boar  </li><li> With Swami Samartha in foreground </li><li> only face, May 31-June 1 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}Swami5MMaruti-1-OnlySwami53124.jpeg`, description: `<ul><li> Initial capture of Shree Swami Samartha</li><li> part of Panchamukhi Hanuman Narasimha (lion),Hayagriva (horse), Garuda (human face), Varaha - boar  </li><li> May 31 2024 </li><li> only face </li></ul>` },
+]
+},
+{
 canvassSize:  'A5',
 content:  'watercolor-pencil',
 dateUploaded:  '05-27-2024',
