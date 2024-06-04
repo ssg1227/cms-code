@@ -3,7 +3,7 @@
     position: fixed;
     top:0 ;
     left:0 ;
-    width:95%; 
+    width:100%; 
     margin-right: 5px;
     height:95%; 
     padding:5px; 
@@ -21,8 +21,8 @@
     /* non scrollable header adds */
     position: fixed;
     top:0 ;
-    left:0 ;
-    width:95%; 
+    left:10 ;
+    width:98%; 
     /* end non scrollable header adds */
     display: flex ;
     border: 2px solid slateblue ;
@@ -58,7 +58,7 @@
 .lower-ninety {
     /* height: 90%; added below for fixed header changes */
     position: fixed;
-    top:200px ;
+    top:140px ;
     left:0 ;
     height: 80%;
     /* .. end */

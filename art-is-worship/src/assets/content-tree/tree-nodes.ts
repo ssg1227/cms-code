@@ -127,6 +127,17 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '', params:'misc', label: 'Misc.'}
         ],
         
+    }, 
+    {
+        parentKey:"top-level", key: "admin", levelIndex:1,isLeafParent:false, roles:['admin', 'superuser'],
+        label: "Admin",
+        description:`Admin`,
+        
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'admin', label: 'Admin'}
+        ],
+        
     }/*, 
     
     {
@@ -142,6 +153,19 @@ export const MenuTreeElements:TreeNodeElement[] = [
     }*/, 
     // #### LEVEL 2
     // special lists - added one more layer 
+       
+ 
+{
+    parentKey:"admin", key: "newuser", levelIndex:1,isLeafParent:false, roles:['admin', 'superuser'],
+    label: "New User",
+    description:`Register New User`,
+    
+    emptyMessage: 'Empty Content or Error', breadCrumb:[
+        {link: '/view', params:'top-level', label: 'HOME'},
+        {link: '', params:'newuser', label: 'newuser'}
+    ],
+    
+},
     { 
         parentKey: "special-lists", key: 'changers', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["any"], 
         label: 'Changers', 

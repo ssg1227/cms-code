@@ -64,7 +64,7 @@
 #prev {
     
     left: 45; 
-    width:35px;
+    width:auto;
     height:45px;
     padding:5px;
     margin:5px 100px;
@@ -72,7 +72,7 @@
 #next {
     
     left: 55; 
-    width:35px;
+    width:auto;
     height:45px;
     padding:5px;
     margin:5px 100px;
@@ -144,13 +144,13 @@ padding:20px;border: 1px solid gray; margin-left:20px;
 }
 #prev {
     
-    width:25px;
+    width:auto;
     height:15px;
     padding:1px;
     margin:2 5;
 }
 #next {
-    width:25px;
+    width:auto;
     height:15px;
     padding:1px;
     margin:2;
@@ -159,6 +159,7 @@ padding:20px;border: 1px solid gray; margin-left:20px;
     padding:5px ;
     background-color: beige;
     border: 2px inset rgb(120,120,60);
+    width:auto;
 }
 #modal-top-5 {
     flex-wrap:wrap;

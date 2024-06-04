@@ -1,0 +1,14 @@
+.home {
+    margin:5px 10px 5px 15px;
+    width:95%;
+    height: 80%;
+    overflow-y: auto;
+}
+
+@media screen and (max-width:1028px) {
+    home {
+        margin:1px 1px 1px 1px;
+        width:98%;
+        overflow-y: auto;
+    }
+}

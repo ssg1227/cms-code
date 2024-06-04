@@ -13,7 +13,13 @@
 - console.log should try to keep reference - classname method name
 ### June 1 - 8
 - Authentication piece ETA JUNE 3 AM 
-- Scrub Data and share on Saayam ETA JUNE 4 AM
+- Scrub Data and share on Saayam ETA JUNE 7 AM
+- Test singleton persistence to ultimately target new user registration. ETA June 5-6 AM
+  - POC. Create a user, store in auth.service 
+  - Do not restart server, close browser, logout, do whatever
+- Based on above:ETA June 7 AM
+  - create user registration form (password, cookies, etc later). 
+  - as admin, copy paste into a users object (auth service)
 - Performance:
   - Pagination - keep a max 15 page limit, ETA JUNE  4 EOD
   - Split - keep a max 15 page limit, generate menus dynamically ETA JUNE 7

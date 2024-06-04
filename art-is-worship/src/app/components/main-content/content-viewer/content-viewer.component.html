@@ -17,8 +17,10 @@
     <br/>
    
     <div class="lower-ninety outerdiv" ><!--  *ngIf="showContactPage == false" ; else showEmail-->
+      
        <div *ngIf="isLeafParent=='true' && imageGroups.length > 0" class="outerdiv" ><!-- have to repeat outerdiv for flex style -->
          <div *ngFor="let grpImag of imageGroups; let i = index;">
+          
           <app-card 
           [cardIndex]="i" 
           (clickedIndex)="compareSelected($event,i)" 
@@ -40,10 +42,9 @@
     <div id="modal-container">
       <div id='modal-top-5'>
       <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
-      <button  id="prev" (click)="previous()"><<<</button>
-        <div id="title">{{ImageLabel}}</div> 
-        <div id="sequence">{{currentCellSelected + 1}} of {{imageGroups.length}}</div>
-      <button  id="next" (click)="next()">>>></button>
+      <button  id="prev" (click)="previous()"><<<  &nbsp;&nbsp; &nbsp;&nbsp;{{currentCellSelected + 1}}/ {{imageGroups.length}}</button>
+        <div id="title" *ngIf="ImageLabel.length >0">{{ImageLabel}}</div> 
+      <button  id="next" (click)="next()"> {{currentCellSelected + 1}}/ {{imageGroups.length}} &nbsp;&nbsp; &nbsp;&nbsp;>>></button>
     </div>
       <!---<app-mail-form   *ngIf="showContactPage == true"></app-mail-form>
      

@@ -6,6 +6,7 @@
   <!--div *ngIf="cardInfo.key=='contact'">
     <app-mail-form></app-mail-form>
   </div-->
+ 
   <div  *ngIf="imageDetail == null;"[routerLink]="[ViewLink,cardInfo.key]">  
     
     <div id="node-card"><h3>{{cardInfo.label}}</h3>{{cardInfo.description}}</div>
@@ -19,7 +20,7 @@
  </div>
  <div>
   <div class="caption" *ngIf="isLarge" [innerHTML]="imageDetail.imageList[0].description" style="float: right;"> </div>
-  
+  <!--app-register-form *ngIf="cardInfo.key=='newuser'"></app-register-form-->
  </div>
 
 </div>

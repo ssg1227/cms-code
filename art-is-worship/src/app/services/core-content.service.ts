@@ -41,6 +41,8 @@ import { MumbaiMeriJaan2List } from 'src/assets/gallery-files/lists-and-other/im
 })
 export class CoreContentService {
   contentList:ContentList[]= [] ;
+  userMenu: TreeNodeElement[] = [] ;
+
   sketchStats = {
     subjects: 0,
     totalCounts :0 ,
@@ -92,23 +94,53 @@ export class CoreContentService {
      return this.contentList ;
   //  let 
   }
+  // OPTIMIZE FOR NON SUPERUSER
+  get UserMenus(): TreeNodeElement[] {
+    //  return MenuTreeElements; // backup in case authentication breaks 
+     
+    this.checkLoadUser();
+    if (this.userObject.userRoles.find((x:string) => x === 'all' || x === 'superuser') !== undefined) {
+      return MenuTreeElements;
+    }
+    this.userMenu = [] ;
+    /* Work on optimal filter function 
+    this.userMenu =       MenuTreeElements.filter((menuItem: TreeNodeElement) => {
+      menuItem.roles?.forEach((role:string) => {
+        (role === 'any' || this.userObject.userRoles.find((x:string) => x === role) !== undefined) 
+      }) ;// || x === 'superuser') !== undefined) 
+      
+    });
+    
+    */
+    if (this.userMenu.length === 0 ) {
+      this.userMenu = this.loadUserMenus() ;
+    }
+     
+    return this.userMenu ;
+  }
+  
   get SketchStats():any {
     if (this.contentList.length === 0 ) {
       this.loadContentList() ;
     }
     return this.sketchStats;
   }
-  userMenu: TreeNodeElement[] = [] ;
-  get UserMenus(): TreeNodeElement[] {
-    
-  //  return MenuTreeElements; // backup in case authentication breaks 
-    
-  // redundancy - revisit for one time logic - use a Get - currently not working
-  if(localStorage.getItem('user-object') !== 'undefined' && localStorage.getItem('user-object') !== null) {
-    console.log(`core service: Loadcontent lost ${localStorage.getItem('user-object')}`) ;
-     // @ts-ignore: Object is possibly 'null'.
-     this.userObject  = JSON.parse(localStorage.getItem('user-object'));
-  } 
+
+  checkLoadUser() {
+    if(localStorage.getItem('user-object') !== 'undefined' && localStorage.getItem('user-object') !== null) {
+      console.log(`core service: Loadcontent lost ${localStorage.getItem('user-object')}`) ;
+      // @ts-ignore: Object is possibly 'null'.
+      let tempUserObject  = JSON.parse(localStorage.getItem('user-object'));
+      if (tempUserObject.userName !== this.userObject.userName) {
+        this.userMenu = [] ;
+        // @ts-ignore: Object is possibly 'null'.
+        this.userObject = JSON.parse(localStorage.getItem('user-object'));
+      }
+    } 
+  }
+  
+  loadUserMenus() {
+ 
     if (this.userObject !== null && this.userObject.userRoles) {
         if (this.userObject.userRoles.find((x:string) => x === 'all' || x === 'superuser') !== undefined) {
           console.log(`SUOPER`)

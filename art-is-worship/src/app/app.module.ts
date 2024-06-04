@@ -15,7 +15,8 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { LoginLandingComponent } from './components/admin-register-login/login-landing/login-landing.component';
 import { ContentViewerComponent } from './components/main-content/content-viewer/content-viewer.component';
 import { CardComponent } from './components/main-content/card/card.component';
-import { MailFormComponent } from './components/misc/mail-form/mail-form.component'
+import { MailFormComponent } from './components/misc/mail-form/mail-form.component';
+import { RegisterFormComponent } from './components/admin-register-login/register-form/register-form.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { MailFormComponent } from './components/misc/mail-form/mail-form.compone
     ContentViewerComponent,
     CardComponent,
     MailFormComponent,
+    RegisterFormComponent,
   ],
   imports: [
     BrowserModule,
