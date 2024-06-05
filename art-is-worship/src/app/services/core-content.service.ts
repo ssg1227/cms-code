@@ -44,6 +44,7 @@ export class CoreContentService {
   userMenu: TreeNodeElement[] = [] ;
 
   sketchStats = {
+    userName:'',
     subjects: 0,
     totalCounts :0 ,
     canvassSize:[],
@@ -161,6 +162,9 @@ export class CoreContentService {
   setCurrentCardList():TreeNodeElement[]  {
     let retCardList:TreeNodeElement[] = [];
     let currentParentKey =  localStorage.getItem('current-menu') ;
+    if (this.TestMode === true) {
+      console.log(`Core service ${currentParentKey }`);
+    }
     //retCardList = MenuTreeElements.filter((x) => x.parentKey === currentParentKey) ;
      retCardList = this.UserMenus.filter((x) => x.parentKey === currentParentKey) ;
     
@@ -388,7 +392,11 @@ export class CoreContentService {
      // revisit this logic
     }
   collectThemeBasedStats(contentList:ContentList) {
-    
+    if(localStorage.getItem('user-object') !== 'undefined' && localStorage.getItem('user-object') !== null) {
+       
+      // @ts-ignore: Object is possibly 'null'.
+      this.sketchStats.userName  = `Welcome ${JSON.parse(localStorage.getItem('user-object')).userName}`;
+    }
     let themeCount = {
       name: contentList.contentFile.allImageList[0].theme,
       count: 0

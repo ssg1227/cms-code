@@ -38,6 +38,10 @@ export class CardComponent {
     return this._viewLink;
   }
   ngOnInit(): void {
+    if(localStorage.getItem("key") !== null) {
+      // @ts-ignore: Object is possibly 'null'.
+      this.key = localStorage.getItem('key')|'';
+    }
   }
   toggleCardState() {
     this.cardState = this.cardState === 'default' ? 'hover' : 'default';

@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 interface User {
   userName: string;
   userRoles: string[] ;
+  landingPage?: '',
 }
 @Injectable({
   providedIn: 'root'
@@ -73,7 +74,14 @@ export class AuthService {
     "other"
   ]
   constructor(private router:Router, private coreContentService:CoreContentService) { }
-  login(username:string){
+  login(username:string, directLatet=false){
+    /*
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      alert("mobile");
+    }else{
+      alert("not mobile");
+    }
+    */
     this.clearCaches() ;
     
     // neew logic to get user roles Dec 18 2023. localstorage for roles used by categories.service.ts
@@ -90,6 +98,21 @@ export class AuthService {
     localStorage.setItem('userId',username);
     localStorage.setItem('current-menu','top-level');
     localStorage.setItem('role',this.roleSetter(username));
+    if (directLatet === true) {
+      this.router.navigate(['/view','latest-uploads-timewise']).then( (e) => {
+      
+        if (e) {
+          localStorage.setItem("key", 'latest-uploads-timewise');
+          localStorage.setItem('current-menu','latest-uploads-timewise');
+          localStorage.setItem("isLeafParent",'true');
+          if (this.coreContentService.TestMode === true)
+              console.log("auth service: login  is successful!");
+        } else {
+          if (this.coreContentService.TestMode === true)
+            console.log("auth service: login  has failed!");
+        }
+      });
+  }
   }
   
   private roleSetter(username:string):string { // change logic later on for the technical menu item, merge into general logic above

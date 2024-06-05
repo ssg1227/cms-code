@@ -8,6 +8,7 @@ import { TreeNodeElement } from 'src/assets/content-tree/tree-nodes' ;
 import { BreadCrumb } from 'src/assets/content-tree/bread-crumbs';
 
 import { ImageElement, ContentList } from 'src/assets/gallery-files/lists-and-other/image-lists/shared/image-detail' ;
+import { core } from '@angular/compiler';
 @Component({
   selector: 'app-content-viewer',
   templateUrl: './content-viewer.component.html',
@@ -35,7 +36,7 @@ export class ContentViewerComponent {
   allImageList:ImageElement[] = [];
   genImageList:any = null ;
   imageGroups:any[] = [];
-
+  currentMenu = '';
   themeHeader:string ='';
   themeSummary:string = '';
   currentIndex:number = 0 ;
@@ -48,25 +49,31 @@ export class ContentViewerComponent {
   _iterations:boolean = false ;
   newLook=true ;
   showContactPage = false ;
+  testMode = false ;
   //..
   constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService) {
-  
+    this.testMode = this.coreContentService.TestMode ;
       // @ts-ignore: Object is possibly 'null'.
   }
   ngOnInit() {
-    this.isLeafParent = localStorage.getItem("isLeafParent") ;
+    this.isLeafParent = localStorage.getItem("isLeafParent") ;// @ts-ignore: Object is possibly 'null'.
+    this.currentMenu = localStorage.getItem("current-menu") ;
+    
+    if (this.testMode === true) {
+      console.log(`Content component ngOnInit ${this.isLeafParent} ${this.currentMenu}`);
+    }
+   
     if(localStorage.getItem("key") !== null) {
       // @ts-ignore: Object is possibly 'null'.
-      this.key = localStorage.getItem('key')|'';
+      this.key = localStorage.getItem('key');
     }
     this.isCompiledList = localStorage.getItem("isCompiledList");
-  
     console.log(`${this.isLeafParent} ${this.key }`) ;
     if (this.isLeafParent === 'true') {
       const dataReturned = this.coreContentService.loadSelectedContent(this.key);
         this.genImageList = dataReturned.gen ; 
         this.allImageList = this.genImageList.allImageList;
-        console.log('test');
+        this.compareSelected(this.key, 0);
     }
     const summary = this.coreContentService.SketchStats ;
     if(this.coreContentService.TestMode === true)  {
@@ -86,7 +93,7 @@ export class ContentViewerComponent {
    }
    get StatsSummary():string {
     const summary = this.coreContentService.SketchStats ;
-    return `<p> Image Numbers:<br/> Subjects: ${summary.subjects}<br/> Total Counts:${summary.totalCounts}`;
+    return ` <p> ${summary.userName}<br/>Image Numbers:<br/> Subjects: ${summary.subjects}<br/> Total Counts:${summary.totalCounts}`;
     
    }
    get ImageLabel():string {

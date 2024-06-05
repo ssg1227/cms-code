@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./login-landing.component.css']
 })
 export class LoginLandingComponent {
+ directLatest = true ;
  appTitle= staticText.appTitle;
  appAuthor= staticText.appAuthor;
  appContent = staticText.introContentList[0];
@@ -18,6 +19,6 @@ export class LoginLandingComponent {
 
  }
  cmsLogin(){
-  this.authService.login(this.userId);
+  this.authService.login(this.userId, this.directLatest);
  }
 }

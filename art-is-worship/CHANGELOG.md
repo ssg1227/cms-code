@@ -12,6 +12,7 @@
 - Maintaining this log
 - console.log should try to keep reference - classname method name
 ### June 1 - 8
+- June 5.. Option of going to 'latest sketches' specific list instead of top root page implemented
 - Authentication piece ETA JUNE 3 AM 
 - Scrub Data and share on Saayam ETA JUNE 7 AM
 - Test singleton persistence to ultimately target new user registration. ETA June 5-6 AM

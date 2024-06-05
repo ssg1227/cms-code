@@ -5,6 +5,8 @@
         <div id="upper-ten-central-box">
             <input type='text' [(ngModel)]='userId' placeholder='User Name (optional)'>  
             &nbsp;&nbsp; <input type='button' value='Enter'  (click)='cmsLogin()'>
+            <br/>
+            <input type="checkbox" [(ngModel)]="directLatest"> Takes you direct to my latest sketches
         </div>
     </div>
     <div  class="lower-ninety home" [innerHTML]="appContent"></div>
