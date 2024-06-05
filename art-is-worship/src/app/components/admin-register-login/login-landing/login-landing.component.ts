@@ -10,13 +10,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./login-landing.component.css']
 })
 export class LoginLandingComponent {
- directLatest = true ;
+ directLatest =  this.IsMobileScreen === 'true'? false: true ;
  appTitle= staticText.appTitle;
  appAuthor= staticText.appAuthor;
  appContent = staticText.introContentList[0];
  userId=""
  constructor(private authService:AuthService) {
 
+ }
+ get IsMobileScreen(): string {
+  return JSON.stringify((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) ;
+  
  }
  cmsLogin(){
   this.authService.login(this.userId, this.directLatest);

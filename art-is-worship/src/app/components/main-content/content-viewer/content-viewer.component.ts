@@ -195,7 +195,7 @@ export class ContentViewerComponent {
           this.imageGroups = [];
           foundList[0]
               .files
-              .forEach( (fileData:any) => {
+              .forEach( (fileData:any, index:number) => {
                 let groupImages:any[] = [] ;
                 let stats = '';
                 let cardstyle = { outer: ``, image:``}; // move chosing card style logic to core content service 
