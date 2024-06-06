@@ -50,6 +50,10 @@ export class ContentViewerComponent {
   newLook=true ;
   showContactPage = false ;
   testMode = false ;
+
+  pageSize = 14;
+
+  currentPage = 1;
   //..
   constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService) {
     this.testMode = this.coreContentService.TestMode ;
@@ -196,6 +200,10 @@ export class ContentViewerComponent {
           foundList[0]
               .files
               .forEach( (fileData:any, index:number) => {
+               /* if (index >= 10) {
+                  return;
+                }
+              */
                 let groupImages:any[] = [] ;
                 let stats = '';
                 let cardstyle = { outer: ``, image:``}; // move chosing card style logic to core content service 
@@ -257,7 +265,11 @@ export class ContentViewerComponent {
           
           }
    }
-
+  
+   get paginatedImages(): string[] {
+    const startIndex = (this.currentPage - 1) * this.pageSize;
+    return this.imageGroups.slice(startIndex, startIndex + this.pageSize);
+   }
   multipleImages(selectedImage:any):string {
     return  ` <div id="pic-container" >
      <img id="pic" *ngIf="selectedImage != null" src="{{${selectedImage.imageList[0].image}}}">

@@ -1,4 +1,8 @@
 <div class="root-frame">
     <app-login-landing *ngIf="!UserLoggedIn"></app-login-landing> 
-    <app-content-viewer *ngIf="UserLoggedIn"></app-content-viewer>
+    <div *ngIf="UserLoggedIn">
+        <app-content-viewer *ngIf="SmallScreen=='false'"></app-content-viewer>
+    <app-paged-content-viewer *ngIf="SmallScreen=='true'"></app-paged-content-viewer>
+    </div>
+    
 </div> 

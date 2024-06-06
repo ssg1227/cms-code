@@ -16,7 +16,8 @@ import { LoginLandingComponent } from './components/admin-register-login/login-l
 import { ContentViewerComponent } from './components/main-content/content-viewer/content-viewer.component';
 import { CardComponent } from './components/main-content/card/card.component';
 import { MailFormComponent } from './components/misc/mail-form/mail-form.component';
-import { RegisterFormComponent } from './components/admin-register-login/register-form/register-form.component'
+import { RegisterFormComponent } from './components/admin-register-login/register-form/register-form.component';
+import { PagedContentViewerComponent } from './components/main-content/paged-content-viewer/paged-content-viewer.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { RegisterFormComponent } from './components/admin-register-login/registe
     CardComponent,
     MailFormComponent,
     RegisterFormComponent,
+    PagedContentViewerComponent,
   ],
   imports: [
     BrowserModule,

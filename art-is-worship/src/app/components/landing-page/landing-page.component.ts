@@ -13,4 +13,7 @@ export class LandingPageComponent {
   public get UserLoggedIn():boolean {
     return  this.authService.LoggedIn ;
   }
+  public get SmallScreen():string {
+    return  JSON.stringify((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) ;
+  }
 }
