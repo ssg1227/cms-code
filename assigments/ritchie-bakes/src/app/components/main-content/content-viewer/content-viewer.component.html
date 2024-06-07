@@ -34,6 +34,7 @@
             [cardIndex]="i" 
             (clickedIndex)="compareSelected($event,i)" 
             [cardInfo]="card"
+            [cardLevelImage]="getCardLevelImage(card)"
             [cardSelected]="currentCellSelected"></app-card>
          
        </div>

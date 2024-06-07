@@ -30,6 +30,7 @@ export class CardComponent {
   @Input() cardInfo:any = null ;
   @Input() imageDetail:any = null ;
   @Input() isLarge:boolean = false ;
+  @Input() cardLevelImage:string = '';
   @Output() clickedIndex = new EventEmitter<string>() ;
 
   cardState = 'default';

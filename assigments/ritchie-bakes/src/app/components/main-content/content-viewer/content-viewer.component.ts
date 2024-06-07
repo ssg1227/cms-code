@@ -184,7 +184,11 @@ export class ContentViewerComponent {
         }
       }
    }
-   loadImages() {
+   getCardLevelImage(card:TreeNodeElement):string {
+     return  (card.cardLevelImage!== null && card.cardLevelImage !== undefined) ?
+       card.cardLevelImage:   '';
+   }
+    loadImages() {
 
     let foundList:ImageElement[] = [] ;
     foundList = /*strParam === 'latest-uploads' || 'showpiece' ?*/ this.allImageList ;  

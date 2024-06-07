@@ -15,6 +15,7 @@ export interface TreeNodeElement {
     isCompiledList?:boolean; // use some criteria to load selected images like latest uploads or top rated
     isLeafParent:boolean; // 'true' = load the image list for that menu kee, 'false' = top or middle node
     dateUploaded?:string;
+    cardLevelImage?:string;
     roles?:string[]; // roles match users roles many to many match
     
 }
@@ -63,6 +64,17 @@ export const MenuTreeElements:TreeNodeElement[] = [
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'cookies', label: 'Cookies'}
+        ],    
+    }
+    , 
+    {
+        parentKey:'top-level',key: "contact-details", levelIndex:1,isLeafParent:false, roles:['any'],
+        label: "Contact Details", 
+        description:'',
+        cardLevelImage:'assets/gallery-files/images/contact-card.jpeg',
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'contact-details', label: 'Contact Details'}
         ],    
     }
 ]
