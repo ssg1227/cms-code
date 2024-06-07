@@ -78,7 +78,13 @@
         background-image: linear-gradient(to right, aliceblue, #9198f5, lightblue, skyblue);
     }
     .lower-ninety {
+
         background: radial-gradient(#f77775, #a2a9f6);
+    background-image: url("assets/gallery-files/images/Ritchie-bakes-logo.jpeg");
+    background-repeat: no-repeat;
+    background-position: center; 
+   
+
     }
 }
 @media screen and (max-width:1028px) {

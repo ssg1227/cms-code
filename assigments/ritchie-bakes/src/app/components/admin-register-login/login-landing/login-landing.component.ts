@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./login-landing.component.css']
 })
 export class LoginLandingComponent {
- directLatest =  this.IsMobileScreen === 'true'? false: true ;
+ directLatest =  false ;// this.IsMobileScreen === 'true'? false: true ;
  appTitle= staticText.appTitle;
  appAuthor= staticText.appAuthor;
  appContent = staticText.introContentList[0];

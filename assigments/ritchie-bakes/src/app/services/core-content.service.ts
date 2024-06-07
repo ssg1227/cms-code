@@ -6,6 +6,8 @@ import { BreadCrumb } from 'src/assets/content-tree/bread-crumbs';
 
 import { SpecialityCakesChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-chocolate.list';
 import { SpecialityCakesNonChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-non-chocolate.list';
+import { CupCakes } from 'src/assets/gallery-files/lists-and-other/image-lists/cup-cakes.list';
+import { Cookies } from 'src/assets/gallery-files/lists-and-other/image-lists/cookies.list';
 
 @Injectable({
   providedIn: 'root'
@@ -177,7 +179,9 @@ export class CoreContentService {
     // isSuper = true ; // backup - to debug logic
       this.contentList.push( { contentFile: new SpecialityCakesChocolate(),contentCategory:'speciality-cakes-chocolate', roles:['any'],latest:true}) ;
       this.contentList.push( { contentFile: new SpecialityCakesNonChocolate(),contentCategory:'speciality-cakes-non-chocolate', roles:['any'],latest:true}) ;
-      
+      this.contentList.push( { contentFile: new CupCakes(),contentCategory:'cup-cakes', roles:['any'],latest:true}) ;
+      this.contentList.push( { contentFile: new Cookies(),contentCategory:'cookies', roles:['any'],latest:true}) ;
+
     let me = this;
     this.sketchStats.totalCounts = 0;
     this.sketchStats.subjects = 0;
