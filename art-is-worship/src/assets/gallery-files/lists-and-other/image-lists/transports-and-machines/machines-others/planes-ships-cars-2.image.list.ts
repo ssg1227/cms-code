@@ -10,6 +10,20 @@ export class PlanesShipsCars2ImageList {
         themeSummary: `My first steps, my first love in this passion for sketching these are planes which I started drawing as a kid. <br/>
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil black-white',
+dateUploaded:  '06-07-2024',
+summaryLabel:  `Lucid Air - semi exotic EV and competition to Tesla A`,
+fullFileName: `${this.imageRoot}lucid-air-3-june4-2024.jpeg`,
+description: `<ul><li> Lucid Air - semi exotic EV and competition to Tesla A </li><li> Sketched June 4 - 6 2024 </li></ul>`,
+iterations: [
+{fullFileName: `${this.imageRoot}lucid-air-3-june4-2024.jpeg`, description: `<ul><li> Lucid Air - semi exotic EV and competition to Tesla A </li><li> Sketched June 4 - 6 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}lucid-air-2-june4-2024.jpeg`, description: `<ul><li> Lucid Air - semi exotic EV and competition to Tesla A </li><li> Sketched June 4 - 6 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}lucid-air-1-june3-2024.jpeg`, description: `<ul><li> Lucid Air - semi exotic EV and competition to Tesla A </li><li> Sketched June 4 - 6 2024 </li></ul>` },
+]
+},
 
 {
 canvassSize:  'A4',

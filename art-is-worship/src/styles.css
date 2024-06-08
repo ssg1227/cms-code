@@ -77,6 +77,9 @@
     }
 }
 @media screen and (max-width:1028px) {
+    .upper-ten {
+        height:25%;
+    }
     .lower-ninety {
         /* height: auto; part of non-scrollable header */
         font-size: x-large;

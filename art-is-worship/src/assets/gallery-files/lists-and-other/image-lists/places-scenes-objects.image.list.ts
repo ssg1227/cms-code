@@ -14,6 +14,17 @@ export class PlacesScenesObjectsImageList {
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '06-07-2024',
+summaryLabel:  `One sitting sketch 90 minutes`,
+fullFileName: `${this.imageRoot}SailingShipMoonlightJune062024.jpeg`,
+description: `<ul><li> One sitting sketch 90 minutes </li><li> June 7 2024 </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'color-pencil black-white',
 dateUploaded:  '05-31-2024',
 summaryLabel:  `Celebrating the Worlds first single-piece 3d printed semi-cryogenic engine powered rocket ... AGNIBAAN `,
