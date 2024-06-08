@@ -19,6 +19,15 @@ public allImageList:ImageElement[]  =  [
         `<p> <em><strong>Soo many sketches of Shirdi Sai!!!</strong> that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha</em><br/>
         &nbsp;&nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
         files: [  {
+
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '06-07-2024',
+summaryLabel:  `Showing Baba with Milpitas Shirdi Temple Kitchen in the background`,
+fullFileName: `${this.imageRoot}BabaJune62024-MIlpitas-kitchen.jpeg`,
+description: `<ul><li> Showing Baba with Milpitas Shirdi Temple Kitchen in the background </li><li> June 6 2024- Shirdi Sai Pariwar group (Bay Area) formation 20th anniversary on June 20 - 22!!! </li></ul>`,
+},{
             canvassMaterial:  'Plain paper',
             canvassSize:  'A4',
             content:  'color-crayon',
