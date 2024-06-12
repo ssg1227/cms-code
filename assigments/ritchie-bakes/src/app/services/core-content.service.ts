@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
-import { TreeNodeElement,MenuTreeElements } from 'src/assets/content-tree/tree-nodes' ;
+
+import { TreeNodeElement } from 'src/assets/content-tree/tree-node-element' ;
+import {  MenuTreeElements } from 'src/assets/content-tree/menu-tree-elements' ;
 import { ImageElement, ContentList } from 'src/assets/gallery-files/lists-and-other/image-lists/shared/image-detail' ;
 import { BreadCrumb } from 'src/assets/content-tree/bread-crumbs';
 // content files 
