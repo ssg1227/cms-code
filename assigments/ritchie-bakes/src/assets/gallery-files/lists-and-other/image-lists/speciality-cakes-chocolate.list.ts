@@ -47,7 +47,21 @@ export class SpecialityCakesChocolate {
                                       fullFileName: `${this.imageRoot}chocolate-cake-5.jpeg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
-                                }
+                                },{
+                                      
+                                    dateUploaded:  '06-06-2024',
+                                    summaryLabel:  `Chocolate cake with buttercream decoration`,
+                                    fullFileName: `${this.imageRoot}Chocolate-cake-with-buttercream-decoration.jpeg`,
+                                      description: `<ul><li>Chocolate cake with buttercream decoration</li><li>pricing coming soon </li></ul>`,
+        
+                                },{
+                                      
+                                    dateUploaded:  '06-06-2024',
+                                    summaryLabel:  `Chocolate Cake 7 `,
+                                    fullFileName: `${this.imageRoot}chocolate-cake-7.jpeg`,
+                                    description: `<ul><li>Description and pricing coming soon </li></ul>`,
+      
+                              }
                      ]
                   },
              ]

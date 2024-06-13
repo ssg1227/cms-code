@@ -31,6 +31,16 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],    
     }, 
     {
+        parentKey:'top-level',key: "other-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Other Cakes -Coffee Cakes, Eggless etc.", 
+        cardLevelImage:'assets/gallery-files/images/other-cakes/Eggless Chocolate Walnut Tea cake.jpeg',
+        description:'',
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'other-cakes', label: 'Other Cakes -Coffee Cakes, Eggless etc.'}
+        ],    
+    }, 
+    {
         parentKey:'top-level',key: "cup-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Cup Cakes", 
         cardLevelImage:'assets/gallery-files/images/cup-cakes/coffee-cup-cakes.jpeg', 
