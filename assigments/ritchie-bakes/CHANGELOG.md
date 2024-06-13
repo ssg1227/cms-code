@@ -12,8 +12,13 @@
 - Maintaining this log
 - console.log should try to keep reference - classname method name
 ### June 9 - 16
+- Stepwise Generalization
+  - Copy this to a generic new angular project shantanu-CMS
+  - Copy and customize (mark steps in CUSTOMIZE.md)
+  - Keep context specific content in separate folders - e.g. assets-ritchie-bakes etc
+  - For now let the development across all apps be in the generic app
 - **June 12-13 changes**
-  - Ritchie Bakes is a template candidate. 
+  - Ritchie Bakes is a template candidate and as on June 13, the latest version of this document is *here*. 
     - iteratively extract and separate out context specific code,files and other data.
     - document the steps **CREATED NEW FILE: CUSTOMIZE.md**
     - this log

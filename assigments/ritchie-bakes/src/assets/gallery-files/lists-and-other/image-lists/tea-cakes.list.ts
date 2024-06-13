@@ -34,6 +34,21 @@ export class TeaCakes {
                               fullFileName: `${this.imageRoot}Orange Tea cake.jpeg`,
                               description: `<ul><li> Orange Tea cake  </li><li>More details coming soon </li></ul>`,
 
+                        }, 
+                        {
+                              
+                              dateUploaded:  '06-06-2024',
+                              summaryLabel:  `Christmas collection - plum cake `,
+                              fullFileName: `${this.imageRoot}Plum cake.jpeg`,
+                              labelValue: [
+                                    { label:'special-list',
+                                      value:'special-lists-christmas-collection',
+                                      notes:'special-lists'
+                                    }
+ ,
+                               ],
+                              description: `<ul><li> Orange Tea cake  </li><li>More details coming soon </li></ul>`,
+
                         }
                 ]
           }

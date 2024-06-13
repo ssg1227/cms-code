@@ -20,5 +20,34 @@ export class ContextedCoreContentService {
     contentList.push( { contentFile: new CupCakes(),contentCategory:'cup-cakes', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new CookiesBrowniesOther(),contentCategory:'cookies-brownies-other', roles:['any'],latest:true}) ;
   }
-  
+  loadSpecialLists(contentList:ContentList[], specialFiles:any,strParam:string):boolean {
+     
+   
+    let specialListFound = true ;
+    switch (strParam) {
+      // optimize later
+      case 'special-lists-christmas-collection':
+       
+         
+        contentList.forEach((individImageList:any) => {
+          if(individImageList.contentFile.allImageList && 
+            individImageList.contentFile.allImageList[0].files){
+            
+              individImageList.contentFile.allImageList[0].files.forEach((fileItem:any) => {
+                if (fileItem.labelValue && fileItem.labelValue[0].value === strParam) {
+                  specialFiles.push(fileItem);
+                }
+              });
+            
+            }
+       })
+            
+        break ;
+      default:
+        specialListFound = false ;
+        break;
+
+    }
+    return specialListFound ;
+  }
 }

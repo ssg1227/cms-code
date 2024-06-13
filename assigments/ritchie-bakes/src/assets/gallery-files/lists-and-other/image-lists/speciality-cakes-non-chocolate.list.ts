@@ -82,6 +82,34 @@ export class SpecialityCakesNonChocolate {
                                           description: `<ul><li>Details coming soon </li></ul>` },
                                     ]
 
+                        }, {
+                                      
+                              dateUploaded:  '06-06-2024',
+                              summaryLabel:  `Christmas collection- Coffee cake for christmas`,
+                              labelValue: [
+                                   { label:'special-list',
+                                     value:'special-lists-christmas-collection',
+                                     notes:'special-lists'
+                                   }
+,
+                              ],
+                              fullFileName: `${this.imageRoot}Coffee cake for christmas.jpeg`,
+                              description: `<ul><li>Description and pricing coming soon </li></ul>`,
+
+                        }, {
+                                      
+                              dateUploaded:  '06-06-2024',
+                              summaryLabel:  `Christmas collection- Christmas cake`,
+                              labelValue: [
+                                   { label:'special-list',
+                                     value:'special-lists-christmas-collection',
+                                     notes:'special-lists'
+                                   }
+,
+                              ],
+                              fullFileName: `${this.imageRoot}Christmas cake.jpeg`,
+                              description: `<ul><li>Description and pricing coming soon </li></ul>`,
+
                         }
 
              ]

@@ -202,6 +202,42 @@ export class CoreContentService {
       if (this.contentList === null || this.contentList.length === 0) {
         this.loadContentList();
       }
+      /* DEBUIG */
+      let specialFiles:any[] = [];
+      let specialListFound = this.contextedCoreContentService.loadSpecialLists(this.ContentList, specialFiles, strParam) ;
+      if (specialListFound === true && specialFiles.length > 0) {
+        this.genImageList = { 
+          allImageList: [ 
+              { 
+                folder:'',
+                theme:`Special Lists: Christmas collection`,
+                themeSummary: `&nbsp;&nbsp;These are some which are, what I consider my best efforts. Almost all the better ones, I have taken my time over..<br/>
+                              &nbsp;&nbsp;My attitude and approach to sketching have changed; I RARELY try to finish a sketch at one sitting, but do it in bits and pieces..`,
+                files: [],
+              }
+          ]} ; 
+          specialFiles.forEach((eachSpecialFile:any) => {
+            this.genImageList.allImageList[0].files.push(eachSpecialFile);
+          }) ;
+          this.allImageList  = this.genImageList.allImageList ; 
+          this.allImageList[0].folder = '';
+          this.allImageList[0].theme = 'latest-uploads';
+          this.allImageList[0].themeSummary = 'Quick referral showing latest uploads of 90 days or less'
+      } else  {  
+         // @ts-ignore: Object is possibly 'null'.
+         console.log(strParam) ;
+         this.genImageList = this.contentList.find(cl => cl.contentCategory === strParam)? 
+             this.contentList.find(cl => cl.contentCategory === strParam)?.contentFile: null;
+         if (this.genImageList === null || this.genImageList.allImageList === null) {
+           return ;
+         }
+     }
+     if(this.genImageList !== undefined && this.genImageList.allImageList !== null) { // first aid; need to NOT reach this function for a node
+      this.allImageList = this.genImageList.allImageList ;
+      return { all:  this.allImageList, gen: this.genImageList };
+    }
+      return ;
+      // MOVE TO contexted core content service for art-is-worship
       let yearSelected = 0 ;
       let themeYear = 'before 2022';
         switch (strParam) {

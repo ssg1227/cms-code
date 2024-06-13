@@ -68,7 +68,21 @@ export class CookiesBrowniesOther {
                                     fullFileName: `${this.imageRoot}Christmas collection- Red velvet Brownie.jpeg`,
                                     description: `<ul><li>Description and pricing coming soon </li></ul>`,
       
-                              }
+                              },  {
+                                      
+                                    dateUploaded:  '06-06-2024',
+                                    summaryLabel:  `Christmas collection- Gingerbread cookies`,
+                                    labelValue: [
+                                         { label:'special-list',
+                                           value:'special-lists-christmas-collection',
+                                           notes:'special-lists'
+                                         }
+,
+                                    ],
+                                    fullFileName: `${this.imageRoot}Gingerbread cookies.jpeg`,
+                                    description: `<ul><li>Description and pricing coming soon </li></ul>`,
+      
+                              }// Gingerbread cookies
                      ]
                   },
              ]

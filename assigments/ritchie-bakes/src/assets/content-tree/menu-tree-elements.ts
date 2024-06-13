@@ -62,9 +62,9 @@ export const MenuTreeElements:TreeNodeElement[] = [
     }
     , 
     {
-        parentKey:'top-level',key: "special-lists-christmas-collection", levelIndex:1,isLeafParent:false, roles:['any'],
+        parentKey:'top-level',key: "special-lists-christmas-collection", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Special Lists: Christmas Collection", 
-        description:'COMING SOON',
+        description:'',
         cardLevelImage:'assets/gallery-files/images/cookies-brownies-other/Christmas collection- Red velvet Brownie.jpeg',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
