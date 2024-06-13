@@ -2,7 +2,7 @@
 .card-default { /* tree branch/ category or regular color pencil */ 
   width: 400px;
   height:auto;
-  
+  border: 2px outset salmon ;
   border-radius: 14px;
   margin: 2px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
