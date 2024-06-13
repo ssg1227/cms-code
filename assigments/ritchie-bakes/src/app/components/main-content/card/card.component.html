@@ -10,7 +10,7 @@
   <div  *ngIf="imageDetail == null;"[routerLink]="[ViewLink,cardInfo.key]">  
     
     <div id="node-card"><h3>{{cardInfo.label}}</h3>{{cardInfo.description}}</div>
-    <img  *ngIf="cardLevelImage != ''" src="{{cardLevelImage}}"   [ngClass]="toggleImageSize()" >
+    <img id="node-card-image" *ngIf="cardLevelImage != ''" src="{{cardLevelImage}}"    >
   </div>
    <!--- WORKING ON STITCHING OLD IMAGE LOGIC INTO THE NEW CARD TREE- BREAD CRUMB STRUCTURE-->
  <div class="card-image" [ngClass]="selectImageBorder()" *ngIf="imageDetail != null; "   (click)="expand()"  > 

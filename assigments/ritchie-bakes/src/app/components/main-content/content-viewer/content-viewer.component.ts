@@ -31,7 +31,7 @@ export class ContentViewerComponent {
   key = '';
   isCompiledList = localStorage.getItem("isCompiledList");
   currentCardList:TreeNodeElement[] = this.coreContentService.setCurrentCardList() ;
-  currentCellSelected = 0 ;
+  currentCellSelected = -1 ;
   // image listing
   allImageList:ImageElement[] = [];
   genImageList:any = null ;

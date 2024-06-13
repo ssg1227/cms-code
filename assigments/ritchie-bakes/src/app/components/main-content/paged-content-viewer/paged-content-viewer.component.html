@@ -9,10 +9,10 @@
             </span><br/><div>    {{parentDescripion}}</div>
         
         </div>
-        <div id="upper-ten-central-box">
+        <div id="upper-ten-central-box" *ngIf="NeedLogin == true">
             <input type='button' value='Logout'  (click)='cmsLogout()'>
         </div>
-        <div  id="upper-ten-right-box" [innerHTML]="StatsSummary"> </div>
+        <div  id="upper-ten-right-box" >Contact:<br/>Marisa Desouza <br/>9820848489<br/>ritchiebakes2021@gmail.com </div>
     </div>
     <br/>
    
@@ -37,6 +37,7 @@
             [cardIndex]="i" 
             (clickedIndex)="compareSelected($event,i)" 
             [cardInfo]="card"
+            [cardLevelImage]="getCardLevelImage(card)"
             [cardSelected]="currentCellSelected"></app-card>
          
        </div>

@@ -26,7 +26,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 */
 export class CardComponent {
   @Input() cardIndex = 0 ;
-  @Input() cardSelected = 0 ;
+  @Input() cardSelected = -1 ;
   @Input() cardInfo:any = null ;
   @Input() imageDetail:any = null ;
   @Input() isLarge:boolean = false ;

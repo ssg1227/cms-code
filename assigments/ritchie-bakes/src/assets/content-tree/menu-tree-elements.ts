@@ -13,6 +13,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     {
         parentKey:'top-level',key: "speciality-cakes-chocolate", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Speciality Cakes - Chocolate", 
+         cardLevelImage:'assets/gallery-files/images/speciality-cakes-chocolate/chocolate-cake-1.jpeg',
         description:'',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -22,6 +23,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     {
         parentKey:'top-level',key: "speciality-cakes-non-chocolate", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Speciality Cakes - Non Chocolate", 
+        cardLevelImage:'assets/gallery-files/images/speciality-cakes-non-chocolate/birthday-cake-1-tbd.jpeg',
         description:'',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -31,6 +33,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     {
         parentKey:'top-level',key: "cup-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Cup Cakes", 
+        cardLevelImage:'assets/gallery-files/images/cup-cakes/coffee-cup-cakes.jpeg', 
         description:'',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -40,6 +43,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     {
         parentKey:'top-level',key: "cookies", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Cookies", 
+        cardLevelImage:'assets/gallery-files/images/cookies/butter-cookies.jpeg',  
         description:'',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},

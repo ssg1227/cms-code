@@ -31,7 +31,7 @@ export class PagedContentViewerComponent {
   key = '';
   isCompiledList = localStorage.getItem("isCompiledList");
   currentCardList:TreeNodeElement[] = this.coreContentService.setCurrentCardList() ;
-  currentCellSelected = 0 ;
+  currentCellSelected = -1 ;
   // image listing
   allImageList:ImageElement[] = [];
   genImageList:any = null ;
@@ -136,6 +136,13 @@ export class PagedContentViewerComponent {
     } 
     return AInd ;
 
+
+
+  }
+  public get NeedLogin():boolean {
+    ;
+   // localStorage.setItem('current-menu','top-level');
+    return this.authService.NeedLogin === true ;
   }
   cmsLogout(){
     this.authService.logout() ;
@@ -196,6 +203,11 @@ export class PagedContentViewerComponent {
         }
       }
    }
+
+   getCardLevelImage(card:TreeNodeElement):string {
+    return  (card.cardLevelImage!== null && card.cardLevelImage !== undefined) ?
+      card.cardLevelImage:   '';
+  }
    loadImages() {
 
     let foundList:ImageElement[] = [] ;

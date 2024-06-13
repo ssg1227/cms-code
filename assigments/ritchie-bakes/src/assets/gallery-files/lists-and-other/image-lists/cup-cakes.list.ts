@@ -37,7 +37,7 @@ export class CupCakes {
                                       
                                       dateUploaded:  '06-06-2024',
                                       summaryLabel:  `Blueberry Crush Cup Cakes`,
-                                      fullFileName: `${this.imageRoot}blueberry-crush-cup-cakes.jpeg`,
+                                      fullFileName: `${this.imageRoot}green-top-velvet-cakes.jpeg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
                                 },{
