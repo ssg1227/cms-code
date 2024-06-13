@@ -1,8 +1,8 @@
 import {  ImageElement } from './shared/image-detail'
 
-export class OtherCakes {
+export class TeaCakes {
             sort: string = 'asc'
-    imageRoot=`assets/gallery-files/images/other-cakes/`;
+    imageRoot=`assets/gallery-files/images/tea-cakes/`;
     public allImageList:ImageElement[]  =  [
           { 
                 folder:'places-scenes-objects',

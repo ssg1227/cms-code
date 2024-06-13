@@ -31,13 +31,13 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],    
     }, 
     {
-        parentKey:'top-level',key: "other-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
-        label: "Other Cakes -Coffee Cakes, Eggless etc.", 
-        cardLevelImage:'assets/gallery-files/images/other-cakes/Eggless Chocolate Walnut Tea cake.jpeg',
+        parentKey:'top-level',key: "tea-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Tea Cakes -Coffee Cakes, Eggless etc.", 
+        cardLevelImage:'assets/gallery-files/images/tea-cakes/Eggless Chocolate Walnut Tea cake.jpeg',
         description:'',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'other-cakes', label: 'Other Cakes -Coffee Cakes, Eggless etc.'}
+            {link: '', params:'tea-cakes', label: 'Tea Cakes -Coffee Cakes, Eggless etc.'}
         ],    
     }, 
     {
@@ -51,16 +51,26 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],    
     }, 
     {
-        parentKey:'top-level',key: "cookies", levelIndex:1,isLeafParent:true, roles:['any'],
-        label: "Cookies", 
-        cardLevelImage:'assets/gallery-files/images/cookies/butter-cookies.jpeg',  
+        parentKey:'top-level',key: "cookies-brownies-other", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Cookies, Brownies and Others", 
+        cardLevelImage:'assets/gallery-files/images/cookies-brownies-other/butter-cookies.jpeg',  
         description:'',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'cookies', label: 'Cookies'}
+            {link: '', params:'cookies-brownies-other', label: 'Cookies, Brownies and Others'}
         ],    
     }
     , 
+    {
+        parentKey:'top-level',key: "special-lists-christmas-collection", levelIndex:1,isLeafParent:false, roles:['any'],
+        label: "Special Lists: Christmas Collection", 
+        description:'COMING SOON',
+        cardLevelImage:'assets/gallery-files/images/cookies-brownies-other/Christmas collection- Red velvet Brownie.jpeg',
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'special-lists-christmas-collection', label: 'Special Lists: Christmas Collecttion'}
+        ],    
+    } , 
     {
         parentKey:'top-level',key: "contact-details", levelIndex:1,isLeafParent:false, roles:['any'],
         label: "Contact Details", 

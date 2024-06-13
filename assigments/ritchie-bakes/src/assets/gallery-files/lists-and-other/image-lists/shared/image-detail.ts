@@ -1,3 +1,9 @@
+interface NameValueNotes {
+    name:string;
+    value:string;
+    notes:string;
+}
+
 export interface ImageDetail {
     imageFileName?: string; // to replace the one below with this
     fullFileName?:string; // to remove this 
@@ -16,7 +22,7 @@ export interface ImageDetail {
     rating?: number;
     ratingYear?: number;
     dateUploaded?: string;
-
+    labelValue?:LabelValue[]
 generic?:string;
 genericCategory?:number; // 1 Ganesh, 2 Goddesses, 3 shiva (+ family), 4 Narayan + family + Hanuman, 5 Gurus
 genericDescription?: string;
@@ -29,9 +35,10 @@ export   interface ImageElement {
     files:any[];
 } 
 
-export interface  NameValue {
-    name:string ;
+export interface  LabelValue {
+    label:string ;
     value:string ;
+    notes:string;
 }
 export   interface ContentList {
     contentFile:any ;

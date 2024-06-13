@@ -1,9 +1,9 @@
-import {  ImageElement } from '../image-lists/shared/image-detail'
+import {  ImageElement } from './shared/image-detail'
 
-export class Cookies {
+export class CookiesBrowniesOther {
             sort: string = 'asc'
     
-            imageRoot=`assets/gallery-files/images/cookies/`;
+            imageRoot=`assets/gallery-files/images/cookies-brownies-other/`;
             public allImageList:ImageElement[]  =  [
                   { 
                         folder:'places-scenes-objects',
@@ -15,43 +15,57 @@ export class Cookies {
                                 {
                                       
                                       dateUploaded:  '06-06-2024',
-                                      summaryLabel:  `Mini Marble Cookies `,
+                                      summaryLabel:  `Mini Marble CookiesBrowniesOther `,
                                       fullFileName: `${this.imageRoot}mini-marble-cookies.jpeg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
                                 },{
                                       
                                       dateUploaded:  '06-06-2024',
-                                      summaryLabel:  `Chocolate Chip Cookies`,
+                                      summaryLabel:  `Chocolate Chip CookiesBrowniesOther`,
                                       fullFileName: `${this.imageRoot}chocolate-chip-cookies.jpeg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
                                 },{
                                       
                                       dateUploaded:  '06-06-2024',
-                                      summaryLabel:  `Coconut Cookies`,
+                                      summaryLabel:  `Coconut CookiesBrowniesOther`,
                                       fullFileName: `${this.imageRoot}coconut-cookies.jpeg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
                                 },{
                                       
                                       dateUploaded:  '06-06-2024',
-                                      summaryLabel:  `Butter Cookies `,
+                                      summaryLabel:  `Butter CookiesBrowniesOther `,
                                       fullFileName: `${this.imageRoot}butter-cookies.jpeg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
                                 },{
                                       
                                       dateUploaded:  '06-06-2024',
-                                      summaryLabel:  `Masala Cookies`,
+                                      summaryLabel:  `Masala CookiesBrowniesOther`,
                                       fullFileName: `${this.imageRoot}masala-cookies.jpeg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
                                 },{
                                       
                                     dateUploaded:  '06-06-2024',
-                                    summaryLabel:  `Cheese Cookies`,
+                                    summaryLabel:  `Cheese CookiesBrowniesOther`,
                                     fullFileName: `${this.imageRoot}cheese-cookies.jpeg`,
+                                    description: `<ul><li>Description and pricing coming soon </li></ul>`,
+      
+                              }, {
+                                      
+                                    dateUploaded:  '06-06-2024',
+                                    summaryLabel:  `Christmas collection- Red velvet Brownie`,
+                                    labelValue: [
+                                         { label:'special-list',
+                                           value:'special-lists-christmas-collection',
+                                           notes:'special-lists'
+                                         }
+,
+                                    ],
+                                    fullFileName: `${this.imageRoot}Christmas collection- Red velvet Brownie.jpeg`,
                                     description: `<ul><li>Description and pricing coming soon </li></ul>`,
       
                               }

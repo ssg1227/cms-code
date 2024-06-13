@@ -8,7 +8,7 @@ import { BreadCrumb } from 'src/assets/assets-common/bread-crumbs';
 import { SpecialityCakesChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-chocolate.list';
 import { SpecialityCakesNonChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-non-chocolate.list';
 import { CupCakes } from 'src/assets/gallery-files/lists-and-other/image-lists/cup-cakes.list';
-import { Cookies } from 'src/assets/gallery-files/lists-and-other/image-lists/cookies.list';
+import { CookiesBrowniesOther } from 'src/assets/gallery-files/lists-and-other/image-lists/cookies-brownies-other.list';
 
 @Injectable({
   providedIn: 'root'
@@ -184,7 +184,7 @@ export class CoreContentService {
       this.contentList.push( { contentFile: new SpecialityCakesChocolate(),contentCategory:'speciality-cakes-chocolate', roles:['any'],latest:true}) ;
       this.contentList.push( { contentFile: new SpecialityCakesNonChocolate(),contentCategory:'speciality-cakes-non-chocolate', roles:['any'],latest:true}) ;
       this.contentList.push( { contentFile: new CupCakes(),contentCategory:'cup-cakes', roles:['any'],latest:true}) ;
-      this.contentList.push( { contentFile: new Cookies(),contentCategory:'cookies', roles:['any'],latest:true}) ;
+      this.contentList.push( { contentFile: new CookiesBrowniesOther(),contentCategory:'cookies', roles:['any'],latest:true}) ;
     */
     let me = this;
     this.sketchStats.totalCounts = 0;

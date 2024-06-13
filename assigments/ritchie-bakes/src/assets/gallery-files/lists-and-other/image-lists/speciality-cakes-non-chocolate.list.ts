@@ -72,8 +72,15 @@ export class SpecialityCakesNonChocolate {
                               
                               dateUploaded:  '06-06-2024',
                               summaryLabel:  `Red Velvet Cake`,
-                              fullFileName: `${this.imageRoot}red-velvet-cake.jpeg`,
+                              fullFileName: `${this.imageRoot}red-velvet-cake-bayko.jpeg`,
                               description: `<ul><li>Details coming soon </li></ul>`,
+                              iterations: [
+                                    {     fullFileName: `${this.imageRoot}red-velvet-cake-bayko.jpeg`,
+                                          description: `<ul><li>Details coming soon </li></ul>`,
+                                      },
+                                    {fullFileName: `${this.imageRoot}red-velvet-cake-bayko-0.jpeg`,
+                                          description: `<ul><li>Details coming soon </li></ul>` },
+                                    ]
 
                         }
 
