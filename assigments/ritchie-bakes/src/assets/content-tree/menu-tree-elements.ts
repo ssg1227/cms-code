@@ -1,4 +1,4 @@
-import { TreeNodeElement } from "./tree-node-element"
+import { TreeNodeElement } from "../assets-common/tree-node-element"
 
 export const MenuTreeElements:TreeNodeElement[] = [
     // #### ROOT

@@ -73,6 +73,11 @@ export class AuthService {
     "technician",
     "other"
   ]
+  needLogin = false;
+
+  get NeedLogin(): boolean  {
+    return this.needLogin  ;
+  }
   constructor(private router:Router, private coreContentService:CoreContentService) { }
   login(username:string, directLatet=false){
     /*

@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
-
-import { TreeNodeElement } from 'src/assets/content-tree/tree-node-element' ;
+import { ContextedCoreContentService } from './contexted-core-content.service';
+import { TreeNodeElement } from 'src/assets/assets-common/tree-node-element' ;
 import {  MenuTreeElements } from 'src/assets/content-tree/menu-tree-elements' ;
 import { ImageElement, ContentList } from 'src/assets/gallery-files/lists-and-other/image-lists/shared/image-detail' ;
-import { BreadCrumb } from 'src/assets/content-tree/bread-crumbs';
+import { BreadCrumb } from 'src/assets/assets-common/bread-crumbs';
 // content files 
-
 import { SpecialityCakesChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-chocolate.list';
 import { SpecialityCakesNonChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-non-chocolate.list';
 import { CupCakes } from 'src/assets/gallery-files/lists-and-other/image-lists/cup-cakes.list';
@@ -46,7 +45,7 @@ export class CoreContentService {
      }
     return this.userObject ;
   }
-  constructor() { 
+  constructor(private contextedCoreContentService: ContextedCoreContentService) { 
     this.loadContentList();
    }
   private breadCrumbs?:BreadCrumb[] =[] ;
@@ -155,6 +154,7 @@ export class CoreContentService {
     let userNameRoles:any  = null ;
     // redundancy - revisit for one time logic - use a Get - currently not working
     // @ts-ignore: Object is possibly 'null'.
+     
     if(localStorage.getItem('user-object') !== 'undefined' && localStorage.getItem('user-object') !== null) {
       console.log(`core service: Loadcontent lost ${localStorage.getItem('user-object')}`) ;
        // @ts-ignore: Object is possibly 'null'.
@@ -179,11 +179,13 @@ export class CoreContentService {
       }
     }
     // isSuper = true ; // backup - to debug logic
+    this.contextedCoreContentService.loadContextedContentList(this.contentList) ;
+    /*
       this.contentList.push( { contentFile: new SpecialityCakesChocolate(),contentCategory:'speciality-cakes-chocolate', roles:['any'],latest:true}) ;
       this.contentList.push( { contentFile: new SpecialityCakesNonChocolate(),contentCategory:'speciality-cakes-non-chocolate', roles:['any'],latest:true}) ;
       this.contentList.push( { contentFile: new CupCakes(),contentCategory:'cup-cakes', roles:['any'],latest:true}) ;
       this.contentList.push( { contentFile: new Cookies(),contentCategory:'cookies', roles:['any'],latest:true}) ;
-
+    */
     let me = this;
     this.sketchStats.totalCounts = 0;
     this.sketchStats.subjects = 0;
@@ -196,7 +198,7 @@ export class CoreContentService {
     this.contentList = [];
     this.userMenu = [] ; 
   }
-  loadSelectedContent(strParam:string):any {
+  loadSelectedContent(strParam:string, specializedCases:string =''):any {
       if (this.contentList === null || this.contentList.length === 0) {
         this.loadContentList();
       }

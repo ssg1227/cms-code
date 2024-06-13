@@ -28,6 +28,11 @@ export   interface ImageElement {
     themeSummary?:string;
     files:any[];
 } 
+
+export interface  NameValue {
+    name:string ;
+    value:string ;
+}
 export   interface ContentList {
     contentFile:any ;
     contentCategory:string ;

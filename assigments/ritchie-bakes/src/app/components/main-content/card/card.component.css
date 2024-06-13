@@ -2,8 +2,8 @@
 .card-default { /* tree branch/ category or regular color pencil */ 
   width: 400px;
   height:auto;
-  min-height:400px;
-  border: 7px outset rgb(200, 110, 3);
+  
+  border: 1px outset rgb(200, 110, 3);
   border-radius: 14px;
   margin: 2px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@ H2,H3,H4 {
 }
 .card-color-pencil {
   background-color: beige;
-  border: 7px outset rgb(146, 3, 3);
+  border: 1px outset rgb(146, 3, 3);
 }
 #node-card {
   padding: 3px;
@@ -60,7 +60,7 @@ H2,H3,H4 {
 width:390px ;
 height:auto;
 margin:auto;
-border: 5px solid rgb(230, 150, 3);
+/*border: 5px solid rgb(230, 150, 3);*/
 border-radius: 10px;
 margin:auto;
 
@@ -100,6 +100,7 @@ margin:auto;
 .container-expand {
 width:510px;
 height:800px;
+margin:10px;
 }
 .image-expand {
 width:75%;

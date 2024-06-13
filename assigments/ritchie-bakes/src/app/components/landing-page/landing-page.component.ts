@@ -10,8 +10,9 @@ export class LandingPageComponent {
   constructor(private authService:AuthService) {
 
   }
+  
   public get UserLoggedIn():boolean {
-    return  this.authService.LoggedIn ;
+    return this.authService.NeedLogin === false? true:  this.authService.LoggedIn ;
   }
   public get SmallScreen():string {
     return  JSON.stringify((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) ;

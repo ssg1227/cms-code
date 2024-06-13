@@ -4,8 +4,8 @@ import { Router } from '@angular/router';
 import { staticText } from 'src/assets/common-config/static-text-other-constants';
 import  { AuthService } from 'src/app/services/auth.service';
 import { CoreContentService } from 'src/app/services/core-content.service';
-import { TreeNodeElement } from 'src/assets/content-tree/tree-node-element' ;
-import { BreadCrumb } from 'src/assets/content-tree/bread-crumbs';
+import { TreeNodeElement } from 'src/assets/assets-common/tree-node-element' ;
+import { BreadCrumb } from 'src/assets/assets-common/bread-crumbs';
 
 import { ImageElement, ContentList } from 'src/assets/gallery-files/lists-and-other/image-lists/shared/image-detail' ;
 import { core } from '@angular/compiler';
@@ -124,6 +124,11 @@ export class ContentViewerComponent {
     } 
     return AInd ;
 
+  }
+  public get NeedLogin():boolean {
+    ;
+   // localStorage.setItem('current-menu','top-level');
+    return this.authService.NeedLogin === true ;
   }
   cmsLogout(){
     this.authService.logout() ;

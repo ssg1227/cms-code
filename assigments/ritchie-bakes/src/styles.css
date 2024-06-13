@@ -8,11 +8,11 @@
     height:95%; 
     padding:5px; 
     background-color: aliceblue;
-    border: 4px outset darkblue ;
+    border: 1px outset silver ;
     border-radius: 7px;
     font-size:1vw;
     overflow-y: auto;
-    background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
+    background-image: radial-gradient(beige, white);
 }
 
 .upper-ten {
@@ -20,13 +20,16 @@
     height: 15%; 
     /* non scrollable header adds */
     position: fixed;
-    top:0 ;
+    top:10 ;
     left:10 ;
     width:98%; 
+    margin: 10 5 ;
     /* end non scrollable header adds */
     display: flex ;
-    border: 2px solid slateblue ;
+    /*border: 2px solid slateblue ;*/
     background-color: rgb(195, 205, 231);
+    box-shadow: gray 10px;
+    border-radius: 15px;
 }
 .upper-ten > H2 {
     margin-left: 10px;
@@ -42,18 +45,23 @@
 }
 #upper-ten-central-box {
     margin:auto;
-    border:1px solid aqua;
-    background-color: silver;
     padding:5px;
+    font-weight: 700;
+    font-size: larger;
 }
 
 #upper-ten-right-box {
     margin:auto;
-    margin-top: 4px;
-    margin-right: 5px; 
-    border:1px solid aqua;
-    background-color: silver;
+    margin-top: 14px;
+    margin-right: 10px;  
+    border-radius: 3px;
+    background-color: lightblue;
+    
+    font-weight: 1000;
+    border: 1px outset silver;
+    box-shadow: 2px gray;
     padding:5px;
+    font-size: larger;
 }
 .lower-ninety {
     /* height: 90%; added below for fixed header changes */
@@ -62,8 +70,9 @@
     left:0 ;
     height: 80%;
     /* .. end */
-    border: 2px solid slateblue ;
+    border: 1px solid lightgrey ;
     background-color: aliceblue;
+    border-radius: 15px;
     background: silver;
     font-size: larger;
     font-weight: 900;

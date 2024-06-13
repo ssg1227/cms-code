@@ -9,10 +9,10 @@
             </span><br/><div>    {{parentDescripion}}</div>
         
         </div>
-        <div id="upper-ten-central-box">
+        <div id="upper-ten-central-box" *ngIf="NeedLogin == true">
             <input type='button' value='Logout'  (click)='cmsLogout()'>
         </div>
-        <div  id="upper-ten-right-box" >Marisa Desouza <br/>9820848489<br/>ritchiebakes2021@gmail.com </div>
+        <div  id="upper-ten-right-box" >Contact:<br/>Marisa Desouza <br/>9820848489<br/>ritchiebakes2021@gmail.com </div>
     </div>
     <br/>
    
@@ -38,7 +38,7 @@
             [cardSelected]="currentCellSelected"></app-card>
          
        </div>
-       <div *ngIf="isLeafParent=='true' && imageGroups.length == 0">EMPTY CONTENT; </div> 
+     
   <!-- ##### Uncomment later for image expansion. Refer to content list of old code - -->
     <div id="modal-container">
       <div id='modal-top-5'>
