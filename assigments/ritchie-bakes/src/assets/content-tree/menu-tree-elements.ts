@@ -72,13 +72,13 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],    
     } , 
     {
-        parentKey:'top-level',key: "contact-details", levelIndex:1,isLeafParent:false, roles:['any'],
-        label: "Contact Details", 
+        parentKey:'top-level',key: "contact-details-fsai", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Contact Details, FSAI cert, etc", 
         description:'',
-        cardLevelImage:'assets/gallery-files/images/contact-card.jpeg',
+        cardLevelImage:'assets/gallery-files/images/contact-details-fsai/contact-card.jpeg',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'contact-details', label: 'Contact Details'}
+            {link: '', params:'contact-details-fsai', label: 'Contact Details, FSAI cert, etc'}
         ],    
     }
 ]

@@ -12,8 +12,17 @@
 - Maintaining this log
 - console.log should try to keep reference - classname method name
 ### June 9 - 16
-- Stepwise Generalization
-  - Copy this to a generic new angular project shantanu-CMS
+- **June 16 Targets**
+  - **Ritchie Bakes** 
+    - Complete data upload for Ritchies bakes including FSAI Cert (new page type?)
+    - Logo top left corner
+  - **Generalization, Order/email form, Order CRUD** (nice to have, testimonial)
+    - (as per steps below:)
+    - Add 'wishlist, cart' + 'shopping cart' buttons with shopping cart form as email form
+    - Order crud with  changing status
+- **Stepwise Generalization**
+  - Copy this to a generic new angular project shantanu-cms
+    (for now it will contain all context related content as well with a suitable suffix - .art-is-worship, for example)
   - Copy and customize (mark steps in CUSTOMIZE.md)
   - Keep context specific content in separate folders - e.g. assets-ritchie-bakes etc
   - For now let the development across all apps be in the generic app
