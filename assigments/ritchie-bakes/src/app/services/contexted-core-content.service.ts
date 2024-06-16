@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ImageElement, ContentList } from 'src/assets/gallery-files/lists-and-other/image-lists/shared/image-detail' ;
-
+import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail';
 // content files 
 import { SpecialityCakesChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-chocolate.list';
 import { SpecialityCakesNonChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-non-chocolate.list';

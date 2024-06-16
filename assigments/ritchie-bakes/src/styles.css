@@ -55,7 +55,7 @@
     margin-top: 14px;
     margin-right: 10px;  
     border-radius: 3px;
-    background-color: lightblue;
+    background-color: lightpink;
     
     font-weight: 1000;
     border: 1px outset silver;
@@ -84,7 +84,7 @@
 }
 @media screen and (min-width:1029px) {
     .upper-ten {
-        background-image: linear-gradient(to right, aliceblue, #9198f5, lightblue, skyblue);
+        background-image: linear-gradient(to right, beige, pink,   brown);
     }
     .lower-ninety {
 

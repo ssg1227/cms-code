@@ -1,4 +1,5 @@
-import {  ImageElement } from './shared/image-detail'
+import {  ImageElement } from '../../shared/image-detail'
+
 
 export class TeaCakes {
             sort: string = 'asc'

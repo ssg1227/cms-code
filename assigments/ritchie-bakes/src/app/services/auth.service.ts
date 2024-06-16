@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CoreContentService } from './core-content.service';
-
 import { Router } from '@angular/router';
+import { needLogin, Roles,userList, users } from 'src/assets/common-config/static-text-other-constants';
 interface User {
   userName: string;
   userRoles: string[] ;
@@ -26,7 +26,7 @@ export class AuthService {
     - sub level auth. showing and masking some themes based on user roles
     - multiple roles
     - add logic for password (again, at this stage, cosmetic value)
-  */
+  moved to static
   Roles = [
     "ADMIN",
     "TECHNICAL",
@@ -73,10 +73,10 @@ export class AuthService {
     "technician",
     "other"
   ]
-  needLogin = false;
+   */
 
   get NeedLogin(): boolean  {
-    return this.needLogin  ;
+    return  needLogin  ;
   }
   constructor(private router:Router, private coreContentService:CoreContentService) { }
   login(username:string, directLatet=false){
@@ -91,7 +91,7 @@ export class AuthService {
     
     // neew logic to get user roles Dec 18 2023. localstorage for roles used by categories.service.ts
     let loggedinUser = username ? 
-    this.userList.find((userObject) => userObject.userName === username): { userName: 'default', userRoles: ["any"] } ;
+    userList.find((userObject) => userObject.userName === username): { userName: 'default', userRoles: ["any"] } ;
     console.log(`Auth service ${JSON.stringify(loggedinUser)}`)
     /* Doesnt make sense 
     if (!loggedinUser ) {
@@ -122,7 +122,7 @@ export class AuthService {
   
   private roleSetter(username:string):string { // change logic later on for the technical menu item, merge into general logic above
     let loggedinUser = username ? 
-        this.userList.find((userObject) => userObject.userName === username):
+        userList.find((userObject) => userObject.userName === username):
         { userName: 'default',
         userRoles: ["non-religious"] } ;
     if (!loggedinUser ) {
@@ -137,7 +137,7 @@ export class AuthService {
       if ( username === 'technician' ) {
        selectedIndex = 1 ;
     }
-    return this.Roles[selectedIndex];
+    return Roles[selectedIndex];
   }
   getRole():string {
     let role = localStorage.getItem('role') ;

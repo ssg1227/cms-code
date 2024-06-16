@@ -1,4 +1,4 @@
-import {  ImageElement } from '../image-lists/shared/image-detail'
+import {  ImageElement } from '../../shared/image-detail'
 
 export class SpecialityCakesChocolate {
             sort: string = 'asc'

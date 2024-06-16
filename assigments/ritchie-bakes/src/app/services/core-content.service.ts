@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { ContextedCoreContentService } from './contexted-core-content.service';
 import { TreeNodeElement } from 'src/assets/assets-common/tree-node-element' ;
 import {  MenuTreeElements } from 'src/assets/content-tree/menu-tree-elements' ;
-import { ImageElement, ContentList } from 'src/assets/gallery-files/lists-and-other/image-lists/shared/image-detail' ;
+import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail' ;
 import { BreadCrumb } from 'src/assets/assets-common/bread-crumbs';
 // content files 
 import { SpecialityCakesChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-chocolate.list';

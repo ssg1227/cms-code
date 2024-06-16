@@ -1,4 +1,4 @@
-import {  ImageElement } from './shared/image-detail'
+import {  ImageElement } from '../../shared/image-detail'
 
 export class ContactDetailsFSAI {
             sort: string = 'asc'

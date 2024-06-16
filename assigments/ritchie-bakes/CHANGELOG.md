@@ -14,7 +14,8 @@
 ### June 9 - 16
 - **June 16 Targets**
   - **Ritchie Bakes** 
-    - Complete data upload for Ritchies bakes including FSAI Cert (new page type?)
+    - Complete data upload for Ritchies bakes including FSAI Cert **Done added new level2s for contact+FSSAI  and uncategorized**
+    - moved imagedetail file and containing folder shared to directly under 'gallery files' (note in customization)
     - Logo top left corner
   - **Generalization, Order/email form, Order CRUD** (nice to have, testimonial)
     - (as per steps below:)
