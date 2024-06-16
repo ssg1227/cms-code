@@ -111,6 +111,33 @@ export class SpecialityCakesNonChocolate {
                               description: `<ul><li>Description and pricing coming soon </li></ul>`,
 
                         }
+                        , {
+                                      
+                              dateUploaded:  '06-06-2024',
+                              summaryLabel:  `Blueberry cake with spring theme`
+                              ,
+                              fullFileName: `${this.imageRoot}Blueberry cake with spring theme.jpeg`,
+                              description: `<ul><li>Description and pricing coming soon </li></ul>`,
+
+                        }
+                        , {
+                                      
+                              dateUploaded:  '06-06-2024',
+                              summaryLabel:  `oreo cake`
+                              ,
+                              fullFileName: `${this.imageRoot}oreo cake.jpeg`,
+                              description: `<ul><li>Description and pricing coming soon </li></ul>`,
+
+                        }
+                        , {
+                                      
+                              dateUploaded:  '06-06-2024',
+                              summaryLabel:  `Strawberry cake`
+                              ,
+                              fullFileName: `${this.imageRoot}strawberry-cake.jpeg`,
+                              description: `<ul><li>Description and pricing coming soon </li></ul>`,
+
+                        }
 
              ]
           },

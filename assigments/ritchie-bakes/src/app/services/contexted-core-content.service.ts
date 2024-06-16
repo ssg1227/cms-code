@@ -8,6 +8,7 @@ import { TeaCakes} from 'src/assets/gallery-files/lists-and-other/image-lists/te
 import { CupCakes } from 'src/assets/gallery-files/lists-and-other/image-lists/cup-cakes.list';
 import { CookiesBrowniesOther } from 'src/assets/gallery-files/lists-and-other/image-lists/cookies-brownies-other.list';
 import { ContactDetailsFSAI } from 'src/assets/gallery-files/lists-and-other/image-lists/contact-details-fsai.list';
+import {Uncategorized } from 'src/assets/gallery-files/lists-and-other/image-lists/uncategorized.list';
 @Injectable({
   providedIn: 'root'
 })
@@ -21,6 +22,7 @@ export class ContextedCoreContentService {
     contentList.push( { contentFile: new CupCakes(),contentCategory:'cup-cakes', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new CookiesBrowniesOther(),contentCategory:'cookies-brownies-other', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new ContactDetailsFSAI(),contentCategory:'contact-details-fsai', roles:['any'],latest:true}) ;
+    contentList.push( { contentFile: new Uncategorized(),contentCategory:'uncategorized', roles:['any'],latest:true}) ;
   }
   loadSpecialLists(contentList:ContentList[], specialFiles:any,strParam:string):boolean {
      

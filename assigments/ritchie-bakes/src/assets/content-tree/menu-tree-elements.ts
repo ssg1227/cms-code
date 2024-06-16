@@ -80,5 +80,15 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'contact-details-fsai', label: 'Contact Details, FSAI cert, etc'}
         ],    
-    }
+    }, 
+    {
+        parentKey:'top-level',key: "uncategorized", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Uncategorized", 
+        description:'',
+        cardLevelImage:'assets/gallery-files/images/uncategorized/shilpa-and-vijay.jpeg',
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'uncategorized', label: 'Uncategorized'}
+        ],    
+    },
 ]
