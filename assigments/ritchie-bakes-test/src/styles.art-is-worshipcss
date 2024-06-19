@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+.root-frame  {
+    position: fixed;
+    top:0 ;
+    left:0 ;
+    width:100%; 
+    margin-right: 5px;
+    height:95%; 
+    padding:5px; 
+    background-color: aliceblue;
+    border: 4px outset darkblue ;
+    border-radius: 7px;
+    font-size:1vw;
+    overflow-y: auto;
+    background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
+}
+
+.upper-ten {
+    /* height: 20%;  part of non-scrollable header, height changed to below*/
+    height: 15%; 
+    /* non scrollable header adds */
+    position: fixed;
+    top:0 ;
+    left:10 ;
+    width:98%; 
+    /* end non scrollable header adds */
+    display: flex ;
+    border: 2px solid slateblue ;
+    background-color: rgb(195, 205, 231);
+}
+.upper-ten > H2 {
+    margin-left: 10px;
+    color: darkslateblue;
+    text-shadow: 1px 1px gray;
+}
+ #author {
+    font-size: smaller;
+    font-style: italic;
+    margin-left: 20px;
+    color: blue;
+    text-shadow: 1px 1px gray;
+}
+#upper-ten-central-box {
+    margin:auto;
+    border:1px solid aqua;
+    background-color: silver;
+    padding:5px;
+}
+
+#upper-ten-right-box {
+    margin:auto;
+    margin-top: 4px;
+    margin-right: 5px; 
+    border:1px solid aqua;
+    background-color: silver;
+    padding:5px;
+}
+.lower-ninety {
+    /* height: 90%; added below for fixed header changes */
+    position: fixed;
+    top:140px ;
+    left:0 ;
+    height: 80%;
+    /* .. end */
+    border: 2px solid slateblue ;
+    background-color: aliceblue;
+    background: silver;
+    font-size: larger;
+    font-weight: 900;
+}
+.lower-ninety-landing {
+    display: flex ;
+    border: 2px solid slateblue ;
+    background-color: rgb(195, 205, 231);
+}
+@media screen and (min-width:1029px) {
+    .upper-ten {
+        background-image: linear-gradient(to right, aliceblue, #9198f5, lightblue, skyblue);
+    }
+    .lower-ninety {
+
+        background: radial-gradient(#f77775, #a2a9f6);
+    background-image: url("assets/gallery-files/images/Ritchie-bakes-logo.jpeg");
+    background-repeat: no-repeat;
+    background-position: center; 
+   
+
+    }
+}
+@media screen and (max-width:1028px) {
+    .lower-ninety {
+        /* height: auto; part of non-scrollable header */
+        font-size: x-large;
+    }
+    .responser {
+        width:95%;
+    }
+    
+#upper-ten-central-box {
+    
+    height: auto;
+    font-size: x-large;
+}
+#upper-ten-right-box {
+    
+    height: auto;
+    font-size: large;
+}
+}
