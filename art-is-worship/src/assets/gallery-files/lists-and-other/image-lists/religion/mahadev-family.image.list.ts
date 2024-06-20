@@ -10,6 +10,22 @@ export class MahadevFamilyImageList {
          themeSummary:
          ``,
          files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '06-20-2024',
+summaryLabel:  `Ganesh Shiv Parvati Karthik June 17 2024`,
+fullFileName: `${this.imageRoot}ShivParvatiMaheshNavi061524-0617-final.jpeg`,
+description: `<ul><li> Ganesh Shiv Parvati Karthik June 17 2024 </li><li> Started on Jun 15 2024 Mahesh Navmi - June 17 </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}ShivParvatiMaheshNavi061524-0617-final.jpeg`, description: `<ul><li> Ganesh Shiv Parvati Karthik June 17 2024 </li><li> Started on Jun 15 2024 Mahesh Navmi - June 17 </li></ul>` },
+{fullFileName: `${this.imageRoot}ShivParvatiMaheshNavi061524-2.jpeg`, description: `<ul><li> Ganesh Shiv Parvati Karthik June 17 2024 </li><li> Started on Jun 15 2024 Mahesh Navmi - June 17 </li><li> In transit photo taken with Shree Ganesh </li></ul>` },
+{fullFileName: `${this.imageRoot}ShivParvatiMaheshNavi061524.jpeg`, description: `<ul><li> Ganesh Shiv Parvati Karthik June 17 2024 </li><li> Started on Jun 15 2024 Mahesh Navmi - June 17 </li><li> 1st pic captured cropped </li></ul>` },
+]
+},
             {  
                // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/MahadevJan102022.jpeg
                // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/Shivji2022ShravanMonday_1.jpeg
