@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Import FormsModule
@@ -11,6 +12,8 @@ import { environment } from '../environments/environment';
 // Service Layer 
 import { AuthService } from './services/auth.service';
 import { CoreContentService } from './services/core-content.service';
+import { ShoppingCartService } from './services/shopping-cart.service';
+
 // components and tree
 
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
@@ -19,6 +22,7 @@ import { ContentViewerComponent } from './components/main-content/content-viewer
 import { CardComponent } from './components/main-content/card/card.component';
 import { MailFormComponent } from './components/misc/mail-form/mail-form.component';
 import { RegisterFormComponent } from './components/admin-register-login/register-form/register-form.component';
+import { ShoppingCartComponent } from './components/main-content/shopping-cart/shopping-cart.component';
 import { PagedContentViewerComponent } from './components/main-content/paged-content-viewer/paged-content-viewer.component'
 @NgModule({
   declarations: [
@@ -30,11 +34,13 @@ import { PagedContentViewerComponent } from './components/main-content/paged-con
     MailFormComponent,
     RegisterFormComponent,
     PagedContentViewerComponent,
+    ShoppingCartComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule, ReactiveFormsModule ,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    HttpClientModule,
     RouterModule.forRoot([
     {path:'home', component:LandingPageComponent},
     
@@ -48,6 +54,6 @@ import { PagedContentViewerComponent } from './components/main-content/paged-con
   ])
   ],
   providers: [], //, ListsFunnelService, CoreContentService],
-    bootstrap: [AppComponent, AuthService, CoreContentService]
+    bootstrap: [AppComponent, AuthService, CoreContentService, ShoppingCartService]
 })
 export class AppModule { }

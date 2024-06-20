@@ -53,4 +53,7 @@ export class ContextedCoreContentService {
     }
     return specialListFound ;
   }
+  loadShopppingCart(){
+    
+  }
 }

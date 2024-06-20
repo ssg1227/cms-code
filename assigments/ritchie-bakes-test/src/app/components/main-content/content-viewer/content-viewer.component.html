@@ -13,6 +13,7 @@
         <div id="upper-ten-central-box" *ngIf="NeedLogin == true">
             <input type='button' value='Logout'  (click)='cmsLogout()'>
         </div>
+        <img src="assets/wishlist.png" (click)="showCart()">
         <div  id="upper-ten-right-box" >Contact:<br/>Marisa Desouza <br/>9820848489<br/>ritchiebakes2021@gmail.com </div>
     </div>
     <br/>
@@ -42,32 +43,37 @@
      
   <!-- ##### Uncomment later for image expansion. Refer to content list of old code - -->
     <div id="modal-container">
-      <div id='modal-top-5'>
-      <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
-      <button  id="prev" (click)="previous()"><<<  &nbsp;&nbsp; &nbsp;&nbsp;{{currentCellSelected + 1}}/ {{imageGroups.length}}</button>
-        <div id="title" *ngIf="ImageLabel.length >0">{{ImageLabel}}</div> 
-      <button  id="next" (click)="next()"> {{currentCellSelected + 1}}/ {{imageGroups.length}} &nbsp;&nbsp; &nbsp;&nbsp;>>></button>
-    </div>
-      <!---<app-mail-form   *ngIf="showContactPage == true"></app-mail-form>
-     
-         <div id="pic-container"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  == 1">
-           <p><img id="pic" *ngIf="selectedImage != null" src="{{selectedImage.imageList[0].image}}"></p>
-           <p [innerHTML]="selectedImage.imageList[0].description"></p>
-         </div>    
-        -->
-        <section id="modal-lower-95"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  >= 1"> <!-- && selectedImage.imageList.length  > 1"-->
-          
-          <div id="iterative" *ngFor="let imageElement of selectedImage.imageList, let j = index">
-            <div id="pic-container" > 
-              <img id="modalpic" *ngIf="imageElement != null" src="{{imageElement.image}}">
-              <div  id="modaltext" style="padding:20px;border: 1px solid gray; margin-left:20px;"> <p [innerHTML]="imageElement.description"> </p>
-            </div>
-            </div>
-          </div>
+      <div *ngIf="ModalMode=='cart'">
+        <app-shopping-cart></app-shopping-cart>
+        <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
+      </div>
+      <div *ngIf="ModalMode=='image'">
+        <div id='modal-top-5'>
+          <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
+          <button  id="prev" (click)="previous()"><<<  &nbsp;&nbsp; &nbsp;&nbsp;{{currentCellSelected + 1}}/ {{imageGroups.length}}</button>
+            <div id="title" *ngIf="ImageLabel.length >0">{{ImageLabel}}</div> 
+          <button  id="next" (click)="next()"> {{currentCellSelected + 1}}/ {{imageGroups.length}} &nbsp;&nbsp; &nbsp;&nbsp;>>></button>
+        </div>
+        <!---<app-mail-form   *ngIf="showContactPage == true"></app-mail-form>
       
-      </section>
-      
-       
+          <div id="pic-container"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  == 1">
+            <p><img id="pic" *ngIf="selectedImage != null" src="{{selectedImage.imageList[0].image}}"></p>
+            <p [innerHTML]="selectedImage.imageList[0].description"></p>
+          </div>    
+          -->
+          <section id="modal-lower-95"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  >= 1"> <!-- && selectedImage.imageList.length  > 1"-->
+            <button (click)="addCart( selectedImage.imageList[0])">Add </button>
+            <div id="iterative" *ngFor="let imageElement of selectedImage.imageList, let j = index">
+              <div id="pic-container" > 
+                <img id="modalpic" *ngIf="imageElement != null" src="{{imageElement.image}}">
+                <div  id="modaltext" style="padding:20px;border: 1px solid gray; margin-left:20px;"> <p [innerHTML]="imageElement.description"> </p>
+              </div>
+              </div>
+            </div>
+        
+        </section>
+        
+      </div>
     </div>
 
     </div>

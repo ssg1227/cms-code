@@ -28,6 +28,13 @@ export class CoreContentService {
   allImageList:ImageElement[] = [];
   genImageList:any = null ;
   topUploadsList: any =   { all: null, gen: null };
+  modalMode='image';
+  get ModalMode(): string {
+    return this.modalMode ;
+  }
+  set ModalMode(value:string) {
+    this.modalMode = value ;
+  }
   get TEST():boolean {
     return true ;
   }

@@ -116,3 +116,10 @@
     font-size: large;
 }
 }
+@media screen and (max-width:550px) {
+    .upper-ten {
+       overflow: auto;
+        
+    }
+    
+}

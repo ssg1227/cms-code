@@ -1,19 +1,29 @@
+import { ShoppingCartComponent } from './../shopping-cart/shopping-cart.component';
 import { Component } from '@angular/core';
 
 import { Router } from '@angular/router';
 import { staticText } from 'src/assets/common-config/static-text-other-constants';
 import  { AuthService } from 'src/app/services/auth.service';
 import { CoreContentService } from 'src/app/services/core-content.service';
+import { ShoppingCartService } from 'src/app/services/shopping-cart.service';
 import { TreeNodeElement } from 'src/assets/assets-common/tree-node-element' ;
 import { BreadCrumb } from 'src/assets/assets-common/bread-crumbs';
 
 import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail' ;
 import { core } from '@angular/compiler';
+interface CartItem {
+  image: string;
+  name: string;
+  unitPrice: number;
+  unit: string;
+  quantity: number;
+};
 @Component({
   selector: 'app-content-viewer',
   templateUrl: './content-viewer.component.html',
   styleUrls: ['./content-viewer.component.css']
 })
+
 export class ContentViewerComponent {
   breadCrumbs:BreadCrumb[]|undefined = [ 
     { 
@@ -55,9 +65,15 @@ export class ContentViewerComponent {
 
   currentPage = 1;
   //..
-  constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService) {
+  constructor(private router:Router, 
+        private authService:AuthService, 
+        private coreContentService: CoreContentService,
+        private shoppingCartService: ShoppingCartService) {
     this.testMode = this.coreContentService.TestMode ;
       // @ts-ignore: Object is possibly 'null'.
+  }
+  get ModalMode():string {
+    return this.coreContentService.ModalMode;
   }
   ngOnInit() {
     this.isLeafParent = localStorage.getItem("isLeafParent") ;// @ts-ignore: Object is possibly 'null'.
@@ -139,10 +155,37 @@ export class ContentViewerComponent {
     this.noContent = (this.isLeafParent === 'true' && this.imageGroups.length === 0) || (this.currentCardList == null || this.currentCardList.length ===0)
     return this.noContent ;
    }
+   showCart() {
+    
+    this.coreContentService.modalMode = 'cart';
+    // @ts-ignore: Object is possibly 'null'.
+    document.getElementById('modal-container').style.display = 'flex';
+   }
+   
+   addCart(selectedImage:any) {
+    let cartItem =
+    {
+      image: selectedImage.image,
+
+      name:selectedImage.summaryLabel,
+      unitPrice: 12.99,
+      unit: 'kg',
+      quantity: 1,
+    }
+    console.log(`${JSON.stringify(selectedImage)}`)
+    this.shoppingCartService.addCartItem(cartItem);
+    /*
+    {"image":"assets/gallery-files/images/speciality-cakes-chocolate/chocolate-cake-1.jpeg","description":"<ul><li>Description and pricing coming soon </li></ul>","summaryLabel":"Chocolate Cake 1 ","cardStyle":{"outer":"","image":""}}
+    
+      */
+   }
    compareSelected(a:any, b:any) {
+    this.coreContentService.modalMode = 'image';
     console.log(`######${a} ${b }`) ;
     this.isLeafParent = localStorage.getItem("isLeafParent") ;
     if (this.isLeafParent === 'true' && isNaN(a)) {
+
+     
         this.imageGroups = [] ;
         // @ts-ignore: Object is possibly 'null'.
         this.key = localStorage.getItem('key')|'';
@@ -170,9 +213,9 @@ export class ContentViewerComponent {
       if(isNaN(a)) {
         if(a === 'contact') {
          this.showContactPage = true ;
-
+    
       // @ts-ignore: Object is possibly 'null'.
-         document.getElementById('modal-container').style.display = 'flex';
+          document.getElementById('modal-container').style.display = 'flex';
         } else {
           this.showContactPage = false ;
           localStorage.setItem('current-menu',a);
