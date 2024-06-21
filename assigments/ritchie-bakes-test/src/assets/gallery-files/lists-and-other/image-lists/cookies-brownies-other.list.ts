@@ -1,4 +1,4 @@
-import {  ImageElement } from '../../shared/image-detail'
+import {  ImageElement } from '@settings-and-models/image-detail'
 
 export class CookiesBrowniesOther {
             sort: string = 'asc'

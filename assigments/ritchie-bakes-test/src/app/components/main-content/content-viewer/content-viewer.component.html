@@ -43,9 +43,9 @@
      
   <!-- ##### Uncomment later for image expansion. Refer to content list of old code - -->
     <div id="modal-container">
+      <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
       <div *ngIf="ModalMode=='cart'">
         <app-shopping-cart></app-shopping-cart>
-        <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
       </div>
       <div *ngIf="ModalMode=='image'">
         <div id='modal-top-5'>

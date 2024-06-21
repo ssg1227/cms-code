@@ -1,8 +1,25 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
+/*
+{
+  "compilerOptions": {
+    "baseUrl": "./", // Base directory for resolving non-relative module names
+    "paths": {
+      "@shared/*": ["src/shared/*"], // Maps '@shared' to the 'src/shared' directory
+      "@components/*": ["src/components/*"] // Example for another directory
+    }
+  }
+}
+
+*/
 {
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@shared/*": ["src/shared/*"], // Maps '@shared' to the 'src/shared' directory
+      "@components/*": ["src/components/*"], // Example for another directory
+      "@settings-and-models/*": ["src/app/settings-and-models/*"],
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

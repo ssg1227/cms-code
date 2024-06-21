@@ -2,12 +2,12 @@ import { ShoppingCartComponent } from './../shopping-cart/shopping-cart.componen
 import { Component } from '@angular/core';
 
 import { Router } from '@angular/router';
-import { staticText } from 'src/assets/common-config/static-text-other-constants';
+import { staticText } from '@settings-and-models/static-text-other-constants';
 import  { AuthService } from 'src/app/services/auth.service';
 import { CoreContentService } from 'src/app/services/core-content.service';
 import { ShoppingCartService } from 'src/app/services/shopping-cart.service';
-import { TreeNodeElement } from 'src/assets/assets-common/tree-node-element' ;
-import { BreadCrumb } from 'src/assets/assets-common/bread-crumbs';
+import { TreeNodeElement } from 'src/app/settings-and-models/tree-node-element' ;
+import { BreadCrumb } from 'src/app/settings-and-models/bread-crumbs';
 
 import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail' ;
 import { core } from '@angular/compiler';

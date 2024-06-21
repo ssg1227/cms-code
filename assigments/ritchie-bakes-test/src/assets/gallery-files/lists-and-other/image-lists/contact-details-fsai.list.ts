@@ -1,5 +1,5 @@
-import {  ImageElement } from '../../shared/image-detail'
-
+import {  ImageElement } from '@settings-and-models/image-detail'
+// /Users/shantanu/Documents/GitHub/ssg1227-GuruDatta@9/cms-code/assigments/ritchie-bakes-test/src/assets/gallery-files/shared/image-detail.ts
 export class ContactDetailsFSAI {
             sort: string = 'asc'
     

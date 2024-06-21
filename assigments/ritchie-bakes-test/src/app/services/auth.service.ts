@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CoreContentService } from './core-content.service';
 import { Router } from '@angular/router';
-import { needLogin, Roles,userList, users } from 'src/assets/common-config/static-text-other-constants';
+import { needLogin, Roles,userList, users } from '@settings-and-models/static-text-other-constants';
 interface User {
   userName: string;
   userRoles: string[] ;

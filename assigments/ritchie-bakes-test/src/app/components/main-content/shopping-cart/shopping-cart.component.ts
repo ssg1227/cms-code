@@ -20,6 +20,7 @@ export class ShoppingCartComponent implements OnInit {
   cartItems: CartItem[] = [];
   pageIndex = 0;
   pageSize = 5;
+  senderEmail=''
   constructor(  private shoppingCartService: ShoppingCartService,private http: HttpClient) {
    
       // @ts-ignore: Object is possibly 'null'.
@@ -51,7 +52,7 @@ export class ShoppingCartComponent implements OnInit {
     const emailBody = this.cartItems.map(item =>
       `Name: ${item.name}, Unit Price: ${item.unitPrice}, Quantity: ${item.quantity}, Total: ${item.unitPrice * item.quantity}`
     ).join('\n');
-    window.location.href = `mailto:your-email@example.com?subject=Shopping Cart&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = `mailto:shangads@gmail.com?subject=Shopping Cart&body=${encodeURIComponent(emailBody)}`;
   }
   submitCartServer() {
   const emailBody = this.cartItems.map(item =>

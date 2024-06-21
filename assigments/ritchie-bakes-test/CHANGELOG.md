@@ -11,6 +11,11 @@
 ### Practices
 - Maintaining this log
 - console.log should try to keep reference - classname method name
+### June 17 - 30
+  - **Target completion of Ritchie Bakes and setuop as Template for pictorial CMS** 
+  - Complete Ritchie bakes with email sent wishlist
+  - ritchie-bakes-test is the latest code as on June 20-21 
+  - June 20 POC for Ritchie bakes
 ### June 9 - 16
 - **June 16 Targets**
   - **Ritchie Bakes** 
