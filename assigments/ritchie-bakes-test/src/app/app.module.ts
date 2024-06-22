@@ -23,7 +23,8 @@ import { CardComponent } from './components/main-content/card/card.component';
 import { MailFormComponent } from './components/misc/mail-form/mail-form.component';
 import { RegisterFormComponent } from './components/admin-register-login/register-form/register-form.component';
 import { ShoppingCartComponent } from './components/main-content/shopping-cart/shopping-cart.component';
-import { PagedContentViewerComponent } from './components/main-content/paged-content-viewer/paged-content-viewer.component'
+import { PagedContentViewerComponent } from './components/main-content/paged-content-viewer/paged-content-viewer.component';
+import { UnitPriceSelectorComponent } from './components/main-content/unit-price-selector/unit-price-selector.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import { PagedContentViewerComponent } from './components/main-content/paged-con
     RegisterFormComponent,
     PagedContentViewerComponent,
     ShoppingCartComponent,
+    UnitPriceSelectorComponent,
   ],
   imports: [
     BrowserModule,

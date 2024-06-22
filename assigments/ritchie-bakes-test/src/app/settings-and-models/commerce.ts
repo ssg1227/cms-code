@@ -6,9 +6,13 @@ export interface CartItem {
     unit: string;
     quantity: number;
   }
-
+export interface ItemUnitPrice {
+  unitPrice:number;
+  unit:string;
+}
 export interface ItemPrice {
     category:string;
-    unitPrice:number;
-    unit:string;
+    unitPrice?:number;
+    unit?:string;
+    itemUnitPrice?:ItemUnitPrice[];
 }

@@ -1,4 +1,5 @@
 import { BreadCrumb } from "./bread-crumbs";
+import { ItemPrice } from "./commerce";
 
 // CMS picture gallery hierarchy structure
 // This is a tree structure, where the leaf key will load the 
@@ -21,5 +22,6 @@ export interface TreeNodeElement {
     shape?:string;
     className?:string;
     styleJSON?:string;
+    itemPrice?:ItemPrice; 
     
 }

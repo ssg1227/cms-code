@@ -75,6 +75,10 @@ export class CardComponent {
       return ;
     }
     // separation of logic for branch.. 
+    localStorage.removeItem("currentCardPrice");
+    
+    if (this.cardInfo.itemPrice !== null && this.cardInfo.itemPrice !== undefined )
+      localStorage.setItem("currentCardPrice", JSON.stringify(this.cardInfo.itemPrice));
     if (this.cardInfo!== null ) {
       localStorage.setItem("isLeafParent", this.cardInfo.isLeafParent.toString());
       localStorage.setItem("key", this.cardInfo.key);
@@ -84,6 +88,7 @@ export class CardComponent {
       } 
       this.clickedIndex.emit(this.cardInfo.key);
     }
+    
     //... AND for leaf (actual pic listing)
     if (this.imageDetail !== null)
       this.clickedIndex.emit(this.cardIndex.toString());

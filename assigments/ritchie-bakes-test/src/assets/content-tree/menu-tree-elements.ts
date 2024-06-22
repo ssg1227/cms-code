@@ -9,6 +9,27 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],
         label:"HOME PAGE",
     },
+    {
+        parentKey:'top-level',key: "cream-cakes-chocolate-ganache", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Cream Cakes - Chocolate with Ganache", 
+         cardLevelImage:'assets/gallery-files/images/speciality-cakes-chocolate/chocolate-cake-1.jpeg',
+        description:'Need 2 days notice to orer',
+        itemPrice: {
+            category:'cream-cakes-chocolate-ganache',
+            itemUnitPrice: [
+                {
+                    unitPrice:600, 
+                    unit:'1/2 kg'
+                },{
+                     unitPrice:1200, 
+                    unit:'1 kg'
+                }],
+        },
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'cream-cakes-chocolate-ganache', label: 'Cream Cakes - Chocolate with Ganache'}
+        ],    
+    },  
     // #### LEVEL 1
     {
         parentKey:'top-level',key: "speciality-cakes-chocolate", levelIndex:1,isLeafParent:true, roles:['any'],

@@ -1,3 +1,4 @@
+import { ItemUnitPrice } from './../../../settings-and-models/commerce';
 import { ShoppingCartComponent } from './../shopping-cart/shopping-cart.component';
 import { Component } from '@angular/core';
 
@@ -60,7 +61,7 @@ export class ContentViewerComponent {
   newLook=true ;
   showContactPage = false ;
   testMode = false ;
-
+  itemPrice:any = null ;
   pageSize = 14;
 
   currentPage = 1;
@@ -76,9 +77,11 @@ export class ContentViewerComponent {
     return this.coreContentService.ModalMode;
   }
   ngOnInit() {
+    this.itemPrice = null ;
     this.isLeafParent = localStorage.getItem("isLeafParent") ;// @ts-ignore: Object is possibly 'null'.
     this.currentMenu = localStorage.getItem("current-menu") ;
-    
+   
+    console.log(`content viewer ngOnInit: current meny ${JSON.stringify(this.currentCardList)}`);
     if (this.testMode === true) {
       console.log(`Content component ngOnInit ${this.isLeafParent} ${this.currentMenu}`);
     }
@@ -161,7 +164,13 @@ export class ContentViewerComponent {
     // @ts-ignore: Object is possibly 'null'.
     document.getElementById('modal-container').style.display = 'flex';
    }
-   
+   get ItemLabel():string {
+    let itemLabel = 'unnammed bakery item';
+    if (this.breadCrumbs && this.breadCrumbs.length > 0 ) {
+      itemLabel = this.breadCrumbs[this.breadCrumbs.length-1].label ;
+    }
+    return itemLabel ;
+   }
    addCart(selectedImage:any) {
     let cartItem =
     {
@@ -179,7 +188,21 @@ export class ContentViewerComponent {
     
       */
    }
+   
    compareSelected(a:any, b:any) {
+    if (isNaN(a)) {
+      if (a.toString().trim().indexOf('top-level')>=0 )  // hack?
+        localStorage.removeItem("currentCardPrice");
+
+    }
+    console.log(JSON.stringify(this.itemPrice)) ;
+      this.itemPrice = null ;    
+      // @ts-ignore: Object is possibly 'null'.
+      if  (localStorage.getItem("currentCardPrice") !== null){
+        // @ts-ignore: Object is possibly 'null'.
+        this.itemPrice = JSON.parse(localStorage.getItem("currentCardPrice")).itemUnitPrice;
+        console.log(JSON.stringify(this.itemPrice)) ;
+      } 
     this.coreContentService.modalMode = 'image';
     console.log(`######${a} ${b }`) ;
     this.isLeafParent = localStorage.getItem("isLeafParent") ;

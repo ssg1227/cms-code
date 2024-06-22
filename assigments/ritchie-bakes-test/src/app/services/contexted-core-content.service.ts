@@ -6,6 +6,7 @@ import { SpecialityCakesNonChocolate } from 'src/assets/gallery-files/lists-and-
 import { TeaCakes} from 'src/assets/gallery-files/lists-and-other/image-lists/tea-cakes.list'  ;
 import { CupCakes } from 'src/assets/gallery-files/lists-and-other/image-lists/cup-cakes.list';
 import { CookiesBrowniesOther } from 'src/assets/gallery-files/lists-and-other/image-lists/cookies-brownies-other.list';
+import { CreamCakesChocolateGanache } from 'src/assets/gallery-files/lists-and-other/image-lists/cream-cakes-chocolate-ganache.list'
 import { ContactDetailsFSAI } from 'src/assets/gallery-files/lists-and-other/image-lists/contact-details-fsai.list';
 import {Uncategorized } from 'src/assets/gallery-files/lists-and-other/image-lists/uncategorized.list';
 @Injectable({
@@ -16,6 +17,7 @@ export class ContextedCoreContentService {
   constructor() { }
   loadContextedContentList(contentList:ContentList[], userObject:any = null) {
     contentList.push( { contentFile: new SpecialityCakesChocolate(),contentCategory:'speciality-cakes-chocolate', roles:['any'],latest:true}) ;
+     contentList.push( { contentFile: new CreamCakesChocolateGanache(),contentCategory:'cream-cakes-chocolate-ganache', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new SpecialityCakesNonChocolate(),contentCategory:'speciality-cakes-non-chocolate', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new TeaCakes(),contentCategory:'tea-cakes', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new CupCakes(),contentCategory:'cup-cakes', roles:['any'],latest:true}) ;
