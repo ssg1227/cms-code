@@ -31,7 +31,6 @@
             [imageDetail]="grpImag"
             [cardSelected]="currentCellSelected"></app-image-card>
         </div>
-       </div>
        <div *ngFor="let card of currentCardList; let i = index;">
           <app-image-card 
             [cardIndex]="i" 
@@ -40,6 +39,7 @@
             [cardLevelImage]="getCardLevelImage(card)"
             [cardSelected]="currentCellSelected"></app-image-card>  
         </div>
+      </div>
       
         <div id="div-container" >
           <div id="div-container-landing" *ngIf="isLeafParent == null">

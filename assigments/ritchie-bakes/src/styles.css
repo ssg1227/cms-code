@@ -84,6 +84,7 @@
     background: silver;
     font-size: larger;
     font-weight: 900;
+    overflow: auto;
 }
 .image-container {
     width:30%;
@@ -136,7 +137,7 @@
     background-image: url("assets/gallery-files/images/Ritchie-bakes-logo-fade.png");
     background-repeat: repeat;
     background-position: center; 
-   
+    overflow: scroll;
 
     }
 }
