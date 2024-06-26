@@ -11,7 +11,17 @@
 ### Practices
 - Maintaining this log
 - console.log should try to keep reference - classname method name
-### June 17 - 30
+### June 17 - 31
+  - *As on June 24* Latest iteration of CMS oriented to picture gallery is ritchie-bakes-test.
+  - ***However*** it is broken - the leaf elements don't generate the modal 
+  - #### Targets 
+    - Ritchie Bakes potential 'go live' (fit for user consumption) **JUNE 27**
+    - **June 24 night** Moving back latest code base and documentation to ritchie-bakes
+    - *By June 25 middle of day* structuring and reducing dependency on localstorage etc, fixing regressions etc
+      - move common and multiple use entities under new folder app/settings-and-models
+    - *By June 25 evening* complete wish list interface
+    - *By June 26 evening*: Refine UI and styling. 
+    - *By June 26 evening/ early June 27*Update all lists as per the prices and categirization sent by Marissa **TEST THOROUGHLY AND PUBLISH**
   - Made paged-content-viewer redundant ***TO DELETE*** (maintenance headache; will add paging using component variable and ngIf)
   - Added folder directly under 'app' settings-and-models - move all static, re-useable and universally accessed content files here (see Customize.md for tsconfig.json changes)
   - **Target completion of Ritchie Bakes and setup as Template for pictorial CMS** 
