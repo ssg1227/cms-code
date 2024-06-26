@@ -11,6 +11,18 @@ export const MenuTreeElements:TreeNodeElement[] = [
     },
     // #### LEVEL 1
     {
+        parentKey:"top-level", key: "prices-list", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Price Lists",
+        description:'Current listing of prices',
+        
+         cardLevelImage:'assets/gallery-files/images/price-lists/cookie-pricelist.jpeg',
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'prices-list', label: 'Price Lists'}
+        ],
+        
+    },
+    {
         parentKey:'top-level',key: "speciality-cakes-chocolate", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Speciality Cakes - Chocolate", 
          cardLevelImage:'assets/gallery-files/images/speciality-cakes-chocolate/chocolate-cake-1.jpeg',
