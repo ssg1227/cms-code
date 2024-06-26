@@ -1,3 +1,4 @@
+import { ItemPrice } from './../../../settings-and-models/commerce';
 import { Component } from '@angular/core';
 
 import { Router } from '@angular/router';
@@ -7,7 +8,7 @@ import { CoreContentService } from 'src/app/services/core-content.service';
 import { TreeNodeElement } from 'src/assets/assets-common/tree-node-element' ;
 import { BreadCrumb } from 'src/assets/assets-common/bread-crumbs';
 
-import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail' ;
+import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail2' ;
 import { core } from '@angular/compiler';
 @Component({
   selector: 'app-content-viewer',
@@ -24,6 +25,7 @@ export class ContentViewerComponent {
     
   ];
   parentDescripion:string| undefined = '';
+  itemPrice?:any  = null;
   appTitle= staticText.appTitle;
   appAuthor= staticText.appAuthor;
   appContent = staticText.introContentList[0];
@@ -180,6 +182,11 @@ export class ContentViewerComponent {
             this.currentCardList = this.coreContentService.setCurrentCardList() ;
             this.breadCrumbs = this.coreContentService.BreadCrumbs ;
             this.parentDescripion = this.coreContentService.ParentDescription ;
+             // @ts-ignore: Object is possibly 'null'.
+            if (this.coreContentService.ItemPrice) {
+               // @ts-ignore: Object is possibly 'null'.
+              this.itemPrice = this.coreContentService.ItemPrice;
+            }
             if (e) {
               console.log("Navigation is successful!");
             } else {

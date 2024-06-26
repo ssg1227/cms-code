@@ -7,7 +7,7 @@ import { CoreContentService } from 'src/app/services/core-content.service';
 import { TreeNodeElement } from 'src/assets/assets-common/tree-node-element' ;
 import { BreadCrumb } from 'src/assets/assets-common/bread-crumbs';
 
-import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail' ;
+import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail2' ;
 import { core } from '@angular/compiler';
 @Component({
   selector: 'app-paged-content-viewer',

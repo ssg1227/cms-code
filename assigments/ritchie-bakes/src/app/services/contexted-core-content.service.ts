@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail';
+import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail2';
 import { PricesList } from 'src/assets/gallery-files/lists-and-other/image-lists/prices.list'
+import { CreamCakesChocolateGanache }  from 'src/assets/gallery-files/lists-and-other/image-lists/cream-cakes-chocolate-ganache.list'
 // content files 
 import { SpecialityCakesChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-chocolate.list';
 import { SpecialityCakesNonChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-non-chocolate.list';
@@ -24,6 +25,7 @@ export class ContextedCoreContentService {
     contentList.push( { contentFile: new ContactDetailsFSAI(),contentCategory:'contact-details-fsai', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new Uncategorized(),contentCategory:'uncategorized', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new PricesList(),contentCategory:'prices-list', roles:['any'],latest:true}) ;
+    contentList.push( { contentFile: new CreamCakesChocolateGanache(), contentCategory:'cream-cakes-chocolate-ganache', roles:['any'],latest:true}) ;
  }
   loadSpecialLists(contentList:ContentList[], specialFiles:any,strParam:string):boolean {
      

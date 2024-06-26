@@ -1,4 +1,4 @@
-import { TreeNodeElement } from "../assets-common/tree-node-element"
+import { TreeNodeElement } from "@settings-and-models/tree-node-element"
 
 export const MenuTreeElements:TreeNodeElement[] = [
     // #### ROOT
@@ -8,6 +8,59 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '', params:'top-level', label: 'HOME'}
         ],
         label:"HOME PAGE",
+    },
+    {
+        parentKey:'top-level',key: "cream-cakes-chocolate-ganache", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Cream Cakes - Chocolate with Ganache", 
+         cardLevelImage:'assets/gallery-files/images/speciality-cakes-chocolate/chocolate-cake-1.jpeg',
+        description:'Need 2 days notice to order',
+        itemPrice: {
+            category:'cream-cakes-chocolate-ganache',
+            itemUnitPrice: [
+                {
+                    unitPrice:600, 
+                    unit:'1/2 kg'
+                },{
+                     unitPrice:1200, 
+                    unit:'1 kg'
+                }],
+        },
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'cream-cakes-chocolate-ganache', label: 'Cream Cakes - Chocolate with Ganache'}
+        ],    
+    }, 
+    {
+        parentKey:'top-level',key: "cup-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Cup Cakes", itemPrice: {
+            category:'cup-cakes',
+            itemUnitPrice: [
+                {
+                    unitPrice:780, 
+                    unit:'Single Frosted Flavor:1 doz'
+                },{
+                     unitPrice:500, 
+                    unit:' :1/2 doz'
+                },{
+                    unitPrice:600, 
+                    unit:'  Single Plain Flavor:1 doz'
+                },{
+                     unitPrice:400, 
+                    unit:' :1/2 doz'
+                }, {
+                    unitPrice:1200, 
+                    unit:'  Mix(any two flavor):1 doz frosted'
+                },{
+                     unitPrice:850, 
+                    unit:' :1 doz plain'
+                }],
+        },
+        cardLevelImage:'assets/gallery-files/images/cup-cakes/coffee-cup-cakes.jpeg', 
+        description:'',
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'cup-cakes', label: 'Cup Cakes'}
+        ],    
     },
     // #### LEVEL 1
     {
@@ -50,16 +103,6 @@ export const MenuTreeElements:TreeNodeElement[] = [
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'tea-cakes', label: 'Tea Cakes -Coffee Cakes, Eggless etc.'}
-        ],    
-    }, 
-    {
-        parentKey:'top-level',key: "cup-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
-        label: "Cup Cakes", 
-        cardLevelImage:'assets/gallery-files/images/cup-cakes/coffee-cup-cakes.jpeg', 
-        description:'',
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'cup-cakes', label: 'Cup Cakes'}
         ],    
     }, 
     {

@@ -1,8 +1,9 @@
+import { ItemPrice, ItemUnitPrice } from './../settings-and-models/commerce';
 import { Injectable } from '@angular/core';
 import { ContextedCoreContentService } from './contexted-core-content.service';
 import { TreeNodeElement } from 'src/assets/assets-common/tree-node-element' ;
 import {  MenuTreeElements } from 'src/assets/content-tree/menu-tree-elements' ;
-import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail' ;
+import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail2' ;
 import { BreadCrumb } from 'src/assets/assets-common/bread-crumbs';
 // content files 
 import { SpecialityCakesChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-chocolate.list';
@@ -50,6 +51,7 @@ export class CoreContentService {
    }
   private breadCrumbs?:BreadCrumb[] =[] ;
   private parentDescription?:string ='';
+  private itemPrice?:any  = {}
   private testMode = false ;
   // gets 
   get TestMode():boolean {
@@ -61,6 +63,9 @@ export class CoreContentService {
   get ParentDescription():string| undefined{
     return this.parentDescription;
   } 
+  get ItemPrice():ItemPrice| undefined {
+    return this.itemPrice ;
+  }
   get ContentList(): ContentList[] {
     if (this.contentList.length === 0) {
       this.loadContentList() ;
@@ -147,6 +152,22 @@ export class CoreContentService {
     // let currentParent = MenuTreeElements.find((x) => x.key === currentParentKey) ;
     this.breadCrumbs  = currentParent?.breadCrumb ;
     this.parentDescription = currentParent?.description !== undefined ? currentParent?.description: currentParent?.label;
+     // @ts-ignore: Object is possibly 'null'.
+    if(currentParent.itemPrice) {
+       // @ts-ignore: Object is possibly 'null'.
+      this.itemPrice = currentParent.itemPrice ; // implement coming soon
+      console.log('ITEM PRICE');
+       
+      // @ts-ignore: Object is possibly 'null'.
+      if (currentParent.itemPrice.itemUnitPrice && currentParent.itemPrice.itemUnitPrice.length > 0) {
+         this.parentDescription = `${this.parentDescription}<br/> Prices:`
+        // @ts-ignore: Object is possibly 'null'.
+        currentParent.itemPrice.itemUnitPrice.forEach((unit:any) =>{
+          this.parentDescription = `${this.parentDescription} ${unit.unit}:Rs ${unit.unitPrice}`
+        })
+      }
+       
+    }
     return retCardList ;
   }
 
