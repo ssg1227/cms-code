@@ -152,6 +152,7 @@ export class CoreContentService {
     // let currentParent = MenuTreeElements.find((x) => x.key === currentParentKey) ;
     this.breadCrumbs  = currentParent?.breadCrumb ;
     this.parentDescription = currentParent?.description !== undefined ? currentParent?.description: currentParent?.label;
+    this.itemPrice = null ;
      // @ts-ignore: Object is possibly 'null'.
     if(currentParent.itemPrice) {
        // @ts-ignore: Object is possibly 'null'.
@@ -159,13 +160,13 @@ export class CoreContentService {
       console.log('ITEM PRICE');
        
       // @ts-ignore: Object is possibly 'null'.
-      if (currentParent.itemPrice.itemUnitPrice && currentParent.itemPrice.itemUnitPrice.length > 0) {
-         this.parentDescription = `${this.parentDescription}<br/> Prices:`
+      // if (currentParent.itemPrice.itemUnitPrice && currentParent.itemPrice.itemUnitPrice.length > 0) {
+      //   this.parentDescription = `${this.parentDescription}<br/> Prices:`
         // @ts-ignore: Object is possibly 'null'.
-        currentParent.itemPrice.itemUnitPrice.forEach((unit:any) =>{
-          this.parentDescription = `${this.parentDescription} ${unit.unit}:Rs ${unit.unitPrice}`
-        })
-      }
+        // currentParent.itemPrice.itemUnitPrice.forEach((unit:any) =>{
+       //   this.parentDescription = `${this.parentDescription} ${unit.unit}:Rs ${unit.unitPrice}`
+       // })
+     //  }
        
     }
     return retCardList ;

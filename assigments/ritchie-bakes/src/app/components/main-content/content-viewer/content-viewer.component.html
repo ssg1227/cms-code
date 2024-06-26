@@ -8,9 +8,9 @@
                             (click)="compareSelected(breadCrumb.params,0)">{{breadCrumb.label}} >>> </a> 
                 <span *ngIf="breadCrumb.link == ''">{{breadCrumb.label}}</span>
             </span><br/><div [innerHTML]="parentDescripion">   </div>
-            <!-- coming soon 
-            <app-unit-price-selector *ngIf="itemPrice != null"  [itemPrice]="itemPrice"></app-unit-price-selector>
-            -->
+            <!-- coming soon -->
+            <app-unit-price-selector *ngIf="itemUnitPrice.length > 0"  [itemUnitPrice]="itemUnitPrice"></app-unit-price-selector>
+        
         </div>
         <div id="upper-ten-central-box" *ngIf="NeedLogin == true">
             <input type='button' value='Logout'  (click)='cmsLogout()'>

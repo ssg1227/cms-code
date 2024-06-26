@@ -1,4 +1,4 @@
-import { ItemPrice } from './../../../settings-and-models/commerce';
+import { ItemPrice, ItemUnitPrice } from './../../../settings-and-models/commerce';
 import { Component } from '@angular/core';
 
 import { Router } from '@angular/router';
@@ -26,6 +26,7 @@ export class ContentViewerComponent {
   ];
   parentDescripion:string| undefined = '';
   itemPrice?:any  = null;
+  itemUnitPrice?:any  = [];
   appTitle= staticText.appTitle;
   appAuthor= staticText.appAuthor;
   appContent = staticText.introContentList[0];
@@ -181,10 +182,14 @@ export class ContentViewerComponent {
           this.router.navigate([`/view`, a]).then( (e) => {
             this.currentCardList = this.coreContentService.setCurrentCardList() ;
             this.breadCrumbs = this.coreContentService.BreadCrumbs ;
+            this.itemUnitPrice = [];
             this.parentDescripion = this.coreContentService.ParentDescription ;
              // @ts-ignore: Object is possibly 'null'.
             if (this.coreContentService.ItemPrice) {
                // @ts-ignore: Object is possibly 'null'.
+               if (this.coreContentService.ItemPrice.itemUnitPrice) {
+                  this.itemUnitPrice = this.coreContentService.ItemPrice.itemUnitPrice;
+               }
               this.itemPrice = this.coreContentService.ItemPrice;
             }
             if (e) {

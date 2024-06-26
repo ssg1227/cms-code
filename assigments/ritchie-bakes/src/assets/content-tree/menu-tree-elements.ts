@@ -40,19 +40,19 @@ export const MenuTreeElements:TreeNodeElement[] = [
                     unit:'Single Frosted Flavor:1 doz'
                 },{
                      unitPrice:500, 
-                    unit:' :1/2 doz'
+                    unit:'Single Frosted Flavor:1/2 doz'
                 },{
                     unitPrice:600, 
-                    unit:'  Single Plain Flavor:1 doz'
+                    unit:'Single Plain Flavor:1 doz'
                 },{
                      unitPrice:400, 
-                    unit:' :1/2 doz'
+                    unit:'Single Plain Flavor:1/2 doz'
                 }, {
                     unitPrice:1200, 
-                    unit:'  Mix(any two flavor):1 doz frosted'
+                    unit:'Mix(any two flavor):1 doz frosted'
                 },{
                      unitPrice:850, 
-                    unit:' :1 doz plain'
+                    unit:'Mix(any two flavor):1 doz plain'
                 }],
         },
         cardLevelImage:'assets/gallery-files/images/cup-cakes/coffee-cup-cakes.jpeg', 
@@ -60,6 +60,56 @@ export const MenuTreeElements:TreeNodeElement[] = [
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'cup-cakes', label: 'Cup Cakes'}
+        ],    
+    }, {
+        parentKey:'top-level',key: "cookies-brownies-other", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Cookies, Brownies and Others", 
+        cardLevelImage:'assets/gallery-files/images/cookies-brownies-other/butter-cookies.jpeg',  
+        description:'',
+        itemPrice: {
+            category:'cup-cakes',
+            itemUnitPrice: [
+                {
+                    unitPrice:350, 
+                    unit:'Eggless Cookies, 500gms'
+                },{
+                    unitPrice:700, 
+                    unit:'Eggless Cookies, 1 Kg'
+                },{
+                    unitPrice:300, 
+                    unit:'Masala Cookies, 500gms'
+                },{
+                    unitPrice:600, 
+                    unit:'Masala Cookies, 1 Kg'
+                },{
+                    unitPrice:300, 
+                    unit:'Mini Marble Cookies, 500gms'
+                },{
+                    unitPrice:600, 
+                    unit:'Mini Marble  Cookies, 1 Kg'
+                },{
+                    unitPrice:350, 
+                    unit:'Mini Coconut Cookies, 500gms'
+                },{
+                    unitPrice:700, 
+                    unit:'Mini Coconut Cookies, 1 Kg'
+                },{
+                    unitPrice:350, 
+                    unit:'Coconut Cookies, 500gms'
+                },{
+                    unitPrice:700, 
+                    unit:'Coconut Cookies, 1 Kg'
+                },{
+                    unitPrice:350, 
+                    unit:'Cheese Cookies, 500gms'
+                },{
+                    unitPrice:700, 
+                    unit:'Cheese Cookies, 1 Kg'
+                }],
+        },
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'cookies-brownies-other', label: 'Cookies, Brownies and Others'}
         ],    
     },
     // #### LEVEL 1
@@ -105,17 +155,8 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '', params:'tea-cakes', label: 'Tea Cakes -Coffee Cakes, Eggless etc.'}
         ],    
     }, 
-    {
-        parentKey:'top-level',key: "cookies-brownies-other", levelIndex:1,isLeafParent:true, roles:['any'],
-        label: "Cookies, Brownies and Others", 
-        cardLevelImage:'assets/gallery-files/images/cookies-brownies-other/butter-cookies.jpeg',  
-        description:'',
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'cookies-brownies-other', label: 'Cookies, Brownies and Others'}
-        ],    
-    }
-    , 
+   
+    
     {
         parentKey:'top-level',key: "special-lists-christmas-collection", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Special Lists: Christmas Collection", 
