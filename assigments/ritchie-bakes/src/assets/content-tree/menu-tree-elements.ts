@@ -29,6 +29,27 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'cream-cakes-chocolate-ganache', label: 'Cream Cakes - Chocolate with Ganache'}
         ],    
+    },
+    {
+        parentKey:'top-level',key: "cream-cakes-rainbow-checker", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Cream Cakes - Rainbow Checker", 
+         cardLevelImage:'assets/gallery-files/images/cream-cakes-rainbow-checker/rainbow-checker-cake-1-kg.jpeg',
+        description:'Need 2 days notice to order',
+        itemPrice: {
+            category:'cream-cakes-rainbow-checker',
+            itemUnitPrice: [
+                {
+                    unitPrice:900, 
+                    unit:'1/2 kg'
+                },{
+                     unitPrice:1800, 
+                    unit:'1 kg'
+                }],
+        },
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'cream-cakes-chocolate-ganache', label: 'Cream Cakes - Chocolate with Ganache'}
+        ],    
     }, 
     {
         parentKey:'top-level',key: "cup-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
