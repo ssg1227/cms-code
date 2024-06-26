@@ -1,10 +1,10 @@
 import { ItemPrice, ItemUnitPrice } from './../settings-and-models/commerce';
 import { Injectable } from '@angular/core';
 import { ContextedCoreContentService } from './contexted-core-content.service';
-import { TreeNodeElement } from 'src/assets/assets-common/tree-node-element' ;
+import { TreeNodeElement } from '@settings-and-models/tree-node-element' ;
 import {  MenuTreeElements } from 'src/assets/content-tree/menu-tree-elements' ;
 import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail2' ;
-import { BreadCrumb } from 'src/assets/assets-common/bread-crumbs';
+import { BreadCrumb } from '@settings-and-models/bread-crumbs';
 // content files 
 import { SpecialityCakesChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-chocolate.list';
 import { SpecialityCakesNonChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-non-chocolate.list';
