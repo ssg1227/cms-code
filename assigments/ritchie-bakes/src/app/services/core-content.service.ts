@@ -154,7 +154,7 @@ export class CoreContentService {
     this.parentDescription = currentParent?.description !== undefined ? currentParent?.description: currentParent?.label;
     this.itemPrice = null ;
      // @ts-ignore: Object is possibly 'null'.
-    if(currentParent.itemPrice) {
+    if(currentParent !== undefined && currentParent.itemPrice !== undefined) {
        // @ts-ignore: Object is possibly 'null'.
       this.itemPrice = currentParent.itemPrice ; // implement coming soon
       console.log('ITEM PRICE');

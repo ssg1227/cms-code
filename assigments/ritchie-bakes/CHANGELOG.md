@@ -11,6 +11,15 @@
 ### Practices
 - Maintaining this log
 - console.log should try to keep reference - classname method name
+### June 17 - 27
+- ** June 27 Targets
+  - **Ritchie Bakes prod candidate one** (prod = seriously share with others for shopping)
+  - complete data add
+  - wish list flow
+  - styling
+  - Review and share
+  - start organizing and cleaning code. *As on June 25 latest proposed code prototype is  ~cms-code/assigments/ritchie-bakes*
+- Replace content-viewer modal with inline div
 ### June 9 - 16
 - **June 16 Targets**
   - **Ritchie Bakes** 
