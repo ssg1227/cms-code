@@ -12,7 +12,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     {
         parentKey:'top-level',key: "cream-cakes-chocolate-ganache", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Cream Cakes - Chocolate with Ganache", 
-         cardLevelImage:'assets/gallery-files/images/speciality-cakes-chocolate/chocolate-cake-1.jpeg',
+         cardLevelImage:'assets/gallery-files/images/cream-cakes-chocolate-ganache/Chocolate sea world cake 2.jpg',
         description:'Need 2 days notice to order',
         itemPrice: {
             category:'cream-cakes-chocolate-ganache',
@@ -28,6 +28,27 @@ export const MenuTreeElements:TreeNodeElement[] = [
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'cream-cakes-chocolate-ganache', label: 'Cream Cakes - Chocolate with Ganache'}
+        ],    
+    },
+    {
+        parentKey:'top-level',key: "cream-cakes-chocolate-other-frosting", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Cream Cakes - Chocolate with Mocha / Chocolate/ Ganache and truffle", 
+         cardLevelImage:'assets/gallery-files/images/speciality-cakes-chocolate/chocolate-cake-1.jpeg',
+        description:'Need 2 days notice to order',
+        itemPrice: {
+            category:'cream-cakes-chocolate-ganache',
+            itemUnitPrice: [
+                {
+                    unitPrice:850, 
+                    unit:'1/2 kg'
+                },{
+                     unitPrice:1500, 
+                    unit:'1 kg'
+                }],
+        },
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'cream-cakes-chocolate-other-frosting', label: 'Cream Cakes - Chocolate with Mocha / Chocolate/ Ganache and truffle'}
         ],    
     },
     {

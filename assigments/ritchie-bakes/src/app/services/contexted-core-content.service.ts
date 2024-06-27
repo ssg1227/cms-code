@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail2';
+// withe prices..
 import { CreamCakesChocolateGanache }  from 'src/assets/gallery-files/lists-and-other/image-lists/cream-cakes-chocolate-ganache.list';
+import { CreamCakesChocolateOtherFrosting }  from 'src/assets/gallery-files/lists-and-other/image-lists/cream-cakes-chocolate-other-frosting.list';
 import { CreamCakesRainbowChecker }  from 'src/assets/gallery-files/lists-and-other/image-lists/cream-cakes-rainbow-checker.list';
 import { CookiesBrowniesOther } from 'src/assets/gallery-files/lists-and-other/image-lists/cookies-brownies-other.list';
 import { PricesList } from 'src/assets/gallery-files/lists-and-other/image-lists/prices.list'
@@ -25,7 +27,9 @@ export class ContextedCoreContentService {
     contentList.push( { contentFile: new CupCakes(),contentCategory:'cup-cakes', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new ContactDetailsFSAI(),contentCategory:'contact-details-fsai', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new Uncategorized(),contentCategory:'uncategorized', roles:['any'],latest:true}) ;
+
     contentList.push( { contentFile: new CreamCakesChocolateGanache(), contentCategory:'cream-cakes-chocolate-ganache', roles:['any'],latest:true}) ;
+    contentList.push( { contentFile: new CreamCakesChocolateOtherFrosting(), contentCategory:'cream-cakes-chocolate-other-frosting', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new CreamCakesRainbowChecker(), contentCategory:'cream-cakes-rainbow-checker', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new CookiesBrowniesOther(),contentCategory:'cookies-brownies-other', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new PricesList(),contentCategory:'prices-list', roles:['any'],latest:true}) ;

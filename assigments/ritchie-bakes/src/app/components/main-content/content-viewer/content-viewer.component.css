@@ -7,8 +7,100 @@
     justify-content: space-around;
     width: 100%;
     min-width: 450px;
-    overflow: scroll;
+    min-height: 750px;
+    overflow: hidden;
    /* background-image: linear-gradient(to bottom, red, orange, #F4C430, yellow, lightgreen, aliceblue, skyblue);*/
+}
+/* ALL THE MODAL to DIV styling */
+#div-container {
+    margin:auto;
+    margin-top: 5px;
+    
+    flex-wrap: wrap;
+    border: 2px outset darkslateblue ;
+    border-radius: 9px;
+    background:radial-gradient(darkblue, skyblue);
+    height: 95%;
+    width:80%;
+    overflow-y: scroll;
+   /*align-items: center;
+    justify-content: center;
+    */
+   
+}
+#modal-div-top-5 {
+    display: flex;
+    height:5%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width:95%;
+    margin: 5px 30px 2px;
+    background-color: #81b1ff;
+    border-bottom: 1px solid #ccc;
+  }
+ 
+  #div-lower-95 {
+    height:85%;
+    width:98%;
+    margin: 5px 30px 2px;
+    background-color: #81b1ff;
+}
+  #close-div {
+    cursor: pointer;
+    font-size: 30px;
+    margin-top:2px;
+    align-items: center;
+    text-align: center;
+    background-color: pink;
+    border-radius: 20px;
+    width:40px;
+    height:40px;
+  }
+  
+  button {
+    background-color: #008cfa;
+    border: 2px outset gray;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #007bb5;
+    border: 2px inset gray;
+    
+  }
+ 
+#close-div  {
+    
+    background-color: white;
+    width:35px;
+    height:15px;
+    font-size:large;
+    color:red;
+    border: 1px solid red;
+}
+
+#pic-div-container,
+#text-container {
+    
+    background: radial-gradient(rgb(165, 218, 242), lightskyblue);
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 90%;
+    overflow-y: scroll;
+}
+#pic-container > p {
+    height:80% ;
+
 }
 #modal-container {
     display: none;
@@ -81,8 +173,9 @@
 #title {
     padding:5px ;
     font-size: smaller;
-    background-color: beige;
+    background-color: cyan;
     border: 2px inset rgb(120,120,60);
+    
 }
 
 #sequence {
@@ -97,16 +190,16 @@
 }
 #pic-container,
 #text-container {
-    border:inset 2px gray ;
-    background-color: white;
+    
+    background: radial-gradient(rgb(165, 218, 242), lightskyblue);
     align-items: left;
     justify-content: left;
     width: 100%;
-    height: 90%;
+    height: 80%;
     overflow-y: scroll;
 }
 #pic-container > p {
-    height:100% ;
+    height:80% ;
 
 }
 #modalpic  {
@@ -120,9 +213,30 @@
 #modaltext  {
 padding:20px;border: 1px solid gray; margin-left:20px;
 }
-
+#iterative {
+    margin-bottom: 5px;
+    border: 2px gray outset;
+}
 @media screen and (min-width:1029px) {
-   
+    #modalpic  {
+        width: 400px;
+        height:400px;
+        object-fit: fill;
+        margin-right: 50px;
+        border:2px rgb(25, 80,80) inset;
+        float:left ;
+    }
+    #modaldivpic  {
+        width: 640px;
+        height:640px;
+        object-fit: contain;
+        margin-right: 50px;
+        background-color: deepskyblue;
+        border:2px rgb(25, 80,80) inset;
+       
+  box-shadow: 0 4px 8px  rgba(25,25,0,0.7);;
+        float:left ;
+    }
 }
 @media screen and (max-width:550px) {
 
