@@ -8,7 +8,7 @@
     width: 100%;
     min-width: 450px;
     min-height: 750px;
-    overflow: hidden;
+    overflow: auto;
    /* background-image: linear-gradient(to bottom, red, orange, #F4C430, yellow, lightgreen, aliceblue, skyblue);*/
 }
 /* ALL THE MODAL to DIV styling */
