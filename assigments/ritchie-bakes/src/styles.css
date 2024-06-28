@@ -104,7 +104,9 @@
     .responser {
         width:95%;
     }
-    
+.upper-ten {
+    overflow: auto;
+}    
 #upper-ten-central-box {
     
     height: auto;

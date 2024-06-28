@@ -69,7 +69,69 @@ export const MenuTreeElements:TreeNodeElement[] = [
         },
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'cream-cakes-chocolate-ganache', label: 'Cream Cakes - Chocolate with Ganache'}
+            {link: '', params:'cream-cakes-rainbow-checker', label: 'Cream Cakes - Rainbow Checker'}
+        ],    
+    },
+    {
+        parentKey:'top-level',key: "cream-cakes-strawberry", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Cream Cakes - Strawberry with fresh Strawberries frosting", 
+         cardLevelImage:'assets/gallery-files/images/cream-cakes-strawberry/strawberry-1.jpeg',
+        description:'Need 2 days notice to order',
+        itemPrice: {
+            category:'cream-cakes-strawberry',
+            itemUnitPrice: [
+                {
+                    unitPrice:600, 
+                    unit:'1/2 kg'
+                },{
+                     unitPrice:1200, 
+                    unit:'1 kg'
+                }],
+        },
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'cream-cakes-strawberry', label: 'Cream Cakes - Strawberry with fresh Strawberries frosting'}
+        ],    
+    },
+    {
+        parentKey:'top-level',key: "cream-cakes-oreo-bf-wf-van", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Cream Cakes - Oreo, Black Forest, White Forest, Vanilla", 
+         cardLevelImage:'assets/gallery-files/images/cream-cakes-oreo-bf-wf-van/Oreo Cake.jpg',
+        description:'Need 2 days notice to order',
+        itemPrice: {
+            category:'cream-cakes-oreo-bf-wf-van',
+            itemUnitPrice: [
+                {
+                    unitPrice:600, 
+                    unit:'Oreo 1/2 kg'
+                },{
+                     unitPrice:1800, 
+                    unit:'Oreo 1 kg'
+                },
+                {
+                    unitPrice:550, 
+                    unit:'Black Forest 1/2 kg'
+                },{
+                     unitPrice:1100, 
+                    unit:'Black Forest 1 kg'
+                },{
+                    unitPrice:550, 
+                   unit:'White Forest 1/2 kg'
+               },{
+                     unitPrice:1100, 
+                    unit:'White Forest 1 kg'
+                },
+                {
+                    unitPrice:450, 
+                    unit:'Vanilla Cake 1/2 kg'
+                },{
+                     unitPrice:800, 
+                    unit:'Vanilla Cake 1 kg'
+                }],
+        },
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'cream-cakes-oreo-bf-wf-van', label: 'Cream Cakes - Oreo, Black Forest, White Forest, Vanilla'}
         ],    
     }, 
     {
@@ -218,15 +280,5 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'contact-details-fsai', label: 'Contact Details, FSAI cert, etc'}
         ],    
-    }, 
-    {
-        parentKey:'top-level',key: "uncategorized", levelIndex:1,isLeafParent:true, roles:['any'],
-        label: "Uncategorized", 
-        description:'',
-        cardLevelImage:'assets/gallery-files/images/uncategorized/shilpa-and-vijay.jpeg',
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'uncategorized', label: 'Uncategorized'}
-        ],    
-    },
+    }
 ]

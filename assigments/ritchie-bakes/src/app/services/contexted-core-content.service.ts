@@ -4,6 +4,8 @@ import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image
 import { CreamCakesChocolateGanache }  from 'src/assets/gallery-files/lists-and-other/image-lists/cream-cakes-chocolate-ganache.list';
 import { CreamCakesChocolateOtherFrosting }  from 'src/assets/gallery-files/lists-and-other/image-lists/cream-cakes-chocolate-other-frosting.list';
 import { CreamCakesRainbowChecker }  from 'src/assets/gallery-files/lists-and-other/image-lists/cream-cakes-rainbow-checker.list';
+import { CreamCakesOreoBfWfWan }  from 'src/assets/gallery-files/lists-and-other/image-lists/cream-cakes-oreo-bf-wf-van.list';
+import { CreamCakesStrawberry } from 'src/assets/gallery-files/lists-and-other/image-lists/cream-cakes-strawberry.list';
 import { CookiesBrowniesOther } from 'src/assets/gallery-files/lists-and-other/image-lists/cookies-brownies-other.list';
 import { PricesList } from 'src/assets/gallery-files/lists-and-other/image-lists/prices.list'
 
@@ -31,6 +33,8 @@ export class ContextedCoreContentService {
     contentList.push( { contentFile: new CreamCakesChocolateGanache(), contentCategory:'cream-cakes-chocolate-ganache', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new CreamCakesChocolateOtherFrosting(), contentCategory:'cream-cakes-chocolate-other-frosting', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new CreamCakesRainbowChecker(), contentCategory:'cream-cakes-rainbow-checker', roles:['any'],latest:true}) ;
+    contentList.push( { contentFile: new CreamCakesOreoBfWfWan(), contentCategory:'cream-cakes-oreo-bf-wf-van', roles:['any'],latest:true}) ;
+    contentList.push( { contentFile: new CreamCakesStrawberry(), contentCategory:'cream-cakes-strawberry', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new CookiesBrowniesOther(),contentCategory:'cookies-brownies-other', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new PricesList(),contentCategory:'prices-list', roles:['any'],latest:true}) ;
     
