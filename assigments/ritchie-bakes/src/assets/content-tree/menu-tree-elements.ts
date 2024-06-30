@@ -133,7 +133,67 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'cream-cakes-oreo-bf-wf-van', label: 'Cream Cakes - Oreo, Black Forest, White Forest, Vanilla'}
         ],    
-    }, 
+    },
+    {
+       parentKey:"top-level", key: "fruit-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
+       label: "Fruit Cakes", itemPrice: {
+           category:'fruit-cakes',
+           itemUnitPrice: [
+            {
+                unitPrice:500, 
+                unit:'1/2 kg'
+            },{
+                 unitPrice:900, 
+                unit:'1 kg'
+            }],
+       },
+       cardLevelImage:'assets/gallery-files/images/fruit-cakes/blueberry-crush-cake-whipped-cream-frst.jpeg', 
+       description:'',
+       emptyMessage: 'Empty Content or Error', breadCrumb:[
+           {link: '/view', params:'top-level', label: 'HOME'},
+           {link: '', params:'fruit-cakes', label: 'Fruit Cakes'}
+       ],    
+   },
+    {
+       parentKey:"top-level", key: "coffee-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
+       label: "Coffee Cakes", itemPrice: {
+           category:'coffee-cakes',
+           itemUnitPrice: [
+            {
+                unitPrice:500, 
+                unit:'1/2 kg'
+            },{
+                 unitPrice:900, 
+                unit:'1 kg'
+            }],
+       },
+       cardLevelImage:'assets/gallery-files/images/coffee-cakes/Coffee cake with coffee buttercream.jpeg', 
+       description:'',
+       emptyMessage: 'Empty Content or Error', breadCrumb:[
+           {link: '/view', params:'top-level', label: 'HOME'},
+           {link: '', params:'coffee-cakes', label: 'Coffee Cakes'}
+       ],    
+   },
+    {
+       parentKey:"top-level", key: "red-velvet-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
+       label: "Red Velvet Cakes", itemPrice: {
+           category:'red-velvet-cakes',
+           itemUnitPrice: [
+            {
+                unitPrice:600, 
+                unit:'1/2 kg'
+            },{
+                 unitPrice:1200, 
+                unit:'1 kg'
+            }],
+       },
+       cardLevelImage:'assets/gallery-files/images/red-velvet-cakes/red-velvet-cake-bayko-0.jpeg', 
+       description:'Red Velvet Cakes',
+       emptyMessage: 'Empty Content or Error', breadCrumb:[
+           {link: '/view', params:'top-level', label: 'HOME'},
+           {link: '', params:'red-velvet-cakes', label: 'Coffee and Red Velvet Cakes'}
+       ],    
+   }, 
     {
         parentKey:'top-level',key: "cup-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Cup Cakes", itemPrice: {

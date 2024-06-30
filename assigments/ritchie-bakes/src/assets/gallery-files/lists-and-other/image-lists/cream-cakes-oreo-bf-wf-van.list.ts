@@ -18,11 +18,26 @@ export class CreamCakesOreoBfWfWan {
                         fullFileName: `${this.imageRoot}Oreo Cake.jpg`,
                         description: `<ul><li>Oreo Cake </li><li>More details coming soon </li></ul>`,
 
+                  }, {
+                              
+                        dateUploaded:  '06-06-2024',
+                        summaryLabel:  `Oreo Cake another pric`,
+                        fullFileName: `${this.imageRoot}oreo cake.jpeg`,
+                        description: `<ul><li>Oreo Cake </li><li>More details coming soon </li></ul>`,
+
                   },{
                         
                         dateUploaded:  '06-06-2024',
                         summaryLabel:  `Black Forest`,
                         fullFileName: `${this.imageRoot}Vrudhi.jpeg`,
+                        description: `<ul><li> Black Forest Cake  </li><li>More details coming soon </li></ul>`,
+                       
+
+                  },{
+                        
+                        dateUploaded:  '06-06-2024',
+                        summaryLabel:  `Black Forest`,
+                        fullFileName: `${this.imageRoot}black-forest-2.jpeg`,
                         description: `<ul><li> Black Forest Cake  </li><li>More details coming soon </li></ul>`,
                        
 

@@ -23,6 +23,7 @@
     height: 95%;
     width:80%;
     overflow-y: scroll;
+    display: none;
    /*align-items: center;
     justify-content: center;
     */
@@ -239,7 +240,17 @@ padding:20px;border: 1px solid gray; margin-left:20px;
     }
 }
 @media screen and (max-width:550px) {
-
+    #modaldivpic  {
+        width: 85%;
+        height:59%;
+        object-fit: contain;
+        margin: auto;
+        background-color: deepskyblue;
+        border:2px rgb(25, 80,80) inset;
+       
+  box-shadow: 0 4px 8px  rgba(25,25,0,0.7);;
+        float:left ;
+    }
     #modal-container {
         top: 225px;
     
@@ -247,7 +258,15 @@ padding:20px;border: 1px solid gray; margin-left:20px;
         padding:2px;
         overflow-y: auto;
     }
-
+    #div-lower-95 {
+        display:flex ;
+        flex-wrap: wrap;
+        margin: 5px 30px 2px;
+        background-color: #81b1ff;
+    }
+    #modal-text {
+        overflow-wrap: normal;
+    }
 #close-modal  {
     
     height:35px;

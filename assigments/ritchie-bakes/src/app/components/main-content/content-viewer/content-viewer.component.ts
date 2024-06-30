@@ -53,7 +53,7 @@ export class ContentViewerComponent {
   _iterations:boolean = false ;
   newLook=true ;
   showContactPage = false ;
-  testMode = false ;
+  testMode = true ;
 
   pageSize = 14;
 

@@ -12,7 +12,21 @@ export class CreamCakesChocolateOtherFrosting {
                         themeSummary:`</strong>Scenes, Objects, Structures, (some may be items containing mix modes of transport or something like an air dogfight)<br/>
                         Mumbai gets her due place and a dedicated theme; all Mumbai related sketches will be found in 'Mumbai Meri Jaan'`,
                         files: [ 
-                                {
+                              {
+                                      
+                                    dateUploaded:  '06-06-2024',
+                                    summaryLabel:  `Chocolate cake with buttercream decoration`,
+                                    fullFileName: `${this.imageRoot}Chocolate cake with buttercream decoration.jpg`,
+                                    description: `<ul><li>Description and pricing coming soon </li></ul>`,
+      
+                              },{
+                                    
+                                    dateUploaded:  '06-06-2024',
+                                    summaryLabel:  `Chocolate cake with Chocolate Buttercream`,
+                                    fullFileName: `${this.imageRoot}Chocolate cake with Chocolate Buttercream.jpg`,
+                                    description: `<ul><li>Description and pricing coming soon </li></ul>`,
+      
+                              },{
                                       
                                       dateUploaded:  '06-06-2024',
                                       summaryLabel:  `Chocolate Cake pic1`,
@@ -38,13 +52,6 @@ export class CreamCakesChocolateOtherFrosting {
                                       dateUploaded:  '06-06-2024',
                                       summaryLabel:  `Chocolate Cake pic4`,
                                       fullFileName: `${this.imageRoot}chocolate-other-frosting-4.jpg`,
-                                      description: `<ul><li>Description and pricing coming soon </li></ul>`,
-        
-                                },{
-                                      
-                                      dateUploaded:  '06-06-2024',
-                                      summaryLabel:  `Chocolate Cake pic5`,
-                                      fullFileName: `${this.imageRoot}chocolate-other-frosting-5.jpg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
                                 }

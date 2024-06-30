@@ -7,6 +7,9 @@ import { CreamCakesRainbowChecker }  from 'src/assets/gallery-files/lists-and-ot
 import { CreamCakesOreoBfWfWan }  from 'src/assets/gallery-files/lists-and-other/image-lists/cream-cakes-oreo-bf-wf-van.list';
 import { CreamCakesStrawberry } from 'src/assets/gallery-files/lists-and-other/image-lists/cream-cakes-strawberry.list';
 import { CookiesBrowniesOther } from 'src/assets/gallery-files/lists-and-other/image-lists/cookies-brownies-other.list';
+import { FruitCakes } from 'src/assets/gallery-files/lists-and-other/image-lists/fruit-cakes.list';
+import { CoffeeCakes } from 'src/assets/gallery-files/lists-and-other/image-lists/coffee-cakes.list'
+import { RedVelvetCakes } from 'src/assets/gallery-files/lists-and-other/image-lists/red-velvet-cakes.list';
 import { PricesList } from 'src/assets/gallery-files/lists-and-other/image-lists/prices.list'
 
 // content files 
@@ -36,6 +39,9 @@ export class ContextedCoreContentService {
     contentList.push( { contentFile: new CreamCakesOreoBfWfWan(), contentCategory:'cream-cakes-oreo-bf-wf-van', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new CreamCakesStrawberry(), contentCategory:'cream-cakes-strawberry', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new CookiesBrowniesOther(),contentCategory:'cookies-brownies-other', roles:['any'],latest:true}) ;
+    contentList.push( { contentFile: new FruitCakes(),contentCategory:'fruit-cakes', roles:['any'],latest:true}) ;
+    contentList.push( { contentFile: new CoffeeCakes(),contentCategory:'coffee-cakes', roles:['any'],latest:true}) ;
+    contentList.push( { contentFile: new RedVelvetCakes(),contentCategory:'red-velvet-cakes', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new PricesList(),contentCategory:'prices-list', roles:['any'],latest:true}) ;
     
     

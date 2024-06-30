@@ -12,6 +12,6 @@ export class AppComponent {
       // @ts-ignore: Object is possibly 'null'.
   }
   ngOnInit() {
-    this.router.navigate([`/view`, 'top-level']).then( (e) => {});
+   //  this.router.navigate([`/view`, 'top-level']).then( (e) => {});
   }
 }

@@ -21,6 +21,13 @@ export class CreamCakesChocolateGanache {
         
                                 },{
                                       
+                                    dateUploaded:  '06-06-2024',
+                                    summaryLabel:  `Chocolate cake Ganache`,
+                                      fullFileName: `${this.imageRoot}Chocolatecake-Ganache-Martin.jpg`,
+                                      description: `<ul><li>Description and pricing coming soon </li></ul>`,
+        
+                                },{
+                                      
                                       dateUploaded:  '06-06-2024',
                                       summaryLabel:  `Chocolate Cake 01 Sample `,
                                       fullFileName: `${this.imageRoot}Chocolate cake 01.jpg`,
