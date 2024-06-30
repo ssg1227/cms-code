@@ -25,55 +25,6 @@ export class SpecialityCakesNonChocolate {
                               fullFileName: `${this.imageRoot}birthday-cake-1-tbd.jpeg`,
                               description: `<ul><li> Coming soon </li></ul>`,
 
-                        },{
-                              
-                              dateUploaded:  '06-06-2024',
-                              summaryLabel:  `Birthday Cake 2 `,
-                              fullFileName: `${this.imageRoot}birthday-cake-2-tbd.jpeg`,
-                              description: `<ul><li>Details coming soon </li></ul>`,
-
-                        },{
-                              
-                              dateUploaded:  '06-06-2024',
-                              summaryLabel:  `Coffee cake with coffee buttercream`,
-                              fullFileName: `${this.imageRoot}Coffee cake with coffee buttercream.jpeg`,
-                              description: `<ul><li>Details coming soon </li></ul>`,
-
-                        },{
-                              
-                              dateUploaded:  '06-06-2024',
-                              summaryLabel:  ``,
-                              fullFileName: `${this.imageRoot}non-chocolate-denise-confirm.jpeg`,
-                              description: `<ul><li>Details coming soon </li></ul>`,
-
-                        },{
-                              
-                              dateUploaded:  '06-06-2024',
-                              summaryLabel:  `Red Velvet Cake`,
-                              fullFileName: `${this.imageRoot}red-velvet-cake-bayko.jpeg`,
-                              description: `<ul><li>Details coming soon </li></ul>`,
-                              iterations: [
-                                    {     fullFileName: `${this.imageRoot}red-velvet-cake-bayko.jpeg`,
-                                          description: `<ul><li>Details coming soon </li></ul>`,
-                                      },
-                                    {fullFileName: `${this.imageRoot}red-velvet-cake-bayko-0.jpeg`,
-                                          description: `<ul><li>Details coming soon </li></ul>` },
-                                    ]
-
-                        }, {
-                                      
-                              dateUploaded:  '06-06-2024',
-                              summaryLabel:  `Christmas collection- Coffee cake for christmas`,
-                              labelValue: [
-                                   { label:'special-list',
-                                     value:'special-lists-christmas-collection',
-                                     notes:'special-lists'
-                                   }
-,
-                              ],
-                              fullFileName: `${this.imageRoot}Coffee cake for christmas.jpeg`,
-                              description: `<ul><li>Description and pricing coming soon </li></ul>`,
-
                         }, {
                                       
                               dateUploaded:  '06-06-2024',
@@ -98,24 +49,7 @@ export class SpecialityCakesNonChocolate {
                               description: `<ul><li>Description and pricing coming soon </li></ul>`,
 
                         }
-                        , {
-                                      
-                              dateUploaded:  '06-06-2024',
-                              summaryLabel:  `oreo cake`
-                              ,
-                              fullFileName: `${this.imageRoot}oreo cake.jpeg`,
-                              description: `<ul><li>Description and pricing coming soon </li></ul>`,
-
-                        }
-                        , {
-                                      
-                              dateUploaded:  '06-06-2024',
-                              summaryLabel:  `Strawberry cake`
-                              ,
-                              fullFileName: `${this.imageRoot}strawberry-cake.jpeg`,
-                              description: `<ul><li>Description and pricing coming soon </li></ul>`,
-
-                        }
+                        
 
              ]
           },
