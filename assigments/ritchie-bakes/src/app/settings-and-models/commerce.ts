@@ -1,4 +1,5 @@
 
+export const IsCommerce = 'true';
 export interface CartItem {
     image: string;
     name: string;

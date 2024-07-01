@@ -1,4 +1,4 @@
-import { ItemPrice, ItemUnitPrice } from './../../../settings-and-models/commerce';
+import { ItemPrice, ItemUnitPrice, IsCommerce  } from './../../../settings-and-models/commerce';
 import { Component } from '@angular/core';
 
 import { Router } from '@angular/router';
@@ -27,6 +27,7 @@ export class ContentViewerComponent {
   parentDescripion:string| undefined = '';
   itemPrice?:any  = null;
   itemUnitPrice?:any  = [];
+  isCommerce = IsCommerce;
   appTitle= staticText.appTitle;
   appAuthor= staticText.appAuthor;
   appContent = staticText.introContentList[0];
@@ -63,6 +64,23 @@ export class ContentViewerComponent {
     this.testMode = this.coreContentService.TestMode ;
       // @ts-ignore: Object is possibly 'null'.
   }
+
+  get ModalMode():string {
+    return this.coreContentService.ModalMode;
+  }
+  get ItemName():string {
+    // @ts-ignore: Object is possibly 'null'.
+    return this.breadCrumbs !== null && this.breadCrumbs?.length > 0 ?
+    // @ts-ignore: Object is possibly 'null'.
+    this.breadCrumbs[this.breadCrumbs?.length-1].label: "Unnamed Bakery item";
+
+  }
+  showCart() {
+    
+    this.coreContentService.modalMode = 'cart';
+    // @ts-ignore: Object is possibly 'null'.
+    document.getElementById('modal-container').style.display = 'flex';
+   }
   ngOnInit() {
     this.isLeafParent = localStorage.getItem("isLeafParent") ;// @ts-ignore: Object is possibly 'null'.
     this.currentMenu = localStorage.getItem("current-menu") ;
@@ -217,6 +235,7 @@ export class ContentViewerComponent {
      return  (card.cardLevelImage!== null && card.cardLevelImage !== undefined) ?
        card.cardLevelImage:   '';
    }
+   
     loadImages() {
 
     let foundList:ImageElement[] = [] ;
@@ -337,17 +356,23 @@ export class ContentViewerComponent {
    }
    closeModal() {
 
-     if(this.inlineExpand === 'true') {
-      
-        // @ts-ignore: Object is possibly 'null'.
-        document.getElementById('div-container').style.display = 'none'; 
-        // @ts-ignore: Object is possibly 'null'.
-        document.getElementById('leafCards').style.display = 'flex' ;  
-
-     } else {
         // @ts-ignore: Object is possibly 'null'.
         document.getElementById('modal-container').style.display = 'none';    
-     }
-     this.showContactPage = false ;
    }
+
+   closeDivModal() {
+
+    if(this.inlineExpand === 'true') {
+     
+       // @ts-ignore: Object is possibly 'null'.
+       document.getElementById('div-container').style.display = 'none'; 
+       // @ts-ignore: Object is possibly 'null'.
+       document.getElementById('leafCards').style.display = 'flex' ;  
+
+    } else {
+       // @ts-ignore: Object is possibly 'null'.
+       document.getElementById('modal-container').style.display = 'none';    
+    }
+    this.showContactPage = false ;
+  }
 }

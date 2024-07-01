@@ -288,26 +288,6 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '', params:'prices-list', label: 'Price Lists'}
         ],
         
-    },
-    {
-        parentKey:'top-level',key: "speciality-cakes-chocolate", levelIndex:1,isLeafParent:true, roles:['any'],
-        label: "Speciality Cakes - Chocolate", 
-         cardLevelImage:'assets/gallery-files/images/speciality-cakes-chocolate/chocolate-cake-1.jpeg',
-        description:'',
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'speciality-cakes-chocolate', label: 'Speciality Cakes - Chocolate'}
-        ],    
-    }, 
-    {
-        parentKey:'top-level',key: "speciality-cakes-non-chocolate", levelIndex:1,isLeafParent:true, roles:['any'],
-        label: "Speciality Cakes - Non Chocolate", 
-        cardLevelImage:'assets/gallery-files/images/speciality-cakes-non-chocolate/birthday-cake-1-tbd.jpeg',
-        description:'',
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'speciality-cakes-non-chocolate', label: 'Speciality Cakes - Non Chocolate'}
-        ],    
     }, 
     {
         parentKey:'top-level',key: "tea-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
@@ -339,6 +319,26 @@ export const MenuTreeElements:TreeNodeElement[] = [
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'contact-details-fsai', label: 'Contact Details, FSAI cert, etc'}
+        ],    
+    },
+    {
+        parentKey:'top-level',key: "speciality-cakes-chocolate", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Speciality Cakes - Chocolate", 
+         cardLevelImage:'assets/gallery-files/images/speciality-cakes-chocolate/chocolate-cake-1.jpeg',
+        description:'',
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'speciality-cakes-chocolate', label: 'Speciality Cakes - Chocolate'}
+        ],    
+    }, 
+    {
+        parentKey:'top-level',key: "speciality-cakes-non-chocolate", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Speciality Cakes - Non Chocolate", 
+        cardLevelImage:'assets/gallery-files/images/speciality-cakes-non-chocolate/birthday-cake-1-tbd.jpeg',
+        description:'',
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'speciality-cakes-non-chocolate', label: 'Speciality Cakes - Non Chocolate'}
         ],    
     }
 ]

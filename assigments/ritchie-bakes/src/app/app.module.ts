@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Import FormsModule
 
@@ -15,10 +17,12 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { LoginLandingComponent } from './components/admin-register-login/login-landing/login-landing.component';
 import { ContentViewerComponent } from './components/main-content/content-viewer/content-viewer.component';
 import { CardComponent } from './components/main-content/card/card.component';
-import { MailFormComponent } from './components/misc/mail-form/mail-form.component';
+import { MailFormComponent } from './components/main-content/commerce-shopping-misc/mail-form/mail-form.component';
 import { RegisterFormComponent } from './components/admin-register-login/register-form/register-form.component';
 import { PagedContentViewerComponent } from './components/main-content/paged-content-viewer/paged-content-viewer.component';
-import { UnitPriceSelectorComponent } from './components/main-content/unit-price-selector/unit-price-selector.component'
+import { UnitPriceSelectorComponent } from './components/main-content/commerce-shopping-misc/unit-price-selector/unit-price-selector.component'; 
+import { ShoppingListComponent } from './components/main-content/commerce-shopping-misc/shopping-list/shopping-list.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,10 +34,12 @@ import { UnitPriceSelectorComponent } from './components/main-content/unit-price
     RegisterFormComponent,
     PagedContentViewerComponent,
     UnitPriceSelectorComponent,
+    ShoppingListComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule, ReactiveFormsModule ,
+    HttpClientModule,
     RouterModule.forRoot([
     {path:'home', component:LandingPageComponent},
     

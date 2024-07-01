@@ -9,12 +9,14 @@
                 <span *ngIf="breadCrumb.link == ''">{{breadCrumb.label}}</span>
             </span><br/><div [innerHTML]="parentDescripion">   </div>
             <!-- coming soon -->
-            <app-unit-price-selector *ngIf="itemUnitPrice.length > 0"  [itemUnitPrice]="itemUnitPrice"></app-unit-price-selector>
+            <app-unit-price-selector *ngIf="itemUnitPrice.length > 0" [itemName]="ItemName" [itemUnitPrice]="itemUnitPrice"></app-unit-price-selector>
         
         </div>
         <div id="upper-ten-central-box" *ngIf="NeedLogin == true">
             <input type='button' value='Logout'  (click)='cmsLogout()'>
         </div>
+
+        <img *ngIf="isCommerce=='true'" src="assets/wishlist.png" (click)="showCart()">
         <div  id="upper-ten-right-box" >Contact:<br/>Marisa Desouza <br/>9820848489<br/>ritchiebakes2021@gmail.com </div>
     </div>
     <br/>
@@ -41,7 +43,7 @@
       
         <div id="div-container" >
           <div id='modal-div-top-5'>
-            <div id="close-div"  (click)="closeModal()">&times;</div>
+            <div id="close-div"  (click)="closeDivModal()">&times;</div>
             <button  id="prev" (click)="previous()"><<<  &nbsp;&nbsp; &nbsp;&nbsp;{{currentCellSelected + 1}}/ {{imageGroups.length}}</button>
             <div id="title" *ngIf="ImageLabel.length >0">{{ImageLabel}}</div> 
             <button  id="next" (click)="next()"> {{currentCellSelected + 1}}/ {{imageGroups.length}} &nbsp;&nbsp; &nbsp;&nbsp;>>></button>
@@ -56,14 +58,22 @@
             </div>
           </section>
         </div>
-      <div id="modal-container">
-        <div id='modal-top-5'>
-          <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
+      <div id="modal-container">{{ModalMode}}
+        <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
+        <div *ngIf="ModalMode=='cart'">
+          <app-shopping-list></app-shopping-list>
+        </div>
+        <div *ngIf="ModalMode=='email'">
+        <app-mail-form></app-mail-form>
+      </div>
+        <!-- We are using the above div, so we dont need the image viewer 
+                <div id='modal-top-5'>
+         
           <button  id="prev" (click)="previous()"><<<  &nbsp;&nbsp; &nbsp;&nbsp;{{currentCellSelected + 1}}/ {{imageGroups.length}}</button>
           <div id="title" *ngIf="ImageLabel.length >0">{{ImageLabel}}</div> 
           <button  id="next" (click)="next()"> {{currentCellSelected + 1}}/ {{imageGroups.length}} &nbsp;&nbsp; &nbsp;&nbsp;>>></button>
         </div>
-        <section id="modal-lower-95"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  >= 1"> <!-- && selectedImage.imageList.length  > 1"-->
+        <section id="modal-lower-95"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  >= 1">  
           <div id="iterative" *ngFor="let imageElement of selectedImage.imageList, let j = index">
             <div id="pic-container" > 
               <img id="modalpic" *ngIf="imageElement != null" src="{{imageElement.image}}">
@@ -73,10 +83,11 @@
           </div>
         </section>
       </div>
-
+      
     </div>
     <ng-template #showEmail>
       eewrewe
       <app-mail-form></app-mail-form>
     </ng-template>
+  -->
   </div>

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ItemPrice, ItemUnitPrice } from '@settings-and-models/commerce';
-// coming soon import { ShoppingCartService } from 'src/app/services/shopping-cart.service';
+import { ShoppingListService } from 'src/app/services//shopping-list.service';
 
 
 @Component({
@@ -17,7 +17,7 @@ export class UnitPriceSelectorComponent {
   selectedUnit: string = 'select';
   selectedPrice: number = 0 ;
 
-  constructor( /*private shoppingCartService: ShoppingCartService*/) { }
+  constructor(private shoppingListService: ShoppingListService) { }
 
   ngOnInit(): void {}
   
@@ -45,7 +45,8 @@ export class UnitPriceSelectorComponent {
       quantity: 1,
     }
  
-    // coming soon this.shoppingCartService.addCartItem(cartItem);
+    // coming soon 
+    this.shoppingListService.addCartItem(cartItem);
     console.log(`Added to wishlist: ${this.selectedUnit} - ${this.selectedPrice}`);
   }
 }

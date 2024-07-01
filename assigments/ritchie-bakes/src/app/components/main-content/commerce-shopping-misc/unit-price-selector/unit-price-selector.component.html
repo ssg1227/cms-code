@@ -4,5 +4,5 @@
       <option *ngFor="let item of itemUnitPrice" [value]="item.unit">{{ item.unit }}</option>
     </select>
     &nbsp; &nbsp;&nbsp;<label>{{ selectedUnit === 'select' ? '(price)' : 'Rs ' + selectedPrice }}</label>
-    <!-- <button (click)="addToWishlist()">Add to Wishlist</button>-->
+     <button (click)="addToWishlist()">Add to Wishlist</button>
   </div>
