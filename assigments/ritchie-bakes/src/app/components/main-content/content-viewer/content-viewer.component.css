@@ -29,6 +29,22 @@
     */
    
 }
+#div-container-landing {
+    margin: 100px;
+    padding: auto;
+    width:90%;
+    border: 5px outset darkcyan ;
+    background: radial-gradient(cyan, skyblue, darkblue);
+    border-radius: 40px;
+}
+#div-container-landing a {
+    margin:auto;
+    text-decoration: none;
+    color: darkslateblue;
+    text-shadow: 0 4px 8px  rgba(25,25,0,0.7);;;
+    text-align: center;
+}
+
 #modal-div-top-5 {
     display: flex;
     height:5%;
@@ -123,6 +139,7 @@
     */
    
 }
+/*
 #modal-top-5 {
     position: relative;
     top:0 ;
@@ -142,6 +159,7 @@
     width:95%;
     margin-top: 10px;
 }
+    */
 #close-modal  {
     position: relative;
     top: 0;

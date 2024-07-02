@@ -15,12 +15,25 @@ export class UnitPriceSelectorComponent {
  @Input() itemName: string = 'unnammed bakery item';
 
   selectedUnit: string = 'select';
+  selectedUnitName: string = 'select';
+  
   selectedPrice: number = 0 ;
 
   constructor(private shoppingListService: ShoppingListService) { }
 
   ngOnInit(): void {}
   
+  FilteredItemUnit(item:ItemUnitPrice):string
+  {
+    let unit = item.unit ;
+    if (item.unit.indexOf('#') > 0 ) {
+      let unitNameAndQty = item.unit.split('#');
+      if (unitNameAndQty.length  > 0) {
+        unit = unitNameAndQty[0];
+      }
+    }
+    return unit ;
+  }
   onUnitChangeOld(unit: string): void {
     this.selectedUnit = unit;
     const selectedItem = this.itemUnitPrice.find(item => item.unit === unit);
@@ -30,8 +43,21 @@ export class UnitPriceSelectorComponent {
     const selectElement = event.target as HTMLSelectElement;
     const unit = selectElement.value;
     this.selectedUnit = unit;
+    this.selectedUnitName = unit;
+    
     const selectedItem = this.itemUnitPrice.find(item => item.unit === unit);
+    if (selectedItem?.itemClass !== '') {
+      // @ts-ignore: Object is possibly 'null'.
+      this.selectedUnitName = selectedItem.itemClass
+    }
     this.selectedPrice = selectedItem ? selectedItem.unitPrice : 0;
+  }
+  CommaSeoparate(unit:string):string {
+      let returnUnit = unit;
+      if (unit.indexOf(',')>0) {
+        returnUnit = unit.split(',')[1];
+      }
+      return returnUnit;
   }
   addToWishlist(): void {
     // Implement the logic for adding to wishlist
@@ -39,9 +65,9 @@ export class UnitPriceSelectorComponent {
     {
       image: '',
 
-      name:this.itemName,
+      name: this.selectedUnitName, //this.itemName,
       unitPrice: this.selectedPrice,
-      unit: this.selectedUnit,
+      unit: this.CommaSeoparate(this.selectedUnit),
       quantity: 1,
     }
  

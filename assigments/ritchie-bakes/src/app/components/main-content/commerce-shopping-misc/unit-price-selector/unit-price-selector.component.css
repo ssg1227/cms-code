@@ -11,7 +11,10 @@
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
+  button:disabled {
+    opacity:0.3;
+    background-color: gray;
+  }
   .unit-price-selector select {
     padding: 5px;
     border-radius: 4px;

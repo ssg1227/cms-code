@@ -20,9 +20,8 @@
         <div  id="upper-ten-right-box" >Contact:<br/>Marisa Desouza <br/>9820848489<br/>ritchiebakes2021@gmail.com </div>
     </div>
     <br/>
-   
+  
     <div class="lower-ninety outerdiv" ><!--  *ngIf="showContactPage == false" ; else showEmail-->
-      
        <div id="leafCards" *ngIf="isLeafParent=='true' && imageGroups.length > 0" class="outerdiv" ><!-- have to repeat outerdiv for flex style -->
          <div *ngFor="let grpImag of imageGroups; let i = index;">
             <app-card 
@@ -42,7 +41,11 @@
         </div>
       
         <div id="div-container" >
-          <div id='modal-div-top-5'>
+          <div id="div-container-landing" *ngIf="isLeafParent == null">
+            <a    [routerLink]="['/view','top-level']"
+            (click)="compareSelected('top-level',0)"  ><H1>ENTER</H1>  </a> 
+          </div>
+          <div id='modal-div-top-5' *ngIf="isLeafParent != null">
             <div id="close-div"  (click)="closeDivModal()">&times;</div>
             <button  id="prev" (click)="previous()"><<<  &nbsp;&nbsp; &nbsp;&nbsp;{{currentCellSelected + 1}}/ {{imageGroups.length}}</button>
             <div id="title" *ngIf="ImageLabel.length >0">{{ImageLabel}}</div> 
@@ -58,14 +61,14 @@
             </div>
           </section>
         </div>
-      <div id="modal-container">{{ModalMode}}
+      <div id="modal-container">
         <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
         <div *ngIf="ModalMode=='cart'">
           <app-shopping-list></app-shopping-list>
         </div>
-        <div *ngIf="ModalMode=='email'">
+        <!-- <div *ngIf="ModalMode=='email'">
         <app-mail-form></app-mail-form>
-      </div>
+      </div>-->
         <!-- We are using the above div, so we dont need the image viewer 
                 <div id='modal-top-5'>
          

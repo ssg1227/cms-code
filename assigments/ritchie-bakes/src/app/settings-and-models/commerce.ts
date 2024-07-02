@@ -10,6 +10,7 @@ export interface CartItem {
 export interface ItemUnitPrice {
   unitPrice:number;
   unit:string;
+  itemClass:string;
 }
 export interface ItemPrice {
     category:string;

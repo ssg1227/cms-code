@@ -19,7 +19,6 @@ import { ContentViewerComponent } from './components/main-content/content-viewer
 import { CardComponent } from './components/main-content/card/card.component';
 import { MailFormComponent } from './components/main-content/commerce-shopping-misc/mail-form/mail-form.component';
 import { RegisterFormComponent } from './components/admin-register-login/register-form/register-form.component';
-import { PagedContentViewerComponent } from './components/main-content/paged-content-viewer/paged-content-viewer.component';
 import { UnitPriceSelectorComponent } from './components/main-content/commerce-shopping-misc/unit-price-selector/unit-price-selector.component'; 
 import { ShoppingListComponent } from './components/main-content/commerce-shopping-misc/shopping-list/shopping-list.component'
 
@@ -32,7 +31,6 @@ import { ShoppingListComponent } from './components/main-content/commerce-shoppi
     CardComponent,
     MailFormComponent,
     RegisterFormComponent,
-    PagedContentViewerComponent,
     UnitPriceSelectorComponent,
     ShoppingListComponent,
   ],

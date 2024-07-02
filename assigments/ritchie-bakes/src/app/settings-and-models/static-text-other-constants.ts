@@ -1,3 +1,5 @@
+export const destinationEmail = `ritchiebakes2021@gmail.com` ;
+export const destinationCCEmail = `shangads@gmail.com` ;
 
 interface StaticText {
      appTitle: string ;

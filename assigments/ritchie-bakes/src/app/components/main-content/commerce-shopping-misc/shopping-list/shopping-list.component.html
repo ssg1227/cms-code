@@ -1,20 +1,24 @@
 <div class="cart-container">
-    <h2>Shopping List</h2>
-    <h3>Total: {{ getTotalCost() | currency }}</h3>
+    <h3>Shopping List</h3>
+    <h4>Total: Rs. {{ getTotalCost()  }}</h4>
     
-    <div class="email-container">
+    <!-- Sender email unneccessary.. we expect that client email is set and the from will automatically populate
+     <div class="email-container">
         <label for="sender-email">Sender Email:</label>
-        <input type="email" id="sender-email" [(ngModel)]="senderEmail">
+        <input type="email" id="sender-email" [(ngModel)]="senderEmail" #senderEmailField="ngModel" [required email>
+        <div *ngIf="senderEmailField.invalid && (senderEmailField.dirty || senderEmailField.touched)">
+            <div *ngIf="senderEmailField.errors?.required">Email is required.</div>
+            <div *ngIf="senderEmailField.errors?.email">Invalid email format.</div>
+        </div>
     </div>
+-->
+    <button *ngIf="cartItems.length > 0" class="submit-btn" (click)="submitCart()">Submit *</button>
     
-    <button class="submit-btn" (click)="submitCart()">Submit</button>
-    
-    <p class="disclaimer">Please ensure that you have set your email on your device.</p>
+    <p  *ngIf="cartItems.length > 0" class="disclaimer">(* clicking this button will open am email form with the list below. Please ensure that you have set your email on your device.)</p>
     
     <table class="cart-table">
         <thead>
             <tr>
-                <th>Image</th>
                 <th>Name</th>
                 <th>Unit Price</th>
                 <th>Unit</th>
@@ -24,13 +28,13 @@
             </tr>
         </thead>
         <tbody>
+            <tr *ngIf="cartItems.length == 0"> <td colspan =6>No items selected</tr>
             <tr *ngFor="let item of cartItems">
-                <td><img [src]="item.image" alt="{{item.name}}" width="50"></td>
-                <td><input [(ngModel)]="item.name" (blur)="updateCart(item)"></td>
+                <td><label [(ngModel)]="item.name" (blur)="updateCart(item)">{{item.name}}</label></td>
                 <td><input type="number" [(ngModel)]="item.unitPrice" (blur)="updateCart(item)"></td>
                 <td><input [(ngModel)]="item.unit" (blur)="updateCart(item)"></td>
                 <td><input type="number" [(ngModel)]="item.quantity" (blur)="updateCart(item)"></td>
-                <td>{{ item.unitPrice * item.quantity | currency }}</td>
+                <td>Rs. {{ item.unitPrice * item.quantity }}</td>
                 <td><button class="delete-btn" (click)="deleteItem(item)">Delete</button></td>
             </tr>
         </tbody>

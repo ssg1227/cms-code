@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { destinationEmail,destinationCCEmail } from '@settings-and-models/static-text-other-constants';
 import { ShoppingListService } from 'src/app/services/shopping-list.service'; 
 
 interface CartItem {
@@ -30,8 +31,6 @@ export class ShoppingListComponent implements OnInit {
   }
 
   loadCart() {
-    
-
     this.cartItems = this.shoppingListService.loadCartItems();
   }
 
@@ -49,10 +48,12 @@ export class ShoppingListComponent implements OnInit {
   }
 
   submitCart() {
-    const emailBody = this.cartItems.map(item =>
-      `Name: ${item.name}, Unit Price: ${item.unitPrice}, Quantity: ${item.quantity}, Total: ${item.unitPrice * item.quantity}`
-    ).join('\n');
-    window.location.href = `mailto:shangads@gmail.com?subject=Shopping Cart&body=${encodeURIComponent(emailBody)}`;
+    let emailBody = 'Items selected:\n' ;
+    emailBody = `${emailBody} ${this.cartItems.map(item =>
+      `Name: ${item.name}, Unit Price: ${item.unitPrice}, Unit: ${item.unit},Quantity: ${item.quantity}, Total: ${item.unitPrice * item.quantity}`
+    ).join('\n')}`;
+    emailBody = `${emailBody}\n TOTAL: ${this.getTotalCost()}`;
+    window.location.href = `mailto:${destinationEmail}?cc=${destinationCCEmail}&subject=Shopping List&body=${encodeURIComponent(emailBody)}`;
   }
   submitCartServer() {
   const emailBody = this.cartItems.map(item =>
@@ -60,7 +61,7 @@ export class ShoppingListComponent implements OnInit {
   ).join('\n');
 
   const emailData = {
-    subject: 'Shopping Cart',
+    subject: 'Shopping List',
     text: emailBody
   };
 

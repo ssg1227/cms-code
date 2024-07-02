@@ -25,7 +25,7 @@ export class ShoppingListService {
     return this.cartItems ;
   }
   addCartItem(cartItem: CartItem){
-    let existingIndex = this.cartItems.findIndex((item:CartItem) => item.name === cartItem.name);
+    let existingIndex = this.cartItems.findIndex((item:CartItem) => item.name === cartItem.name && item.unitPrice === cartItem.unitPrice);
     if (existingIndex >= 0) {
       this.cartItems[existingIndex].quantity += cartItem.quantity ;
     } else {

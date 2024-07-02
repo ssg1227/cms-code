@@ -59,6 +59,7 @@ export class ContentViewerComponent {
   pageSize = 14;
 
   currentPage = 1;
+
   //..
   constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService) {
     this.testMode = this.coreContentService.TestMode ;
@@ -84,7 +85,10 @@ export class ContentViewerComponent {
   ngOnInit() {
     this.isLeafParent = localStorage.getItem("isLeafParent") ;// @ts-ignore: Object is possibly 'null'.
     this.currentMenu = localStorage.getItem("current-menu") ;
-    
+    if (this.isLeafParent === null) {
+        // @ts-ignore: Object is possibly 'null'.
+       document.getElementById('div-container').style.display = 'flex'; 
+    }
     if (this.testMode === true) {
       console.log(`Content component ngOnInit ${this.isLeafParent} ${this.currentMenu}`);
     }

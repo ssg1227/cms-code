@@ -19,10 +19,10 @@ export const MenuTreeElements:TreeNodeElement[] = [
             itemUnitPrice: [
                 {
                     unitPrice:600, 
-                    unit:'1/2 kg'
+                    itemClass:'Chocolate Ganache',unit:'1/2 kg'
                 },{
                      unitPrice:1200, 
-                    unit:'1 kg'
+                    itemClass:'Chocolate Ganache',unit:'1 kg'
                 }],
         },
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -40,10 +40,10 @@ export const MenuTreeElements:TreeNodeElement[] = [
             itemUnitPrice: [
                 {
                     unitPrice:850, 
-                    unit:'1/2 kg'
+                    itemClass:'Chocolate Cake (Mocha/Chocolate/Ganache/Truffle)',unit:'1/2 kg'
                 },{
                      unitPrice:1500, 
-                    unit:'1 kg'
+                    itemClass:'Chocolate Cake (Mocha/Chocolate/Ganache/Truffle)',unit:'1 kg'
                 }],
         },
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -61,10 +61,10 @@ export const MenuTreeElements:TreeNodeElement[] = [
             itemUnitPrice: [
                 {
                     unitPrice:900, 
-                    unit:'1/2 kg'
+                    itemClass:'Rainbow Checker Cake',unit:'1/2 kg'
                 },{
                      unitPrice:1800, 
-                    unit:'1 kg'
+                    itemClass:'Rainbow Checker Cake',unit:'1 kg'
                 }],
         },
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -82,10 +82,10 @@ export const MenuTreeElements:TreeNodeElement[] = [
             itemUnitPrice: [
                 {
                     unitPrice:600, 
-                    unit:'1/2 kg'
+                    itemClass:'Straeberry Cake',unit:'1/2 kg'
                 },{
                      unitPrice:1200, 
-                    unit:'1 kg'
+                    itemClass:'Straeberry Cake',unit:'1 kg'
                 }],
         },
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -103,30 +103,30 @@ export const MenuTreeElements:TreeNodeElement[] = [
             itemUnitPrice: [
                 {
                     unitPrice:600, 
-                    unit:'Oreo 1/2 kg'
+                    itemClass:'Oreo cake',unit:'Oreo cake,1/2 kg'
                 },{
                      unitPrice:1800, 
-                    unit:'Oreo 1 kg'
+                    itemClass:'Oreo cake',unit:'Oreo cake,1 kg'
                 },
                 {
                     unitPrice:550, 
-                    unit:'Black Forest 1/2 kg'
+                    itemClass:'Black Forest cake',unit:'Black Forest cake,1/2 kg'
                 },{
                      unitPrice:1100, 
-                    unit:'Black Forest 1 kg'
+                    itemClass:'Black Forest cake',unit:'Black Forest cake,1 kg'
                 },{
                     unitPrice:550, 
-                   unit:'White Forest 1/2 kg'
+                   itemClass:'White Forest cake',unit:'White Forest cake,1/2 kg'
                },{
                      unitPrice:1100, 
-                    unit:'White Forest 1 kg'
+                    itemClass:'White Forest cake',unit:'White Forest cake,1 kg'
                 },
                 {
                     unitPrice:450, 
-                    unit:'Vanilla Cake 1/2 kg'
+                    itemClass:'Vanilla Cake',unit:'Vanilla Cake,1/2 kg'
                 },{
                      unitPrice:800, 
-                    unit:'Vanilla Cake 1 kg'
+                    itemClass:'Vanilla Cake',unit:'Vanilla Cake, 1 kg'
                 }],
         },
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -141,10 +141,10 @@ export const MenuTreeElements:TreeNodeElement[] = [
            itemUnitPrice: [
             {
                 unitPrice:500, 
-                unit:'1/2 kg'
+                itemClass:'',unit:'1/2 kg'
             },{
                  unitPrice:900, 
-                unit:'1 kg'
+                itemClass:'',unit:'1 kg'
             }],
        },
        cardLevelImage:'assets/gallery-files/images/fruit-cakes/blueberry-crush-cake-whipped-cream-frst.jpeg', 
@@ -161,10 +161,10 @@ export const MenuTreeElements:TreeNodeElement[] = [
            itemUnitPrice: [
             {
                 unitPrice:500, 
-                unit:'1/2 kg'
+                itemClass:'',unit:'1/2 kg'
             },{
                  unitPrice:900, 
-                unit:'1 kg'
+                itemClass:'',unit:'1 kg'
             }],
        },
        cardLevelImage:'assets/gallery-files/images/coffee-cakes/Coffee cake with coffee buttercream.jpeg', 
@@ -181,10 +181,10 @@ export const MenuTreeElements:TreeNodeElement[] = [
            itemUnitPrice: [
             {
                 unitPrice:600, 
-                unit:'1/2 kg'
+                itemClass:'',unit:'1/2 kg'
             },{
                  unitPrice:1200, 
-                unit:'1 kg'
+                itemClass:'',unit:'1 kg'
             }],
        },
        cardLevelImage:'assets/gallery-files/images/red-velvet-cakes/red-velvet-cake-bayko-0.jpeg', 
@@ -201,22 +201,22 @@ export const MenuTreeElements:TreeNodeElement[] = [
             itemUnitPrice: [
                 {
                     unitPrice:780, 
-                    unit:'Single Frosted Flavor:1 doz'
+                    itemClass:'',unit:'Single Frosted Flavor:1 doz'
                 },{
                      unitPrice:500, 
-                    unit:'Single Frosted Flavor:1/2 doz'
+                    itemClass:'',unit:'Single Frosted Flavor:1/2 doz'
                 },{
                     unitPrice:600, 
-                    unit:'Single Plain Flavor:1 doz'
+                    itemClass:'',unit:'Single Plain Flavor:1 doz'
                 },{
                      unitPrice:400, 
-                    unit:'Single Plain Flavor:1/2 doz'
+                    itemClass:'',unit:'Single Plain Flavor:1/2 doz'
                 }, {
                     unitPrice:1200, 
-                    unit:'Mix(any two flavor):1 doz frosted'
+                    itemClass:'',unit:'Mix(any two flavor):1 doz frosted'
                 },{
                      unitPrice:850, 
-                    unit:'Mix(any two flavor):1 doz plain'
+                    itemClass:'',unit:'Mix(any two flavor):1 doz plain'
                 }],
         },
         cardLevelImage:'assets/gallery-files/images/cup-cakes/coffee-cup-cakes.jpeg', 
@@ -235,40 +235,40 @@ export const MenuTreeElements:TreeNodeElement[] = [
             itemUnitPrice: [
                 {
                     unitPrice:350, 
-                    unit:'Eggless Cookies, 500gms'
+                    itemClass:'',unit:'Eggless Cookies, 500gms'
                 },{
                     unitPrice:700, 
-                    unit:'Eggless Cookies, 1 Kg'
+                    itemClass:'',unit:'Eggless Cookies, 1 Kg'
                 },{
                     unitPrice:300, 
-                    unit:'Masala Cookies, 500gms'
+                    itemClass:'',unit:'Masala Cookies, 500gms'
                 },{
                     unitPrice:600, 
-                    unit:'Masala Cookies, 1 Kg'
+                    itemClass:'',unit:'Masala Cookies, 1 Kg'
                 },{
                     unitPrice:300, 
-                    unit:'Mini Marble Cookies, 500gms'
+                    itemClass:'',unit:'Mini Marble Cookies, 500gms'
                 },{
                     unitPrice:600, 
-                    unit:'Mini Marble  Cookies, 1 Kg'
+                    itemClass:'',unit:'Mini Marble  Cookies, 1 Kg'
                 },{
                     unitPrice:350, 
-                    unit:'Mini Coconut Cookies, 500gms'
+                    itemClass:'',unit:'Mini Coconut Cookies, 500gms'
                 },{
                     unitPrice:700, 
-                    unit:'Mini Coconut Cookies, 1 Kg'
+                    itemClass:'',unit:'Mini Coconut Cookies, 1 Kg'
                 },{
                     unitPrice:350, 
-                    unit:'Coconut Cookies, 500gms'
+                    itemClass:'',unit:'Coconut Cookies, 500gms'
                 },{
                     unitPrice:700, 
-                    unit:'Coconut Cookies, 1 Kg'
+                    itemClass:'',unit:'Coconut Cookies, 1 Kg'
                 },{
                     unitPrice:350, 
-                    unit:'Cheese Cookies, 500gms'
+                    itemClass:'',unit:'Cheese Cookies, 500gms'
                 },{
                     unitPrice:700, 
-                    unit:'Cheese Cookies, 1 Kg'
+                    itemClass:'',unit:'Cheese Cookies, 1 Kg'
                 }],
         },
         emptyMessage: 'Empty Content or Error', breadCrumb:[
