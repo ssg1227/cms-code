@@ -11,6 +11,22 @@
 ### Practices
 - Maintaining this log
 - console.log should try to keep reference - classname method name
+### July 1st week
+- **STATUS July 3** 
+  - functionally complete. People can see products and email in their orders
+  - *to add* Testimonial page, more images and descriptions, maybe a category file
+  - *to modify, correct, refine* shifting images to correct location, pricing, some styling
+- **Testimonial Page**
+  - **significant** since it is a new format of content - a post format
+  - **Steps**
+    - renamed 'card.component.*' to 'image-card.component.*'
+    - added contentmode - contentMode='image-card' ; // 'posts', 'narratives' ;
+    - **TODO** add posts-card component, create a new JSON for posts (image.lists wont do) and a new service class or, maybe new methods in core.content
+    - **TODO** capture this in content-viewer to setup ngIf to conditionally show posts-card
+    - **TODO** create the data
+- **Other significants**
+  - expanded images now show in a div on content-viewer page. (The modal is still used for shopping list)
+  - restructuring folders - moved all ts json files under 'src' folder
 ### June 17 - 27
 - ** June 27 Targets
   - **Ritchie Bakes prod candidate one** (prod = seriously share with others for shopping)
