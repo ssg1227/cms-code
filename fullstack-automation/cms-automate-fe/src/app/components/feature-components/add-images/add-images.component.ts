@@ -1,4 +1,4 @@
-import { LookupValues } from './../../utils/lookup-values';
+import { LookupValues } from '../../utils/lookup-values';
 import { Component, OnInit } from '@angular/core';
 import { ListService } from '../../../services/list.service';
 
