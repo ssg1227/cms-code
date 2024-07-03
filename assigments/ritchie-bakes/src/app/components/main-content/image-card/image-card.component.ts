@@ -3,9 +3,9 @@ import { Output, EventEmitter } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css'],
+  selector: 'app-image-card',
+  templateUrl: './image-card.component.html',
+  styleUrls: ['./image-card.component.css'],
   animations: [
     trigger('cardState', [
       state('default', style({
@@ -24,13 +24,14 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 /* March 5 2024 start of re-use this for max + readonly size vs small and clickable 
   - one more input parameter @isLarge
 */
-export class CardComponent {
+export class ImageCardComponent {
   @Input() cardIndex = 0 ;
   @Input() cardSelected = -1 ;
   @Input() cardInfo:any = null ;
   @Input() imageDetail:any = null ;
   @Input() isLarge:boolean = false ;
   @Input() cardLevelImage:string = '';
+  @Input() mode:string = 'thumbnail'
   @Output() clickedIndex = new EventEmitter<string>() ;
 
   cardState = 'default';
@@ -44,6 +45,7 @@ export class CardComponent {
       this.key = localStorage.getItem('key')|'';
     }
   }
+   
   toggleCardState() {
     this.cardState = this.cardState === 'default' ? 'hover' : 'default';
   }
@@ -96,10 +98,12 @@ export class CardComponent {
     if (this.imageDetail !== null && this.imageDetail.imageList[0].cardStyle && this.imageDetail.imageList[0].cardStyle.outer) {
       return this.imageDetail.imageList[0].cardStyle.outer;
     }
-
+    
     // below redundant code 
     let returnCardCSS = 'card-default';
-     
+    if (this.imageDetail == undefined || this.imageDetail == null) {
+      returnCardCSS = `${returnCardCSS} card-default-node`
+    }
     if (this.imageDetail !== null) {
       if(this.imageDetail.imageList[0].description.toLowerCase().indexOf('black and white') >= 0||
          this.imageDetail.imageList[0].description.toLowerCase().indexOf('black-white') >= 0) {

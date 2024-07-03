@@ -1,6 +1,6 @@
 
 .card-default { /* tree branch/ category or regular color pencil */ 
-  width: 400px;
+  width: 350px;
   height:auto;
   border: 2px outset salmon ;
   border-radius: 14px;
@@ -10,6 +10,10 @@
   background-color: pink;
 
  /* background: radial-gradient(beige, goldenrod);*/
+}
+.card-default-node {
+  width: 300px;
+  max-height: 300px;
 }
 .card-image-modifier {
   height:auto;
@@ -35,8 +39,8 @@ H2,H3,H4 {
   font-style: italic;
 }
 #node-card-image {
-  width:50%;
-  height:50% ;
+  width:40%;
+  height:40% ;
   margin: auto;
   display: block;
   margin-bottom: 20px;

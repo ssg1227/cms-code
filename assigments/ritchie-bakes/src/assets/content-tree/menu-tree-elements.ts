@@ -82,10 +82,10 @@ export const MenuTreeElements:TreeNodeElement[] = [
             itemUnitPrice: [
                 {
                     unitPrice:600, 
-                    itemClass:'Straeberry Cake',unit:'1/2 kg'
+                    itemClass:'Strawberry Cake',unit:'1/2 kg'
                 },{
                      unitPrice:1200, 
-                    itemClass:'Straeberry Cake',unit:'1 kg'
+                    itemClass:'Strawberry Cake',unit:'1 kg'
                 }],
         },
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -105,7 +105,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
                     unitPrice:600, 
                     itemClass:'Oreo cake',unit:'Oreo cake,1/2 kg'
                 },{
-                     unitPrice:1800, 
+                     unitPrice:1200, 
                     itemClass:'Oreo cake',unit:'Oreo cake,1 kg'
                 },
                 {
@@ -140,11 +140,11 @@ export const MenuTreeElements:TreeNodeElement[] = [
            category:'fruit-cakes',
            itemUnitPrice: [
             {
-                unitPrice:500, 
-                itemClass:'',unit:'1/2 kg'
+                unitPrice:600, itemClass:'Fruit Cake',
+                 unit:'1/2 kg'
             },{
-                 unitPrice:900, 
-                itemClass:'',unit:'1 kg'
+                 unitPrice:1200
+                 , itemClass:'Fruit Cake',unit:'1 kg'
             }],
        },
        cardLevelImage:'assets/gallery-files/images/fruit-cakes/blueberry-crush-cake-whipped-cream-frst.jpeg', 

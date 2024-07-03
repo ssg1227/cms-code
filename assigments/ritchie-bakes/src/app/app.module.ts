@@ -16,7 +16,8 @@ import { CoreContentService } from './services/core-content.service';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { LoginLandingComponent } from './components/admin-register-login/login-landing/login-landing.component';
 import { ContentViewerComponent } from './components/main-content/content-viewer/content-viewer.component';
-import { CardComponent } from './components/main-content/card/card.component';
+
+import { ImageCardComponent } from './components/main-content/image-card/image-card.component';
 import { MailFormComponent } from './components/main-content/commerce-shopping-misc/mail-form/mail-form.component';
 import { RegisterFormComponent } from './components/admin-register-login/register-form/register-form.component';
 import { UnitPriceSelectorComponent } from './components/main-content/commerce-shopping-misc/unit-price-selector/unit-price-selector.component'; 
@@ -28,7 +29,7 @@ import { ShoppingListComponent } from './components/main-content/commerce-shoppi
     LandingPageComponent,
     LoginLandingComponent,
     ContentViewerComponent,
-    CardComponent,
+    ImageCardComponent,
     MailFormComponent,
     RegisterFormComponent,
     UnitPriceSelectorComponent,

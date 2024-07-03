@@ -8,3 +8,4 @@
   - *contexted-core-content.service.ts  - context related copies* core-content-service.ts spawned off new injectable contexted-core-content.service.ts to contain the image (and other) list references specific to the app
   - *styles.css - context related copies*
   - login-landing and  content-viewer/paged-content-viewr - top ten **to move** content (as innerHTML) to static-text-other-constants.ts
+  - image-card.component.ts = check the getCardCSS  - contextualize it
