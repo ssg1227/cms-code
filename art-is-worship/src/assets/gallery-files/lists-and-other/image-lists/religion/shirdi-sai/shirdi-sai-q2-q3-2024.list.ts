@@ -18,8 +18,45 @@ public allImageList:ImageElement[]  =  [
         themeSummary: 
         `<p> <em><strong>Soo many sketches of Shirdi Sai!!!</strong> that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha</em><br/>
         &nbsp;&nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
-        files: [  {
-
+        files: [  
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '07-06-2024',
+summaryLabel:  `HAPPY TWENTIETH ANNIVERSARY SHIRDI SAI PARIVAR, Bay Area`,
+fullFileName: `${this.imageRoot}BabaSSPAnniversaryJune22-2024.jpeg`,
+description: `<ul><li> HAPPY TWENTIETH ANNIVERSARY SHIRDI SAI PARIVAR, Bay Area </li><li> Formed 20 years ago (probably as a small group doing aarti at devotees' houses) </li><li> Then a small room in a warehouse in Kifer, Sunnyvale with a small murthy. (Larger temple Sanatan Dharma Kendra occupied the main hall) </li><li> Life Size Talim sculpted Murthy in 2007 </li><li> Moved to current (Q3 2024) location at 1221 CA Circle Milpitas June 10 2010 </li><li> Sketched as a final sequence - completed June 22 </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '07-06-2024',
+summaryLabel:  `Part sketch for thursday June 20 2024`,
+fullFileName: `${this.imageRoot}BabaJun20204-SSPPartSketch2-scan.jpeg`,
+description: `<ul><li> Part sketch for thursday June 20 2024 </li><li> Shirdi Sai Pariwar group (Bay Area) formation 20th anniversary on June 20 - 22!!! </li></ul>`,
+iterations: [
+{fullFileName: `${this.imageRoot}BabaJun20204-SSPPartSketch2-scan.jpeg`, description: `<ul><li> Part sketch for thursday June 20 2024 </li><li> Shirdi Sai Pariwar group (Bay Area) formation 20th anniversary on June 20 - 22!!! </li></ul>` },
+{fullFileName: `${this.imageRoot}BabaJun20204-SSPPartSketch1.jpeg`, description: `<ul><li> Part sketch for thursday June 20 2024 </li><li> Shirdi Sai Pariwar group (Bay Area) formation 20th anniversary on June 20 - 22!!! </li><li> Photo version. Other was scan </li></ul>` },
+]
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '07-06-2024',
+summaryLabel:  `Baba making cake `,
+fullFileName: `${this.imageRoot}BabaSSP20Anniv-BabaMakingCake20613.jpeg`,
+description: `<ul><li> Baba making cake  </li><li> June 13 2024- Shirdi Sai Pariwar group (Bay Area) formation 20th anniversary on June 20 - 22!!! </li></ul>`,
+iterations: [
+{fullFileName: `${this.imageRoot}BabaSSP20Anniv-BabaMakingCake20613.jpeg`, description: `<ul><li> Baba making cake  </li><li> June 13 2024- Shirdi Sai Pariwar group (Bay Area) formation 20th anniversary on June 20 - 22!!! </li></ul>` },
+{fullFileName: `${this.imageRoot}BabaSSP20Anniv-BabaMakingCake10613.jpeg`, description: `<ul><li> Baba making cake  </li><li> June 13 2024- Shirdi Sai Pariwar group (Bay Area) formation 20th anniversary on June 20 - 22!!! </li><li> Initial outline </li></ul>` },
+]
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
