@@ -20,6 +20,20 @@ public allImageList:ImageElement[]  =  [
         &nbsp;&nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
         files: [  
 {
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'color-pencil black-white',
+dateUploaded:  '07-06-2024',
+evolution:  `rgererge`,
+evolutionSequence:  4,
+evolutionDate:  '07-06-2024',
+summaryLabel:  `Sequence compilation of SSP Baba 20th anniversary sketches`,
+fullFileName: `${this.imageRoot}BabaSSPAnniversaryJune22-2024-seq.jpg`,
+description: `<ul><li> Sequence compilation of SSP Baba 20th anniversary sketches </li><li> July 5 2024 </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
