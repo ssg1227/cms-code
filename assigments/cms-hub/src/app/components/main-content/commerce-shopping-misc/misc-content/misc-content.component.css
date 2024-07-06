@@ -1,0 +1,11 @@
+.misc-content-container {
+    background-color: #e3f3f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 6px 10px rgba(055, 5, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
