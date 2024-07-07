@@ -26,8 +26,24 @@ export class FruitCakes {
                               ,
                               fullFileName: `${this.imageRoot}Blueberry cake with spring theme.jpeg`,
                               description: `<ul><li>Description and pricing coming soon </li></ul>`,
+ 
+                           }  , {
+                                      
+                              dateUploaded:  '06-06-2024',
+                              summaryLabel:  `Blueberry cake Birthday `
+                              ,
+                              fullFileName: `${this.imageRoot}birthday-cake-2-tbd.jpeg`,
+                              description: `<ul><li>Description and pricing coming soon </li></ul>`,
 
-                        }
+                        }  , {
+                                      
+                                    dateUploaded:  '06-06-2024',
+                                    summaryLabel:  `Blueberry cake 50th Birthday `
+                                    ,
+                                    fullFileName: `${this.imageRoot}Blueberry-50-savio.jpeg`,
+                                    description: `<ul><li>Description and pricing coming soon </li></ul>`,
+      
+                              }
 
              ]
           },

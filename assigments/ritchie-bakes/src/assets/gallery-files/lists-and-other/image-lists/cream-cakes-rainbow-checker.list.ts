@@ -20,11 +20,15 @@ export class CreamCakesRainbowChecker {
 
                   },{
                         
+                        
                         dateUploaded:  '06-06-2024',
-                        summaryLabel:  `Rainbow Checker Cake 1 kg  `,
-                        fullFileName: `${this.imageRoot}rainbow-checker-cake-1-kg.jpeg`,
+                        summaryLabel:  `Rainbow Checker Cake 1 kg  showing slice`,
+                        fullFileName: `${this.imageRoot}rainbow-checker-cake-1-kg-with-slice.jpeg`,
                         description: `<ul><li> Rainbow Checker Cake 1 Kg </li><li>More details coming soon </li></ul>`,
                         iterations: [
+                                {fullFileName: `${this.imageRoot}rainbow-checker-cake-1-kg-with-slice.jpeg`
+                              , description: `<ul><li> Rainbow Checker Cake 1 Kg full cake with slice</li><li>More details coming soon </li></ul>
+                              ` },
                               {fullFileName: `${this.imageRoot}rainbow-checker-cake-1-kg.jpeg`
                               , description: `<ul><li> Rainbow Checker Cake 1 Kg full cake</li><li>More details coming soon </li></ul>
                               ` },

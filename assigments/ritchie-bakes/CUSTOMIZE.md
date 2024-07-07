@@ -1,4 +1,7 @@
 # STEPS TO CUSTOMIZE AND DEPLOY CMS APP
+1. Under `cms-hub/src/' copy assets-gen folder to new folder 'assets-*app**'
+2. Ensure that 'assets-gen' is a general folder, and earlier themes have their 'assets-*theme*' folder 
+3. Under `cms-hub/src/app/services'
 1. Create new angular app ng new <app name> (to avoid the template name from appearing)
 2. Copy and overwrite the src folder and other important files
 3. run npm install (If there was any error during app creation) and run the app ng serve

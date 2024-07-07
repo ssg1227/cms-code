@@ -16,7 +16,8 @@
             <input type='button' value='Logout'  (click)='cmsLogout()'>
         </div>
 
-        <img *ngIf="isCommerce=='true'" src="assets/wishlist.png" (click)="showCart()">
+        <img *ngIf="isCommerce=='true'" style="{margin-right:5px}"  src="assets/gallery-files/images/wishlist.jpg" (click)="showCart()">
+        <img *ngIf="isCommerce=='true'" style="margin-right:5px;"  src="assets/gallery-files/images/thumbs_up_quotes.jpg" (click)="showQuotes()">
         <div  id="upper-ten-right-box" >Contact:<br/>Marisa Desouza <br/>9820848489<br/>ritchiebakes2021@gmail.com </div>
     </div>
     <br/>
@@ -43,7 +44,7 @@
         <div id="div-container" >
           <div id="div-container-landing" *ngIf="isLeafParent == null">
             <a    [routerLink]="['/view','top-level']"
-            (click)="compareSelected('top-level',0)"  ><H1>ENTER</H1>  </a> 
+            (click)="compareSelected('top-level',0)"  ><H1>ENTER</H1> <div [innerHTML]="appContent"></div> </a> 
           </div>
           <div id='modal-div-top-5' *ngIf="isLeafParent != null">
             <div id="close-div"  (click)="closeDivModal()">&times;</div>
@@ -66,6 +67,9 @@
         <div *ngIf="ModalMode=='cart'">
           <app-shopping-list></app-shopping-list>
         </div>
+        <div *ngIf="ModalMode=='quotes'" >
+          <app-misc-content [bulkContent]="quoteContent"></app-misc-content>
+        </div><!-- [innerHTML]="quoteContent"></div> -->
         <!-- <div *ngIf="ModalMode=='email'">
         <app-mail-form></app-mail-form>
       </div>-->

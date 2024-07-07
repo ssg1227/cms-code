@@ -13,7 +13,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         parentKey:'top-level',key: "cream-cakes-chocolate-ganache", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Cream Cakes - Chocolate with Ganache", 
          cardLevelImage:'assets/gallery-files/images/cream-cakes-chocolate-ganache/Chocolate sea world cake 2.jpg',
-        description:'Need 2 days notice to order',
+        description:'',
         itemPrice: {
             category:'cream-cakes-chocolate-ganache',
             itemUnitPrice: [
@@ -34,7 +34,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         parentKey:'top-level',key: "cream-cakes-chocolate-other-frosting", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Cream Cakes - Chocolate with Mocha / Chocolate/ Ganache and truffle", 
          cardLevelImage:'assets/gallery-files/images/speciality-cakes-chocolate/chocolate-cake-1.jpeg',
-        description:'Need 2 days notice to order',
+        description:'',
         itemPrice: {
             category:'cream-cakes-chocolate-ganache',
             itemUnitPrice: [
@@ -55,7 +55,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         parentKey:'top-level',key: "cream-cakes-rainbow-checker", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Cream Cakes - Rainbow Checker", 
          cardLevelImage:'assets/gallery-files/images/cream-cakes-rainbow-checker/rainbow-checker-cake-1-kg.jpeg',
-        description:'Need 2 days notice to order',
+        description:'',
         itemPrice: {
             category:'cream-cakes-rainbow-checker',
             itemUnitPrice: [
@@ -76,7 +76,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         parentKey:'top-level',key: "cream-cakes-strawberry", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Cream Cakes - Strawberry with fresh Strawberries frosting", 
          cardLevelImage:'assets/gallery-files/images/cream-cakes-strawberry/strawberry-1.jpeg',
-        description:'Need 2 days notice to order',
+        description:'',
         itemPrice: {
             category:'cream-cakes-strawberry',
             itemUnitPrice: [
@@ -97,7 +97,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
         parentKey:'top-level',key: "cream-cakes-oreo-bf-wf-van", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Cream Cakes - Oreo, Black Forest, White Forest, Vanilla", 
          cardLevelImage:'assets/gallery-files/images/cream-cakes-oreo-bf-wf-van/Oreo Cake.jpg',
-        description:'Need 2 days notice to order',
+        description:'',
         itemPrice: {
             category:'cream-cakes-oreo-bf-wf-van',
             itemUnitPrice: [
@@ -275,17 +275,6 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'cookies-brownies-other', label: 'Cookies, Brownies and Others'}
         ],    
-    },{
-        parentKey:"top-level", key: "feedback-testimonial-posts", levelIndex:1,isLeafParent:true, roles:['any'],
-        label: "Feedback, Testimonials",
-        description:'What my customers are saying',
-        
-        
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'feedback-testimonials', label: 'Feedback, Testimonials'}
-        ],
-        
     },
     // #### LEVEL 1
     {

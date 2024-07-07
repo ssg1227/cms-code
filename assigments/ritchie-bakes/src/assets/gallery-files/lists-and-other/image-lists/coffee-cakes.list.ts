@@ -13,13 +13,6 @@ export class CoffeeCakes {
                 files: [ {
                               
                               dateUploaded:  '06-06-2024',
-                              summaryLabel:  `Coffee Birthday Cake`,
-                              fullFileName: `${this.imageRoot}birthday-cake-2-tbd.jpeg`,
-                              description: `<ul><li>Details coming soon </li></ul>`,
-
-                        },{
-                              
-                              dateUploaded:  '06-06-2024',
                               summaryLabel:  `Coffee cake with coffee buttercream`,
                               fullFileName: `${this.imageRoot}Coffee cake with coffee buttercream.jpeg`,
                               description: `<ul><li>Details coming soon </li></ul>`,

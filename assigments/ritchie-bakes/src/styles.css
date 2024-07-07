@@ -36,6 +36,12 @@
     color: darkslateblue;
     text-shadow: 1px 1px gray;
 }
+.upper-ten img {
+    border: 2px inset gray;
+    border-radius: 5px;
+    height: auto;
+    margin: 2px;
+}
  #author {
     font-size: smaller;
     font-style: italic;
@@ -49,13 +55,15 @@
     font-weight: 700;
     font-size: larger;
 }
-
+#upper-ten img {
+    margin-right: 2px;
+}
 #upper-ten-right-box {
     margin:auto;
     margin-top: 14px;
     margin-right: 10px;  
     border-radius: 3px;
-    background-color: lightpink;
+    background-color: lightgrey;
     
     font-weight: 1000;
     border: 1px outset silver;
@@ -77,10 +85,46 @@
     font-size: larger;
     font-weight: 900;
 }
+.image-container {
+    width:30%;
+}
+
+.image-container img{
+    width:30%;
+}
+.image-container p {
+    background-color: beige;
+    text-align: left;
+    text-shadow: none;
+}
+
+.testimonial {
+    background-color: beige;
+    font-style: italic ;
+    font-size: medium;
+    text-align: left;
+    text-shadow: none;
+}
+
 .lower-ninety-landing {
     display: flex ;
+    flex-wrap: wrap;
     border: 2px solid slateblue ;
     background-color: rgb(195, 205, 231);
+}
+.scrollable {
+    padding: 4px;
+    border: 2px ridge saddlebrown;
+    border-radius: 10px;
+    background-color: 180, 180, 150; 
+}
+.scrollable p {
+    margin: 10px 5px;
+    border-bottom: 2px ridge saddlebrown;
+    border-radius: 10px;
+    background-color: beige; 
+    padding:10px;
+    box-shadow: 0 4px 8px  rgba(25,25,0,0.7);
 }
 @media screen and (min-width:1029px) {
     .upper-ten {

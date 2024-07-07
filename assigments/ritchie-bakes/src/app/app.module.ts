@@ -21,7 +21,8 @@ import { ImageCardComponent } from './components/main-content/image-card/image-c
 import { MailFormComponent } from './components/main-content/commerce-shopping-misc/mail-form/mail-form.component';
 import { RegisterFormComponent } from './components/admin-register-login/register-form/register-form.component';
 import { UnitPriceSelectorComponent } from './components/main-content/commerce-shopping-misc/unit-price-selector/unit-price-selector.component'; 
-import { ShoppingListComponent } from './components/main-content/commerce-shopping-misc/shopping-list/shopping-list.component'
+import { ShoppingListComponent } from './components/main-content/commerce-shopping-misc/shopping-list/shopping-list.component';
+import { MiscContentComponent } from './components/main-content/commerce-shopping-misc/misc-content/misc-content.component'
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ShoppingListComponent } from './components/main-content/commerce-shoppi
     RegisterFormComponent,
     UnitPriceSelectorComponent,
     ShoppingListComponent,
+    MiscContentComponent,
   ],
   imports: [
     BrowserModule,

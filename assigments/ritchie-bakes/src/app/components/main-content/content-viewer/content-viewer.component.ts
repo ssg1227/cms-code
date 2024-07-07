@@ -31,6 +31,7 @@ export class ContentViewerComponent {
   appTitle= staticText.appTitle;
   appAuthor= staticText.appAuthor;
   appContent = staticText.introContentList[0];
+  quoteContent = staticText.introContentList[1];
   isLeafParent = localStorage.getItem("isLeafParent") ;
   key = '';
   isCompiledList = localStorage.getItem("isCompiledList");
@@ -79,6 +80,13 @@ export class ContentViewerComponent {
   showCart() {
     
     this.coreContentService.modalMode = 'cart';
+    // @ts-ignore: Object is possibly 'null'.
+    document.getElementById('modal-container').style.display = 'flex';
+   }
+
+   showQuotes() {
+    
+    this.coreContentService.modalMode = 'quotes';
     // @ts-ignore: Object is possibly 'null'.
     document.getElementById('modal-container').style.display = 'flex';
    }
