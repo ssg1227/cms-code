@@ -11,6 +11,14 @@
 ### Practices
 - Maintaining this log
 - console.log should try to keep reference - classname method name
+### July 2nd week
+- **STATUS July 8** 
+  - **Ritchie bakes complete**. *full coverage of functionality. Add comments/ feedback as pop up*
+  - **Ritchie bakes pending**. 
+    - Cleanup lists, images, categorization
+    - Styling, filling up cracks and smoothening bumps
+    - Some specifics - theme cakes how to communicate with Marisa
+  - **Ritchie bakes timeline** initial public sharing July 19 2024
 ### July 1st week
 - **STATUS July 3** 
   - functionally complete. People can see products and email in their orders
