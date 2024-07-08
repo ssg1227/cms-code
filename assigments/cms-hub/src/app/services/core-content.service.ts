@@ -2,14 +2,9 @@ import { ItemPrice, ItemUnitPrice } from './../settings-and-models/commerce';
 import { Injectable } from '@angular/core';
 import { ContextedCoreContentService } from './contexted-core-content.service';
 import { TreeNodeElement } from '@settings-and-models/tree-node-element' ;
-import {  MenuTreeElements } from 'src/assets/content-tree/menu-tree-elements' ;
-import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail2' ;
+import {  MenuTreeElements } from 'src/assets/content-tree/menu-tree-elements';
+import { ImageElement, ContentList } from '@settings-and-models/image-detail' ;
 import { BreadCrumb } from '@settings-and-models/bread-crumbs';
-// content files 
-import { SpecialityCakesChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-chocolate.list';
-import { SpecialityCakesNonChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-non-chocolate.list';
-import { CupCakes } from 'src/assets/gallery-files/lists-and-other/image-lists/cup-cakes.list';
-import { CookiesBrowniesOther } from 'src/assets/gallery-files/lists-and-other/image-lists/cookies-brownies-other.list';
 
 @Injectable({
   providedIn: 'root'

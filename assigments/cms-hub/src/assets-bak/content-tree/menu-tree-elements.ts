@@ -10,13 +10,24 @@ export const MenuTreeElements:TreeNodeElement[] = [
         label:"HOME PAGE",
     },
     {
-        parentKey:'top-level',key: "sai-amrutvani", levelIndex:1,isLeafParent:true, roles:['any'],
-        label: "Sai Amrutvani", 
-        description:'Philosophical Pearls of Wisom ',
-        
+        parentKey:'top-level',key: "cream-cakes-chocolate-ganache", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Cream Cakes - Chocolate with Ganache", 
+         cardLevelImage:'assets/gallery-files/images/cream-cakes-chocolate-ganache/Chocolate cake 01.jpg',
+        description:'',
+        itemPrice: {
+            category:'cream-cakes-chocolate-ganache',
+            itemUnitPrice: [
+                {
+                    unitPrice:600, 
+                    itemClass:'Chocolate Ganache',unit:'1/2 kg'
+                },{
+                     unitPrice:1200, 
+                    itemClass:'Chocolate Ganache',unit:'1 kg'
+                }],
+        },
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'sai-amrutvani', label: 'Sai Amrutvani'}
+            {link: '', params:'cream-cakes-chocolate-ganache', label: 'Cream Cakes - Chocolate with Ganache'}
         ],    
     },
     {
@@ -264,17 +275,16 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'cookies-brownies-other', label: 'Cookies, Brownies and Others'}
         ],    
-    },{
-        parentKey:"top-level", key: "feedback-testimonial-posts", levelIndex:1,isLeafParent:true, roles:['any'],
-        label: "Feedback, Testimonials",
-        description:'What my customers are saying',
-        
-        
+    }, 
+    {
+        parentKey:'top-level',key: "theme-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Theme cakes", 
+        cardLevelImage:'assets/gallery-files/images/theme-cakes/Chocolate sea world cake 2.jpg',
+        description:'',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'feedback-testimonials', label: 'Feedback, Testimonials'}
-        ],
-        
+            {link: '', params:'theme-cakes', label: 'Theme cakes'}
+        ],    
     },
     // #### LEVEL 1
     {

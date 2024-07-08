@@ -14,13 +14,6 @@ export class CreamCakesChocolateGanache {
                         files: [ 
                                 {
                                       
-                                      dateUploaded:  '06-06-2024',
-                                      summaryLabel:  `Chocolate Cake Sea world `,
-                                      fullFileName: `${this.imageRoot}Chocolate sea world cake 2.jpg`,
-                                      description: `<ul><li>Description and pricing coming soon </li></ul>`,
-        
-                                },{
-                                      
                                     dateUploaded:  '06-06-2024',
                                     summaryLabel:  `Chocolate cake Ganache`,
                                       fullFileName: `${this.imageRoot}Chocolatecake-Ganache-Martin.jpg`,

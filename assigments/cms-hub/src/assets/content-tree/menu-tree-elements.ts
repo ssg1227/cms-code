@@ -12,7 +12,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     {
         parentKey:'top-level',key: "cream-cakes-chocolate-ganache", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Cream Cakes - Chocolate with Ganache", 
-         cardLevelImage:'assets/gallery-files/images/cream-cakes-chocolate-ganache/Chocolate sea world cake 2.jpg',
+         cardLevelImage:'assets/gallery-files/images/cream-cakes-chocolate-ganache/Chocolate cake 01.jpg',
         description:'',
         itemPrice: {
             category:'cream-cakes-chocolate-ganache',
@@ -274,6 +274,16 @@ export const MenuTreeElements:TreeNodeElement[] = [
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'cookies-brownies-other', label: 'Cookies, Brownies and Others'}
+        ],    
+    }, 
+    {
+        parentKey:'top-level',key: "theme-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
+        label: "Theme cakes", 
+        cardLevelImage:'assets/gallery-files/images/theme-cakes/Chocolate sea world cake 2.jpg',
+        description:'',
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '', params:'theme-cakes', label: 'Theme cakes'}
         ],    
     },
     // #### LEVEL 1
