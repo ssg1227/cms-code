@@ -11,8 +11,8 @@ interface User {
 }
 export const latestUploads = 60;
 export const staticText:StaticText = {
-    appTitle:"Ritchie Bakes", 
-    appAuthor:"- Bakes to give culinary nirvana",
+    appTitle:"Sanatan Aspects", 
+    appAuthor:"- Sketches, blogs, quotes, paintings and more ",
  introContentList: [
     `<H1>Ritchie Bakes</H1>
     <div class='lower-ninety-landing'>

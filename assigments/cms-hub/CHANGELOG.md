@@ -19,6 +19,14 @@
     - Styling, filling up cracks and smoothening bumps
     - Some specifics - theme cakes how to communicate with Marisa
   - **Ritchie bakes timeline** initial public sharing July 19 2024
+  - **Universalization started** the sources are under new folder structure rooted at *cms-hub*
+- **Universalization and new website 'sanatan'**
+  - **Cautious Steps** (using example of ritchie-bakes and above new site)
+    1. Copy existing assets folder to assets-ritchie-bakes
+    2. Copy existing assets folder to assets-sanatan
+    3. Copy assets-sanatan to assets 
+    4. **In 'static-text-other-constants.ts' change appTitle to 'Sanatan Aspects'
+    2. Stepwise modify assets contents. Test at each step in incognito mode
 ### July 1st week
 - **STATUS July 3** 
   - functionally complete. People can see products and email in their orders
