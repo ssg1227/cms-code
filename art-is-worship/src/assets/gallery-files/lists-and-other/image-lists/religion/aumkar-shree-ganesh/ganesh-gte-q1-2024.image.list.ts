@@ -9,8 +9,24 @@ public allImageList:ImageElement[]  =  [
         folder:'shree-ganesh-gte-q1-2024',
         theme:'Shree Ganesh',
         themeSummary:
-        `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
-        files: [ ,
+        `The Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
+        files: [ 
+              {
+                  canvassSize: 'A3',
+                  content: 'color-pencil',
+                  dateUploaded: '07-15-2024',
+                  evolution: `<b>Not a content landmark, but upload with new mac and new image viewing (instead of the pop up)<br/></B>`,
+                  evolutionSequence: 3,
+                  evolutionDate: '06-06-2024',
+                  
+                   fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q1-2024/GuruInBayAreaWithGanesh06June2024.jpg`,
+                  description: `<ul>
+                        <li> Completion(June 6 2024) of Earlier drawing filled out with colors, felt it best to keep this as a seoparate entry</li>
+                        <li> Attempt to symbolize the astitva of the Guru in Bay Area, Northern California (and surrounding) </li>
+                        <li> The lower portion attempts to show Golden Gate Bridge, Prescribed burning process to try prevent wildfires, Altamont pass windmills..(Earth, Water, Air, Fire, Wind..) </li><li> Drawn on 11x17 - had to scan in parts and stitch since I have a regular A4 scanner </li><li> Original May 10, added Ganesh May 22 2023 </li></ul>`,
+                  rating: 1,
+                  ratingYear: 2024,
+            },
             {
                   canvassMaterial:  'Plain paper',
                   canvassSize:  'A4',
