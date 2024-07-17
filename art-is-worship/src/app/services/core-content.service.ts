@@ -1,8 +1,11 @@
 import { Injectable } from '@angular/core';
-import { TreeNodeElement,MenuTreeElements } from 'src/assets/content-tree/tree-nodes' ;
-import { ImageElement, ContentList } from 'src/assets/gallery-files/lists-and-other/image-lists/shared/image-detail' ;
-import { BreadCrumb } from 'src/assets/content-tree/bread-crumbs';
-// content files 
+import { TreeNodeElement  } from '@settings-and-models/tree-node-element';
+import {  MenuTreeElements } from 'src/assets/content-tree/menu-tree-elements' ;
+import { ImageElement, ContentList } from '@settings-and-models/image-detail' ;
+import { BreadCrumb } from '@settings-and-models/bread-crumbs';
+
+import { ContextedCoreContentService } from './contexted-core-content.service';
+/*content files DELETE 
 import { GaneshPreQ42021ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-pre-q4-2021.image.list' ;
 import { GaneshGTEQ12023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q1-2023.image.list' ;
 import { GaneshGTEQ42021ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q4-2021.image.list' ;
@@ -36,6 +39,7 @@ import {  PlanesShipsCarsImageList } from 'src/assets/gallery-files/lists-and-ot
 import {  PlanesShipsCars2ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/planes-ships-cars-2.image.list';
 import { MumbaiMeriJaanList } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan.list';
 import { MumbaiMeriJaan2List } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan-2.list';
+*/
 @Injectable({
   providedIn: 'root'
 })
@@ -43,6 +47,20 @@ export class CoreContentService {
   contentList:ContentList[]= [] ;
   userMenu: TreeNodeElement[] = [] ;
 
+  contentMode='image-card' ; // 'posts', 'narratives' ;
+  get ContentlMode(): string {
+    return this.contentMode ;
+  }
+  set ContentlMode(value:string) {
+    this.contentMode = value ;
+  }
+  modalMode='image';
+  get ModalMode(): string {
+    return this.modalMode ;
+  }
+  set ModalMode(value:string) {
+    this.modalMode = value ;
+  }
   sketchStats = {
     userName:'',
     subjects: 0,
@@ -71,7 +89,7 @@ export class CoreContentService {
      }
     return this.userObject ;
   }
-  constructor() { 
+  constructor(private contextedCoreContentService: ContextedCoreContentService) { 
     this.loadContentList();
    }
   private breadCrumbs?:BreadCrumb[] =[] ;
@@ -203,6 +221,15 @@ export class CoreContentService {
         isGuru = true ;
       }
     }
+
+    this.contextedCoreContentService.loadContextedContentList(this.contentList, this.userObject) ;
+    let me = this;
+    this.sketchStats.totalCounts = 0;
+    this.sketchStats.subjects = 0;
+    this.contentList.forEach((contentItem:ContentList) =>{
+      me.collectThemeBasedStats(contentItem);
+    });
+    /*** TO DELETE LATER   
     // isSuper = true ; // backup - to debug logic
     if (isSuper === true || isSanatani === true || isGuru === true) {
         console.log(`Content service load lists ${isSuper} ${isSanatani} ${isGuru}`)
@@ -254,6 +281,7 @@ export class CoreContentService {
     this.contentList.forEach((contentItem:ContentList) =>{
       me.collectThemeBasedStats(contentItem);
     });
+    */
   }
   clearContent() {
    

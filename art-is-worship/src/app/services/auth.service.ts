@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CoreContentService } from './core-content.service';
 
+import { needLogin, /* later Roles,userList, users*/ } from '@settings-and-models/static-text-other-constants';
 import { Router } from '@angular/router';
 interface User {
   userName: string;
@@ -73,6 +74,10 @@ export class AuthService {
     "technician",
     "other"
   ]
+
+  get NeedLogin(): boolean  {
+    return  needLogin  ;
+  }
   constructor(private router:Router, private coreContentService:CoreContentService) { }
   login(username:string, directLatet=false){
     /*

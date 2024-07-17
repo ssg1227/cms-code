@@ -11,6 +11,23 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `The Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '07-17-2024',
+evolution:  `<b>2nd of 2 uploaded on new mac<br/>1st with the automated loader<br/>ALSO, trying out a div instead of modal for expanded view<br/></B>`,
+evolutionSequence:  4,
+evolutionDate:  '07-17-2024',
+summaryLabel:  `Long time hadnt done a Shree Ganesh sketch`,
+fullFileName: `${this.imageRoot}GaneshJuly16-24-scan.jpeg`,
+description: `<ul><li> Long time hadnt done a Shree Ganesh sketch </li><li> Morning July 16 2024 </li><li> Next week is Angarika Chaturthi by Bay Area Time </li><li> 07/17 is Ashadi Ekadashi, and 07/20 is Gurupoornima </li><li> Auspicious time!! </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+      {fullFileName: `${this.imageRoot}GaneshJuly16-24-scan.jpeg`, description: `<ul><li> Long time hadnt done a Shree Ganesh sketch </li><li> Morning July 16 2024 scanned </li><li> Next week is Angarika Chaturthi by Bay Area Time </li><li> 07/17 is Ashadi Ekadashi, and 07/20 is Gurupoornima </li><li> Auspicious time!! </li></ul>` },
+      {fullFileName: `${this.imageRoot}GaneshJuly16-24-photo.jpeg`, description: `<ul><li> Long time hadnt done a Shree Ganesh sketch </li><li> Morning July 16 2024 photo </li><li> Next week is Angarika Chaturthi by Bay Area Time </li><li> 07/17 is Ashadi Ekadashi, and 07/20 is Gurupoornima </li><li> Auspicious time!! </li></ul>` },
+]},
               {
                   canvassSize: 'A3',
                   content: 'color-pencil',

@@ -1,9 +1,10 @@
-import { BreadCrumb } from "./bread-crumbs";
+import { BreadCrumb } from "@settings-and-models/bread-crumbs";
+import { TreeNodeElement } from "@settings-and-models/tree-node-element";
 // CMS picture gallery hierarchy structure
 // This is a tree structure, where the leaf key will load the 
 // JSON containing a picture list
 // This modifies and enhances the menu-tree logic of the old app
-export interface TreeNodeElement {
+export interface TreeNodeElement2 {
     key:string; // unique id.. like a primary key, also picture list loader for leaf
     parentKey?:string; // like a foreign key and establishing parent. optional()
     levelIndex?:number ; // unused for now (May 2024)

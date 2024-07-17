@@ -1,13 +1,25 @@
+import { ItemPrice, ItemUnitPrice, IsCommerce  } from './../../../settings-and-models/commerce';
 import { Component } from '@angular/core';
 
 import { Router } from '@angular/router';
-import { staticText } from '@settings-and-models/static-text-other-constants';
+import { staticText } from 'src/assets/common-config/static-text-other-constants';
 import  { AuthService } from 'src/app/services/auth.service';
 import { CoreContentService } from 'src/app/services/core-content.service';
 import { TreeNodeElement } from '@settings-and-models/tree-node-element' ;
+import { BreadCrumb } from '@settings-and-models/bread-crumbs';
+
+import { ImageElement, ContentList } from 'src/assets/gallery-files/shared/image-detail2' ;
+
+
+import { Router } from '@angular/router';
+import { staticText } from 'src/assets/common-config/static-text-other-constants';
+import  { AuthService } from 'src/app/services/auth.service';
+import { CoreContentService } from 'src/app/services/core-content.service';
+import { TreeNodeElement } from 'src/assets/content-tree/menu-tree-elements' ;
 import { BreadCrumb } from 'src/assets/content-tree/bread-crumbs';
 
 import { ImageElement, ContentList } from 'src/assets/gallery-files/lists-and-other/image-lists/shared/image-detail' ;
+import { core } from '@angular/compiler';
 import { core } from '@angular/compiler';
 @Component({
   selector: 'app-content-viewer',
@@ -24,15 +36,19 @@ export class ContentViewerComponent {
     
   ];
   parentDescripion:string| undefined = '';
+  itemPrice?:any  = null;
+  itemUnitPrice?:any  = [];
+  isCommerce = IsCommerce;
   appTitle= staticText.appTitle;
   appAuthor= staticText.appAuthor;
   appContent = staticText.introContentList[0];
+  quoteContent = staticText.introContentList[1];
   isLeafParent = localStorage.getItem("isLeafParent") ;
   key = '';
   isCompiledList = localStorage.getItem("isCompiledList");
   currentCardList:TreeNodeElement[] = this.coreContentService.setCurrentCardList() ;
+  currentCellSelected = -1 ;
   inlineExpand = 'true' ;// as against modal, however we will use the modal for the shopping list
-  currentCellSelected = 0 ;
   // image listing
   allImageList:ImageElement[] = [];
   genImageList:any = null ;
@@ -50,20 +66,48 @@ export class ContentViewerComponent {
   _iterations:boolean = false ;
   newLook=true ;
   showContactPage = false ;
-  testMode = false ;
+  testMode = true ;
 
   pageSize = 14;
 
   currentPage = 1;
+
   //..
   constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService) {
     this.testMode = this.coreContentService.TestMode ;
       // @ts-ignore: Object is possibly 'null'.
   }
+
+  get ModalMode():string {
+    return this.coreContentService.ModalMode;
+  }
+  get ItemName():string {
+    // @ts-ignore: Object is possibly 'null'.
+    return this.breadCrumbs !== null && this.breadCrumbs?.length > 0 ?
+    // @ts-ignore: Object is possibly 'null'.
+    this.breadCrumbs[this.breadCrumbs?.length-1].label: "Unnamed Bakery item";
+
+  }
+  showCart() {
+    
+    this.coreContentService.modalMode = 'cart';
+    // @ts-ignore: Object is possibly 'null'.
+    document.getElementById('modal-container').style.display = 'flex';
+   }
+
+   showQuotes() {
+    
+    this.coreContentService.modalMode = 'quotes';
+    // @ts-ignore: Object is possibly 'null'.
+    document.getElementById('modal-container').style.display = 'flex';
+   }
   ngOnInit() {
     this.isLeafParent = localStorage.getItem("isLeafParent") ;// @ts-ignore: Object is possibly 'null'.
     this.currentMenu = localStorage.getItem("current-menu") ;
-    
+    if (this.isLeafParent === null) {
+        // @ts-ignore: Object is possibly 'null'.
+       document.getElementById('div-container').style.display = 'flex'; 
+    }
     if (this.testMode === true) {
       console.log(`Content component ngOnInit ${this.isLeafParent} ${this.currentMenu}`);
     }
@@ -126,6 +170,11 @@ export class ContentViewerComponent {
     return AInd ;
 
   }
+  public get NeedLogin():boolean {
+    ;
+   // localStorage.setItem('current-menu','top-level');
+    return this.authService.NeedLogin === true ;
+  }
   cmsLogout(){
     this.authService.logout() ;
    }
@@ -136,7 +185,9 @@ export class ContentViewerComponent {
     return this.noContent ;
    }
    compareSelected(a:any, b:any) {
-    console.log(`######${a} ${b }`) ;
+    console.log(`content viewer compare selected ######${a} ${b }`) ;
+    // @ts-ignore: Object is possibly 'null'.
+    document.getElementById('div-container').style.display = 'none'; 
     this.isLeafParent = localStorage.getItem("isLeafParent") ;
     if (this.isLeafParent === 'true' && isNaN(a)) {
         this.imageGroups = [] ;
@@ -150,7 +201,7 @@ export class ContentViewerComponent {
         }
       }
       if (this.imageGroups.length > 0 && !isNaN(a)) {
-        // transition from modal view to div view 
+
         if(this.inlineExpand === 'true') {
       
           // @ts-ignore: Object is possibly 'null'.
@@ -184,7 +235,16 @@ export class ContentViewerComponent {
           this.router.navigate([`/view`, a]).then( (e) => {
             this.currentCardList = this.coreContentService.setCurrentCardList() ;
             this.breadCrumbs = this.coreContentService.BreadCrumbs ;
+            this.itemUnitPrice = [];
             this.parentDescripion = this.coreContentService.ParentDescription ;
+             // @ts-ignore: Object is possibly 'null'.
+            if (this.coreContentService.ItemPrice) {
+               // @ts-ignore: Object is possibly 'null'.
+               if (this.coreContentService.ItemPrice.itemUnitPrice) {
+                  this.itemUnitPrice = this.coreContentService.ItemPrice.itemUnitPrice;
+               }
+              this.itemPrice = this.coreContentService.ItemPrice;
+            }
             if (e) {
               console.log("Navigation is successful!");
             } else {
@@ -194,7 +254,12 @@ export class ContentViewerComponent {
         }
       }
    }
-   loadImages() {
+   getCardLevelImage(card:TreeNodeElement):string {
+     return  (card.cardLevelImage!== null && card.cardLevelImage !== undefined) ?
+       card.cardLevelImage:   '';
+   }
+   
+    loadImages() {
 
     let foundList:ImageElement[] = [] ;
     foundList = /*strParam === 'latest-uploads' || 'showpiece' ?*/ this.allImageList ;  
@@ -314,10 +379,10 @@ export class ContentViewerComponent {
    }
    closeModal() {
 
-      // @ts-ignore: Object is possibly 'null'.
-     document.getElementById('modal-container').style.display = 'none';
-     this.showContactPage = false ;
+        // @ts-ignore: Object is possibly 'null'.
+        document.getElementById('modal-container').style.display = 'none';    
    }
+
    closeDivModal() {
 
     if(this.inlineExpand === 'true') {

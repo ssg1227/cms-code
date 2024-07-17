@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 import { Router } from '@angular/router';
-import { staticText } from 'src/assets/common-config/static-text-other-constants';
+import { staticText } from '@settings-and-models/static-text-other-constants';
 import  { AuthService } from 'src/app/services/auth.service';
 import { CoreContentService } from 'src/app/services/core-content.service';
-import { TreeNodeElement } from 'src/assets/content-tree/tree-nodes' ;
+import { TreeNodeElement } from '@settings-and-models/tree-node-element' ;
 import { BreadCrumb } from 'src/assets/content-tree/bread-crumbs';
 
 import { ImageElement, ContentList } from 'src/assets/gallery-files/lists-and-other/image-lists/shared/image-detail' ;
