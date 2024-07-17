@@ -20,10 +20,10 @@
     height: 15%; 
     /* non scrollable header adds */
     position: fixed;
-    top:10 ;
-    left:10 ;
+    top:0 ;
+    left:2 ;
     width:98%; 
-    margin: 10 5 ;
+    margin: 5 ;
     /* end non scrollable header adds */
     display: flex ;
     /*border: 2px solid slateblue ;*/
@@ -74,9 +74,9 @@
 .lower-ninety {
     /* height: 90%; added below for fixed header changes */
     position: fixed;
-    top:140px ;
+    top:105px ;
     left:0 ;
-    height: 80%;
+    height: 90%;
     /* .. end */
     border: 1px solid lightgrey ;
     background-color: aliceblue;
@@ -84,6 +84,7 @@
     background: silver;
     font-size: larger;
     font-weight: 900;
+    overflow: auto;
 }
 .image-container {
     width:30%;
@@ -133,10 +134,11 @@
     .lower-ninety {
 
     background: radial-gradient(#f77775, #a2a9f6);
-    background-image: url("assets/gallery-files/images/aumkar-fade.jpeg");
+    background-image: url("assets/gallery-files/images/Ritchie-bakes-logo-fade.png");
     background-repeat: repeat;
-    background-position: center;
-   
+    background-position: center;  
+    height: auto;
+    overflow-y: scroll;
 
     }
 }
@@ -144,6 +146,8 @@
     .lower-ninety {
         /* height: auto; part of non-scrollable header */
         font-size: x-large;
+        height: auto;
+        overflow-y: scroll;
     }
     .responser {
         width:95%;

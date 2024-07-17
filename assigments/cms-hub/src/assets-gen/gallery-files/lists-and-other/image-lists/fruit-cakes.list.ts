@@ -1,8 +1,8 @@
 import {  ImageElement } from '@settings-and-models/image-detail'
 
-export class FruitCakes {
+export class BlueberryCakes {
             sort: string = 'asc'
-    imageRoot=`assets/gallery-files/images/fruit-cakes/`;
+    imageRoot=`assets/gallery-files/images/blueberry-cakes/`;
     public allImageList:ImageElement[]  =  [
           { 
                 folder:'places-scenes-objects',
@@ -14,9 +14,9 @@ export class FruitCakes {
                        {
                               
                               dateUploaded:  '06-06-2024',
-                              summaryLabel:  `Blueberry crush cake with whipped cream frosting `,
+                              summaryLabel:  `Blueberry cake with whipped cream frosting `,
                               fullFileName: `${this.imageRoot}blueberry-crush-cake-whipped-cream-frst.jpeg`,
-                              description: `<ul><li> Blueberry crush cake with whipped cream frosting.</li><li>More details coming soon </li></ul>`,
+                              description: `<ul><li> Blueberry cake with whipped cream frosting.</li><li>More details coming soon </li></ul>`,
 
                         } 
                         , {

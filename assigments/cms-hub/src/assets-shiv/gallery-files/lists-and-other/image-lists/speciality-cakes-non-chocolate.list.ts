@@ -14,9 +14,9 @@ export class SpecialityCakesNonChocolate {
                        {
                               
                               dateUploaded:  '06-06-2024',
-                              summaryLabel:  `Blueberry crush cake with whipped cream frosting `,
+                              summaryLabel:  `Blueberry cake with whipped cream frosting `,
                               fullFileName: `${this.imageRoot}blueberry-crush-cake-whipped-cream-frst.jpeg`,
-                              description: `<ul><li> Blueberry crush cake with whipped cream frosting.</li><li>More details coming soon </li></ul>`,
+                              description: `<ul><li> Blueberry cake with whipped cream frosting.</li><li>More details coming soon </li></ul>`,
 
                         },{
                               

@@ -135,9 +135,9 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],    
     },
     {
-       parentKey:"top-level", key: "fruit-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
+       parentKey:"top-level", key: "blueberry-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
        label: "Fruit Cakes", itemPrice: {
-           category:'fruit-cakes',
+           category:'blueberry-cakes',
            itemUnitPrice: [
             {
                 unitPrice:600, itemClass:'Fruit Cake',
@@ -147,11 +147,11 @@ export const MenuTreeElements:TreeNodeElement[] = [
                  , itemClass:'Fruit Cake',unit:'1 kg'
             }],
        },
-       cardLevelImage:'assets/gallery-files/images/fruit-cakes/blueberry-crush-cake-whipped-cream-frst.jpeg', 
+       cardLevelImage:'assets/gallery-files/images/blueberry-cakes/blueberry-crush-cake-whipped-cream-frst.jpeg', 
        description:'',
        emptyMessage: 'Empty Content or Error', breadCrumb:[
            {link: '/view', params:'top-level', label: 'HOME'},
-           {link: '', params:'fruit-cakes', label: 'Fruit Cakes'}
+           {link: '', params:'blueberry-cakes', label: 'Fruit Cakes'}
        ],    
    },
     {

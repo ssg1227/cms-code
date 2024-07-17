@@ -54,7 +54,14 @@ export class CreamCakesChocolateOtherFrosting {
                                       fullFileName: `${this.imageRoot}chocolate-other-frosting-4.jpg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
-                                }
+                                },{
+                                      
+                                    dateUploaded:  '06-06-2024',
+                                    summaryLabel:  `Chocolate Cake pic5`,
+                                    fullFileName: `${this.imageRoot}chocolate-cake-5.jpeg`,
+                                    description: `<ul><li>Description and pricing coming soon </li></ul>`,
+      
+                              }
                      ]
                   },
              ]

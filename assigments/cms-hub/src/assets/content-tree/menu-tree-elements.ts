@@ -135,23 +135,23 @@ export const MenuTreeElements:TreeNodeElement[] = [
         ],    
     },
     {
-       parentKey:"top-level", key: "fruit-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
-       label: "Fruit Cakes", itemPrice: {
-           category:'fruit-cakes',
+       parentKey:"top-level", key: "blueberry-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
+       label: "Blueberry Cakes", itemPrice: {
+           category:'blueberry-cakes',
            itemUnitPrice: [
             {
-                unitPrice:600, itemClass:'Fruit Cake',
+                unitPrice:600, itemClass:'Blueberry  Cake',
                  unit:'1/2 kg'
             },{
                  unitPrice:1200
-                 , itemClass:'Fruit Cake',unit:'1 kg'
+                 , itemClass:'Blueberry  Cake',unit:'1 kg'
             }],
        },
-       cardLevelImage:'assets/gallery-files/images/fruit-cakes/blueberry-crush-cake-whipped-cream-frst.jpeg', 
+       cardLevelImage:'assets/gallery-files/images/blueberry-cakes/blueberry-crush-cake-whipped-cream-frst.jpeg', 
        description:'',
        emptyMessage: 'Empty Content or Error', breadCrumb:[
            {link: '/view', params:'top-level', label: 'HOME'},
-           {link: '', params:'fruit-cakes', label: 'Fruit Cakes'}
+           {link: '', params:'blueberry-cakes', label: 'Blueberry  Cakes'}
        ],    
    },
     {
@@ -188,7 +188,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
             }],
        },
        cardLevelImage:'assets/gallery-files/images/red-velvet-cakes/red-velvet-cake-bayko-0.jpeg', 
-       description:'Red Velvet Cakes',
+       description:'',
        emptyMessage: 'Empty Content or Error', breadCrumb:[
            {link: '/view', params:'top-level', label: 'HOME'},
            {link: '', params:'red-velvet-cakes', label: 'Coffee and Red Velvet Cakes'}
@@ -339,16 +339,6 @@ export const MenuTreeElements:TreeNodeElement[] = [
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'speciality-cakes-chocolate', label: 'Speciality Cakes - Chocolate'}
-        ],    
-    }, 
-    {
-        parentKey:'top-level',key: "speciality-cakes-non-chocolate", levelIndex:1,isLeafParent:true, roles:['any'],
-        label: "Speciality Cakes - Non Chocolate", 
-        cardLevelImage:'assets/gallery-files/images/speciality-cakes-non-chocolate/birthday-cake-1-tbd.jpeg',
-        description:'',
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'speciality-cakes-non-chocolate', label: 'Speciality Cakes - Non Chocolate'}
         ],    
     }
 ]
