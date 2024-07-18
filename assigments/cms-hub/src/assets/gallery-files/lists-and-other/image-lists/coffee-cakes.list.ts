@@ -18,6 +18,13 @@ export class CoffeeCakes {
                               description: `<ul><li>Details coming soon </li></ul>`,
 
                         },{
+                                    
+                              dateUploaded:  '06-06-2024',
+                              summaryLabel:  `Coffee Cake`,
+                              fullFileName: `${this.imageRoot}Chocolate cake with Chocolate Buttercream.jpg`,
+                              description: `<ul><li>Description and pricing coming soon </li></ul>`,
+
+                        },{
                               
                               dateUploaded:  '06-06-2024',
                               summaryLabel:  ``,

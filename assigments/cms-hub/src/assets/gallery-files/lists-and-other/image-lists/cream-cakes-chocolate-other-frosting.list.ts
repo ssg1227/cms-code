@@ -20,13 +20,6 @@ export class CreamCakesChocolateOtherFrosting {
                                     description: `<ul><li>Description and pricing coming soon </li></ul>`,
       
                               },{
-                                    
-                                    dateUploaded:  '06-06-2024',
-                                    summaryLabel:  `Chocolate cake with Chocolate Buttercream`,
-                                    fullFileName: `${this.imageRoot}Chocolate cake with Chocolate Buttercream.jpg`,
-                                    description: `<ul><li>Description and pricing coming soon </li></ul>`,
-      
-                              },{
                                       
                                       dateUploaded:  '06-06-2024',
                                       summaryLabel:  `Chocolate Cake pic1`,

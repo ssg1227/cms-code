@@ -33,7 +33,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
     {
         parentKey:'top-level',key: "cream-cakes-chocolate-other-frosting", levelIndex:1,isLeafParent:true, roles:['any'],
         label: "Cream Cakes - Chocolate with Mocha / Chocolate/ Ganache and truffle", 
-         cardLevelImage:'assets/gallery-files/images/speciality-cakes-chocolate/chocolate-cake-1.jpeg',
+         cardLevelImage:'assets/gallery-files/images/cream-cakes-chocolate-other-frosting/Chocolate cake with buttercream decoration.jpg',
         description:'',
         itemPrice: {
             category:'cream-cakes-chocolate-ganache',
@@ -301,12 +301,12 @@ export const MenuTreeElements:TreeNodeElement[] = [
     }, 
     {
         parentKey:'top-level',key: "tea-cakes", levelIndex:1,isLeafParent:true, roles:['any'],
-        label: "Tea Cakes -Coffee Cakes, Eggless etc.", 
+        label: "Tea Cakes", 
         cardLevelImage:'assets/gallery-files/images/tea-cakes/Eggless Chocolate Walnut Tea cake.jpeg',
         description:'',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'tea-cakes', label: 'Tea Cakes -Coffee Cakes, Eggless etc.'}
+            {link: '', params:'tea-cakes', label: 'Tea Cakes'}
         ],    
     }, 
    
@@ -329,16 +329,6 @@ export const MenuTreeElements:TreeNodeElement[] = [
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '', params:'contact-details-fsai', label: 'Contact Details, FSAI cert, etc'}
-        ],    
-    },
-    {
-        parentKey:'top-level',key: "speciality-cakes-chocolate", levelIndex:1,isLeafParent:true, roles:['any'],
-        label: "Speciality Cakes - Chocolate", 
-         cardLevelImage:'assets/gallery-files/images/speciality-cakes-chocolate/chocolate-cake-1.jpeg',
-        description:'',
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '', params:'speciality-cakes-chocolate', label: 'Speciality Cakes - Chocolate'}
         ],    
     }
 ]

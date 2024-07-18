@@ -13,7 +13,6 @@ import { RedVelvetCakes } from 'src/assets/gallery-files/lists-and-other/image-l
 import { PricesList } from 'src/assets/gallery-files/lists-and-other/image-lists/prices.list'
 
 // content files 
-import { SpecialityCakesChocolate } from 'src/assets/gallery-files/lists-and-other/image-lists/speciality-cakes-chocolate.list';
 import { TeaCakes} from 'src/assets/gallery-files/lists-and-other/image-lists/tea-cakes.list'  ;
 import { ThemeCakes} from 'src/assets/gallery-files/lists-and-other/image-lists/theme-cakes.list'  ;
 import { CupCakes } from 'src/assets/gallery-files/lists-and-other/image-lists/cup-cakes.list';
@@ -26,7 +25,6 @@ export class ContextedCoreContentService {
 
   constructor() { }
   loadContextedContentList(contentList:ContentList[], userObject:any = null) {
-    contentList.push( { contentFile: new SpecialityCakesChocolate(),contentCategory:'speciality-cakes-chocolate', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new TeaCakes(),contentCategory:'tea-cakes', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new ThemeCakes(),contentCategory:'theme-cakes', roles:['any'],latest:true}) ;
     contentList.push( { contentFile: new CupCakes(),contentCategory:'cup-cakes', roles:['any'],latest:true}) ;
