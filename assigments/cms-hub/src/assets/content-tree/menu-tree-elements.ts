@@ -19,10 +19,10 @@ export const MenuTreeElements:TreeNodeElement[] = [
             itemUnitPrice: [
                 {
                     unitPrice:600, 
-                    itemClass:'Chocolate Ganache',unit:'1/2 kg'
+                    itemClass:'Chocolate Ganache',unit:'Chocolate Ganache, 1/2 kg'
                 },{
                      unitPrice:1200, 
-                    itemClass:'Chocolate Ganache',unit:'1 kg'
+                    itemClass:'Chocolate Ganache',unit:'Chocolate Ganache, 1 kg'
                 }],
         },
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -40,7 +40,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
             itemUnitPrice: [
                 {
                     unitPrice:850, 
-                    itemClass:'Chocolate Cake (Mocha/Chocolate/Ganache/Truffle)',unit:'1/2 kg'
+                    itemClass:'Chocolate Cake (Mocha/Chocolate/Ganache/Truffle)',unit:'Chocolate Cake (Mocha/Chocolate/Ganache/Truffle), 1/2 kg'
                 },{
                      unitPrice:1500, 
                     itemClass:'Chocolate Cake (Mocha/Chocolate/Ganache/Truffle)',unit:'1 kg'
@@ -103,30 +103,30 @@ export const MenuTreeElements:TreeNodeElement[] = [
             itemUnitPrice: [
                 {
                     unitPrice:600, 
-                    itemClass:'Oreo cake',unit:'Oreo cake,1/2 kg'
+                    itemClass:'Oreo cake',unit:'Oreo cake:1/2 kg'
                 },{
                      unitPrice:1200, 
-                    itemClass:'Oreo cake',unit:'Oreo cake,1 kg'
+                    itemClass:'Oreo cake',unit:'Oreo cake:1 kg'
                 },
                 {
                     unitPrice:550, 
-                    itemClass:'Black Forest cake',unit:'Black Forest cake,1/2 kg'
+                    itemClass:'Black Forest cake',unit:'Black Forest cake:1/2 kg'
                 },{
                      unitPrice:1100, 
-                    itemClass:'Black Forest cake',unit:'Black Forest cake,1 kg'
+                    itemClass:'Black Forest cake',unit:'Black Forest cake:1 kg'
                 },{
                     unitPrice:550, 
-                   itemClass:'White Forest cake',unit:'White Forest cake,1/2 kg'
+                   itemClass:'White Forest cake',unit:'White Forest cake:1/2 kg'
                },{
                      unitPrice:1100, 
-                    itemClass:'White Forest cake',unit:'White Forest cake,1 kg'
+                    itemClass:'White Forest cake',unit:'White Forest cake:1 kg'
                 },
                 {
                     unitPrice:450, 
-                    itemClass:'Vanilla Cake',unit:'Vanilla Cake,1/2 kg'
+                    itemClass:'Vanilla Cake',unit:'Vanilla Cake:1/2 kg'
                 },{
                      unitPrice:800, 
-                    itemClass:'Vanilla Cake',unit:'Vanilla Cake, 1 kg'
+                    itemClass:'Vanilla Cake',unit:'Vanilla Cake: 1 kg'
                 }],
         },
         emptyMessage: 'Empty Content or Error', breadCrumb:[
@@ -161,10 +161,10 @@ export const MenuTreeElements:TreeNodeElement[] = [
            itemUnitPrice: [
             {
                 unitPrice:500, 
-                itemClass:'',unit:'1/2 kg'
+                itemClass:'Coffee Cakes',unit:'1/2 kg'
             },{
                  unitPrice:900, 
-                itemClass:'',unit:'1 kg'
+                itemClass:'Coffee Cakes',unit:'1 kg'
             }],
        },
        cardLevelImage:'assets/gallery-files/images/coffee-cakes/Coffee cake with coffee buttercream.jpeg', 

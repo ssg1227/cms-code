@@ -15,42 +15,42 @@ export class CookiesBrowniesOther {
                                 {
                                       
                                       dateUploaded:  '06-06-2024',
-                                      summaryLabel:  `Mini Marble CookiesBrowniesOther `,
+                                      summaryLabel:  `Mini Marble Cookies`,
                                       fullFileName: `${this.imageRoot}mini-marble-cookies.jpeg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
                                 },{
                                       
                                       dateUploaded:  '06-06-2024',
-                                      summaryLabel:  `Chocolate Chip CookiesBrowniesOther`,
+                                      summaryLabel:  `Chocolate Chip Cookies`,
                                       fullFileName: `${this.imageRoot}chocolate-chip-cookies.jpeg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
                                 },{
                                       
                                       dateUploaded:  '06-06-2024',
-                                      summaryLabel:  `Coconut CookiesBrowniesOther`,
+                                      summaryLabel:  `Coconut Cookies`,
                                       fullFileName: `${this.imageRoot}coconut-cookies.jpeg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
                                 },{
                                       
                                       dateUploaded:  '06-06-2024',
-                                      summaryLabel:  `Butter CookiesBrowniesOther `,
+                                      summaryLabel:  `Butter Cookies`,
                                       fullFileName: `${this.imageRoot}butter-cookies.jpeg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
                                 },{
                                       
                                       dateUploaded:  '06-06-2024',
-                                      summaryLabel:  `Masala CookiesBrowniesOther`,
+                                      summaryLabel:  `Masala Cookies`,
                                       fullFileName: `${this.imageRoot}masala-cookies.jpeg`,
                                       description: `<ul><li>Description and pricing coming soon </li></ul>`,
         
                                 },{
                                       
                                     dateUploaded:  '06-06-2024',
-                                    summaryLabel:  `Cheese CookiesBrowniesOther`,
+                                    summaryLabel:  `Cheese Cookies`,
                                     fullFileName: `${this.imageRoot}cheese-cookies.jpeg`,
                                     description: `<ul><li>Description and pricing coming soon </li></ul>`,
       
@@ -66,7 +66,7 @@ export class CookiesBrowniesOther {
 ,
                                     ],
                                     fullFileName: `${this.imageRoot}Christmas collection- Red velvet Brownie.jpeg`,
-                                    description: `<ul><li>Description and pricing coming soon </li></ul>`,
+                                    description: `<ul><li>Christmas pricing will be posted later </li></ul>`,
       
                               },  {
                                       
@@ -80,7 +80,7 @@ export class CookiesBrowniesOther {
 ,
                                     ],
                                     fullFileName: `${this.imageRoot}Gingerbread cookies.jpeg`,
-                                    description: `<ul><li>Description and pricing coming soon </li></ul>`,
+                                    description: `<ul><li>Christmas pricing will be posted later</li></ul>`,
       
                               }// Gingerbread cookies
                      ]

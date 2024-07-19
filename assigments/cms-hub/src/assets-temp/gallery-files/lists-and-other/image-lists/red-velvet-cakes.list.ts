@@ -16,13 +16,13 @@ export class RedVelvetCakes {
                               dateUploaded:  '06-06-2024',
                               summaryLabel:  `Red Velvet Cake`,
                               fullFileName: `${this.imageRoot}red-velvet-cake-bayko.jpeg`,
-                              description: `<ul><li>Details coming soon </li></ul>`,
+                              description: `<ul><li>Red Velvet Cake </li></ul>`,
                               iterations: [
                                     {     fullFileName: `${this.imageRoot}red-velvet-cake-bayko.jpeg`,
-                                          description: `<ul><li>Details coming soon </li></ul>`,
+                                          description: `<ul><li>Red Velvet Cake </li></ul>`,
                                       },
                                     {fullFileName: `${this.imageRoot}red-velvet-cake-bayko-0.jpeg`,
-                                          description: `<ul><li>Details coming soon </li></ul>` },
+                                          description: `<ul><li>Red Velvet Cake</li></ul>` },
                                     ]
 
                         },
@@ -31,7 +31,7 @@ export class RedVelvetCakes {
                               dateUploaded:  '06-06-2024',
                               summaryLabel:  `Red Velvet Cake`,
                               fullFileName: `${this.imageRoot}red-velvet-3.jpeg`,
-                              description: `<ul><li>Details coming soon </li></ul>`,
+                              description: `<ul><li>Red Velvet Cake </li></ul>`,
 
                         }
 

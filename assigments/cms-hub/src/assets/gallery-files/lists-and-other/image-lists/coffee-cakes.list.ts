@@ -27,7 +27,7 @@ export class CoffeeCakes {
                         },{
                               
                               dateUploaded:  '06-06-2024',
-                              summaryLabel:  ``,
+                              summaryLabel:  `Coffee Confirmation Cake`,
                               fullFileName: `${this.imageRoot}denise-coffee.jpeg`,
                               description: `<ul><li>Details coming soon </li></ul>`,
 
@@ -43,7 +43,7 @@ export class CoffeeCakes {
 ,
                               ],
                               fullFileName: `${this.imageRoot}Coffee cake for christmas.jpeg`,
-                              description: `<ul><li>Description and pricing coming soon </li></ul>`,
+                              description: `<ul><li>Christmas pricing will be posted later</li></ul>`,
 
                         }
 
