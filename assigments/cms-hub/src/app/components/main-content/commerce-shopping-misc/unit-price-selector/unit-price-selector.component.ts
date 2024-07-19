@@ -59,6 +59,14 @@ export class UnitPriceSelectorComponent {
       }
       return returnUnit;
   }
+  ItemDisplay(nameDisplay:string)  {
+    let retDisplay = nameDisplay;
+    if (nameDisplay.indexOf(',') >=0) {
+      retDisplay = nameDisplay.split(',')[1] ;
+    }
+    return retDisplay ;
+    
+  }
   addToWishlist(): void {
     // Implement the logic for adding to wishlist
     let cartItem =
@@ -70,7 +78,7 @@ export class UnitPriceSelectorComponent {
       unit: this.CommaSeoparate(this.selectedUnit),
       quantity: 1,
     }
- 
+    
     // coming soon 
     this.shoppingListService.addCartItem(cartItem);
     console.log(`Added to wishlist: ${this.selectedUnit} - ${this.selectedPrice}`);
