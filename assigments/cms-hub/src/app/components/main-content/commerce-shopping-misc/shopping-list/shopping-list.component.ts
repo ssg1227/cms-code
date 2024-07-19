@@ -31,7 +31,7 @@ export class ShoppingListComponent implements OnInit {
   }
 
   loadCart() {
-    this.cartItems = this.shoppingListService.loadCartItems();
+    this.cartItems = this.shoppingListService.loadCartItemsSYNC();
   }
 
   updateCart(item: CartItem) {
@@ -40,7 +40,7 @@ export class ShoppingListComponent implements OnInit {
 
   deleteItem(item: CartItem) {
     this.shoppingListService.deleteCartItem(item);
-    this.cartItems = this.shoppingListService.loadCartItems();
+    this.cartItems = this.shoppingListService.loadCartItemsSYNC();
   }
 
   getTotalCost() {
@@ -48,18 +48,20 @@ export class ShoppingListComponent implements OnInit {
   }
 
   submitCart() {
-    let emailBody = 'Items selected:\n' ;
-    emailBody = `${emailBody} ${this.cartItems.map(item =>
-      `Name: ${item.name}, Unit Price: ${item.unitPrice}, Unit: ${item.unit},Quantity: ${item.quantity}, Total: ${item.unitPrice * item.quantity}`
+    let emailBody = 'Items selected:\n-----------------------------\n\n' ;
+    emailBody = `${emailBody} ${this.cartItems.map((item:any, index:number) =>
+      `${index+1}) Name: ${item.name}, Unit Price: ${item.unitPrice}, Unit: ${item.unit},Quantity: ${item.quantity}, Total: ${item.unitPrice * item.quantity}`
     ).join('\n')}`;
-    emailBody = `${emailBody}\n TOTAL: ${this.getTotalCost()}`;
+    emailBody = `${emailBody}\n\n TOTAL: ${this.getTotalCost()}`;
+    emailBody = `${emailBody} \nPlease give: \n Desired Date of Delivery = Date/Month/Year (I will try to meet this),: \n\n  Postal address:\n\n\n\n\n\n  for any clarification sought, or if you need some additional changes, please write what you want below, OR text me at 9820848489\n Sincerely,\n Marisa\n`
+  
     window.location.href = `mailto:${destinationEmail}?cc=${destinationCCEmail}&subject=Shopping List&body=${encodeURIComponent(emailBody)}`;
   }
   submitCartServer() {
-  const emailBody = this.cartItems.map(item =>
-    `Name: ${item.name}, Unit Price: ${item.unitPrice}, Quantity: ${item.quantity}, Total: ${item.unitPrice * item.quantity}`
+  let emailBody = this.cartItems.map(item =>
+    `Name: ${item.name}, Unit Price: ${item.unitPrice}, Quantity: ${item.quantity},      Total: ${item.unitPrice * item.quantity}`
   ).join('\n');
-
+  emailBody = `${emailBody} \n\n Desired Date of Delivery = Date/Month/Year (I will try to meet this),: \n Postal address:\n\n\n\n\n For any clarification sought, or if you need some additional changes, please write what you want below, OR text me at 9820848489\n\n Sincerely,\n Marisa\n`
   const emailData = {
     subject: 'Shopping List',
     text: emailBody
