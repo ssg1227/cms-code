@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { staticText } from 'src/assets/common-config/static-text-other-constants';
 import  { AuthService } from 'src/app/services/auth.service';
 import { CoreContentService } from 'src/app/services/core-content.service';
+import { ShoppingListService } from 'src/app/services/shopping-list.service';
 import { TreeNodeElement } from '@settings-and-models/tree-node-element' ;
 import { BreadCrumb } from '@settings-and-models/bread-crumbs';
 
@@ -62,7 +63,9 @@ export class ContentViewerComponent {
   currentPage = 1;
 
   //..
-  constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService) {
+  constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService,
+      private shoppingListService: ShoppingListService
+  ) {
     this.testMode = this.coreContentService.TestMode ;
       // @ts-ignore: Object is possibly 'null'.
   }
@@ -76,6 +79,19 @@ export class ContentViewerComponent {
     // @ts-ignore: Object is possibly 'null'.
     this.breadCrumbs[this.breadCrumbs?.length-1].label: "Unnamed Bakery item";
 
+  
+  }
+  async showCartAsync() {
+    try {
+      // Fetch data asynchronously from DataService
+      const modalData = await this.shoppingListService.loadCartItems;
+    } catch (error) {
+      console.error('Failed to load data:', error);
+    } finally {
+      // After data is loaded (whether successful or failed), show the modal
+      // @ts-ignore: Object is possibly 'null'.
+    document.getElementById('modal-container').style.display = 'flex';
+    }
   }
   showCart() {
     
