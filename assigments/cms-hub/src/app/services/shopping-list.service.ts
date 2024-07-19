@@ -13,8 +13,18 @@ interface CartItem {
 export class ShoppingListService {
   cartItems: CartItem[] = [];
   constructor() { }
-  loadCartItems() {
-    
+  
+  async loadCartItems(): Promise<any> {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        // Simulated data
+        const data = this.cartItems;
+        resolve(data);
+      }, 2000); // Simulate a delay of 2 seconds (adjust as needed)
+    });
+  }
+  loadCartItemsSYNC() {
+    console.log(` CART OTEMS ${JSON.stringify(this.cartItems)}`);
     /*
     const items: CartItem[] = [
       { image: 'path/to/image1.jpg', name: 'Item 1', unitPrice: 10, unit: 'pcs', quantity: 2 },
@@ -25,6 +35,7 @@ export class ShoppingListService {
     return this.cartItems ;
   }
   addCartItem(cartItem: CartItem){
+    console.log(`cart Item ${JSON.stringify(cartItem)}`);
     let existingIndex = this.cartItems.findIndex((item:CartItem) => item.name === cartItem.name && item.unitPrice === cartItem.unitPrice);
     if (existingIndex >= 0) {
       this.cartItems[existingIndex].quantity += cartItem.quantity ;
