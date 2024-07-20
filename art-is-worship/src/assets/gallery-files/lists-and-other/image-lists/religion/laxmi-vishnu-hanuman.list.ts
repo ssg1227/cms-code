@@ -14,6 +14,17 @@ public allImageList:ImageElement[]  =  [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '07-20-2024',
+summaryLabel:  `Hanuman, with Narsimha, Hargrive, Garud and Varaha Avatars of Vishnu`,
+fullFileName: `${this.imageRoot}PanchMukhiHanuman072024-Gurupoornima.jpeg`,
+description: `<ul><li> Hanuman, with Narsimha, Hargrive, Garud and Varaha Avatars of Vishnu </li><li> Panch Mukhi to kill Ahi Ravan  </li><li> a 5 wick lamp to be extinguished all at the same time, therefore 5 headed avater </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '06-02-2024',
 evolution:  `<b>1st of Panchamukhi Hanuman<br/></B>`,

@@ -58,6 +58,7 @@
   #div-lower-95 {
     height:90%;
     width:98%;
+    max-height:90%;
     margin: 1px;
     background-color: #81b1ff;
 }
@@ -228,7 +229,11 @@ padding:20px;border: 1px solid gray; margin-left:20px;
     width: 50%;
     height: 50%;
     object-fit:cover;
-    margin-right: 50px;
+    margin-right: 50px; 
+    max-width: 60%; /* Ensures the image doesn't exceed the container width */
+    max-height: 490px; /* Ensures the image doesn't exceed the container height */
+    object-fit: contain; 
+   
     background-color: deepskyblue;
     border:2px rgb(25, 80,80) inset;
    

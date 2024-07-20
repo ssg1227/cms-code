@@ -24,6 +24,15 @@ public allImageList:ImageElement[]  =  [
         `,
         files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '07-20-2024',
+summaryLabel:  `Completed July 18 2024`,
+fullFileName: `${this.imageRoot}ShivSwamiShankarBaba071824.jpeg`,
+description: `<ul><li> Completed July 18 2024 </li></ul>`,
+},
+{
 canvassSize:  'A4',
 content:  '',
 dateUploaded:  '05-27-2024',
