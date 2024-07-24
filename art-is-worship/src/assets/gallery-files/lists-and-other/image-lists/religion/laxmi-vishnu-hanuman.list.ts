@@ -21,6 +21,10 @@ fullFileName: `${this.imageRoot}PanchMukhiHanuman072024-Gurupoornima.jpeg`,
 description: `<ul><li> Hanuman, with Narsimha, Hargrive, Garud and Varaha Avatars of Vishnu </li><li> Panch Mukhi to kill Ahi Ravan  </li><li> a 5 wick lamp to be extinguished all at the same time, therefore 5 headed avater </li></ul>`,
 rating:  1,
 ratingYear:  2024,
+iterations: [
+   {fullFileName: `${this.imageRoot}PanchMukhiHanuman072024-Gurupoornima.jpeg`, description: `<ul><li> Hanuman, with Narsimha, Hargrive, Garud and Varaha Avatars of Vishnu </li><li> Panch Mukhi to kill Ahi Ravan  </li><li> a 5 wick lamp to be extinguished all at the same time, therefore 5 headed avater </li><li>This image - compare to the version below - this is photo edited on iPhone.. see the difference!!</li></ul>` },
+   {fullFileName: `${this.imageRoot}PanchMukhiHanuman072024-Gurupoornima-unplugged.jpeg`, description: ` <ul><li> Hanuman, with Narsimha, Hargrive, Garud and Varaha Avatars of Vishnu </li><li> Panch Mukhi to kill Ahi Ravan  </li><li> a 5 wick lamp to be extinguished all at the same time, therefore 5 headed avater </li><li>This image - compare to the version above - that is photo edited on iPhone.. see the difference!!</li></ul>` },
+   ]
 },
 {
 canvassMaterial:  'Plain paper',

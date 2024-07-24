@@ -19,7 +19,40 @@ export class SwamiSamarthaQ22023ImageList { // SwamiSamarthaImageList
             theme:'SHree Swami Samartha',
             themeSummary:
             `Swami Samartha the 4th Avatar of Shree Dattatreya (sequence include Lord Datta himself). Swami sketches have become numerous, so created this new category Q2 2023 - July 8 2023.`,
-            files: [ {
+            files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '07-24-2024',
+evolution:  `<b>(Ganesh sketch uploaded in same time frame has same theme)<br/></B>`,
+evolutionSequence:  4,
+evolutionDate:  '07-24-2024',
+summaryLabel:  `Theme Swami Samartha Gurupoornima 2024`,
+fullFileName: `${this.imageRoot}SwamiGurupoornima-Charurthi24-padukabpenult-scanedit.jpeg`,
+description: `<ul><li> Theme Swami Samartha Gurupoornima 2024 </li><li> Follow up version July 23 2024  </li><li> (See  Initial version July 21 2024 ) </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}SwamiGurupoornima-Charurthi24-padukabpenult-scanedit.jpeg`, description: `<ul><li> Theme Swami Samartha Gurupoornima 2024 </li><li> Follow up version July 23 2024 with padukas </li><li> (See  Initial version July 21 2024 ) </li></ul>` },
+{fullFileName: `${this.imageRoot}SwamiGurupoornima-Charurthi24-padukabpenult-scan.jpeg`, description: `<ul><li> Theme Swami Samartha Gurupoornima 2024 </li><li> Follow up version July 23 2024  with padukas  </li><li> (See  Initial version July 21 2024 ) </li><li> Pre photo edit </li></ul>` },
+]
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '07-24-2024',
+duplicate:  'true',
+evolution:  `<b>Theme of Large flower at the back and flowers in front<br/>(Ganesh sketch uploaded in same time frame has same theme)<br/></B>`,
+evolutionSequence:  4,
+evolutionDate:  '07-24-2024',
+summaryLabel:  `Theme Swami Samartha Gurupoornima 2024 (no padukas)`,
+fullFileName: `${this.imageRoot}SwamiGurupoornima24-1.jpeg`,
+description: `<ul><li> Theme Swami Samartha Gurupoornima 2024 </li><li> Initial version July 21 2024 </li><li> Additional version with padukas posted </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},{
                 canvassMaterial:  'Plain paper',
                 canvassSize:  'A4',
                 content:  'black-white',

@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-
+import { Component,  ElementRef, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 import { staticText } from '@settings-and-models/static-text-other-constants';
 import  { AuthService } from 'src/app/services/auth.service';
@@ -53,10 +52,12 @@ export class ContentViewerComponent {
   testMode = false ;
 
   pageSize = 14;
-
+  viewportHeight:number ;
   currentPage = 1;
   //..
-  constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService) {
+  constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService,
+    private elRef: ElementRef, private renderer: Renderer2) {
+    this.viewportHeight = window.outerHeight ;
     this.testMode = this.coreContentService.TestMode ;
       // @ts-ignore: Object is possibly 'null'.
   }
@@ -297,6 +298,10 @@ export class ContentViewerComponent {
    public techStats(currentImage:any, stylingObject:any = null) {
      return this.coreContentService.techStatsSpan(currentImage, stylingObject);
    }
+   // buttons and slide shows 
+   slideshowInterval: any; // Variable to hold interval reference
+    slideshowSpeed: number = 2000; // Default slideshow speed in milliseconds (2 seconds)
+
    next() {
     this.currentCellSelected++;
     if (this.currentCellSelected >= this.imageGroups.length) {
@@ -304,7 +309,7 @@ export class ContentViewerComponent {
     }
     this.selectedImage = this.imageGroups[this.currentCellSelected];
    }
-
+   
    previous() {
     this.currentCellSelected--;
     if (this.currentCellSelected <=0)  {
@@ -312,6 +317,23 @@ export class ContentViewerComponent {
     }
     this.selectedImage = this.imageGroups[this.currentCellSelected];
    }
+   startSlideshow() {
+    this.slideshowInterval = setInterval(() => {
+        this.next();
+    }, this.slideshowSpeed);
+}
+
+stopSlideshow() {
+    clearInterval(this.slideshowInterval);
+}
+
+pauseSlideshow() {
+    clearInterval(this.slideshowInterval);
+}
+
+resumeSlideshow() {
+    this.startSlideshow();
+}
    closeModal() {
 
       // @ts-ignore: Object is possibly 'null'.

@@ -14,6 +14,23 @@ public allImageList:ImageElement[]  =  [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '07-24-2024',
+evolution:  `<b>Theme of Large flower at the back and flowers in front<br/>(Swami sketch uploaded in same time frame has same theme)<br/>Also coincided with some styling to overcome out of  screen images AND a slide show<br/></B>`,
+evolutionSequence:  4,
+evolutionDate:  '07-24-2024',
+summaryLabel:  `Started July 21 from Gurupoornima`,
+fullFileName: `${this.imageRoot}Ganesh-Angarika-July23-24-scan-photoedit.jpeg`,
+description: `<ul><li>Angarika/SankatHarChaturthi 0724 </li><li> Started July 21 from Gurupoornima </li><li> One of my best </li><li> The 8 marigolds at the bottom are symbolic for Ashtavinayaks </li><li> Moreshwar, Siddhivinayak, Balaleshwar, Waradvinayak, Chintamani, Girijatmaja, Vigneshwar and Mahaganapati </li><li> Scanned, then photo edited in iPhone </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}Ganesh-Angarika-July23-24-scan-photoedit.jpeg`, description: `<ul><li>Angarika/SankatHarChaturthi 0724 </li><li> Started July 21 from Gurupoornima </li><li> One of my best </li><li> The 8 marigolds at the bottom are symbolic for Ashtavinayaks </li><li> Moreshwar, Siddhivinayak, Balaleshwar, Waradvinayak, Chintamani, Girijatmaja, Vigneshwar and Mahaganapati </li><li> Scanned, then photo edited in iPhone </li></ul>` },
+{fullFileName: `${this.imageRoot}Ganesh-Angarika-July23-24-scan-noedit.jpeg`, description: `<ul><li>Angarika/SankatHarChaturthi 0724 </li><li> Started July 21 from Gurupoornima </li><li> One of my best </li><li> The 8 marigolds at the bottom are symbolic for Ashtavinayaks </li><li> Moreshwar, Siddhivinayak, Balaleshwar, Waradvinayak, Chintamani, Girijatmaja, Vigneshwar and Mahaganapati </li><li> Scanned, PRE photo edit  </li></ul>` },],
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '07-17-2024',
 evolution:  `<b>2nd of 2 uploaded on new mac<br/>1st with the automated loader<br/>ALSO, trying out a div instead of modal for expanded view<br/></B>`,
