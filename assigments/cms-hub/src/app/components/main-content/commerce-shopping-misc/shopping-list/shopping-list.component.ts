@@ -22,16 +22,26 @@ export class ShoppingListComponent implements OnInit {
   pageIndex = 0;
   pageSize = 5;
   senderEmail=''
+  dataLoaded = 'false' ;
   constructor(  private shoppingListService: ShoppingListService,private http: HttpClient) {
    
       // @ts-ignore: Object is possibly 'null'.
   }
   ngOnInit() {
-    this.loadCart();
+   // this.loadCart();
+    this.loadCartAsync();
   }
-
+  async loadCartAsync() {
+    try {
+      this.cartItems =  await this.shoppingListService.loadCartItems();
+      this.dataLoaded = 'true' ;
+      // Further processing of data
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  }
   loadCart() {
-    this.cartItems = this.shoppingListService.loadCartItemsSYNC();
+    this.cartItems =  this.shoppingListService.loadCartItemsSYNC();
   }
 
   updateCart(item: CartItem) {

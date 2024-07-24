@@ -20,7 +20,7 @@ export class ShoppingListService {
         // Simulated data
         const data = this.cartItems;
         resolve(data);
-      }, 2000); // Simulate a delay of 2 seconds (adjust as needed)
+      }, 2500); // Simulate a delay of 2 seconds (adjust as needed)
     });
   }
   loadCartItemsSYNC() {

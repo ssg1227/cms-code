@@ -181,10 +181,10 @@ export const MenuTreeElements:TreeNodeElement[] = [
            itemUnitPrice: [
             {
                 unitPrice:600, 
-                itemClass:'',unit:'1/2 kg'
+                itemClass:'Red Velvet Cakes',unit:'1/2 kg'
             },{
                  unitPrice:1200, 
-                itemClass:'',unit:'1 kg'
+                itemClass:'Red Velvet Cakes',unit:'1 kg'
             }],
        },
        cardLevelImage:'assets/gallery-files/images/red-velvet-cakes/red-velvet-cake-bayko-0.jpeg', 
