@@ -12,6 +12,11 @@
 - Maintaining this log
 - console.log should try to keep reference - classname method name
 ### July 2nd week
+- **July 25 - 29  merging solution to maintain one template set of sources**
+  - Git diff. 
+  - Beyond compare to divide and rule
+  - (side activity) Generate personal portfolio resume
+  - July 25 merge root level files
 - **STATUS July 8** 
   - **Ritchie bakes complete**. *full coverage of functionality. Add comments/ feedback as pop up*
   - **Ritchie bakes pending**. 
@@ -26,7 +31,19 @@
     2. Copy existing assets folder to assets-sanatan
     3. Copy assets-sanatan to assets 
     4. **In 'static-text-other-constants.ts' change appTitle to 'Sanatan Aspects'
-    2. Stepwise modify assets contents. Test at each step in incognito mode
+    5. Stepwise modify assets contents. Test at each step in incognito mode
+    6. CODE CHANGES AND SET UP
+       - Group of files to change: 
+          1. content-viewer
+          2. contexted-core-content.service.ts
+          3. auth.service
+          4. root index.html, styles.css 
+       - under each folder create a contexted folder. e.g. content-viewer-sanatan, content-viewer-art-is-worship, etc
+       - (for root - call it 'root-')
+       - (Other) specifics to look for, 
+         * contents of static-text-other-constants.ts
+         * isCommerce field in commerce.ts
+         * Stray images, texts, etc 
 ### July 1st week
 - **STATUS July 3** 
   - functionally complete. People can see products and email in their orders
