@@ -1,0 +1,341 @@
+.outerdiv {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 450px;
+    height: 90%;
+    
+    
+   /* background-image: linear-gradient(to bottom, red, orange, #F4C430, yellow, lightgreen, aliceblue, skyblue);*/
+}
+/* ALL THE MODAL to DIV styling */
+#div-container {
+    margin:auto;
+    margin-top: 5px;
+    
+    flex-wrap: wrap;
+    border: 2px outset darkslateblue ;
+    border-radius: 9px;
+    background:radial-gradient(darkblue, skyblue);
+    height: 89%;
+    width:80%;
+    overflow-y: scroll;
+    display: none;
+   /*align-items: center;
+    justify-content: center;
+    */
+   
+}
+#div-container-landing {
+    margin: 100px;
+    padding: auto;
+    width:90%;
+    border: 5px outset darkcyan ;
+    background: radial-gradient(cyan, skyblue, darkblue);
+    border-radius: 40px;
+}
+#div-container-landing a {
+    margin:auto;
+    text-decoration: none;
+    color: darkslateblue;
+    text-shadow: 0 4px 8px  rgba(25,25,0,0.7);;;
+    text-align: center;
+}
+
+#modal-div-top-5 {
+    display: flex;
+    height:5%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width:95%;
+    margin: 2px;
+    background-color: #81b1ff;
+    border-bottom: 1px solid #ccc;
+  }
+ 
+  #div-lower-95 {
+    height:90%;
+    width:98%;
+    margin: 1px;
+    background-color: #81b1ff;
+}
+  #close-div {
+    cursor: pointer;
+    font-size: 30px;
+    margin-top:2px;
+    align-items: center;
+    text-align: center;
+    background-color: pink;
+    border-radius: 20px;
+    width:40px;
+    height:40px;
+  }
+  
+  button {
+    background-color: #008cfa;
+    border: 2px outset gray;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #007bb5;
+    border: 2px inset gray;
+    
+  }
+ 
+#close-div  {
+    
+    background-color: white;
+    width:35px;
+    height:15px;
+    font-size:large;
+    color:red;
+    border: 1px solid red;
+}
+
+#pic-div-container,
+#text-container {
+    
+    background: radial-gradient(rgb(165, 218, 242), lightskyblue);
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 88%;
+    overflow-y: auto;
+}
+#pic-container > p {
+    height:80% ;
+
+}
+#modal-container {
+    display: none;
+    position:fixed ;
+    flex-wrap: wrap;
+    border: 9px solid gold;
+    border-radius: 15px;
+    background-color: rgb(248, 248, 255);
+    
+    left: 0;
+    top: 5;
+    margin:12px;
+    margin-top: -115px;
+    width: auto;
+    height: 100%;
+    overflow-y: scroll;
+   /*align-items: center;
+    justify-content: center;
+    */
+   
+}
+/*
+#modal-top-5 {
+    position: relative;
+    top:0 ;
+    left:0 ;
+    display:flex;
+    height:5%;
+    width:95%;
+    min-height: 50px;
+    justify-content: center;
+}
+
+#modal-lower-95 {
+    position: relative;
+    top:15 ;
+    left:0 ;
+    height:95%;
+    width:95%;
+    margin-top: 10px;
+}
+    */
+#close-modal  {
+    position: relative;
+    top: 0;
+    right : 0;
+    margin-right: 10px;
+    background-color: white;
+    width:35px;
+    height:15px;
+    font-size:large;
+    color:red;
+    border: 1px solid red;
+}
+#prev {
+    
+    left: 45; 
+    width:auto;
+    height:45px;
+    padding:5px;
+    margin:5px 100px;
+}
+#next {
+    
+    left: 55; 
+    width:auto;
+    height:45px;
+    padding:5px;
+    margin:5px 100px;
+}
+
+#title {
+    padding:5px ;
+    font-size: smaller;
+    background-color: cyan;
+    border: 2px inset rgb(120,120,60);
+    
+}
+
+#sequence {
+    padding:5px ;
+    font-size: smaller;
+    background-color: skyblue;
+    border: 2px inset darkslateblue;
+    color:darkblue;
+}
+#mutiple-container {
+    overflow-y: scroll;
+}
+#pic-container,
+#text-container {
+    
+    background: radial-gradient(rgb(165, 218, 242), lightskyblue);
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+}
+#pic-container > p {
+    height:80% ;
+
+}
+#modalpic  {
+    width: 40%;
+    height:100%;
+    object-fit: contain;
+    margin-right: 50px;
+    border:2px rgb(25, 80,80) inset;
+    float:left ;
+}
+#modaltext  {
+padding:20px;border: 1px solid gray; margin-left:20px;
+}
+#iterative {
+    margin-bottom: 5px;
+    border: 2px gray outset;
+}
+@media screen and (min-width:1029px) {
+    #modalpic  {
+        width: 400px;
+        height:400px;
+        object-fit: fill;
+        margin-right: 50px;
+        border:2px rgb(25, 80,80) inset;
+        float:left ;
+    }
+    #modaldivpic  {
+        width: 50%;
+        height: 50%;
+        object-fit:cover;
+        margin-right: 50px;
+        background-color: deepskyblue;
+        border:2px rgb(25, 80,80) inset;
+       
+  box-shadow: 0 4px 8px  rgba(25,25,0,0.7);;
+        float:left ;
+    }
+}
+@media screen and (max-width:550px) {
+    .outerdiv {
+        height: 90%;
+    }
+    #modaldivpic  {
+        width: 85%;
+        height:59%;
+        object-fit: contain;
+        margin: auto;
+        background-color: deepskyblue;
+        border:2px rgb(25, 80,80) inset;
+       
+  box-shadow: 0 4px 8px  rgba(25,25,0,0.7);;
+        float:left ;
+    }
+    #modal-container {
+        top: 225px;
+    
+        margin:5px;
+        padding:2px;
+        overflow-y: auto;
+    }
+    #div-lower-95 {
+        display:flex ;
+        flex-wrap: wrap;
+        margin: 5px 30px 2px;
+        background-color: #81b1ff;
+    }
+    #modal-text {
+        overflow-wrap: normal;
+    }
+#close-modal  {
+    
+    height:35px;
+    font-size:xx-large;
+    color:red;
+    margin-bottom: 2px;
+    
+}
+#prev {
+    
+    width:auto;
+    height:15px;
+    padding:1px;
+    margin:2 5;
+}
+#next {
+    width:auto;
+    height:15px;
+    padding:1px;
+    margin:2;
+}
+#title {
+    padding:5px ;
+    background-color: beige;
+    border: 2px inset rgb(120,120,60);
+    width:auto;
+}
+#modal-top-5 {
+    flex-wrap:wrap;
+    height: auto;
+    min-height: 0;
+}
+#modalpic {
+    width:95% ;
+}
+
+#modaltext {
+    width:95% ;
+}
+#pic-container,
+#text-container {
+    border:inset 2px gray ;
+    padding:4px;
+    background-color: silver;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 99%;
+}
+}

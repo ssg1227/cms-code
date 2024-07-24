@@ -1,0 +1,8 @@
+<div class="unit-price-selector">
+    <select (change)="onUnitChange($event)">
+      <option value="select">select size</option>
+      <option *ngFor="let item of itemUnitPrice" [value]="item.unit">{{ ItemDisplay(item.unit) }}</option>
+    </select>
+    &nbsp; &nbsp;&nbsp;<label>{{ selectedUnit === 'select' ? '(price)' : 'Rs ' + selectedPrice }}</label>
+     <button [disabled]="selectedUnit.indexOf('select') >=0" (click)="addToWishlist()">Add to Wishlist</button>
+  </div>

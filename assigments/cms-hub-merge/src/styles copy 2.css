@@ -1,0 +1,164 @@
+/* You can add global styles to this file, and also import other style files */
+.root-frame  {
+    position: fixed;
+    top:0 ;
+    left:0 ;
+    width:100%; 
+    margin-right: 5px;
+    height:95%; 
+    padding:5px; 
+    background-color: aliceblue;
+    border: 1px outset silver ;
+    border-radius: 7px;
+    font-size:1vw;
+    overflow-y: auto;
+    background-image: radial-gradient(beige, white);
+}
+
+.upper-ten {
+    /* height: 20%;  part of non-scrollable header, height changed to below*/
+    height: 15%; 
+    /* non scrollable header adds */
+    position: fixed;
+    top:10 ;
+    left:10 ;
+    width:98%; 
+    margin: 10 5 ;
+    /* end non scrollable header adds */
+    display: flex ;
+    /*border: 2px solid slateblue ;*/
+    background-color: rgb(195, 205, 231);
+    box-shadow: gray 10px;
+    border-radius: 15px;
+}
+.upper-ten > H2 {
+    margin-left: 10px;
+    color: darkslateblue;
+    text-shadow: 1px 1px gray;
+}
+.upper-ten img {
+    border: 2px inset gray;
+    border-radius: 5px;
+    height: auto;
+    margin: 2px;
+}
+ #author {
+    font-size: smaller;
+    font-style: italic;
+    margin-left: 20px;
+    color: blue;
+    text-shadow: 1px 1px gray;
+}
+#upper-ten-central-box {
+    margin:auto;
+    padding:5px;
+    font-weight: 700;
+    font-size: larger;
+}
+#upper-ten img {
+    margin-right: 2px;
+}
+#upper-ten-right-box {
+    margin:auto;
+    margin-top: 14px;
+    margin-right: 10px;  
+    border-radius: 3px;
+    background-color: lightgrey;
+    
+    font-weight: 1000;
+    border: 1px outset silver;
+    box-shadow: 2px gray;
+    padding:5px;
+    font-size: larger;
+}
+.lower-ninety {
+    /* height: 90%; added below for fixed header changes */
+    position: fixed;
+    top:140px ;
+    left:0 ;
+    height: 80%;
+    /* .. end */
+    border: 1px solid lightgrey ;
+    background-color: aliceblue;
+    border-radius: 15px;
+    background: silver;
+    font-size: larger;
+    font-weight: 900;
+}
+.image-container {
+    width:30%;
+}
+
+.image-container img{
+    width:30%;
+}
+.image-container p {
+    background-color: beige;
+    text-align: left;
+    text-shadow: none;
+}
+
+.testimonial {
+    background-color: beige;
+    font-style: italic ;
+    font-size: medium;
+    text-align: left;
+    text-shadow: none;
+}
+
+.lower-ninety-landing {
+    display: flex ;
+    flex-wrap: wrap;
+    border: 2px solid slateblue ;
+    background-color: rgb(195, 205, 231);
+}
+.scrollable {
+    padding: 4px;
+    border: 2px ridge saddlebrown;
+    border-radius: 10px;
+    background-color: 180, 180, 150; 
+}
+.scrollable p {
+    margin: 10px 5px;
+    border-bottom: 2px ridge saddlebrown;
+    border-radius: 10px;
+    background-color: beige; 
+    padding:10px;
+    box-shadow: 0 4px 8px  rgba(25,25,0,0.7);
+}
+@media screen and (min-width:1029px) {
+    .upper-ten {
+        background-image: linear-gradient(to right, beige, pink,   brown);
+    }
+    .lower-ninety {
+
+    background: radial-gradient(#f77775, #a2a9f6);
+    background-image: url("assets/gallery-files/images/Ritchie-bakes-logo-fade.png");
+    background-repeat: repeat;
+    background-position: center; 
+   
+
+    }
+}
+@media screen and (max-width:1028px) {
+    .lower-ninety {
+        /* height: auto; part of non-scrollable header */
+        font-size: x-large;
+    }
+    .responser {
+        width:95%;
+    }
+.upper-ten {
+    overflow: auto;
+}    
+#upper-ten-central-box {
+    
+    height: auto;
+    font-size: x-large;
+}
+#upper-ten-right-box {
+    
+    height: auto;
+    font-size: large;
+}
+}
