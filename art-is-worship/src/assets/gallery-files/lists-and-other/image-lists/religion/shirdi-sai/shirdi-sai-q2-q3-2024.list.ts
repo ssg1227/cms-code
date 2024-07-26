@@ -35,7 +35,7 @@ iterations: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
-content:  'color-pencil',
+content:  'le',
 dateUploaded:  '07-20-2024',
 summaryLabel:  `July 18 2024`,
 fullFileName: `${this.imageRoot}Baba-07-11-2024.jpeg`,
