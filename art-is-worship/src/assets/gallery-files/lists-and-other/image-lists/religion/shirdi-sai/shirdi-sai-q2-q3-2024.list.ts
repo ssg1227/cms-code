@@ -23,6 +23,19 @@ public allImageList:ImageElement[]  =  [
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
+dateUploaded:  '07-26-2024',
+summaryLabel:  `Last thu 0724`,
+fullFileName: `${this.imageRoot}BabaJuly2524-2.jpeg`,
+description: `<ul><li> Last thu 0724 </li><li> Continued 3rd of 3 Hibiscus Background sketches </li><li> (See Ganesh, Swami Samartha) </li><li> updated scanned </li></ul>`,
+iterations: [
+{fullFileName: `${this.imageRoot}BabaJuly2524-2.jpeg`, description: `<ul><li> Last thu 0724 </li><li> Continued 3rd of 3 Hibiscus Background sketches </li><li> (See Ganesh, Swami Samartha) </li><li> updated scanned </li></ul>` },
+{fullFileName: `${this.imageRoot}BabaJuly2524-1.jpeg`, description: `<ul><li> Last thu 0724 </li><li> Continued 3rd of 3 Hibiscus Background sketches </li><li> (See Ganesh, Swami Samartha) </li><li> orig scanned </li></ul>` },
+]
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
 dateUploaded:  '07-20-2024',
 summaryLabel:  `July 18 2024`,
 fullFileName: `${this.imageRoot}Baba-07-11-2024.jpeg`,

@@ -2,7 +2,7 @@
     <app-login-landing *ngIf="!UserLoggedIn"></app-login-landing> 
     <div *ngIf="UserLoggedIn">
         <app-content-viewer *ngIf="SmallScreen=='false'"></app-content-viewer>
-        <app-paged-content-viewer *ngIf="SmallScreen=='true'"></app-paged-content-viewer>
+        <app-content-viewer *ngIf="SmallScreen=='true'"></app-content-viewer>
     </div>
     
 </div> 

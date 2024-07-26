@@ -4,7 +4,7 @@ import { staticText } from '@settings-and-models/static-text-other-constants';
 import  { AuthService } from 'src/app/services/auth.service';
 import { CoreContentService } from 'src/app/services/core-content.service';
 import { TreeNodeElement } from '@settings-and-models/tree-node-element' ;
-import { BreadCrumb } from 'src/assets/content-tree/bread-crumbs';
+import { BreadCrumb } from '@settings-and-models/bread-crumbs';
 
 import { ImageElement, ContentList } from 'src/assets/gallery-files/lists-and-other/image-lists/shared/image-detail' ;
 import { core } from '@angular/compiler';
