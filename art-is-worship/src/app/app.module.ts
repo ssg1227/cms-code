@@ -14,7 +14,8 @@ import { CoreContentService } from './services/core-content.service';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { LoginLandingComponent } from './components/admin-register-login/login-landing/login-landing.component';
 import { ContentViewerComponent } from './components/main-content/content-viewer/content-viewer.component';
-import { CardComponent } from './components/main-content/card/card.component';
+// import { CardComponent } from './components/main-content/card/card.component';
+import { ImageCardComponent } from './components/main-content/image-card/image-card.component';
 import { MailFormComponent } from './components/misc/mail-form/mail-form.component';
 import { RegisterFormComponent } from './components/admin-register-login/register-form/register-form.component';
 @NgModule({
@@ -23,7 +24,8 @@ import { RegisterFormComponent } from './components/admin-register-login/registe
     LandingPageComponent,
     LoginLandingComponent,
     ContentViewerComponent,
-    CardComponent,
+    // CardComponent,
+    ImageCardComponent,
     MailFormComponent,
     RegisterFormComponent,
   ],
