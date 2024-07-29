@@ -13,6 +13,17 @@ export class MahadevImageList {
          ``,
          files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '07-29-2024',
+summaryLabel:  `Mahadev with Shivling`,
+fullFileName: `${this.imageRoot}MahadevShivling0727-2924.jpeg`,
+description: `<ul><li> Mahadev with Shivling </li><li> Bel leaves and Dhatura flowers </li><li> July 27-29 2024 </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},
+{
 canvassSize:  'A5',
 content:  'watercolor-pencil',
 dateUploaded:  '05-27-2024',
