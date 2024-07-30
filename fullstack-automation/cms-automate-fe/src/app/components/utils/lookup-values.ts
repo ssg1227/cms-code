@@ -65,9 +65,11 @@ export class LookupValues {
             'technical',
       ]
     currentEvolutionSequence = 3;
-    rootImageSourceFolder = `/Users/shantanu/Downloads/Sketch-transit`
+    rootImageSourceFolder = `/Users/shantanug/Downloads/Sketch-transit`
     // galleryRoot = `/Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template` ;
-    galleryRoot = `/Users/shantanu/Documents/GitHub/ssg1227-GuruDatta@9/cms-code/art-is-worship` // ssg1227-GuruDatta@9/cms-code/art-is-worship`
+    galleryRoot = `//Users/shantanug/Documents/GitHub/cms-code/art-is-worship`;
+    galleryRootRitchieBakes = `/Users/shantanug/Documents/GitHub/cms-code/assigments/cms-hub`;
+    macbookAirGalleryRoot = `/Users/shantanu/Documents/GitHub/ssg1227-GuruDatta@9/cms-code/art-is-worship` // ssg1227-GuruDatta@9/cms-code/art-is-worship`
     rootImageDestinationFolder = `${this.galleryRoot}/src/assets/gallery-files/images`
     //  rootImageDestinationFolder = `${this.galleryRoot}
    // rootImageDestinationFolder = `${this.galleryRoot}/src/assets/all-images/`
@@ -76,7 +78,7 @@ export class LookupValues {
    // rootConfigFolder = `${this.galleryRoot}/src/assets/data-and-config/`
     rootConfigFolder = `${this.galleryRoot}/src/assets/gallery-files/lists-and-other/image-lists`
     downloadedImageRootFile2 = `../../../../../../../../../../../../Downloads/Sketch-transit/` ;
-    downloadedImageRootFile = `../../../../../../..//../../../../../../shantanu/Downloads/Sketch-transit/`
-    albumsInsertTextFile = `/Users/shantanu/Downloads/Sketch-transit-test/AlbumEntry.txt`;
+    downloadedImageRootFile = `../../../../../../..//../../../../../../shantanug/Downloads/Sketch-transit/`
+    albumsInsertTextFile = `/Users/shantanug/Downloads/Sketch-transit-test/AlbumEntry.txt`;
 /// Ganesh07262023-forautoTest-2.jpeg
 };

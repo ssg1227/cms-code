@@ -17,12 +17,7 @@ export class AddImagesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  /* NEW INTERFACE - Tabbed */
-  currentTab = 'move-file'
-  selectTab(tabname:string) {
-    this.currentTab = tabname ;
-  }
-  /* END */
+
   passImageFolders(imageFolders:string[]) {
     this.imageList = imageFolders ;
     this.imagesMoved = true ;
@@ -52,7 +47,7 @@ export class AddImagesComponent implements OnInit {
   }
   reset() {
     this.imageList = [];
-    this.imagesMoved = false;
+    this.imagesMoved = true;
     this.jsonListing = [] ;
     this.jsonListingFile = '';
     

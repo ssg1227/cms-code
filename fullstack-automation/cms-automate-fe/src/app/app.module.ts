@@ -17,7 +17,9 @@ import { ListUpdateComponent } from './components/list-update/list-update.compon
 import { AddImagesComponent } from './components/feature-components/add-images/add-images.component';
 import { FolderTreeExpandComponent } from './components/reusables/folder-tree-expand/folder-tree-expand.component';
 import { SetListFolderComponent } from './components/feature-components/add-images/set-list-folder/set-list-folder.component';
-import { UpdateAlbumEntriesComponent } from './components/feature-components/add-images/update-album-entries/update-album-entries.component'
+import { UpdateAlbumEntriesComponent } from './components/feature-components/add-images/update-album-entries/update-album-entries.component';
+import { CreateNewListFileComponent } from './components/feature-components/create-lists-folders/create-new-list-file/create-new-list-file.component';
+import { AutomationTabsComponent } from './components/feature-components/automation-tabs/automation-tabs.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +34,8 @@ import { UpdateAlbumEntriesComponent } from './components/feature-components/add
     FolderTreeExpandComponent,
     SetListFolderComponent,
     UpdateAlbumEntriesComponent,
+    CreateNewListFileComponent,
+    AutomationTabsComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,8 @@ import { UpdateAlbumEntriesComponent } from './components/feature-components/add
     HttpClientModule,
     RouterModule.forRoot([{
       // path: '', component:ReactiveTestComponent,}, {
-        path: '', component:AddImagesComponent,}, {
+        path: '', component:AutomationTabsComponent,}, {
+     //     path: '', component:AddImagesComponent,}, {
           path: 'list-update', component:ListUpdateComponent
     }])
   ],

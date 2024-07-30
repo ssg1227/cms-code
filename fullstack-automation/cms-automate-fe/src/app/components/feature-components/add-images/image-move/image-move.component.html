@@ -35,12 +35,13 @@
         </select>
     </div>
     <div>
-        <label>FileName</label>
+        <label>Source FileName </label>
        <input type="text" [(ngModel)]="imageFileName" #ctrl="ngModel">
     </div>  
     <div>
-        <label>DestinationFileName</label>
+        <label>Dest. FileName</label>
        <input type="text" [(ngModel)]="destImageFileName" #ctrl="ngModel">
+       <button (click)="copySource()">Same as src</button>
     </div>  
     <button click="alert('hi')" (click)="moveFile()">Move</button>
     <button (click)="moveFileReverse()">Revert</button>

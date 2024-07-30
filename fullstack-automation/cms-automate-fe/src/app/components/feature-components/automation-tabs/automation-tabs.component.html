@@ -1,0 +1,27 @@
+<div class="tabs">
+    <ul class="tab-headers">
+        <li  [class.active]="currentTab=='add-images'" (click)="selectTab('add-images')">
+                Add Images
+        </li>
+        <li  (click)="selectTab('add-file')">
+            Add listing Files, image folder
+         </li>
+         <li  (click)="selectTab('add-category-node')">
+            Add Category Nodes, corresp folder
+         </li>
+        <!--       <li *ngFor="let tab of tabs; let i = index"
+          (click)="selectTab(i)"
+          [class.active]="i === selectedIndex">
+        {{ tab.tabTitle }}
+      </li>
+    -->
+    </ul>
+    <div class="tab-content">
+      <ng-container *ngIf="currentTab=='add-images'">
+        <app-add-images/>
+      </ng-container>
+      <ng-container *ngIf="currentTab=='add-file'">
+       
+      </ng-container>
+    </div>
+  </div>

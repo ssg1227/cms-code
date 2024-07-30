@@ -152,6 +152,7 @@ export class ImageMoveComponent implements OnInit {
         sourceFileName:this.imageFileName,   
         destFileName:this.imageFileName,   
       }
+      
        /*
       moveDetail = {
         destinationFolder: "/Users/shantanu/Downloads/Sketch-transit/", //this.currentParentFolder,
@@ -175,5 +176,8 @@ export class ImageMoveComponent implements OnInit {
         (err:any)=>console.log(`ERROR ${err}`),
         () => console.log('complete'),
       )
+    }
+    copySource() {
+      this.destImageFileName = this.imageFileName ;
     }
 }
