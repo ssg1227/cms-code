@@ -21,6 +21,36 @@ public allImageList:ImageElement[]  =  [
         files: [  
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '07-29-2024',
+summaryLabel:  `Baba Milpitas`,
+evolution:  `technical landmark - moved the add image logic to a  tabbed interface `,
+evolutionSequence:  4,
+evolutionDate:  '07-29-2024',
+fullFileName: `${this.imageRoot}Baba-Mini-Shirdi-July4-2024-scan-photoedit.jpeg`,
+description: `<ul><li> Baba Milpitas </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}Baba-Mini-Shirdi-July4-2024-scan-photoedit.jpeg`, description: `<ul><li> Baba Milpitas </li></ul>` },
+{fullFileName: `${this.imageRoot}Baba-Mini-Shirdi-July4-2024-scan.jpeg`, description: `<ul><li> Baba Milpitas </li><li> Unedited </li></ul>` },
+]
+},
+{
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'black-white',
+dateUploaded:  '07-29-2024',
+duplicate:  'true',
+summaryLabel:  `Black and white scan of previous image`,
+fullFileName: `${this.imageRoot}Baba-July4-24-bw-variation.jpeg`,
+description: `<ul><li> Black and white scan of previous image </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '07-26-2024',
