@@ -14,6 +14,24 @@ export class PeopleImageList {
          Some, in fact, many are <em><strong>pretty out of shape</strong></em>, but <em>still</em> included because of the significance`,
      files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '07-29-2024',
+summaryLabel:  `Shivaji Sketch `,
+fullFileName: `${this.imageRoot}Shivjayanti24-5-0618.jpeg`,
+description: `<ul><li> Shivaji Sketch  </li><li> been a while, but finished June 18-19 2024 </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}Shivjayanti24-5-0618.jpeg`, description: `<ul><li> Shivaji Sketch  </li><li> been a while, but finished June 18-19 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}Shivjayanti24-4-0618.jpeg`, description: `<ul><li> Shivaji Sketch  </li><li> been a while, but finished June 18-19 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}Shivjayanti24-3-0618.jpeg`, description: `<ul><li> Shivaji Sketch  </li><li> been a while, but finished June 18-19 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}Shivjayanti24-2-0618.jpeg`, description: `<ul><li> Shivaji Sketch  </li><li> been a while, but finished June 18-19 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}Shivjayanti24-1-0618.jpeg`, description: `<ul><li> Shivaji Sketch  </li><li> been a while, but finished June 18-19 2024 </li><li> only bust </li></ul>` },
+]
+},
+{
 canvassSize:  'A4',
 content:  'watercolor-pencil',
 dateUploaded:  '05-27-2024',
