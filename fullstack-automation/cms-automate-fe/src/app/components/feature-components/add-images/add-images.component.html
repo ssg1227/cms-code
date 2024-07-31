@@ -30,8 +30,9 @@
         -->
         </ul>
         <div class="tab-content">
-            <ng-container *ngIf="currentTab=='move-file'">
-                <app-image-move (imageVersionsDone)="passImageFolders($event)"></app-image-move>
+            <ng-container *ngIf="currentTab=='move-file'">1
+               <!--- <app-image-move (imageVersionsDone)="passImageFolders($event)"></app-image-move>-->
+                <app-images-folders (imageVersionsDone)="passImageFolders($event)"></app-images-folders>
             </ng-container>
             <ng-container *ngIf="currentTab=='compile-json'">
                 <div  id="compileJSON" [ngStyle]="ComponentDivStyle" >
@@ -40,14 +41,17 @@
                 </ng-container>
                 <ng-container *ngIf="currentTab=='write-to-file'">
                     <div  [ngStyle]="ComponentDivStyle" >
+                        <!---
                         <app-set-list-folder (configFileFound)="jsonFileToUpdate($event)"></app-set-list-folder>
+                    -->
+                        <app-lists-folders  (configFileFound)="jsonFileToUpdate($event)"></app-lists-folders>
                         </div>
                 
                 </ng-container>
           
           </div>
     </div>
-   
+  <!-- UNTABBED SECTION  
     <div>
         <button (click)="displayToggle('imageMoveRow', false)">Hide Image Move</button>
         <button (click)="displayToggle('imageMoveRow')">Show Image Move</button>
@@ -73,7 +77,7 @@
     <button (click)="displayToggle('compileJSON')">Show  JSON generator</button>
 </div>
 </div>
-
+-->
 <!-- 
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';

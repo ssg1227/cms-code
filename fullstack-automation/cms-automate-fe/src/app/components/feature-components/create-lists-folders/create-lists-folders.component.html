@@ -1,0 +1,46 @@
+<div class="outerdiv">
+  <div class="tabs">
+        <div  style="overflow-y: scroll;background-color: aqua;">
+            <button [disabled]="isPostDataReady()" (click)="postJSONUpdate()">Submit</button>
+            <button (click)="reset()">RESET</button>
+            <ul *ngIf="imageList != null && imageList.length > 0">
+                <li *ngFor="let imageFile of imageList">{{imageFile}}</li>
+            </ul>
+            <br/>
+            {{jsonListingFile}}
+            <ul  *ngIf="jsonListing != null && jsonListing.length > 0">
+                <li *ngFor="let jj of jsonListing">{{jj}}</li>
+            </ul>
+        </div>
+        <ul class="tab-headers">
+            <li  [class.active]="currentTab=='create-image-folder'" (click)="selectTab('create-image-folder')">
+                   Create Image Folder
+            </li>
+            <li  [class.active]="currentTab=='create-list-file-n-entries'" (click)="selectTab('create-list-file-n-entries')">
+                Create List file, Menu and Service entry texts
+            </li>
+            <li  [class.active]="currentTab=='review-entries'" (click)="selectTab('review-entries')">
+                Review Menu and Service entry texts
+            </li>
+          
+        </ul>
+        <div class="tab-content">
+            <ng-container *ngIf="currentTab=='create-image-folder'">1
+               <!-- <app-image-move (imageVersionsDone)="passImageFolders($event)"></app-image-move>-->
+                <app-images-folders imageTreeMode='createFolder' (imageVersionsDone)="passImageFolders($event)"></app-images-folders>
+            </ng-container>
+            <ng-container *ngIf="currentTab=='compile-json'">
+                <div  id="compileJSON" [ngStyle]="ComponentDivStyle" >
+                    <app-compile-json-content [listingContent]="jsonListing" *ngIf="imagesMoved==true" (jsonReady)="jsonToUpdate($event)" [imageFileList]="imageList"></app-compile-json-content>
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="currentTab=='write-to-file'">
+                    <div  [ngStyle]="ComponentDivStyle" >
+                        <app-set-list-folder (configFileFound)="jsonFileToUpdate($event)"></app-set-list-folder>
+                        </div>
+                
+                </ng-container>
+          
+          </div>
+    
+    </div>

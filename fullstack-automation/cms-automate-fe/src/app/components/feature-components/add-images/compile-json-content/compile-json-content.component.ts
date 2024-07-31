@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LookupValues } from '../../../utils/lookup-values';
-import { ListService } from '../../../../services/list.service';
+import { LookupValues } from '@utils/lookup-values';
+import { ListService } from '@services/list.service';
 import { Input, Output, EventEmitter } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder, FormArray } from '@angular/forms';
 import { Observable } from  'rxjs';
@@ -152,7 +152,9 @@ getEvolutionMutipleText(textLines:string[]) {
     }
   });
   if (evolutionHTML !== '') {
+
     this.imageListJSON.controls["evolution"].setValue(`${evolutionHTML}</B>`);
+    alert(`${evolutionHTML}, ${JSON.stringify(this.imageListJSON.controls["evolution"].value)}`)
   }
   this.updateListingContent();
 }

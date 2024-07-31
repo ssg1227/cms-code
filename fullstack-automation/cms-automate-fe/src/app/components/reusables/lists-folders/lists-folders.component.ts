@@ -4,11 +4,11 @@ import { LookupValues } from '@utils/lookup-values';
 import { ListService } from '@services/list.service';
 
 @Component({
-  selector: 'app-set-list-folder',
-  templateUrl: './set-list-folder.component.html',
-  styleUrls: ['./set-list-folder.component.css']
+  selector: 'app-lists-folders',
+  templateUrl: './lists-folders.component.html',
+  styleUrls: ['./lists-folders.component.css']
 })
-export class SetListFolderComponent implements OnInit {
+export class ListsFoldersComponent implements OnInit {
 
   
   @Output() configFileFound = new EventEmitter<string[]>();

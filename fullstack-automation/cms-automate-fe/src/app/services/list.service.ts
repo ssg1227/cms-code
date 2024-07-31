@@ -32,6 +32,11 @@ export class ListService {
     .pipe(catchError(this.handleError));
  
   }
+  createFolder(folder:string) {
+    return this.http.post<any>(`${this.webServiceURL}/create-folder`,folder)
+    .pipe(catchError(this.handleError));
+ 
+  }
   updateListFile(stringsToAddParan:string[], fileToUpdateParam:string):Observable<HttpResponse<any>> {
 
     let newImageList = {

@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { LookupValues } from '../../../utils/lookup-values';
-import { ListService } from '../../../../services/list.service';
-import { Output, EventEmitter } from '@angular/core';
+import { LookupValues } from '@utils/lookup-values';
+import { ListService } from '@services/list.service';
+import { Input, Output, EventEmitter } from '@angular/core';
 @Component({
-  selector: 'app-image-move',
-  templateUrl: './image-move.component.html',
-  styleUrls: ['./image-move.component.css']
+  selector: 'app-images-folders',
+  templateUrl: './images-folders.component.html',
+  styleUrls: ['./images-folders.component.css']
 })
-export class ImageMoveComponent implements OnInit {
+export class ImagesFoldersComponent implements OnInit {
   mockdata = true; 
   @Output() imageVersionsDone = new EventEmitter<string[]>();
+  @Input() imageTreeMode = 'moveFiles';
   /// 
    currentFile =  '/Users/shantanu/Downloads/TaraporewallaJune282023.jpeg';
   lookups: LookupValues = new LookupValues();
@@ -32,6 +33,7 @@ export class ImageMoveComponent implements OnInit {
   level5Select = "";
   imageFileName="ee"
   destImageFileName="ff"
+  folderName=""
   imageFiles:string[]=[] ;
   useImageRoot = true ;
   imgR() {
@@ -74,13 +76,23 @@ export class ImageMoveComponent implements OnInit {
    .subscribe(
      (response:any)=> { 
        switch(level) {
-         case 1:  this.level1Files = response ;
+         case 1: 
+         this.level1Files = ["select",...response] ; //this.level1Files = response ;
+          //    this.level1Files.unshift("select");
            break ;
-         case 2:  this.level2Files = response ;
+         case 2: 
+         this.level2Files = ["select",...response] ; 
+          //this.level2Files = response ;
+          //    this.level1Files.unshift("select");
            break ;
-         case 3:  this.level3Files = response ;
+         case 3:  
+            this.level3Files = ["select",...response] ;
+             // this.level3Files = response ;
+             // this.level3Files.unshift("select");
            break ;
-         case 4:  this.level4Files = response ;
+         case 4: this.level4Files = ["select",...response] ;
+         //  this.level4Files = response ;
+         //    this.level4Files.unshift("select");
              break ;
        }
       
@@ -179,5 +191,14 @@ export class ImageMoveComponent implements OnInit {
     }
     copySource() {
       this.destImageFileName = this.imageFileName ;
+    }
+    createImageFolder() {
+      this.listService.createFolder( `${this.currentParentFolder}/${this.folderName}`).subscribe(
+        (response:any)=> { 
+          console.log('success') ;
+        },
+        (err:any)=>console.log(`ERROR ${err}`),
+        () => console.log('complete'),
+      )
     }
 }

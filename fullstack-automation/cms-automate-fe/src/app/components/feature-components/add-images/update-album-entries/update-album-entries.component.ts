@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LookupValues } from '../../../utils/lookup-values';
+import { LookupValues } from '@utils/lookup-values';
 import { Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
