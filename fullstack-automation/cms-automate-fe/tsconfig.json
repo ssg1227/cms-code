@@ -4,6 +4,11 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "paths": {
+      "@shared/*": ["src/shared/*"], // Maps '@shared' to the 'src/shared' directory
+      "@services/*": ["src/app/services/*"], // Example for another directory
+      "@utils/*": ["src/app/components/utils/*"],
+    },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
