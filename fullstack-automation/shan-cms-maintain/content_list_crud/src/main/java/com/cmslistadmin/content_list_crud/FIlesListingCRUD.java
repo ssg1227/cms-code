@@ -90,4 +90,13 @@ import org.springframework.http.MediaType ;
         writeFile.createFolder(folderPath) ;   
         return  "yes"; //updateImageJSON.processImage(entity);
     }
+    @PostMapping( path = "/create-file" , produces = MediaType.APPLICATION_JSON_VALUE)
+    public String CreateFile(@RequestBody String[] fileAndLines) {
+        FilesListing writeFile = new FilesListing();
+        writeFile.createFile(fileAndLines[0]) ;   
+
+        writeFile.writeLines(fileAndLines ) ;   
+        return  "yes"; //updateImageJSON.processImage(entity);
+    }
+    // 
 }

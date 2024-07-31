@@ -1,6 +1,7 @@
 package com.cmslistadmin.content_list_crud.business;
 
 import java.io.File;
+import java.nio.file.Files;
 import java.util.ArrayList;
 
 import org.springframework.boot.autoconfigure.amqp.ConnectionFactoryCustomizer; 
@@ -100,5 +101,32 @@ public class FilesListing {
             System.out.println("Directory already exists.");
         }
         return true ;
+    }
+    public boolean createFile(String filePath){
+        File newFile = new File(filePath);
+        System.out.println(filePath);
+        boolean created = true ;
+        // Create the directory
+        if (newFile.exists()) 
+        {
+            System.out.println("File exists");
+            return false ;
+        } else {
+            try {
+                // Create the file
+                if (newFile.createNewFile()) {
+                    System.out.println("File created successfully.");
+                    
+                } else {
+                    System.out.println("File already exists.");
+                    created = false ;
+                }
+            } catch (Exception e) {
+                System.out.println("An error occurred while creating the file.");
+                e.printStackTrace();
+                created = false ;
+            }
+        }
+        return created ;
     }
 }
