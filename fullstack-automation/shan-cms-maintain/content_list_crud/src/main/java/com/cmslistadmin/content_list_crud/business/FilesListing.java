@@ -85,4 +85,20 @@ public class FilesListing {
         FileHandler.addLinestoFile(fileName, fileLines, -1);
         return true ;
     }
+    public boolean createFolder(String folderPath){
+        File directory = new File(folderPath);
+        System.out.println(folderPath);
+        // Create the directory
+        if (!directory.exists()) {
+            boolean created = directory.mkdirs(); // Use mkdir() for single directory, mkdirs() for multiple levels
+            if (created) {
+                System.out.println("Directory created successfully.");
+            } else {
+                System.out.println("Failed to create the directory.");
+            }
+        } else {
+            System.out.println("Directory already exists.");
+        }
+        return true ;
+    }
 }

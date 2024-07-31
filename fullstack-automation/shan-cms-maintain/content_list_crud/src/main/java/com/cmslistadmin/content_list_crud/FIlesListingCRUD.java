@@ -84,4 +84,10 @@ import org.springframework.http.MediaType ;
         writeFile.writeLines(fileAndLines ) ;   
         return  "yes"; //updateImageJSON.processImage(entity);
     }
+    @PostMapping( path = "/create-folder" , produces = MediaType.APPLICATION_JSON_VALUE)
+    public String CreateFolder(@RequestBody String folderPath) {
+        FilesListing writeFile = new FilesListing();
+        writeFile.createFolder(folderPath) ;   
+        return  "yes"; //updateImageJSON.processImage(entity);
+    }
 }
