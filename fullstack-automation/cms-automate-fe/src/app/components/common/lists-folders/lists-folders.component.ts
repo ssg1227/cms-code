@@ -10,7 +10,7 @@ import { ListService } from '@services/list.service';
 })
 export class ListsFoldersComponent implements OnInit {
 
-  
+  @Input() listsFolderMode = 'writeToFile';
   @Output() configFileFound = new EventEmitter<string[]>();
   lookups: LookupValues = new LookupValues();
   rootConfigFolder = this.lookups.rootConfigFolder ;
@@ -28,6 +28,8 @@ export class ListsFoldersComponent implements OnInit {
   level4Files = ["",""] ;
   level4Select = "";
   imageFileName="ee"
+
+  listFileName=""
   imageFiles:string[]=[] ;
   constructor(private listService: ListService) { }
 
@@ -40,13 +42,17 @@ export class ListsFoldersComponent implements OnInit {
    .subscribe(
      (response:any)=> { 
        switch(level) {
-         case 1:  this.level1Files = response ;
+         case 1:  this.level1Files = ["select",...response] ; //this.level1Files = response ;
+         //    this.level1Files.unshift("select");this.level1Files = response ;
            break ;
-         case 2:  this.level2Files = response ;
+         case 2:  this.level2Files = ["select",...response] ; //this.level1Files = response ;
+         //    this.level1Files.unshift("select");this.level2Files = response ;
            break ;
-         case 3:  this.level3Files = response ;
+         case 3:  this.level3Files = ["select",...response] ; //this.level1Files = response ;
+         //    this.level1Files.unshift("select");this.level2Files = response ;
            break ;
-           case 4:  this.level4Files = response ;
+           case 4:  this.level4Files = ["select",...response] ; //this.level1Files = response ;
+           //    this.level1Files.unshift("select");this.level2Files = response ;
              break ;
        }
       
@@ -81,4 +87,7 @@ export class ListsFoldersComponent implements OnInit {
     let configFileFolderAndKeys = [ this.configFileFolder, this.key ]
     this.configFileFound.emit(configFileFolderAndKeys);
   }
+   createListFile(textLines:string[]) {
+    
+   }
  }

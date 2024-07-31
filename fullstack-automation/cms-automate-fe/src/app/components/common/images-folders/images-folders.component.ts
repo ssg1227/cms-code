@@ -200,5 +200,7 @@ export class ImagesFoldersComponent implements OnInit {
         (err:any)=>console.log(`ERROR ${err}`),
         () => console.log('complete'),
       )
+
+      this.imageVersionsDone.emit([`${this.currentParentFolder}/${this.folderName}`]);
     }
 }

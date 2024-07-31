@@ -10,16 +10,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveTestComponent } from './components/reactive-test/reactive-test.component';
 import { ListService    } from './services/list.service';
 // import { ImageMoveComponent } from './components/feature-components/add-images/image-move/image-move.component';
-import { ImagesFoldersComponent } from  './components/reusables/images-folders/images-folders.component'
+import { ImagesFoldersComponent } from  './components/common/images-folders/images-folders.component'
 import { CreateJsonContentComponent } from './components/optimizations/create-json-content/create-json-content.component';
 import { CompileJsonContentComponent } from './components/feature-components/add-images/compile-json-content/compile-json-content.component';
 import { MultilineComponent } from './components/optimizations/multiline/multiline.component';
 import { ListUpdateComponent } from './components/list-update/list-update.component';
 import { AddImagesComponent } from './components/feature-components/add-images/add-images.component';
 import {CreateListsFoldersComponent } from './components/feature-components/create-lists-folders/create-lists-folders.component';
-import { FolderTreeExpandComponent } from './components/reusables/folder-tree-expand/folder-tree-expand.component';
+import { FolderTreeExpandComponent } from './components/common/folder-tree-expand/folder-tree-expand.component';
 import { SetListFolderComponent } from './components/feature-components/add-images/set-list-folder/set-list-folder.component';
-import { ListsFoldersComponent } from './components/reusables/lists-folders/lists-folders.component'
+import { ListsFoldersComponent } from './components/common/lists-folders/lists-folders.component'
 import { UpdateAlbumEntriesComponent } from './components/feature-components/add-images/update-album-entries/update-album-entries.component';
 // import { CreateNewListFileComponent } from './components/feature-components/create-lists-folders/create-new-list-file/create-new-list-file.component';
 import { AutomationTabsComponent } from './components/feature-components/automation-tabs/automation-tabs.component'

@@ -32,6 +32,11 @@ export class ListService {
     .pipe(catchError(this.handleError));
  
   }
+  createFile(nameAndEntries:string[]):Observable<HttpResponse<any>> {
+    return this.http.post<any>(`${this.webServiceURL}/create-file`,nameAndEntries)
+    .pipe(catchError(this.handleError));
+ 
+  }
   createFolder(folder:string) {
     return this.http.post<any>(`${this.webServiceURL}/create-folder`,folder)
     .pipe(catchError(this.handleError));

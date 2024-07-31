@@ -7,7 +7,7 @@
                 <li *ngFor="let imageFile of imageList">{{imageFile}}</li>
             </ul>
             <br/>
-            {{jsonListingFile}}
+            {{jsonListingFile}}{{imageRoot}}
             <ul  *ngIf="jsonListing != null && jsonListing.length > 0">
                 <li *ngFor="let jj of jsonListing">{{jj}}</li>
             </ul>
@@ -29,14 +29,13 @@
                <!-- <app-image-move (imageVersionsDone)="passImageFolders($event)"></app-image-move>-->
                 <app-images-folders imageTreeMode='createFolder' (imageVersionsDone)="passImageFolders($event)"></app-images-folders>
             </ng-container>
-            <ng-container *ngIf="currentTab=='compile-json'">
+            <ng-container *ngIf="currentTab=='create-list-file-n-entries'">
                 <div  id="compileJSON" [ngStyle]="ComponentDivStyle" >
-                    <app-compile-json-content [listingContent]="jsonListing" *ngIf="imagesMoved==true" (jsonReady)="jsonToUpdate($event)" [imageFileList]="imageList"></app-compile-json-content>
-                    </div>
+                    <app-lists-folders listsFolderMode = 'createFile' (configFileFound)="jsonFileToUpdate($event)"></app-lists-folders>       </div>
                 </ng-container>
                 <ng-container *ngIf="currentTab=='write-to-file'">
                     <div  [ngStyle]="ComponentDivStyle" >
-                        <app-set-list-folder (configFileFound)="jsonFileToUpdate($event)"></app-set-list-folder>
+                      
                         </div>
                 
                 </ng-container>

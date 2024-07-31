@@ -15,6 +15,7 @@ div form {
 }
 input, select, label {
     min-width: 300px;
+    width:90%;
     font-size: larger;
     height:30px;
     margin-bottom: 7px;

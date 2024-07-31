@@ -9,6 +9,7 @@ import { ListService } from '@services/list.service';
 })
 export class CreateListsFoldersComponent implements OnInit {
   imageList:string[] = [] ;
+  imageRoot  ='';
   imagesMoved = true ;
   jsonListingFile =""
   jsonListing:string[] = [] ;
@@ -25,6 +26,7 @@ export class CreateListsFoldersComponent implements OnInit {
   /* END */
   passImageFolders(imageFolders:string[]) {
     this.imageList = imageFolders ;
+    this.imageRoot = imageFolders[0];
     this.imagesMoved = true ;
     console.log(`passImageFolders ${JSON.stringify(imageFolders)}`);
   }
