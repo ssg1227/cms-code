@@ -15,6 +15,19 @@ export class PeopleImageList {
      files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '07-30-2024',
+summaryLabel:  `Turning pts Two World Cups '83 '24`,
+fullFileName: `${this.imageRoot}Prudential06251983-T2006292024-photoedit.jpeg`,
+description: `<ul><li> Turning pts Two World Cups '83 '24 </li><li> The Crucial point of winning the 1983 ODI World cup was Kapil catching Richards </li><li> A Critical point of winning the 2024 T20 World cup was Suryakumar Yadav(Sky) catching Miller </li><li> Both GREAT catches and catches win matches </li><li> photo edited July 11 2024 </li></ul>`,
+iterations: [
+{fullFileName: `${this.imageRoot}Prudential06251983-T2006292024-photoedit.jpeg`, description: `<ul><li> Turning pts Two World Cups '83 '24 </li><li> The Crucial point of winning the 1983 ODI World cup was Kapil catching Richards </li><li> A Critical point of winning the 2024 T20 World cup was Suryakumar Yadav(Sky) catching Miller </li><li> Both GREAT catches and catches win matches </li><li> photo edited July 11 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}Prudential06251983-T2006292024.jpeg`, description: `<ul><li> Turning pts Two World Cups '83 '24 </li><li> The Crucial point of winning the 1983 ODI World cup was Kapil catching Richards </li><li> A Critical point of winning the 2024 T20 World cup was Suryakumar Yadav(Sky) catching Miller </li><li> Both GREAT catches and catches win matches </li><li> July 11 2024 </li></ul>` },
+]
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '07-29-2024',

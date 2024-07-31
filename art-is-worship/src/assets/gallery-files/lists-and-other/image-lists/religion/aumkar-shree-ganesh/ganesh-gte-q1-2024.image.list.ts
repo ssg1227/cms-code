@@ -11,6 +11,18 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `The Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
+            {
+                  canvassMaterial:  'Plain paper',
+                  canvassSize:  'A4',
+                  content:  'black-white',
+                  dateUploaded:  '07-30-2024',
+                  evolution:  `<b>Technical milestone.. testing tabbed interface <br/>hiding/commenting earlier UI<br/></B>`,
+                  evolutionSequence:  4,
+                  evolutionDate:  '07-30-2024',
+                  summaryLabel:  `Ganesh idol unpainted to Ganeshotsav '24`,
+fullFileName: `${this.imageRoot}GanapatiJul3024-Ganeshotsav.jpeg`,
+description: `<ul><li> Ganeshotsav 1st in Sequence </li><li> Glass traced on July 30, planned sequence on Ganesh idol making </li><li> This is the second drawn, even if the first in sequence </li><li> That (will be) under '..-2024-2-ganeshotsav' list </li></ul>`,
+},
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
