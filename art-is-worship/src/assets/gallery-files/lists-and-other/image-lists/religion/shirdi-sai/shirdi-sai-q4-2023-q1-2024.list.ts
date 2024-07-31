@@ -21,6 +21,15 @@ public allImageList:ImageElement[]  =  [
         files: [ 
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '07-30-2024',
+summaryLabel:  `Baba Thu sketch`,
+fullFileName: `${this.imageRoot}BabaMarch28-2024.jpeg`,
+description: `<ul><li> Baba Thu sketch </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  '',
 dateUploaded:  '05-29-2024',
