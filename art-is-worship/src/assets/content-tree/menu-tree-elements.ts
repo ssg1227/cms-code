@@ -242,7 +242,17 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
             {link: '', params:'shree-ganesh-b4-q4-2021', label: 'Shree Ganesh Q1 2024 onward'}
         ],        
-    },    
+    },
+    {
+        parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte7-lte-ganeshotsav-2024", levelIndex:2, isLeafParent:true, roles:['superuser','sanatani'],
+        label: "Shree Ganesh July to Ganeshotsav 2024",
+        description:'Sketches of, and including End july through to Ganeshotsav 2024 (Sept 6,7 start). Featuring new unique sequence concept', 
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
+            {link: '', params:'shree-ganesh-gte7-lte-ganeshotsav-2024', label: 'Shree Ganesh July to Ganeshotsav 2024'}
+        ],        
+    },
     {
         parentKey:"religious-other-deities", key: "devi", levelIndex:2,isLeafParent:true, roles:['superuser','sanatani'],
         label: "Goddesses",
@@ -538,7 +548,21 @@ Also increasing numbers of Swami Samartha sketches`,
         {link: '', params:'people-places', label: 'Famous Personalities'}
     ],
     
-}, {
+},
+{
+    parentKey:"otherbeings-places-events", key: "flora-and-fauna", levelIndex:2,isLeafParent:true, roles:['any'],
+    label: "The Animal and plant kingdom. ",
+    description:`The Animal and plant kingdom. `,
+    roleBasedDescription:`ADD:Also some chosen religious and spirtual themes: NOTS superuser, sanatan,guru'`,
+    
+    emptyMessage: 'Empty Content or Error', breadCrumb:[
+        {link: '/view', params:'top-level', label: 'HOME'},
+        {link: '/view', params:'otherbeings-places-events', label: 'Beings, Places and Themes'},
+        {link: '', params:'flora-and-fauna', label: 'The Animal and plant kingdom. '}
+    ],
+    
+},
+{
     parentKey:"otherbeings-places-events", key: "places-scenes-objects", levelIndex:2,isLeafParent:true, roles:['superuser','living','any'],
     label: "Places, Scenes and Objects",
     description:`Faces, figures sketching started almost at the start of my 'pandemic caused' reconnect with this hobby

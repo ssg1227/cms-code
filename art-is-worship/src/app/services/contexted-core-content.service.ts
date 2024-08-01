@@ -4,6 +4,7 @@ import { GaneshPreQ42021ImageList } from 'src/assets/gallery-files/lists-and-oth
 import { GaneshGTEQ12023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q1-2023.image.list' ;
 import { GaneshGTEQ42021ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q4-2021.image.list' ;
 import { GaneshGTEQ12024ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q1-2024.image.list' ;
+import { GaneshGte7LteGaneshotsav2024List } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte7-lte-ganeshotsav-2024.list';
 import { DeviImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/devi.image.list';
 import { LaxmiVishnuHanumanList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/laxmi-vishnu-hanuman.list';
 import { MahadevImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/mahadev.image.list';
@@ -21,6 +22,7 @@ import { ShirdiSaiQ2Q32023ImageList } from 'src/assets/gallery-files/lists-and-o
 import {ShirdiSaiQ2Q32024ImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q2-q3-2024.list';
 
 import { PeopleImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/people.image.list';
+import { FloraAndFaunaImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/flora-and-fauna.image.list';
 import { PlacesScenesObjectsImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/places-scenes-objects.image.list';
 import { ThemesMisc } from 'src/assets/gallery-files/lists-and-other/image-lists/themes-misc.list';
 import { AnimateToBeOrganized1ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/animate-to-be-organized-1.list';
@@ -64,7 +66,7 @@ export class ContextedCoreContentService {
         contentList.push( { contentFile:new GaneshGTEQ42021ImageList(),contentCategory:'shree-ganesh-gte-q4-2021', roles:['sanatani']}) ;
         contentList.push( { contentFile:new GaneshGTEQ12023ImageList(),contentCategory:'shree-ganesh-gte-q1-2023', roles:['sanatani']}) ;
         contentList.push( { contentFile:new GaneshGTEQ12024ImageList(),contentCategory:'shree-ganesh-gte-q1-2024', roles:['sanatani'],latest:true}) ;
-        
+        contentList.push( { contentFile:new GaneshGte7LteGaneshotsav2024List(),contentCategory:'shree-ganesh-gte7-lte-ganeshotsav-2024', roles:['sanatani'],latest:true}) ;
         contentList.push( { contentFile:new DeviImageList(),contentCategory:'devi', roles:['sanatani'],latest:true}) ;
         contentList.push( { contentFile:new MahadevImageList(),contentCategory:'mahadev', roles:['sanatani'],latest:true}) ;
         contentList.push( { contentFile:new MahadevFamilyImageList(),contentCategory:'mahadev-family', roles:['sanatani'],latest:true}) ;
@@ -86,6 +88,7 @@ export class ContextedCoreContentService {
       }
     }
     contentList.push( { contentFile:new PeopleImageList(),contentCategory:'people-places', roles:['all'],latest:true}) ;
+    contentList.push( { contentFile:new FloraAndFaunaImageList(),contentCategory:'flora-and-fauna', roles:['all'],latest:true}) ;
     contentList.push( { contentFile: new PlacesScenesObjectsImageList(),contentCategory:'places-scenes-objects', roles:['non-living,  non-religious'],latest:true}) ;
     contentList.push( { contentFile: new ThemesMisc(),contentCategory:'themes-misc', roles:['non-living,  non-religious'],latest:true}) ;
 
