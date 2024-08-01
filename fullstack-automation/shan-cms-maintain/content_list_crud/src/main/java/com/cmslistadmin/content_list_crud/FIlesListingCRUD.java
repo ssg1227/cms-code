@@ -49,25 +49,6 @@ import org.springframework.http.MediaType ;
         return  "yes"; //updateImageJSON.processImage(entity);
     }
 
-    @PostMapping( path = "/move-test" , produces = MediaType.APPLICATION_JSON_VALUE)
-    public String  moveToFolderTest(@RequestBody FilesListingJSON moveDetails) {
-        FilesListing moveImage = new FilesListing();
-        /*
-          if (destFileName == "") {
-            destFileName = "/Users/shantanu/Documents/test2/EDunsigned4NarasimhaSaraswatiJan152021.png";// sourceFileName ;
-        }
-        destFileName = "/Users/shantanu/Documents/test2/GuruInBayArea051024.jpeg";// sourceFileName ;
-        
-        File fileToMove = new File("/Users/shantanu/Documents/test1/GuruInBayAreaWithGanesh051024.jpeg"); // sourcePath + "/" + sourceFileName);
-         * 
-         */
-        moveImage.moveFile("/Users/shantanu/Downloads/Sketch-transit/", 
-                        "/Users/shantanu/Documents/test2/", 
-                    "GuruInBayAreaWithGanesh051024.jpeg", 
-                    "GuruInBayAreaWithGanesh051024.jpeg") ;   
-        return  "test forward"; //updateImageJSON.processImage(entity);
-    }
-
     @PostMapping( path = "/move-test-reverse" , produces = MediaType.APPLICATION_JSON_VALUE)
     public String  moveToFolderTesReverse(@RequestBody FilesListingJSON moveDetails) {
         FilesListing moveImage = new FilesListing();
@@ -92,6 +73,7 @@ import org.springframework.http.MediaType ;
     }
     @PostMapping( path = "/create-file" , produces = MediaType.APPLICATION_JSON_VALUE)
     public String CreateFile(@RequestBody String[] fileAndLines) {
+        System.out.println("CRESTE FILE");
         FilesListing writeFile = new FilesListing();
         writeFile.createFile(fileAndLines[0]) ;   
 

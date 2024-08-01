@@ -104,7 +104,7 @@ public class FilesListing {
     }
     public boolean createFile(String filePath){
         File newFile = new File(filePath);
-        System.out.println(filePath);
+        System.out.printf(" Creating %s\n", filePath);
         boolean created = true ;
         // Create the directory
         if (newFile.exists()) 
