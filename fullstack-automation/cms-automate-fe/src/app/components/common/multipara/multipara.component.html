@@ -1,0 +1,24 @@
+<div style="overflow-y: auto;">
+    <!-- 
+<textarea type="text" readonly [ngModel]="entityName">
+    -->
+<textarea [(ngModel)]="textLines[0]" id="textarea1"></textarea><br/>
+<textarea [(ngModel)]="textLines[0]" id="textarea2"></textarea><br/>
+
+<textarea [(ngModel)]="textLines[2]" id="textarea3"></textarea><br/>
+<textarea [(ngModel)]="textLines[3]" id="textarea4"></textarea><br/>
+<textarea [(ngModel)]="textLines[4]" id="textarea5"></textarea><br/>
+<textarea [(ngModel)]="textLines[5]" id="textarea6"></textarea><br/>
+<textarea [(ngModel)]="textLines[6]" id="textarea7"></textarea><br/>
+<textarea [(ngModel)]="textLines[7]" id="textarea7"></textarea><br/>
+
+<!-- dynamic doesnt seem to work with ngModel, so hard code as above..
+    will debug <div  *ngFor="let textLine of textLines; let i = index">
+<textarea 
+            type="text" 
+            [id]="getId(i)"> <br/>
+</div>
+<button (click)="addLine()">Add</button>
+-->
+<button (click)="completed()">Done</button>
+</div>

@@ -96,10 +96,13 @@ export class LookupValues {
     `imageRoot = <imageroot>;`,
     `public allImageList:ImageElement[]  =  [`,
     `  {  
-            folder:<folderName>
-            theme:'<theme>
+            folder:'<folderName>',
+            theme:'<theme>',
             themeSummary: '',`,
             `files: [`,
           `  ]}]}`
         ]
+    contextedCoreText = [
+      `import {<listClass> } from '<listFileDir>';`,
+      `contentList.push( { contentFile:new <listClass>(),contentCategory:'<listkey>', roles:[<roles>]}) ;`]
 };

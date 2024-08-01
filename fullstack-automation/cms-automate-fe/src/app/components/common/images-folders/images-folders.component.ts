@@ -20,6 +20,9 @@ export class ImagesFoldersComponent implements OnInit {
   currentParentFolder = this.lookups.rootImageDestinationFolder ;
   webAppRelativeFolderRoot = this.WebAppRoot;
   currentWebAppParentFolder =  this.WebAppRoot;
+  contextedTitle = 'Moving the images from dump to loc:';
+ //   this.imageTreeMode = 'moveFiles'? 'Moving the images from dump to loc:':
+ //       'Create Image Folder';
   level1Files = ["",""] ;
   level1Select = "";
   level1WebAppSelect = "";
@@ -47,6 +50,9 @@ export class ImagesFoldersComponent implements OnInit {
   }
   ngOnInit(): void {
     this.getImageFolders(this.rootImageDestinationFolder, 1) ;
+    this.contextedTitle =  
+       this.imageTreeMode === 'moveFiles'? 'Moving the images from dump to loc:':
+         'Create Image Folder';
   }
   getImageSubFolder(event:any, level:number){
     switch(level) {

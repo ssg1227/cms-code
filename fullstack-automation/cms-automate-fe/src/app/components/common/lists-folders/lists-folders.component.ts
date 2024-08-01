@@ -88,6 +88,14 @@ export class ListsFoldersComponent implements OnInit {
     this.configFileFound.emit(configFileFolderAndKeys);
   }
    createListFile(textLines:string[]) {
-    
+    textLines.unshift(`${this.currentParentFolder}/${this.listFileName}`);
+    alert(JSON.stringify(textLines));
+    this.listService.createFile(textLines).subscribe(
+      (response:any)=> { 
+        console.log('success') ;
+      },
+      (err:any)=>console.log(`ERROR ${err}`),
+      () => console.log('complete'),
+    );
    }
  }

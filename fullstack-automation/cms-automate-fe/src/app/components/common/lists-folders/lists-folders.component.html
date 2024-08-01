@@ -32,7 +32,7 @@
                         <option *ngFor="let level4File of level4Files" >{{level4File}}</option>
                     </select>
                 </div>
-    {{currentParentFolder}}
+                Current parent path  {{currentParentFolder}}
     
     <button (click)="verifyConfigLocation()" *ngIf="listsFolderMode == 'writeToFile'">Update List File </button>
     <section *ngIf="listsFolderMode == 'createFile'"  >

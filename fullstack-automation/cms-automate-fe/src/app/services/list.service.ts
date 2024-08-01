@@ -33,6 +33,7 @@ export class ListService {
  
   }
   createFile(nameAndEntries:string[]):Observable<HttpResponse<any>> {
+    alert('servirs');
     return this.http.post<any>(`${this.webServiceURL}/create-file`,nameAndEntries)
     .pipe(catchError(this.handleError));
  

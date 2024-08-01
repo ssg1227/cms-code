@@ -13,7 +13,7 @@ import { ListService    } from './services/list.service';
 import { ImagesFoldersComponent } from  './components/common/images-folders/images-folders.component'
 import { CreateJsonContentComponent } from './components/optimizations/create-json-content/create-json-content.component';
 import { CompileJsonContentComponent } from './components/feature-components/add-images/compile-json-content/compile-json-content.component';
-import { MultilineComponent } from './components/optimizations/multiline/multiline.component';
+import { MultilineComponent } from './components/common/multiline/multiline.component';
 import { ListUpdateComponent } from './components/list-update/list-update.component';
 import { AddImagesComponent } from './components/feature-components/add-images/add-images.component';
 import {CreateListsFoldersComponent } from './components/feature-components/create-lists-folders/create-lists-folders.component';
@@ -22,7 +22,8 @@ import { SetListFolderComponent } from './components/feature-components/add-imag
 import { ListsFoldersComponent } from './components/common/lists-folders/lists-folders.component'
 import { UpdateAlbumEntriesComponent } from './components/feature-components/add-images/update-album-entries/update-album-entries.component';
 // import { CreateNewListFileComponent } from './components/feature-components/create-lists-folders/create-new-list-file/create-new-list-file.component';
-import { AutomationTabsComponent } from './components/feature-components/automation-tabs/automation-tabs.component'
+import { AutomationTabsComponent } from './components/feature-components/automation-tabs/automation-tabs.component';
+import { MultiparaComponent } from './components/common/multipara/multipara.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +43,7 @@ import { AutomationTabsComponent } from './components/feature-components/automat
     UpdateAlbumEntriesComponent,
     // CreateNewListFileComponent,
     AutomationTabsComponent,
+    MultiparaComponent,
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@
         <div  style="overflow-y: scroll;background-color: aqua;">
             <button [disabled]="isPostDataReady()" (click)="postJSONUpdate()">Submit</button>
             <button (click)="reset()">RESET</button>
+            image folder {{imageRoot}}
             <ul *ngIf="imageList != null && imageList.length > 0">
                 <li *ngFor="let imageFile of imageList">{{imageFile}}</li>
             </ul>
@@ -36,8 +37,8 @@
                 <ng-container *ngIf="currentTab=='write-to-file'">
                     <div  [ngStyle]="ComponentDivStyle" >
                       
-                        </div>
-                
+                    </div>
+            
                 </ng-container>
           
           </div>
