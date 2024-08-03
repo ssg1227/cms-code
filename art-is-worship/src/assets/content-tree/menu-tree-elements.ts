@@ -245,12 +245,12 @@ export const MenuTreeElements:TreeNodeElement[] = [
     },
     {
         parentKey:"religious-shree-ganesh", key: "shree-ganesh-gte7-lte-ganeshotsav-2024", levelIndex:2, isLeafParent:true, roles:['superuser','sanatani'],
-        label: "Shree Ganesh July to Ganeshotsav 2024",
+        label: "Shree Ganesh End July to Ganeshotsav 2024",
         description:'Sketches of, and including End july through to Ganeshotsav 2024 (Sept 6,7 start). Featuring new unique sequence concept', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'religious-shree-ganesh', label: 'Shree Ganesh'},
-            {link: '', params:'shree-ganesh-gte7-lte-ganeshotsav-2024', label: 'Shree Ganesh July to Ganeshotsav 2024'}
+            {link: '', params:'shree-ganesh-gte7-lte-ganeshotsav-2024', label: 'Shree Ganesh End July to Ganeshotsav 2024'}
         ],        
     },
     {

@@ -13,6 +13,20 @@ export class MahadevImageList {
          ``,
          files: [
 {
+canvassMaterial:  'other',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '08-02-2024',
+summaryLabel:  `Trayodashi Thursday Aug 1 24`,
+fullFileName: `${this.imageRoot}ShamboSaiAug1-2024-final.jpeg`,
+description: `<ul><li> Trayodashi Thursday Aug 1 24 </li><li> Combination of recently completed Mahadev-Shivling and Baba Yellow Hibiscus sketches </li><li> Soft copy base being the Shankar one, I resize the Baba image  and copy pasted on the former </li><li> Took print out and touched up for this one  </li><li> Aug 1 2024 </li></ul>`,
+iterations: [
+{fullFileName: `${this.imageRoot}ShamboSaiAug1-2024-final.jpeg`, description: `<ul><li> Trayodashi Thursday Aug 1 24 </li><li> Combination of recently completed Mahadev-Shivling and Baba Yellow Hibiscus sketches </li><li> Soft copy base being the Shankar one, I resize the Baba image  and copy pasted on the former </li><li> Took print out and touched up for this one  </li><li> Aug 1 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}ShamboSaiAug1-2024-penult.jpeg`, description: `<ul><li> Trayodashi Thursday Aug 1 24 </li><li> Combination of recently completed Mahadev-Shivling and Baba Yellow Hibiscus sketches </li><li> Soft copy base being the Shankar one, I resize the Baba image  and copy pasted on the former </li><li> Re-pasted slightly larger (less small re)size Baba  </li><li>  Took print out for touching up.  Aug 1 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}ShamboSaiAug1-2024-1.jpeg`, description: `<ul><li> Trayodashi Thursday Aug 1 24 </li><li> Combination of recently completed Mahadev-Shivling and Baba Yellow Hibiscus sketches </li><li> Soft copy base being the Shankar one, I resize the Baba image  and copy pasted on the former </li></ul>` },
+]
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',

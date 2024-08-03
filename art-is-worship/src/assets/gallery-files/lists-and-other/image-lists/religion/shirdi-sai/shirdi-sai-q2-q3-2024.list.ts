@@ -18,7 +18,21 @@ public allImageList:ImageElement[]  =  [
         themeSummary: 
         `<p> <em><strong>Soo many sketches of Shirdi Sai!!!</strong> that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha</em><br/>
         &nbsp;&nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
-        files: [  
+        files: [ {
+            canvassMaterial:  'other',
+            canvassSize:  '',
+            content:  'color-pencil',
+            dateUploaded:  '08-02-2024',
+            summaryLabel:  `Trayodashi Thursday Aug 1 24`,
+            duplicate:true,
+            fullFileName: `assets/gallery-files/images/religion/mahadev/ShamboSaiAug1-2024-final.jpeg`,
+            description: `<ul><li> Trayodashi Thursday Aug 1 24 </li><li> Combination of recently completed Mahadev-Shivling and Baba Yellow Hibiscus sketches </li><li> Soft copy base being the Shankar one, I resize the Baba image  and copy pasted on the former </li><li> Took print out and touched up for this one  </li><li> Aug 1 2024 </li></ul>`,
+            iterations: [
+            {fullFileName: `assets/gallery-files/images/religion/mahadev/ShamboSaiAug1-2024-final.jpeg`, description: `<ul><li> Trayodashi Thursday Aug 1 24 </li><li> Combination of recently completed Mahadev-Shivling and Baba Yellow Hibiscus sketches </li><li> Soft copy base being the Shankar one, I resize the Baba image  and copy pasted on the former </li><li> Took print out and touched up for this one  </li><li> Aug 1 2024 </li></ul>` },
+            {fullFileName: `assets/gallery-files/images/religion/mahadev/ShamboSaiAug1-2024-penult.jpeg`, description: `<ul><li> Trayodashi Thursday Aug 1 24 </li><li> Combination of recently completed Mahadev-Shivling and Baba Yellow Hibiscus sketches </li><li> Soft copy base being the Shankar one, I resize the Baba image  and copy pasted on the former </li><li> Re-pasted slightly larger (less small re)size Baba  </li><li>  Took print out for touching up.  Aug 1 2024 </li></ul>` },
+            {fullFileName: `assets/gallery-files/images/religion/mahadev/ShamboSaiAug1-2024-1.jpeg`, description: `<ul><li> Trayodashi Thursday Aug 1 24 </li><li> Combination of recently completed Mahadev-Shivling and Baba Yellow Hibiscus sketches </li><li> Soft copy base being the Shankar one, I resize the Baba image  and copy pasted on the former </li></ul>` },
+            ]
+            } ,
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
