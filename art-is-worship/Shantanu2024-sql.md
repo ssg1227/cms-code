@@ -39,7 +39,7 @@ An experienced Software Engineer with a demonstrated history of working in the C
 - Delivered customer-facing solutions that enhanced user experience and streamlined COVID testing processes, ensuring high performance and scalability.
 - Created and managed MS SQL Server views, tables, SPs, triggers, and briefly worked with SQL Server Integration Services (SSIS).
 - Part of the Program Management Team: Collaborated with stakeholders to scope projects, define objectives and deliverables, and manage milestones.
---
+-  
 -    **CareFirst BlueCross/BlueShield**  (March  – End 2021): Portal Development and Project Management, Lead roles.
 - Led the offshore team (Chennai) and collaborated with peers and stakeholders on tool development.
 - Development of portals full stack using Angular 4-6 and 11, Java Spring Boot backend. Testing API using Postman.

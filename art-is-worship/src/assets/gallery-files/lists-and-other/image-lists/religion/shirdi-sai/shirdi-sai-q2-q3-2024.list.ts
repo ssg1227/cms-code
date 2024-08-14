@@ -18,7 +18,21 @@ public allImageList:ImageElement[]  =  [
         themeSummary: 
         `<p> <em><strong>Soo many sketches of Shirdi Sai!!!</strong> that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha</em><br/>
         &nbsp;&nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
-        files: [ {
+        files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  '08-13-2024',
+summaryLabel:  `Sai with Shyamkarna`,
+fullFileName: `${this.imageRoot}SaiShyamkarnaAug-8-2024-scan.jpeg`,
+description: `<ul><li> Sai with Shyamkarna </li><li> Scan Aug 8 2024 </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}SaiShyamkarnaAug-8-2024-scan.jpeg`, description: `<ul><li> Sai with Shyamkarna </li><li> Scan Aug 8 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}SaiShyamkarnaAug-8-2024.jpeg`, description: `<ul><li> Sai with Shyamkarna </li><li> Photo Aug 8 2024 </li></ul>` },]
+},{
             canvassMaterial:  'other',
             canvassSize:  '',
             content:  'color-pencil',
