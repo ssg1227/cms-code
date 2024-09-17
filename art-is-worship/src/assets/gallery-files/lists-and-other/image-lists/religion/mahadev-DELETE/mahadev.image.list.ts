@@ -17,6 +17,15 @@ export class MahadevImageList {
          themeSummary:
          ``,
          files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '09-17-2024',
+summaryLabel:  `Last Monday of Shravan 2024`,
+fullFileName: `${this.imageRoot}Mahadev-pithori-amavaya-2024-09-02-mumbai.jpeg`,
+description: `<ul><li> Last Monday of Shravan 2024 </li></ul>`,
+},
           {
             canvassSize:  'A4',
             content:  'black-white',

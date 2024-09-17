@@ -13,6 +13,15 @@ export class MahadevImageList {
          ``,
          files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '09-17-2024',
+summaryLabel:  `Pithori Amavasya Sept 2 24 sketch`,
+fullFileName: `${this.imageRoot}Mahadev-pithori-amavaya-2024-09-02-mumbai.jpeg`,
+description: `<ul><li> Pithori Amavasya Sept 2 24 sketch </li></ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  '',
 content:  'color-pencil',

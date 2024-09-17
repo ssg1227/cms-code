@@ -21,6 +21,18 @@ public allImageList:ImageElement[]  =  [
         files: [ 
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '09-17-2024',
+evolution:  `A first, in transit, sketch, on the ground, in the air over 30,000 ft`,
+evolutionSequence:  4,
+evolutionDate:  '09-17-2024',
+summaryLabel:  `Baba sketch SFO Mumbai 08/28 - 29 `,
+fullFileName: `${this.imageRoot}BabaAug28-29-2024-SFO-MUmbai.jpeg`,
+description: `<ul><li> Baba sketch SFO Mumbai 08/28 - 29  </li><li> Started the sketch waiting for my Emirates flight to Dubai (en route to Mumbai) </li><li> Sitting in the departure lounge of SF airport </li><li> Showing the polar route of the A380 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'black-white',
 dateUploaded:  '08-13-2024',

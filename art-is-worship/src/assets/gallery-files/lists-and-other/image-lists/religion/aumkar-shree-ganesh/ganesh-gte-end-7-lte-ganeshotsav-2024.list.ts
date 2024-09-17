@@ -15,6 +15,29 @@ public allImageList:ImageElement[]  =  [
             theme:'Shree Ganesh',
             themeSummary: '',
 files: [
+
+{
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'color-pencil black-white',
+dateUploaded:  '09-17-2024',
+summaryLabel:  `Complete Ganesh idol sequence as on Sept17-24`,
+fullFileName: `${this.imageRoot}Ganeshotsav2024-all-Sequence091724.jpeg`,
+description: `<ul><li> Complete Ganesh idol sequence as on Sept17-24 </li><li> All my Ganeshotsav sketches - were supposed to be two more in sequence.. but time didnt permit as on Sept 17 2024 </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '09-17-2024',
+summaryLabel:  `Final Sarvajanik idol Sept 13 2024`,
+fullFileName: `${this.imageRoot}Sarvajanik-final-2024-09-13.jpeg`,
+description: `<ul><li> Final Sarvajanik idol Sept 13 2024 </li><li> Across Anant Chaturdashi - the final. complete - sketch of a Sarvajanik Ganesh idol (atypical these days, at least in Mumbai, where there's more theme based idols with almost flat stomachs, than the traditional LAMBODAR). Actual Pooja murthy in the foreground </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},
 {
 canvassMaterial:  'other',
 canvassSize:  'soft',
