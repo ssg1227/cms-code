@@ -21,6 +21,16 @@ public allImageList:ImageElement[]  =  [
         files: [ 
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '09-18-2024',
+duplicate:true,
+summaryLabel:  `Sketch in Mumbai Sept 4 2024`,
+fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-end-7-lte-ganeshotsav-2024/Baba-Ashtavinayak-2024-09-05-Mumbai.jpeg`,
+description: `<ul><li> Sketch in Mumbai Sept 4 2024 </li><li> Baba with Ashtavinayak </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '09-17-2024',

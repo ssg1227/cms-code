@@ -15,6 +15,15 @@ public allImageList:ImageElement[]  =  [
             theme:'Shree Ganesh',
             themeSummary: '',
 files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  '09-18-2024',
+summaryLabel:  `Sketch in Mumbai Sept 5 2024`,
+fullFileName: `${this.imageRoot}Baba-Ashtavinayak-2024-09-05-Mumbai.jpeg`,
+description: `<ul><li> Sketch in Mumbai Sept 5 2024 </li><li>  Baba with Ashtavinayak </li></ul>`,
+},
 
 {
 canvassMaterial:  'other',
