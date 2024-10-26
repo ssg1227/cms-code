@@ -18,6 +18,15 @@ files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '10-15-2024',
+summaryLabel:  `Sketched in transit - Sept 12 2024`,
+fullFileName: `${this.imageRoot}Baba-2024-09-12-Mum-SFO.jpeg`,
+description: `<ul><li> Sketched in transit - Sept 12 2024 </li><li> Baba and Shree Ganesh sketched across Mumbai -  Dubai - SFO </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  '',
 dateUploaded:  '09-18-2024',
 summaryLabel:  `Sketch in Mumbai Sept 5 2024`,

@@ -21,6 +21,37 @@ public allImageList:ImageElement[]  =  [
         files: [ 
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '10-26-2024',
+summaryLabel:  `Sept 19 2024`,
+fullFileName: `${this.imageRoot}Sai-Sept19-2024.jpeg`,
+description: `<ul><li> Sept 19 </li></ul>`,
+},
+{
+canvassMaterial:  'Watercolor paper',
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  '10-26-2024',
+summaryLabel:  `Shirdi Sept 26-2024`,
+fullFileName: `${this.imageRoot}Sai-Sept26-2024-1-photo.jpeg`,
+description: `<ul><li> Shirdi Sept 26-2024 </li></ul>`,
+iterations: [
+{fullFileName: `${this.imageRoot}Sai-Sept26-2024-1-photo.jpeg`, description: `<ul><li> Shirdi Sept 26-2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}Sai-Sept26-2024-2-scan.jpeg`, description: `<ul><li> Shirdi Sept 26-2024 </li></ul>` },
+]
+},
+            {
+                canvassMaterial:  'Plain paper',
+                canvassSize:  'A4',
+                content:  'black-white',
+                dateUploaded:  '10-15-2024',
+                duplicate:true,
+                summaryLabel:  `Sketched in transit - Sept 12 2024`,
+                fullFileName: `assets/gallery-files/images//religion/aumkar-shree-ganesh/gte-end-7-lte-ganeshotsav-2024/Baba-2024-09-12-Mum-SFO.jpeg`,
+                description: `<ul><li> Sketched in transit - Sept 12 2024 </li><li> Baba and Shree Ganesh sketched across Mumbai -  Dubai - SFO </li></ul>`,
+                },{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'color-pencil',
 dateUploaded:  '09-18-2024',

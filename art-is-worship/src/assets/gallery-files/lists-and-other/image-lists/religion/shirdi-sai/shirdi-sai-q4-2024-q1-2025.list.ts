@@ -1,0 +1,41 @@
+import {  ImageElement } from '@settings-and-models/image-detail'
+enum PicsIndex  {
+        aumkarGaneshSept2020Final,
+        AumGaShivParKashiVishwCTLightNov172020Final,
+        unsignedShivVeena12272020,
+        ShreeSiddhivinayakQ42020,
+        DeviMaaMay13182021,
+        MixGenPlaneSept2020,
+    };
+export class ShirdiSaiQ42024Q12025ImageList {
+imageRoot = `assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q4-2024-q1-2025/`;
+
+public allImageList:ImageElement[]  =  [
+  {  
+    folder:'shirdi-sai-q4-2024-q1-2025',
+    theme:'Shirdi Sai Sketches Q4 2024 Q1 2025',
+            themeSummary: '',
+files: [
+{
+canvassMaterial:  'Watercolor paper',
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  '10-26-2024',
+summaryLabel:  `Oct 10 2024`,
+fullFileName: `${this.imageRoot}Sai-Oct10-2024.jpeg`,
+description: `<ul><li> Oct 10 2024 </li></ul>`,
+},
+{
+canvassMaterial:  'Watercolor paper',
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  '10-26-2024',
+summaryLabel:  `Sai using Water color`,
+fullFileName: `${this.imageRoot}Sai-Oct3-2024-1.jpeg`,
+description: `<ul><li> Sai using Water color </li></ul>`,
+iterations: [
+{fullFileName: `${this.imageRoot}Sai-Oct3-2024-1.jpeg`, description: `<ul><li> Sai using Water color </li></ul>` },
+{fullFileName: `${this.imageRoot}Sai-Oct3-2024-2.jpeg`, description: `<ul><li> Sai using Water color </li></ul>` },
+]
+},
+  ]}]}

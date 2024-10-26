@@ -20,7 +20,7 @@ import { ShirdiSaiQ2Q32022ImageList } from 'src/assets/gallery-files/lists-and-o
 import { ShirdiSaiQ42022Q12023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q4-2022-q1-2023.list';
 import { ShirdiSaiQ2Q32023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q2-q3-2023.list';
 import {ShirdiSaiQ2Q32024ImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q2-q3-2024.list';
-
+import { ShirdiSaiQ42024Q12025ImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q4-2024-q1-2025.list';
 import { PeopleImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/people.image.list';
 import { FloraAndFaunaImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/flora-and-fauna.image.list';
 import { PlacesScenesObjectsImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/places-scenes-objects.image.list';
@@ -85,6 +85,7 @@ export class ContextedCoreContentService {
         contentList.push( { contentFile:new ShirdiSaiQ42022Q12023ImageList(),contentCategory:'shirdi-sai-q4-2022-q1-2023', roles:['guru']}) ;
         contentList.push( { contentFile:new ShirdiSaiQ2Q32023ImageList(),contentCategory:'shirdi-sai-q2-q3-2023', roles:['guru']}) ;
         contentList.push( { contentFile:new ShirdiSaiQ2Q32024ImageList(),contentCategory:'shirdi-sai-q2-q3-2024', roles:['guru']}) ;
+        contentList.push( { contentFile:new ShirdiSaiQ42024Q12025ImageList(),contentCategory:'shirdi-sai-q4-2024-q1-2025', roles:['guru']}) ;
       }
     }
     contentList.push( { contentFile:new PeopleImageList(),contentCategory:'people-places', roles:['all'],latest:true}) ;
