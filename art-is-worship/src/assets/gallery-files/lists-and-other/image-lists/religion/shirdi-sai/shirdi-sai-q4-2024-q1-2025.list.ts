@@ -17,6 +17,29 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '10-26-2024',
+summaryLabel:  `Pre-diwali Special Oct 24 2024`,
+fullFileName: `${this.imageRoot}Sai-making-kandeel-diwali-oct24-2024.jpeg`,
+description: `<ul><li> Pre-diwali Special Oct 24 2024 </li><li> Showing Baba making the traditional Akash Kandeel </li></ul>`,
+},
+{
+canvassMaterial:  'Watercolor paper',
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  '10-26-2024',
+summaryLabel:  `Oct 17 2024 for Kojagiri Poornima (Oct 16) Special`,
+fullFileName: `${this.imageRoot}Sai-Oct17-2024-1.jpeg`,
+description: `<ul><li> Oct 17 2024 for Kojagiri Poornima (Oct 16) Special </li></ul>`,
+iterations: [
+{fullFileName: `${this.imageRoot}Sai-Oct17-2024-1.jpeg`, description: `<ul><li> Oct 17 2024 for Kojagiri Poornima (Oct 16) Special </li></ul>` },
+{fullFileName: `${this.imageRoot}Sai-Oct17-2024-2.jpeg`, description: `<ul><li> Oct 17 2024 for Kojagiri Poornima (Oct 16) Special </li></ul>` },
+{fullFileName: `${this.imageRoot}Sai-Oct17-2024-3.jpeg`, description: `<ul><li> Oct 17 2024 for Kojagiri Poornima (Oct 16) Special </li></ul>` },
+]
+},
+{
 canvassMaterial:  'Watercolor paper',
 canvassSize:  'A4',
 content:  'watercolor-pencil',
