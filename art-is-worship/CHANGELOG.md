@@ -1,5 +1,5 @@
 
-# LOG OF CHANGES April 28 #
+# LOG OF CHANGES RECORDED W.E.F. April 28 #
 "CMS Picture Gallery" by Shantanu Gadkari
 ### TODOs
 - revisit logic and try to debug/optimize isLeafParent/ query params to identify leaf page versus branch
@@ -8,17 +8,12 @@
 - in memory - caching, avoiding time outs
 - email form 
 - put hard coded paths behind variables, and find right place to keep these variables (e.g. global version of imageRoot)
-### Practices
-- Maintaining this log
-- console.log should try to keep reference - classname method name
-### June 1 - 8
-- June 5.. Option of going to 'latest sketches' specific list instead of top root page implemented
-- Authentication piece ETA JUNE 3 AM 
-- Scrub Data and share on Saayam ETA JUNE 7 AM
+- Authentication more granularity and drill down specs
+- Scrub Data 
 - Test singleton persistence to ultimately target new user registration. ETA June 5-6 AM
   - POC. Create a user, store in auth.service 
   - Do not restart server, close browser, logout, do whatever
-- Based on above:ETA June 7 AM
+- User Registration
   - create user registration form (password, cookies, etc later). 
   - as admin, copy paste into a users object (auth service)
 - Performance:
@@ -26,8 +21,23 @@
   - Split - keep a max 15 page limit, generate menus dynamically ETA JUNE 7
   - Pre-load special lists (if 15 page limit doesnt work for mobile displays)
   - dynamic load on demand
+### Practices
+- Maintaining this log
+- console.log should try to keep reference - classname method name
+### 2024
+#### To last week Oct 2024
+- **UI upgrades**
+- **Slide show implemented with pop up**
+- **Automated creation of new category - folder for images and list file** 
+- **At 459 images for all categories (Oct 27)** 
+- Complete automation of above - classname, keyword, inserting into menutree ts file, etc
+- Automate duplicate entries in list file
+#### June 1 - 8
+- **June 5.. Option of going to 'latest sketches' specific list instead of top root page implemented**
+- **Authentication piece mid level** 
 
-### May 27-31
+
+#### May 27-31
 - Prev ('<<<'') Next('>>>') buttons on expanded modal
 - Fixed header styling changes
 - **Thumbnail label and tooltip**
@@ -47,14 +57,14 @@
 - Compile Summary text to place below below thumnbnails and/or tooltip (which is showing html tagged description)
 - **RESOLVED - Total based on sketch (Object) not jpegs uploades** Check counts - it should be total counts of file JSON objects across lists (not jpeg, because that pulls in iterations as well; duplicate logic is handled)
 - Scrub data, replace with neutral content for public share
-###  Log May 22 - 26
+#### Log May 22 - 26
 - (trivial but) collaborative user added to the Git account and development continued on my original Macbook air
 - **Automated full stack image loader and list updating programs updated and being used to upload images and update image lists**
   - Angular form based app as front end
   - Java Spring boot app to update 
   - this is file handling - moving files (images from download folder to assets/... in the app) and inserting text in list files
   - **--Still some logic changes required-- but.. WORKING**
-### Log May 17-19
+#### Log May 17-19
 - **May 24** 
   - Getting automated upload of images and lists update to work - full stack using angular, java spring boot
   - Added a new list - steam (IR locomotives)
@@ -71,7 +81,7 @@
   - Not showstopper, but Menus having latest uploaded highlighted
   - Nice to have tooltip on thumbnails without html tags
   - Data scrubbed github repo
-### Log May 15-16
+####Log May 15-16
 - **--MAY16 2024 7:00 PM PST functionally complete--** 
 - *SCRAMBLE* to completion
    - AUTHENTICATION *IMPLEMENTED*
@@ -90,29 +100,29 @@
    - Add one Ganesh and Guru atleast (and get time wise latest uploads functional)
   - Styling - frames of images - black and white, combo, water colors
 - roles: list of strings - 
-### Log May 13 - 14
+#### Log May 13 - 14
 - ** Styling tweak ** Black and white sketches have a different border and background (However sketch specs need to be givenl many are missing)
 - LOGIC IMPLEMENTED Special lists and summary numbers  except for latest uploads timeline
 - latest uploads - new logic - two categories - 60 days or less, latest per theme
 - Responsive styling
-### Log May 10 - 12
+#### Log May 10 - 12
 - ACHIEVED images loading at leaf level for non compiled themes after Merging old code (for now).
 - INITIAL publish (art-is-worship; previous backed up art-worship-2023)
 - ALL relgious themes, except common user compilation, uploaded
-### Log May 7 - 9 2024
+#### Log May 7 - 9 2024
 - Base for image loading established.
 - Population of (menu) tree node wip
 - Navigation implementation direction narrowed down.
 - It is now built over the old (menu-tree) logic, using a tree, JSON is a flattened list with key, parent key and leaf parent indicator (true/false)
 - Breadcrumbs currently hard coded as a list with each node
 - To stitch the image viewing with this logic
-### Log May 3 2024
+#### Log May 3 2024
 - Page navigation based on tree implemented for node (branch elements)
 - NodeCollection interface introduced. JSON single object with list of TreeNodes - parent key is common - so extracted out of list
 - UI card layout introduced with initial set of data - top level and 1 level down
 - Routing and breadcrumbs added
 - BreadCrumb Interface list info is currently hard coded into the node collection JSON
-### Log: May 1 - 3 2024
+#### Log: May 1 - 3 2024
 - Top Level list *ngFor added to ImageViewer
 - app-card from old code merged for card based
 - displaying blank cards as per the list
@@ -120,14 +130,14 @@
 - Start of content json refactor  JSON file tree-detail.ts
 - Interface TreeNode, has key, label, etc. for child nodes parent-key maps to key of a parent element. isLeafParent: true element will map to the JSON containing the images.
 - JSONs are lists of TreeNode Elements. 
-### Log: April 30 2024 (1)
+#### Log: April 30 2024 (1)
 - A **big one**: implementing the tree based navigation on themes, categories, picture lists
   - New approach using recursion 
   - New JSON structure 
-### Log: April 29 2024 (2)
+#### Log: April 29 2024 (2)
 - Login Mechanism, introducing the content pages
 - New logic for tree based drill down
-### Log: April 29 2024 (1)
+#### Log: April 29 2024 (1)
 - Landing/Login + Summary page styling 
 - Screen composition to be **Master Detail** - about 10-20% of the top is the summary; the rest is detail (DESIGN EXTRACT)
   - Login + Summary: Title and login form on top. Summary below
@@ -136,13 +146,13 @@
 - ***Completion of combining login page  summary write ups***
   - Starting consistent look and structure as above. Application title on left edge of 'Master' div(DESIGN EXTRACT) 
   - Add static text JSON for website title and summary (under 'assets/common-config')
-### Log: April 28 2024 (2)
+#### Log: April 28 2024 (2)
 - Creation of the frame. landing-page.component as the root
 - Creation of login page - login-landing.component *(Login mechanism - Login page and summary write up will be one component  unlike previous)*
 - App.component load landing-page.component as the ancestral component containing the login-landing or menu => picture list tree
 - Config, constant text like the summary under assets/config, unlike previous.
 - However, everything will be JSON based (thoughts of moving to noSQL DB, in the future, maybe?)
-## Initial Log: April 28 2024 (1)
+### Initial Log: April 28 2024 (1)
 - A place to host the *hundreds* of drawings of mine, drawn from Q3 2020 onwards
 - With my knowledge of JavaScript/Angular and hosting on Google Firebase, the original website is 
 [Art is Worship] https://art-is-worship.web.app/ 
