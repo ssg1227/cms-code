@@ -715,5 +715,16 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '/view', params:'machines-others', label: 'Other Machines'},
             {link: '', params:'planes-ships-cars-2', label: 'Planes, ships and cars(2)'}
         ],
-    },
+    },  {
+        parentKey:"machines-others", key: "special-aircraft-series", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
+        label: "Special Aircraft Types",
+        description:`Special Aircraft in different liveries and formats - A380, 747 and others`,
+        
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'transport-and-machines', label: 'Transport And Machines'},
+            {link: '/view', params:'machines-others', label: 'Other Machines'},
+            {link: '', params:'special-aircraft-series', label: 'Special Aircraft Types'}
+        ],
+    }
 ]
