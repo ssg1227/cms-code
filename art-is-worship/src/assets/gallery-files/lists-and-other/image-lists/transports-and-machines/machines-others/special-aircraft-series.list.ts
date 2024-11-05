@@ -15,4 +15,50 @@ public allImageList:ImageElement[]  =  [
             theme:'Themed - Special Aircraft in different liveries and formats - A380, 747 and others',
             themeSummary: '',
 files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '11-05-2024',
+duplicate:  'false',
+summaryLabel:  `A380 series. The inspiration. Emirates Oct 2024`,
+fullFileName: `${this.imageRoot}A380-EmiratesI-1-Oct04-2024.jpeg`,
+description: `<ul><li> A380 series. The inspiration. Emirates Oct 2024 </li><li> Drawn from a photo snapped on flight security video </li><li> The original inspiration of the 380 series </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}A380-EmiratesI-1-Oct04-2024.jpeg`, description: `<ul><li> A380 series. The inspiration. Emirates Oct 2024 </li><li> Drawn from a photo snapped on flight security video </li><li> The original inspiration of the 380 series </li></ul>` },
+{fullFileName: `${this.imageRoot}A380-EmiratesI-2-Oct04-2024.jpeg`, description: `<ul><li> A380 series. The inspiration. Emirates Oct 2024 </li><li> Drawn from a photo snapped on flight security video </li><li> The original inspiration of the 380 series </li></ul>` },
+]
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '11-05-2024',
+duplicate:  'false',
+evolution:  `rgererge`,
+evolutionSequence:  4,
+evolutionDate:  '11-05-2024',
+summaryLabel:  `A380 series Sept 2024 If Air India had one!!`,
+fullFileName: `${this.imageRoot}A380-AI-1-Sept23-2024.jpeg`,
+description: `<ul><li> A380 series Sept 2024 If Air India had one!! </li><li> Not the latest but closest to, the latest livery </li><li> Over Worli Sea link </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}A380-AI-1-Sept23-2024.jpeg`, description: `<ul><li> A380 series Sept 2024 If Air India had one!! </li><li> Not the latest but closest to, the latest livery </li><li> Over Worli Sea link </li></ul>` },
+{fullFileName: `${this.imageRoot}A380-AI-2-Sept23-2024.jpeg`, description: `<ul><li> A380 series Sept 2024 If Air India had one!! </li><li> Not the latest but closest to, the latest livery </li><li> Over Worli Sea link </li></ul>` },
+]
+},
+
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '11-05-2024',
+duplicate:  'false',
+summaryLabel:  `A380 template Sept 2024`,
+fullFileName: `${this.imageRoot}A380-template-Sept-2024.jpeg`,
+description: `<ul><li> A380 template Sept 2024 </li><li> Fascinated by the A380 -  </li><li> 1st time by Emirates Aug 28, SFO - Dubai - Mum,  </li><li> return Sept 12 </li><li> As on Nov 5, Drawn AIrbus Industrie, (hypothetical) Air India and Emirates itself </li><li> Hope to get Lufthansa and Singapore Airlines at least  </li><li> Drawn from a photo snapped on flight security video </li></ul>`,
+},
   ]}]}

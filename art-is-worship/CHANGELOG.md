@@ -1,5 +1,5 @@
 
-# LOG OF CHANGES RECORDED W.E.F. April 28 #
+# LOG OF CHANGES RECORDED W.E.F. April 28 2024 #
 "CMS Picture Gallery" by Shantanu Gadkari
 ### TODOs
 - revisit logic and try to debug/optimize isLeafParent/ query params to identify leaf page versus branch
@@ -25,7 +25,7 @@
 - Maintaining this log
 - console.log should try to keep reference - classname method name
 ### 2024
-#### To last week Oct 2024
+#### To last week Oct Mid-November 2024 
 - **UI upgrades**
 - **Slide show implemented with pop up**
 - **Automated creation of new category - folder for images and list file** 

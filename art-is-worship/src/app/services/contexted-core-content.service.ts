@@ -33,6 +33,7 @@ import { TrainsIndianRailwayAlcos } from 'src/assets/gallery-files/lists-and-oth
 import {TrainsIndianRailwaySteam } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains-indian-railway-steam';
 import {  PlanesShipsCarsImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/planes-ships-cars.image.list';
 import {  PlanesShipsCars2ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/planes-ships-cars-2.image.list';
+import {  SpecialAircraftSeriesImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/special-aircraft-series.list';
 import { MumbaiMeriJaanList } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan.list';
 import { MumbaiMeriJaan2List } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan-2.list';
 
@@ -103,7 +104,7 @@ export class ContextedCoreContentService {
 
     contentList.push( { contentFile:new PlanesShipsCarsImageList(),contentCategory:'planes-ships-cars', roles:['non-living,  non-religious'],latest:true}) ;
     contentList.push( { contentFile:new PlanesShipsCars2ImageList(),contentCategory:'planes-ships-cars-2', roles:['non-living,  non-religious'],latest:true}) ;
-
+    contentList.push( { contentFile:new SpecialAircraftSeriesImageList(), contentCategory:'special-aircraft-series', roles:['non-living,  non-religious'],latest:true}) ;
     
  }
   loadSpecialLists(contentList:ContentList[], specialFiles:any,strParam:string):boolean {

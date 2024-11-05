@@ -431,7 +431,8 @@ export class CoreContentService {
     };
     if(contentList.contentFile.allImageList && contentList.contentFile.allImageList[0].files) {
       contentList.contentFile.allImageList[0].files.forEach((fileItem:any) => {
-        if(!fileItem.duplicate || fileItem.duplicate === false) {
+        // For Duplicates loading Automation, the listing MAY have 'duplicate: false'
+        if(!fileItem.duplicate || fileItem.duplicate === `false`) {
           themeCount.count++ ;
           this.sketchStats.totalCounts++ ;
         }
@@ -448,7 +449,7 @@ export class CoreContentService {
     let daysBack = 90 ;
     if(currentList.allImageList && currentList.allImageList[0].files) {
       currentList.allImageList[0].files.forEach((fileItem:any) => {
-        if (!fileItem.duplicate && this.daysAgoUploaded(fileItem, daysBack)) {
+        if ((!fileItem.duplicate || fileItem.duplicate === `false`) && this.daysAgoUploaded(fileItem, daysBack)) {
           this.genImageList.allImageList[0].files.push(fileItem);
         }
       });
@@ -497,7 +498,7 @@ export class CoreContentService {
     console.log(`YEAR ${year}`);
     if(currentList.contentFile.allImageList && currentList.contentFile.allImageList[0].files) {
       currentList.contentFile.allImageList[0].files.forEach((fileItem:any) => {
-        if (fileItem.rating  && fileItem.rating === 1 && !fileItem.duplicate) {
+        if (fileItem.rating  && fileItem.rating === 1 && (!fileItem.duplicate || fileItem.duplicate === `false`)) {
           let fileYear= fileItem.ratingYear ? fileItem.ratingYear : 
             fileItem.dateUploaded ? new Date(fileItem.dateUploaded).getFullYear() : 1990 ;
             let ratingYear = year === 0 ? 2021 : year ;
@@ -524,7 +525,7 @@ export class CoreContentService {
     if(currentList.contentFile.allImageList && currentList.contentFile.allImageList[0].files) {
       currentList.contentFile.allImageList[0].files.forEach((fileItem:any) => {
         // get evolution text
-        if (fileItem.evolution && (fileItem.duplicate === undefined || fileItem.duplicate === false) ) {
+        if (fileItem.evolution && (!fileItem.duplicate || fileItem.duplicate === `false`)) {
           if (year !== 0) {
             if (fileItem.evolutionDate) {
               if (year === new Date(fileItem.evolutionDate).getFullYear()) {
