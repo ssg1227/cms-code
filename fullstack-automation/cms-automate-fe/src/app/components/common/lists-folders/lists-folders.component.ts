@@ -16,6 +16,8 @@ export class ListsFoldersComponent implements OnInit {
   rootConfigFolder = this.lookups.rootConfigFolder ;
   configFileFolder = this.rootConfigFolder ;
   currentParentFolder =  this.rootConfigFolder;
+  // DUPLICATE-11-2024
+  currentImageFolder = this.listService.ImageRoot ;
   keys = this.lookups.keys;
   key = '';
   level1Files = ["",""] ;

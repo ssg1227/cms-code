@@ -109,6 +109,15 @@ export class ImagesFoldersComponent implements OnInit {
  } 
     moveFile() {
          console.log(`${this.rootImageSourceFolder} ${this.currentParentFolder}`) ;
+         // DUPLICATE-11-2024
+  
+         console.log(`BEFORE ${this.listService.ImageRoot}`);
+         let assetInd2 = this.currentParentFolder.indexOf('asset') ;
+         let imageRoot2 = `${this.currentParentFolder.substring(assetInd2).replace(`//`,`/`)}/`;
+ 
+         this.listService.ImageRoot = imageRoot2;
+         console.log(`AFTER ${this.listService.ImageRoot}`);
+         // ... DUPLICATE-11-2024
         let moveDetail = {
           sourceFolder: this.rootImageSourceFolder,
           destinationFolder:this.currentParentFolder,

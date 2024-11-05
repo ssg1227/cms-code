@@ -33,6 +33,8 @@
                     </select>
                 </div>
                 Current parent path  {{currentParentFolder}}
+                <!-- DUPLICATE-11-2024 -->
+                 Current Image Folder  {{currentImageFolder}}
     
     <button (click)="verifyConfigLocation()" *ngIf="listsFolderMode == 'writeToFile'">Update List File </button>
     <section *ngIf="listsFolderMode == 'createFile'"  >

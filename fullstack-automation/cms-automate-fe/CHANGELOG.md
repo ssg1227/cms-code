@@ -1,6 +1,15 @@
 ### Full Stack Automation for CMS Hub applications
 #### Front End
 Git location '~/cms-code/fullstack-automation/cms-automate-fe/
+#### To Mid-November 2024 
+- Automation of Duplicate entries **NEW DOC TECHNIQUE MARK CHANGES WITH PHRASE ...**
+-  **KEYWORD DUPLICATE-11-2024**
+ - Save 'imageRoot' folder in service. 
+ - Add the 'duplicate:' boolean field irrespective of true or false
+ - Adding to list file, 'add to separate file' button
+ - Chose new list file(s)
+ - Submit with 'duplicate:false' substituted by 'duplicate:true' AND ${imageRoot} by the image folder
+ - repeat as required
 ##### June 2024 functionality
 - Move downloaded image file or files to respective image folder under 'assets' of the CMS application
 - Write description for the image and along with path name, add a JSON for a set of one or more images for that subject

@@ -91,7 +91,14 @@ export class ImageMoveComponent implements OnInit {
    )
  } 
     moveFile() {
-         console.log(`${this.rootImageSourceFolder} ${this.currentParentFolder}`) ;
+        console.log(`${this.rootImageSourceFolder} ${this.currentParentFolder}`) ;
+        console.log(`BEFORE ${this.listService.ImageRoot}`);
+        let assetInd2 = this.currentParentFolder.indexOf('asset') ;
+        let imageRoot2 = `${this.currentParentFolder.substring(assetInd2).replace(`//`,`/`)}/`;
+
+        this.listService.ImageRoot = imageRoot2;
+        console.log(`AFTER ${this.listService.ImageRoot}`);
+
         let moveDetail = {
           sourceFolder: this.rootImageSourceFolder,
           destinationFolder:this.currentParentFolder,
@@ -117,7 +124,11 @@ export class ImageMoveComponent implements OnInit {
             let assetInd = this.currentParentFolder.indexOf('asset') ;
             fileToPush = this.useImageRoot === true ? "${this.imageRoot}" + this.imageFileName :
            `${this.currentParentFolder.substring(assetInd).replace(`//`,`/`)}/${this.imageFileName}`
-            this.imageFiles.push(fileToPush);
+           // DUPLICATE-11-2024
+           console.log(`BEFORE ${this.listService.ImageRoot}`);
+           this.listService.ImageRoot = `${this.currentParentFolder.substring(assetInd).replace(`//`,`/`)}/`
+           console.log(`AFTER ${this.listService.ImageRoot}`);
+           this.imageFiles.push(fileToPush);
         //    this.imageFiles.push(`${this.currentParentFolder.substring(assetInd).replace(`//`,`/`)}/${this.imageFileName}`);
             
           },

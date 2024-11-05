@@ -178,8 +178,14 @@ get ListingContent():string[] {
     this.listingContent.push(`canvassSize:  '${this.imageListJSON.controls["canvassSize"].value}',`) ;
     this.listingContent.push(`content:  '${this.imageListJSON.controls["content"].value}',`) ;
     this.listingContent.push(`dateUploaded:  '${this.imageListJSON.controls["dateUploaded"].value}',`) ;
+    // DUPLICATE-11-2024
     if (this.duplicateImage === true )
       this.listingContent.push(`duplicate:  'true',`) ;
+     this.duplicateImage === true ? 
+        this.listingContent.push(`duplicate:  'true',`):
+        this.listingContent.push(`duplicate:  'false',`) ;
+    // DUPLICATE-11-2024
+    
     if (this.showEvolution === true) {
       this.listingContent.push(`evolution:  \`${this.imageListJSON.controls["evolution"].value}\`,`) ;
       this.listingContent.push(`evolutionSequence:  ${this.imageListJSON.controls["evolutionSequenceList"].value},`) ;
