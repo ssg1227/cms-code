@@ -28,13 +28,26 @@ export class AddImagesComponent implements OnInit {
     this.imagesMoved = true ;
     console.log(`passImageFolders ${JSON.stringify(imageFolders)}`);
   }
+  duplicateEntry = 'false';
   jsonFileToUpdate(configFileFolderAndKeys:string[]) {
     this.jsonListingFile = configFileFolderAndKeys[0] ;
-  }
+    this.duplicateEntry = configFileFolderAndKeys[2];
+  } 
   jsonToUpdate(jsonStrings:string[]) {
-    console.log(`${jsonStrings}`);
-    this.jsonListing = jsonStrings ;
+    console.log(`jsonToUpdate ${jsonStrings}`);
+    this.jsonListing =   jsonStrings;
+  //  this.jsonListing = this.duplicateEntry === 'false' ? 
+  //    jsonStrings: this.filterJSONStrings(jsonStrings) ; r
  
+  }
+  filterJSONStrings(jStrings: string[]) { // DUPLICATE-11-2024 to substitute
+    let lImageRoot = this.listService.ImageRoot ;
+    jStrings.forEach((s:string) => {
+        s = s.replace(`duplicate:  'false'`,`duplicate:  'true'`);
+        s =  s.replace(/\${imageRoot}/g, lImageRoot);
+    });
+    alert(JSON.stringify(jStrings))
+    return jStrings ;
   }
   // Getters, Styling etc
   componentDivStyle = {padding: '3px', background: 'aliceblue', margin:'3px', border: '3px inset blue'};
@@ -62,6 +75,11 @@ export class AddImagesComponent implements OnInit {
   }
   postJSONUpdate() {
     console.log(`POSTJSONUPDATE: ${JSON.stringify(this.jsonListing)} ${this.jsonListingFile}`) ;
+    if(this.duplicateEntry === 'true') { // DUPLICATE-11-2024 to substitute
+      // old loop, circle around to use forEach
+      for (let i = 0; i < this.jsonListing.length;i++) {  this.jsonListing[i] =  this.jsonListing[i].replace('false','true'); }
+      for (let i = 0; i < this.jsonListing.length;i++) {  this.jsonListing[i] =  this.jsonListing[i].replace('${this.imageRoot}',this.listService.ImageRoot);  }
+    }
     this.listService.updateListFile(this.jsonListing, this.jsonListingFile)
      .subscribe(
       (response:any)=> { 

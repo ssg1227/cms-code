@@ -2,7 +2,7 @@
     <div class="tabs">
         <div  style="overflow-y: scroll;background-color: aqua;">
             <button [disabled]="isPostDataReady()" (click)="postJSONUpdate()">Submit</button>
-            <button (click)="reset()">RESET</button>
+            <button (click)="reset()">RESET SETTINGS</button>
             <ul *ngIf="imageList != null && imageList.length > 0">
                 <li *ngFor="let imageFile of imageList">{{imageFile}}</li>
             </ul>

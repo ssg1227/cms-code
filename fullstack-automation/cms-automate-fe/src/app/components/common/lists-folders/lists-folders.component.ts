@@ -84,11 +84,20 @@ export class ListsFoldersComponent implements OnInit {
   this.currentParentFolder = this.currentParentFolder.replace(`//`,`/`).replace(`//`,'/').replace('(file)','');
   this.getImageFolders(this.currentParentFolder, level) ;
 }
-  verifyConfigLocation() {
+  verifyConfigLocation(duplicate = false) { // DUPLICATE-11-2024 optional param -->
     this.configFileFolder = this.currentParentFolder;
-    let configFileFolderAndKeys = [ this.configFileFolder, this.key ]
+    let configFileFolderAndKeys = [ this.configFileFolder, this.key, 
+        duplicate.toString() ]  // DUPLICATE-11-2024 optional param -->
+    alert(JSON.stringify(configFileFolderAndKeys)) ;
     this.configFileFound.emit(configFileFolderAndKeys);
   }
+  // DUPLICATE-11-2024 -->
+  duplicateListing = false ;
+  dup() {
+    this.duplicateListing = !this.duplicateListing 
+      
+  }
+  // .. DUPLICATE-11-2024 -->
    createListFile(textLines:string[]) {
     textLines.unshift(`${this.currentParentFolder}/${this.listFileName}`);
     alert(JSON.stringify(textLines));

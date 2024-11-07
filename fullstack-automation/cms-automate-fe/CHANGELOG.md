@@ -2,11 +2,12 @@
 #### Front End
 Git location '~/cms-code/fullstack-automation/cms-automate-fe/
 #### To Mid-November 2024 
-- Automation of Duplicate entries **NEW DOC TECHNIQUE MARK CHANGES WITH PHRASE ...**
+- Automation of Duplicate entries **NEW DOC TECHNIQUE MARK CHANGES WITH PHRASE ... START NOV 3, IMPLEMENTED NOV 6 24**
 -  **KEYWORD DUPLICATE-11-2024**
- - Save 'imageRoot' folder in service. 
- - Add the 'duplicate:' boolean field irrespective of true or false
- - Adding to list file, 'add to separate file' button
+- **IMPLEMENTED**
+ - Save 'imageRoot' folder in service. **DONE**
+ - Add the 'duplicate:' boolean field irrespective of true or false **DONE needed some changes in logic**
+ - Adding to list file, 'Submit Duplicate' button visibility by check box **DONE\\**
  - Chose new list file(s)
  - Submit with 'duplicate:false' substituted by 'duplicate:true' AND ${imageRoot} by the image folder
  - repeat as required
