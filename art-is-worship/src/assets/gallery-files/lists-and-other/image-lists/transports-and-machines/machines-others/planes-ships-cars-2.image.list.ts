@@ -13,6 +13,26 @@ export class PlanesShipsCars2ImageList {
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  '',
+dateUploaded:  '11-06-2024',
+duplicate:  'false',
+evolution:  `rgererge`,
+evolutionSequence:  4,
+evolutionDate:  '11-06-2024',
+summaryLabel:  `Shuttle Last ride over Bay Area Oct 2012 (03/23)`,
+fullFileName: `${this.imageRoot}Shuttle-piggyback-nasa747-102012-march152023.jpeg`,
+description: `<ul><li> Shuttle Last ride over Bay Area Oct 2012 (03/23) </li><li> The final  version of a final ride </li><li> Sketch of the shuttle piggyback on Nasa 747 over the Golden Gate </li></ul>`,
+rating:  1,
+ratingYear:  2023,
+iterations: [
+{fullFileName: `${this.imageRoot}Shuttle-piggyback-nasa747-102012-march152023.jpeg`, description: `<ul><li> Shuttle Last ride over Bay Area Oct 2012 (03/23) </li><li> The final  version of a final ride </li><li> Sketch of the shuttle piggyback on Nasa 747 over the Golden Gate </li></ul>` },
+{fullFileName: `${this.imageRoot}Shuttle-piggyback-nasa747-102012-march152023-st1.jpeg`, description: `<ul><li> Shuttle Last ride over Bay Area Oct 2012 (03/23) </li><li> The plane outline whitened  version of a final ride </li><li> Sketch of the shuttle piggyback on Nasa 747 over the Golden Gate </li></ul>` },
+{fullFileName: `${this.imageRoot}Shuttle-piggyback-nasa747-102012-march152023-st2.jpeg`, description: `<ul><li> Shuttle Last ride over Bay Area Oct 2012 (03/23) </li><li> The plane outline   version of a final ride </li><li> Sketch of the shuttle piggyback on Nasa 747 over the Golden Gate </li></ul>` },
+]
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'color-pencil black-white',
 dateUploaded:  '06-07-2024',
 summaryLabel:  `Lucid Air - semi exotic EV and competition to Tesla A`,

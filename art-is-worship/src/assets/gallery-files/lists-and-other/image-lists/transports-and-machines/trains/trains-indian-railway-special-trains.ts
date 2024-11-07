@@ -17,6 +17,23 @@ public allImageList:ImageElement[]  =  [
      themeSummary:
             `Special, iconic trains of Indian Railways`,
     files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '11-06-2024',
+duplicate:  'false',
+summaryLabel:  `Frontier Dara Pass WDM2 oct 2 2024`,
+fullFileName: `${this.imageRoot}frontier-dara-steam2diesel-oct2-24.jpeg`,
+description: `<ul><li> Frontier Dara Pass WDM2 oct 2 2024 </li><li> 'Edited' sketch off an A3 - original showing WP5 steam engine </li><li> Final </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}frontier-dara-steam2diesel-oct2-24.jpeg`, description: `<ul><li> Frontier Dara Pass WDM2 oct 2 2024 </li><li> 'Edited' sketch off an A3 - original showing WP5 steam engine </li><li> Final </li></ul>` },
+{fullFileName: `${this.imageRoot}frontier-dara-steam2diesel-oct2-24-start.jpeg`, description: `<ul><li> Frontier Dara Pass WDM2 oct 2 2024 </li><li> 'Edited' sketch off an A3 - original showing WP5 steam engine </li><li> Original A3 drawing scanned and printed </li></ul>` },
+{fullFileName: `${this.imageRoot}frontier-dara-steam2diesel-oct2-24-replace.jpeg`, description: `<ul><li> Frontier Dara Pass WDM2 oct 2 2024 </li><li> 'Edited' sketch off an A3 - original showing WP5 steam engine </li><li> scanned and printed, engine portion erased </li></ul>` },
+]
+},
       // ${this.imageRoot}Deccan-Queen-11-25to12-01-2022-raw.jpeg 
       // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/${this.imageRoot}Deccan-Queen-11-25to12-07-2022-FINAL.png 
       {  

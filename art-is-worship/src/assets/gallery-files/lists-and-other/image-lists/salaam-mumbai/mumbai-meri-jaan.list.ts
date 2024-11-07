@@ -8,6 +8,7 @@ public allImageList:ImageElement[]  =  [
                 theme:'Salaam Mumbai',
                 themeSummary: `This long overdue dedication to the City that is part of me that I am part of.. How could I have waited soooo long`,
                 files: [
+
                   {  
                     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/MahadevJan102022.jpeg
                     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/Shivji2022ShravanMonday_1.jpeg

@@ -19,6 +19,23 @@ public allImageList:ImageElement[]  =  [
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
+dateUploaded:  '11-06-2024',
+duplicate:  'true',
+summaryLabel:  `Frontier Dara Pass WDM2 oct 2 2024`,
+fullFileName: `assets/gallery-files/images/transports-and-machines/trains/special-trains/frontier-dara-steam2diesel-oct2-24.jpeg`,
+description: `<ul><li> Frontier Dara Pass WDM2 oct 2 2024 </li><li> 'Edited' sketch off an A3 - original showing WP5 steam engine </li><li> Final </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `assets/gallery-files/images/transports-and-machines/trains/special-trains/frontier-dara-steam2diesel-oct2-24.jpeg`, description: `<ul><li> Frontier Dara Pass WDM2 oct 2 2024 </li><li> 'Edited' sketch off an A3 - original showing WP5 steam engine </li><li> Final </li></ul>` },
+{fullFileName: `assets/gallery-files/images/transports-and-machines/trains/special-trains/frontier-dara-steam2diesel-oct2-24-start.jpeg`, description: `<ul><li> Frontier Dara Pass WDM2 oct 2 2024 </li><li> 'Edited' sketch off an A3 - original showing WP5 steam engine </li><li> Original A3 drawing scanned and printed </li></ul>` },
+{fullFileName: `assets/gallery-files/images/transports-and-machines/trains/special-trains/frontier-dara-steam2diesel-oct2-24-replace.jpeg`, description: `<ul><li> Frontier Dara Pass WDM2 oct 2 2024 </li><li> 'Edited' sketch off an A3 - original showing WP5 steam engine </li><li> scanned and printed, engine portion erased </li></ul>` },
+]
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
 dateUploaded:  '05-29-2024',
 summaryLabel:  `Indian Railway first Passenger Loco WCP 'Sir Roger Lumley'`,
 fullFileName: `${this.imageRoot}RogerLumleyLoco-4-020924.jpeg`,

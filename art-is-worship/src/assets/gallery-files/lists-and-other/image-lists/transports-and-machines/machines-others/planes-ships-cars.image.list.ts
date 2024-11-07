@@ -11,6 +11,16 @@ export class PlanesShipsCarsImageList {
         themeSummary: `My first steps, my first love in this passion for sketching these are planes which I started drawing as a kid. <br/>
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '11-06-2024',
+duplicate:  'true',
+summaryLabel:  `A380 series Airbus Industrie Livery Sept 21 2024`,
+fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/special-aircraft-series/A380-Sept21-2024.jpeg`,
+description: `<ul><li> A380 series Airbus Industrie Livery Sept 21 2024 </li></ul>`,
+},
             // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/${this.imageRoot}QueenElizabethApril10-1620222_1.jpeg
             ,
             { 
@@ -35,6 +45,26 @@ export class PlanesShipsCarsImageList {
                         canvassSize:'A4', content: 'black-white',
                         dateUploaded: '02-14-2023',
 
+                    },
+                    {
+                    canvassMaterial:  'Plain paper',
+                    canvassSize:  'A4',
+                    content:  '',
+                    dateUploaded:  '11-06-2024',
+                    duplicate:  'false',
+                    evolution:  `rgererge`,
+                    evolutionSequence:  4,
+                    evolutionDate:  '11-06-2024',
+                    summaryLabel:  `Shuttle Last ride over Bay Area Oct 2012 (03/23)`,
+                    fullFileName: `${this.imageRoot}Shuttle-piggyback-nasa747-102012-march152023.jpeg`,
+                    description: `<ul><li> Shuttle Last ride over Bay Area Oct 2012 (03/23) </li><li> The final  version of a final ride </li><li> Sketch of the shuttle piggyback on Nasa 747 over the Golden Gate </li></ul>`,
+                    rating:  1,
+                    ratingYear:  2023,
+                    iterations: [
+                    {fullFileName: `${this.imageRoot}Shuttle-piggyback-nasa747-102012-march152023.jpeg`, description: `<ul><li> Shuttle Last ride over Bay Area Oct 2012 (03/23) </li><li> The final  version of a final ride </li><li> Sketch of the shuttle piggyback on Nasa 747 over the Golden Gate </li></ul>` },
+                    {fullFileName: `${this.imageRoot}Shuttle-piggyback-nasa747-102012-march152023-st1.jpeg`, description: `<ul><li> Shuttle Last ride over Bay Area Oct 2012 (03/23) </li><li> The plane outline whitened  version of a final ride </li><li> Sketch of the shuttle piggyback on Nasa 747 over the Golden Gate </li></ul>` },
+                    {fullFileName: `${this.imageRoot}Shuttle-piggyback-nasa747-102012-march152023-st2.jpeg`, description: `<ul><li> Shuttle Last ride over Bay Area Oct 2012 (03/23) </li><li> The plane outline   version of a final ride </li><li> Sketch of the shuttle piggyback on Nasa 747 over the Golden Gate </li></ul>` },
+                    ]
                     },
                 { 
                     fullFileName:   `${this.imageRoot}migs-011823-scan.jpeg`, 

@@ -17,6 +17,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '11-06-2024',
+duplicate:  'false',
+summaryLabel:  `A380 series Airbus Industrie Livery Sept 21 2024`,
+fullFileName: `${this.imageRoot}A380-Sept21-2024.jpeg`,
+description: `<ul><li> A380 series Airbus Industrie Livery Sept 21 2024 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'color-pencil',
 dateUploaded:  '11-05-2024',

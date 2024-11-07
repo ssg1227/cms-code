@@ -9,6 +9,16 @@ public allImageList:ImageElement[]  =  [
                 theme:'Salaam Mumbai',
                 themeSummary: `This long overdue dedication to the City that is part of me that I am part of.. How could I have waited soooo long. <br/><b>Posts Q1 2023 onward</b>`,
                 files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  '11-06-2024',
+duplicate:  'false',
+summaryLabel:  `Seagull Feed Elephanta caves, Oct 17 2024`,
+fullFileName: `${this.imageRoot}seagull-feed-oct17.jpeg`,
+description: `<ul><li> Seagull Feed Elephanta caves, Oct 17 2024 </li><li> Typical scene feeding seagulls during launch ride between Gateway of India and Elephanta caves </li></ul>`,
+},
                   ,   { fullFileName: `${this.imageRoot}ScottishApril42024-final.jpeg`,
                   evolution:
                   `<p>'School has always been special in most peoples hearts; I am no exception</p>`,
