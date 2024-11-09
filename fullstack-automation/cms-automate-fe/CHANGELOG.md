@@ -2,9 +2,14 @@
 #### Front End
 Git location '~/cms-code/fullstack-automation/cms-automate-fe/
 #### To Mid-November 2024 
-- Automation of Duplicate entries **NEW DOC TECHNIQUE MARK CHANGES WITH PHRASE ... START NOV 3, IMPLEMENTED NOV 6 24**
+- Refine and add sub features to creating new categories
+ - **KEYWORD NEW-CATEGORY-REFINE-11-2024**
+ - Create new image folder even from images root, **DONE**
+ - Create new image list folder even from image lists root **DONE**
+ - Substitute hard coded text like CLASSNAME with the real values  **WIP**
+ - Create text to paste in core-context.service.ts, and menu-tree.ts (nice to have automate file write)
+- **IMPLEMENTED** Automation of Duplicate entries **NEW DOC TECHNIQUE MARK CHANGES WITH PHRASE ... START NOV 3, IMPLEMENTED NOV 6 24**
 -  **KEYWORD DUPLICATE-11-2024**
-- **IMPLEMENTED**
  - Save 'imageRoot' folder in service. **DONE**
  - Add the 'duplicate:' boolean field irrespective of true or false **DONE needed some changes in logic**
  - Adding to list file, 'Submit Duplicate' button visibility by check box **DONE\\**

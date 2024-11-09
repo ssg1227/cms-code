@@ -208,8 +208,17 @@ export class ImagesFoldersComponent implements OnInit {
       this.destImageFileName = this.imageFileName ;
     }
     createImageFolder() {
+      let folderToCreate = `${this.currentParentFolder}/${this.folderName}`;
+      // NEW-CATEGORY-REFINE-11-2024
+      let assetInd2 = folderToCreate.indexOf('asset') ;
+      let imageRoot2 = `${folderToCreate.substring(assetInd2).replace(`//`,`/`)}/`;
+        alert(imageRoot2);
+      this.listService.ImageRoot = imageRoot2;
+      this.listService.ImageFolderName = this.folderName ;
+      //..// NEW-CATEGORY-REFINE-11-2024
       this.listService.createFolder( `${this.currentParentFolder}/${this.folderName}`).subscribe(
         (response:any)=> { 
+          this.getImageFolders(this.rootImageDestinationFolder, 1) ;
           console.log('success') ;
         },
         (err:any)=>console.log(`ERROR ${err}`),

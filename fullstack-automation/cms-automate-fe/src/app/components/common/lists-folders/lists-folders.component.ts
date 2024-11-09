@@ -31,14 +31,26 @@ export class ListsFoldersComponent implements OnInit {
   level4Select = "";
   imageFileName="ee"
 
-  listFileName=""
+  listFolderName="";
+  newlistFolderName="";
+  listFileName="";
   imageFiles:string[]=[] ;
   constructor(private listService: ListService) { }
 
   ngOnInit(): void {
     this.getImageFolders(this.rootConfigFolder, 1) ;
   }
-
+  // NEW-CATEGORY-REFINE-11-2024
+  get FilteredListFileFrameLines(): string[] {
+    let filteredLines =  [''];//JSON.parse(JSON.stringify(this.lookups.listFileFrameLines));
+    this.lookups.listFileFrameLines.forEach((frameLine:string) =>{
+      filteredLines.push( frameLine.replace(`<imageroot>`, this.listService.ImageRoot)
+                  .replace(`<CLASSNAME>`, this.listService.ImageListClassName)
+                  .replace(`<folderName>`, this.listService.ImageFolderName));
+    })
+    console.log(`FILERE GET ${JSON.stringify(this.lookups.listFileFrameLines)}`)
+  return filteredLines;
+  }
   getImageFolders(parent:string, level:number)  {
     this.listService.getFolderContent(parent)// { fileName: "tedt",description:"hefhkf"})
    .subscribe(
@@ -97,6 +109,51 @@ export class ListsFoldersComponent implements OnInit {
     this.duplicateListing = !this.duplicateListing 
       
   }
+   // NEW-CATEGORY-REFINE-11-2024 .. if we are creating an image list folder hierarchu
+  createListFolder() {
+    let folderToCreate = `${this.currentParentFolder}/${this.listFolderName}`;
+   
+    let assetInd2 = folderToCreate.indexOf('asset') ;
+    let imageRoot2 = `${folderToCreate.substring(assetInd2).replace(`//`,`/`)}/`;
+      alert(imageRoot2);
+    this.listService.ImageRoot = imageRoot2;
+    this.listService.ImageFolderName = this.listFolderName ;
+    //..// NEW-CATEGORY-REFINE-11-2024
+    alert(`CREAT ${this.currentParentFolder}/${this.listFolderName}`);
+    this.listService.createFolder( `${this.currentParentFolder}/${this.newlistFolderName}`).subscribe(
+      (response:any)=> { 
+        this.getImageFolders(this.rootConfigFolder, 1) ;
+        console.log('success') ;
+      },
+      (err:any)=>console.log(`ERROR ${err}`),
+      () => console.log('complete'),
+    )
+
+  }
+   // NEW-CATEGORY-REFINE-11-2024
+  createImageListFolder() {
+    /*
+    let folderToCreate = `${this.currentParentFolder}/${this.folderName}`;
+    // NEW-CATEGORY-REFINE-11-2024
+    let assetInd2 = folderToCreate.indexOf('asset') ;
+    let imageRoot2 = `${folderToCreate.substring(assetInd2).replace(`//`,`/`)}/`;
+      alert(imageRoot2);
+    this.listService.ImageRoot = imageRoot2;
+    this.listService.ImageFolderName = this.folderName ;
+    //..// NEW-CATEGORY-REFINE-11-2024
+    this.listService.createFolder( `${this.currentParentFolder}/${this.folderName}`).subscribe(
+      (response:any)=> { 
+        this.getImageFolders(this.rootImageDestinationFolder, 1) ;
+        console.log('success') ;
+      },
+      (err:any)=>console.log(`ERROR ${err}`),
+      () => console.log('complete'),
+    )
+
+    this.imageVersionsDone.emit([`${this.currentParentFolder}/${this.folderName}`]);
+    */
+  }
+  //..// NEW-CATEGORY-REFINE-11-2024
   // .. DUPLICATE-11-2024 -->
    createListFile(textLines:string[]) {
     textLines.unshift(`${this.currentParentFolder}/${this.listFileName}`);

@@ -9,7 +9,9 @@ import { catchError, retry } from 'rxjs/operators';
 export class ListService {
   webServiceURL = `http://localhost:8080/api`
   imageroot = "/Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/";
+  imageFolderName = 'image-folder-name';
   constructor(private http: HttpClient) { }
+  // getters and setters
   // DUPLICATE-11-2024
   public get ImageRoot(): string {
     return this.imageroot ;
@@ -18,6 +20,35 @@ export class ListService {
     this.imageroot = value ;
   }
   // ..DUPLICATE-11-2024
+  // NEW-CATEGORY-REFINE-11-2024
+  public get ImageFolderName(): string {
+    return this.imageFolderName ;
+  }
+  public set ImageFolderName(value:string) {
+    this.imageFolderName = value ;
+  }
+  public get ImageListClassName(): string {
+    return `${this.kebabToPascal(this.imageFolderName)}ImageList` ;
+  }
+  public set ImageListClassName(value:string) {
+    this.imageFolderName = value;
+  }
+   kebabToPascal(kebab: string): string {
+    return kebab
+        .split('-') // Split the string at hyphens
+        .map((word, index) => {
+            // Capitalize the first letter of each word
+            // Lowercase the rest of the word
+            return index === 0 
+                ? word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+                : word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+        })
+        .join(''); // Join the words back together
+}
+  /*
+  
+        */
+  // .. NEW-CATEGORY-REFINE-11-2024
   getFolderContent(parentFolder:string) {
     return this.http.post<any>(`${this.webServiceURL}/listing`,parentFolder)
     .pipe(catchError(this.handleError));
