@@ -12,6 +12,53 @@ export class PlanesShipsCars2ImageList {
         files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '11-09-2024',
+duplicate:  'true',
+summaryLabel:  `747 series 1st CityofEverett Sept 30 1968 mar 20-23 2023`,
+fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/special-aircraft-series/City-of-everett-09301968-03202323.jpeg`,
+description: `<ul><li> 747 series 1st CityofEverett Sept 30 1968 mar 20-23 2023 </li><li> 747 series 1st CityofEverett Sept 30 1968 mar 20-23 2023 </li><li> The first Boeing 747, named the "City of Everett", was rolled out on September 30, 1968 at Boeing's Everett, Washington plant. It had its first flight on February 9, 1969, and was delivered to Pan Am on January 22, 1970.  </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '11-09-2024',
+duplicate:  'true',
+summaryLabel:  `747 series Lufthansa mar 20-23 2023`,
+fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/special-aircraft-series/Lufthansa-474-march20-22-2023-2.jpeg`,
+description: `<ul><li> 747 series Lufthansa mar 20-23 2023 </li><li> 747 series Lufthansa mar 20-23 2023 </li><li> special for me my first international flight </li><li> LH 757 Mumbai Munich NOv 1992 </li></ul>`,
+iterations: [
+{fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/special-aircraft-series/Lufthansa-474-march20-22-2023-2.jpeg`, description: `<ul><li> 747 series Lufthansa mar 20-23 2023 </li><li> 747 series Lufthansa mar 20-23 2023 </li><li> special for me my first international flight </li><li> LH 757 Mumbai Munich NOv 1992 </li></ul>` },
+{fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/special-aircraft-series/Lufthansa-474-march20-22-2023-1.jpeg`, description: `<ul><li> 747 series Lufthansa mar 20-23 2023 </li><li> 747 series Lufthansa mar 20-23 2023 </li><li> special for me my first international flight </li><li> LH 757 Mumbai Munich NOv 1992 </li></ul>` },
+        ]},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '11-09-2024',
+duplicate:  'true',
+summaryLabel:  `747 series 'Lost Emperor' Air India mar 20-23 2023`,
+fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/special-aircraft-series/Lost-emperor-03-2023.jpeg`,
+description: `<ul><li> 747 series 'Lost Emperor' Air India mar 20-23 2023 </li><li> 747 series 'Lost Emperor' Air India mar 20-23 2023 </li><li> Emperor Ashoka - crashed off Mumbai coast Jan 1 1978 </li><li> sort of shocking; we had been on board this plane as a sightseeing sort of tour when it was parked at Santa Cruz Airport Mumbai  </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '11-09-2024',
+duplicate:  'true',
+summaryLabel:  `'Last Emperor' Atlas Air 013123 (02282023)`,
+fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/special-aircraft-series/Last-emperor-jan31-23-747-8-02-28-23-2.jpeg`,
+description: `<ul><li> 'Last Emperor' Atlas Air 013123 (02282023) </li><li> The end of an era  </li><li> The final 747 was delivered to Atlas Air,  a 747-8 freighter January 31 c2023 after a 54-year production run, with 1,574 aircraft built.  </li></ul>`,
+iterations: [
+{fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/special-aircraft-series/Last-emperor-jan31-23-747-8-02-28-23-2.jpeg`, description: `<ul><li> 'Last Emperor' Atlas Air 013123 (02282023) </li><li> The end of an era  </li><li> The final 747 was delivered to Atlas Air,  a 747-8 freighter January 31 c2023 after a 54-year production run, with 1,574 aircraft built.  </li></ul>` },
+{fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/special-aircraft-series/Last-emperor-jan31-23-747-8-02-28-23.jpeg`, description: `<ul><li> 'Last Emperor' Atlas Air 013123 (02282023) </li><li> The end of an era  </li><li> The final 747 was delivered to Atlas Air,  a 747-8 freighter January 31 c2023 after a 54-year production run, with 1,574 aircraft built.  </li></ul>` },
+]
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  '',
 dateUploaded:  '11-06-2024',
