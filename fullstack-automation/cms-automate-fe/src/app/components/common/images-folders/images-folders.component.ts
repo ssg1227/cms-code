@@ -10,6 +10,7 @@ import { Input, Output, EventEmitter } from '@angular/core';
 export class ImagesFoldersComponent implements OnInit {
   mockdata = true; 
   @Output() imageVersionsDone = new EventEmitter<string[]>();
+  @Output() parentKeyChange = new EventEmitter<string>();
   @Input() imageTreeMode = 'moveFiles';
   /// 
    currentFile =  '/Users/shantanu/Downloads/TaraporewallaJune282023.jpeg';
@@ -21,6 +22,7 @@ export class ImagesFoldersComponent implements OnInit {
   webAppRelativeFolderRoot = this.WebAppRoot;
   currentWebAppParentFolder =  this.WebAppRoot;
   contextedTitle = 'Moving the images from dump to loc:';
+  action="Set Destination Folder"
  //   this.imageTreeMode = 'moveFiles'? 'Moving the images from dump to loc:':
  //       'Create Image Folder';
   level1Files = ["",""] ;
@@ -52,9 +54,17 @@ export class ImagesFoldersComponent implements OnInit {
     this.getImageFolders(this.rootImageDestinationFolder, 1) ;
     this.contextedTitle =  
        this.imageTreeMode === 'moveFiles'? 'Moving the images from dump to loc:':
+          this.imageTreeMode==='getParentKey'? 'Set up Parent Key for Menu listing:':
          'Create Image Folder';
+         // action=""
+         this.imageTreeMode === 'moveFiles'? this.action = 'Set Destination Folder:':
+         this.imageTreeMode==='getParentKey'? this.action=  'Find Parent Key:':
+        this.action=  'Get Folder Parent(s)';
   }
   getImageSubFolder(event:any, level:number){
+    this.listService.MenuTreeParentKey = event.target.value;// NEW-CATEGORY-REFINE-11-2024
+    //this.parentKeyChange.emit(event.target.value);
+    //alert( this.listService.MenuTreeParentKey) ;
     switch(level) {
       case 1:  this.level1Select =  event.target.value;
               this.currentParentFolder = `${this.rootImageDestinationFolder}/${event.target.value}`;
@@ -212,7 +222,7 @@ export class ImagesFoldersComponent implements OnInit {
       // NEW-CATEGORY-REFINE-11-2024
       let assetInd2 = folderToCreate.indexOf('asset') ;
       let imageRoot2 = `${folderToCreate.substring(assetInd2).replace(`//`,`/`)}/`;
-        alert(imageRoot2);
+      //  alert(imageRoot2);
       this.listService.ImageRoot = imageRoot2;
       this.listService.ImageFolderName = this.folderName ;
       //..// NEW-CATEGORY-REFINE-11-2024
@@ -224,7 +234,10 @@ export class ImagesFoldersComponent implements OnInit {
         (err:any)=>console.log(`ERROR ${err}`),
         () => console.log('complete'),
       )
-
+     
       this.imageVersionsDone.emit([`${this.currentParentFolder}/${this.folderName}`]);
+    }
+    setParentKey() { //NEW-CATEGORY-REFINE-11-2024
+      this.parentKeyChange.emit( this.listService.MenuTreeParentKey );
     }
 }

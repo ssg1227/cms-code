@@ -23,7 +23,8 @@ import { ListsFoldersComponent } from './components/common/lists-folders/lists-f
 import { UpdateAlbumEntriesComponent } from './components/feature-components/add-images/update-album-entries/update-album-entries.component';
 // import { CreateNewListFileComponent } from './components/feature-components/create-lists-folders/create-new-list-file/create-new-list-file.component';
 import { AutomationTabsComponent } from './components/feature-components/automation-tabs/automation-tabs.component';
-import { MultiparaComponent } from './components/common/multipara/multipara.component'
+import { MultiparaComponent } from './components/common/multipara/multipara.component';
+import { UpdateMenuTreeServiceEntriesComponent } from './components/feature-components/create-lists-folders/update-menu-tree-service-entries/update-menu-tree-service-entries.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +45,7 @@ import { MultiparaComponent } from './components/common/multipara/multipara.comp
     // CreateNewListFileComponent,
     AutomationTabsComponent,
     MultiparaComponent,
+    UpdateMenuTreeServiceEntriesComponent,
   ],
   imports: [
     BrowserModule,

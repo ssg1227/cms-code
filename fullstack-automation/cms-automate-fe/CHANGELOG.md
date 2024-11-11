@@ -1,13 +1,16 @@
 ### Full Stack Automation for CMS Hub applications
 #### Front End
 Git location '~/cms-code/fullstack-automation/cms-automate-fe/
+#### TODO 
+- Optimization - the 'folder tree select' UI and logic to be made common like move images from dump to loc 
 #### To Mid-November 2024 
 - Refine and add sub features to creating new categories
  - **KEYWORD NEW-CATEGORY-REFINE-11-2024**
  - Create new image folder even from images root, **DONE**
  - Create new image list folder even from image lists root **DONE**
- - Substitute hard coded text like CLASSNAME with the real values  **WIP**
+ - Substitute hard coded text like CLASSNAME with the real values  **WIP** (optimized labels on images-folder, re-used component)
  - Create text to paste in core-context.service.ts, and menu-tree.ts (nice to have automate file write)
+   - new component  menu-tree-service-entries
 - **IMPLEMENTED** Automation of Duplicate entries **NEW DOC TECHNIQUE MARK CHANGES WITH PHRASE ... START NOV 3, IMPLEMENTED NOV 6 24**
 -  **KEYWORD DUPLICATE-11-2024**
  - Save 'imageRoot' folder in service. **DONE**

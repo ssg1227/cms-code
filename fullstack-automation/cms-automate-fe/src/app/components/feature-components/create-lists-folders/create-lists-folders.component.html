@@ -20,8 +20,8 @@
            <li  [class.active]="currentTab=='create-list-file-n-entries'" (click)="selectTab('create-list-file-n-entries')">
                 Create List file, Menu and Service entry texts
             </li>
-            <li  [class.active]="currentTab=='review-entries'" (click)="selectTab('review-entries')">
-                Review Menu and Service entry texts
+            <li  [class.active]="currentTab=='update-menu-tree-service-entries'" (click)="selectTab('update-menu-tree-service-entries')">
+                Update Menu and Service entry texts
             </li>
           
         </ul>
@@ -40,7 +40,9 @@
                     </div>
             
                 </ng-container>
-          
+                <ng-container *ngIf="currentTab=='update-menu-tree-service-entries'"><!-- new component NEW-CATEGORY-REFINE-11-2024-->
+                    <app-update-menu-tree-service-entries></app-update-menu-tree-service-entries>
+                </ng-container>
           </div>
     
     </div>

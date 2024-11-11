@@ -45,6 +45,13 @@ export class ListService {
         })
         .join(''); // Join the words back together
 }
+menuTreeParentKey="parent-key"
+public get MenuTreeParentKey():string {
+  return this.menuTreeParentKey ; 
+}
+public set MenuTreeParentKey(value:string)  {
+   this.menuTreeParentKey = value; 
+}
   /*
   
         */
