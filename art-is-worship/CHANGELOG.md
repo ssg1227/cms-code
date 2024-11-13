@@ -26,6 +26,11 @@
 - console.log should try to keep reference - classname method name
 ### 2024
 #### To last week Oct Mid-November 2024 
+- New series 'Shades of Divinity' 
+ - Attempt high quality drwaing,using B&W shading. 
+ - Up to date with adding sketch to scrapbook and entry
+ - To coordinate/coincide with refinement of new category add automation
+- **Duplicate Entries to separate list files automation, implement and initial test Nov 6 24**
 - **UI upgrades**
 - **Slide show implemented with pop up**
 - **Automated creation of new category - folder for images and list file** 
