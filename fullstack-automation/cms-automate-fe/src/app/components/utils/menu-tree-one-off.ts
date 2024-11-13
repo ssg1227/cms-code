@@ -751,6 +751,6 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '/view', params:'machines-others', label: 'Other Machines'},
             {link: '', params:'special-aircraft-series', label: 'Special Aircraft Types'}
         ],
-    },
+    }
     // NEW INSERTS
 ]
