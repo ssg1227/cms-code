@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -6,9 +6,9 @@ import { Input, Output, EventEmitter } from '@angular/core';
   templateUrl: './multiline.component.html',
   styleUrls: ['./multiline.component.css']
 })
-export class MultilineComponent implements OnInit {
+export class MultilineComponent implements OnInit, OnChanges {
   @Input() entityName = "" ;
-  @Input() passedTextList = ["none"];
+  @Input() passedTextList:string[] = [];
   textLines = ["","","","","","",""] ;
   @Output() multiTextDone = new EventEmitter<string[]>();
   
@@ -17,6 +17,13 @@ export class MultilineComponent implements OnInit {
   ngOnInit(): void {
     if (this.passedTextList !== null && this.passedTextList[0] !== "none") {
       this.textLines = JSON.parse(JSON.stringify(this.passedTextList));
+    }
+  }
+  // This lifecycle hook will detect changes to the input property
+  ngOnChanges(changes: SimpleChanges): void {
+    this.textLines = JSON.parse(JSON.stringify(changes['passedTextList'].currentValue));
+    if (changes['passedTextList']) {
+      console.log('Input changed:', changes['passedTextList'].currentValue);
     }
   }
   addLine() {

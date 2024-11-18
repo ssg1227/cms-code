@@ -10,7 +10,7 @@ import { Input, Output, EventEmitter } from '@angular/core';
 export class ImagesFoldersComponent implements OnInit {
   mockdata = true; 
   @Output() imageVersionsDone = new EventEmitter<string[]>();
-  @Output() parentKeyChange = new EventEmitter<string>();
+  @Output() parentKeyChange = new EventEmitter<{parent:string, index: number}>();
   @Input() imageTreeMode = 'moveFiles';
   /// 
    currentFile =  '/Users/shantanu/Downloads/TaraporewallaJune282023.jpeg';
@@ -41,6 +41,7 @@ export class ImagesFoldersComponent implements OnInit {
   folderName=""
   imageFiles:string[]=[] ;
   useImageRoot = true ;
+  levelIndex = 0;//NEW-CATEGORY-REFINE-11-2024
   imgR() {
     this.useImageRoot = !this.useImageRoot ;
   }
@@ -63,8 +64,10 @@ export class ImagesFoldersComponent implements OnInit {
   }
   getImageSubFolder(event:any, level:number){
     this.listService.MenuTreeParentKey = event.target.value;// NEW-CATEGORY-REFINE-11-2024
+    this.levelIndex = level;
     //this.parentKeyChange.emit(event.target.value);
     //alert( this.listService.MenuTreeParentKey) ;
+
     switch(level) {
       case 1:  this.level1Select =  event.target.value;
               this.currentParentFolder = `${this.rootImageDestinationFolder}/${event.target.value}`;
@@ -237,7 +240,9 @@ export class ImagesFoldersComponent implements OnInit {
      
       this.imageVersionsDone.emit([`${this.currentParentFolder}/${this.folderName}`]);
     }
+     
     setParentKey() { //NEW-CATEGORY-REFINE-11-2024
-      this.parentKeyChange.emit( this.listService.MenuTreeParentKey );
+      let a = { parent: this.listService.MenuTreeParentKey, index: this.levelIndex} 
+      this.parentKeyChange.emit( a );
     }
 }
