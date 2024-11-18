@@ -52,14 +52,6 @@ public get MenuTreeParentKey():string {
 public set MenuTreeParentKey(value:string)  {
    this.menuTreeParentKey = value; 
 }
-isLatestMenuTreeLoaded = false ;
-public get IsLatestMenuTreeLoaded():boolean {
-  return this.isLatestMenuTreeLoaded ;
-}
-
-public set IsLatestMenuTreeLoaded(value:boolean)  {
-  this.isLatestMenuTreeLoaded = value ;
-}
   /*
   
         */
