@@ -80,9 +80,16 @@ export class LookupValues {
     downloadedImageRootFile2 = `../../../../../../../../../../../../Downloads/Sketch-transit/` ;
     downloadedImageRootFile = `../../../../../../..//../../../../../../shantanug/Downloads/Sketch-transit/`
     albumsInsertTextFile = `/Users/shantanug/Downloads/Sketch-transit-test/AlbumEntry.txt`;
-/// Ganesh07262023-forautoTest-2.jpeg
+    /// Ganesh07262023-forautoTest-2.jpeg
+    menutreePath = '/Users/shantanug/Documents/GitHub/cms-code/art-is-worship/src/assets/content-tree/menu-tree-elements.ts';
+    menutreeBackupPath = '/Users/shantanug/Documents/GitHub/cms-code/art-is-worship/src/assets/content-tree/menu-tree-elements.pre-add.bak.ts';
+    menutreeEditPath = '/Users/shantanug/Documents/GitHub/cms-code/fullstack-automation/cms-automate-fe/src/app/settings-models-xfer-data/menu-tree-elements.ts';
+    menutreeTestBackupPath = '/Users/shantanug/Documents/GitHub/cms-code/fullstack-automation/cms-automate-fe/src/app/components/utils/menu-tree-one-off.pre-add.bak.ts';
+    menutreeFinalPath = '/Users/shantanug/Documents/GitHub/cms-code/art-is-worship/src/assets/content-tree/menu-tree-elements.ts';
+    menutreeTestPath = '/Users/shantanug/Documents/GitHub/cms-code/fullstack-automation/cms-automate-fe/src/app/components/utils/menu-tree-one-off.ts';
+    menutreeTempPath = '/Users/shantanug/Documents/GitHub/cms-code/fullstack-automation/cms-automate-fe/src/app/components/utils/menu-tree-elements_ts';
     listFileFrameLines = [
-          `import {  ImageElement } from '@settings-and-models/image-detail'`,
+          `import {  ImageElement } from '@models-xfer-data/image-detail'`,
 
     `enum PicsIndex  {
         aumkarGaneshSept2020Final,

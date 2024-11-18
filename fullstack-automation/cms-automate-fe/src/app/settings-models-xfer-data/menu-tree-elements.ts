@@ -1,31 +1,10 @@
-
- interface BreadCrumb {
-    link:string;
-    params?:string;
-    label:string ;
-    levelIndex?: number;
-
-}
-
-export interface CartItem {
-    image: string;
-    name: string;
-    unitPrice: number;
-    unit: string;
-    quantity: number;
-  }
-export interface ItemUnitPrice {
-  unitPrice:number;
-  unit:string;
-  itemClass:string;
-}
-interface ItemPrice {
-    category:string;
-    unitPrice?:number;
-    unit?:string;
-    itemUnitPrice?:ItemUnitPrice[];
-}
-export interface TreeNodeElement {
+import { BreadCrumb } from "@settings-and-models/bread-crumbs";
+import { TreeNodeElement } from "@settings-and-models/tree-node-element";
+// CMS picture gallery hierarchy structure
+// This is a tree structure, where the leaf key will load the 
+// JSON containing a picture list
+// This modifies and enhances the menu-tree logic of the old app
+export interface TreeNodeElement2 {
     key:string; // unique id.. like a primary key, also picture list loader for leaf
     parentKey?:string; // like a foreign key and establishing parent. optional()
     levelIndex?:number ; // unused for now (May 2024)
@@ -37,14 +16,10 @@ export interface TreeNodeElement {
     isCompiledList?:boolean; // use some criteria to load selected images like latest uploads or top rated
     isLeafParent:boolean; // 'true' = load the image list for that menu kee, 'false' = top or middle node
     dateUploaded?:string;
-    cardLevelImage?:string;
     roles?:string[]; // roles match users roles many to many match
-    shape?:string;
-    className?:string;
-    styleJSON?:string;
-    itemPrice?:ItemPrice; 
     
 }
+
 export const MenuTreeElements:TreeNodeElement[] = [
     // #### ROOT
     {
@@ -753,4 +728,22 @@ Also increasing numbers of Swami Samartha sketches`,
         ],
     }
     // NEW INSERTS
+,{
+parentKey: 'test-level1-nov18',key: 'test-level2-nov18', isLeafParent: true, levelIndex: 1, roles:["any"],
+label: 'Test Level2 Nov18',  description: 'test-level2=nov18',
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"test-level1-nov18","label":"Test Level1 Nov18"},
+{"link":"","params":"test-level2-nov18","label":"Test Level2 Nov18"},
+], emptyMessage: 'No Content'
+}
+,{
+parentKey: 'top-level',key: 'test-level1-nov18', isLeafParent: false, levelIndex: 1, roles:['any'],
+label: 'Test Level1 Nov18',  description: 'Test Level 1 Nov 18',
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"","params":"test-level1-nov18","label":"Test Level1 Nov18"},
+], emptyMessage: 'No Content'
+}
+   
 ]

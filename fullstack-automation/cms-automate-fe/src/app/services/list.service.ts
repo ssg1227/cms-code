@@ -52,6 +52,14 @@ public get MenuTreeParentKey():string {
 public set MenuTreeParentKey(value:string)  {
    this.menuTreeParentKey = value; 
 }
+isLatestMenuTreeLoaded = false ;
+public get IsLatestMenuTreeLoaded():boolean {
+  return this.isLatestMenuTreeLoaded ;
+}
+
+public set IsLatestMenuTreeLoaded(value:boolean)  {
+  this.isLatestMenuTreeLoaded = value ;
+}
   /*
   
         */
@@ -60,6 +68,11 @@ public set MenuTreeParentKey(value:string)  {
     return this.http.post<any>(`${this.webServiceURL}/listing`,parentFolder)
     .pipe(catchError(this.handleError));
   }
+  copyFile(copyDetail:any):Observable<HttpResponse<any>> {
+    return this.http.post<any>(`${this.webServiceURL}/copy`,copyDetail)
+    .pipe(catchError(this.handleError));
+  }
+
   moveImageFile(moveDetail:any):Observable<HttpResponse<any>> {
     return this.http.post<any>(`${this.webServiceURL}/move`,moveDetail)
     .pipe(catchError(this.handleError));
@@ -85,6 +98,14 @@ public set MenuTreeParentKey(value:string)  {
   }
   createFolder(folder:string) {
     return this.http.post<any>(`${this.webServiceURL}/create-folder`,folder)
+    .pipe(catchError(this.handleError));
+ 
+  }
+
+  // NEW-CATEGORY-REFINE-11-2024
+  // will be used to add category entries in menu tree and core service
+  insertInFile(fileTagAndLines:string[]) {
+    return this.http.post<any>(`${this.webServiceURL}/insert-in-file`,fileTagAndLines)
     .pipe(catchError(this.handleError));
  
   }
