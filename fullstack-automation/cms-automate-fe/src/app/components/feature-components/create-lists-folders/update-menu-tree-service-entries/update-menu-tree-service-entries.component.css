@@ -1,0 +1,69 @@
+.tArea {
+    width: 95%;
+    height: 300px;
+    white-space: pre-wrap;  /* Ensures text wraps within the textarea */
+    word-wrap: break-word;  /* Allows words to break and wrap */
+}
+.tAreaDesc {
+    width: 95%;
+    height: 50px;
+    white-space: pre-wrap;  /* Ensures text wraps within the textarea */
+    word-wrap: break-word;  /* Allows words to break and wrap */
+}
+div {
+    margin-top: 5px;
+    vertical-align:middle;
+}
+.tModalAreaDesc {
+    width: 95%;
+    min-height: 300px;
+    white-space: pre-wrap;  /* Ensures text wraps within the textarea */
+    word-wrap: break-word;  /* Allows words to break and wrap */
+}
+/* display menu tree text */
+#div-container {
+   
+    /*
+    
+    margin:auto;
+    margin-top: 5px;
+    
+    margin:12px;
+    margin-top: -115px;
+    width: auto;
+    height: 100%;
+    overflow-y: scroll;
+    */
+    flex-wrap: wrap;
+    border: 2px outset darkslateblue ;
+    border-radius: 9px;
+    background:radial-gradient(darkblue, skyblue);
+    height: auto;
+    width:auto;
+    margin:2px;
+    overflow-y: scroll;
+    display: none;
+   /*align-items: center;
+    justify-content: center;
+    */
+   
+}
+#div-lower-95 {
+    height:90%;
+    width:98%;
+    max-height:90%;
+    margin: 1px;
+    flex: 1;
+    background-color: #81b1ff;
+}
+  #close-div {
+    cursor: pointer;
+    font-size: 30px;
+    margin-top:2px;
+    align-items: center;
+    text-align: center;
+    background-color: pink;
+    border-radius: 20px;
+    width:40px;
+    height:40px;
+  }

@@ -2,6 +2,7 @@
   <div class="tabs">
         <div  style="overflow-y: scroll;background-color: aqua;">
             <button [disabled]="isPostDataReady()" (click)="postJSONUpdate()">Submit</button>
+           
             <button (click)="reset()">RESET VALUES</button>
             image folder {{imageRoot}}
             <ul *ngIf="imageList != null && imageList.length > 0">
@@ -13,7 +14,7 @@
                 <li *ngFor="let jj of jsonListing">{{jj}}</li>
             </ul>
         </div>
-        <ul class="tab-headers">
+        <ul class="tab-headers" >
             <li  [class.active]="currentTab=='create-image-folder'" (click)="selectTab('create-image-folder')">
                    Create Image Folder
             </li>
@@ -25,8 +26,8 @@
             </li>
           
         </ul>
-        <div class="tab-content">
-            <ng-container *ngIf="currentTab=='create-image-folder'">1
+        <div class="tab-content" >
+            <ng-container *ngIf="currentTab=='create-image-folder'">
                <!-- <app-image-move (imageVersionsDone)="passImageFolders($event)"></app-image-move>-->
                 <app-images-folders imageTreeMode='createFolder' (imageVersionsDone)="passImageFolders($event)"></app-images-folders>
             </ng-container>
@@ -43,6 +44,6 @@
                 <ng-container *ngIf="currentTab=='update-menu-tree-service-entries'"><!-- new component NEW-CATEGORY-REFINE-11-2024-->
                     <app-update-menu-tree-service-entries></app-update-menu-tree-service-entries>
                 </ng-container>
-          </div>
+        </div>
     
     </div>

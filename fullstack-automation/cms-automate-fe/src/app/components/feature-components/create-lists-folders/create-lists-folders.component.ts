@@ -1,4 +1,4 @@
-import { LookupValues } from '../../utils/lookup-values';
+import { LookupValues } from '@utils//lookup-values';
 import { Component, OnInit } from '@angular/core';
 import { ListService } from '@services/list.service';
 
@@ -38,6 +38,8 @@ export class CreateListsFoldersComponent implements OnInit {
     this.jsonListing = jsonStrings ;
  
   }
+  
+  
   // Getters, Styling etc
   componentDivStyle = {padding: '3px', background: 'aliceblue', margin:'3px', border: '3px inset blue'};
   get ComponentDivStyle()  :any {
