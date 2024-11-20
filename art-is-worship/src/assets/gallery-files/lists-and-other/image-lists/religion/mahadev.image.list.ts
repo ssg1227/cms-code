@@ -13,6 +13,16 @@ export class MahadevImageList {
          ``,
          files: [
 {
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  '',
+content:  'watercolor-pencil',
+dateUploaded:  '11-19-2024',
+duplicate:  'true',
+summaryLabel:  `Swami Shankar Oct 24 2024`,
+fullFileName: `assets/gallery-files/images/religion/swami-samartha-q2-2023/SwamiShankarOct242024.jpeg`,
+description: `<ul><li> Swami Shankar Oct 24 2024 </li><li> Thursday Trayodashi </li><li> Ray effect from scan </li><li>Added to shankar list</li></ul>`,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',

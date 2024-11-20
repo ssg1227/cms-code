@@ -4,6 +4,7 @@ import { GaneshPreQ42021ImageList } from 'src/assets/gallery-files/lists-and-oth
 import { GaneshGTEQ12023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q1-2023.image.list' ;
 import { GaneshGTEQ42021ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q4-2021.image.list' ;
 import { GaneshGTEQ12024ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q1-2024.image.list' ;
+import { GaneshGte112024ImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-11-2024.image.list';
 import { GaneshGteEnd7LteGaneshotsav2024List } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-end-7-lte-ganeshotsav-2024.list';
 import { DeviImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/devi.image.list';
 import { LaxmiVishnuHanumanList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/laxmi-vishnu-hanuman.list';
@@ -36,7 +37,7 @@ import {  PlanesShipsCars2ImageList } from 'src/assets/gallery-files/lists-and-o
 import {  SpecialAircraftSeriesImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/special-aircraft-series.list';
 import { MumbaiMeriJaanList } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan.list';
 import { MumbaiMeriJaan2List } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan-2.list';
-
+import { ShadesAndShines1ImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/alag-grouping-full-cycle/shades-and-shines-1.image.list';
 @Injectable({
   providedIn: 'root'
 })
@@ -68,6 +69,7 @@ export class ContextedCoreContentService {
         contentList.push( { contentFile:new GaneshGTEQ12023ImageList(),contentCategory:'shree-ganesh-gte-q1-2023', roles:['sanatani']}) ;
         contentList.push( { contentFile:new GaneshGTEQ12024ImageList(),contentCategory:'shree-ganesh-gte-q1-2024', roles:['sanatani'],latest:true}) ;
         contentList.push( { contentFile:new GaneshGteEnd7LteGaneshotsav2024List(),contentCategory:'shree-ganesh-gte7-lte-ganeshotsav-2024', roles:['sanatani'],latest:true}) ;
+        contentList.push( { contentFile:new GaneshGte112024ImageList(),contentCategory:'ganesh-gte-11-2024', roles:["superuser","sanatani"],latest:true}) ;     
         contentList.push( { contentFile:new DeviImageList(),contentCategory:'devi', roles:['sanatani'],latest:true}) ;
         contentList.push( { contentFile:new MahadevImageList(),contentCategory:'mahadev', roles:['sanatani'],latest:true}) ;
         contentList.push( { contentFile:new MahadevFamilyImageList(),contentCategory:'mahadev-family', roles:['sanatani'],latest:true}) ;
@@ -105,7 +107,7 @@ export class ContextedCoreContentService {
     contentList.push( { contentFile:new PlanesShipsCarsImageList(),contentCategory:'planes-ships-cars', roles:['non-living,  non-religious'],latest:true}) ;
     contentList.push( { contentFile:new PlanesShipsCars2ImageList(),contentCategory:'planes-ships-cars-2', roles:['non-living,  non-religious'],latest:true}) ;
     contentList.push( { contentFile:new SpecialAircraftSeriesImageList(), contentCategory:'special-aircraft-series', roles:['non-living,  non-religious'],latest:true}) ;
-    
+    contentList.push( { contentFile:new ShadesAndShines1ImageList(),contentCategory:'shades-and-shines-1', roles:["any"],latest:true}) ;       
  }
   loadSpecialLists(contentList:ContentList[], specialFiles:any,strParam:string):boolean {
      

@@ -728,4 +728,67 @@ Also increasing numbers of Swami Samartha sketches`,
         ],
     }
     // NEW INSERTS
+,{
+parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-1', isLeafParent: true, levelIndex: 3, roles:["any"],
+label: 'Shades And Shines 1',  description: `Kickstart of the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Using the H, HB, and B series shading black pencils. In addition to other stated 'alag' features, this collection is in ascending order of latest update. November 19 2024 onward `,
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"special-lists","label":"Special Lists"},
+{"link":"/view","params":"alag-grouping-full-cycle","label":"Alag Grouping Full Cycle"},
+{"link":"","params":"shades-and-shines-1","label":"Shades And Shines 1"},
+], emptyMessage: 'No Content'
+}
+,{
+parentKey: 'special-lists',key: 'alag-grouping-full-cycle', isLeafParent: false, levelIndex: 2, roles:["any"],
+label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. This November 2024, I intend grouping sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils. 
+ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded`,
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"special-lists","label":"Special Lists"},
+{"link":"","params":"alag-grouping-full-cycle","label":"Alag Grouping Full Cycle"},
+], emptyMessage: 'No Content'
+}
+    /*
+,{
+parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-1', isLeafParent: true, levelIndex: 3, roles:["any"],
+label: 'Shades And Shines 1',  description: `Kickstart of the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Using the H, HB, and B series shading black pencils. In addition to other stated 'alag' features, this collection is in ascending order of latest update. November 19 2024 onward   `,
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"special-lists","label":"Special Lists"},
+{"link":"/view","params":"alag-grouping-full-cycle","label":"Alag Grouping Full Cycle"},
+{"link":"","params":"shades-and-shines-1","label":"Shades And Shines 1"},
+], emptyMessage: 'No Content'
+}
+,{
+parentKey: 'special-lists',key: 'alag-grouping-full-cycle', isLeafParent: false, levelIndex: 2, roles:["any"],
+label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. This November 2024, I intend grouping sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils. 
+ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded`,
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"special-lists","label":"Special Lists"},
+{"link":"","params":"alag-grouping-full-cycle","label":"Alag Grouping Full Cycle"},
+], emptyMessage: 'No Content'
+}
+
+
+ ,{
+parentKey: 'special-lists',key: 'alag-grouping-full-cycle', isLeafParent: false, levelIndex: 2, roles:["any"],
+label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. This November 2024, I intend grouping sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils `,
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"special-lists","label":"Special Lists"},
+{"link":"","params":"alag-grouping-full-cycle","label":"Alag Grouping Full Cycle"},
+], emptyMessage: 'No Content'
+}*/
+,{
+parentKey: 'religious-shree-ganesh',key: 'ganesh-gte-11-2024', isLeafParent: true, levelIndex: 2, roles:["superuser","sanatani"],
+label: 'Ganesh Gte 11 2024',  description: 'Ganesh centered drawings from November 2024 ',
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"religious-shree-ganesh","label":"Shree Ganesh"},
+{"link":"","params":"ganesh-gte-11-2024","label":"Ganesh Gte 11 2024"},
+], emptyMessage: 'No Content'
+}
+
+    
 ]

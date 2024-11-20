@@ -21,6 +21,17 @@ export class SwamiSamarthaQ22023ImageList { // SwamiSamarthaImageList
             `Swami Samartha the 4th Avatar of Shree Dattatreya (sequence include Lord Datta himself). Swami sketches have become numerous, so created this new category Q2 2023 - July 8 2023.`,
             files: [ 
 {
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  '',
+content:  'watercolor-pencil',
+dateUploaded:  '11-19-2024',
+duplicate:  'false',
+summaryLabel:  `Swami Shankar Oct 24 2024`,
+fullFileName: `${this.imageRoot}SwamiShankarOct242024.jpeg`,
+description: `<ul><li> Swami Shankar Oct 24 2024 </li><li> Thursday Trayodashi </li><li> Ray effect from scan </li></ul>`,
+},
+
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',

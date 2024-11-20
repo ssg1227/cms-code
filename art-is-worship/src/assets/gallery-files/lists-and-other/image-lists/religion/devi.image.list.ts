@@ -14,6 +14,16 @@ public allImageList:ImageElement[]  =  [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '11-19-2024',
+duplicate:  'true',
+summaryLabel:  `Goddess Durga Navratri Idol November 2024`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/DeviNov8-192024.jpeg`,
+description: `<ul><li> Goddess Durga Navratri Idol November 2024 </li><li> Sketched Nov 8 - 19 2024 </li><li> This is attempting to sketch typical 'Bengali Devi' Mahisasurmardini idol  </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'color-crayon',
 dateUploaded:  '06-02-2024',
 summaryLabel:  `Shree Ganesh, Baba and Maa Saraswati`,

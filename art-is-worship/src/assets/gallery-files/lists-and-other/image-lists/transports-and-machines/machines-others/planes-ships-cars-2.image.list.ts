@@ -12,6 +12,16 @@ export class PlanesShipsCars2ImageList {
         files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '11-19-2024',
+duplicate:  'true',
+summaryLabel:  `Tejas Mk2 IAF HAL Nov 7-19 2024`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/TejasMk2Nov7-19-2024.jpeg`,
+description: `<ul><li> Tejas Mk2 IAF HAL Nov 7-19 2024 </li><li> Hindustan Aeronautics Ltd Tejas LCA  </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'color-pencil',
 dateUploaded:  '11-09-2024',
