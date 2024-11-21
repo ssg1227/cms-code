@@ -10,6 +10,7 @@ export class ListService {
   webServiceURL = `http://localhost:8080/api`
   imageroot = "/Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/";
   imageFolderName = 'image-folder-name';
+  imageListRole='["all"]';
   constructor(private http: HttpClient) { }
   // getters and setters
   // DUPLICATE-11-2024
@@ -32,6 +33,18 @@ export class ListService {
   }
   public set ImageListClassName(value:string) {
     this.imageFolderName = value;
+  }
+  public get ImageListFileName(): string {
+    return `${this.imageFolderName}.image.list.ts` ;
+  }
+  public set ImageListFileName(value:string) {
+    this.imageFolderName = value ;
+  }
+  public get ImageListRole():string {
+    return this.imageListRole ;
+  }
+  public set ImageListRole(value:string ) {
+     this.imageListRole = value ;
   }
    kebabToPascal(kebab: string): string {
     return kebab

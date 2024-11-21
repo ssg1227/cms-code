@@ -9,6 +9,7 @@ import { Input, Output, EventEmitter } from '@angular/core';
 export class MultilineComponent implements OnInit, OnChanges {
   @Input() entityName = "" ;
   @Input() passedTextList:string[] = [];
+  @Input() larger:boolean = false ;
   textLines = ["","","","","","",""] ;
   @Output() multiTextDone = new EventEmitter<string[]>();
   

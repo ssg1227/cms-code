@@ -33,18 +33,30 @@ export class ListsFoldersComponent implements OnInit {
 
   listFolderName="";
   newlistFolderName="";
-  listFileName="";
+  listFileName= this.listService.ImageListFileName;
+  listFileImport
+   = `import { ${this.listService.ImageListClassName}} from '${this.getRelativePath( this.currentParentFolder,'src')}/${this.listService.ImageFolderName}.image.list';`
+   listFilePush
+   = `contentList.push( { contentFile:new ${this.listService.ImageListClassName}(),contentCategory:'${this.listService.ImageFolderName}', roles:${this.listService.ImageListRole},latest:true, reverseStack:'false'}) ;
+       `
   imageFiles:string[]=[] ;
   constructor(private listService: ListService) { }
 
   ngOnInit(): void {
     this.getImageFolders(this.rootConfigFolder, 1) ;
   }
+  // get relative path 
+  getRelativePath(absolutePath:string, patternForSubString:string):string {
+    let relativePath ='';
+    let subIndex = absolutePath.indexOf(patternForSubString);
+    relativePath = absolutePath.substring(subIndex);
+    return relativePath ;
+  }
   // NEW-CATEGORY-REFINE-11-2024
   get FilteredListFileFrameLines(): string[] {
     let filteredLines =  [''];//JSON.parse(JSON.stringify(this.lookups.listFileFrameLines));
     this.lookups.listFileFrameLines.forEach((frameLine:string) =>{
-      filteredLines.push( frameLine.replace(`<imageroot>`, this.listService.ImageRoot)
+      filteredLines.push( frameLine.replace(`<imageroot>`, `'${this.getRelativePath(this.listService.ImageRoot,'assets')}'`)
                   .replace(`<CLASSNAME>`, this.listService.ImageListClassName)
                   .replace(`<folderName>`, this.listService.ImageFolderName));
     })
@@ -76,7 +88,7 @@ export class ListsFoldersComponent implements OnInit {
    )
  } 
 
- getImageSubFolder(event:any, level:number){
+ getImageListSubFolder(event:any, level:number){
   switch(level) {
     case 1:  this.level1Select =  event.target.value;
             this.currentParentFolder = `${this.rootConfigFolder}/${event.target.value}`;
@@ -101,7 +113,7 @@ export class ListsFoldersComponent implements OnInit {
     let configFileFolderAndKeys = [ this.configFileFolder, this.key, 
         duplicate.toString() ]  // DUPLICATE-11-2024 optional param -->
     alert(JSON.stringify(configFileFolderAndKeys)) ;
-    this.configFileFound.emit(configFileFolderAndKeys);
+    this.configFileFound.emit(configFileFolderAndKeys); 
   }
   // DUPLICATE-11-2024 -->
   duplicateListing = false ;
@@ -120,6 +132,7 @@ export class ListsFoldersComponent implements OnInit {
     this.listService.ImageFolderName = this.listFolderName ;
     //..// NEW-CATEGORY-REFINE-11-2024
     alert(`CREAT ${this.currentParentFolder}/${this.listFolderName}`);
+
     this.listService.createFolder( `${this.currentParentFolder}/${this.newlistFolderName}`).subscribe(
       (response:any)=> { 
         this.getImageFolders(this.rootConfigFolder, 1) ;
@@ -153,11 +166,51 @@ export class ListsFoldersComponent implements OnInit {
     this.imageVersionsDone.emit([`${this.currentParentFolder}/${this.folderName}`]);
     */
   }
+  // menu tree needs to be copied back here for leaf
+  copyBackFromLiveToAutomate() {
+    let copyDetail = {
+      sourceFileName: this.lookups.menutreePath,
+      destFileName: this.lookups.menutreeEditPath
+    };
+    this.copyFiles(copyDetail, "copied back successfully");
+    
+  }
+
+  copyFiles(copyDetail: any, message: String) {
+    this.listService.copyFile(copyDetail)
+      .pipe(
+
+    )
+      .subscribe({
+        next: (v: any) => { alert(message); },
+        /* next:(v:any) => {
+           //alert('1st copy');
+           let copyDetail2 = {
+             sourceFileName: this.lookups.menutreeFinalPath,  
+             destFileName: this.lookups.menutreeTempPath
+           }
+           this.listService.copyFile(copyDetail2)
+           .subscribe({
+             next:(v2:any) => { console.log('2st copy');},
+             error:(v3:any)  => { console.log(`2st err ${JSON.stringify(v3)}`);},
+           });
+           // this.listService.copyFile(copyDetail)
+         },*/
+        error: (v: any) => {
+          alert(message);
+          alert('error');
+        }
+      });
+
+  }
   //..// NEW-CATEGORY-REFINE-11-2024
   // .. DUPLICATE-11-2024 -->
    createListFile(textLines:string[]) {
     textLines.unshift(`${this.currentParentFolder}/${this.listFileName}`);
     alert(JSON.stringify(textLines));
+    this.listFileImport
+   = `import { ${this.listService.ImageListClassName}} from '${this.getRelativePath( this.currentParentFolder,'src')}/${this.listService.ImageFolderName}.image.list';`
+  
     this.listService.createFile(textLines).subscribe(
       (response:any)=> { 
         console.log('success') ;

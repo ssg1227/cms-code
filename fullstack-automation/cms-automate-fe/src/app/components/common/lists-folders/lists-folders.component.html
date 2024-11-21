@@ -4,32 +4,32 @@
     -->
     <H3>Listing file :</H3>
     <div>
-        <label >Root:</label>   <label >{{rootConfigFolder}}</label>
+        <label >Image List Root:</label>   <label >{{rootConfigFolder}}</label><br/>
         <label >Image Root:</label>   <label >{{currentImageFolder}}</label> <!-- NEW-CATEGORY-REFINE-11-2024-->
     </div>
     <label >Get Listing file:</label>
     <div>
         <div>
             <label>Level1</label>
-            <select id="level1" type="Select" (change)="getImageSubFolder($event,2)" >
+            <select id="level1" type="Select" (change)="getImageListSubFolder($event,2)" >
                 <option *ngFor="let level1File of level1Files" >{{level1File}}</option>
             </select>
             </div>
             <div> 
                 <label>Level2</label>
-                <select id="level2" type="Select" (change)="getImageSubFolder($event,3)" >
+                <select id="level2" type="Select" (change)="getImageListSubFolder($event,3)" >
                     <option *ngFor="let level2File of level2Files" >{{level2File}}</option>
                 </select>
                 </div>  
                 <div>
                     <label>Level3</label>
-                    <select id="level3" type="Select" (change)="getImageSubFolder($event,4)" >
+                    <select id="level3" type="Select" (change)="getImageListSubFolder($event,4)" >
                         <option *ngFor="let level3File of level3Files" >{{level3File}}</option>
                     </select>
                 </div>
                 <div>
                     <label>Level4</label>
-                    <select id="level4" type="Select" (change)="getImageSubFolder($event,5)" >
+                    <select id="level4" type="Select" (change)="getImageListSubFolder($event,5)" >
                         <option *ngFor="let level4File of level4Files" >{{level4File}}</option>
                     </select>
                 </div>
@@ -55,8 +55,11 @@
     </section>
     <section *ngIf="listsFolderMode == 'createFile'"  >
         <label>List File Name</label>
-        <input type="text" [(ngModel)]="listFileName" #ctrl="ngModel">
+        <input type="text"  style="width: 600px;"  [(ngModel)]="listFileName" #ctrl="ngModel">
         <!-- FilteredListFileFrameLines NEW-CATEGORY-REFINE-11-2024-->
+        Core context service import <input type="textarea"  style="width: 99%;height: 50px;"  [(ngModel)]="listFileImport" #ctrl="ngModel">
+        Core context service push <input type="textarea"  style="width: 99%;height: 50px;"  [(ngModel)]="listFilePush" #ctrl="ngModel">
         <app-multiline [passedTextList]= "FilteredListFileFrameLines" (multiTextDone)="createListFile($event)"></app-multiline>
     </section>
+    <button (click)="copyBackFromLiveToAutomate( )">Copy Menu tree from live</button><label>Added here as final, since it refreshes the app</label>
 </div> 

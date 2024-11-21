@@ -26,6 +26,7 @@ export class LookupValues {
       canvassMaterial = [
         'Watercolor paper',
         'Plain paper',
+        'Photo print matt paper',
         'other'
       ]
       evolutionSequences = [
@@ -89,7 +90,7 @@ export class LookupValues {
     menutreeTestPath = '/Users/shantanug/Documents/GitHub/cms-code/fullstack-automation/cms-automate-fe/src/app/components/utils/menu-tree-one-off.ts';
     menutreeTempPath = '/Users/shantanug/Documents/GitHub/cms-code/fullstack-automation/cms-automate-fe/src/app/components/utils/menu-tree-elements_ts';
     listFileFrameLines = [
-          `import {  ImageElement } from '@models-xfer-data/image-detail'`,
+          `import {  ImageElement } from '@settings-and-models/image-detail'`,
 
     `enum PicsIndex  {
         aumkarGaneshSept2020Final,
@@ -100,7 +101,7 @@ export class LookupValues {
         MixGenPlaneSept2020,
     };`,
     `export class <CLASSNAME> {`,
-    `imageRoot = <imageroot>;`,
+    `imageRoot = <imageroot>; reverseStack =  'false';`,
     `public allImageList:ImageElement[]  =  [`,
     `  {  
             folder:'<folderName>',
@@ -111,5 +112,5 @@ export class LookupValues {
         ]
     contextedCoreText = [
       `import {<listClass> } from '<listFileDir>';`,
-      `contentList.push( { contentFile:new <listClass>(),contentCategory:'<listkey>', roles:[<roles>]}) ;`]
+      `contentList.push( { contentFile:new <listClass>(),contentCategory:'<listkey>', roles:[<roles>]}, reverseStack:'false') ;`]
 };

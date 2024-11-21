@@ -7,7 +7,10 @@
                 <li *ngFor="let imageFile of imageList">{{imageFile}}</li>
             </ul>
             <br/>
-            {{jsonListingFile}}
+            {{jsonListingFile}}  
+            <button (click)="toggleFinalEdit()">Toggle Edit content</button>
+            <app-multiline *ngIf="showFinalEdit == true" [passedTextList]= "jsonListing" [larger]="true" (multiTextDone)="editJSONListing($event)"></app-multiline>
+   
             <ul  *ngIf="jsonListing != null && jsonListing.length > 0">
                 <li *ngFor="let jj of jsonListing">{{jj}}</li>
             </ul>

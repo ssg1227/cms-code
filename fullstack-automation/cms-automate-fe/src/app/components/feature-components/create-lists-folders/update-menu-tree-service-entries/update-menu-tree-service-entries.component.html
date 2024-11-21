@@ -14,7 +14,6 @@
         <div><ol>
            <li><button (click)="backupLive()" >Backup live Menu Entry ts </button></li>
            <li><button (click)="copyFromLive()" >Copy live here</button></li>
-           <li><button (click)="copyBackLive()">Copy back, and test</button></li>
         </ol></div>
       </div>
     
@@ -55,6 +54,7 @@
             <option  >false</option>
         </select>
     <div>PARENT KEY <strong>{{parentKey}}</strong></div>
+    <div>PARENT Index <strong>{{levelIndex}}</strong></div>
     <div> Roles 
         <input type='text'   [(ngModel)]="strRoles" ></div>
     <div>
@@ -62,9 +62,8 @@
     
     </div><button (click)="backUpAndCompileMenuEntry()">Compile Menu Entry</button><label> Automate </label><input type="checkbox" ><!--(click)="imgR()"  [(ngModel)]="useImageRoot" > -->
     <app-multiline  [passedTextList]="JSONTextLines" (multiTextDone)="getMenuEntryJSONText($event)"></app-multiline> <!-- (multiTextDone)="getMenuEntryJSONText($event)"></app-multiline> -->
-    <label  style="vertical-align: middle;"> Final Text</label> 
-    <textarea class="tAreaDesc" [(ngModel)]="finalText" ></textarea><br/>
-    <label> Automate </label><input type="checkbox"  [(ngModel)]="automateEntry"><!--(click)="imgR()"   > -->
+    <button (click)="copyBackFromLiveToAutomate($event)">Copy here from live</button> <label  style="vertical-align: middle;"> USE ONLY FOR NODES </label> 
+   
         
   
 </div>

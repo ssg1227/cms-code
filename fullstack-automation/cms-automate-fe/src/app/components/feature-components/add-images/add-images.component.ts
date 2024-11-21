@@ -12,6 +12,7 @@ export class AddImagesComponent implements OnInit {
   imagesMoved = true ;
   jsonListingFile =""
   jsonListing:string[] = [] ;
+  showFinalEdit = false ;
   lookupValues = new LookupValues();
   constructor(private listService: ListService, ) { }
 
@@ -19,6 +20,10 @@ export class AddImagesComponent implements OnInit {
   }
   /* NEW INTERFACE - Tabbed */
   currentTab = 'move-file'
+  toggleFinalEdit() {
+    this.showFinalEdit = !this.showFinalEdit ;
+  }
+  
   selectTab(tabname:string) {
     this.currentTab = tabname ;
   }
@@ -39,6 +44,9 @@ export class AddImagesComponent implements OnInit {
   //  this.jsonListing = this.duplicateEntry === 'false' ? 
   //    jsonStrings: this.filterJSONStrings(jsonStrings) ; r
  
+  }
+  editJSONListing(textLines:string[]) {
+    this.jsonListing =   textLines;
   }
   filterJSONStrings(jStrings: string[]) { // DUPLICATE-11-2024 to substitute
     let lImageRoot = this.listService.ImageRoot ;

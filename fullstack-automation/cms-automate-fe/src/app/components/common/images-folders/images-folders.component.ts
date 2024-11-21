@@ -96,6 +96,7 @@ export class ImagesFoldersComponent implements OnInit {
      (response:any)=> { 
        switch(level) {
          case 1: 
+         console.log(`LEVEL 1 Menus ${JSON.stringify(response)}`)
          this.level1Files = ["select",...response] ; //this.level1Files = response ;
           //    this.level1Files.unshift("select");
            break ;

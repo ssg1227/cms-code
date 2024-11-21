@@ -18,12 +18,13 @@
             <li  [class.active]="currentTab=='create-image-folder'" (click)="selectTab('create-image-folder')">
                    Create Image Folder
             </li>
+            <li  [class.active]="currentTab=='update-menu-tree-service-entries'" (click)="selectTab('update-menu-tree-service-entries')">
+                Create Menu  entry texts
+            </li>
            <li  [class.active]="currentTab=='create-list-file-n-entries'" (click)="selectTab('create-list-file-n-entries')">
                 Create List file, Menu and Service entry texts
             </li>
-            <li  [class.active]="currentTab=='update-menu-tree-service-entries'" (click)="selectTab('update-menu-tree-service-entries')">
-                Update Menu and Service entry texts
-            </li>
+           
           
         </ul>
         <div class="tab-content" >

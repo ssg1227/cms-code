@@ -7,6 +7,8 @@
         </ul>
         <br/>
         {{jsonListingFile}}
+        <app-multiline [passedTextList]= "jsonListing" (multiTextDone)="editJSONListing($event)"></app-multiline>
+   
         <ul  *ngIf="jsonListing != null && jsonListing.length > 0">
             <li *ngFor="let jj of jsonListing">{{jj}}</li>
         </ul>
