@@ -2,17 +2,52 @@
 #### Front End
 Git location '~/cms-code/fullstack-automation/cms-automate-fe/
 #### TODO 
+- **INTRO TO DATABASE INTERACTION** 
+  - ONE per gallery (art-is-worship, ritchie bakes) 
+  - MenuTree elements store in DB
+  - (maybe use noSQL)
+- Optimize and removed hard codes off UpdateMenuTreeServiceEntriesComponent and ImageFolderComponent - level1, level2, etc..
 - Optimization - the 'folder tree select' UI and logic to be made common like move images from dump to loc 
-#### To Mid-November 2024 
-- Refine and add sub features to creating new categories
+- **check order of image add to list files** - it could be stack rather than queue  
+#### To End-November 2024 
+- Refine and add sub features to creating new categories. Changes in cms-automation-fe - angular app, shan-cms-maintain - spring boot
  - **KEYWORD NEW-CATEGORY-REFINE-11-2024**
+ - **November 20 2024 completion** 
+    - 'reverseStack' keyword - orders display of images opposite to position in list file. The automation loads new images in stack order. The added keyword and accompanying logic reverses this order. reverseStack='true' in list file triggers this logic
+    - (implemented in automation. To Test)
+    - Duplicate:true image add logic AND edit content before submittal of image entry in list file
+    - Almost complete automation of new image folder, menu tree, list file folder and list file
  - Create new image folder even from images root, **DONE**
  - Create new image list folder even from image lists root **DONE**
- - Substitute hard coded text like CLASSNAME with the real values  **WIP** (optimized labels on images-folder, re-used component)
- - Create text to paste in core-context.service.ts, and menu-tree.ts (nice to have automate file write)
-   - new component  menu-tree-service-entries
-- **IMPLEMENTED** Automation of Duplicate entries **NEW DOC TECHNIQUE MARK CHANGES WITH PHRASE ... START NOV 3, IMPLEMENTED NOV 6 24**
--  **KEYWORD DUPLICATE-11-2024**
+ - Substitute hard coded text like CLASSNAME with the real values  **WIP**
+ - Create text to paste in core-context.service.ts, and menu-tree.ts **WIP** (nice to have automate file write)
+   - new component  app-update-menu-tree-service-entries **DONE**
+   - **November 18 Backend change in strategy** (all backend tasks)
+        - move file to backup - live site  
+        - create new file and write every thing including inserted text -live site
+        - copy live file back to automation folder 
+        - **IMPLEMENTED INITIAL TESTED** check in
+        
+   - **menu-tree elements WIP November 17 2024** 
+        - **Manual copy paste implemented**
+            - physical copy of menu-tree from art-is-worship. This is because spring boot file write was throwing error, and erasing menu tree contents. **Need to debug**
+            - build the menu tree  element JSON
+            = 'dump' in a large text area for copy-paste
+            - **!! problem** have to copy paste in two versions of menu-tree.
+                - copy from art-is-worship to maintainence folder (take backup)
+                - paste in maintenance version
+                - copy back
+        - entries are of different tree structure as compared to image and image list hierarchy and let's keep it that way
+        - !!universal consistency in keywords and folder names. too much effort in changing existant, but going forward:image folder, image list folder, key to be consistent
+        - JSON for menu-tree element, lookup values. these lookup values to add to separate ts file  
+        - one-off 
+           - copy menu-tree-elements from the gallery website and its dependent interfaces into a (temp) ts file
+           - populate the menu tree look up values as an array
+           - write using backend to the ts file.
+        - in app-update-menu-tree-service-entries mimic the images-folders drop down UI, but with the menu-tree lookups and change logic
+        - 
+ - **IMPLEMENTED** Automation of Duplicate entries **NEW DOC TECHNIQUE MARK CHANGES WITH PHRASE ... START NOV 3, IMPLEMENTED NOV 6 24**
+ -  **KEYWORD DUPLICATE-11-2024**
  - Save 'imageRoot' folder in service. **DONE**
  - Add the 'duplicate:' boolean field irrespective of true or false **DONE needed some changes in logic**
  - Adding to list file, 'Submit Duplicate' button visibility by check box **DONE\\**
