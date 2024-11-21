@@ -107,7 +107,7 @@ export class ContextedCoreContentService {
     contentList.push( { contentFile:new PlanesShipsCarsImageList(),contentCategory:'planes-ships-cars', roles:['non-living,  non-religious'],latest:true}) ;
     contentList.push( { contentFile:new PlanesShipsCars2ImageList(),contentCategory:'planes-ships-cars-2', roles:['non-living,  non-religious'],latest:true}) ;
     contentList.push( { contentFile:new SpecialAircraftSeriesImageList(), contentCategory:'special-aircraft-series', roles:['non-living,  non-religious'],latest:true}) ;
-    contentList.push( { contentFile:new ShadesAndShines1ImageList(),contentCategory:'shades-and-shines-1', roles:["any"],latest:true}) ;       
+    contentList.push( { contentFile:new ShadesAndShines1ImageList(),contentCategory:'shades-and-shines-1', roles:["any"],latest:true, reverseStack:'true'}) ;       
  }
   loadSpecialLists(contentList:ContentList[], specialFiles:any,strParam:string):boolean {
      

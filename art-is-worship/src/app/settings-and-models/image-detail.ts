@@ -43,6 +43,7 @@ export interface  LabelValue {
 export   interface ContentList {
     contentFile:any ;
     contentCategory:string ;
+    reverseStack?:string;
     roles:string[]; // maybe multiple, but for now keep it flattened as a csv string
     latest?:boolean; // for latest uploads
   }
