@@ -25,6 +25,10 @@
 - Maintaining this log
 - console.log should try to keep reference - classname method name
 ### 2024
+#### Mid November 2024 onward
+- Series was Alag full life cycle => Shades and Shines 1
+- Testing automation, duplication and recent full stack changes
+- reverseStack implementation
 #### To last week Oct Mid-November 2024 
 - New series 'Shades of Divinity' 
  - Attempt high quality drwaing,using B&W shading. 
