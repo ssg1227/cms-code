@@ -18,6 +18,16 @@ public allImageList:ImageElement[]  =  [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '11-21-2024',
+duplicate:  'true',
+summaryLabel:  `WDG4 Indian Railways Goods Loco (11/2024)`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/WDG4-11-21-2024.jpeg`,
+description: `<ul><li> WDG4 Indian Railways Goods Loco (11/2024) </li><li> The Indian locomotive class WDG-4 (EMD GT46MAC) is a type of six-axle (Co-Co) freight-hauling diesel–electric locomotive with AC electric transmission designed by General Motors Electro-Motive Diesel </li><li> sketch completed Nov 21 2024 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '11-06-2024',
 duplicate:  'true',
