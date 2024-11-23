@@ -181,8 +181,8 @@ export const MenuTreeElements:TreeNodeElement[] = [
     { 
         parentKey: "special-lists", key: 'showpieces', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["any"], 
         label: 'The Best', 
-        description:`A Year-wise extraction of some of my best efforts,.`,
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
+        description:`A Year-wise extraction of some of my best efforts,. November 2024 I started a group 'Alag Grouping Full Cycle' the drawings under here are top class and will not be repeated here`,
+         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '', params:'showpieces', label: 'The Best'}
@@ -684,7 +684,7 @@ Also increasing numbers of Swami Samartha sketches`,
     }, {
         parentKey:"railways", key: "trains-ir-special-trains", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "Landmark Trains",
-        description:`Some Special and Legendary Trains. As most of this category domain, it covers IR`,
+        description:`Some Special and Legendary Trains. As most of this category domain, it covers IR. As of November 2024, will add special trainsets like Vande Bharat, Shatabdi, ICE. Last mentioned is an exception to the IR dominated contentm `,
         
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -741,7 +741,7 @@ breadCrumb:[
 ,{
 parentKey: 'special-lists',key: 'alag-grouping-full-cycle', isLeafParent: false, levelIndex: 2, roles:["any"],
 label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. This November 2024, I intend grouping sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils. 
-ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded`,
+ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded. The drawings here are also what I think top rated`,
 breadCrumb:[
 {"link":"/view","params":"top-level","label":"HOME"},
 {"link":"/view","params":"special-lists","label":"Special Lists"},
