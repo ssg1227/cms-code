@@ -20,6 +20,16 @@ public allImageList:ImageElement[]  =  [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '11-22-2024',
+duplicate:  'true', evolution:  `Not much of evolution, but a 1st of a B&W entry in special trains `, evolutionSequence:  4, evolutionDate:  '11-18-2024',
+summaryLabel:  `Vande Bharat (CR Ghat) 11/22/24`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/VandeBharatGhatNov2224.jpeg`,
+description: `<ul><li> Vande Bharat (CR Ghat) 11/22/24 </li><li> India designed and developed Vande Bharat </li><li> Capable of speeds of 180 kph. </li><li> Trainsets being used on number of routes all over India  </li><li> Mumbai Pune, Delhi Katra (Vaishnodevi), Delhi Benaras to name a few </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '11-06-2024',
 duplicate:  'false',
