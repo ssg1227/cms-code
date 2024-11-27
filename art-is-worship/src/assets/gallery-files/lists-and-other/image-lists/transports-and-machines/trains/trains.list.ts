@@ -228,6 +228,7 @@ provides luxury facilities for low income people (This scenario is completely fi
                     description: 
                     `<ul>
                         <li>ICE (Inter City Express) earlier generation (1990s)Of German Railway DB</li>
+                        <li>ICE's are Germany's high speed trainsets</li>
                         <li>fictitious scene - passing the city of Ingolstadt on the Munich Nuernberg Line</li>
                         <li>Ingolstadt has or had the Audi car factory which was next to the rail lines </li>
                         <li>Aug 5-6 2022 </li></ul>`,},{

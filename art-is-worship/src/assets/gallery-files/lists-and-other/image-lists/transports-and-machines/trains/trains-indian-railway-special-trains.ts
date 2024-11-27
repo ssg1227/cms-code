@@ -26,6 +26,36 @@ duplicate:  'true', evolution:  `Not much of evolution, but a 1st of a B&W entry
 summaryLabel:  `Vande Bharat (CR Ghat) 11/22/24`,
 fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/VandeBharatGhatNov2224.jpeg`,
 description: `<ul><li> Vande Bharat (CR Ghat) 11/22/24 </li><li> India designed and developed Vande Bharat </li><li> Capable of speeds of 180 kph. </li><li> Trainsets being used on number of routes all over India  </li><li> Mumbai Pune, Delhi Katra (Vaishnodevi), Delhi Benaras to name a few </li></ul>`,
+},  {  
+    fullFileName: `assets/gallery-files/images/transports-and-machines/trains/ICE_IngoldstadtAudi085-62022-2.jpeg`, 
+    canvassSize: 'A4', content:'color-pencil',duplicate:  'true',
+    description: 
+    `<ul>
+        <li>ICE (Inter City Express) earlier generation (1990s)Of German Railway DB</li>
+        <li>fictitious scene - passing the city of Ingolstadt on the Munich Nuernberg Line</li>
+        <li>Ingolstadt has or had the Audi car factory which was next to the rail lines </li>
+        <li>Aug 5-6 2022 </li></ul>`,
+        dateUploaded: '02-07-2023',
+        iterations:[ {
+            fullFileName: `assets/gallery-files/images/transports-and-machines/trains/ICE_IngoldstadtAudi085-62022-2.jpeg`, 
+            canvassSize: 'A4', content:'color-pencil',
+            description: 
+            `<ul>
+                <li>ICE (Inter City Express) earlier generation (1990s)Of German Railway DB</li>
+                <li>ICE's are Germany's high speed trainsets</li>
+                <li>fictitious scene - passing the city of Ingolstadt on the Munich Nuernberg Line</li>
+                <li>Ingolstadt has or had the Audi car factory which was next to the rail lines </li>
+                <li>Aug 5-6 2022 </li></ul>`,},{
+                    fullFileName: `assets/gallery-files/images/transports-and-machines/trains/ICE_IngoldstadtAudi085-62022-1.jpeg`, 
+                    canvassSize: 'A4', content:'color-pencil',
+                    description: 
+                    `<ul>
+                        <li>ICE (Inter City Express) earlier generation (1990s)Of German Railway DB</li>
+                        <li>fictitious scene - passing the city of Ingolstadt on the Munich Nuernberg Line</li>
+                        <li>Ingolstadt has or had the Audi car factory which was next to the rail lines </li>
+                        <li>Aug 5-6 2022 </li></ul>`,}
+        ],
+
 },
 {
 canvassMaterial:  'Plain paper',

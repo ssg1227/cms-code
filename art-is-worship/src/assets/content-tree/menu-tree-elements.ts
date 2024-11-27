@@ -684,7 +684,7 @@ Also increasing numbers of Swami Samartha sketches`,
     }, {
         parentKey:"railways", key: "trains-ir-special-trains", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "Landmark Trains",
-        description:`Some Special and Legendary Trains. As most of this category domain, it covers IR`,
+        description:`Some Special and Legendary Trains. As most of this category domain, it covers IR. As of November 2024, will add special trainsets like Vande Bharat, Shatabdi, ICE. Last mentioned is an exception to the IR dominated contentm `,
         
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
