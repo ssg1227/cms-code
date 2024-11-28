@@ -16,7 +16,17 @@ public allImageList:ImageElement[]  =  [
     theme:'Shirdi Sai Sketches Q4 2024 Q1 2025',
             themeSummary: '',
 files: [
-{
+
+  {
+    canvassMaterial:  'Plain paper',
+    canvassSize:  'A4',
+    content:  'black-white',
+    dateUploaded:  '11-28-2024',
+    duplicate:  'true',
+    summaryLabel:  `Baba Thanksgiving Nov 28 2024`,
+    fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/BabaNov282024Thanksgiving.jpeg`,
+    description: `<ul><li> Baba Thanksgiving Nov 28 2024 </li></ul>`,
+    },{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
