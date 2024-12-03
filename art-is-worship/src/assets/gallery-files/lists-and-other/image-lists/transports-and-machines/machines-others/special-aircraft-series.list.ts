@@ -108,7 +108,16 @@ iterations: [
 {fullFileName: `${this.imageRoot}A380-AI-2-Sept23-2024.jpeg`, description: `<ul><li> A380 series Sept 2024 If Air India had one!! </li><li> Not the latest but closest to, the latest livery </li><li> Over Worli Sea link </li></ul>` },
 ]
 },
-
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '11-06-2024',
+duplicate:  'false',
+summaryLabel:  `A380 series Luthansa Dec3 2024`,
+fullFileName: `${this.imageRoot}A380-Lufthanse-Dec3-2024.jpeg`,
+description: `<ul><li> A380 series Luthansa</li><li> over Am Riesenfeld area of Munich, Germany Dec3 2024 </li></ul>`,
+},
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
