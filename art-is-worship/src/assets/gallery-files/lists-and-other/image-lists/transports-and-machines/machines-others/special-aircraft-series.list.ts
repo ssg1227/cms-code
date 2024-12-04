@@ -114,9 +114,17 @@ canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '11-06-2024',
 duplicate:  'false',
-summaryLabel:  `A380 series Luthansa Dec3 2024`,
-fullFileName: `${this.imageRoot}A380-Lufthanse-Dec3-2024.jpeg`,
-description: `<ul><li> A380 series Luthansa</li><li> over Am Riesenfeld area of Munich, Germany Dec3 2024 </li></ul>`,
+summaryLabel:  `A380 series Luthansa Dec3-4 2024`,
+fullFileName: `${this.imageRoot}A380-Lufthansa-Dec4-2024-final.jpeg`,
+description: `<ul><li> A380 series Luthansa</li><li> over Am Riesenfeld area of Munich, Germany Dec3 2024 </li>
+<li>Using imagination Siemens Office added</li></ul>`,
+
+iterations: [
+  {fullFileName: `${this.imageRoot}A380-Lufthansa-Dec4-2024-final.jpeg`, description: `<ul><li> A380 series Luthansa</li><li> over Am Riesenfeld area of Munich, Germany Dec3 2024 </li>
+<li>Using imagination Siemens Office added</li></ul>` },
+  {fullFileName: `${this.imageRoot}A380-Lufthansa-Dec3-2024.jpeg`, description: `<ul><li> A380 series Luthansa</li><li> over Am Riesenfeld area of Munich, Germany Dec3 2024 </li>
+<li>Using imagination Siemens Office added</li></ul>` },
+  ]
 },
 {
 canvassMaterial:  'Plain paper',
