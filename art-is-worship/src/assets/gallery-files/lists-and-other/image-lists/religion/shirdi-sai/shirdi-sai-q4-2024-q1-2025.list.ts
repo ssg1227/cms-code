@@ -16,6 +16,16 @@ public allImageList:ImageElement[]  =  [
     theme:'Shirdi Sai Sketches Q4 2024 Q1 2025',
             themeSummary: '',
 files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '12-05-2024',
+duplicate:  'false',
+summaryLabel:  `Baba Dec 4 2024 Milpitas Thu Kakad robes`,
+fullFileName: `${this.imageRoot}MilpitasBabaDec42024-Thu-Kakad-night-robes.jpeg`,
+description: `<ul><li> Baba Dec 4 2024 Milpitas Thu Kakad robes </li></ul>`,
+},
 
   {
     canvassMaterial:  'Plain paper',
@@ -70,6 +80,16 @@ fullFileName: `${this.imageRoot}Milpitas-Baba-Nov-14-24.jpeg`,
 description: `<ul><li> Baba from a photo at 1221 CA Circle Milpitas Niv 14 24 </li></ul>`,
 rating:  1,
 ratingYear:  2024,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '12-05-2024',
+duplicate:  'false',
+summaryLabel:  `Baba Diwali Oct 31 2024`,
+fullFileName: `${this.imageRoot}Sai-diwali-oct31-2024.jpeg`,
+description: `<ul><li> Baba Diwali Oct 31 2024 </li></ul>`,
 },
 {
 canvassMaterial:  'Plain paper',
