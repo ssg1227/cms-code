@@ -12,6 +12,18 @@ public allImageList:ImageElement[]  =  [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '12-06-2024',
+duplicate:  'false',
+summaryLabel:  `Navy Day (Dec 5 )and Gateway of India Centennial (Dec 4 2024) - Dec 6`,
+fullFileName: `${this.imageRoot}Navy-Day-Gateway-of-India-Centennial-Dec4-2024.jpeg`,
+description: `<ul><li> Navy Day (Dec 5 )and Gateway of India Centennial (Dec 4 2024) - Dec 6 </li><li> 'Templatized' from an A3 color pencil </li><li> The '100' sheet, Dhruv chopper, a couple of ships and helicopters are new </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  '',
 dateUploaded:  '11-06-2024',
 duplicate:  'false',

@@ -13,6 +13,19 @@ public allImageList:ImageElement[]  =  [
              theme:'Themes and Pending categorization',
              themeSummary: `Some theme sketches with components, some as-yet 'one-off' or uncategorized sketches'`,
              files: [   
+
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '12-06-2024',
+duplicate:  'true',
+summaryLabel:  `Navy Day (Dec 5 )and Gateway of India Centennial (Dec 4 2024) - Dec 6`,
+fullFileName: `assets/gallery-files/images/salaam-mumbai/mumbai-meri-jaan-2/Navy-Day-Gateway-of-India-Centennial-Dec4-2024.jpeg`,
+description: `<ul><li> Navy Day (Dec 5 )and Gateway of India Centennial (Dec 4 2024) - Dec 6 </li><li> 'Templatized' from an A3 color pencil </li><li> The '100' sheet, Dhruv chopper, a couple of ships and helicopters are new </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+},
                 { 
                     fullFileName: `${this.imageRoot}MothersDay05142023.jpeg`,
                     canvassSize: 'A4', content:'black-white',
