@@ -16,18 +16,7 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [
  
-{
-canvassMaterial:  'Plain paper',
-canvassSize:  'A4',
-content:  'color-pencil',
-dateUploaded:  '12-11-2024',
-duplicate:  'false',
-summaryLabel:  `Mriya An225 in flight Dec 10 2024`,
-fullFileName: `${this.imageRoot}Mirya-inflight-Dec10-2024.jpeg`,
-description: `<ul><li> Mriya An225 in flight Dec 10 2024 </li><li> See other drawing of Mriya unloading for details </li></ul>`,
-rating:  1,
-ratingYear:  2024,
-}, 
+
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
@@ -42,7 +31,18 @@ fullFileName: `${this.imageRoot}Mirya-cover-Dec10-2024.jpeg`,
 description: `<ul><li> An225 Mirya - unloading Ganesh.. Dec 10 2024 </li><li> The Antonov An-225 Mriya. (Mriya = dream ??) </li><li> With a maximum takeoff weight of 640 tonnes (705 short tons), the An-225 held several records, including heaviest aircraft ever built and largest wingspan of any operational aircraft. It was commonly used to transport objects once thought impossible to move by air, such as 130-ton generators, wind turbine blades, and diesel locomotives. </li><li> The only completed An-225 was destroyed in the Battle of Antonov Airport in 2022 during the Russian invasion of Ukraine. </li><li> Manufactured	1985 </li></ul>`,
 rating:  1,
 ratingYear:  2024,
-},
+},{
+  canvassMaterial:  'Plain paper',
+  canvassSize:  'A4',
+  content:  'color-pencil',
+  dateUploaded:  '12-11-2024',
+  duplicate:  'false',
+  summaryLabel:  `Mriya An225 in flight Dec 10 2024`,
+  fullFileName: `${this.imageRoot}Mirya-inflight-Dec10-2024.jpeg`,
+  description: `<ul><li> Mriya An225 in flight Dec 10 2024 </li><li> See other drawing of Mriya unloading for details </li></ul>`,
+  rating:  1,
+  ratingYear:  2024,
+  }, 
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '1st of its genre',

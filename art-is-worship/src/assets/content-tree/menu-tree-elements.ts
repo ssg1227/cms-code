@@ -726,7 +726,7 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '/view', params:'machines-others', label: 'Other Machines'},
             {link: '', params:'majestic-lifters-legendary-carriers', label: 'Majestic Lifters Legendary Carriers'}
         ],
-    },{
+    }/*,{
         parentKey:"machines-others", key: "special-aircraft-series", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "Special Aircraft Types",
         description:`Special Aircraft in different liveries and formats - A380, 747 and others`,
@@ -737,7 +737,7 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '/view', params:'machines-others', label: 'Other Machines'},
             {link: '', params:'special-aircraft-series', label: 'Special Aircraft Types'}
         ],
-    }  
+    }  */
     // NEW INSERTS
 ,{
 parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-1', isLeafParent: true, levelIndex: 3, roles:["any"],
