@@ -22,6 +22,16 @@ export class SwamiSamarthaQ22023ImageList { // SwamiSamarthaImageList
             files: [ 
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '12-09-2024',
+duplicate:  'false',
+summaryLabel:  `Champa Shashti Dec6 - Dec 9 2024`,
+fullFileName: `${this.imageRoot}Swami-Champa-Shashti-2-dec9-24.jpeg`,
+description: `<ul><li> Champa Shashti Dec6 - Dec 9 2024 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '11-27-2024',

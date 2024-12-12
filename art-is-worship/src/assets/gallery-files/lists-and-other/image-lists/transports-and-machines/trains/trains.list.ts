@@ -17,6 +17,16 @@ public allImageList:ImageElement[]  =  [
      files: [ 
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  '12-11-2024',
+duplicate:  'true',
+summaryLabel:  `Mumbai Metro Dec 11 2024`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/MumbaiMetroDec112024.jpg`,
+description: `<ul><li> Mumbai Metro Dec 11 2024 </li><li> Sketch of Mumbai's Metro with a backdrop based on Contemporary (2020s) Mumbai Skyline </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '11-21-2024',

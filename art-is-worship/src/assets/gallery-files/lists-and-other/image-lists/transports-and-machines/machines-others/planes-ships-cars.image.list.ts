@@ -18,7 +18,7 @@ content:  'color-pencil',
 dateUploaded:  '11-06-2024',
 duplicate:  'true',
 summaryLabel:  `A380 series Airbus Industrie Livery Sept 21 2024`,
-fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/special-aircraft-series/A380-Sept21-2024.jpeg`,
+fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/majestic-lifters-legendary-carriers/A380-Sept21-2024.jpeg`,
 description: `<ul><li> A380 series Airbus Industrie Livery Sept 21 2024 </li></ul>`,
 },
             // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/${this.imageRoot}QueenElizabethApril10-1620222_1.jpeg

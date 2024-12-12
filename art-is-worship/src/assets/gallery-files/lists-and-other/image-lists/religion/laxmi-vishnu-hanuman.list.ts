@@ -11,7 +11,16 @@ public allImageList:ImageElement[]  =  [
              theme:'Lord Narayan, Maa Laxmi and Avatars, Shree Hanuman',
              themeSummary: `<p>Laxmi and avatars, Rukhmini, Sita, Narayan, Ram, Vithal, Narsimha, Hanuman and others.   </p>`,
              files: [
-{
+               {
+                  canvassMaterial:  'Plain paper',
+                  canvassSize:  'A4',
+                  content:  'black-white',
+                  dateUploaded:  '12-11-2024',
+                  duplicate:  'true',
+                  summaryLabel:  `Vithal Rukhmini Dec 11 2024`,
+                  fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/VithalRakhumabai-Dec11-2024.jpeg`,
+                  description: `<ul><li> Vithal Rukhmini Dec 11 2024 </li></ul>`,
+                  },{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
