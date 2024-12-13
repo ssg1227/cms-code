@@ -144,7 +144,9 @@ export class CoreContentService {
     }
     return this.sketchStats;
   }
-
+  get WelcomeMessage():string {
+    return this.getUserWelcomeMessage();
+  }
   checkLoadUser() {
     if(localStorage.getItem('user-object') !== 'undefined' && localStorage.getItem('user-object') !== null) {
       console.log(`core service: Loadcontent lost ${localStorage.getItem('user-object')}`) ;
@@ -401,12 +403,18 @@ export class CoreContentService {
       
    //   return arr;
   }
-  collectThemeBasedStats(contentList:ContentList) {
+  getUserWelcomeMessage():string {
+    let welcomeMessage  = 'Please login';
     if(localStorage.getItem('user-object') !== 'undefined' && localStorage.getItem('user-object') !== null) {
        
       // @ts-ignore: Object is possibly 'null'.
-      this.sketchStats.userName  = `Welcome ${JSON.parse(localStorage.getItem('user-object')).userName}`;
+      welcomeMessage  = `Welcome ${JSON.parse(localStorage.getItem('user-object')).userName}`;
     }
+    return welcomeMessage
+  }
+  collectThemeBasedStats(contentList:ContentList) {
+      // @ts-ignore: Object is possibly 'null'.
+      this.sketchStats.userName  = this.getUserWelcomeMessage();//`Welcome ${JSON.parse(localStorage.getItem('user-object')).userName}`;
     let themeCount = {
       name: contentList.contentFile.allImageList[0].theme,
       count: 0

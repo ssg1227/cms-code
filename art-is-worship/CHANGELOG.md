@@ -24,6 +24,9 @@
 ### Practices
 - Maintaining this log
 - console.log should try to keep reference - classname method name
+### 2024 end - 2025 start
+### Mid Dec 2024 onward
+- Styling changes: look for comment pattern 'Styling changes 12/2024+ '
 ### 2024
 #### Mid November 2024 onward
 - Series was Alag full life cycle => Shades and Shines 1

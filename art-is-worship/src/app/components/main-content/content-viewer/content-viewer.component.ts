@@ -97,10 +97,17 @@ export class ContentViewerComponent {
       }
     }
    }
+   // Styling changes 12/2024+ 
+   // move welcome msg next to logout btn
+   get WelcomeMessage():string {
+    return this.coreContentService.WelcomeMessage;
+   }
    get StatsSummary():string {
     const summary = this.coreContentService.SketchStats ;
-    return ` <p> ${summary.userName}<br/>Categories:${summary.subjects}<br/> Total:${summary.totalCounts}`;
-    
+    // Styling changes 12/2024+ 
+    // Label overflow return ` <p> ${summary.userName}<br/>Categories:${summary.subjects}<br/> Total:${summary.totalCounts}`;
+    return ` <p> Categories:${summary.subjects}<br/> Total:${summary.totalCounts}`;
+   
    }
    get ImageLabel():string {
     let AInd = '';
