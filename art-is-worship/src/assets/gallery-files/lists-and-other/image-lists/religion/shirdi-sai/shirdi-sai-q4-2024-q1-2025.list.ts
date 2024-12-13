@@ -19,6 +19,16 @@ files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '12-12-2024',
+duplicate:  'false',
+summaryLabel:  `Baba Pre Datta Jayanti (12/14) - 12/12/2024`,
+fullFileName: `${this.imageRoot}BabaPreDattaJayantiDec12-2024.jpeg`,
+description: `<ul><li> Baba Pre Datta Jayanti (12/14) - 12/12/2024 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '12-05-2024',
 duplicate:  'false',
