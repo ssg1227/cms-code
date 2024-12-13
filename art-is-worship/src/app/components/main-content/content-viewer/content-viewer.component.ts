@@ -99,7 +99,7 @@ export class ContentViewerComponent {
    }
    get StatsSummary():string {
     const summary = this.coreContentService.SketchStats ;
-    return ` <p> ${summary.userName}<br/>Image Numbers:<br/> Subjects: ${summary.subjects}<br/> Total Counts:${summary.totalCounts}`;
+    return ` <p> ${summary.userName}<br/>Categories:${summary.subjects}<br/> Total:${summary.totalCounts}`;
     
    }
    get ImageLabel():string {
