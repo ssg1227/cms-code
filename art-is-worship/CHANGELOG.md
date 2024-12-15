@@ -26,6 +26,10 @@
 - console.log should try to keep reference - classname method name
 ### 2024 end - 2025 start
 ### Mid Dec 2024 onward
+- **art-is-worship.web.app: 500 sketches uploaded Dec 14 2024!!**
+    - It was the first fortnight of the lunar month of 'Margasheersh'
+    - Full moon day, is said to be the birth date of Lord Dattatreya
+    - The 500th was (,logically,) a sketch of Him
 - Styling changes: look for comment pattern 'Styling changes 12/2024+ '
 ### 2024
 #### Mid November 2024 onward

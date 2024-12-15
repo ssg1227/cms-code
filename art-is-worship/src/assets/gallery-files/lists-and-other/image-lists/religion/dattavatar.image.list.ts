@@ -25,6 +25,16 @@ public allImageList:ImageElement[]  =  [
         files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  '12-14-2024',
+duplicate:  'true',
+summaryLabel:  `Datta Jayanti Dec 14 2024 - 500th upload`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/DattaJayanti-2024-12-14-500th.jpeg`,
+description: `<ul><li> Datta Jayanti Dec 14 2024 - 500th upload </li><li>Last in this list</li><li> using the landmark 500th to create a new list for the next sketch in this genreM</li><li> Completed and uploaded Dec 14 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '07-20-2024',

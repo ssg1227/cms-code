@@ -19,6 +19,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  '12-14-2024',
+duplicate:  'false',
+summaryLabel:  `Datta Jayanti Dec 14 2024 - 500th upload`,
+fullFileName: `${this.imageRoot}DattaJayanti-2024-12-14-500th.jpeg`,
+description: `<ul><li> Datta Jayanti Dec 14 2024 - 500th upload </li><li> Completed and uploaded Dec 14 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '12-11-2024',
