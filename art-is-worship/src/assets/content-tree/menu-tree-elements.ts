@@ -740,6 +740,17 @@ Also increasing numbers of Swami Samartha sketches`,
     }  */
     // NEW INSERTS
 ,{
+parentKey: 'religious-gurus-and-mystics',key: 'dattavatar-2', isLeafParent: true, levelIndex: 2, roles:["superuser","guru"],
+label: 'Dattavatar 2',  description: `श्री गुरु स्मरण ... श्री गुरु नमन ... श्री गुरु चरण ... श्री गुरु शरण .. अवधूत चिंतन ... श्री गुरुदेव दत्त
+Second (>= Dec 18 2024) list Guru's of Lord Dattatreya lineage and Sikh Gurus... there are likely to be maybe a couple of sketches of Shirdi Sai here; I have many of them, so have separate sections for the same.. 
+Also increasing numbers of Swami Samartha sketches. Sketches `,
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"religious-gurus-and-mystics","label":"Religious: Gurus and Mystics"},
+{"link":"","params":"dattavatar-2","label":"Dattavatar 2"},
+], emptyMessage: 'No Content'
+}
+,{
 parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-1', isLeafParent: true, levelIndex: 3, roles:["any"],
 label: 'Shades And Shines 1',  description: `Kickstart of the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Using the H, HB, and B series shading black pencils. In addition to other stated 'alag' features, this collection is in ascending order of latest update. November 19 2024 onward `,
 breadCrumb:[

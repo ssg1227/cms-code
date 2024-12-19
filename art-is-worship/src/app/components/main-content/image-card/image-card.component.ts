@@ -30,6 +30,7 @@ export class ImageCardComponent {
   @Input() cardInfo:any = null ;
   @Input() imageDetail:any = null ;
   @Input() isLarge:boolean = false ;
+  @Input() isCore:boolean = false ;//core user type
   @Output() clickedIndex = new EventEmitter<string>() ;
 
   cardState = 'default';
@@ -42,6 +43,7 @@ export class ImageCardComponent {
       // @ts-ignore: Object is possibly 'null'.
       this.key = localStorage.getItem('key')|'';
     }
+   // if(this.isCore.toString() === 'true') alert(this.isCore);
   }
   toggleCardState() {
     this.cardState = this.cardState === 'default' ? 'hover' : 'default';
@@ -68,6 +70,9 @@ export class ImageCardComponent {
     aInd = aInd.substring(0, aInd.search('</li>') ) ;
     return aInd ;
 
+  }
+  get DisplayDescription():string { // core user type
+    return `${this.imageDetail.imageList[0].description} TEST`;
   }
   expand() {
     if (this.isLarge === true) {

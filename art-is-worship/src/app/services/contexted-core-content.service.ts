@@ -11,6 +11,8 @@ import { LaxmiVishnuHanumanList} from 'src/assets/gallery-files/lists-and-other/
 import { MahadevImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/mahadev.image.list';
 import {MahadevFamilyImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/mahadev-family.image.list';
 import {DattavatarImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/dattavatar.image.list';
+import { Dattavatar2ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/dattavatar-2.image.list';
+// /Users/shantanug/Documents/GitHub/cms-code/art-is-worship/src/assets/gallery-files/lists-and-other/image-lists/religion/dattavatar-2.image.list.ts
 import {SwamiSamarthaImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/swami-samartha.image.list';
 import {SwamiSamarthaQ22023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/swami-samartha-q2-2023.image.list';
 import {ShirdiSaiThemeList1 } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/baba-theme.images-list';
@@ -79,6 +81,7 @@ export class ContextedCoreContentService {
       if (isSuper === true || isGuru === true ) {
         console.log(`Content service load lists ${isSuper} ${isSanatani} ${isGuru}`)
         contentList.push( { contentFile:new DattavatarImageList(),contentCategory:'dattavatar', roles:['guru'],latest:true}) ;
+        contentList.push( { contentFile:new Dattavatar2ImageList(),contentCategory:'dattavatar-2', roles:["guru"],latest:true}) ;       
         contentList.push( { contentFile:new SwamiSamarthaImageList(),contentCategory:'swami-samartha', roles:['guru']}) ;
         contentList.push( { contentFile:new SwamiSamarthaQ22023ImageList(),contentCategory:'swami-samartha-q2-2023', roles:['guru'],latest:true}) ;
         contentList.push( { contentFile:new ShirdiSaiQ42023Q12024ImageList(),contentCategory:'shirdi-sai-q4-2023-q1-2024', roles:['guru'],latest:true}) ;

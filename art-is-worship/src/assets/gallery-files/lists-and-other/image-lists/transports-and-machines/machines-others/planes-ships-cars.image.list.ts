@@ -52,7 +52,7 @@ description: `<ul><li> A380 series Airbus Industrie Livery Sept 21 2024 </li></u
                     content:  '',
                     dateUploaded:  '11-06-2024',
                     duplicate:  'false',
-                    evolution:  `rgererge`,
+                    evolution:  `a 1st on multiple processing of an existing image, 'superimposing a new shape'; copied, printed, scanned and edited soft copy, THEN printed again to draw the new shape`,
                     evolutionSequence:  4,
                     evolutionDate:  '11-06-2024',
                     summaryLabel:  `Shuttle Last ride over Bay Area Oct 2012 (03/23)`,

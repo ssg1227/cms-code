@@ -24,6 +24,7 @@
           <app-image-card 
           [cardIndex]="i" 
           (clickedIndex)="compareSelected($event,i)" 
+          [isCore]="isCore"
           [imageDetail]="grpImag"
           [cardSelected]="currentCellSelected"></app-image-card>
      </div>
@@ -67,7 +68,10 @@
       <div id="iterative" *ngFor="let imageElement of selectedImage.imageList, let j = index">
         <div id="pic-div-container" > 
           <img id="modaldivpic"   *ngIf="imageElement != null" src="{{imageElement.image}}">
-          <div  id="modaltext" style="padding:20px;border: 1px solid gray; margin-left:20px;"> <p [innerHTML]="imageElement.description"> </p>
+          <div  id="modaltext" style="padding:20px;border: 1px solid gray; margin-left:20px;"> 
+              <p [innerHTML]="imageElement.description"> </p><!-- core user type -->
+              <p *ngIf="imageElement.coreDescription" [innerHTML]="imageElement.coreDescription"> </p><!-- core user type -->
+              <!-- <p [innerHTML]="displayDescription(selectedImage.imageList[j])"> </p> to work core user type -->
         </div>
         </div>
       </div>

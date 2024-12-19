@@ -26,6 +26,13 @@
 - console.log should try to keep reference - classname method name
 ### 2024 end - 2025 start
 ### Mid Dec 2024 onward
+- ***CLEAN UP USERS AND ROLES LOGIC** 
+- Customized and other fields add to ImageDetail. 
+  - 'core' user type: 
+    -  'exclusive' inner circle of users above super user. 
+    -  initial usage 'coreDescription' text visible only to core user type
+    - changes look for 'core user type' in comments
+  - In contexted adding fields to pivot lists based on 'albums' - which sketch book collection the drawing is stored. 
 - **art-is-worship.web.app: 500 drawings uploaded Dec 14 2024!!**
     - It was the first fortnight of the lunar month of 'Margasheersh'
     - Full moon day, is said to be the birth date of Lord Dattatreya

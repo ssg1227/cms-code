@@ -181,8 +181,8 @@ export const MenuTreeElements:TreeNodeElement[] = [
     { 
         parentKey: "special-lists", key: 'showpieces', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["any"], 
         label: 'The Best', 
-        description:`A Year-wise extraction of some of my best efforts,.`,
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
+        description:`A Year-wise extraction of some of my best efforts,. November 2024 I started a group 'Alag Grouping Full Cycle' the drawings under here are top class and will not be repeated here`,
+         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '', params:'showpieces', label: 'The Best'}
@@ -684,7 +684,7 @@ Also increasing numbers of Swami Samartha sketches`,
     }, {
         parentKey:"railways", key: "trains-ir-special-trains", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "Landmark Trains",
-        description:`Some Special and Legendary Trains. As most of this category domain, it covers IR`,
+        description:`Some Special and Legendary Trains. As most of this category domain, it covers IR. As of November 2024, will add special trainsets like Vande Bharat, Shatabdi, ICE. Last mentioned is an exception to the IR dominated contentm `,
         
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -715,7 +715,18 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '/view', params:'machines-others', label: 'Other Machines'},
             {link: '', params:'planes-ships-cars-2', label: 'Planes, ships and cars(2)'}
         ],
-    },  {
+    }, {
+        parentKey:"machines-others", key: "majestic-lifters-legendary-carriers", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
+        label: "Majestic Lifters Legendary Carriers",
+        description:`A Mix of the Colossi and Legendary Cargo planes and Airliners.. AN225, A380, 747 to DC3 and others. This list is aimed at full cycle, where the drawing is entered into the sketchbook and uploaded online synchronously- at least for Dec 2024 onward; others will circle around and add`,
+        
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'transport-and-machines', label: 'Transport And Machines'},
+            {link: '/view', params:'machines-others', label: 'Other Machines'},
+            {link: '', params:'majestic-lifters-legendary-carriers', label: 'Majestic Lifters Legendary Carriers'}
+        ],
+    }/*,{
         parentKey:"machines-others", key: "special-aircraft-series", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "Special Aircraft Types",
         description:`Special Aircraft in different liveries and formats - A380, 747 and others`,
@@ -726,8 +737,19 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '/view', params:'machines-others', label: 'Other Machines'},
             {link: '', params:'special-aircraft-series', label: 'Special Aircraft Types'}
         ],
-    }
+    }  */
     // NEW INSERTS
+,{
+parentKey: 'religious-gurus-and-mystics',key: 'dattavatar-2', isLeafParent: false, levelIndex: 2, roles:["superuser","guru"],
+label: 'Dattavatar 2',  description: `श्री गुरु स्मरण ... श्री गुरु नमन ... श्री गुरु चरण ... श्री गुरु शरण .. अवधूत चिंतन ... श्री गुरुदेव दत्त
+Second (>= Dec 18 2024) list Guru's of Lord Dattatreya lineage and Sikh Gurus... there are likely to be maybe a couple of sketches of Shirdi Sai here; I have many of them, so have separate sections for the same.. 
+Also increasing numbers of Swami Samartha sketches. Sketches `,
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"religious-gurus-and-mystics","label":"Religious: Gurus and Mystics"},
+{"link":"","params":"dattavatar-2","label":"Dattavatar 2"},
+], emptyMessage: 'No Content'
+}
 ,{
 parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-1', isLeafParent: true, levelIndex: 3, roles:["any"],
 label: 'Shades And Shines 1',  description: `Kickstart of the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Using the H, HB, and B series shading black pencils. In addition to other stated 'alag' features, this collection is in ascending order of latest update. November 19 2024 onward `,
@@ -741,7 +763,7 @@ breadCrumb:[
 ,{
 parentKey: 'special-lists',key: 'alag-grouping-full-cycle', isLeafParent: false, levelIndex: 2, roles:["any"],
 label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. This November 2024, I intend grouping sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils. 
-ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded`,
+ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded. The drawings here are also what I think top rated`,
 breadCrumb:[
 {"link":"/view","params":"top-level","label":"HOME"},
 {"link":"/view","params":"special-lists","label":"Special Lists"},

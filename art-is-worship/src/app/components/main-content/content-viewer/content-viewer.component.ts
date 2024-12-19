@@ -32,6 +32,8 @@ export class ContentViewerComponent {
   currentCardList:TreeNodeElement[] = this.coreContentService.setCurrentCardList() ;
   inlineExpand = 'true' ;// as against modal, however we will use the modal for the shopping list
   currentCellSelected = 0 ;
+  userRoles = "";// core user type
+  isCore = false;// core user type
   // image listing
   allImageList:ImageElement[] = [];
   genImageList:any = null ;
@@ -55,6 +57,11 @@ export class ContentViewerComponent {
   viewportHeight:number ;
   currentPage = 1;
   //..
+  displayDescription(imageELement:any):string // core user type
+  {
+    //if (this.selectedImageList.imageList != undefined && selectedImage.imageList.length  >= 1)
+    return `TEST ${JSON.stringify(imageELement["description"])}`;
+  }
   constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService,
     private elRef: ElementRef, private renderer: Renderer2) {
     this.viewportHeight = window.outerHeight ;
@@ -64,7 +71,9 @@ export class ContentViewerComponent {
   ngOnInit() {
     this.isLeafParent = localStorage.getItem("isLeafParent") ;// @ts-ignore: Object is possibly 'null'.
     this.currentMenu = localStorage.getItem("current-menu") ;
-    
+    // @ts-ignore: Object is possibly 'null'.
+    this.userRoles = localStorage.getItem("userRoles") ; // core user type
+    this.isCore = (this.userRoles.indexOf('core')>=0)?true:false ;
     if (this.testMode === true) {
       console.log(`Content component ngOnInit ${this.isLeafParent} ${this.currentMenu}`);
     }
