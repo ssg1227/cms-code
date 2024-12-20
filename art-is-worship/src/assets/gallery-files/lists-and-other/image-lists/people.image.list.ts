@@ -15,6 +15,16 @@ export class PeopleImageList {
      files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '12-20-2024',
+duplicate:  'true',
+summaryLabel:  `RajKapoor Centennial Dec14 1924-2024(12-19-2024)`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/RajKapoor-Centennial-Dec14-1924-2024-1219.jpeg`,
+description: `<ul><li> RajKapoor Centennial Dec14 1924-2024(12-19-2024) </li><li> In remembrance of Raj Kapoor who's centennial anniversary was Dec 14 (1924- 2024) </li><li> Ganesh - Kapoors used to have Ganeshotsav at RK Studios Chembur  </li><li> Started by Raj Kapoor, the legacy was carried by his descendants until 2018 </li><li> The Joker puppet is from his movie Mera Naam Joker </li><li> And RK Banner (minus the figurines) </li><li>completed Dec 19 2024</li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'black-white',
 dateUploaded:  '12-11-2024',
