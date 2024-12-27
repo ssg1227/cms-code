@@ -11,6 +11,16 @@ public allImageList:ImageElement[]  =  [
                 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '12-27-2024',
+duplicate:  'true',
+summaryLabel:  `Mumbai Meri Jaan.. a City of Centurions 12/26/2024`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/GatewayTajSRTSMG-Dec2627-2024.jpeg`,
+description: `<ul><li> Mumbai Meri Jaan.. a City of Centurions 12/26/2024 </li><li> Featuring 100+ anniversary structures </li><li> 1. Gateway of India (Dec 4 1924-2024) </li><li> 2 Taj Mahal Hotel (Dec 16 1903 - 2003) </li><li> AND (picture book at bottom) Cricket Centurions </li><li> SRT - Sachin Tendulkar 100 international centuries </li><li> SMG - Sunil Gavaskar 34 Test Centuries </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'black-white',
 dateUploaded:  '12-11-2024',

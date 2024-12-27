@@ -18,6 +18,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '12-26-2024',
+duplicate:  'false',
+summaryLabel:  `Dec 26 2024`,
+fullFileName: `${this.imageRoot}BabaDec262024.jpeg`,
+description: `<ul><li> Dec 26 2024 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '12-12-2024',

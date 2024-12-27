@@ -357,6 +357,7 @@ export class CoreContentService {
             console.log(strParam) ;
             this.genImageList = this.contentList.find(cl => cl.contentCategory === strParam)? 
                 this.contentList.find(cl => cl.contentCategory === strParam)?.contentFile: null;
+            console.log(`core user type ${JSON.stringify(this.genImageList)}`) ;
             if (this.genImageList === null || this.genImageList.allImageList === null) {
               return ;
             }

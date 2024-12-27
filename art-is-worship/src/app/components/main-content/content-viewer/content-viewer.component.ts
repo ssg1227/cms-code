@@ -89,6 +89,7 @@ export class ContentViewerComponent {
         this.genImageList = dataReturned.gen ; 
         this.allImageList = this.genImageList.allImageList;
         this.compareSelected(this.key, 0);
+            
     }
     const summary = this.coreContentService.SketchStats ;
     if(this.coreContentService.TestMode === true)  {
@@ -240,6 +241,7 @@ export class ContentViewerComponent {
                   return;
                 }
               */
+                let finalDescrption = this.compiledDescription(fileData) ; // 'core user type'
                 let groupImages:any[] = [] ;
                 let stats = '';
                 let cardstyle = { outer: ``, image:``}; // move chosing card style logic to core content service 
@@ -266,13 +268,16 @@ export class ContentViewerComponent {
                 } else {
                   fileData.fullFileName? 
                     groupImages.push({ image: fileData.fullFileName, 
-                      description: fileData.description,
+                      // description: fileData.description, // 'core user type'
+                      description: finalDescrption, // 'core user type'
                       summaryLabel: fileData.summaryLabel ? fileData.summaryLabel: '',
                       cardStyle: cardstyle}): 
                     groupImages.push({ image: `assets/all-images/${foundFolder}/${fileData.fileName}`, 
                //           description: fileData.description });
                //  
-                          description: stats === ''? fileData.description: `${fileData.description}<br/>(<em> ${stats}}</em>)`,
+                          // description: stats === ''? fileData.description: `${fileData.description}<br/>(<em> ${stats}}</em>)`,
+                          // 'core user type'
+                          description: stats === ''?finalDescrption: `${finalDescrption}<br/>(<em> ${stats}}</em>)`,
                           cardStyle: cardstyle});
                 }
                 this.imageGroups.push({ imageList:groupImages} );
@@ -301,7 +306,10 @@ export class ContentViewerComponent {
           
           }
    }
-  
+   compiledDescription(el:any):string { // core user type
+    let finalDescrption = `TEST ${el.description}` ;
+    return finalDescrption ;
+   }
    get paginatedImages(): string[] {
     const startIndex = (this.currentPage - 1) * this.pageSize;
     return this.imageGroups.slice(startIndex, startIndex + this.pageSize);
