@@ -9,6 +9,13 @@ Git location '~/cms-code/fullstack-automation/cms-automate-fe/
 - Optimize and removed hard codes off UpdateMenuTreeServiceEntriesComponent and ImageFolderComponent - level1, level2, etc..
 - Optimization - the 'folder tree select' UI and logic to be made common like move images from dump to loc 
 - **check order of image add to list files** - it could be stack rather than queue  
+#### Dec 2024 onward
+- **art-is-worship.web.app: 500 drawings uploaded Dec 14 2024!!**
+    - It was the first fortnight of the lunar month of 'Margasheersh'
+    - Full moon day, is said to be the birth date of Lord Dattatreya
+    - The 500th was (,logically,) a sketch of Him, completed on Dec 14 itself
+- Some styling changes (comment search 'Styling changes Dec 2024')
+    - The 'compile JSON' interface which is table tagged and overflowing the display
 #### To End-November 2024 
 - Refine and add sub features to creating new categories. Changes in cms-automation-fe - angular app, shan-cms-maintain - spring boot
  - **KEYWORD NEW-CATEGORY-REFINE-11-2024**

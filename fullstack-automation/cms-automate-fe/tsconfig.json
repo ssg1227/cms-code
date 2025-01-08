@@ -8,6 +8,8 @@
       "@shared/*": ["src/shared/*"], // Maps '@shared' to the 'src/shared' directory
       "@services/*": ["src/app/services/*"], // Example for another directory
       "@utils/*": ["src/app/components/utils/*"],
+      "@models-xfer-data/*": ["src/app/settings-models-xfer-data/*"],
+      "@settings-and-models/*": ["src/app/settings-models-xfer-data/*"],
     },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
