@@ -28,6 +28,15 @@
 ### Mid Dec 2024 onward
 - ***CLEAN UP USERS AND ROLES LOGIC** 
 - Customized and other fields add to ImageDetail. 
+  - **HAPPY NEW YEAR 2025** 
+   - The initial thrust, and focus is the contexted changes to the CMS for 'art is worship' 
+    - gathering all sketches and getting them uploaded and into a physical album
+    - maybe filtering out the 'ho-hum's
+    - in relation, implementing the 'album' pivot (see below) as a customized add on
+    - other: 'Core User type' was buggy, to fix
+   - Refining and error free automation and readme to spell out the steps
+   - Refining and contemporary look the UI
+   - Start looking out for performance/loading issues
   - 'core' user type: 
     -  'exclusive' inner circle of users above super user. 
     -  initial usage 'coreDescription' text visible only to core user type

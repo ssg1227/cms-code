@@ -740,14 +740,25 @@ Also increasing numbers of Swami Samartha sketches`,
     }  */
     // NEW INSERTS
 ,{
+parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-other-colors-1', isLeafParent: true, levelIndex: 3, roles:["any"],
+description: `First New entry in 2025, to the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Twist here is that these are using a single 'other' color for each sketch. In addition to other stated 'alag' features, this collection is in ascending order of latest update. Jan 2 2025 onward `,
+label: 'Shades And Shines Other Colors 1',  
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"special-lists","label":"Special Lists"},
+{"link":"/view","params":"alag-grouping-full-cycle","label":"Alag Grouping Full Cycle"},
+{"link":"","params":"shades-and-shines-other-colors-1","label":"Shades And Shines Other Colors 1"},
+], emptyMessage: 'No Content'
+}
+,{
 parentKey: 'religious-gurus-and-mystics',key: 'dattavatar-2', isLeafParent: true, levelIndex: 2, roles:["superuser","guru"],
-label: 'Dattavatar 2',  description: `श्री गुरु स्मरण ... श्री गुरु नमन ... श्री गुरु चरण ... श्री गुरु शरण .. अवधूत चिंतन ... श्री गुरुदेव दत्त
+label: 'Spiritual Souls:Datta Lineage, Sikhs, East of India 2',  description: `श्री गुरु स्मरण ... श्री गुरु नमन ... श्री गुरु चरण ... श्री गुरु शरण .. अवधूत चिंतन ... श्री गुरुदेव दत्त
 Second (>= Dec 18 2024) list Guru's of Lord Dattatreya lineage and Sikh Gurus... there are likely to be maybe a couple of sketches of Shirdi Sai here; I have many of them, so have separate sections for the same.. 
 Also increasing numbers of Swami Samartha sketches. Sketches `,
 breadCrumb:[
 {"link":"/view","params":"top-level","label":"HOME"},
 {"link":"/view","params":"religious-gurus-and-mystics","label":"Religious: Gurus and Mystics"},
-{"link":"","params":"dattavatar-2","label":"Dattavatar 2"},
+{"link":"","params":"dattavatar-2","label":"Spiritual Souls:Datta Lineage, Sikhs, East of India 2"},
 ], emptyMessage: 'No Content'
 }
 ,{
@@ -762,7 +773,7 @@ breadCrumb:[
 }
 ,{
 parentKey: 'special-lists',key: 'alag-grouping-full-cycle', isLeafParent: false, levelIndex: 2, roles:["any"],
-label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. This November 2024, I intend grouping sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils. 
+label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. November 2024 onward, I intend creating a grouping of sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils. 
 ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded. The drawings here are also what I think top rated`,
 breadCrumb:[
 {"link":"/view","params":"top-level","label":"HOME"},

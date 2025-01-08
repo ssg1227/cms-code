@@ -15,7 +15,6 @@ public allImageList:ImageElement[]  =  [
             theme:'Themed - Special Aircraft in different liveries and formats - A380, 747 and others',
             themeSummary: '',
 files: [
- 
 
 {
 canvassMaterial:  'Plain paper',
@@ -31,18 +30,40 @@ fullFileName: `${this.imageRoot}Mirya-cover-Dec10-2024.jpeg`,
 description: `<ul><li> An225 Mirya - unloading Ganesh.. Dec 10 2024 </li><li> The Antonov An-225 Mriya. (Mriya = dream ??) </li><li> With a maximum takeoff weight of 640 tonnes (705 short tons), the An-225 held several records, including heaviest aircraft ever built and largest wingspan of any operational aircraft. It was commonly used to transport objects once thought impossible to move by air, such as 130-ton generators, wind turbine blades, and diesel locomotives. </li><li> The only completed An-225 was destroyed in the Battle of Antonov Airport in 2022 during the Russian invasion of Ukraine. </li><li> Manufactured	1985 </li></ul>`,
 rating:  1,
 ratingYear:  2024,
-},{
-  canvassMaterial:  'Plain paper',
-  canvassSize:  'A4',
-  content:  'color-pencil',
-  dateUploaded:  '12-11-2024',
-  duplicate:  'false',
-  summaryLabel:  `Mriya An225 in flight Dec 10 2024`,
-  fullFileName: `${this.imageRoot}Mirya-inflight-Dec10-2024.jpeg`,
-  description: `<ul><li> Mriya An225 in flight Dec 10 2024 </li><li> See other drawing of Mriya unloading for details </li></ul>`,
-  rating:  1,
-  ratingYear:  2024,
-  }, 
+}, { 
+    fullFileName:   `${this.imageRoot}AI707BabaBirthdayDedicate07192022.jpeg`, 
+    evolution: `<b>Dedicated to my Dad who got me started on this hobby of mine (rest in description)<br/>`,
+    evolutionSequence: 2, evolutionDate: `07-19-2022`,
+    rating: 1,
+    canvassSize: 'A4',
+    content:'black-white',
+    duplicate:true,
+    description: `<ul><li>This one for my Dad on his birthday anniversary (07/19).. </li>
+    <li>(Original upload 7/19/2022 added here Jan 7 2025)</li>
+    <li>he is the one who drew a plane for me when I was a kid, showing me how to draw</li></ul> `,
+    dateUploaded: '07-19-2022', }, 
+    {
+    canvassMaterial:  'Plain paper',
+    canvassSize:  'A4',
+    content:  'color-pencil',
+    dateUploaded:  '01-07-2025',
+    duplicate:  'false',
+    summaryLabel:  `Air India 707 color 08/04/23 from 07/19/22`,
+    fullFileName: `${this.imageRoot}AI707ColorCopyAug42023-07192022.jpeg`,
+    description: `<ul><li> Air India 707 color 08/04/23 from 07/19/22 </li><li> Uploaded  Jan 7 2025 </li></ul>`,
+    },{
+      canvassMaterial:  'Plain paper',
+      canvassSize:  'A4',
+      content:  'color-pencil',
+      dateUploaded:  '12-11-2024',
+      duplicate:  'false',
+      summaryLabel:  `Mriya An225 in flight Dec 10 2024`,
+      fullFileName: `${this.imageRoot}Mirya-inflight-Dec10-2024.jpeg`,
+      description: `<ul><li> Mriya An225 in flight Dec 10 2024 </li><li> See other drawing of Mriya unloading for details </li></ul>`,
+      rating:  1,
+      ratingYear:  2024,
+      },
+     
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '1st of its genre',
@@ -163,5 +184,15 @@ duplicate:  'false',
 summaryLabel:  `A380 template Sept 2024`,
 fullFileName: `${this.imageRoot}A380-template-Sept-2024.jpeg`,
 description: `<ul><li> A380 template Sept 2024 </li><li> Fascinated by the A380 -  </li><li> 1st time by Emirates Aug 28, SFO - Dubai - Mum,  </li><li> return Sept 12 </li><li> As on Nov 5, Drawn AIrbus Industrie, (hypothetical) Air India and Emirates itself </li><li> Hope to get Lufthansa and Singapore Airlines at least  </li><li> Drawn from a photo snapped on flight security video </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  '01-07-2025',
+duplicate:  'false',
+summaryLabel:  `Concorde!! Hypothetical AI livery April 16 2023`,
+fullFileName: `${this.imageRoot}AIConcordeApril162023.jpg`,
+description: `<ul><li> Concorde!! Hypothetical AI livery April 16 2023 </li><li> The legendary concorde </li><li> Date uploaded Jan 7 2025 </li></ul>`,
 },
   ]}]}

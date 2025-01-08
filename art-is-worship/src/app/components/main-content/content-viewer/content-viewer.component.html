@@ -70,8 +70,8 @@
           <img id="modaldivpic"   *ngIf="imageElement != null" src="{{imageElement.image}}">
           <div  id="modaltext" style="padding:20px;border: 1px solid gray; margin-left:20px;"> 
               <p [innerHTML]="imageElement.description"> </p><!-- core user type -->
-              <p *ngIf="imageElement.coreDescription" [innerHTML]="imageElement.coreDescription"> </p><!-- core user type -->
-              <!-- <p [innerHTML]="displayDescription(selectedImage.imageList[j])"> </p> to work core user type -->
+              <!-- p *ngIf="imageElement.coreDescription" [innerHTML]="imageElement.coreDescription"> </p>  core user type  
+               <p [innerHTML]="imageElement(selectedImage.imageList[j])"> </p>  -->
         </div>
         </div>
       </div>

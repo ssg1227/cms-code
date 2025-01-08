@@ -41,6 +41,7 @@ import {   MajesticLiftersLegendaryCarriersList }   from 'src/assets/gallery-fil
 import { MumbaiMeriJaanList } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan.list';
 import { MumbaiMeriJaan2List } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan-2.list';
 import { ShadesAndShines1ImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/alag-grouping-full-cycle/shades-and-shines-1.image.list';
+import { ShadesAndShinesOtherColors1ImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/alag-grouping-full-cycle/shades-and-shines-other-colors-1.image.list';
 @Injectable({
   providedIn: 'root'
 })
@@ -112,7 +113,8 @@ export class ContextedCoreContentService {
     contentList.push( { contentFile:new PlanesShipsCars2ImageList(),contentCategory:'planes-ships-cars-2', roles:['non-living,  non-religious'],latest:true}) ;
   //  contentList.push( { contentFile:new SpecialAircraftSeriesImageList(), contentCategory:'majestic-lifters-legendary-carriers', roles:['non-living,  non-religious'],latest:true}) ;
     contentList.push( { contentFile:new MajesticLiftersLegendaryCarriersList(), contentCategory:'majestic-lifters-legendary-carriers', roles:['non-living,  non-religious'],latest:true}) ;
-    contentList.push( { contentFile:new ShadesAndShines1ImageList(),contentCategory:'shades-and-shines-1', roles:["any"],latest:true, reverseStack:'true'}) ;       
+    contentList.push( { contentFile:new ShadesAndShines1ImageList(),contentCategory:'shades-and-shines-1', roles:["any"],latest:true, reverseStack:'true'}) ;  
+    contentList.push( { contentFile:new ShadesAndShinesOtherColors1ImageList(),contentCategory:'shades-and-shines-other-colors-1', roles:["any"],latest:true, reverseStack:'true'}) ;          
  }
   loadSpecialLists(contentList:ContentList[], specialFiles:any,strParam:string):boolean {
      

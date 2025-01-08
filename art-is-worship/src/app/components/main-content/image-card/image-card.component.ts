@@ -72,7 +72,7 @@ export class ImageCardComponent {
 
   }
   get DisplayDescription():string { // core user type
-    return `${this.imageDetail.imageList[0].description} TEST`;
+    return `${this.imageDetail.imageList[0].description}`;
   }
   expand() {
     if (this.isLarge === true) {

@@ -16,6 +16,16 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
+  {
+    canvassMaterial:  'Plain paper',
+    canvassSize:  '',
+    content:  'color-pencil',
+    dateUploaded:  '01-07-2025',
+    duplicate:  'true',
+    summaryLabel:  `Ganesh Color Monochrome Jan 2 2025`,
+    fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-other-colors-1/GaneshRedOrangeJan22025.jpeg`,
+    description: `<ul><li> Ganesh Color Monochrome Jan 2 2025 </li><li> Start of a new series shades and shines color </li><li> Using red orange color pencil </li></ul>`,
+    },
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',

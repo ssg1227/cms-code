@@ -15,6 +15,17 @@ export class PlanesShipsCars2ImageList {
                 canvassMaterial:  'Plain paper',
                 canvassSize:  'A4',
                 content:  'color-pencil',
+                dateUploaded:  '01-07-2025',
+                duplicate:  'true',
+                summaryLabel:  `Air India 707 color 08/04/23 from 07/19/22`,
+                fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/majestic-lifters-legendary-carriers/AI707ColorCopyAug42023-07192022.jpeg`,
+                description: `<ul><li> Air India 707 color 08/04/23 from 07/19/22 </li><li> Uploaded  Jan 7 2025 </li></ul>`,
+                },
+                 
+            {
+                canvassMaterial:  'Plain paper',
+                canvassSize:  'A4',
+                content:  'color-pencil',
                 dateUploaded:  '12-11-2024',
                 duplicate:  'true',
                 summaryLabel:  `Mriya An225 in flight Dec 10 2024`,

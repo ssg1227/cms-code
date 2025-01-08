@@ -15,7 +15,17 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
-{
+  ,
+  {
+  canvassMaterial:  'Plain paper',
+  canvassSize:  'A4',
+  content:  '',
+  dateUploaded:  '11-06-2024',
+  duplicate:  'true',
+  summaryLabel:  `Seagull Feed Elephanta caves, Oct 17 2024`,
+  fullFileName: `assets/gallery-files/images/salaam-mumbai/mumbai-meri-jaan-2/seagull-feed-oct17.jpeg`,
+  description: `<ul><li> Seagull Mumbai Port  Oct 17 2024</li><li> Typical scene feeding seagulls during launch ride between Gateway of India and Elephanta caves </li></ul>`,
+  }, {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',

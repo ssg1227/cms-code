@@ -20,6 +20,17 @@ files: [
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'color-pencil',
+dateUploaded:  '01-07-2025',
+duplicate:  'false',
+summaryLabel:  `Shirdi Sai Jan 2 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-other-colors-1/ShirdiSaiGreenJan22025.jpeg`,
+description: `<ul><li> Shirdi Sai Jan 2 2025 </li><li> Using green color pencil  </li>
+<li>Uploaded Jan 7 2025</li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
 dateUploaded:  '12-26-2024',
 duplicate:  'false',
 summaryLabel:  `Dec 26 2024`,

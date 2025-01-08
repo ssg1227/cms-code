@@ -60,7 +60,7 @@ export class ContentViewerComponent {
   displayDescription(imageELement:any):string // core user type
   {
     //if (this.selectedImageList.imageList != undefined && selectedImage.imageList.length  >= 1)
-    return `TEST ${JSON.stringify(imageELement["description"])}`;
+    return `${JSON.stringify(imageELement["description"])}`;
   }
   constructor(private router:Router, private authService:AuthService, private coreContentService: CoreContentService,
     private elRef: ElementRef, private renderer: Renderer2) {
@@ -72,7 +72,7 @@ export class ContentViewerComponent {
     this.isLeafParent = localStorage.getItem("isLeafParent") ;// @ts-ignore: Object is possibly 'null'.
     this.currentMenu = localStorage.getItem("current-menu") ;
     // @ts-ignore: Object is possibly 'null'.
-    this.userRoles = localStorage.getItem("userRoles") ; // core user type
+    // this.userRoles = localStorage.getItem("userRoles") ; // core user type
     this.isCore = (this.userRoles.indexOf('core')>=0)?true:false ;
     if (this.testMode === true) {
       console.log(`Content component ngOnInit ${this.isLeafParent} ${this.currentMenu}`);
@@ -221,6 +221,91 @@ export class ContentViewerComponent {
         }
       }
    }
+   loadImagesPreCoreUserType() { // PreCoreUserType() { // core user type.. back up before this feature and opitmization
+
+    let foundList:ImageElement[] = [] ;
+    foundList = /*strParam === 'latest-uploads' || 'showpiece' ?*/ this.allImageList ;  
+     //  : this.allImageList.filter(x => x.folder === param.get('theme'));// themed.params.theme.toString()); **later
+        if (foundList !== null && foundList.length > 0) {
+          let foundFolder = foundList[0].folder;
+          this.themeHeader = '';
+          this.themeSummary = '';
+          if(foundList[0].theme) this.themeHeader = foundList[0].theme; 
+          if(foundList[0].themeSummary) this.themeSummary = foundList[0].themeSummary; 
+          this.selectedImageList = [];
+          this.imageGroups = [];
+          foundList[0]
+              .files
+              .forEach( (fileData:any, index:number) => {
+               /* if (index >= 10) {
+                  return;
+                }
+              */
+                let finalDescrption = fileData.description ; // 'core user type'
+                let groupImages:any[] = [] ;
+                let stats = '';
+                let cardstyle = { outer: ``, image:``}; // move chosing card style logic to core content service 
+                let cardImageStyle = ``;
+                stats = this.techStats(fileData, cardstyle) ;  
+                if(stats.indexOf('Canvass') >= 0) {
+                    fileData.description = `${fileData.description}<br/>(<em> ${stats}}</em>)`;
+                }    
+                  
+                if(fileData.iterations !== undefined && fileData.iterations.length > 0) {
+                  fileData.iterations.forEach((element:any, index:number) => {
+                    let descrAndStats = index === 0 ?
+                    stats.indexOf('Canvass') >= 0? element.description: `${element.description}<br/>(<em> ${stats}}</em>)` :  element.description;
+                    groupImages.push(
+                        { image: element.fullFileName, 
+                          summaryLabel: element.summaryLabel ? element.summaryLabel: '',
+                          description:    element.description,
+                          cardStyle: cardstyle
+                        });
+                          //          description:  index === 0 ? fileData.description:  element.description});
+                 
+                  });
+                  groupImages[0].description =`${groupImages[0].description }<br/>(<em> ${stats}}</em>)`
+                } else {
+                  fileData.fullFileName? 
+                    groupImages.push({ image: fileData.fullFileName, 
+                      description: fileData.description, // 'core user type'
+                      // description: finalDescrption, // 'core user type'
+                      summaryLabel: fileData.summaryLabel ? fileData.summaryLabel: '',
+                      cardStyle: cardstyle}): 
+                    groupImages.push({ image: `assets/all-images/${foundFolder}/${fileData.fileName}`, 
+               //           description: fileData.description });
+               //  
+                          description: stats === ''? fileData.description: `${fileData.description}<br/>(<em> ${stats}}</em>)`,
+                          // 'core user type'
+                          // description: stats === ''?finalDescrption: `${finalDescrption}<br/>(<em> ${stats}}</em>)`,
+                          cardStyle: cardstyle});
+                }
+                this.imageGroups.push({ imageList:groupImages} );
+                fileData.fullFileName? 
+                  this.selectedImageList.push({ 
+                    iterativeText: fileData.iterativeText?`${fileData.iterativeText}`:'',
+                    image: `${fileData.fullFileName}`, 
+                    summaryLabel: fileData.summaryLabel ? fileData.summaryLabel: '',
+                    title: fileData.description,
+                    iterations: fileData.iterations? fileData.iterations:[],
+                    iterationIndex:0 }):
+                  this.selectedImageList.push({ 
+                    image: `assets/all-images/${foundFolder}/${fileData.fileName}`,
+                    summaryLabel: fileData.summaryLabel ? fileData.summaryLabel: '', 
+                    title: fileData.description,
+                    iterations: fileData.iterations? fileData.iterations:[],
+                    iterationIndex:0 
+                   });
+              });
+          }
+          this.currentIndex = 0;
+          this.currentImage = this.selectedImageList[0];
+          if (this.currentImage.iterations !== null && this.currentImage.iterations.length > 0) {
+            //this.currentImage.iterations.unshift(this.currentImage.image );
+            this.currentImage.iterationIndex = 0;
+          
+          }
+   }
    loadImages() {
 
     let foundList:ImageElement[] = [] ;
@@ -247,10 +332,7 @@ export class ContentViewerComponent {
                 let cardstyle = { outer: ``, image:``}; // move chosing card style logic to core content service 
                 let cardImageStyle = ``;
                 stats = this.techStats(fileData, cardstyle) ;  
-                if(stats.indexOf('Canvass') >= 0) {
-                    fileData.description = `${fileData.description}<br/>(<em> ${stats}}</em>)`;
-                }    
-                  
+               
                 if(fileData.iterations !== undefined && fileData.iterations.length > 0) {
                   fileData.iterations.forEach((element:any, index:number) => {
                     let descrAndStats = index === 0 ?
@@ -306,8 +388,17 @@ export class ContentViewerComponent {
           
           }
    }
-   compiledDescription(el:any):string { // core user type
-    let finalDescrption = `TEST ${el.description}` ;
+   compiledDescription(fileData:any):string { // core user type
+    let finalDescrption = `${fileData.description}` ;
+    let stats = '';
+    let cardstyle = { outer: ``, image:``}; // move chosing card style logic to core content service 
+    let cardImageStyle = ``;
+    stats = this.techStats(fileData, cardstyle) ;  
+     
+    if(stats.indexOf('Canvass') >= 0) {
+      finalDescrption = `${finalDescrption}<br/>(STATS <em> ${stats}}</em>)`;
+    }    
+  
     return finalDescrption ;
    }
    get paginatedImages(): string[] {

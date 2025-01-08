@@ -104,7 +104,7 @@ export class AuthService {
     localStorage.setItem('current-menu','top-level');
     localStorage.setItem('role',this.roleSetter(username));
     // @ts-ignore: Object is possibly 'null'.
-    localStorage.setItem('userRoles',this.userList.find(x => x.userName === username).userRoles.toString());// core user type
+    // localStorage.setItem('userRoles',this.userList.find(x => x.userName === username).userRoles.toString());// core user type
     if (directLatet === true) {
       this.router.navigate(['/view','latest-uploads-timewise']).then( (e) => {
       
@@ -158,7 +158,7 @@ export class AuthService {
     localStorage.removeItem('current-menu');
     localStorage.removeItem("isLeafParent");
     localStorage.removeItem("key");
-    localStorage.removeItem('userRoles'); // core user type
+    // localStorage.removeItem('userRoles'); // core user type
     this.coreContentService.clearContent() ;
 
     /*

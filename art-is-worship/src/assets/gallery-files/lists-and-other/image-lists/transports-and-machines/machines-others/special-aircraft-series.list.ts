@@ -27,7 +27,7 @@ fullFileName: `${this.imageRoot}Mirya-inflight-Dec10-2024.jpeg`,
 description: `<ul><li> Mriya An225 in flight Dec 10 2024 </li><li> See other drawing of Mriya unloading for details </li></ul>`,
 rating:  1,
 ratingYear:  2024,
-}, 
+},
 {
   canvassMaterial:  'Plain paper',
   canvassSize:  'A4',
