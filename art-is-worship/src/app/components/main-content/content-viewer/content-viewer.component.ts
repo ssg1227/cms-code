@@ -71,9 +71,6 @@ export class ContentViewerComponent {
   ngOnInit() {
     this.isLeafParent = localStorage.getItem("isLeafParent") ;// @ts-ignore: Object is possibly 'null'.
     this.currentMenu = localStorage.getItem("current-menu") ;
-    // @ts-ignore: Object is possibly 'null'.
-    // this.userRoles = localStorage.getItem("userRoles") ; // core user type
-    this.isCore = (this.userRoles.indexOf('core')>=0)?true:false ;
     if (this.testMode === true) {
       console.log(`Content component ngOnInit ${this.isLeafParent} ${this.currentMenu}`);
     }
@@ -307,7 +304,13 @@ export class ContentViewerComponent {
           }
    }
    loadImages() {
-
+    if(this.userRoles === '') { // core user type .. 
+    // Probably because this component gets loaded before login, or page life cycle issues, putting this code in ngInit was causing issues.
+    // This is a confirmed location where the core user type is set, so thought best to initialize here
+    // @ts-ignore: Object is possibly 'null'.
+     this.userRoles = localStorage.getItem("userRoles") ; // core user type
+     this.isCore = (this.userRoles.indexOf('core')>=0)?true:false ;
+    }
     let foundList:ImageElement[] = [] ;
     foundList = /*strParam === 'latest-uploads' || 'showpiece' ?*/ this.allImageList ;  
      //  : this.allImageList.filter(x => x.folder === param.get('theme'));// themed.params.theme.toString()); **later
@@ -326,6 +329,17 @@ export class ContentViewerComponent {
                   return;
                 }
               */
+             // core user type ..  selected images in a list are visible to core user only 
+             let push = true ; 
+             if (fileData.coreVisibility && fileData.coreVisibility === 'true') {
+              if (this.isCore === false) {
+                push = false ; 
+              }
+             }
+             if (push === false) {
+              return ;
+             }
+             // .. end section core user type ..  selected images in a list are visible to core user only 
                 let finalDescrption = this.compiledDescription(fileData) ; // 'core user type'
                 let groupImages:any[] = [] ;
                 let stats = '';
@@ -340,7 +354,7 @@ export class ContentViewerComponent {
                     groupImages.push(
                         { image: element.fullFileName, 
                           summaryLabel: element.summaryLabel ? element.summaryLabel: '',
-                          description:    element.description,
+                          description:    index === 0 ? finalDescrption: element.description,// 'core user type'
                           cardStyle: cardstyle
                         });
                           //          description:  index === 0 ? fileData.description:  element.description});
@@ -394,7 +408,9 @@ export class ContentViewerComponent {
     let cardstyle = { outer: ``, image:``}; // move chosing card style logic to core content service 
     let cardImageStyle = ``;
     stats = this.techStats(fileData, cardstyle) ;  
-     
+    if (this.isCore && fileData.coreDescription) {
+      finalDescrption = `${finalDescrption} <br/>( ${fileData.coreDescription})`;
+    }
     if(stats.indexOf('Canvass') >= 0) {
       finalDescrption = `${finalDescrption}<br/>(STATS <em> ${stats}}</em>)`;
     }    

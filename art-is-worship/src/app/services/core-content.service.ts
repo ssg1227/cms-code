@@ -410,6 +410,8 @@ export class CoreContentService {
        
       // @ts-ignore: Object is possibly 'null'.
       welcomeMessage  = `Welcome ${JSON.parse(localStorage.getItem('user-object')).userName}`;
+      // @ts-ignore: Object is possibly 'null'.
+      // welcomeMessage  = `${welcomeMessage} ${localStorage.getItem('userRoles')}`; 
     }
     return welcomeMessage
   }

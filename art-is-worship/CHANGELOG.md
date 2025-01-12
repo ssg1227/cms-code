@@ -40,7 +40,8 @@
   - 'core' user type: 
     -  'exclusive' inner circle of users above super user. 
     -  initial usage 'coreDescription' text visible only to core user type
-    - changes look for 'core user type' in comments
+    -  add image level visibility - using core user type as starting prototype
+    -  changes look for 'core user type' in comments
   - In contexted adding fields to pivot lists based on 'albums' - which sketch book collection the drawing is stored. 
 - **art-is-worship.web.app: 500 drawings uploaded Dec 14 2024!!**
     - It was the first fortnight of the lunar month of 'Margasheersh'

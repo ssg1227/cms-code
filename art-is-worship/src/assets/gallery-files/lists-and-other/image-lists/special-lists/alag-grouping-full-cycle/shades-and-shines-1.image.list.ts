@@ -55,7 +55,7 @@ dateUploaded:  '12-14-2024',
 duplicate:  'false',
 evolution: `<b>500th sketch uploaded!!.<br/>`,
 evolutionSequence: 4, evolutionDate: `12-14-2024`,
-// coreDescription: 'Timed for Datta Jayanti and Shree Datta to be 500th upload', // 'core user type'
+coreDescription: 'Timed for Datta Jayanti and Shree Datta to be 500th upload', // 'core user type'
 summaryLabel:  `Datta Jayanti Dec 14 2024 - 500th upload`,
 fullFileName: `${this.imageRoot}DattaJayanti-2024-12-14-500th.jpeg`,
 description: `<ul><li> Datta Jayanti Dec 14 2024 - 500th upload </li><li> Completed and uploaded Dec 14 </li></ul>`,
