@@ -37,7 +37,7 @@
    - Refining and error free automation and readme to spell out the steps
    - Refining and contemporary look the UI
    - Start looking out for performance/loading issues
-  - 'core' user type: 
+  - 'core' user type: **Implemented Jan 11 2025**
     -  'exclusive' inner circle of users above super user. 
     -  initial usage 'coreDescription' text visible only to core user type
     -  add image level visibility - using core user type as starting prototype
