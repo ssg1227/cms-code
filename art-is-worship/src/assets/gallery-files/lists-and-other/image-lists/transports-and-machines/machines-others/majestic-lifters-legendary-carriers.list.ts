@@ -17,7 +17,22 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [
   
-  /// #######
+  
+                    {
+                    canvassMaterial:  'Plain paper',
+                    canvassSize:  'A4',
+                    content:  '',
+                    dateUploaded:  '11-06-2024',
+                    duplicate:  'true',
+                    summaryLabel:  `Shuttle Last ride over Bay Area Oct 2012 (03/23)`,
+                    fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/planes-ships-cars/Shuttle-piggyback-nasa747-102012-march152023.jpeg`,
+                    description: `<ul><li> Shuttle Last ride over Bay Area Oct 2012 (03/23) </li>
+                    <li> The final  version of a final ride </li><li> Sketch of the shuttle piggyback on Nasa 747 over the Golden Gate </li>
+                    <li>This was added to this collection because it <em>does fall in this genre</em>. Partly as a variant of the legendary 'Jumbo'</li><li>Also the Shuttle theoretically a plane is a 'legendary carrier/lifter' ferrying satellites etc to space</li></ul>`,
+                    rating:  1,
+                    ratingYear:  2023,
+                   
+                    },
   {
     canvassMaterial:  'Plain paper',
     canvassSize:  'A4',
