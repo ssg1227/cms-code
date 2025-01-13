@@ -361,9 +361,10 @@ export class CoreContentService {
             if (this.genImageList === null || this.genImageList.allImageList === null) {
               return ;
             }
-            console.log(this.genImageList.reverseStack) ;
+            console.log(`####### load selected content ${this.genImageList.reverseStack}`) ;
             if(this.genImageList !== undefined && this.genImageList.allImageList !== null) { // first aid; need to NOT reach this function for a node
               if (this.genImageList.reverseStack && this.genImageList.reverseStack ==='true'){
+               // alert('revrese')
                 this.reverseArray(this.genImageList.allImageList[0].files);
               }
               this.allImageList =   this.genImageList.allImageList ;

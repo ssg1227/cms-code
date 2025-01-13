@@ -11,6 +11,27 @@ export class PlanesShipsCars2ImageList {
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '01-13-2025',
+duplicate:  'true',
+summaryLabel:  `IL76 Gajraj IAF 44 Himalayan Geese Geese Jan 9 25 (01/13/2025)`,
+fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/majestic-lifters-legendary-carriers/IL76-Jan925.jpeg`,
+description: `<ul><li> IL76 Gajraj IAF 44 Himalayan Geese Geese Jan 9 25 (01/13/2025) </li><li> IL76 based on template I have created </li><li> By  coincidence, this was also a capture of the IAF 44 squadron (see An12 drawings) </li><li> A Facebook friend's dad and uncle flew this squadron </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '01-13-2025',
+duplicate:  'true',
+summaryLabel:  ` An12 IAF 44 Himalayan Geese Jan 9 25 (01/13/2025) `,
+fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/majestic-lifters-legendary-carriers/An12-071623-2-Jan925.jpeg`,
+description: `<ul>  <li> Color version of July 16 2023 B&W original </li><li> Attempt to sketch this Himalayan Goose of IAF44 squadron over Karakoram range .. The planes used to ply to Daulat Beg Oldi in Ladakh, one of the highest air strips in the World </li><li> Based off a photo he send - tail number would be Bl533 </li><li> A friend from Face Book - his Dad and uncle flew this squadron </li></ul>`,
+},
+
             {
                 canvassMaterial:  'Plain paper',
                 canvassSize:  'A4',
