@@ -18,13 +18,13 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
-canvassSize:  '',
-content:  'black-white',
-dateUploaded:  '01-11-2025',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '01-16-2025',
 duplicate:  'false',
-summaryLabel:  `Baba making til ladoo Sankranth 2025`,
-fullFileName: `${this.imageRoot}BabaPreSankranthJan92025.jpeg`,
-description: `<ul><li> Baba making til ladoo Sankranth 2025 </li><li> Posted Jan 9 2025 </li><li> Uploaded Jan 11 2025 </li></ul>`,
+summaryLabel:  `Baba For Sankrant (Jan 14) - 01/16/2025`,
+fullFileName: `${this.imageRoot}BabaPostSankranthJan162025.jpeg`,
+description: `<ul><li> Baba For Sankrant (Jan 14) - 01/16/2025 </li><li> Sequence following previous Thursday (Jan 9) drawing </li><li> Til Ladoos and flying kites  </li></ul>`,
 },
 {
 canvassMaterial:  'Plain paper',
