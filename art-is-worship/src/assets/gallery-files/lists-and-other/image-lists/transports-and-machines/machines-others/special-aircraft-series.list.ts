@@ -102,7 +102,7 @@ description: `<ul><li> A380 series Airbus Industrie Livery Sept 21 2024 </li></u
 },
 {
 canvassMaterial:  'Plain paper',
-canvassSize:  '',
+canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '11-05-2024',
 duplicate:  'false',

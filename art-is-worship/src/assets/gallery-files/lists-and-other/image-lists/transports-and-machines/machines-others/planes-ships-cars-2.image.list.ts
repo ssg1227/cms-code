@@ -10,6 +10,16 @@ export class PlanesShipsCars2ImageList {
         themeSummary: `My first steps, my first love in this passion for sketching these are planes which I started drawing as a kid. <br/>
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '01-15-2025',
+duplicate:  'true',
+summaryLabel:  `Indian Navy Godavari, Seaking, Vela (jan 2025)`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/INSGodavaraiSeakingINSVela_Jan152025.jpeg`,
+description: `<ul><li> Indian Navy Godavari, Seaking, Vela (jan 2025) </li><li> An imaginary scene that can occur probably in the 1980s through early 2000s .. ins Godavari F20 (frigate), an Indian Navy Seaking Helicopter and submarine INS Vela 1  (I think modified Foxtrot ) S40... the last my uncle had commanded one time </li><li> Date completed and uploaded Jan 15 2025 </li></ul>`,
+},
 
 {
 canvassMaterial:  'Plain paper',
@@ -23,7 +33,7 @@ description: `<ul><li> IL76 Gajraj IAF 44 Himalayan Geese Geese Jan 9 25 (01/13/
 },
 {
 canvassMaterial:  'Plain paper',
-canvassSize:  '',
+canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '01-13-2025',
 duplicate:  'true',
@@ -79,7 +89,7 @@ description: `<ul><li> Tejas Mk2 IAF HAL Nov 7-19 2024 </li><li> Hindustan Aeron
 },
 {
 canvassMaterial:  'Plain paper',
-canvassSize:  '',
+canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '11-09-2024',
 duplicate:  'true',

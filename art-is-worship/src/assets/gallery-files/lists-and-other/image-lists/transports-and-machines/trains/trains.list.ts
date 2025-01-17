@@ -17,7 +17,7 @@ public allImageList:ImageElement[]  =  [
      files: [ 
 {
 canvassMaterial:  'Plain paper',
-canvassSize:  '',
+canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '12-11-2024',
 duplicate:  'true',

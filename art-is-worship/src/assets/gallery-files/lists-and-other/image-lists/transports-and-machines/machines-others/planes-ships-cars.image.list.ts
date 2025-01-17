@@ -14,6 +14,16 @@ export class PlanesShipsCarsImageList {
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '01-13-2025',
+duplicate:  'false',
+summaryLabel:  `WorldWar2 Dogfight - Q3,4 2020 Jan 2025`,
+fullFileName: `${this.imageRoot}WW2DoverDogfightQ342020-01132025.jpeg`,
+description: `<ul><li> WorldWar2 Dogfight - Q3,4 2020 Jan 2025 </li><li> Going through and organizing my heap of sketches..  </li><li> I found this one and touched up a bit (Jan 13 2025) </li><li> probably originally Q3 -Q4 2020 .. revisiting the main theme of my drawings as a kid - WW2 (Commando comics.. who remembers them) </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '11-06-2024',
 duplicate:  'true',

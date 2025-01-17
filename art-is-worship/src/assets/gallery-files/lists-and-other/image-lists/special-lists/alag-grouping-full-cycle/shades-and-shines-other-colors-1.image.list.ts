@@ -20,6 +20,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '01-16-2025',
+duplicate:  'false',
+summaryLabel:  `Ganesh Tan color pencil Jan 16 2025`,
+fullFileName: `${this.imageRoot}GaneshTanMonochromeJan162025.jpeg`,
+description: `<ul><li> Ganesh Tan color pencil Jan 16 2025 </li><li>hopeful sandalwood look</li><li> 'Templatized' off an earlier color pencil sketch </li><li> completion AND upload 01/16/2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'color-pencil',
 dateUploaded:  '01-07-2025',

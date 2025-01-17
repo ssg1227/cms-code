@@ -47,7 +47,7 @@ ratingYear:  2024,
 },
 {
 canvassMaterial:  'Plain paper',
-canvassSize:  '',
+canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '09-17-2024',
 summaryLabel:  `Final Sarvajanik idol Sept 13 2024`,

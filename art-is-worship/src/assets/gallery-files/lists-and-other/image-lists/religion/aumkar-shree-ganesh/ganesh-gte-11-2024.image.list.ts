@@ -16,6 +16,16 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '01-16-2025',
+duplicate:  'true',
+summaryLabel:  `Ganesh Tan color pencil Jan 16 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-other-colors-1/GaneshTanMonochromeJan162025.jpeg`,
+description: `<ul><li> Ganesh Tan color pencil Jan 16 2025 </li><li>hopeful sandalwood look</li><li> 'Templatized' off an earlier color pencil sketch </li><li> completion AND upload 01/16/2025 </li></ul>`,
+},
   {
     canvassMaterial:  'Plain paper',
     canvassSize:  '',
