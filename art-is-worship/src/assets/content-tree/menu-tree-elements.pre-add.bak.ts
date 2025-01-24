@@ -740,8 +740,19 @@ Also increasing numbers of Swami Samartha sketches`,
     }  */
     // NEW INSERTS
 ,{
-parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-other-colors-1', isLeafParent: false, levelIndex: 3, roles:["any"],
-label: 'Shades And Shines Other Colors 1',  description: ``,
+parentKey: 'machines-others',key: 'exotic-and-legendary-cars', isLeafParent: false, levelIndex: 3, roles:["non-living","non-religious","any"],
+label: 'Exotic And Legendary Cars',  description: `A special section for Exotic and Legendary Cars. From the super speeders like Koenigsegg, Ferrari to Rolls Royce and Bentley`,
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"transport-and-machines","label":"Transport And Machines"},
+{"link":"/view","params":"machines-others","label":"Other Machines"},
+{"link":"","params":"exotic-and-legendary-cars","label":"Exotic And Legendary Cars"},
+], emptyMessage: 'No Content'
+}
+,{
+parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-other-colors-1', isLeafParent: true, levelIndex: 3, roles:["any"],
+description: `First New entry in 2025, to the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Twist here is that these are using a single 'other' color for each sketch. In addition to other stated 'alag' features, this collection is in ascending order of latest update. Jan 2 2025 onward `,
+label: 'Shades And Shines Other Colors 1',  
 breadCrumb:[
 {"link":"/view","params":"top-level","label":"HOME"},
 {"link":"/view","params":"special-lists","label":"Special Lists"},

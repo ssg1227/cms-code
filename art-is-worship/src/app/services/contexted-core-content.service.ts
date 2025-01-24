@@ -34,6 +34,7 @@ import { TrainImageList } from 'src/assets/gallery-files/lists-and-other/image-l
 import { TrainsIndianRailwaySpecialTrains } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains-indian-railway-special-trains';
 import { TrainsIndianRailwayAlcos } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains-indian-railway-alcos';
 import {TrainsIndianRailwaySteam } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains-indian-railway-steam';
+import { ExoticAndLegendaryCarsImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/exotic-and-legendary-cars.image.list';
 import {  PlanesShipsCarsImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/planes-ships-cars.image.list';
 import {  PlanesShipsCars2ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/planes-ships-cars-2.image.list';
 import {  SpecialAircraftSeriesImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/special-aircraft-series.list';
@@ -104,6 +105,7 @@ export class ContextedCoreContentService {
     contentList.push( { contentFile:new TrainImageList(),contentCategory:'trains', roles:['non-living,  non-religious'],latest:true}) ;
     contentList.push( { contentFile:new TrainsIndianRailwayAlcos(),contentCategory:'trains-ir-alcos', roles:['non-living,  non-religious'],latest:true}) ;
     contentList.push( { contentFile:new TrainsIndianRailwaySteam(),contentCategory:'trains-ir-steam', roles:['non-living,  non-religious'],latest:true}) ;
+    contentList.push( { contentFile:new ExoticAndLegendaryCarsImageList(),contentCategory:'exotic-and-legendary-cars', roles:["all"],latest:true, reverseStack:'false'}) ;       
     contentList.push( { contentFile:new TrainsIndianRailwaySpecialTrains(),contentCategory:'trains-ir-special-trains', roles:['non-living,  non-religious'],latest:true}) ;
     contentList.push( { contentFile:new MumbaiMeriJaanList(),contentCategory:'mumbai-meri-jaan', roles:['non-living,  non-religious']}) ;
     contentList.push( { contentFile:new MumbaiMeriJaan2List(),contentCategory:'mumbai-meri-jaan-2', roles:['non-living,  non-religious'],latest:true}) ;
