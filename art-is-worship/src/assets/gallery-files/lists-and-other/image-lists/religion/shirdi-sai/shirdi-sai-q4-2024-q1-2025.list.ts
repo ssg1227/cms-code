@@ -19,6 +19,16 @@ files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '01-26-2025',
+duplicate:  'trye',
+summaryLabel:  `Dwarkamai Sai photo 01/23/25`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/SaiDwarkamaiJan232025-012625.jpeg`,
+description: `<ul><li> Dwarkamai Sai photo 01/23/25 </li><li> Uploaded Jan 26 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '01-16-2025',
 duplicate:  'false',

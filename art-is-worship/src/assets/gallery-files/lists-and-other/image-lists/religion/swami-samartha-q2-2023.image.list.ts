@@ -22,6 +22,16 @@ export class SwamiSamarthaQ22023ImageList { // SwamiSamarthaImageList
             files: [ 
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '01-24-2025',
+duplicate:  'true',
+summaryLabel:  `Swami Mauli (completed 01/23/2025)`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Swami-01-23-2025.jpeg`,
+description: `<ul><li> Swami Mauli (completed 01/23/2025) </li><li> Refined old sketch of Swami's (original completion unknown) </li><li> Poem I wrote  </li><li> स्वामी मी तुमचा कोकरू</br>  आहेत पाठीशी कशाला मी घाबरू  </br>तुम्ही इच्छा पुर्थी तुम्ही कल्पतरू</br> सांभाळा सावरा जरी  मी घसरू </br><br/> शिव हरी शंकर नमामि शंकर शिव शंकर शंभू <br/>हे गिरिजापती भवानी शंकर शिव शंकर शंभू </li><li> Uploaded Jan 24 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'color-pencil',
 dateUploaded:  '12-09-2024',
