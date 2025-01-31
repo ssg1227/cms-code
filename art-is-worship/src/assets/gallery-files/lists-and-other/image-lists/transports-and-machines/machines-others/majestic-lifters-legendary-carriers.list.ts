@@ -16,9 +16,17 @@ public allImageList:ImageElement[]  =  [
             theme:'Themed - Special Aircraft in different liveries and formats - A380, 747 and others',
             themeSummary: '',
 files: [
-  
-  
-                    {
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '01-30-2025',
+duplicate:  'false',
+summaryLabel:  `Catalina Len Birchall Savior of Ceylon Jan 29 2025`,
+fullFileName: `${this.imageRoot}Catalina-QL1-A-Len-Birchall-Jan30-2025.jpeg`,
+description: `<ul><li> Catalina Len Birchall Savior of Ceylon Jan 29 2025 </li><li> Catalina Series <br/>. PBY Consolidated Catalina <br/>It was one of the most widely used seaplanes of World War II. Catalinas served with every branch of the United States Armed Forces and in the air forces and navies of many other nations.  </li><li> One of the heroic exploits involving the Catalina: </li><li> Air Commodore Leonard Joseph Birchall, CM, OBE, DFC, OOnt, CD (6 July 1915 – 10 September 2004), "The Saviour of Ceylon", was a Royal Canadian Air Force (RCAF) officer who warned of a Japanese attack on the island of Ceylon during the Second World War. </li><li> In early 1942, Birchall joined No. 413 Squadron RCAF, then based in the Shetland Islands and flew patrols over the North Sea. After the Japanese successes in southeast Asia, the squadron was sent to Ceylon to provide a reconnaissance force. </li><li> On 4 April 1942, only two days after his arrival, Squadron Leader Birchall was flying a PBY Catalina flying boat (AJ155/QL-A) that was patrolling the ocean to the south of Ceylon. Nine hours into the mission, as the plane was about to return to base, ships were spotted on the horizon. Investigation revealed a large Japanese fleet, the Nagumo Task Force (Responsible for the attack on Pearl Harbor), including five aircraft carriers, heading for Ceylon, which at that time was the base for the Royal Navy's Eastern Fleet.[6] Birchall's crew managed to send out a radio message, but the Catalina was soon shot down by six A6M2 Zero fighters from the carrier Hiryū... </li></ul>`,
+},
+                  {
                     canvassMaterial:  'Plain paper',
                     canvassSize:  'A4',
                     content:  '',

@@ -18,6 +18,16 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `<p> <em><strong>Soo many sketches of Shirdi Sai!!!</strong> that I needed to make separate sections <br/> This is based on Sai Satcharitra (Note - the sketches mostly wont cover all sub stories in a chapter)... `,
         files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '01-30-2025',
+duplicate:  'true',
+summaryLabel:  `Baba Handi Jan 30 2025`,
+fullFileName: `assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q4-2024-q1-2025/BabaHandiJan302025.jpeg`,
+description: `<ul><li> Baba Handi </li><li> (actually a scene from Sai Satcharit) </li><li> completed and uploaded Jan 30 2025 </li></ul>`,
+},
             {  
                 canvassSize: 'A4', content:'black-white',fullFileName: `assets/gallery-files/images/religion/dattavatar/SwamiBabaFeb172022-2.jpeg`, description: 
                 `<ul>

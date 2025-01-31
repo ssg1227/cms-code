@@ -19,6 +19,16 @@ files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '01-30-2025',
+duplicate:  'false',
+summaryLabel:  `Baba Handi  Jan 30 2025`,
+fullFileName: `${this.imageRoot}BabaHandiJan302025.jpeg`,
+description: `<ul><li> Baba Handi </li><li> (actually a scene from Sai Satcharit) </li><li> completed and uploaded Jan 30 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '01-26-2025',
 duplicate:  'trye',
