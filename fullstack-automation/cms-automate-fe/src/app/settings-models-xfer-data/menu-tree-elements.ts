@@ -738,7 +738,27 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'special-aircraft-series', label: 'Special Aircraft Types'}
         ],
     }  */
-    // NEW INSERTS
+,{
+parentKey: 'machines-others',key: 'exotic-and-legendary-cars', isLeafParent: true, levelIndex: 3, roles:["non-living","non-religious","any"],
+label: 'Exotic And Legendary Cars',  description: `A special section for Exotic and Legendary Cars. From the super speeders like Koenigsegg, Ferrari to Rolls Royce and Bentley. Also included some icons of India's roads`,
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"transport-and-machines","label":"Transport And Machines"},
+{"link":"/view","params":"machines-others","label":"Other Machines"},
+{"link":"","params":"exotic-and-legendary-cars","label":"Exotic And Legendary Cars"},
+], emptyMessage: 'No Content'
+}
+,{
+parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-other-colors-1', isLeafParent: true, levelIndex: 3, roles:["any"],
+description: `First New entry in 2025, to the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Twist here is that these are using a single 'other' color for each sketch. In addition to other stated 'alag' features, this collection is in ascending order of latest update. Jan 2 2025 onward `,
+label: 'Shades And Shines Other Colors 1',  
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"special-lists","label":"Special Lists"},
+{"link":"/view","params":"alag-grouping-full-cycle","label":"Alag Grouping Full Cycle"},
+{"link":"","params":"shades-and-shines-other-colors-1","label":"Shades And Shines Other Colors 1"},
+], emptyMessage: 'No Content'
+}
 ,{
 parentKey: 'religious-gurus-and-mystics',key: 'dattavatar-2', isLeafParent: true, levelIndex: 2, roles:["superuser","guru"],
 label: 'Spiritual Souls:Datta Lineage, Sikhs, East of India 2',  description: `श्री गुरु स्मरण ... श्री गुरु नमन ... श्री गुरु चरण ... श्री गुरु शरण .. अवधूत चिंतन ... श्री गुरुदेव दत्त
@@ -760,16 +780,30 @@ breadCrumb:[
 {"link":"","params":"shades-and-shines-1","label":"Shades And Shines 1"},
 ], emptyMessage: 'No Content'
 }
+//
+//
+    // NEW INSERTS
 ,{
-parentKey: 'special-lists',key: 'alag-grouping-full-cycle', isLeafParent: false, levelIndex: 2, roles:["any"],
-label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. November 2024 onward, I intend creating a grouping of sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils. 
-ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded. The drawings here are also what I think top rated`,
-breadCrumb:[
-{"link":"/view","params":"top-level","label":"HOME"},
-{"link":"/view","params":"special-lists","label":"Special Lists"},
-{"link":"","params":"alag-grouping-full-cycle","label":"Alag Grouping Full Cycle"},
-], emptyMessage: 'No Content'
-}
+    parentKey: 'special-lists',key: 'alag-grouping-full-cycle', isLeafParent: false, levelIndex: 2, roles:["any"],
+    label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. November 2024 onward, I intend creating a grouping of sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils. 
+    ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded. The drawings here are also what I think top rated`,
+    breadCrumb:[
+    {"link":"/view","params":"top-level","label":"HOME"},
+    {"link":"/view","params":"special-lists","label":"Special Lists"},
+    {"link":"","params":"alag-grouping-full-cycle","label":"Alag Grouping Full Cycle"},
+    ], emptyMessage: 'No Content'
+    }
+    ,{
+        parentKey: 'special-lists',key: 'group-by-(physical-Scrapbook)-album', isLeafParent: false, levelIndex: 2, roles:["any"],
+        label: 'Group by (Physical, Scrapbook) Album',  
+        description: `The arrangement, categorization, storage, etc of the online collections apart from the concept introduced from 'Alag Grouping Full Cycle' are, and will be different from the 'hard copy' 
+                    storage in scrapbooks.  `,
+        breadCrumb:[
+        {"link":"/view","params":"top-level","label":"HOME"},
+        {"link":"/view","params":"special-lists","label":"Special Lists"},
+        {"link":"","params":"group-by-(physical-Scrapbook)-album","label":"Group by (Physical, Scrapbook) Album"},
+        ], emptyMessage: 'No Content'
+        }
     /*
 ,{
 parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-1', isLeafParent: true, levelIndex: 3, roles:["any"],

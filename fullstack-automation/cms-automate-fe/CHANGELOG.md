@@ -9,7 +9,20 @@ Git location '~/cms-code/fullstack-automation/cms-automate-fe/
 - Optimize and removed hard codes off UpdateMenuTreeServiceEntriesComponent and ImageFolderComponent - level1, level2, etc..
 - Optimization - the 'folder tree select' UI and logic to be made common like move images from dump to loc 
 - **check order of image add to list files** - it could be stack rather than queue  
-#### Dec 2024 onward
+
+### February 2025 onward
+- implementation of album pivot automation
+- bugs, refinements, adaptations
+  - 'changers', 'rating' logic at picture level. adding 2024, 2025
+  - 'changers' and 'rating' at collection level (shades and shines, exotic cars, etc)#### Dec 2024 onward
+  - fe upload automation: cleanup and make more intuitive, UI cleaner
+- **HAPPY NEW YEAR 2025!!**
+ - Start of the New Years with some projects in mind. Some minor tweaks. Some major changes
+    - contexted art-is-worship or similar, which may require corresponding changes here:
+      - core user type, and core description field
+      - image level user based visibility  
+      - concept called album
+    - **DOCUMENTATION 'USER MANUAL' for using this app!!**
 - **art-is-worship.web.app: 500 drawings uploaded Dec 14 2024!!**
     - It was the first fortnight of the lunar month of 'Margasheersh'
     - Full moon day, is said to be the birth date of Lord Dattatreya
