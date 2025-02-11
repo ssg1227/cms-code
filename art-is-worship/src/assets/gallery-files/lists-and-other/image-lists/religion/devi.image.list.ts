@@ -13,6 +13,22 @@ public allImageList:ImageElement[]  =  [
     files: [  ,
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'watercolor-pencil', album: { name: 'the divine in colors so fine', status: 'added'} ,
+dateUploaded:  '02-10-2025',
+duplicate:  'false',
+summaryLabel:  `Vasant Panchami 2025 Saraswati Devi`,
+evolution: `- <b>Introducing concept of albums - the 1st of a set of sketches whose online grouping and album grouping are differnt</b><br/>`,
+          evolutionDate: `02-10-2025`,
+          evolutionSequence: 3, 
+         
+fullFileName: `${this.imageRoot}MaaSaraswati-Feb2-10-VasantPanchami2025.jpeg`,
+description: `<ul><li> Vasant Panchami 2025 Saraswati Devi </li><li> Based off an earlier template (Dassera 2024) </li><li> (This was based on sculputure at Fine Arts College Davanegere, Karnataka) </li><li> Actually a combination of watercolor pencils and regular pencils </li><li> Resumed an old pending drawing one version for Feb 2 2025 </li><li> Final upload Feb 10 2025 </li></ul>`,
+rating:  1,
+ratingYear:  2025,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '11-19-2024',
