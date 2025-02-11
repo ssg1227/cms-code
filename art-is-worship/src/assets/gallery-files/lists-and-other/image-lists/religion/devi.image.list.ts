@@ -14,7 +14,8 @@ public allImageList:ImageElement[]  =  [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
-content:  'watercolor-pencil', album: { name: 'the divine in colors so fine', status: 'added'} ,
+content:  'watercolor-pencil',
+ album: { name: 'the divine in colors so fine', status: 'added', sequence: 2} ,
 dateUploaded:  '02-10-2025',
 duplicate:  'false',
 summaryLabel:  `Vasant Panchami 2025 Saraswati Devi`,
