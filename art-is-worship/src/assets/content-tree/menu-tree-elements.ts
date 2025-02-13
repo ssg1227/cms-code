@@ -466,6 +466,16 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'changers-2024', label: 'Changers: 2024'}
         ], 
     },
+    { 
+        parentKey: "changers",key: 'changers-2025', levelIndex:3, isLeafParent: true,  roles: ["any"],
+        label:  'Changers: 2025', 
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'special-lists', label: 'Special Lists'},
+            {link: '/view', params:'changers', label: 'Changers'},
+            {link: '', params:'changers-2025', label: 'Changers: 2025'}
+        ], 
+    },
 // ### END CHANGERS
 
  { 

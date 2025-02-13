@@ -281,6 +281,7 @@ export class CoreContentService {
           case 'showpiece-2022': 
           case 'showpiece-2023': 
           case 'showpiece-2024': 
+          case 'showpiece-2025': 
             if (strParam.indexOf('-') > 0) {
               themeYear =  strParam.split('-')[1] ;
               yearSelected = parseInt(themeYear);
