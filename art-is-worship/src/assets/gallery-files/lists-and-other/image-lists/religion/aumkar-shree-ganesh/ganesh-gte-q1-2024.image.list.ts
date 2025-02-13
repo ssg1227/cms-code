@@ -32,6 +32,8 @@ evolution:  `<b>Theme of Large flower at the back and flowers in front<br/>(Swam
 evolutionSequence:  4,
 evolutionDate:  '07-24-2024',
 summaryLabel:  `Started July 21 from Gurupoornima`,
+album: { name: 'the divine in colors so fine', status: 'added', sequence: 6} ,
+
 fullFileName: `${this.imageRoot}Ganesh-Angarika-July23-24-scan-photoedit.jpeg`,
 description: `<ul><li>Angarika/SankatHarChaturthi 0724 </li><li> Started July 21 from Gurupoornima </li><li> One of my best </li><li> The 8 marigolds at the bottom are symbolic for Ashtavinayaks </li><li> Moreshwar, Siddhivinayak, Balaleshwar, Waradvinayak, Chintamani, Girijatmaja, Vigneshwar and Mahaganapati </li><li> Scanned, then photo edited in iPhone </li></ul>`,
 rating:  1,

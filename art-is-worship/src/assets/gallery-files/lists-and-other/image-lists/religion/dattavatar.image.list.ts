@@ -41,7 +41,7 @@ dateUploaded:  '07-20-2024',
 summaryLabel:  `Completed July 18 2024`,
 fullFileName: `${this.imageRoot}ShivSwamiShankarBaba071824.jpeg`,
 description: `<ul><li> Completed July 18 2024 </li></ul>`,
-},
+}/*,
 {
 canvassSize:  'A4',
 content:  '',
@@ -63,7 +63,7 @@ ratingYear:  2024,
 iterations: [
 {fullFileName: `${this.imageRoot}NrusimhaSaraswatiColorFromBW042524-2.jpeg`, description: `<ul><li> Copied light the black and white version (Jan 13-14 2024) to generate color version </li></ul>` },
 {fullFileName: `${this.imageRoot}NrusimhaSaraswatiColorFromBW042524-1.jpeg`, description: `<ul><li> Copied light the black and white version (Jan 13-14 2024) to generate color version </li><li> April 16-25 2024 </li></ul>` },
-]},
+]}*/,
 {
 canvassSize:  'A4',
 content:  'black-white',
@@ -135,6 +135,9 @@ iterations: [
                         
                     </ul>`,
                 fullFileName: `${this.imageRoot}DattaGuruJayanti-122623-3.jpeg`,
+
+
+album: { name: 'the divine in colors so fine', status: 'added', sequence: 3} ,
                 description: `<ul>
                     <li></li> </ul>`,
                     dateUploaded: '01-08-2024',

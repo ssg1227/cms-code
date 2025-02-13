@@ -246,6 +246,37 @@ export class CoreContentService {
       let themeYear = 'before 2022';
         switch (strParam) {
           // .. 
+          case 'the-divine-in-colors-so-fine':
+            this.genImageList = { 
+              allImageList: [ 
+                  { 
+                    folder:'',
+                    theme:`Showpiece - ${themeYear}`,
+                    themeSummary: `&nbsp;&nbsp;These are some which are, what I consider my best efforts. Almost all the better ones, I have taken my time over..<br/>
+                                  &nbsp;&nbsp;My attitude and approach to sketching have changed; I RARELY try to finish a sketch at one sitting, but do it in bits and pieces..`,
+                    files: [],
+                  }
+              ]} ; 
+            this.ContentList.forEach((albumImageList:any) => {
+              if(albumImageList.contentFile.allImageList && albumImageList.contentFile.allImageList[0].files) {
+                albumImageList.contentFile.allImageList[0].files.forEach((fileItem:any) => {
+                  if (fileItem.album  && fileItem.album.name ) {
+                    console.log(`'hi' ${JSON.stringify(fileItem.album.name)}`);
+                  this.genImageList.allImageList[0].files.push(fileItem);
+
+                  }
+                }) ;
+              }
+            });
+            this.genImageList.allImageList[0].files.sort(function(a:any, b:any) {
+              const aSeq = a.album.sequence;
+              const bSeq = b.album.sequence;
+              let c = aSeq  -  bSeq ; // aDate - bDate ;
+              return  c ;
+            });
+            return { all:  this.allImageList, gen: this.genImageList };
+            break ;
+      
           case 'showpiece': 
           case 'showpiece-2022': 
           case 'showpiece-2023': 

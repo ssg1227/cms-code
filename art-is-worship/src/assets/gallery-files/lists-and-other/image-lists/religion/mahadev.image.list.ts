@@ -37,6 +37,9 @@ canvassSize:  '',
 content:  'color-pencil',
 dateUploaded:  '08-02-2024',
 summaryLabel:  `Trayodashi Thursday Aug 1 24`,
+
+
+album: { name: 'the divine in colors so fine', status: 'added', sequence: 4} ,
 fullFileName: `${this.imageRoot}ShamboSaiAug1-2024-final.jpeg`,
 description: `<ul><li> Trayodashi Thursday Aug 1 24 </li><li> Combination of recently completed Mahadev-Shivling and Baba Yellow Hibiscus sketches </li><li> Soft copy base being the Shankar one, I resize the Baba image  and copy pasted on the former </li><li> Took print out and touched up for this one  </li><li> Aug 1 2024 </li></ul>`,
 iterations: [

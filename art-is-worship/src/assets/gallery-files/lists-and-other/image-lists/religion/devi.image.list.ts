@@ -12,6 +12,25 @@ public allImageList:ImageElement[]  =  [
     ``,
     files: [  ,
 {
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  '02-10-2025',
+duplicate:  'false',
+summaryLabel:  `Navratri 2024 Oct 9 2024 Mahishasurmardini`, 
+album: { name: 'the divine in colors so fine', status: 'added', sequence: 5} ,
+fullFileName: `${this.imageRoot}Devi-2024-Navratri-Oct10-4.jpeg`,
+description: `<ul><li> Navratri 2024 Oct 9 2024 Mahishasurmardini </li><li> Final version  </li><li> Uploaded Feb 10 2025 </li></ul>`,
+rating:  1,
+ratingYear:  2024,
+iterations: [
+{fullFileName: `${this.imageRoot}Devi-2024-Navratri-Oct10-4.jpeg`, description: `<ul><li> Navratri 2024 Oct 9 2024 Mahishasurmardini </li><li> Final version  </li><li> Uploaded Feb 10 2025 </li></ul>` },
+{fullFileName: `${this.imageRoot}Devi-2024-Navratri-Oct10-3.jpeg`, description: `<ul><li> Navratri 2024 Oct 9 2024 Mahishasurmardini </li><li> Final version  </li><li> Uploaded Feb 10 2025 </li></ul>` },
+{fullFileName: `${this.imageRoot}Devi-2024-Navratri-Oct10-2.jpeg`, description: `<ul><li> Navratri 2024 Oct 9 2024 Mahishasurmardini </li><li> Final version  </li><li> Uploaded Feb 10 2025 </li></ul>` },
+{fullFileName: `${this.imageRoot}Devi-2024-Navratri-Oct10-1.jpeg`, description: `<ul><li> Navratri 2024 Oct 9 2024 Mahishasurmardini </li><li> Final version  </li><li> Uploaded Feb 10 2025 </li></ul>` },
+]
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'watercolor-pencil',

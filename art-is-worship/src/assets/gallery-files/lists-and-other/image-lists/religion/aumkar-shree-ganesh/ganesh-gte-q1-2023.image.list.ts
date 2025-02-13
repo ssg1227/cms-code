@@ -18,7 +18,7 @@ content:  'color-pencil',
 dateUploaded:  '05-26-2024',
 fullFileName: `${this.imageRoot}GaneshDec72023.jpeg`,
 
-album: { name: 'the divine in colors so fine', status: 'added', sequence: 2} ,
+album: { name: 'the divine in colors so fine', status: 'added', sequence: 1} ,
 description: `<ul><li> Based out of black and white version Jan 2022 </li><li> December 7 2023 </li><li> 1st of a new album </li></ul>`,
 rating:  1,
 ratingYear:  2023,

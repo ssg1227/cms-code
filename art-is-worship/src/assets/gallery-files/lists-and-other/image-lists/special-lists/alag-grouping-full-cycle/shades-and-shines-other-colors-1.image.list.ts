@@ -18,6 +18,17 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
+  {
+    canvassMaterial:  'Plain paper',
+    canvassSize:  'A4',
+    content:  'color-pencil',
+    dateUploaded:  '02-13-2025',
+    duplicate:  'false',
+    
+    summaryLabel:  `Bugatti Chiron (Feb 5 2025) aqua green`,
+    fullFileName: `${this.imageRoot}Bugatti-Chiron-Feb-05-2025.jpeg`,
+description: `<ul><li> Bugatti Chiron (Feb 5 2025) aqua green </li><li> One of the fastest street legal cars, this Hyper exotic rubs shoulders with Koenigsegg, Ferrari, Lamborgini, Saleen and others </li><li> Uploaded Feb 13 </li></ul>`,
+},
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
