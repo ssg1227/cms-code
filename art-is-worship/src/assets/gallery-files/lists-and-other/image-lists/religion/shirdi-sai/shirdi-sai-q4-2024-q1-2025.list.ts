@@ -18,6 +18,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '02-15-2025',album: { name: 'the divine in colors so fine', status: 'added', sequence: 10} ,
+duplicate:  'false',
+summaryLabel:  `Baba on Stone in orange Gurupratibada 2025`,
+fullFileName: `${this.imageRoot}Baba-Thursday-Feb13-2025-GuruPratipada.jpeg`,
+description: `<ul><li> Baba on Stone in orange Gurupratibada 2025 </li><li> GuruPratibada. Date of Nrusimha Saraswati renouncing regular routine and going to Kardali forest to do Samadhi </li><li> Completed Feb 13, Uploaded Feb 15 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '01-30-2025',

@@ -12,6 +12,21 @@ export class MahadevImageList {
          themeSummary:
          ``,
          files: [
+          {
+            
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  '',
+content:  'watercolor-pencil',
+dateUploaded:  '02-15-2025',
+duplicate:  'false',album: { name: 'the divine in colors so fine', status: 'added', sequence: 11} ,
+summaryLabel:  `Mahadev  Oct 16 2024`,
+fullFileName: `${this.imageRoot}Mahadev-watercolorpencil-Oct1624-Feb1525.jpeg`,
+
+description: `<ul><li> Watercolor pencil sketch</li>
+<li> Uploaded Feb 15 2025 </li>
+<li> Oct 16 2024 </li></ul>`,
+
+          },
 {
 canvassMaterial:  'Photo print matt paper',
 canvassSize:  '',

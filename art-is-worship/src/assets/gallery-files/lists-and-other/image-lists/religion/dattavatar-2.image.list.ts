@@ -22,7 +22,7 @@ files: [
 {
 canvassSize:  'A4',
 content:  '',
-dateUploaded:  '05-27-2024',album: { name: 'the divine in colors so fine', status: 'added', sequence: 9} ,
+dateUploaded:  '02-12-2025' ,
 fullFileName: `assets/gallery-files/images/religion/swami-samartha-q2-2023/SwamiFrmNrusimhaSaraswatiColor042524-021225.jpeg`,
 description: `<ul><li> Based on a black and white sketch of Nrusimha Saraswati (Jan 13-14 2024) </li><li> Made two light copies of the above </li><li> One was colored to the3rd avatar, the other evolved into Swami drawing (this) </li></ul>`,
 rating:  1,
