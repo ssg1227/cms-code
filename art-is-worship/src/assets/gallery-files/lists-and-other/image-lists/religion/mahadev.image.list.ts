@@ -18,7 +18,7 @@ canvassMaterial:  'Photo print matt paper',
 canvassSize:  '',
 content:  'watercolor-pencil',
 dateUploaded:  '02-15-2025',
-duplicate:  'false',album: { name: 'the divine in colors so fine', status: 'added', sequence: 11} ,
+duplicate:  'false',album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 11} ,
 summaryLabel:  `Mahadev  Oct 16 2024`,
 fullFileName: `${this.imageRoot}Mahadev-watercolorpencil-Oct1624-Feb1525.jpeg`,
 
@@ -54,7 +54,7 @@ dateUploaded:  '08-02-2024',
 summaryLabel:  `Trayodashi Thursday Aug 1 24`,
 
 
-album: { name: 'the divine in colors so fine', status: 'added', sequence: 4} ,
+album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 4} ,
 fullFileName: `${this.imageRoot}ShamboSaiAug1-2024-final.jpeg`,
 description: `<ul><li> Trayodashi Thursday Aug 1 24 </li><li> Combination of recently completed Mahadev-Shivling and Baba Yellow Hibiscus sketches </li><li> Soft copy base being the Shankar one, I resize the Baba image  and copy pasted on the former </li><li> Took print out and touched up for this one  </li><li> Aug 1 2024 </li></ul>`,
 iterations: [

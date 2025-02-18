@@ -90,7 +90,7 @@ iterations: [
                // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/MahadevJan102022.jpeg
                // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/Shivji2022ShravanMonday_1.jpeg
                fullFileName: `${this.imageRoot}/MahadevKashivishwesharShravanSomwar11x17.jpg`, 
-               canvassSize: 'A3', content:'color-pencil',
+               canvassSize: 'A3', content:'color-pencil',album: { name: 'the-first-album', status: 'added', sequence: 1} ,
                description: 
                   `<ol>
                     <li>Mahadev 'Shravani Somwar' sketch</li>

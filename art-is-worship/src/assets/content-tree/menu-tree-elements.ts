@@ -816,8 +816,9 @@ breadCrumb:[
     ,{
         parentKey: 'special-lists',key: 'group-by-physical-scrapbook-album', isLeafParent: false, levelIndex: 2, roles:["any"],
         label: 'Group by (Physical, Scrapbook) Album',  
-        description: `The arrangement, categorization, storage, etc of the online collections apart from the concept introduced from 'Alag Grouping Full Cycle' are, and will be different from the 'hard copy' 
-                    storage in scrapbooks.  `,
+        description: `These lists arrange drawings as they are orderd in physical albums/scrapbooks. No new sketches; these have been already uploaded on this website. 
+        Note: The arrangement, categorization, storage, etc of the online collections under the category introduced from 'Alag Grouping Full Cycle' are the same as the 'hard copy' storage in scrapbooks. <br/>
+        Some others having the same ordering will be there; these include the term 'full life cycle' in the description `,
         breadCrumb:[
         {"link":"/view","params":"top-level","label":"HOME"},
         {"link":"/view","params":"special-lists","label":"Special Lists"},
@@ -827,12 +828,27 @@ breadCrumb:[
         ,{
             parentKey: 'group-by-physical-scrapbook-album',key: 'the-divine-in-colors-so-fine', isLeafParent: true, levelIndex: 3,  roles:["superuser","guru"],
             label: 'The Divine in colors so fine',  
-            description: `Coming Soon`,
+            description: `Religious and Spiritual Sketches in color. 
+            This is picking up after a long gap, browsing through the collection of loosely kept sheets of sketches, and puting them in a scrapbook.
+            I gleaned out high quality color sketches of Deities and Gurus to add.**Dunwell A4 size 24 pocket (48 sheet) presentation book. White cover**`,
             breadCrumb:[
             {"link":"/view","params":"top-level","label":"HOME"},
             {"link":"/view","params":"special-lists","label":"Special Lists"},
             {"link":"/view","params":"group-by-physical-scrapbook-album","label":"Group by (Physical, Scrapbook) Album"},
             {"link":"","params":"the-divine-in-colors-so-fine","label":"The Divine in colors so fine"},
+            ], emptyMessage: 'Coming soon!!'
+            }
+
+        ,{
+            parentKey: 'group-by-physical-scrapbook-album',key: 'the-first-album', isLeafParent: true, levelIndex: 3,  roles:["superuser","guru"],
+            label: 'The First Album',  
+            description: `The First Album/Scrapbook to fill with drawings.
+            This has varied content. People, Gods and Gurus. Color and Black and white pencils **Dunwell A3 size 24 pocket (48 sheet) presentation book. Black cover**`,
+            breadCrumb:[
+            {"link":"/view","params":"top-level","label":"HOME"},
+            {"link":"/view","params":"special-lists","label":"Special Lists"},
+            {"link":"/view","params":"group-by-physical-scrapbook-album","label":"Group by (Physical, Scrapbook) Album"},
+            {"link":"","params":"the-first-album","label":"The First Album"},
             ], emptyMessage: 'Coming soon!!'
             }
     /*

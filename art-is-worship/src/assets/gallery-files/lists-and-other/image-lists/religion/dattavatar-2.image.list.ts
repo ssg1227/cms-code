@@ -35,7 +35,7 @@ iterations: [
 },
 {
 canvassSize:  'A4',
-content:  'color-pencil',album: { name: 'the divine in colors so fine', status: 'added', sequence: 8} ,
+content:  'color-pencil',album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 8} ,
 dateUploaded:  '02-12-2025',
 summaryLabel:  `Nrusimha Saraswati 2nd Dattavatar Guru Pratipada Feb 2025`,
 
@@ -53,7 +53,7 @@ canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'color-pencil',
 dateUploaded:  '02-12-2025',
-duplicate:  'false', album: { name: 'the divine in colors so fine', status: 'added', sequence: 7} ,
+duplicate:  'false', album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 7} ,
 summaryLabel:  `Shripad Vallabh 1st Dattavatar Guru Pratipada Feb 2025`,
 fullFileName: `${this.imageRoot}Shripad-Vallabh-Feb12-2025.jpeg`,
 description: `<ul><li> Shripad Vallabh 1st Dattavatar Guru Pratipada Feb 2025 </li><li> Adding to divine album </li><li> Copy template from original Black and White (end 2020) </li><li> completed and uploaded Feb 12 2025  </li></ul>`,

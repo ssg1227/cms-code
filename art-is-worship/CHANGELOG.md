@@ -2,6 +2,17 @@
 # LOG OF CHANGES RECORDED W.E.F. April 28 2024 #
 "CMS Picture Gallery" by Shantanu Gadkari
 ### TODOs
+- **Templatization and customization: This 'art-is-worship' is as on Feb 17 2025, the latest version of CMS using angular** 
+  - (There are other wannabes in my source code files, but now, too little bandwidth to go trace and maintain)
+  - Keep working on templatization. 
+    - two or three templates totally in 'use-my-software.com' in angularjs and/or javascript
+      - need to 'bring these in'
+      - need to generate a 'politically correcr' p.o.c. to showcase the application of these templates.
+    - Find a means, as painlessly as possible, to 
+      * maintain common logic. 
+      * maintain and update custom logic, 
+      * upload context specific data 
+      * special mention. Make core-content.service.ts completely generic. move context specific code to contexted-core-content.service.ts
 - revisit logic and try to debug/optimize isLeafParent/ query params to identify leaf page versus branch
 - review and as required, revamp of image load (JSON files on image list are too many; will have to work with the original structure itself)
 - solid authentication logic. adding the admin stuff 
@@ -23,8 +34,18 @@
   - dynamic load on demand
 ### Practices
 - Maintaining this log
-- console.log should try to keep reference - classname method name
-### 2024 end - 2025 start
+- console.log should try to keep reference - classname method name 
+- localrun, esp when automated upload is running - ***npm start runs ng serve --port 2800**
+### February 2025 onward
+- implementation of album pivot (as on Feb 17 semi-manual)
+  - manual entry in image JSONs. e.g. `album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 11} `
+  - Adding album names to `menu-tree-elements.ts`
+    keys - special-lists => group-by-physical-scrapbook-album => *album name*
+  - implementation to display as group on core-content.service.ts
+- bugs, refinements, adaptations
+  - 'changers', 'rating' logic at picture level. adding 2024, 2025
+  - 'changers' and 'rating' at collection level (shades and shines, exotic cars, etc)
+  - Move special list logic from core-content.service.ts to contexted-core-content.service.ts
 ### Mid Dec 2024 onward
 - ***CLEAN UP USERS AND ROLES LOGIC** 
 - Customized and other fields add to ImageDetail. 
@@ -32,11 +53,11 @@
    - The initial thrust, and focus is the contexted changes to the CMS for 'art is worship' 
     - gathering all sketches and getting them uploaded and into a physical album
     - maybe filtering out the 'ho-hum's
-    - in relation, implementing the 'album' pivot (see below) as a customized add on
-    - other: 'Core User type' was buggy, to fix
-   - Refining and error free automation and readme to spell out the steps
-   - Refining and contemporary look the UI
-   - Start looking out for performance/loading issues
+    - in relation, implementing the 'album' pivot (see below) as a customized add on  **backlog**
+    - other: 'Core User type' was buggy, to fix **done**
+   - Refining and error free automation and readme to spell out the steps  **ongoing backlog**
+   - Refining and contemporary look the UI **ongoing backlog**
+   - Start looking out for performance/loading issues  **ongoing backlog**
   - 'core' user type: **Implemented Jan 11 2025**
     -  'exclusive' inner circle of users above super user. 
     -  initial usage 'coreDescription' text visible only to core user type

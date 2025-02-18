@@ -20,7 +20,7 @@ files: [
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'color-pencil',
-dateUploaded:  '02-15-2025',album: { name: 'the divine in colors so fine', status: 'added', sequence: 10} ,
+dateUploaded:  '02-15-2025',album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 10} ,
 duplicate:  'false',
 summaryLabel:  `Baba on Stone in orange Gurupratibada 2025`,
 fullFileName: `${this.imageRoot}Baba-Thursday-Feb13-2025-GuruPratipada.jpeg`,

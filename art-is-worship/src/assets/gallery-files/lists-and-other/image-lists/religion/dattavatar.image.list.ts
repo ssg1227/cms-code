@@ -137,7 +137,7 @@ iterations: [
                 fullFileName: `${this.imageRoot}DattaGuruJayanti-122623-3.jpeg`,
 
 
-album: { name: 'the divine in colors so fine', status: 'added', sequence: 3} ,
+album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 3} ,
                 description: `<ul>
                     <li></li> </ul>`,
                     dateUploaded: '01-08-2024',

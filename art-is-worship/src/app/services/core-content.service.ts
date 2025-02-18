@@ -247,7 +247,8 @@ export class CoreContentService {
         switch (strParam) {
           // .. 
           case 'the-divine-in-colors-so-fine':
-            this.genImageList = { 
+            case 'the-first-album':
+              this.genImageList = { 
               allImageList: [ 
                   { 
                     folder:'',
@@ -260,7 +261,7 @@ export class CoreContentService {
             this.ContentList.forEach((albumImageList:any) => {
               if(albumImageList.contentFile.allImageList && albumImageList.contentFile.allImageList[0].files) {
                 albumImageList.contentFile.allImageList[0].files.forEach((fileItem:any) => {
-                  if (fileItem.album  && fileItem.album.name ) {
+                  if (fileItem.album  && fileItem.album.name  && fileItem.album.name.indexOf(strParam) >=0) {
                     console.log(`'hi' ${JSON.stringify(fileItem.album.name)}`);
                   this.genImageList.allImageList[0].files.push(fileItem);
 
