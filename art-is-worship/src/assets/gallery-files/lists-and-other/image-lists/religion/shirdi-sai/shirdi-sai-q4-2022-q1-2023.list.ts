@@ -20,6 +20,16 @@ public allImageList:ImageElement[]  =  [
         `<p> <em><strong>Soo many sketches of Shirdi Sai!!!</strong> that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha</em><br/>
         &nbsp;&nnbsp; * Of late (June 2021) I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
         files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '02-18-2025',album: { name: 'the-first-album', status: 'added', sequence: 13}, 
+duplicate:  'false',
+summaryLabel:  `Sai Dhuni Nov 24 2022, upload Feb 18 2025`,
+fullFileName: `${this.imageRoot}Sai-Dhuni-Nov24-2022-021825.jpeg`,
+description: `<ul><li> Sai Dhuni Nov 24 2022, upload Feb 18 2025 </li></ul>`,
+},
             // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/shirdi-sai-pre-q3-2021/BabaSmilingPhoto-1-0702-2021.jpeg
             // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/${this.imageRoot}BabaSmilingPhoto-1-0223-2023.jpeg
 // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/${this.imageRoot}Baba-roses-march2-2023-photo.jpeg

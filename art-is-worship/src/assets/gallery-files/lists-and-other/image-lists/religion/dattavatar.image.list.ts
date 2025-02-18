@@ -227,7 +227,7 @@ description: `<ul><li> Enhanced collage for Gurupoornima 2023 </li><li> Top to b
 rating:  1,
 ratingYear:  2023,
 },
-            { fullFileName: `${this.imageRoot}ShreeDattatreya11x17DattaJayanti120822.jpeg`, 
+            { fullFileName: `${this.imageRoot}ShreeDattatreya11x17DattaJayanti120822.jpeg`,album: { name: 'the-first-album', status: 'added', sequence: 10}, 
             description: `<ul>
             <li><strong><em>"गुरु ब्रह्मा गुरु विष्णू गुरु देवो महेश्वरहा <br/>&nbsp;
             गुरु साक्षात परब्रम्ह तस्मै श्री गुरुवे नमः </em></strong></li>
@@ -279,7 +279,7 @@ ratingYear:  2023,
            
         },
         { fullFileName: `${this.imageRoot}NrusSaraswatiBabaSwami-SwtiPooja-01262023-b&W.jpeg`, 
-        canvassSize: 'A4', content:'black-white',
+        canvassSize: 'A4', content:'black-white',album: { name: 'the-first-album', status: 'added', sequence: 14}, 
             description: `<ul>
             <li>Imaginary sketch of Shree Nrusimha Saraswati, Shirdi Sai, Swami Samartha being taken to Shripad Vallabh - Lord Dattatreya's 1st avatar - 
                 temple at Kuruvapur (Maharashtra Karnataka border)  </li>
@@ -369,9 +369,9 @@ ratingYear:  2023,
         },
         {  
              
-            canvassSize:  'A4',
+            canvassSize:  'A3',
             content:  'black-white',
-            fullFileName: `${this.imageRoot}SwamiDattaOc62022.jpeg`, 
+            fullFileName: `${this.imageRoot}SwamiDattaOc62022.jpeg`,album: { name: 'the-first-album', status: 'added', sequence: 2} , 
             rating:1,
             ratingYear:2022,
             description: 
@@ -385,7 +385,10 @@ ratingYear:  2023,
                     description: `<ul>
                     <li>Taking my time in sketching, needed to draw a really well made sketch of Shre Swami Samartha</li>
                     <li>From a picture with Lord Dattatreya in the background, started around end September and completed Oct 6 2022</li>
-                     </ul>`} ,{ fullFileName: `${this.imageRoot}SwamiDattaOct12022.jpeg`, 
+                     </ul>`}  ,{ fullFileName: `${this.imageRoot}SwamiDattaOct12022Initial.jpeg`, 
+                     description: `<ul>
+                     <li>Complete sketch with lotus in foreground</li>
+                      </ul>`},{ fullFileName: `${this.imageRoot}SwamiDattaOct12022.jpeg`, 
                      description: `<ul>
                      <li>Initial checkpoint - Swami and Datta in place</li>
                       </ul>`} 

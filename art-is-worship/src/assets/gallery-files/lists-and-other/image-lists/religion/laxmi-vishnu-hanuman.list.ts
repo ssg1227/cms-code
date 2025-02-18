@@ -11,6 +11,16 @@ public allImageList:ImageElement[]  =  [
              theme:'Lord Narayan, Maa Laxmi and Avatars, Shree Hanuman',
              themeSummary: `<p>Laxmi and avatars, Rukhmini, Sita, Narayan, Ram, Vithal, Narsimha, Hanuman and others.   </p>`,
              files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  '02-17-2025',album: { name: 'the-first-album', status: 'added', sequence: 4},
+duplicate:  'false',
+summaryLabel:  `Hanuman Dassera 2021 (Oct 15)`,
+fullFileName: `${this.imageRoot}Hanuman-Oct15-2021.jpeg`,
+description: `<ul><li> Hanuman Dassera 2021 (Oct 15) </li><li> Uploaded Feb 17 2025 </li></ul>`,
+},
                {
                   canvassMaterial:  'Plain paper',
                   canvassSize:  'A4',
@@ -170,7 +180,7 @@ description: `<ul><li> Sort of commemoratory drawing for the inauguration of Ram
                 ]
                 },
                 {  
-                  canvassSize:  'A4',
+                  canvassSize:  'A4',album: { name: 'the-first-album', status: 'added', sequence: 6},
                   content:  'black-white',
                   fullFileName: `${this.imageRoot}Hanuman1Jan1stWeek2022.jpeg`, 
                     description: `<ul>
@@ -197,7 +207,7 @@ description: `<ul><li> Sort of commemoratory drawing for the inauguration of Ram
                    canvassSize: 'A4', content:'black-white',
                    dateUploaded: '02-05-2023'},
                 {  canvassSize:  'A4',
-                content:  'black-white',
+                content:  'black-white',album: { name: 'the-first-album', status: 'added', sequence: 7},
                 fullFileName: `${this.imageRoot}LaxmiNarayanRarePicFeb232021.jpeg`, 
                 evolution: `<b>Sketch on recommendation, and drawn with lot of care, with the shading set gifted by my wife on my birthday 1227</b>`,
                 evolutionSequence: 1, evolutionDate: `03-23-2021`,
@@ -208,7 +218,7 @@ description: `<ul><li> Sort of commemoratory drawing for the inauguration of Ram
                                     <li>I have mentioned dates in the image name and this says Feb 23 2021 (Feb 23 is my parents' wedding anniv)</li>
                                     </ul>`},
                     
-                    {  canvassSize:  'A4',
+                    {  canvassSize:  'A4',album: { name: 'the-first-album', status: 'added', sequence: 5},
                     content:  'black-white',
                     fullFileName: `${this.imageRoot}LaxmiNarsimhaJayanti526_fn_6022021.jpeg`, 
                                     description: `<ul>
@@ -256,14 +266,14 @@ description: `<ul><li> Sort of commemoratory drawing for the inauguration of Ram
                  description: `<ul><li>Sketched for RamNavmi April 21 2021</li></ul>`},
                 {  canvassSize:  'A4',
                 content:  'black-white',
-                fullFileName: `${this.imageRoot}ShreeRamRamNavmi042212021.jpeg`, 
+                fullFileName: `${this.imageRoot}ShreeRamRamNavmi042212021.jpeg`,album: { name: 'the-first-album', status: 'added', sequence: 9}, 
                                                                                                         description: `<ul>
                                                                                                                         <li>Sketched for RamNavmi April 21 2021</li>
                                                                                                                         </ul>`},
                 {  canvassSize:  'A4',
                 content:  'black-white',
                 fullFileName: `${this.imageRoot}HanumanOct2020.jpg`, description: 'Theoretically WIP - Oct 2020'},
-                       {  canvassSize:  'A4',
+                       {  canvassSize:  'A4',album: { name: 'the-first-album', status: 'added', sequence: 8},
                        content:  'black-white',fullFileName: `${this.imageRoot}BalHanumanp-hanumanjnti04272021.jpeg`, 
                             description: `<ul><li>.... AND HANUMAN JAYANTI following,  April 27 2021</li></ul>`}
               ]

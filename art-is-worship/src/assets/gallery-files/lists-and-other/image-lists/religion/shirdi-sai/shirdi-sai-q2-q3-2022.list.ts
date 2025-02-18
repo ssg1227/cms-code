@@ -19,6 +19,16 @@ export class ShirdiSaiQ2Q32022ImageList {
         themeSummary: 
         `<p> <em><strong>April 2022, my attempt on Shirdi Sai sketch every Thursday going on. Let's see how far this sustains... `,
         files: [ // SaiMarch32022.jpeg
+{
+canvassMaterial:  'Plain paper',
+canvassSize:   'A3',
+content:  'black-white',
+dateUploaded:  '02-17-2025',album: { name: 'the-first-album', status: 'added', sequence: 3},
+duplicate:  'false',
+summaryLabel:  `Baba Sept 29 2022`,
+fullFileName: `${this.imageRoot}Baba-Sept29-2022-Feb1725.jpeg`,
+description: `<ul><li> Baba Sept 29 2022 </li><li> Uploaded Feb 17 2025 </li></ul>`,
+},
         {
               
             canvassSize: 'soft', content:'black-white',
@@ -72,7 +82,7 @@ export class ShirdiSaiQ2Q32022ImageList {
                 evolutionSequence: 2, evolutionDate: `07-20-2022`,
                 rating: 1,
                 dateUploaded: '09-08-2022'},
-                { fullFileName: `${this.imageRoot}BabaUnpluggedColor0719222022-4-stretch.jpeg`, 
+                { fullFileName: `${this.imageRoot}BabaUnpluggedColor0719222022-4-stretch.jpeg`,album: { name: 'the-first-album', status: 'added', sequence: 11},  
             description: `<ul>
             <li><strong><em>"गुरु ब्रह्मा गुरु विष्णू गुरु देवो महेश्वरहा <br/>&nbsp;
             गुरु साक्षात परब्रम्ह तस्मै श्री गुरुवे नमः </em></strong></li>

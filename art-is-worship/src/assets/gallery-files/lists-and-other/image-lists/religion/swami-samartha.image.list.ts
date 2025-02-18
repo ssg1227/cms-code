@@ -105,7 +105,7 @@ export class SwamiSamarthaImageList { // SwamiSamarthaImageList
                 // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/${this.imageRoot}SwamiMauliUploadFeb52023-photo.jpeg
                 // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/${this.imageRoot}SwamiMauliUploadFeb52023-scan.jpeg
                 {  
-                    canvassSize: 'A4', content:'color-pencil',
+                    canvassSize: 'A4', content:'color-pencil' ,album: { name: 'the-first-album', status: 'added', sequence: 12}, 
                     fullFileName: `${this.imageRoot}SwamiSamarthaKhandoba-champaShashti-11-28-29-2022.jpeg`, 
                     description: 
                     `<ul>

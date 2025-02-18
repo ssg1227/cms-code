@@ -19,6 +19,21 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '02-17-2025',
+duplicate:  'false',
+evolution:  `<b>first metal color drawing<br/></B>`,
+evolutionSequence:  4,
+evolutionDate:  '02-17-2025',
+summaryLabel:  `Ganesh Metal Gold color pencil Feb 17 2025`,
+fullFileName: `${this.imageRoot}Ganesh-metal-gold-pencil-Feb17-2025.jpeg`,
+description: `<ul><li> Ganesh Metal Gold color pencil Feb 17 2025 </li><li> Using 'Kalour' metal pencil Gold shade </li><li> based on a Brass Ganesh Idol I've had since engineering days </li><li> Upload feb 17 itself </li></ul>`,
+rating:  1,
+ratingYear:  2025,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  'A4',
 content:  'soft',
