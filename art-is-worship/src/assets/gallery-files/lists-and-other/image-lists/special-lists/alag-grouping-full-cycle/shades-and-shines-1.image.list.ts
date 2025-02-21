@@ -18,6 +18,15 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [
 {
+canvassSize:  '',
+content:  '',
+dateUploaded:  '02-21-2025',
+duplicate:  'false',
+summaryLabel:  `Shivjayanti: Raje+Yuvraj+Maratha Naval Elements Feb192025`,
+fullFileName: `${this.imageRoot}Shivjayanti-Raje-Yuvraj-Maratha-Naval-Feb192025.jpeg`,
+description: `<ul><li> Shivjayanti: Raje+Yuvraj+Maratha Naval Elements Feb192025 </li><li> "Nothing proves Chhatrapati Shivaji Maharaj's genius as a born statesman more clearly than his creation of a navy and naval bases" (Historian Sir Jadunath Sarkar) </li><li> Hailed as the father of Indian Navy, the scene shows Shivaji Raje, with Sambhaji Prince, Gurav Larger warships and Galvat with a coastal fort </li><li> Uploaded Feb 21 </li></ul>`,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
