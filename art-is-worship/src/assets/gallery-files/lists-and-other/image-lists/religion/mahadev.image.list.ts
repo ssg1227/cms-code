@@ -12,6 +12,16 @@ export class MahadevImageList {
          themeSummary:
          ``,
          files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '02-26-2025',
+duplicate:  'true',
+summaryLabel:  `Mahadev Shivratri Feb 26 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-other-colors-1/ShivratriFeb262025-blue-crayola.jpeg`,
+description: `<ul><li> Mahadev Shivratri Feb 26 2025 </li><li> Blue Crayola color pencil </li><li> Uploaded Feb 26 2025 </li></ul>`,
+},
           {
             
 canvassMaterial:  'Photo print matt paper',
