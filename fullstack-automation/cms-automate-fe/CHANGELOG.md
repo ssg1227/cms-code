@@ -11,6 +11,7 @@ Git location '~/cms-code/fullstack-automation/cms-automate-fe/
 - **check order of image add to list files** - it could be stack rather than queue  
 
 ### February 2025 onward
+- March 3-4 2025 First Charcoal pencil based drawings being uploaded 
 - implementation of album pivot automation
 - bugs, refinements, adaptations
   - 'changers', 'rating' logic at picture level. adding 2024, 2025
