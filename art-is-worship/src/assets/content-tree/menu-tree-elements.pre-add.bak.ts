@@ -466,6 +466,16 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'changers-2024', label: 'Changers: 2024'}
         ], 
     },
+    { 
+        parentKey: "changers",key: 'changers-2025', levelIndex:3, isLeafParent: true,  roles: ["any"],
+        label:  'Changers: 2025', 
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'special-lists', label: 'Special Lists'},
+            {link: '/view', params:'changers', label: 'Changers'},
+            {link: '', params:'changers-2025', label: 'Changers: 2025'}
+        ], 
+    },
 // ### END CHANGERS
 
  { 
@@ -506,6 +516,16 @@ Also increasing numbers of Swami Samartha sketches`,
                 {link: '/view', params:'special-lists', label: 'Special Lists'},
                 {link: '/view', params:'showpieces', label: 'Changers'},
                 {link: '', params:'showpiece-2024', label: 'The Best of 2024'}
+            ], 
+    },
+    { 
+        parentKey: "showpieces", key: 'showpiece-2025',levelIndex:3, isLeafParent: true,  roles: ["any"],
+        label:  'The Best of 2025', 
+            emptyMessage: 'Empty Content or Error', breadCrumb:[
+                {link: '/view', params:'top-level', label: 'HOME'},
+                {link: '/view', params:'special-lists', label: 'Special Lists'},
+                {link: '/view', params:'showpieces', label: 'Changers'},
+                {link: '', params:'showpiece-2025', label: 'The Best of 2025'}
             ], 
     },
     { 
@@ -718,7 +738,7 @@ Also increasing numbers of Swami Samartha sketches`,
     }, {
         parentKey:"machines-others", key: "majestic-lifters-legendary-carriers", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "Majestic Lifters Legendary Carriers",
-        description:`A Mix of the Colossi and Legendary Cargo planes and Airliners.. AN225, A380, 747 to DC3 and others. This list is aimed at full cycle, where the drawing is entered into the sketchbook and uploaded online synchronously- at least for Dec 2024 onward; others will circle around and add`,
+        description:`A Mix of the Colossi and Legendary Cargo planes and Airliners.. AN225, A380, 747 to DC3 and others. This is a 'full cycle'collection, where the online matches the sketchbook insertion of the 'hard copy' physical sketchat least for Dec 2024 onward; others will circle around and add`,
         
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -738,10 +758,9 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '', params:'special-aircraft-series', label: 'Special Aircraft Types'}
         ],
     }  */
-    // NEW INSERTS
 ,{
-parentKey: 'machines-others',key: 'exotic-and-legendary-cars', isLeafParent: false, levelIndex: 3, roles:["non-living","non-religious","any"],
-label: 'Exotic And Legendary Cars',  description: `A special section for Exotic and Legendary Cars. From the super speeders like Koenigsegg, Ferrari to Rolls Royce and Bentley`,
+parentKey: 'machines-others',key: 'exotic-and-legendary-cars', isLeafParent: true, levelIndex: 3, roles:["non-living","non-religious","any"],
+label: 'Exotic And Legendary Cars',  description: `A special section for Exotic and Legendary Cars. From the super speeders like Koenigsegg, Ferrari to Rolls Royce and Bentley. Also included some icons of India's roads. This is a 'full cycle'collection, where the online matches the sketchbook insertion`,
 breadCrumb:[
 {"link":"/view","params":"top-level","label":"HOME"},
 {"link":"/view","params":"transport-and-machines","label":"Transport And Machines"},
@@ -781,16 +800,57 @@ breadCrumb:[
 {"link":"","params":"shades-and-shines-1","label":"Shades And Shines 1"},
 ], emptyMessage: 'No Content'
 }
+//
+//
+// NEW INSERTS
 ,{
-parentKey: 'special-lists',key: 'alag-grouping-full-cycle', isLeafParent: false, levelIndex: 2, roles:["any"],
-label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. November 2024 onward, I intend creating a grouping of sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils. 
-ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded. The drawings here are also what I think top rated`,
-breadCrumb:[
-{"link":"/view","params":"top-level","label":"HOME"},
-{"link":"/view","params":"special-lists","label":"Special Lists"},
-{"link":"","params":"alag-grouping-full-cycle","label":"Alag Grouping Full Cycle"},
-], emptyMessage: 'No Content'
-}
+    parentKey: 'special-lists',key: 'alag-grouping-full-cycle', isLeafParent: false, levelIndex: 2, roles:["any"],
+    label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. November 2024 onward, I intend creating a grouping of sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils. 
+    ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded. The drawings here are also what I think top rated`,
+    breadCrumb:[
+    {"link":"/view","params":"top-level","label":"HOME"},
+    {"link":"/view","params":"special-lists","label":"Special Lists"},
+    {"link":"","params":"alag-grouping-full-cycle","label":"Alag Grouping Full Cycle"},
+    ], emptyMessage: 'No Content'
+    }
+    ,{
+        parentKey: 'special-lists',key: 'group-by-physical-scrapbook-album', isLeafParent: false, levelIndex: 2, roles:["any"],
+        label: 'Group by (Physical, Scrapbook) Album',  
+        description: `These lists arrange drawings as they are orderd in physical albums/scrapbooks. No new sketches; these have been already uploaded on this website. 
+        Note: The arrangement, categorization, storage, etc of the online collections under the category introduced from 'Alag Grouping Full Cycle' are the same as the 'hard copy' storage in scrapbooks. <br/>
+        Some others having the same ordering will be there; these include the term 'full life cycle' in the description `,
+        breadCrumb:[
+        {"link":"/view","params":"top-level","label":"HOME"},
+        {"link":"/view","params":"special-lists","label":"Special Lists"},
+        {"link":"","params":"group-by-physical-scrapbook-album","label":"Group by (Physical, Scrapbook) Album"},
+        ], emptyMessage: 'No Content'
+        }
+        ,{
+            parentKey: 'group-by-physical-scrapbook-album',key: 'the-divine-in-colors-so-fine', isLeafParent: true, levelIndex: 3,  roles:["superuser","guru"],
+            label: 'The Divine in colors so fine',  
+            description: `Religious and Spiritual Sketches in color. 
+            This is picking up after a long gap, browsing through the collection of loosely kept sheets of sketches, and puting them in a scrapbook.
+            I gleaned out high quality color sketches of Deities and Gurus to add.**Dunwell A4 size 24 pocket (48 sheet) presentation book. White cover**`,
+            breadCrumb:[
+            {"link":"/view","params":"top-level","label":"HOME"},
+            {"link":"/view","params":"special-lists","label":"Special Lists"},
+            {"link":"/view","params":"group-by-physical-scrapbook-album","label":"Group by (Physical, Scrapbook) Album"},
+            {"link":"","params":"the-divine-in-colors-so-fine","label":"The Divine in colors so fine"},
+            ], emptyMessage: 'Coming soon!!'
+            }
+
+        ,{
+            parentKey: 'group-by-physical-scrapbook-album',key: 'the-first-album', isLeafParent: true, levelIndex: 3,  roles:["superuser","guru"],
+            label: 'The First Album',  
+            description: `The First Album/Scrapbook to fill with drawings.
+            This has varied content. People, Gods and Gurus. Color and Black and white pencils **Dunwell A3 size 24 pocket (48 sheet) presentation book. Black cover**`,
+            breadCrumb:[
+            {"link":"/view","params":"top-level","label":"HOME"},
+            {"link":"/view","params":"special-lists","label":"Special Lists"},
+            {"link":"/view","params":"group-by-physical-scrapbook-album","label":"Group by (Physical, Scrapbook) Album"},
+            {"link":"","params":"the-first-album","label":"The First Album"},
+            ], emptyMessage: 'Coming soon!!'
+            }
     /*
 ,{
 parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-1', isLeafParent: true, levelIndex: 3, roles:["any"],

@@ -769,6 +769,17 @@ breadCrumb:[
 ], emptyMessage: 'No Content'
 }
 ,{
+parentKey: 'alag-grouping-full-cycle',key: 'charcoal-times-other-colors-shines', isLeafParent: true, levelIndex: 3, roles:["any"],
+description: `First drawings using charcoal pencils started end Feb 1st week March 2025. From only charcoal (hard, soft, medium, white) to charcoal with other drawing elements color and metal color pencils. I'll also be making an effort to sign my drawings going forward`,
+label: 'Charcoal Times Other Colors Shines',  
+breadCrumb:[
+{"link":"/view","params":"top-level","label":"HOME"},
+{"link":"/view","params":"special-lists","label":"Special Lists"},
+{"link":"/view","params":"alag-grouping-full-cycle","label":"Alag Grouping Full Cycle"},
+{"link":"","params":"charcoal-times-other-colors-shines","label":"Charcoal Times Other Colors Shines"},
+], emptyMessage: 'No Content'
+}
+,{
 parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-other-colors-1', isLeafParent: true, levelIndex: 3, roles:["any"],
 description: `First New entry in 2025, to the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Twist here is that these are using a single 'other' color for each sketch. In addition to other stated 'alag' features, this collection is in ascending order of latest update. Jan 2 2025 onward `,
 label: 'Shades And Shines Other Colors 1',  

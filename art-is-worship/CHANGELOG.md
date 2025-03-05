@@ -37,6 +37,8 @@
 - console.log should try to keep reference - classname method name 
 - localrun, esp when automated upload is running - ***npm start runs ng serve --port 2800**
 ### February 2025 onward
+
+- March 3-4 2025 First Charcoal pencil based drawings being uploaded 
 - implementation of album pivot (as on Feb 17 semi-manual)
   - manual entry in image JSONs. e.g. `album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 11} `
   - Adding album names to `menu-tree-elements.ts`
