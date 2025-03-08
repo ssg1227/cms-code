@@ -19,6 +19,16 @@ files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
+content:  'black-white',
+dateUploaded:  '03-07-2025',
+duplicate:  'true',
+summaryLabel:  `Baba 'Unplugged' face in Charcoal March 6 2025 (for Feb 27)  `,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Baba-Charcoal-March-6-2025.jpeg`,
+description: `<ul><li> Baba 'Unplugged' face March 6 2025  (for Feb 27)  </li><li>Using hard, medium, soft black, and white charcoal pencil</li><li> Uploaded March 7  </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
 content:  'color-pencil',
 dateUploaded:  '02-15-2025',album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 10} ,
 duplicate:  'false',

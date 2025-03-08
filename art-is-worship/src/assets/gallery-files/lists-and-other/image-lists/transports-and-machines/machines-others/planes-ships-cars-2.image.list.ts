@@ -13,6 +13,16 @@ export class PlanesShipsCars2ImageList {
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '03-07-2025',
+duplicate:  'true',
+summaryLabel:  `Dhow with 'Mumbai Bandstand' backdrop March 7 2025 (Charcoal)`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Dhow-Bandstand-March7-2025.jpeg`,
+description: `<ul><li> Dhow with 'Mumbai Bandstand' backdrop March 7 2025 </li><li>Using hard, medium, soft black, and white charcoal pencil</li><li> Uploaded same day (March 7) </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '01-30-2025',
 duplicate:  'true',
