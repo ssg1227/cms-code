@@ -12,6 +12,16 @@ export class PlacesScenesObjectsImageList {
                 Mumbai gets her due place and a dedicated theme; all Mumbai related sketches will be found in 'Mumbai Meri Jaan'`,
                 files: [ 
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  '03-10-2025',
+duplicate:  'true',
+summaryLabel:  `Hookah  (Charcoal) March10 2025 `,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Hookah-Charcoal-March10-2025.jpeg`,
+description: `<ul><li> Hookah,  (Charcoal)March10 2025  </li><li>Start, complete, upload March 10 2025 (pm)</li><li> Trying ambitious - earthenware, metal, cloth shading</li><li>Also tried wet cloth and water droplets around the metal water container (lower part/base)</li></ul>`,
+},
+{
 canvassSize:  '',
 content:  '',
 dateUploaded:  '02-21-2025',

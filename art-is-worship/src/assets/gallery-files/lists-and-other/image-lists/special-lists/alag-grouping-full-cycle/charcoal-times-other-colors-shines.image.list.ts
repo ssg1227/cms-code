@@ -19,6 +19,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  '03-10-2025',
+duplicate:  'false',
+summaryLabel:  `Hookah  March10 2025 `,
+fullFileName: `${this.imageRoot}Hookah-Charcoal-March10-2025.jpeg`,
+description: `<ul><li> Hookah,  March10 2025  </li><li>Start, complete, upload March 10 2025 (pm)</li><li> Trying ambitious - earthenware, metal, cloth shading</li><li>Also tried wet cloth and water droplets around the metal water container (lower part/base)</li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '03-10-2025',
