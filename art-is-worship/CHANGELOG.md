@@ -37,9 +37,15 @@
 - console.log should try to keep reference - classname method name 
 - localrun, esp when automated upload is running - ***npm start runs ng serve --port 2800**
 ### February 2025 onward
-
-- March 3-4 2025 First Charcoal pencil based drawings being uploaded 
-- implementation of album pivot (as on Feb 17 semi-manual)
+- ***This File to be closed April 27 2025 and saved as CHANGELOG-2024-2025.md and a fresh new  CHANGELOG.md to be initated** 
+  - link to github url of this file.
+  - carry over only pending items to new file
+- Styling highlight for categories with latest uploads (past 7 days)
+- Email distribution list - send email at every 7 day publish
+- **Done** March 3-4 2025 First Charcoal pencil based drawings being uploaded. new FLC (Full Life Cycle) List/Physical Album initiated 
+  - "Charcoal Times Other Colors Shines"
+  - First drawings using charcoal pencils started end Feb 1st week March 2025. From only charcoal (hard, soft, medium, white) to    charcoal with other drawing elements color and metal color pencils. All drawings signed
+- implementation of album pivot (as on Feb 17 semi-manual **Done**)
   - manual entry in image JSONs. e.g. `album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 11} `
   - Adding album names to `menu-tree-elements.ts`
     keys - special-lists => group-by-physical-scrapbook-album => *album name*

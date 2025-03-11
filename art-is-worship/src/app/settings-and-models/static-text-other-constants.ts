@@ -14,6 +14,16 @@ export const staticText:StaticText = {
 introContentList: [
  `<H1>A Journey of drawings</H1>
    <p>
+      <em> <h5>&nbsp;&nbsp;&nbsp;Dedicated to: 
+          <ul>
+            <li>Firstly, Shree Ganesh, Devi Saraswati and the Guru, Shree Dattatreya and His Avatars</li>
+            <li>My Parents; in that my Dad for setting me off on this journey (see below)</li>
+            <li>My Art Teacher in School, Mr Rodrigues, whose guidance and inspiration kept the torch running</li>
+            <li>Last but not the least, you Oh viewers!!!</li>
+          </ul>
+          </h5></em>
+   </p>
+   <p>
        <em> <h6>&nbsp;&nbsp;&nbsp;"I always have liked to draw."</h6></em><br/>
        Some things just stick in memory. I remember, when I was a kid, my father drawing me a plane. It was a pretty good drawing...
        I dont remember the circumstances, but that was what set me off. My brother and I always loved trains 
