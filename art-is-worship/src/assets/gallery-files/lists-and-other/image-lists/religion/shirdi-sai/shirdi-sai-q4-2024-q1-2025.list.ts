@@ -18,6 +18,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '03-10-2025',
+duplicate:  'true',
+summaryLabel:  `Baba on Stone (In Charcoal) March 10 2025 for Feb 20`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Baba-March10-for-Feb20-2025.jpeg`,
+description: `<ul><li> Baba on Stone (In Charcoal) March 10 2025 for Feb 20 </li><li> Upload same day. From an old sketch </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'black-white',
 dateUploaded:  '03-07-2025',
