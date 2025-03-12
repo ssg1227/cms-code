@@ -18,7 +18,7 @@ introContentList: [
           <ul>
             <li>Firstly, Shree Ganesh, Devi Saraswati and the Guru, Shree Dattatreya and His Avatars</li>
             <li>My Parents; in that my Dad for setting me off on this journey (see below)</li>
-            <li>My Art Teacher in School, Mr Rodrigues, whose guidance and inspiration kept the torch running</li>
+            <li>My Art Teacher in School, Rodricks Sir, whose guidance and inspiration kept the torch running</li>
             <li>Last but not the least, you Oh viewers!!!</li>
           </ul>
           </h5></em>

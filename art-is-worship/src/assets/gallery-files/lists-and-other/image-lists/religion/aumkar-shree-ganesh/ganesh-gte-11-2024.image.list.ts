@@ -18,6 +18,26 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'soft',
+dateUploaded:  '03-11-2025',
+duplicate:  'true',
+summaryLabel:  `Colored Sangeet Ashtavinayaks 4 March 11 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Sur-Niragas-Ho-Template-4-Mar11-2025.jpeg`,
+description: `<ul><li> Colored Sangeet Ashtavinayaks 4 March 11 2025 </li><li> 4th of 8 Ganesh with musical instruments </li><li> Base template copied from B&W </li><li> Completion and upload March 11 2025 </li><li> Using color pencil, charcoal pencil, metal color pencil </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'soft',
+dateUploaded:  '03-11-2025',
+duplicate:  'true',
+summaryLabel:  `Colored Sangeet Ashtavinayaks 3 March 11 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Sur-Niragas-Ho-Template-3-Mar11-2025.jpeg`,
+description: `<ul><li> Colored Sangeet Ashtavinayaks 3 March 11 2025 </li><li> 3rd of 8 Ganesh with musical instruments </li><li> Base template copied from B&W </li><li> Completion and upload March 11 2025 </li><li> Using color pencil, charcoal pencil, metal color pencil </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color pencil, charcoal pencil, metal color pencil',
 dateUploaded:  '03-04-2025',
