@@ -18,6 +18,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  '',
+dateUploaded:  '03-12-2025',
+duplicate:  'false', album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 13} ,
+summaryLabel:  `Dwarkamai March 12 for March 6 2025`,
+fullFileName: `${this.imageRoot}Baba-Dwarkamai-March12-Fr-March6-2025.jpeg`,
+description: `<ul><li> Dwarkamai March 12 for March 6 2025 </li><li> Completed and Uploaded March 12 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '03-10-2025',
