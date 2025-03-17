@@ -42,6 +42,7 @@
   - carry over only pending items to new file
 - Styling highlight for categories with latest uploads (past 7 days)
 - Email distribution list - send email at every 7 day publish
+- **COMMEMORATIVE 550th drawing uploaded March 16** 'Charcoal Times Other Colors Shines' album. Appropriately a tribute to my Art teacher from School
 - **Done** March 3-4 2025 First Charcoal pencil based drawings being uploaded. new FLC (Full Life Cycle) List/Physical Album initiated 
   - "Charcoal Times Other Colors Shines"
   - First drawings using charcoal pencils started end Feb 1st week March 2025. From only charcoal (hard, soft, medium, white) to    charcoal with other drawing elements color and metal color pencils. All drawings signed
