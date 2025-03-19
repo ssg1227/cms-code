@@ -19,6 +19,18 @@ files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
+content:  '',
+dateUploaded:  '03-18-2025',
+duplicate:  'false',
+summaryLabel:  `Siddhivinayak Prabhadevi Completed and Upload 03/18/25`,
+fullFileName: `${this.imageRoot}Siddhivinayak-Prabhadevi-March18-2025.jpeg`,album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 14} ,
+description: `<ul><li> Siddhivinayak Prabhadevi Completed and Upload 03/18/25 </li><li> Old sketch completed  used shading pencils, metal color pencils in add to regular color pencils </li></ul>`,
+rating:  1,
+ratingYear:  2025,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
 content:  'soft',
 dateUploaded:  '03-11-2025',
 duplicate:  'true',

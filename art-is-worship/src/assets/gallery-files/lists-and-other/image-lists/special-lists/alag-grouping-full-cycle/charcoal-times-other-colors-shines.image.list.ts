@@ -19,16 +19,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
-canvassSize:  '',
-content:  'soft',
+canvassSize:  'A4',
+content:  'other',
 dateUploaded:  '03-16-2025',
 duplicate:  'false',
-evolution:  `<b>550th sketch and a sort of uncategorized (as yet) sketch<br/></B>`,
+evolution:  `<b>550th sketch and a sort of uncategorized (as yet) sketch<br/>Also uses ALL coloring and B&W tools - black and white, Shading, color pencils, crayons (a bit), watercolor pencils, metallic pencils, and charcoal</B>`,
 evolutionSequence:  4,
 evolutionDate:  '03-16-2025',
 summaryLabel:  `(#550) Combined Holi Drawing and Art Teacher Rodricks Sir Tribure March13- 16 '25`,
 fullFileName: `${this.imageRoot}Holi-And-Rodricks-Sir-Tribute-March13-16-2025.jpeg`,
-description: `<ul><li> (#550) Combined Holi Drawing and Art Teacher Rodricks Sir Tribure March13- 16 '25 </li><li> The idea came to draw something different to signify a splash of colors for Holi </li><li> One thing evolved into another, and one major lapse of not acknowledging my Art Teacher at School </li><li> Mr Rodricks who retired when I was in mid school - I was a sort of favorite of his </li><li> This is a still life, object drawing with sunflowers and a few other types in all the flowers which Sir taught us </li><li> Also I thought the card would be a nice way to express tribute, with Sir's name inside </li><li> Completed Mar 13, uploaded Mar 16 2025 </li><li> Timed to be the 550th sketch </li></ul>`,
+description: `<ul><li> (#550) Combined Holi Drawing and Art Teacher Rodricks Sir Tribure March13- 16 '25 </li><li> The idea came to draw something different to signify a splash of colors for Holi </li><li> One thing evolved into another, and one major lapse of not acknowledging my Art Teacher at School </li><li> Mr Rodricks who retired when I was in mid school - I was a sort of favorite of his </li><li> This is a still life, object drawing with sunflowers and a few other types in all the flowers which Sir taught us </li><li> Also I thought the card would be a nice way to express tribute, with Sir's name inside </li><li> Completed Mar 13, uploaded Mar 16 2025 </li><li> Timed to be the 550th sketch </li><li>Also uses ALL coloring and B&W tools I've used since THIS journey started - black and white, Shading, color pencils, crayons (a bit), watercolor pencils, metallic pencils, and charcoal</li></ul>`,
 },
 {
 canvassMaterial:  'Plain paper',
