@@ -1,0 +1,73 @@
+
+import {  ImageElement } from '@settings-and-models/image-detail'
+enum PicsIndex  {
+        aumkarGaneshSept2020Final,
+        AumGaShivParKashiVishwCTLightNov172020Final,
+        unsignedShivVeena12272020,
+        ShreeSiddhivinayakQ42020,
+        DeviMaaMay13182021,
+        MixGenPlaneSept2020,
+    };
+export class Dattavatar2ImageList {
+imageRoot = 'assets/gallery-files/images/religion/dattavatar-2/'; 
+///Users/shantanug/Documents/GitHub/cms-code/art-is-worship/src/assets/gallery-files/images/religion/dattavatar-2/Shripad-Vallabh-Feb12-2025.jpeg
+reverseStack =  'false';
+public allImageList:ImageElement[]  =  [
+  {  
+            folder:'dattavatar-2',
+            theme:'<theme>',
+            themeSummary: '',
+files: [
+ 
+{
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  '02-12-2025' ,
+fullFileName: `assets/gallery-files/images/religion/swami-samartha-q2-2023/SwamiFrmNrusimhaSaraswatiColor042524-021225.jpeg`,
+description: `<ul><li> Based on a black and white sketch of Nrusimha Saraswati (Jan 13-14 2024) </li><li> Made two light copies of the above </li><li> One was colored to the3rd avatar, the other evolved into Swami drawing (this) </li></ul>`,
+rating:  1,
+ratingYear:  2025,
+duplicate:true,
+iterations: [
+  {fullFileName: `assets/gallery-files/images/religion/swami-samartha-q2-2023/SwamiFrmNrusimhaSaraswatiColor042524-021225.jpeg`, description: `<ul><li>Revisited and touched up GuruPratibada Feb 12 2025</li><li> Based on a black and white sketch of Nrusimha Saraswati (Jan 13-14 2024) </li><li> Made two light copies of the above </li><li> One was colored to the3rd avatar, the other evolved into Swami drawing (this) </li></ul>` },
+  {fullFileName: `assets/gallery-files/images/religion/swami-samartha-q2-2023/SwamiFrmNrusimhaSaraswatiColor042524.jpeg`, description: `<ul><li> Based on a black and white sketch of Nrusimha Saraswati (Jan 13-14 2024) </li><li> Made two light copies of the above </li><li> One was colored to the3rd avatar, the other evolved into Swami drawing (this) </li></ul>` },
+]
+},
+{
+canvassSize:  'A4',
+content:  'color-pencil',album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 8} ,
+dateUploaded:  '02-12-2025',
+summaryLabel:  `Nrusimha Saraswati 2nd Dattavatar Guru Pratipada Feb 2025`,
+
+fullFileName: `${this.imageRoot}NrusimhaSaraswatiColorFromBW042524-02052025-3.jpeg`,
+description: `<ul><li> Copied light the black and white version (Jan 13-14 2024) to generate color version </li></ul>`,
+rating:  1,
+ratingYear:  2025,
+iterations: [
+  {fullFileName: `${this.imageRoot}NrusimhaSaraswatiColorFromBW042524-02052025-3.jpeg`, description: `<ul><li>Revisited and touched up GuruPratibada Feb 12 2025</li><li> Copied light the black and white version (Jan 13-14 2024) to generate color version </li></ul>` },
+  {fullFileName: `${this.imageRoot}NrusimhaSaraswatiColorFromBW042524-2.jpeg`, description: `<ul><li> Copied light the black and white version (Jan 13-14 2024) to generate color version </li></ul>` },
+{fullFileName: `${this.imageRoot}NrusimhaSaraswatiColorFromBW042524-1.jpeg`, description: `<ul><li> Copied light the black and white version (Jan 13-14 2024) to generate color version </li><li> April 16-25 2024 </li></ul>` },
+]},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '02-12-2025',
+duplicate:  'false', album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 7} ,
+summaryLabel:  `Shripad Vallabh 1st Dattavatar Guru Pratipada Feb 2025`,
+fullFileName: `${this.imageRoot}Shripad-Vallabh-Feb12-2025.jpeg`,
+description: `<ul><li> Shripad Vallabh 1st Dattavatar Guru Pratipada Feb 2025 </li><li> Adding to divine album </li><li> Copy template from original Black and White (end 2020) </li><li> completed and uploaded Feb 12 2025  </li></ul>`,
+rating:  1,
+ratingYear:  2025,
+},
+  {
+  canvassMaterial:  'Plain paper',
+  canvassSize:  'A4',
+  content:  'black-white',
+  dateUploaded:  '12-19-2024',
+  duplicate:  'true',
+  summaryLabel:  `Ganesh, Mahadev and Gurus, Dec 19 2024`,
+  fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Ganesh-Mahadev-Guru-12182024.jpeg`,
+  description: `<ul><li> Ganesh, Mahadev and Gurus, Dec 19 2024 </li><li> Sketch 501.. starting new Guru list </li></ul>`,
+  },
+  ]}]}
