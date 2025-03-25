@@ -51,6 +51,8 @@
 - localrun, esp when automated upload is running - ***npm start runs ng serve --port 2800**
 ### February 2025 onward
 - **March 25 onward. Single code base for CMS apps**
+  - user 1st and last name display when logged in as username e.g. achyutM = Achyut Morabkar
+  - (maintain-and-automate - folder for full-stack-automation, see other CHANGELOGs parent and neighbor folder)
   - **art-is-worship to cms-main Sanity check complete March 25**
     - created (parent) folder customized-cms, added README, CHANGELOG and created folder cms-main to house this app
     - copied these sources under cms-main (as against art-is-worship)
