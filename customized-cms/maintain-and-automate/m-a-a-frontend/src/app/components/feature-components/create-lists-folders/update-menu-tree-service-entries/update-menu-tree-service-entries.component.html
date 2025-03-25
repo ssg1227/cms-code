@@ -1,0 +1,69 @@
+
+<div>
+    <div id="div-container" >
+   
+   
+        <div id='modal-div-top-5' *ngIf="isLeafParent != null">
+          <div id="close-div"  (click)="closeDivModal()">&times;</div>
+         
+        </div>
+        <section id="div-lower-95"  > <!-- && selectedImage.imageList.length  > 1"-->
+            
+            <textarea class="tModalAreaDesc" [(ngModel)]="finalText" ></textarea><br/>
+        </section>
+        <div><ol>
+           <li><button (click)="backupLive()" >Backup live Menu Entry ts </button></li>
+           <li><button (click)="copyFromLive()" >Copy live here</button></li>
+        </ol></div>
+      </div>
+    
+    {{level0key}}
+    {{level0Label}}
+    <div>
+        <label>Level1</label>
+        <select id="level1" type="Select" (change)="getImageSubFolder($event,2)" >
+            <option *ngFor="let level1Key of level1Keys" [disabled]="level1Key.indexOf('(file)') >= 0">{{level1Key.replace('(file)','')}}</option>
+        </select>
+    </div>
+    <div>
+        <label>Level2</label>
+        <select id="level2" type="Select" (change)="getImageSubFolder($event,3)" >
+            <option *ngFor="let level2Key of level2Keys" >{{level2Key.replace('(file)','')}}</option>
+        </select>
+    </div>
+    <div>
+        <label>Level3</label>
+        <select id="level3" type="Select" (change)="getImageSubFolder($event,4)" >
+            <option *ngFor="let level3Key of level3Keys" >{{level3Key.replace('(file)','')}}</option>
+        </select>
+    </div>
+    <div>
+        <label>Level4</label>
+        <select id="level4" type="Select" (change)="getImageSubFolder($event,4)" >
+            <option *ngFor="let level4Key of level4Keys" >{{level4Key.replace('(file)','')}}</option>
+        </select>
+    </div>
+    <div>
+        <label>Level54</label>
+        <select id="level5" type="Select" (change)="getImageSubFolder($event,5)" >
+            <option *ngFor="let level5Key of level5Keys" >{{level5Key.replace('(file)','')}}</option>
+        </select>
+    </div>
+        <label> Is Leaf Parent </label><select id="leaafParent" type="Select" [(ngModel)]="isLeafParent"    >
+            <option  >true</option>
+            <option  >false</option>
+        </select>
+    <div>PARENT KEY <strong>{{parentKey}}</strong></div>
+    <div>PARENT Index <strong>{{levelIndex}}</strong></div>
+    <div> Roles 
+        <input type='text'   [(ngModel)]="strRoles" ></div>
+    <div>
+        <label style="vertical-align: middle;">Description </label><textarea class="tAreaDesc" [(ngModel)]="description" ></textarea><br/>
+    
+    </div><button (click)="backUpAndCompileMenuEntry()">Compile Menu Entry</button><label> Automate </label><input type="checkbox" ><!--(click)="imgR()"  [(ngModel)]="useImageRoot" > -->
+    <app-multiline  [passedTextList]="JSONTextLines" (multiTextDone)="getMenuEntryJSONText($event)"></app-multiline> <!-- (multiTextDone)="getMenuEntryJSONText($event)"></app-multiline> -->
+    <button (click)="copyBackFromLiveToAutomate($event)">Copy here from live</button> <label  style="vertical-align: middle;"> USE ONLY FOR NODES </label> 
+   
+        
+  
+</div>

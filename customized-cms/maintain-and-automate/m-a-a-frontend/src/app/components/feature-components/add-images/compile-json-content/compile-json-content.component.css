@@ -1,0 +1,37 @@
+/* Styling changes Dec 2024 */
+.outerdiv {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 450px;
+    overflow: scroll;
+   /* background-image: linear-gradient(to bottom, red, orange, #F4C430, yellow, lightgreen, aliceblue, skyblue);*/
+   
+}
+.innerdiv  {
+    border: 1px black solid ;
+    float: left;;
+} 
+input, select, label {
+    min-width: 300px;
+    font-size: larger;
+    height:30px;
+    margin-bottom: 7px;
+   
+}
+/*
+div {
+    height: 215px;
+}
+*/
+td {
+    height: 218px;
+    border:3px solid grey;
+    margin:2px;
+    padding:5px;
+    border-radius: 5px;
+}

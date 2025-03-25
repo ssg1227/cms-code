@@ -1,0 +1,65 @@
+<div>
+    <!---  later to add from reusables
+    <app-folder-tree-expand [rootFolder]="destinationStart"></app-folder-tree-expand>
+    -->
+    <H3>Listing file :</H3>
+    <div>
+        <label >Image List Root:</label>   <label >{{rootConfigFolder}}</label><br/>
+        <label >Image Root:</label>   <label >{{currentImageFolder}}</label> <!-- NEW-CATEGORY-REFINE-11-2024-->
+    </div>
+    <label >Get Listing file:</label>
+    <div>
+        <div>
+            <label>Level1</label>
+            <select id="level1" type="Select" (change)="getImageListSubFolder($event,2)" >
+                <option *ngFor="let level1File of level1Files" >{{level1File}}</option>
+            </select>
+            </div>
+            <div> 
+                <label>Level2</label>
+                <select id="level2" type="Select" (change)="getImageListSubFolder($event,3)" >
+                    <option *ngFor="let level2File of level2Files" >{{level2File}}</option>
+                </select>
+                </div>  
+                <div>
+                    <label>Level3</label>
+                    <select id="level3" type="Select" (change)="getImageListSubFolder($event,4)" >
+                        <option *ngFor="let level3File of level3Files" >{{level3File}}</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Level4</label>
+                    <select id="level4" type="Select" (change)="getImageListSubFolder($event,5)" >
+                        <option *ngFor="let level4File of level4Files" >{{level4File}}</option>
+                    </select>
+                </div>
+                Current parent path  {{currentParentFolder}}
+                <!-- DUPLICATE-11-2024 -->
+                 Current Image Folder  {{currentImageFolder}}
+    
+    <button (click)="verifyConfigLocation()" *ngIf="listsFolderMode == 'writeToFile'">Update List File </button>
+    <!-- DUPLICATE-11-2024 -->
+    <label> Duplicate Entry?</label><input type="checkbox" (click)="dup()"  [(ngModel)]="duplicateListing" >
+    <button   
+                *ngIf=" duplicateListing  == true && listsFolderMode == 'writeToFile'"
+                (click)="verifyConfigLocation(true)">Submit Duplicate Entry</button>
+    <section *ngIf="listsFolderMode == 'createListFolder'"><!-- NEW-CATEGORY-REFINE-11-2024-->
+       <div>
+            <label>Folder Name</label>
+             <input type="text" [(ngModel)]="listFolderName" #ctrl="ngModel">
+        </div> <button (click)="createListFolder()">Create Image Folder</button>
+    </section>
+    <section *ngIf="listsFolderMode == 'createFile'"  >
+        <label>List File Folder Name for creating new folder</label>
+        <input type="text" [(ngModel)]="newlistFolderName" #ctrl="ngModel"><button (click)="createListFolder()">Create ImageList Folder</button>
+    </section>
+    <section *ngIf="listsFolderMode == 'createFile'"  >
+        <label>List File Name</label>
+        <input type="text"  style="width: 600px;"  [(ngModel)]="listFileName" #ctrl="ngModel">
+        <!-- FilteredListFileFrameLines NEW-CATEGORY-REFINE-11-2024-->
+        Core context service import <input type="textarea"  style="width: 99%;height: 50px;"  [(ngModel)]="listFileImport" #ctrl="ngModel">
+        Core context service push <input type="textarea"  style="width: 99%;height: 50px;"  [(ngModel)]="listFilePush" #ctrl="ngModel">
+        <app-multiline [passedTextList]= "FilteredListFileFrameLines" (multiTextDone)="createListFile($event)"></app-multiline>
+    </section>
+    <button (click)="copyBackFromLiveToAutomate( )">Copy Menu tree from live</button><label>Added here as final, since it refreshes the app</label>
+</div> 

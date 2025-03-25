@@ -1,0 +1,31 @@
+.tabs {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .tab-headers {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background: #f1f1f1;
+  }
+  
+  .tab-headers li {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .tab-headers li.active {
+    background: #fff;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .tab-content {
+    padding: 10px;
+    background: #fff;
+  }
+  
