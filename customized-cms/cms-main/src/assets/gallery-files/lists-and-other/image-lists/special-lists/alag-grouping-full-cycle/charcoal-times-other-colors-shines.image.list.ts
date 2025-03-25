@@ -20,7 +20,8 @@ files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
-content:  'soft',
+content:  'other',
+contentOther: 'Mix of color pencils, watercolor pencils, charcoals, metal color pencils and shading',  
 dateUploaded:  '03-18-2025',
 duplicate:  'false',
 summaryLabel:  `Dessert of darbari daawat: A drink of Badshah(') s 03/16-03/18/25`,
@@ -28,9 +29,12 @@ fullFileName: `${this.imageRoot}Falooda-March-16-18-2025.jpeg`,
 description: `<ul><li> Dessert of darbari daawat: A drink of Badshah(') s 03/16-03/18/25 </li><li> "A (Delhi ) darbari daawat has to end with the drink of Badshah(') s " </li><li> The above is a sort of Pun, but first - the picture compositionn: </li><li> Falooda a rich and sumptious desset - ice cream, milk, rose syrup, sweetened vermiccelli, pearls, garnish with dry fruits </li><li> 'Paan' Betel leaves in the background </li><li> OK - the pun - Badshah(')s is a cold drink house in Central Mumbai </li><li> And Delhi Darbar is a famous Moghlai Restaurant nearby  </li><li> Used all color material, shading pencils and (of course) charcoal except crayons </li><li> completed March 16, upload March 18 2025</li></ul>`,
 },
 {
-canvassMaterial:  'Plain paper',
-canvassSize:  'A4',
-content:  'other',
+
+  canvassMaterial:  'Plain paper',
+  canvassSize:  'A4',
+  content:  'other',
+  contentOther: `Mix of all drawing 'utensils' used so far - crayons, color pencils, watercolor pencils, charcoals, metal color pencils and shading`,  
+  
 dateUploaded:  '03-16-2025',
 duplicate:  'false',
 evolution:  `<b>550th sketch and a sort of uncategorized (as yet) sketch<br/>Also uses ALL coloring and B&W tools - black and white, Shading, color pencils, crayons (a bit), watercolor pencils, metallic pencils, and charcoal</B>`,

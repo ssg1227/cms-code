@@ -18,8 +18,10 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
-canvassSize:  '',
-content:  '',
+canvassSize:  'A4',
+content:  'other',
+//content:Other, adding contentOther field. initial code changes
+contentOther: 'Mix of color pencils and shading', // comments will be applied to this data list as the 1st, going forward not
 dateUploaded:  '03-12-2025',
 duplicate:  'false', album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 13} ,
 summaryLabel:  `Dwarkamai March 12 for March 6 2025`,

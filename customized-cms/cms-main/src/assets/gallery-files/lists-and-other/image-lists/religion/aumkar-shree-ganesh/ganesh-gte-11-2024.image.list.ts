@@ -18,8 +18,10 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
-canvassSize:  '',
-content:  '',
+canvassSize:  'A4',
+content:  'other',
+contentOther: 'Mix of color pencils, metal color pencils and shading',  
+
 dateUploaded:  '03-18-2025',
 duplicate:  'false',
 summaryLabel:  `Siddhivinayak Prabhadevi Completed and Upload 03/18/25`,

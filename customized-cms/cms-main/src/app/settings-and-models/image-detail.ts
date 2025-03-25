@@ -15,6 +15,7 @@ export interface ImageDetail {
     canvassMaterial?: string;
     drawingStyle?: string; 
     content?: string;
+    contentOther?: string; // content:Other, adding contentOther field. initial code changes
     evolution?: string;
     evolutionSequence?: number;
     evolutionDate?: string;

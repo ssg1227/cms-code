@@ -50,7 +50,14 @@
 - console.log should try to keep reference - classname method name 
 - localrun, esp when automated upload is running - ***npm start runs ng serve --port 2800**
 ### February 2025 onward
- 
+- **March 25 onward. Single code base for CMS apps**
+  - **art-is-worship to cms-main Sanity check complete March 25**
+    - created (parent) folder customized-cms, added README, CHANGELOG and created folder cms-main to house this app
+    - copied these sources under cms-main (as against art-is-worship)
+    - compiled, ran locally and checked in initial version
+    - code change tested and deployed to confirm sanity check 
+      - **feature of adding information for content of 'other' with new field 'contentOther'**
+        - look for comments // content:Other, adding contentOther field. initial code changes              
 - 'Changers', 'The Best' cleanup. 
   - Check and genericize logic making it year transparent, esp 'Changers'
   - Factor in, in the 'description' for 'The Best' that certain lists and albums will always have top rating

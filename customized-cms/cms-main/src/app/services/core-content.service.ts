@@ -690,7 +690,8 @@ export class CoreContentService {
                   stylingObject.outer = 'card-default' ;
                   stylingObject.image = `${stylingObject.image}` ;
                   break ;
-          default: returnHTML = `${returnHTML}Other`; 
+          default:  fileDetail.contentOther? returnHTML = `${returnHTML}${fileDetail.contentOther}` : returnHTML = `${returnHTML}Other`; 
+                  // content:Other, adding contentOther field. initial code changes
                   stylingObject.outer = 'card-default' ;
                   stylingObject.image = `${stylingObject.image} card-other` ;break ;
         }
