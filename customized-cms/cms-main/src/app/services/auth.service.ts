@@ -41,6 +41,10 @@ export class AuthService {
       userRoles: ["superuser","core"]  // 'core user type'
     },
     { 
+      userName: 'achyutM',
+      userRoles: ["superuser","core"]  // 'core user type'
+    },
+    { 
       userName: 'harshaG',
       userRoles: ["superuser","core"]  // 'core user type'
     },

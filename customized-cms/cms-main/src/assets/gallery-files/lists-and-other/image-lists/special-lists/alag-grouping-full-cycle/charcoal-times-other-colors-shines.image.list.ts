@@ -20,6 +20,16 @@ files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'soft', contentOther: 'Mix of color pencils, watercolor pencils, charcoals, metal color pencils and shading',
+dateUploaded:  '03-25-2025',
+duplicate:  'false',
+summaryLabel:  `Colored Sangeet Ashtavinayaks 5 March 25 2025`,
+fullFileName: `${this.imageRoot}Sur-Niragas-Ho-Template-5-Mar25-2025.jpeg`,
+description: `<ul><li> Colored Sangeet Ashtavinayaks 5 March 25 2025 </li><li>  Colored Sangeet Ashtavinayaks 4 March 11 20255th of 8 Ganesh with musical instruments   </li><li> Base template copied from B&W   </li><li> Completion and upload March 25 2025 Using color pencil, charcoal pencil, metal color pencil  </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'other',
 contentOther: 'Mix of color pencils, watercolor pencils, charcoals, metal color pencils and shading',  
 dateUploaded:  '03-18-2025',
