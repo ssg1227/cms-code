@@ -50,6 +50,7 @@
 - console.log should try to keep reference - classname method name 
 - localrun, esp when automated upload is running - ***npm start runs ng serve --port 2800**
 ### February 2025 onward
+- IMAGE LEVEL SECURITY (Aprl 5), it may be time to introduce this with careful consideration since 'religious/sensitive' content in method based lists like 'soft copies and compilations' is increasing
 - **March 27 new category 'soft copies and compilations' hierarchy introduced**
   - ***These are not 'drawing drawings as such, but a collection of collages, templates and 'software edited' applications of templates, etc.   (NOTE: they will not be added in chronological order)***
 - **March 25 onward. Single code base for CMS apps***

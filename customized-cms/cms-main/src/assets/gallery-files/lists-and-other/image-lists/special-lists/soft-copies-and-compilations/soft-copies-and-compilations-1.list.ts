@@ -10,7 +10,7 @@ enum PicsIndex  {
     };
 export class SoftCopiesAndCompilations1List {
   
-imageRoot = 'assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1'; 
+imageRoot = 'assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/'; 
 reverseStack =  'true';
 public allImageList:ImageElement[]  =  [
   {  
@@ -18,6 +18,28 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
+{
+canvassSize:  'other',
+content:  'other',contentOther: 'Template based Software edit AND Mix of all drawing "utensils" used so far - crayons, color pencils, watercolor pencils, charcoals, metal color pencils and shading',
+dateUploaded:  '03-28-2025',
+duplicate:  'false',
+summaryLabel:  `Nivedita Raut / Badve (Scottish) Grandma March 23 2025`,
+fullFileName: `${this.imageRoot}Nive-Congrats-card-March-23-2025.jpeg`,
+description: `<ul><li> Nivedita Raut / Badve (Scottish) Grandma March 23 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'other',
+canvassSize:  'other',
+content:  'soft', contentOther: 'Template based Software edit AND Mix of all drawing "utensils" used so far - crayons, color pencils, watercolor pencils, charcoals, metal color pencils and shading',
+dateUploaded:  '03-28-2025',
+duplicate:  'false',
+evolution:  `<b>sort of first attempt to do an eCard<br/></B>`,
+evolutionSequence:  4,
+evolutionDate:  '03-28-2025',
+summaryLabel:  `Blank Template March 24 - 28 2025`,
+fullFileName: `${this.imageRoot}Generic-Thanks-card-032425.jpeg`,
+description: `<ul><li> Blank Template March 24 - 28 2025 </li></ul>`,
+},
     {  
     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/MahadevJan102022.jpeg
     // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/Shivji2022ShravanMonday_1.jpeg

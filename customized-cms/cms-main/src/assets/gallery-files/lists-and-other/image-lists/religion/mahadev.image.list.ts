@@ -14,6 +14,16 @@ export class MahadevImageList {
          files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'other', contentOther: 'black and white using Charcoal',
+dateUploaded:  '03-28-2025',
+duplicate:  'true',
+summaryLabel:  `Khanderaya .. Shiva Avatar 03/27 - 03/28/2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Khanderaya-getup-March27-28-2025.jpeg`,
+description: `<ul><li> Khanderaya .. Shiva Avatar 03/27 - 03/28/2025 </li><li> Khanderaya is an Avatar of Lord Shiva </li><li> He with Parvati avatar Mhalsa destroyed demons Malla and Mani </li><li> A big Temple at Jezuri Maharashtra </li><li> Turmeric 'Bhandara' is of great significance </li><li> Original pencil sketch, enhanced using charcoal, completed March 27, Uploaded March 28 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '02-26-2025',

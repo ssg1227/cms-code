@@ -18,6 +18,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'soft', contentOther: 'Mix of color pencils, watercolor pencils, charcoals, metal color pencils and shading',
+dateUploaded:  '03-28-2025',
+duplicate:  'true',
+summaryLabel:  `Colored Sangeet Ashtavinayaks 6 March 27-28 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Sur-Niragas-Ho-Template-6-Mar27-28-2025.jpeg`,
+description: `<ul><li> Colored Sangeet Ashtavinayaks 6 March 27-28 2025 </li><li> Base template copied from B&W </li><li> 6th of 8 Ganesh with musical instruments Completion 27th, upload March 28 2025 Using color pencil, charcoal pencil, metal color pencil </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'soft', contentOther: 'Mix of color pencils, watercolor pencils, charcoals, metal color pencils and shading',
 dateUploaded:  '03-25-2025',
