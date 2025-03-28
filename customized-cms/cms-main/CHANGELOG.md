@@ -50,7 +50,9 @@
 - console.log should try to keep reference - classname method name 
 - localrun, esp when automated upload is running - ***npm start runs ng serve --port 2800**
 ### February 2025 onward
-- **March 25 onward. Single code base for CMS apps**
+- **March 27 new category 'soft copies and compilations' hierarchy introduced**
+  - ***These are not 'drawing drawings as such, but a collection of collages, templates and 'software edited' applications of templates, etc.   (NOTE: they will not be added in chronological order)***
+- **March 25 onward. Single code base for CMS apps***
   - user 1st and last name display when logged in as username e.g. achyutM = Achyut Morabkar
   - (maintain-and-automate - folder for full-stack-automation, see other CHANGELOGs parent and neighbor folder)
   - **art-is-worship to cms-main Sanity check complete March 25**
