@@ -16,7 +16,25 @@ public allImageList:ImageElement[]  =  [
             folder:'charcoal-times-other-colors-shines',
             theme:'<theme>',
             themeSummary: '',
-files: [
+files: [{
+  canvassMaterial:  'Plain paper',
+  canvassSize:  'A4',
+  content: 'Other',contentOther: 'Using color pencil, charcoal pencil, metal color pencil',
+  dateUploaded:  '03-29-2025',
+  duplicate:  'false',
+  summaryLabel:  `Colored Sangeet Ashtavinayaks 8 March 29 2025`,
+  fullFileName: `${this.imageRoot}Sur-Niragas-Ho-Template-8-Mar29-2025.jpeg`,
+  description: `<ul><li> Colored Sangeet Ashtavinayaks 8 March 29 2025 </li><li> FINAL of 8 Ganesh with musical instruments </li><li> ase template copied from B&W </li><li> Completion and upload March 29 2025 (Gudi Padwa in Bay Area, CA) </li><li> Using color pencil, charcoal pencil, metal color pencil </li>NOTE: this order of completion of sketches gets back to normal here</ul>`,
+  },
+{
+canvassSize:  'A4',
+content:  'Other',contentOther: 'Using color pencil, charcoal pencil, metal color pencil',
+dateUploaded:  '03-29-2025',
+duplicate:  'false',
+summaryLabel:  `Colored Sangeet Ashtavinayaks 7 March 29 2025`,
+fullFileName: `${this.imageRoot}Sur-Niragas-Ho-Template-7-Mar29-2025.jpeg`,
+description: `<ul><li> Colored Sangeet Ashtavinayaks 7 March 29 2025 </li><li>7th of 8 Ganesh with musical instruments</li><li> Base template copied from B&W </li><li> Completion and upload March 29 2025 (Gudi Padwa in Bay Area, CA)  </li><li>  Using color pencil, charcoal pencil, metal color pencil </li><li>NOTE: this departs from the order of completion of sketches. The sketch before this was completed AFTER this and the next one. This for logical arrangement of the themes :)</li></ul>`,
+},
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',

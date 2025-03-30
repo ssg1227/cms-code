@@ -15,7 +15,25 @@ public allImageList:ImageElement[]  =  [
             folder:'ganesh-gte-11-2024',
             theme:'<theme>',
             themeSummary: '',
-files: [
+files: [{
+  canvassMaterial:  'Plain paper',
+  canvassSize:  'A4',
+  content: 'Other',contentOther: 'Using color pencil, charcoal pencil, metal color pencil',
+  dateUploaded:  '03-29-2025',
+  duplicate:  'true',
+  summaryLabel:  `Colored Sangeet Ashtavinayaks 8 March 29 2025`,
+  fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/Sur-Niragas-Ho-Template-8-Mar29-2025.jpeg`,
+  description: `<ul><li> Colored Sangeet Ashtavinayaks 8 March 29 2025 </li><li> FINAL of 8 Ganesh with musical instruments </li><li> Base template copied from B&W </li><li> Completion and upload March 29 2025 (Gudi Padwa in Bay Area, CA) </li><li> Using color pencil, charcoal pencil, metal color pencil </li></ul>`,
+  },
+{
+canvassSize:  'A4',
+content:  'Other',contentOther: 'Using color pencil, charcoal pencil, metal color pencil',
+dateUploaded:  '03-29-2025',
+duplicate:  'true',
+summaryLabel:  `Colored Sangeet Ashtavinayaks 7 March 29 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Sur-Niragas-Ho-Template-7-Mar29-2025.jpeg`,
+description: `<ul><li> Colored Sangeet Ashtavinayaks 7 March 29 2025 </li><li>7th of 8 Ganesh with musical instruments</li><li> Base template copied from B&W </li><li> Completion and upload March 29 2025 (Gudi Padwa in Bay Area, CA) </li><li>  Using color pencil, charcoal pencil, metal color pencil </li></ul>`,
+},
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',

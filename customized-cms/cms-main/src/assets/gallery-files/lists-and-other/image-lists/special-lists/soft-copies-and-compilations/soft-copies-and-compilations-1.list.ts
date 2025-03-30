@@ -19,6 +19,16 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [
 {
+canvassMaterial:  'other',
+canvassSize:  'other',
+content:  'soft',contentOther:'Template based Software edit AND Mix of all drawing "utensils" used so far - crayons, color pencils, watercolor pencils, charcoals, metal color pencils and shading',
+dateUploaded:  '03-28-2025',
+duplicate:  'false',
+summaryLabel:  `Shankar Mahadevan Thanks March 27 -28 2025`,
+fullFileName: `${this.imageRoot}Shankar-rocks-March27-28-2025.jpeg`,
+description: `<ul><li> Shankar Mahadevan Thanks March 27 -28 2025 </li><li> Shankar Mahadevan from my engineering college RAIT </li><li> Famous National award wining singer and music director (those who dont know him) </li></ul>`,
+},
+{
 canvassSize:  'other',
 content:  'other',contentOther: 'Template based Software edit AND Mix of all drawing "utensils" used so far - crayons, color pencils, watercolor pencils, charcoals, metal color pencils and shading',
 dateUploaded:  '03-28-2025',

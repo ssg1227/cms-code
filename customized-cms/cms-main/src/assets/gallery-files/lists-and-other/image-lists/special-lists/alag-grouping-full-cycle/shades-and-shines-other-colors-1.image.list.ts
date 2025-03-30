@@ -18,6 +18,7 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
+
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
