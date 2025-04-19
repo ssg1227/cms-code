@@ -10,7 +10,26 @@ public allImageList:ImageElement[]  =  [
         theme:'Durga, Laxmi, Saraswati and Avatars',
     themeSummary:
     ``,
-    files: [  ,
+    files: [ 
+{
+canvassMaterial:  'other',
+canvassSize:  'other',
+content:  'soft',
+dateUploaded:  '04-16-2025',
+duplicate:  'true',
+summaryLabel:  `Second Sangeet Ashtavinayak, 1st with Saraswati Jan 2 24, upload 04/16/2025`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/SangeetAshtavinayakMaaSaraswatiJan022025April16-2025.jpeg`,
+description: `<ul><li> Second Sangeet Ashtavinayak, 1st with Saraswati Jan 2 24, upload 04/16/2025 </li><li> The Sangeet Ashtavinayaks with Art college Maa Saraswati idol in center </li><li> completed Jan 2 2024, upload April 16 2025 </li></ul>`,
+},{
+      canvassMaterial:  'other',
+      canvassSize:  'soft',
+      content:  'soft',
+      dateUploaded:  '04-15-2025',
+      duplicate:  'true',
+      summaryLabel:  `Sangeet Ashtavinayak, Sharada Maa April 8, (15) 2024`,
+      fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/SangeetAshtavinayakMaaSaraswatiApril815-2024.jpeg`,
+      description: `<ul><li> Sangeet Ashtavinayak, Sharada Maa April 8, (15) 2024 </li><li> Compilation of the recently shared color Ashtavinayaks with Maa Sarawswati in the center </li><li> All color pencils, some water color pencils, charcoal </li><li> Compiled and Shared April 8, uploaded April 15 2025 (eve of Sankatahara Chaturthi) </li></ul>`,
+      },  
 {
 canvassMaterial:  'Photo print matt paper',
 canvassSize:  'A4',

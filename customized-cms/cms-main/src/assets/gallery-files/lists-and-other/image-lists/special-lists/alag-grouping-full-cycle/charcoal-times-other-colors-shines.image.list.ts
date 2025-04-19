@@ -16,8 +16,9 @@ public allImageList:ImageElement[]  =  [
             folder:'charcoal-times-other-colors-shines',
             theme:'<theme>',
             themeSummary: '',
-files: [{
-  canvassMaterial:  'Plain paper',
+files: [
+
+{  canvassMaterial:  'Plain paper',
   canvassSize:  'A4',
   content: 'Other',contentOther: 'Using color pencil, charcoal pencil, metal color pencil',
   dateUploaded:  '03-29-2025',
@@ -34,7 +35,16 @@ duplicate:  'false',
 summaryLabel:  `Colored Sangeet Ashtavinayaks 7 March 29 2025`,
 fullFileName: `${this.imageRoot}Sur-Niragas-Ho-Template-7-Mar29-2025.jpeg`,
 description: `<ul><li> Colored Sangeet Ashtavinayaks 7 March 29 2025 </li><li>7th of 8 Ganesh with musical instruments</li><li> Base template copied from B&W </li><li> Completion and upload March 29 2025 (Gudi Padwa in Bay Area, CA)  </li><li>  Using color pencil, charcoal pencil, metal color pencil </li><li>NOTE: this departs from the order of completion of sketches. The sketch before this was completed AFTER this and the next one. This for logical arrangement of the themes :)</li></ul>`,
-},
+},{
+  canvassMaterial:  'Plain paper',
+  canvassSize:  '',
+  content:  'black-white',
+  dateUploaded:  '03-31-2025',
+  duplicate:  'false',
+  summaryLabel:  `Shivling March 31 2025 (out of turn insert)`,
+  fullFileName: `${this.imageRoot}Shiving-March31-2025-outofturn.jpeg`,
+  description: `<ul><li> Shivling March 31 2025 (out of turn insert) </li><li> Only Charcoal and shading pencils </li><li> NOTE: this departs from the order of completion of sketches. The sketch after this and the next were completed BEFORE. This for logical arrangement of the themes :) </li><li> Uploaded March 31 2025 </li></ul>`,
+  },
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',

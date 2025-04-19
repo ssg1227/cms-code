@@ -815,6 +815,23 @@ breadCrumb:[
 //
 // NEW INSERTS
 ,{
+    parentKey: 'special-lists',key: 'soft-copies-and-compilations', isLeafParent: false, levelIndex: 2, roles:['any'],
+    label: 'Soft Copies And Compilations',  description: `These are not 'drawing drawings as such, but a collection of collages, templates and 'software edited' applications of templates, etc. This node is used as a pass through for reducing clutter.(NOTE: they will not be added in chronological order)`,
+    breadCrumb:[
+        {"link":"/view","params":"top-level","label":"HOME"},
+        {"link":"/view","params":"special-lists","label":"Special Lists"},
+        {"link":"","params":"soft-copies-and-compilations","label":"Soft Copies And Compilations"},],
+}
+,{
+    parentKey: 'soft-copies-and-compilations',key: 'soft-copies-and-compilations-1', isLeafParent: true, levelIndex: 3, roles:['any'],
+    label: 'Soft Copies And Compilations:1',  description: `The 1st compiled list: ... collection of collages, templates and 'software edited' applications of templates, etc. ..(NOTE: they will not be added in chronological order)`,
+    breadCrumb:[
+        {"link":"/view","params":"top-level","label":"HOME"},
+        {"link":"/view","params":"special-lists","label":"Special Lists"},
+        {"link":"/view","params":"soft-copies-and-compilations","label":"Soft Copies And Compilations"},
+        {"link":" ","params":"soft-copies-and-compilations-1","label":"Soft Copies And Compilations:1"},],
+}
+,{
     parentKey: 'special-lists',key: 'alag-grouping-full-cycle', isLeafParent: false, levelIndex: 2, roles:["any"],
     label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. November 2024 onward, I intend creating a grouping of sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils. 
     ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded. The drawings here are also what I think top rated`,

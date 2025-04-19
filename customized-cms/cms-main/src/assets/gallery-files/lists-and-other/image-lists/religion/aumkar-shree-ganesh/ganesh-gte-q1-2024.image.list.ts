@@ -11,6 +11,16 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `The Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
+{
+canvassMaterial:  'other',
+canvassSize:  'other',
+content:  'soft',
+dateUploaded:  '04-16-2025',
+duplicate:  'true',
+summaryLabel:  `Second Sangeet Ashtavinayak, 1st with Saraswati Jan 2 24, upload 04/16/2025`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/SangeetAshtavinayakMaaSaraswatiJan022025April16-2025.jpeg`,
+description: `<ul><li> Second Sangeet Ashtavinayak, 1st with Saraswati Jan 2 24, upload 04/16/2025 </li><li> The Sangeet Ashtavinayaks with Art college Maa Saraswati idol in center </li><li> completed Jan 2 2024, upload April 16 2025 </li></ul>`,
+},
             {
                   canvassMaterial:  'Plain paper',
                   canvassSize:  'A4',

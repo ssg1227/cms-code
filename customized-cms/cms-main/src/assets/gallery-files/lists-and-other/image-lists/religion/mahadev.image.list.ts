@@ -15,6 +15,16 @@ export class MahadevImageList {
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
+content:  'black-white',
+dateUploaded:  '03-31-2025',
+duplicate:  'true',
+summaryLabel:  `Shivling March 31 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Shiving-March31-2025-outofturn.jpeg`,
+description: `<ul><li> Shivling March 31 2025 (out of turn insert) </li><li> Only Charcoal and shading pencils </li><li> Uploaded March 31 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
 content:  'other', contentOther: 'black and white using Charcoal',
 dateUploaded:  '03-28-2025',
 duplicate:  'true',
