@@ -1,18 +1,31 @@
 
 # LOG OF CHANGES RECORDED W.E.F. April 28 2024 #
 "CMS Picture Gallery" by Shantanu Gadkari
-### TODOs
-- **Templatization and customization: This 'art-is-worship' is as on Feb 17 2025, the latest version of CMS using angular** 
+- ***This File to be closed April 27 2025 and saved as CHANGELOG-2024-2025.md and a fresh new  CHANGELOG.md to be initated**  
+  - link to github url of this file.
+  - carry over only headers and pending items to new file
+- This document, along with documents of the same name in full stack component projects - 'cms-automate-fe' (angular) and 'shan-cms-maintain' (java spring boot) attempts to capture changes, and plans in the cms 'suite' from the above date
+- It attempts to be a supplement to the README.md of this and the other mentioned projects
+- This doc is very much living, and structure is evolving over time.
+
+### Major/Significant TODOs
+- **Templatization and customization: This 'art-is-worship' is as on March 19 2025, the latest version of CMS using angular** 
   - (There are other wannabes in my source code files, but now, too little bandwidth to go trace and maintain)
   - Keep working on templatization. 
     - two or three templates totally in 'use-my-software.com' in angularjs and/or javascript
       - need to 'bring these in'
-      - need to generate a 'politically correcr' p.o.c. to showcase the application of these templates.
+      - need to generate a 'politically correct' p.o.c. to showcase the application of these templates.
     - Find a means, as painlessly as possible, to 
       * maintain common logic. 
       * maintain and update custom logic, 
       * upload context specific data 
       * special mention. Make core-content.service.ts completely generic. move context specific code to contexted-core-content.service.ts
+- **Load issues/ Responsiveness, Styling: New look, Highlights, etc**
+  - The app is very patchy and looks out of proportion on cellphone size screens.
+  - 'Latest uploads' may have a load issue on cellphones. 
+- **Code Cleanup and Documentation**
+  - Remove unused code.
+  - Establish a documentation template/standard/structure. 
 - revisit logic and try to debug/optimize isLeafParent/ query params to identify leaf page versus branch
 - review and as required, revamp of image load (JSON files on image list are too many; will have to work with the original structure itself)
 - solid authentication logic. adding the admin stuff 
@@ -37,9 +50,13 @@
 - console.log should try to keep reference - classname method name 
 - localrun, esp when automated upload is running - ***npm start runs ng serve --port 2800**
 ### February 2025 onward
-- ***This File to be closed April 27 2025 and saved as CHANGELOG-2024-2025.md and a fresh new  CHANGELOG.md to be initated** 
-  - link to github url of this file.
-  - carry over only pending items to new file
+ 
+- 'Changers', 'The Best' cleanup. 
+  - Check and genericize logic making it year transparent, esp 'Changers'
+  - Factor in, in the 'description' for 'The Best' that certain lists and albums will always have top rating
+- 'Content' - new categories: Metallic pencils. Charcoal. Mix and Match. Free Text .. (Also cms-automation-fe)
+  -  Lookup values. Think combobox for pre-defined vs free text.
+  - UI service layer change here, this change in enter
 - Styling highlight for categories with latest uploads (past 7 days)
 - Email distribution list - send email at every 7 day publish
 - **COMMEMORATIVE 550th drawing uploaded March 16** 'Charcoal Times Other Colors Shines' album. Appropriately a tribute to my Art teacher from School
