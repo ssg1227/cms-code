@@ -18,6 +18,16 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '04-23-2025',
+duplicate:  'false',
+summaryLabel:  `WAG12,High Pantograph dedicated freight corrider 04/11 - 04/23/2025`,
+fullFileName: `${this.imageRoot}WAG12HighPantographDedicatedFreightCorridor-Apr11-23-2025.jpeg`,
+description: `<ul><li> WAG12,High Pantograph dedicated freight corrider 04/11 - 04/23/2025 </li><li> Featuring symbols of a resurgent India and a modern Indian Railways:<br/> WAG12 MU electric locomotive at 12000 hp one of the most powerful in the world capable of 120 kph<br/> with   high pantograph (unique indigenously developed)<br/>  in one of the dedicated freight corridors ( which are free of passenger traffic and average speeds are high) </li><li> Completed April 11, uploaded and stored April 23, 2025 </li></ul>`,
+},
+{
 canvassSize:  '',
 content:  '',
 dateUploaded:  '02-21-2025',

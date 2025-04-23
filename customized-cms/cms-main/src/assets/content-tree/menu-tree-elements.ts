@@ -741,7 +741,7 @@ Also increasing numbers of Swami Samartha sketches`,
     }, {
         parentKey:"machines-others", key: "majestic-lifters-legendary-carriers", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "Majestic Lifters Legendary Carriers",
-        description:`A Mix of the Colossi and Legendary Cargo planes and Airliners.. AN225, A380, 747 to DC3 and others. This is a 'full cycle'collection, where the online matches the sketchbook insertion of the 'hard copy' physical sketchat least for Dec 2024 onward; others will circle around and add`,
+        description:`A Mix of the Colossi and Legendary Cargo planes and Airliners.. AN225, A380, 747 to DC3 and others. This is a 'full cycle'collection, where the online matches the sketchbook insertion of the 'hard copy' physical sketchat least for Dec 2024 onward; others will circle around and add. **Dunwell A4 size 24 pocket (48 sheet) presentation book. 'Aqua Green(?)' cover**`,
         
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -773,7 +773,7 @@ breadCrumb:[
 }
 ,{
 parentKey: 'alag-grouping-full-cycle',key: 'charcoal-times-other-colors-shines', isLeafParent: true, levelIndex: 3, roles:["any"],
-description: `First drawings using charcoal pencils started end Feb 1st week March 2025. From only charcoal (hard, soft, medium, white) to charcoal with other drawing elements color and metal color pencils. I'll also be making an effort to sign my drawings going forward`,
+description: `First drawings using charcoal pencils started end Feb 1st week March 2025. From only charcoal (hard, soft, medium, white) to charcoal with other drawing elements color and metal color pencils. I'll also be making an effort to sign my drawings going forward.**Dunwell A4 size 24 pocket (48 sheet) presentation book. White cover**`,
 label: 'Charcoal Times Other Colors Shines',  
 breadCrumb:[
 {"link":"/view","params":"top-level","label":"HOME"},
@@ -784,7 +784,7 @@ breadCrumb:[
 }
 ,{
 parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-other-colors-1', isLeafParent: true, levelIndex: 3, roles:["any"],
-description: `First New entry in 2025, to the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Twist here is that these are using a single 'other' color for each sketch. In addition to other stated 'alag' features, this collection is in ascending order of latest update. Jan 2 2025 onward `,
+description: `First New entry in 2025, to the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Twist here is that these are using a single 'other' color for each sketch. In addition to other stated 'alag' features, this collection is in ascending order of latest update. Jan 2 2025 onward.**Dunwell A4 size 24 pocket (48 sheet) presentation book. 'Dark Blue' cover** `,
 label: 'Shades And Shines Other Colors 1',  
 breadCrumb:[
 {"link":"/view","params":"top-level","label":"HOME"},
@@ -806,7 +806,7 @@ breadCrumb:[
 }
 ,{
 parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-1', isLeafParent: true, levelIndex: 3, roles:["any"],
-label: 'Shades And Shines 1',  description: `Kickstart of the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Using the H, HB, and B series shading black pencils. In addition to other stated 'alag' features, this collection is in ascending order of latest update. November 19 2024 onward `,
+label: 'Shades And Shines 1',  description: `Kickstart of the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Using the H, HB, and B series shading black pencils. In addition to other stated 'alag' features, this collection is in ascending order of latest update. November 19 2024 onward **Dunwell A4 size 24 pocket (48 sheet) presentation book. 'Maroon' cover**`,
 breadCrumb:[
 {"link":"/view","params":"top-level","label":"HOME"},
 {"link":"/view","params":"special-lists","label":"Special Lists"},
@@ -837,7 +837,7 @@ breadCrumb:[
 ,{
     parentKey: 'special-lists',key: 'alag-grouping-full-cycle', isLeafParent: false, levelIndex: 2, roles:["any"],
     label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. November 2024 onward, I intend creating a grouping of sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils. 
-    ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded. The drawings here are also what I think top rated`,
+    ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded. The drawings here are also what I think top rated. Mostly will be stored in Dunwell A4 size 24 pocket (48 sheet) presentation book.`,
     breadCrumb:[
     {"link":"/view","params":"top-level","label":"HOME"},
     {"link":"/view","params":"special-lists","label":"Special Lists"},
