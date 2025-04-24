@@ -9,6 +9,6 @@
     home {
         margin:1px 1px 1px 1px;
         width:98%;
-        overflow-y: auto;
+        overflow-y: scroll; /*April 24 flex*/
     }
 }

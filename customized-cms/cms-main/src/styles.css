@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 .root-frame  {
-    position: fixed;
+    position: relative; /*April 24 flex from 'fixed' */
     top:0 ;
     left:0 ;
     width:100%; 
     margin-right: 5px;
-    height:95%; 
+    height:100vh; /*April 24 flex from 95%*/
     padding:5px; 
     background-color: aliceblue;
     border: 4px outset darkblue ;
@@ -69,7 +69,7 @@
     font-size: larger;
     font-weight: 900;
 }
-@media screen and (min-width:1029px) {
+@media screen and (min-width:1129px) { /*April 24 flex from 1029 change may be subject to further tweaks - used the dev tools mobile simulator to fine tune media screen widths*/
     .upper-ten {
         background-image: linear-gradient(to right, aliceblue, #9198f5, lightblue, skyblue);
     }
@@ -77,11 +77,29 @@
         background: radial-gradient(#f77775, #a2a9f6);
     }
 }
-@media screen and (max-width:1028px) {
+@media screen and (max-width:1128px) { /*April 24 flex from 1028 change may be subject to further tweaks - used the dev tools mobile simulator to fine tune media screen widths*/
+    .root-frame  {/*April 24 added */
+        display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 1rem;
+    }
     .upper-ten {
-        height:25%;
+        position: static; /* April 24 changes adding the flex, etc Remove fixed positioning */
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+            width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+        font-size: larger;
     }
     .lower-ninety {
+        position: static; /* April 24 changes adding the flex, etc Remove fixed positioning */
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
         /* height: auto; part of non-scrollable header */
         font-size: x-large;
     }
@@ -97,6 +115,32 @@
 #upper-ten-right-box {
     
     height: auto;
+    font-size: large;
+}
+}
+
+@media screen and (max-width:500px) { /* April 24 added section */
+    .upper-ten {
+        left:0 ;
+        height:25%;
+        font-size:x-large;
+        overflow-y: scroll;
+        display: flex ;
+        flex-wrap: wrap;
+    }
+    .lower-ninety {
+        /* height: 90%; added below for fixed header changes */
+        position:inherit;
+        
+        flex: 1;
+         
+        left:0 ;
+        height: 70%;
+    }
+
+#upper-ten-right-box {
+    
+    margin: auto;
     font-size: large;
 }
 }

@@ -276,7 +276,17 @@ box-shadow: 0 4px 8px  rgba(25,25,0,0.7);;
         padding:2px;
         overflow-y: auto;
     }
-
+    /*April 24 flex*/
+    /* may need cleanup later*/
+    #div-lower-95 {
+        height:70%;
+        width:98%;
+        max-height:70%;
+        margin: 1px;
+        flex: 1;
+        background-color: #81b1ff;
+        overflow: auto;
+    }
 #close-modal  {
     
     height:35px;
