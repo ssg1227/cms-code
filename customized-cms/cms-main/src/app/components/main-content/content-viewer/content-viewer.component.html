@@ -46,8 +46,11 @@
        ....
        copy pasted and parts will be commented since the context is irrelevant
  --> 
-       
-  <div id="div-container" >
+ <div id="div-container-landing" *ngIf="isLeafParent == null">
+  <a    [routerLink]="['/view','top-level']"
+  (click)="compareSelected('top-level',0)"  ><H1>ENTER</H1> <div [innerHTML]="appContent"></div> </a> 
+</div> 
+  <div id="div-container"  >
     <div id="slideshow-controls">
       <button (click)="startSlideshow()">Start</button>
       <button (click)="stopSlideshow()">Stop</button>
@@ -69,7 +72,7 @@
         <div id="pic-div-container" > 
           <img id="modaldivpic"   *ngIf="imageElement != null" src="{{imageElement.image}}">
           <div  id="modaltext" style="padding:20px;border: 1px solid gray; margin-left:20px;"> 
-              <p [innerHTML]="imageElement.description"> </p><!-- core user type -->
+              <p id="modalDesc" [innerHTML]="imageElement.description"> </p><!-- core user type -->
               <!-- p *ngIf="imageElement.coreDescription" [innerHTML]="imageElement.coreDescription"> </p>  core user type  
                <p [innerHTML]="imageElement(selectedImage.imageList[j])"> </p>  -->
         </div>

@@ -178,7 +178,8 @@ export class ContentViewerComponent {
         if(this.inlineExpand === 'true') {
       
           // @ts-ignore: Object is possibly 'null'.
-          document.getElementById('div-container').style.display = 'flex'; 
+          document.getElementById('div-container').style.display = 'block';  
+          /*April 24 Flex.. ABOVE from 'flex' this may just have been the critical point of responsive for slide show*/
           // @ts-ignore: Object is possibly 'null'.
           document.getElementById('leafCards').style.display = 'none' ;  
   

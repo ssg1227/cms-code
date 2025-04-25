@@ -52,8 +52,9 @@
 ## 'EVENTS' ##
 
 ### February 2025 onward
-- (UE) Responsive - load issues on mobile, etc. April 24 onward
-  - Initial styling changes using display: flex and flex-wrap, removing fixed pos and top/ left coords for smaller dimensions, etc. 
+- (UE) Responsive - load issues on mobile, etc. April 24 onward **IMPLEMENTED AND SUFFICIENTLY TESTED APRIL 24**
+    - **some styling tweaks remaining** 
+    - Initial styling changes using display: flex and flex-wrap, removing fixed pos and top/ left coords for smaller dimensions, etc. 
     look for Comment /*April 24 flex ... */
   - ... 
 - (UE) More contemporary styling
