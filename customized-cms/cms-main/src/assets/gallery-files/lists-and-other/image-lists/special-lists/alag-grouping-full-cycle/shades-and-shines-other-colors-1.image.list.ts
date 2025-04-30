@@ -18,6 +18,26 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  '',
+dateUploaded:  '04-30-2025',
+duplicate:  'false',
+summaryLabel:  `Swami Punyatithi 20250425 0429 light brown color`,
+fullFileName: `${this.imageRoot}SwamiPunyatithi2025Apr25-Apr29.jpeg`,
+description: `<ul><li> Swami Punyatithi 20250425 0429 light brown color </li><li> Started afternoon 2025 April 24, initial share April 25 (Swami Samartha Punyatithi) </li><li> Final touches and share April 29 Akshay Tritiya </li><li> Upload April 30. Light brown color pencil </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  '',
+dateUploaded:  '04-29-2025',
+duplicate:  'false',
+summaryLabel:  `Lord Datta Metalic gold pencil - April 24 April 29 2025`,
+fullFileName: `${this.imageRoot}DattaApril24-GoldMetalColorPencil.jpeg`,
+description: `<ul><li> Lord Datta Metalic gold pencil - April 24 April 29 2025 </li><li> Uploaded on Akhsay Tritiya, CA (april 29) this sketch was completed April 24 2025 </li></ul>`,
+},
 
 {
 canvassMaterial:  'Plain paper',

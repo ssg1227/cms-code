@@ -195,8 +195,9 @@ export class CoreContentService {
     this.parentDescription = currentParent?.description !== undefined ? currentParent?.description: currentParent?.label;
     return retCardList ;
   }
-
-  loadContentList() { // loads the raw list; also collects statistics
+  // 'April 25+ load issues' using async await
+  async loadContentList() { // loads the raw list; also collects statistics
+    
     let userNameRoles:any  = null ;
     // redundancy - revisit for one time logic - use a Get - currently not working
     // @ts-ignore: Object is possibly 'null'.
@@ -223,8 +224,9 @@ export class CoreContentService {
         isGuru = true ;
       }
     }
-
-    this.contextedCoreContentService.loadContextedContentList(this.contentList, this.userObject) ;
+    // 'April 25+ load issues' using async await
+    await this.contextedCoreContentService.loadContextedContentList(this.contentList, this.userObject) ;
+    await this.loadAndCacheList();
     let me = this;
     this.sketchStats.totalCounts = 0;
     this.sketchStats.subjects = 0;
@@ -342,6 +344,19 @@ export class CoreContentService {
           return { all:  this.allImageList, gen: this.genImageList };
           break ;
           case 'latest-uploads-timewise':
+            let retLatestListTimewise  = null;
+            retLatestListTimewise = this.loadAndCacheList();
+            return retLatestListTimewise ;
+            /* April 25+ load issues  load cached if available*/
+            /* moved to function 
+            let retLatestListTimewise  = null;
+            // @ts-ignore: Object is possibly 'null'.
+            retLatestListTimewise  = JSON.parse(localStorage.getItem('latest-list-timeline'));
+            if (retLatestListTimewise !== null && retLatestListTimewise !== undefined) {
+              console.log(`From Cache`);
+              return retLatestListTimewise ;
+            }
+              // April 25+ load issues  
             this.genImageList = { 
               allImageList: [ 
                   { 
@@ -362,9 +377,15 @@ export class CoreContentService {
                 const bDate = new Date(b.dateUploaded);
                 return(bDate.getTime()  -  aDate.getTime()) ; // aDate - bDate ;
               });
-              return { all:  this.allImageList, gen: this.genImageList };
+              // April 25+ load issues  cache list if unavailable 
+              retLatestListTimewise  = { all:  this.allImageList, gen: this.genImageList }
+              localStorage.setItem('latest-list-timeline',JSON.stringify(retLatestListTimewise));
+              console.log(` One time Cache`);
+          
+              return  retLatestListTimewise ;// { all:  this.allImageList, gen: this.genImageList };
+              // //April 25+ load issues change in return
               console.log(`#### LATEST UPLOAD .. RETURN AFTER SORT`);
-              
+              */
             break;
             case 'latest-uploads-themewise':
               this.genImageList = { 
@@ -440,6 +461,48 @@ export class CoreContentService {
       
    //   return arr;
   }
+  // 'April 25+ load issues' stepwise caching.. 
+  // Step 1 for latest uploads timewise was setting up, and maintaining cache of this list
+  // 'localStorage.removeItem('latest-list-timeline');'
+  // Step 2 is to move the case 'latest-uploads-timewise': here 
+  // (This function is made generic for later flexibility but for now will deal with this case ONLY)
+  loadAndCacheList(whichList:string='') :any {
+    let retLatestListTimewise  = null;
+    // @ts-ignore: Object is possibly 'null'.
+    retLatestListTimewise  = JSON.parse(localStorage.getItem('latest-list-timeline'));
+    if (retLatestListTimewise !== null && retLatestListTimewise !== undefined) {
+      console.log(`From Cache`);
+      return retLatestListTimewise ;
+    }
+    /* // April 25+ load issues */
+    this.genImageList = { 
+      allImageList: [ 
+          { 
+            folder:'',
+            theme:'latest-uploads-timewise',
+            themeSummary: `Uploads latest by time`,
+            files: [],
+          }
+      ]} ;
+     // this.loadLists(latestImageLists) ;
+      this.ContentList.forEach((latestImageList:any) => {
+         if(latestImageList.contentFile.allImageList && 
+              latestImageList.contentFile.allImageList[0].files)
+          this.loadLatestUploadsTimeLine(latestImageList.contentFile);
+      })
+      this.genImageList.allImageList[0].files.sort(function(a:any, b:any) {
+        const aDate = new Date(a.dateUploaded);
+        const bDate = new Date(b.dateUploaded);
+        return(bDate.getTime()  -  aDate.getTime()) ; // aDate - bDate ;
+      });
+      /* April 25+ load issues  cache list if unavailable*/
+      retLatestListTimewise  = { all:  this.allImageList, gen: this.genImageList }
+      localStorage.setItem('latest-list-timeline',JSON.stringify(retLatestListTimewise));
+      console.log(` One time Cache`);
+      return retLatestListTimewise ;
+   
+  } // end function 'April 25+ load issues' stepwise caching..
+
   getUserWelcomeMessage():string {
     let welcomeMessage  = 'Please login';
     if(localStorage.getItem('user-object') !== 'undefined' && localStorage.getItem('user-object') !== null) {

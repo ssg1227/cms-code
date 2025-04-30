@@ -18,6 +18,26 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
+{
+canvassMaterial:  'other',
+canvassSize:  'other',
+content:  'soft',contentOther:'Template based Software edit AND Mix of all drawing "utensils" used so far - crayons, color pencils, watercolor pencils, charcoals, metal color pencils and shading',
+dateUploaded:  '04-30-2025',
+duplicate:  'false',
+summaryLabel:  `Anjali Pathak April 28 Birthday. Upload April 30`,
+fullFileName: `${this.imageRoot}Anjali-2025-Birthday.jpeg`,
+description: `<ul><li> Anjali Pathak April 28 Birthday. Upload April 30 </li><li> Anjali is a close friend of mine since my Engineering days </li></ul>`,
+},
+{
+canvassMaterial:  'other',
+canvassSize:  'other',
+content:  'soft',contentOther:'Template based Software edit AND Mix of all drawing "utensils" used so far - crayons, color pencils, watercolor pencils, charcoals, metal color pencils and shading',
+dateUploaded:  '04-30-2025',
+duplicate:  'false',
+summaryLabel:  `Old Bombay Facebook group 7th anniv 27th - 28th `,
+fullFileName: `${this.imageRoot}OldBombay7thanniv.jpeg`,
+description: `<ul><li> Old Bombay Facebook group 7th anniv 27th - 28th  </li><li> This is a group which is all about Bombay. </li><li> I submit a large number of sketches here each Friday </li><li> A poem I wrote with the 'card': <br/> <em>&nbsp;&nbsp;This Group is a great INSPIRATION, <br/>&nbsp;&nbsp;&nbsp;&nbsp;Gives me a NEW MOTIVATION <br/>&nbsp;&nbsp;Flow the juices of CREATION, <br/>&nbsp;&nbsp;&nbsp;&nbsp;Coming LATE with my FELICITATION,<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BLESSED to be in this CELEBRATION!!!</em><br/> </li><li> Created April 28, uploaded April 30 2025 </li></ul>`,
+},
   {
     canvassMaterial:  'other',
     canvassSize:  '',

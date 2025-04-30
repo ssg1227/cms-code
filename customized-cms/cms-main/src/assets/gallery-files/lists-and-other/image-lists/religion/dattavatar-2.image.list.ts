@@ -19,6 +19,16 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  '',
+dateUploaded:  '04-29-2025',
+duplicate:  'true',
+summaryLabel:  `Lord Datta Metalic gold pencil - April 24 April 29 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-other-colors-1/DattaApril24-GoldMetalColorPencil.jpeg`,
+description: `<ul><li> Lord Datta Metalic gold pencil - April 24 April 29 2025 </li><li> Uploaded on Akhsay Tritiya, CA (april 29) this sketch was completed April 24 2025 </li></ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  '',
 content:  'soft',contentOther: 'Collage',

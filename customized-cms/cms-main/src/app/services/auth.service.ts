@@ -171,6 +171,9 @@ export class AuthService {
     localStorage.removeItem("isLeafParent");
     localStorage.removeItem("key");
     localStorage.removeItem('userRoles'); // core user type
+
+    /* April 25+ load issues */
+    localStorage.removeItem('latest-list-timeline');
     this.coreContentService.clearContent() ;
 
     /*

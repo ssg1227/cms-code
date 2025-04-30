@@ -57,7 +57,10 @@
       - **some styling tweaks remaining** 
       - Initial styling changes using display: flex and flex-wrap, removing fixed pos and top/ left coords for smaller dimensions, etc. 
     look for Comment /*April 24 flex ... */
-    - ... 
+    - Load issues WIP look for comment 'April 25+ load issues'
+      - first attempt  'pre-load' latest by caching it.
+      - in switch statement, cache list 1st time, then load cached list. This wont fix it.. see below
+      - TO IMPLEMENT. move the (above) functionality of switch statement to a separate function, so it can be called from anywhere On loading lists call this function, 
 - (UE) More contemporary styling
 - IMAGE LEVEL SECURITY (Aprl 5), it may be time to introduce this with careful consideration since 'religious/sensitive' content in method based lists like 'soft copies and compilations' is increasing
 - **March 27 new category 'soft copies and compilations' hierarchy introduced**

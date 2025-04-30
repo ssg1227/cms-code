@@ -21,6 +21,16 @@ export class SwamiSamarthaQ22023ImageList { // SwamiSamarthaImageList
             `Swami Samartha the 4th Avatar of Shree Dattatreya (sequence include Lord Datta himself). Swami sketches have become numerous, so created this new category Q2 2023 - July 8 2023.`,
             files: [ 
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  '',
+dateUploaded:  '04-30-2025',
+duplicate:  'true',
+summaryLabel:  `Swami Punyatithi 20250425 0429 light brown color`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-other-colors-1/SwamiPunyatithi2025Apr25-Apr29.jpeg`,
+description: `<ul><li> Swami Punyatithi 20250425 0429 light brown color </li><li> Started afternoon 2025 April 24, initial share April 25 (Swami Samartha Punyatithi) </li><li> Final touches and share April 29 Akshay Tritiya </li><li> Upload April 30. Light brown color pencil </li></ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  '',
 content:  'soft',contentOther: 'Collage',
