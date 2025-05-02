@@ -11,6 +11,16 @@ export class PlanesShipsCars2ImageList {
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'soft',
+dateUploaded:  '05-02-2025',
+duplicate:  'true',
+summaryLabel:  `INS MUMBAI DELHI Class ship  at MUMBAI May1-2, 2025.jpeg`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Mumbai-Delhi-Mumbai-May1-2-2025.jpeg`,
+description: `<ul><li> INS MUMBAI DELHI Class ship  at MUMBAI May1-2, 2025.jpeg </li><li> INS Mumbai, Indian Navy Guided Missile Destroyer - Delhi class shown at Mumbai Port </li><li> Completed May1 uploaded May 2 2025 </li></ul>`,
+},
+{
 canvassMaterial:  'Watercolor paper',
 canvassSize:  'A4',
 content:  'watercolor-pencil',

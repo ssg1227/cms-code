@@ -17,6 +17,16 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content: 'Other',contentOther: 'Using color pencil, charcoal pencil, metal color pencil',
+dateUploaded:  '05-02-2025',
+duplicate:  'false',
+summaryLabel:  `INS MUMBAI DELHI Class ship  at MUMBAI May1-2, 2025.jpeg`,
+fullFileName: `${this.imageRoot}Mumbai-Delhi-Mumbai-May1-2-2025.jpeg`,
+description: `<ul><li> INS MUMBAI DELHI Class ship  at MUMBAI May1-2, 2025.jpeg </li><li> INS Mumbai, Indian Navy Guided Missile Destroyer - Delhi class shown at Mumbai Port </li><li> Completed May1 uploaded May 2 2025 </li></ul>`,
+},
 
 {  canvassMaterial:  'Plain paper',
   canvassSize:  'A4',
