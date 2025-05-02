@@ -11,6 +11,32 @@ export class PlanesShipsCars2ImageList {
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
 {
+canvassMaterial:  'Watercolor paper',
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  '05-01-2025',
+duplicate:  'false',
+summaryLabel:  `Gallivat 092624 050125 Maharashtra Day 575th `,
+fullFileName: `${this.imageRoot}Gallivat-Sept2624-May125-575th-final.jpeg`,
+description: `<ul><li> Gallivat 092624 050125 Maharashtra Day 575th  </li><li> Timed to upload on May 1st 2025 Labor/Maharashtra Day, and 575th upload </li><li> Gallivat one of the smaller warships (warboat) of the Maratha Navy  </li><li> The Maratha Navy was the naval wing of the armed forces of the Maratha Empire , which existed from around mid-17th century to mid-18th century in the Indian Subcontinent 37 km a day Historian Sir Jadunath Sarkar noted:� “Nothing proves Chhatrapati Shivaji Maharaj's genius as a born statesman more clearly than his creation of a navy and naval bases.” </li><li> Was completed Sept 26, 2024 </li></ul>`,
+rating:  1,
+ratingYear:  2025,
+iterations: [
+{fullFileName: `${this.imageRoot}Gallivat-Sept2624-May125-575th-final.jpeg`, description: `<ul><li> Gallivat 092624 050125 Maharashtra Day 575th  </li><li> Timed to upload on May 1st 2025 Labor/Maharashtra Day, and 575th upload </li><li> Gallivat one of the smaller warships (warboat) of the Maratha Navy  </li><li> The Maratha Navy was the naval wing of the armed forces of the Maratha Empire , which existed from around mid-17th century to mid-18th century in the Indian Subcontinent 37 km a day Historian Sir Jadunath Sarkar noted:� “Nothing proves Chhatrapati Shivaji Maharaj's genius as a born statesman more clearly than his creation of a navy and naval bases.” </li><li> Was completed Sept 26, 2024 </li></ul>` },
+{fullFileName: `${this.imageRoot}Gallivat-Sept2624-May125-575th-final-1.jpeg`, description: `<ul><li> Gallivat 092624 050125 Maharashtra Day 575th  </li><li> Timed to upload on May 1st 2025 Labor/Maharashtra Day, and 575th upload </li><li> Gallivat one of the smaller warships (warboat) of the Maratha Navy  </li><li> The Maratha Navy was the naval wing of the armed forces of the Maratha Empire , which existed from around mid-17th century to mid-18th century in the Indian Subcontinent 37 km a day Historian Sir Jadunath Sarkar noted:� “Nothing proves Chhatrapati Shivaji Maharaj's genius as a born statesman more clearly than his creation of a navy and naval bases.” </li><li> Was completed Sept 26, 2024 </li></ul>` },
+]
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '04-30-2025',
+duplicate:  'false',
+summaryLabel:  `USN Phantom Tomcat Hornet Nuclear SuperCarrier Nov 2023( 04/30/25)`,
+fullFileName: `${this.imageRoot}USN-planes112023-0425.jpeg`,
+description: `<ul><li> USN Phantom Tomcat Hornet Nuclear SuperCarrier Nov 2023( 04/30/25) </li><li> Showing three iconic US Navy planes down the ages </li><li> From bottom to top - F4 Phantom, F14 Tomcat, F18 Super hornet </li><li> US nuclear supercarrier at lower portion </li><li> Nov 1 2023, upload 04-30-2025 </li></ul>`,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',

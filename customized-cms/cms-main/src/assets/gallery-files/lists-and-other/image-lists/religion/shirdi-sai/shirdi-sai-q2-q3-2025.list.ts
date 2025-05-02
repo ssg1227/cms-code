@@ -9,13 +9,24 @@ enum PicsIndex  {
         MixGenPlaneSept2020,
     };
 export class ShirdiSaiQ2Q32025ImageList {
-imageRoot = 'assets/all-images/'; reverseStack =  'false';
+imageRoot = 'assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q2-q3-2025/'; reverseStack =  'false';
 public allImageList:ImageElement[]  =  [
   {  
+    // /Users/shantanug/Documents/GitHub/cms-code/customized-cms/cms-main/src/assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q2-q3-2025
             folder:'assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q2-q3-2025/',
             theme:'<theme>',
             themeSummary: '',
 files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  '04-30-2025',
+duplicate:  'false',
+summaryLabel:  `Baba For Ram Navmi April 5, ---> 30 2025`,
+fullFileName: `${this.imageRoot}BabaRamNavmiApril5-10-29-30-2025.jpeg`,
+description: `<ul><li> Baba For Ram Navmi April 5, ---> 30 2025 </li><li> Milpitas Temple celebrates Ramnavmi in a grand fashion </li><li> Palki procession and devotees hand prints in sandalwood </li><li> Dates: Ramnavmi was April 5, Sketch was for April 10  </li><li> final touches April 29, upload April 30 2025 </li></ul>`,
+},
 {
 canvassMaterial:  'other',
 canvassSize:  '',

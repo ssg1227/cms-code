@@ -19,6 +19,35 @@ files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  '04-30-2025',
+duplicate:  'false',
+summaryLabel:  `Baba March 27 (04/30/2025)`,
+fullFileName: `${this.imageRoot}BabaMarch27-april30-2025.jpeg`,
+description: `<ul><li> Baba March 27 (04/30/2025) </li><li> In Water color pencil, some charcoal touch up </li><li> This was an old unfinished sketch, using white charcoal pencil, I was able to get the 'correction' made </li><li> upload 04/30/2025 </li></ul>`,
+},
+  {
+    canvassMaterial:  'Plain paper',
+    canvassSize:  'A4',
+    content:  'color-pencil',
+    dateUploaded:  '04-30-2025',
+    duplicate:  'false',
+    summaryLabel:  `Baba for March 17 St Patricks Day March 20 (04/30/2025)`,
+    fullFileName: `${this.imageRoot}Baba-forMarch13-20-StPatricks-April302025.jpeg`,
+    description: `<ul><li> Baba for March 17 St Patricks Day March 20 (04/30/2025) </li><li> St Patricks Day, Irish festival has a green color significance </li><li> Shown Baba in this theme. Lord Datta Silhouette on top </li><li> For March 20, upload Apr 30 2025 </li></ul>`,
+    },{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '04-30-2025',
+duplicate:  'false',
+summaryLabel:  `Baba Holi theme March13 (28) 04/30/2025Holi`,
+fullFileName: `${this.imageRoot}BabaForMarch13-March28-April30-2025Holi.jpeg`,
+description: `<ul><li> Baba Holi theme March13 (28) 04/30/2025Holi </li><li> Holi, Vishnu had taken Narsimha avatar and killed Hiranyakashyap, during which the lion form used His nails in the killing </li><li> The nails got toxic so Devi Laxmi plunged them into audumbar fruit to remove the poison </li><li> This is sort of based on that, Baba detoxing the lions nails doing the same </li><li> Completed March 28 For March 13, 2025 </li><li> Uploaded April 30 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'other',
 //content:Other, adding contentOther field. initial code changes
 contentOther: 'Mix of color pencils and shading', // comments will be applied to this data list as the 1st, going forward not
