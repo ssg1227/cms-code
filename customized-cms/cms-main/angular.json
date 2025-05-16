@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cms-picture-gallery:build:production"
+              "buildTarget": "cms-picture-gallery:build:production"
             },
             "development": {
-              "browserTarget": "cms-picture-gallery:build:development"
+              "buildTarget": "cms-picture-gallery:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cms-picture-gallery:build"
+            "buildTarget": "cms-picture-gallery:build"
           }
         },
         "test": {
