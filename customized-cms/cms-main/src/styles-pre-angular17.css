@@ -1,23 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 /* Full screen layout */
 .glass-page {
-  height: 95vh;
-  width: 95vw;
-  margin:auto;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-   font-family: 'Segoe UI', sans-serif;
-   background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
-   background: linear-gradient(
-    to right,
-    rgba(148, 0, 211, 0.5),   /* Violet */
-    rgba(75, 0, 130, 0.5),    /* Indigo */
-    rgba(0, 0, 255, 0.5),     /* Blue */
-    rgba(0, 255, 0, 0.5),     /* Green */
-    rgba(255, 255, 0, 0.5),   /* Yellow */
-    rgba(255, 127, 0, 0.5),   /* Orange */
-    rgba(255, 0, 0, 0.5)      /* Red */
-  );
+  background: linear-gradient(135deg, #dbe9f4, #bcd3e7);
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* Header - 20% */
@@ -26,16 +15,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.7rem;
-  max-width: 95%;
-  max-height: 98%;
-  margin: 10px;
+  margin:2px;
   backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  background: rgba(55, 240, 255, 0.35); /* Corrected */
+  background: rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
 }
 
 .header-left {
@@ -97,17 +81,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.7rem;
-  z-index: 1;
+  padding: 2rem;
 }
 
 .narrative-box {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
-  padding: 0.7rem;
-  max-width: 98%;
-  max-height: 98%;
-  overflow: auto;
+  padding: 2rem;
+  max-width: 90%;
   color: #1e272e;
   text-align: justify;
   backdrop-filter: blur(16px);
@@ -125,7 +106,17 @@
   line-height: 1.6;
 }
 
-
+/* Header - 20% */
+.glass-header {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
 /* OLD CODE */
 .root-frame  {
     position: relative; /*April 24 flex from 'fixed' */
@@ -140,7 +131,7 @@
     border-radius: 7px;
     font-size:1vw;
     overflow-y: auto;
-   
+    background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
 }
 
 .upper-ten {

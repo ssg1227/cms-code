@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { AuthService } from './services/auth.service';
 import { CoreContentService } from './services/core-content.service';
 // components and tree
-
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { LoginLandingComponent } from './components/admin-register-login/login-landing/login-landing.component';
 import { ContentViewerComponent } from './components/main-content/content-viewer/content-viewer.component';
@@ -21,7 +20,7 @@ import { RegisterFormComponent } from './components/admin-register-login/registe
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent,
+     LandingPageComponent,
     LoginLandingComponent,
     ContentViewerComponent,
     // CardComponent,

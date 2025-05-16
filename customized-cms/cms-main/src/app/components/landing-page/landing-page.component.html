@@ -1,8 +1,35 @@
-<div class="root-frame">
+ <!--
+ <div class="glass-page">
+      <header class="glass-header">
+         <div class="header-left">
+            <div class="main-title">A Journey of Drawings</div>
+            <div class="subtitle">– Shantanu Gadkari</div>
+        </div>
+         <div class="header-center" *ngIf="!UserLoggedIn">
+            <input type='text' [(ngModel)]='userId' placeholder='User Name (optional)'>  
+            &nbsp;&nbsp; <input type='button' value='Enter'  (click)='cmsLogin()'>
+        </div>
+  <div class="header-right">
+    <input *ngIf="UserLoggedIn" type='button' value='Logout'  (click)='cmsLogout()'>
+  </div>
+    <div class="header-content">
+    </div>
+  </header>
+
+  <main class="glass-main">
+    <div class="narrative-box" *ngIf="!UserLoggedIn"[innerHTML]="appContent">
+     
+    </div>
+  </main>
+  </div> 
+-->
+ 
+<div>
     <app-login-landing *ngIf="!UserLoggedIn"></app-login-landing> 
     <div *ngIf="UserLoggedIn">
         <app-content-viewer *ngIf="SmallScreen=='false'"></app-content-viewer>
         <app-content-viewer *ngIf="SmallScreen=='true'"></app-content-viewer>
     </div>
-    
+ 
 </div> 
+ 
