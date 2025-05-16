@@ -1,0 +1,118 @@
+<div class='login-intro' style='margin:auto;'>
+    <div class="upper-ten">
+        <H2>{{appTitle}}<br/><span id="author" >{{appAuthor}}</span></H2> 
+        <div id="upper-ten-central-box">
+            <span *ngFor="let breadCrumb of breadCrumbs" >  <a   *ngIf="breadCrumb.link != ''"
+                    [routerLink]="[breadCrumb.link,breadCrumb.params]" 
+                            (click)="compareSelected(breadCrumb.params,0)">{{breadCrumb.label}} >>> </a> 
+                <span *ngIf="breadCrumb.link == ''">{{breadCrumb.label}}</span>
+            </span><br/><div>    {{parentDescripion}}</div>
+        
+        </div>
+        <div id="upper-ten-central-box">
+          {{WelcomeMessage}}
+            <input type='button' value='Logout'  (click)='cmsLogout()'>
+        </div>
+        <div  id="upper-ten-right-box" [innerHTML]="StatsSummary"> </div>
+    </div>
+    <div class="flex-container">
+    <div class="lower-ninety outerdiv" ><!--  *ngIf="showContactPage == false" ; else showEmail-->
+      
+       <div id="leafCards"  *ngIf="isLeafParent=='true' && imageGroups.length > 0" class="outerdiv" ><!-- have to repeat outerdiv for flex style -->
+         <div *ngFor="let grpImag of imageGroups; let i = index;">
+          
+          <app-image-card 
+          [cardIndex]="i" 
+          (clickedIndex)="compareSelected($event,i)" 
+          [isCore]="isCore"
+          [imageDetail]="grpImag"
+          [cardSelected]="currentCellSelected"></app-image-card>
+     </div>
+    
+       </div>
+        <div *ngFor="let card of currentCardList; let i = index;">
+          <app-image-card 
+            [cardIndex]="i" 
+            (clickedIndex)="compareSelected($event,i)" 
+            [cardInfo]="card"
+            [cardSelected]="currentCellSelected"></app-image-card>
+         
+       </div>
+       <div *ngIf="isLeafParent=='true' && imageGroups.length == 0">EMPTY CONTENT; </div> 
+  <!-- ##### Uncomment later for image expansion. Refer to content list of old code - -->
+ <!--- MOVED MODAL TO DIV expanded display 
+       Functionality copied over from the attempted to genericize 'cms-hub'
+       art-is-worship has some unique nuances, so absorbing cms-hub changes has to be done carefully
+       ....
+       copy pasted and parts will be commented since the context is irrelevant
+ --> 
+ <div id="div-container-landing" *ngIf="isLeafParent == null">
+  <a    [routerLink]="['/view','top-level']"
+  (click)="compareSelected('top-level',0)"  ><H1>ENTER</H1> <div [innerHTML]="appContent"></div> </a> 
+</div> 
+  <div id="div-container"  >
+    <div id="slideshow-controls">
+      <button (click)="startSlideshow()">Start</button>
+      <button (click)="stopSlideshow()">Stop</button>
+      <button (click)="pauseSlideshow()">Pause</button>
+      <button (click)="resumeSlideshow()">Resume</button>
+  </div>
+    <div id="div-container-landing" *ngIf="isLeafParent == null">
+      <a    [routerLink]="['/view','top-level']"
+      (click)="compareSelected('top-level',0)"  ><H1>ENTER</H1> <div [innerHTML]="appContent"></div> </a> 
+    </div>
+    <div id='modal-div-top-5' *ngIf="isLeafParent != null">
+      <div id="close-div"  (click)="closeDivModal()">&times;</div>
+      <button  id="prev" (click)="previous()"><<<  {{currentCellSelected + 1}}/ {{imageGroups.length}}</button>
+      <div id="title" *ngIf="ImageLabel.length >0">{{ImageLabel}}</div> 
+      <button  id="next" (click)="next()"> {{currentCellSelected + 1}}/ {{imageGroups.length}} >>></button>
+    </div>
+    <section id="div-lower-95"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  >= 1"> <!-- && selectedImage.imageList.length  > 1"-->
+      <div id="iterative" *ngFor="let imageElement of selectedImage.imageList, let j = index">
+        <div id="pic-div-container" > 
+          <img id="modaldivpic"   *ngIf="imageElement != null" src="{{imageElement.image}}">
+          <div  id="modaltext" style="padding:20px;border: 1px solid gray; margin-left:20px;"> 
+              <p id="modalDesc" [innerHTML]="imageElement.description"> </p><!-- core user type -->
+              <!-- p *ngIf="imageElement.coreDescription" [innerHTML]="imageElement.coreDescription"> </p>  core user type  
+               <p [innerHTML]="imageElement(selectedImage.imageList[j])"> </p>  -->
+        </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <div id="modal-container">
+      <div id='modal-top-5'>
+      <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
+      <button  id="prev" (click)="previous()"><<<  &nbsp;&nbsp; &nbsp;&nbsp;{{currentCellSelected + 1}}/ {{imageGroups.length}}</button>
+        <div id="title" *ngIf="ImageLabel.length >0">{{ImageLabel}}</div> 
+      <button  id="next" (click)="next()"> {{currentCellSelected + 1}}/ {{imageGroups.length}} &nbsp;&nbsp; &nbsp;&nbsp;>>></button>
+    </div>
+      <!---<app-mail-form   *ngIf="showContactPage == true"></app-mail-form>
+     
+         <div id="pic-container"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  == 1">
+           <p><img id="pic" *ngIf="selectedImage != null" src="{{selectedImage.imageList[0].image}}"></p>
+           <p [innerHTML]="selectedImage.imageList[0].description"></p>
+         </div>    
+        -->
+        <section id="modal-lower-95"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  >= 1"> <!-- && selectedImage.imageList.length  > 1"-->
+          
+          <div id="iterative" *ngFor="let imageElement of selectedImage.imageList, let j = index">
+            <div id="pic-container" > 
+              <img id="modalpic" *ngIf="imageElement != null" src="{{imageElement.image}}">
+              <div  id="modaltext" style="padding:20px;border: 1px solid gray; margin-left:20px;"> <p [innerHTML]="imageElement.description"> </p>
+            </div>
+            </div>
+          </div>
+      
+      </section>
+      
+       
+    </div>
+
+    </div>
+  </div>
+    <ng-template #showEmail>
+      eewrewe
+      <app-mail-form></app-mail-form>
+    </ng-template>
+</div>
