@@ -1,15 +1,5 @@
 
-# LOG OF CHANGES RECORDED May 1st - 16th 20245 #
-**CODE FREEZE MAY 16 2025** *
--  This folder is  **cms-main-angular16** 
--  Name is self explanatory this code base uses angular 16
--  Steps
-  - migrate the code in cms-main to latest angular (17+)
-  - refactor and other mandatory changes to make code base angular 17+ ready
-  - test cms-main, and deploy to 'art-is-worship'
-  - THIS code create firebase project art-is-worship-a16-25
-  - step-wise migrate cms-main sources to take advantage of new features
-
+# LOG OF CHANGES RECORDED W.E.F. May 1st 20245 #
 "CMS Picture Gallery" by Shantanu Gadkari
 - *** Predecessor CHANGELOG-2024-2025.md closed May 1 2025**  
   - link to github url of this file.
