@@ -1,14 +1,21 @@
 
-# LOG OF CHANGES RECORDED May 1st - 16th 20245 #
-**CODE FREEZE ANGULAR 16 MAY 16 2025** *
+# LOG OF CHANGES RECORDED May 1st onward 2025 #
+**CODE FREEZE ANGULAR 16 MAY 16 2025 and Migrate to Angular 17** 
 -  Back up folder is  **cms-main-angular16** 
 -  Name is self explanatory this code base uses angular 16
+- deploy backup https://art-is-worship-a16-25.web.app/home
 -  Steps
   - **done** update angular in cms-main to latest   (17+) 
   - refactor and other mandatory changes to make code base angular 17+ ready
   - **done** test cms-main, and deploy to 'art-is-worship' **(most of it was backward compatible)** 
   - **done** cms-main-angular16 create firebase project art-is-worship-a16-25 
-  - step-wise migrate cms-main sources to take advantage of new features
+  - #### step-wise migrate cms-main sources to take advantage of new features, code optimization and contemporary look
+    - styling: outer frames more contemporary look, 'glass' look **Done for now May18 2025**
+    - combine three into one - landing page functionality adds login-landing and content-viewer *WIP*
+    - thorough testing, delete redundant files *ETA start of memorial weekend 2025*
+    - merging in angular 17 elements (will always be WIP)
+    - drill down styling and optimization
+    - ... 
 
 "CMS Picture Gallery" by Shantanu Gadkari
 - *** Predecessor CHANGELOG-2024-2025.md closed May 1 2025**  

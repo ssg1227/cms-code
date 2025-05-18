@@ -84,7 +84,7 @@
   padding: 2rem;
 }
 
-.narrative-box {
+.main-content-box {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   padding: 2rem;
@@ -96,12 +96,12 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.narrative-box h2 {
+.main-content-box h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
-.narrative-box p {
+.main-content-box p {
   font-size: 1.1rem;
   line-height: 1.6;
 }

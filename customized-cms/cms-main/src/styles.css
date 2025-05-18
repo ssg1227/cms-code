@@ -10,13 +10,13 @@
    background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
    background: linear-gradient(
     to right,
-    rgba(148, 0, 211, 0.5),   /* Violet */
-    rgba(75, 0, 130, 0.5),    /* Indigo */
-    rgba(0, 0, 255, 0.5),     /* Blue */
-    rgba(0, 255, 0, 0.5),     /* Green */
-    rgba(255, 255, 0, 0.5),   /* Yellow */
-    rgba(255, 127, 0, 0.5),   /* Orange */
-    rgba(255, 0, 0, 0.5)      /* Red */
+    rgba(148, 0, 211, 0.3),   /* Violet */
+    rgba(75, 0, 130, 0.3),    /* Indigo */
+    rgba(0, 0, 255, 0.3),     /* Blue */
+    rgba(0, 255, 0, 0.3),     /* Green */
+    rgba(255, 255, 0, 0.3),   /* Yellow */
+    rgba(255, 127, 0, 0.3),   /* Orange */
+    rgba(255, 0, 0, 0.3)      /* Red */
   );
 }
 
@@ -27,9 +27,9 @@
   justify-content: center;
   align-items: center;
   padding: 0.7rem;
-  max-width: 95%;
+  max-width: 98%;
   max-height: 98%;
-  margin: 10px;
+  margin: 5px;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   background: rgba(55, 240, 255, 0.35); /* Corrected */
@@ -55,7 +55,15 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  display: flex;
+  flex-direction: column;  /* Stack vertically */
+  align-items: flex-end;   /* Align content to the right */
+  justify-content: center; /* Vertically center within container */
+  gap: 0.5rem;              /* Space between child elements */
+  padding-right: 1rem;     /* Padding on the right */
+  text-align: right;
 }
+
 .main-title {
   font-style: italic;
   font-style: bold;
@@ -66,7 +74,7 @@
 .subtitle {
   font-style: italic;
   font-weight: bold;
-  color: #c7d1db;
+  color: #017faf;
   font-size: 1rem;
   text-shadow: 1px 1px 2px #33333344;
   margin-top: 0.3rem;
@@ -93,38 +101,69 @@
 
 /* Main Body - 78% */
 .glass-main {
-  height: 78vh;
+ height: 80vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0.7rem;
+  align-items: flex-start;
+  padding: 1rem;
   z-index: 1;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.narrative-box {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
-  padding: 0.7rem;
-  max-width: 98%;
-  max-height: 98%;
-  overflow: auto;
+.main-content-box {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  padding: 1.5rem;
+  width: 100%;
+  max-height: 100%;
+  
+  overflow-y: auto;
   color: #1e272e;
   text-align: justify;
   backdrop-filter: blur(16px);
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 4px 16px rgba(31, 38, 135, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+}
+.cards-box {
+  background-color: lightcyan;
+  opacity: 0.75;
+  display: flex;
+    flex-direction: row; /* Stack children vertically */
+    flex-wrap: wrap;
+    height: 100%; /* Ensure the container stretches to full height */
+
 }
 
-.narrative-box h2 {
+.outerdiv {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 450px;
+    overflow: scroll;
+   /* background-image: linear-gradient(to bottom, red, orange, #F4C430, yellow, lightgreen, aliceblue, skyblue);*/
+}/* ALL THE MODAL to DIV styling */
+.main-content-box h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
-.narrative-box p {
+.main-content-box p {
   font-size: 1.1rem;
   line-height: 1.6;
 }
 
+#stats-box {
+  font-size: smaller;
+    border:1px solid aqua;
+    background-color: silver;
+}
 
 /* OLD CODE */
 .root-frame  {
@@ -175,13 +214,17 @@
     padding:5px;
 }
 
-#upper-ten-right-box {
-    margin:auto;
-    margin-top: 4px;
+#stats-box {
+  
     margin-right: 5px; 
     border:1px solid aqua;
     background-color: silver;
-    padding:5px;
+}
+#upper-ten-right-box {
+  
+    margin-right: 5px; 
+    border:1px solid aqua;
+    background-color: silver;
 }
 .lower-ninety {
     /* height: 90%; added below for fixed header changes */
