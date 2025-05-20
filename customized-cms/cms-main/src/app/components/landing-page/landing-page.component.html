@@ -1,4 +1,4 @@
- 
+ <div *ngIf="a16To17TestingNew == 'true'">
  <div class="glass-page">
       <header class="glass-header">
          <div class="header-left">
@@ -50,11 +50,12 @@
        </div>
        <div id="div-container-landing" *ngIf="isLeafParent == null">
           <a    [routerLink]="['/view','top-level']"
-          (click)="compareSelected('top-level',0)"  ><H1>ENTER</H1> <div [innerHTML]="appContent"></div> </a> 
+          (click)="compareSelected('top-level',0)"  > </a> 
         </div> 
         
   <div id="div-container"  >
     <div id="slideshow-controls">
+      A
       <button (click)="startSlideshow()">Start</button>
       <button (click)="stopSlideshow()">Stop</button>
       <button (click)="pauseSlideshow()">Pause</button>
@@ -62,7 +63,7 @@
   </div>
     <div id="div-container-landing" *ngIf="isLeafParent == null">
       <a    [routerLink]="['/view','top-level']"
-      (click)="compareSelected('top-level',0)"  ><H1>ENTER</H1> <div [innerHTML]="appContent"></div> </a> 
+      (click)="compareSelected('top-level',0)"  > </a> 
     </div>
     <div id='modal-div-top-5' *ngIf="isLeafParent != null">
       <div id="close-div"  (click)="closeDivModal()">&times;</div>
@@ -86,8 +87,8 @@
     </div>
   </main>
   </div> 
-
-<!-- 
+</div>
+<div *ngIf="a16To17TestingNew != 'true'">
   
 <div>
     <app-login-landing *ngIf="!UserLoggedIn"></app-login-landing> 
@@ -97,4 +98,4 @@
     </div>
  
 </div> 
--->
+</div>

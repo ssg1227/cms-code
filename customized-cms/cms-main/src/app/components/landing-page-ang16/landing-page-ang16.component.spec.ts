@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LandingPageComponent } from './landing-page-old.component';
+import { LandingPageComponentAng16 } from './landing-page-ang16.component';
 
 describe('LandingPageComponent', () => {
-  let component: LandingPageComponent;
-  let fixture: ComponentFixture<LandingPageComponent>;
+  let component: LandingPageComponentAng16;
+  let fixture: ComponentFixture<LandingPageComponentAng16>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LandingPageComponent]
+      declarations: [LandingPageComponentAng16]
     });
-    fixture = TestBed.createComponent(LandingPageComponent);
+    fixture = TestBed.createComponent(LandingPageComponentAng16);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -17,7 +17,7 @@ import { ImageElement, ContentList } from 'src/assets/gallery-files/lists-and-ot
 })
 /* Merge login-landing and landing-page logic */
 export class LandingPageComponent {
-
+  a16To17TestingNew = 'true' ;
   directLatest =  this.IsMobileScreen === 'true'? false: true ;
   // Header
   appTitle= staticText.appTitle;

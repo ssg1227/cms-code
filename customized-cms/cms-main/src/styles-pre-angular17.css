@@ -96,6 +96,14 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/* Optional: hide scrollbar but still scrollable */
+.main-content-box::-webkit-scrollbar {
+  width: 6px;
+}
+.main-content-box::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
 .main-content-box h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;

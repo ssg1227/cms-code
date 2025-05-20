@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import  { AuthService } from 'src/app/services/auth.service'
 
 @Component({
-  selector: 'app-landing-page-old',
-  templateUrl: './landing-page-old.component.html',
-  styleUrls: ['./landing-page-old.component.css']
+  selector: 'app-landing-page-ang16',
+  templateUrl: './landing-page-ang16.component.html',
+  styleUrls: ['./landing-page-ang16.component.css']
 })
-export class LandingPageComponentOld {
+export class LandingPageComponentAng16 {
   constructor(private authService:AuthService) {
 
   }

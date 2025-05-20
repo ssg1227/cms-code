@@ -1,6 +1,6 @@
 
 .card-default { /* tree branch/ category or regular color pencil */ 
-  width: 450px;
+  width: 400px;
   height:auto;
   min-height:400px;
   border: 7px outset rgb(200, 110, 3);
@@ -126,10 +126,9 @@ max-width: 99%;
 max-height: 99%;
 object-fit: contain;
 }
-@media screen and (max-width:1000px) { /*April 24 flex added section*/
+@media screen and (max-width:500px) { /*April 24 flex added section*/
   .card-default {
-    width:95% ;
-    background-color: aliceblue;
+    width:80% ;
   }
 }
 @media screen and (min-width:1029px) {
