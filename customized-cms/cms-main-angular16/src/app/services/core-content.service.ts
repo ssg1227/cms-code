@@ -5,14 +5,14 @@ import { ImageElement, ContentList } from '@settings-and-models/image-detail' ;
 import { BreadCrumb } from '@settings-and-models/bread-crumbs';
 
 import { ContextedCoreContentService } from './contexted-core-content.service';
-
 @Injectable({
   providedIn: 'root'
 })
 export class CoreContentService {
   contentList:ContentList[]= [] ;
   userMenu: TreeNodeElement[] = [] ;
-
+  // @ts-ignore: Object is possibly 'null'.
+  deviceIsMobile = false; // latest uploads workaround and other optimizations May 23 2025
   contentMode='image-card' ; // 'posts', 'narratives' ;
   get ContentlMode(): string {
     return this.contentMode ;
@@ -55,7 +55,9 @@ export class CoreContentService {
      }
     return this.userObject ;
   }
-  constructor(private contextedCoreContentService: ContextedCoreContentService) { 
+  
+  constructor(private contextedCoreContentService: ContextedCoreContentService) {
+    this.deviceIsMobile = (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)); // latest uploads workaround and other optimizations May 23 2025
     this.loadContentList();
    }
   private breadCrumbs?:BreadCrumb[] =[] ;
@@ -310,10 +312,31 @@ export class CoreContentService {
           return { all:  this.allImageList, gen: this.genImageList };
           break ;
           case 'latest-uploads-timewise':
-            let retLatestListTimewise  = null;
-            retLatestListTimewise = this.loadAndCacheList();
-            return retLatestListTimewise ;
-        
+            if (JSON.stringify(this.deviceIsMobile)==='true') { 
+              // latest uploads workaround and other optimizations May 23 2025
+              // compiling themewise list
+               this.genImageList = { 
+                allImageList: [ 
+                    { 
+                      folder:'',
+                      theme:'latest-uploads-themewise',
+                      themeSummary: `Uploads latest by theme`,
+                      files: [],
+                    }
+                ]} ;
+                const latestImageLists:any = [];
+               // this.loadLists(latestImageLists) ;
+                this.ContentList.forEach((latestImageList:any) => {
+                  if(latestImageList.latest && latestImageList.latest === true)
+                    this.loadLatestUploads(latestImageList);
+                })
+                return { all:  this.allImageList, gen: this.genImageList };
+                console.log(`#### LATEST UPLOAD .. RETURN AFTER SORT`);
+            } else {
+              let retLatestListTimewise  = null;
+              retLatestListTimewise = this.loadAndCacheList();
+              return retLatestListTimewise ;
+            }
             break;
             case 'latest-uploads-themewise':
               this.genImageList = { 

@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
 
-import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { LazyLoadImageModule } from 'ng-lazyload-image'; // latest uploads workaround and other optimizations May 23 2025
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Import FormsModule
 
 import {Router, RouterModule } from '@angular/router';
@@ -33,7 +34,7 @@ import { RegisterFormComponent } from './components/admin-register-login/registe
   ],
   imports: [
     BrowserModule,
-    LazyLoadImageModule,
+    LazyLoadImageModule, // latest uploads workaround and other optimizations May 23 2025
     FormsModule, ReactiveFormsModule ,
     RouterModule.forRoot([
     {path:'home', component:LandingPageComponent},
@@ -48,6 +49,8 @@ import { RegisterFormComponent } from './components/admin-register-login/registe
   ])
   ],
   providers: [], //, ListsFunnelService, CoreContentService],
-    bootstrap: [AppComponent, AuthService, CoreContentService]
+    bootstrap: [AppComponent, 
+                AuthService, 
+                CoreContentService]
 })
 export class AppModule { }
