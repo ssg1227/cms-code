@@ -1,21 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
 .root-frame  {
-    position: relative; /*April 24 flex from 'fixed' */
     top:0 ;
     left:0 ;
-    width:100%; 
-    margin-right: 5px;
-    height:100vh; /*April 24 flex from 95%*/
+    width:98%; 
+    height:95vh; /*April 24 flex from 95%*/
     padding:5px; 
     background-color: aliceblue;
-    border: 4px outset darkblue ;
+    border-bottom: 2px outset darkslateblue ;
+    border-right: 2px outset darkslateblue ;
     border-radius: 7px;
     font-size:1vw;
     overflow-y: auto;
     background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
+    background: linear-gradient(
+    to right,
+    rgba(148, 0, 211, 0.3),   /* Violet */
+    rgba(75, 0, 130, 0.3),    /* Indigo */
+    rgba(0, 0, 255, 0.3),     /* Blue */
+    rgba(0, 255, 0, 0.3),     /* Green */
+    rgba(255, 255, 0, 0.3),   /* Yellow */
+    rgba(255, 127, 0, 0.3),   /* Orange */
+    rgba(255, 0, 0, 0.3)      /* Red */
+  );
 }
-
-.upper-ten {
+/* Header - 20% */
+.upper-ten{
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+  max-width: 98%;
+  max-height: 98%;
+  margin: 5px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(55, 240, 255, 0.35); /* Corrected */
+  border-bottom: 3px solid rgba(5, 5, 255, 0.25);
+  border-right: 2px solid rgba(5, 5, 55, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+}
+.upper-ten-old {
     /* height: 20%;  part of non-scrollable header, height changed to below*/
     height: 15%; 
     /* non scrollable header adds */
@@ -56,6 +82,40 @@
     padding:5px;
 }
 .lower-ninety {
+  height: 75vh;
+  
+  padding: 0.2rem;
+  z-index: 1;
+  overflow: hidden;
+   border: 2px solid slateblue ;
+    background-color: aliceblue;
+    background: silver;
+    font-size: larger;
+    font-weight: 900;
+     background: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 90%;
+  max-height: 100%;
+  justify-items: center;
+  align-items: center;
+  overflow-y: auto;
+  color: #1e272e;
+  text-align: justify;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 4px 16px rgba(31, 38, 135, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+   
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(55, 240, 255, 0.40);  
+  border-bottom: 3px solid rgba(5, 5, 255, 0.25);
+  border-right: 2px solid rgba(5, 5, 55, 0.25);
+  border-radius: 10px;
+  
+}
+.lower-ninety-old {
     /* height: 90%; added below for fixed header changes */
     position: fixed;
     flex: 1;
@@ -70,9 +130,7 @@
     font-weight: 900;
 }
 @media screen and (min-width:1129px) { /*April 24 flex from 1029 change may be subject to further tweaks - used the dev tools mobile simulator to fine tune media screen widths*/
-    .upper-ten {
-        background-image: linear-gradient(to right, aliceblue, #9198f5, lightblue, skyblue);
-    }
+    
     .lower-ninety {
         background: radial-gradient(#f77775, #a2a9f6);
     }
@@ -86,17 +144,15 @@
     padding: 1rem;
     }
     .upper-ten {
-        position: static; /* April 24 changes adding the flex, etc Remove fixed positioning */
-        display:flex;
-        flex-direction: column;
+       flex-direction: column;
         flex-wrap: wrap;
-            width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
+        width: 98%;
+        margin:0px;
+        height: auto;
+        margin-bottom: 1rem;
         font-size: larger;
     }
     .lower-ninety {
-        position: static; /* April 24 changes adding the flex, etc Remove fixed positioning */
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
@@ -122,9 +178,8 @@
 @media screen and (max-width:500px) { /* April 24 added section */
     .upper-ten {
         left:0 ;
-        height:25%;
         font-size:x-large;
-        overflow-y: scroll;
+        overflow: auto;
         display: flex ;
         flex-wrap: wrap;
     }

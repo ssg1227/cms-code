@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
+
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Import FormsModule
 
 import {Router, RouterModule } from '@angular/router';
@@ -31,6 +33,7 @@ import { RegisterFormComponent } from './components/admin-register-login/registe
   ],
   imports: [
     BrowserModule,
+    LazyLoadImageModule,
     FormsModule, ReactiveFormsModule ,
     RouterModule.forRoot([
     {path:'home', component:LandingPageComponent},

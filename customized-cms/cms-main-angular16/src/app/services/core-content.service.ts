@@ -5,41 +5,7 @@ import { ImageElement, ContentList } from '@settings-and-models/image-detail' ;
 import { BreadCrumb } from '@settings-and-models/bread-crumbs';
 
 import { ContextedCoreContentService } from './contexted-core-content.service';
-/*content files DELETE 
-import { GaneshPreQ42021ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-pre-q4-2021.image.list' ;
-import { GaneshGTEQ12023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q1-2023.image.list' ;
-import { GaneshGTEQ42021ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q4-2021.image.list' ;
-import { GaneshGTEQ12024ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/aumkar-shree-ganesh/ganesh-gte-q1-2024.image.list' ;
-import { DeviImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/devi.image.list';
-import { LaxmiVishnuHanumanList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/laxmi-vishnu-hanuman.list';
-import { MahadevImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/mahadev.image.list';
-import {MahadevFamilyImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/mahadev-family.image.list';
-import {DattavatarImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/dattavatar.image.list';
-import {SwamiSamarthaImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/swami-samartha.image.list';
-import {SwamiSamarthaQ22023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/swami-samartha-q2-2023.image.list';
-import {ShirdiSaiThemeList1 } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/baba-theme.images-list';
-import { ShirdiSaiQ42023Q12024ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q4-2023-q1-2024.list';
-import { ShirdiSaiPreQ32021ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-pre-q3-2021.list';
-import { ShirdiSaiQ3Q42021ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q3-q4-2021.list';
-import { ShirdiSaiQ2Q32022ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q2-q3-2022.list';
-import { ShirdiSaiQ42022Q12023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q4-2022-q1-2023.list';
-import { ShirdiSaiQ2Q32023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q2-q3-2023.list';
-import {ShirdiSaiQ2Q32024ImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/religion/shirdi-sai/shirdi-sai-q2-q3-2024.list';
 
-import { PeopleImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/people.image.list';
-import { PlacesScenesObjectsImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/places-scenes-objects.image.list';
-import { ThemesMisc } from 'src/assets/gallery-files/lists-and-other/image-lists/themes-misc.list';
-import { AnimateToBeOrganized1ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/animate-to-be-organized-1.list';
-
-import { TrainImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains.list';
-import { TrainsIndianRailwaySpecialTrains } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains-indian-railway-special-trains';
-import { TrainsIndianRailwayAlcos } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains-indian-railway-alcos';
-import {TrainsIndianRailwaySteam } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/trains/trains-indian-railway-steam';
-import {  PlanesShipsCarsImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/planes-ships-cars.image.list';
-import {  PlanesShipsCars2ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/transports-and-machines/machines-others/planes-ships-cars-2.image.list';
-import { MumbaiMeriJaanList } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan.list';
-import { MumbaiMeriJaan2List } from 'src/assets/gallery-files/lists-and-other/image-lists/salaam-mumbai/mumbai-meri-jaan-2.list';
-*/
 @Injectable({
   providedIn: 'root'
 })
@@ -347,45 +313,7 @@ export class CoreContentService {
             let retLatestListTimewise  = null;
             retLatestListTimewise = this.loadAndCacheList();
             return retLatestListTimewise ;
-            /* April 25+ load issues  load cached if available*/
-            /* moved to function 
-            let retLatestListTimewise  = null;
-            // @ts-ignore: Object is possibly 'null'.
-            retLatestListTimewise  = JSON.parse(localStorage.getItem('latest-list-timeline'));
-            if (retLatestListTimewise !== null && retLatestListTimewise !== undefined) {
-              console.log(`From Cache`);
-              return retLatestListTimewise ;
-            }
-              // April 25+ load issues  
-            this.genImageList = { 
-              allImageList: [ 
-                  { 
-                    folder:'',
-                    theme:'latest-uploads-timewise',
-                    themeSummary: `Uploads latest by time`,
-                    files: [],
-                  }
-              ]} ;
-             // this.loadLists(latestImageLists) ;
-              this.ContentList.forEach((latestImageList:any) => {
-                 if(latestImageList.contentFile.allImageList && 
-                      latestImageList.contentFile.allImageList[0].files)
-                  this.loadLatestUploadsTimeLine(latestImageList.contentFile);
-              })
-              this.genImageList.allImageList[0].files.sort(function(a:any, b:any) {
-                const aDate = new Date(a.dateUploaded);
-                const bDate = new Date(b.dateUploaded);
-                return(bDate.getTime()  -  aDate.getTime()) ; // aDate - bDate ;
-              });
-              // April 25+ load issues  cache list if unavailable 
-              retLatestListTimewise  = { all:  this.allImageList, gen: this.genImageList }
-              localStorage.setItem('latest-list-timeline',JSON.stringify(retLatestListTimewise));
-              console.log(` One time Cache`);
-          
-              return  retLatestListTimewise ;// { all:  this.allImageList, gen: this.genImageList };
-              // //April 25+ load issues change in return
-              console.log(`#### LATEST UPLOAD .. RETURN AFTER SORT`);
-              */
+        
             break;
             case 'latest-uploads-themewise':
               this.genImageList = { 
@@ -471,10 +399,12 @@ export class CoreContentService {
     // @ts-ignore: Object is possibly 'null'.
     retLatestListTimewise  = JSON.parse(localStorage.getItem('latest-list-timeline'));
     if (retLatestListTimewise !== null && retLatestListTimewise !== undefined) {
-      console.log(`From Cache`);
+      console.log(`core-content.services.ts loadAndCacheList: latest list timeline From Cache`);
       return retLatestListTimewise ;
     }
     /* // April 25+ load issues */
+    console.log(`core-content.services.ts loadAndCacheList: generating list timeline from data`);
+      
     this.genImageList = { 
       allImageList: [ 
           { 
@@ -538,7 +468,7 @@ export class CoreContentService {
 
   loadLatestUploadsTimeLine(currentList:any)  {
     console.log('timeline');
-    let daysBack = 90 ;
+    let daysBack = 60 ;
     if(currentList.allImageList && currentList.allImageList[0].files) {
       currentList.allImageList[0].files.forEach((fileItem:any) => {
         if ((!fileItem.duplicate || fileItem.duplicate === `false`) && this.daysAgoUploaded(fileItem, daysBack)) {
