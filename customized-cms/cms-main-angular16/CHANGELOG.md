@@ -1,6 +1,18 @@
 
 # LOG OF CHANGES RECORDED W.E.F. May 1st 20245 #
 "CMS Picture Gallery" by Shantanu Gadkari
+- *** May 20 2025 onward**
+  - a migration to Angular 17+ on the cards and 'cms-main' folder is created and the app is built
+  - ***this*** codebase sits under 'cms-main-angular16'
+  - *However* I pulled back a bit because I felt a lot can be changed and optimized before *finally* getting underway to Angular17
+    - Some of the styling cues for a contemporary look can be completed here
+    - Optimization, code cleanup, delete unwanted files
+    - Trim and slice off deadweight before re-copying sources
+  - **DONE** Latest Uploads timewise doesnt work on smaller screen sizes. ***Workaround***
+    - **May23 2025** changes - look for 'latest uploads workaround and other optimizations May 23 2025 '
+      1. ngx-device-detector code to detect device type. **GAVE ERROR USED isMobile**
+      2. use a service call to preserve state **N.A** 
+      3. for small device type display themewise device only **DONE**
 - *** Predecessor CHANGELOG-2024-2025.md closed May 1 2025**  
   - link to github url of this file.
   - carry over only headers and pending items to new file
