@@ -1,5 +1,5 @@
 
-.card-default { /* tree branch/ category or regular color pencil */ 
+.card-default-old { /* tree branch/ category or regular color pencil */ 
   width: 400px;
   height:auto;
   min-height:400px;
@@ -12,6 +12,24 @@
 
  /* background: radial-gradient(beige, goldenrod);*/
 }
+
+.card-default {
+  width: 300px;
+  min-height: 400px;
+  height: auto;
+  border-radius: 16px;
+  margin: 12px;
+  background: rgba(205, 255, 255, 0.65); /* glass effect */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(205, 255, 255, 0.25);
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
 .card-image-modifier {
   height:auto;
 }
@@ -20,10 +38,11 @@ H2,H3,H4 {
   margin-left:  20px;
   margin-right:  20px;
   text-align: center;
-  color:maroon;
+  color:darkslateblue;
   text-shadow: 2px 2px gray;
-  background-color: rgb(245,197, 177);
+  background-color: rgb(195,245, 245);
   box-shadow: 0 4px 8px  rgba(25,25,0,0.7);;
+  border-radius: 4px;
 }
 .card-color-pencil {
   background-color: beige;
@@ -96,6 +115,7 @@ margin:auto;
   transform: scale(1.05);
   box-shadow: 0 4px 8px  rgba(25,25,0,0.7);
   cursor: pointer;
+  margin: 4px;
 }
 .container-expand {
 width:510px;
