@@ -8,7 +8,7 @@
   </div-->
   <div  *ngIf="imageDetail == null"[routerLink]="[ViewLink,cardInfo.key]">  
     
-    <div id="node-card"><h3>{{cardInfo.label}}</h3>{{cardInfo.description}}</div>
+    <div id="node-card"><h3>{{cardInfo.label}}</h3><p>{{cardInfo.description}}</p></div>
   </div>
    <!--- WORKING ON STITCHING OLD IMAGE LOGIC INTO THE NEW CARD TREE- BREAD CRUMB STRUCTURE-->
  <div class="card-image" [ngClass]="selectImageBorder()" *ngIf="imageDetail != null"   (click)="expand()"  > 
@@ -18,7 +18,7 @@
       [title]="ToolTip"
       [alt]="ImageLabel" 
       [ngClass]="toggleImageSize()" ><br/>
- <span [innerHTML]="ImageLabel"></span>
+ <p [innerHTML]="ImageLabel"></p>
  
  </div>
  <div>

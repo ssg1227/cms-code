@@ -14,10 +14,10 @@
 }
 
 .card-default {
-  width: 300px;
+  width: 400px;
   min-height: 400px;
   height: auto;
-  border-radius: 16px;
+  border-radius: 8px;
   margin: 12px;
   background: rgba(205, 255, 255, 0.65); /* glass effect */
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -30,9 +30,27 @@
   overflow: hidden;
   border: 2px solid transparent;
 }
+
+.card-default H2,H3,H4 {
+  margin: 0.1rem 0.3rem;
+  font-size: 1.34rem;
+  font-weight: 700;
+  text-align: center;
+  
+  color: darkslateblue;background-color: rgb(195,245, 245);
+  box-shadow: 0 4px 8px  rgba(25,25,0,0.7);;
+  border-radius: 4px;
+}
+.card-default p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
 .card-image-modifier {
   height:auto;
 }
+/*
 H2,H3,H4 {
   align-content: center;
   margin-left:  20px;
@@ -44,9 +62,10 @@ H2,H3,H4 {
   box-shadow: 0 4px 8px  rgba(25,25,0,0.7);;
   border-radius: 4px;
 }
+  */
 .card-color-pencil {
   background-color: beige;
-  border: 7px outset rgb(146, 3, 3);
+  border: 1px outset rgb(146, 3, 3);
 }
 #node-card {
   padding: 3px;
@@ -54,18 +73,18 @@ H2,H3,H4 {
   font-style: italic;
 }
 .card-mono {
-  border: 7px outset gray ;
+  border: 1px outset gray ;
   background: lightgray;
 }
 
 .card-watercolor {
   
-  border: 7px outset rgb(0, 110,175) ;
+  border: 1px outset rgb(0, 110,175) ;
   background-color: aquamarine;
   
   }
 .card-mix {
-  border: 7px outset darkslateblue;
+  border: 1px outset darkslateblue;
   background-color: lightblue;
 }
 .card-other {
@@ -76,34 +95,31 @@ H2,H3,H4 {
   height:100px;
   }
 .card-image {
-width:390px ;
-height:auto;
-margin:auto;
-border: 5px solid rgb(230, 150, 3);
-border-radius: 10px;
-margin:auto;
-
+    width:100% ;
+    height:100%; 
+    border: 1px solid rgb(230, 150, 3);
+    border-radius: 2px; 
 }
 .card-image-mono {
-  border: 5px solid silver;
-  border-radius: 10px;
+  border: 1px solid silver;
+  border-radius: 2px;
   
   }
 
   .card-image-crayon { 
-    border: 7px groove rgb(255, 0, 3);
-    border-radius: 10px;
+    border: 1px groove rgb(255, 0, 3);
+    border-radius: 2px;
     
     }
   .card-image-watercolor {
-    border: 5px solid darkcyan;
-    border-radius: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 2px;
     
     }
 
 .card-image-mix {
-  border: 5px solid slateblue;
-  border-radius: 10px;
+  border: 1px solid slateblue;
+  border-radius: 2px;
   
   }
     .card-image-softcopy {

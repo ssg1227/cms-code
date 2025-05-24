@@ -141,7 +141,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: stretch;
-    padding: 1rem;
+    padding: 0.01rem;
     }
     .upper-ten {
        flex-direction: column;
@@ -156,6 +156,7 @@
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
+    padding:0.01rem;
         /* height: auto; part of non-scrollable header */
         font-size: x-large;
     }
