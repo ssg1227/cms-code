@@ -152,11 +152,7 @@ object-fit: contain;
   }
 }
 @media screen and (min-width:1029px) {
-  /*
-  .card-default {
-    background: radial-gradient(beige, rgb(255, 205, 125) );
-  }
-  */
+
 }
 /* Before removing expansion in this component <= March 5 2024 
 .card {

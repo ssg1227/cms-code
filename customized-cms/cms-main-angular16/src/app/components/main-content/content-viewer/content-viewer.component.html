@@ -52,63 +52,35 @@
   <!--<H1>ENTER</H1> <div [innerHTML]="appContent"></div> --></a> 
 </div> 
   <div id="div-container"  >
-    <div id="slideshow-controls">
-      <button (click)="startSlideshow()">Start</button>
-      <button (click)="stopSlideshow()">Stop</button>
-      <button (click)="pauseSlideshow()">Pause</button>
-      <button (click)="resumeSlideshow()">Resume</button>
-  </div>
+    
     <div id="div-container-landing" *ngIf="isLeafParent == null">
       <a    [routerLink]="['/view','top-level']"
       (click)="compareSelected('top-level',0)"  ><H1>ENTER</H1> <div [innerHTML]="appContent"></div> </a> 
     </div>
     <div id='modal-div-top-5' *ngIf="isLeafParent != null">
       <div id="close-div"  (click)="closeDivModal()">&times;</div>
-      <button  id="prev" (click)="previous()"><<<  {{currentCellSelected + 1}}/ {{imageGroups.length}}</button>
+      <div id="slideshow-controls">
+      <button (click)="startSlideshow()">Start</button>
+      <button (click)="stopSlideshow()">Stop</button>
+      <button (click)="pauseSlideshow()">Pause</button>
+      <button (click)="resumeSlideshow()">Resume</button>
+  </div>
+      <button  id="prev" (click)="previous()"><<<{{currentCellSelected + 1}}/{{imageGroups.length}}</button>
       <div id="title" *ngIf="ImageLabel.length >0">{{ImageLabel}}</div> 
-      <button  id="next" (click)="next()"> {{currentCellSelected + 1}}/ {{imageGroups.length}} >>></button>
+      <button  id="next" (click)="next()">{{currentCellSelected + 1}}/{{imageGroups.length}} >>></button>
     </div>
     <section id="div-lower-95"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  >= 1"> <!-- && selectedImage.imageList.length  > 1"-->
       <div id="iterative" *ngFor="let imageElement of selectedImage.imageList, let j = index">
         <div id="pic-div-container" > 
           <img id="modaldivpic"   *ngIf="imageElement != null" src="{{imageElement.image}}">
-          <div  id="modaltext" style="padding:20px;border: 1px solid gray; margin-left:20px;"> 
-              <p id="modalDesc" [innerHTML]="imageElement.description"> </p><!-- core user type -->
-              <!-- p *ngIf="imageElement.coreDescription" [innerHTML]="imageElement.coreDescription"> </p>  core user type  
-               <p [innerHTML]="imageElement(selectedImage.imageList[j])"> </p>  -->
+          <div  id="modaltext" style="padding:5px;border: 1px solid gray; margin-left:20px;"> 
+              <p id="modalDesc" [innerHTML]="imageElement.description"> </p>
         </div>
         </div>
       </div>
     </section>
   </div>
-    <div id="modal-container">
-      <div id='modal-top-5'>
-      <div id="close-modal" style="margin:0" (click)="closeModal()">&times;</div>
-      <button  id="prev" (click)="previous()"><<<  &nbsp;&nbsp; &nbsp;&nbsp;{{currentCellSelected + 1}}/ {{imageGroups.length}}</button>
-        <div id="title" *ngIf="ImageLabel.length >0">{{ImageLabel}}</div> 
-      <button  id="next" (click)="next()"> {{currentCellSelected + 1}}/ {{imageGroups.length}} &nbsp;&nbsp; &nbsp;&nbsp;>>></button>
-    </div>
-      <!---<app-mail-form   *ngIf="showContactPage == true"></app-mail-form>
-     
-         <div id="pic-container"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  == 1">
-           <p><img id="pic" *ngIf="selectedImage != null" src="{{selectedImage.imageList[0].image}}"></p>
-           <p [innerHTML]="selectedImage.imageList[0].description"></p>
-         </div>    
-        -->
-        <section id="modal-lower-95"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  >= 1"> <!-- && selectedImage.imageList.length  > 1"-->
-          
-          <div id="iterative" *ngFor="let imageElement of selectedImage.imageList, let j = index">
-            <div id="pic-container" > 
-              <img id="modalpic" *ngIf="imageElement != null" src="{{imageElement.image}}">
-              <div  id="modaltext" style="padding:20px;border: 1px solid gray; margin-left:20px;"> <p [innerHTML]="imageElement.description"> </p>
-            </div>
-            </div>
-          </div>
-      
-      </section>
-      
-       
-    </div>
+  
 
     </div>
   </div>
