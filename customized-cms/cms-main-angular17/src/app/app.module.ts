@@ -1,0 +1,49 @@
+import { NgModule } from '@angular/core';
+
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Import FormsModule
+
+import {Router, RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+// Service Layer 
+import { AuthService } from './app-backup/services/auth.service';
+import { CoreContentService } from './app-backup/services/core-content.service';
+// components and tree
+import { LandingPageComponent } from './app-backup/components/landing-page/landing-page.component';
+import { LoginLandingComponent } from './app-backup/components/admin-register-login/login-landing/login-landing.component';
+import { ContentViewerComponent } from './app-backup/components/main-content/content-viewer/content-viewer.component';
+// import { CardComponent } from './components/main-content/card/card.component';
+import { ImageCardComponent } from './app-backup/components/main-content/image-card/image-card.component';
+import { MailFormComponent } from './app-backup/components/misc/mail-form/mail-form.component';
+import { RegisterFormComponent } from './app-backup/components/admin-register-login/register-form/register-form.component';
+@NgModule({
+  declarations: [
+    AppComponent,
+     LandingPageComponent,
+    LoginLandingComponent,
+    ContentViewerComponent,
+    // CardComponent,
+    ImageCardComponent,
+    MailFormComponent,
+    RegisterFormComponent,
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule, ReactiveFormsModule ,
+    RouterModule.forRoot([
+    {path:'home', component:LandingPageComponent},
+    
+    {path:'', component:LandingPageComponent},
+    {path:'**', component:LandingPageComponent},
+    {path: 'view/:theme', component: LoginLandingComponent },
+    {path: 'contact', component: MailFormComponent },
+
+    {path: 'view/contact', component: MailFormComponent },
+    {path: 'contact/contact', component: MailFormComponent },
+  ])
+  ],
+  providers: [], //, ListsFunnelService, CoreContentService],
+    bootstrap: [AppComponent, AuthService, CoreContentService]
+})
+export class AppModule { }

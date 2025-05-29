@@ -1,0 +1,40 @@
+<!-- 
+ <div class="glass-page">
+      <header class="glass-header">
+         <div class="header-left">
+            <div class="main-title">A Journey of Drawings</div>
+            <div class="subtitle">– Shantanu Gadkari</div>
+        </div>
+         <div class="header-center">
+          <input type="text" placeholder="Login" class="login-box" />
+  
+  </div>
+  <div class="header-right">
+   
+  </div>
+    <div class="header-content">
+      <h1>Welcome to ArtForma</h1>
+      <input type="text" placeholder="Enter your name to login" class="login-box" />
+    </div>
+  </header>
+
+  <main class="glass-main">
+    <div class="main-content-box">
+      <h2>Gallery of Soulful Visions</h2>
+      <p>
+        ArtForma is a sanctuary of imagination. Here, contemporary expressions meet ancient inspirations—
+        brush strokes that whisper stories, sculptures that breathe history, and installations that question the
+        present moment. This space is yours to wander, reflect, and be moved. Let your journey begin.
+      </p>
+    </div>
+  </main>
+  </div> 
+-->
+<div>
+    <app-login-landing *ngIf="!UserLoggedIn"></app-login-landing> 
+    <div *ngIf="UserLoggedIn">
+        <app-content-viewer *ngIf="SmallScreen=='false'"></app-content-viewer>
+        <app-content-viewer *ngIf="SmallScreen=='true'"></app-content-viewer>
+    </div>
+ 
+</div> 

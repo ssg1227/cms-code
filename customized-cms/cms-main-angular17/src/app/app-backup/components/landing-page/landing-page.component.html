@@ -1,0 +1,101 @@
+ <div *ngIf="a16To17TestingNew == 'true'">
+ <div class="glass-page">
+      <header class="glass-header">
+         <div class="header-left">
+            <div class="main-title">{{appTitle}}</div>
+            <div class="subtitle">{{appAuthor}}</div>
+        </div>
+         <div class="header-center" *ngIf="!UserLoggedIn">
+            <input type='text' [(ngModel)]='userId' placeholder='User Name (optional)'>  
+            &nbsp;&nbsp; <input type='button' value='Enter'  (click)='cmsLogin()'>
+
+        </div>  
+         <div class="header-center" *ngIf="UserLoggedIn">
+            <span *ngFor="let breadCrumb of breadCrumbs" >  <a   *ngIf="breadCrumb.link != ''"
+                    [routerLink]="[breadCrumb.link,breadCrumb.params]" 
+                            (click)="compareSelected(breadCrumb.params,0)">{{breadCrumb.label}} >>> </a> 
+                <span *ngIf="breadCrumb.link == ''">{{breadCrumb.label}}</span>
+                 </span><br/><div>    {{parentDescripion}}</div>
+         </div>      
+           
+  <div class="header-right" *ngIf="UserLoggedIn" >
+          {{WelcomeMessage}}
+    <input type='button' value='Logout'  (click)='cmsLogout()'>
+     <div  id="stats-box" [innerHTML]="StatsSummary"> </div>
+  </div>
+    <div class="header-content">
+    </div>
+  </header>
+
+  <main class="glass-main">
+    <div class="main-content-box" *ngIf="!UserLoggedIn"[innerHTML]="appContent">  </div>
+    <div class="main-content-box cards-box " *ngIf="UserLoggedIn" > 
+       <div id="leafCards"  *ngIf="isLeafParent=='true' && imageGroups.length > 0" class="outerdiv" >
+          <div *ngFor="let grpImag of imageGroups; let i = index;">
+              <app-image-card 
+                [cardIndex]="i" 
+                (clickedIndex)="compareSelected($event,i)" 
+                [isCore]="isCore"
+                [imageDetail]="grpImag"
+                [cardSelected]="currentCellSelected">
+              </app-image-card>
+          </div>
+       </div>  <div *ngFor="let card of currentCardList; let i = index;">
+          <app-image-card 
+            [cardIndex]="i" 
+            (clickedIndex)="compareSelected($event,i)" 
+            [cardInfo]="card"
+            [cardSelected]="currentCellSelected"></app-image-card>
+         
+       </div>
+       <div id="div-container-landing" *ngIf="isLeafParent == null">
+          <a    [routerLink]="['/view','top-level']"
+          (click)="compareSelected('top-level',0)"  > </a> 
+        </div> 
+        
+  <div id="div-container"  >
+    <div id="slideshow-controls">
+      A
+      <button (click)="startSlideshow()">Start</button>
+      <button (click)="stopSlideshow()">Stop</button>
+      <button (click)="pauseSlideshow()">Pause</button>
+      <button (click)="resumeSlideshow()">Resume</button>
+  </div>
+    <div id="div-container-landing" *ngIf="isLeafParent == null">
+      <a    [routerLink]="['/view','top-level']"
+      (click)="compareSelected('top-level',0)"  > </a> 
+    </div>
+    <div id='modal-div-top-5' *ngIf="isLeafParent != null">
+      <div id="close-div"  (click)="closeDivModal()">&times;</div>
+      <button  id="prev" (click)="previous()"><<<  {{currentCellSelected + 1}}/ {{imageGroups.length}}</button>
+      <div id="title" *ngIf="ImageLabel.length >0">{{ImageLabel}}</div> 
+      <button  id="next" (click)="next()"> {{currentCellSelected + 1}}/ {{imageGroups.length}} >>></button>
+    </div>
+    <section id="div-lower-95"  *ngIf="selectedImage != null  && selectedImage.imageList != null && selectedImage.imageList.length  >= 1"> <!-- && selectedImage.imageList.length  > 1"-->
+      <div id="iterative" *ngFor="let imageElement of selectedImage.imageList, let j = index">
+        <div id="pic-div-container" > 
+          <img id="modaldivpic"   *ngIf="imageElement != null" src="{{imageElement.image}}">
+          <div  id="modaltext" style="padding:20px;border: 1px solid gray; margin-left:20px;"> 
+              <p id="modalDesc" [innerHTML]="imageElement.description"> </p><!-- core user type -->
+              <!-- p *ngIf="imageElement.coreDescription" [innerHTML]="imageElement.coreDescription"> </p>  core user type  
+               <p [innerHTML]="imageElement(selectedImage.imageList[j])"> </p>  -->
+        </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    </div>
+  </main>
+  </div> 
+</div>
+<div *ngIf="a16To17TestingNew != 'true'">
+  
+<div>
+    <app-login-landing *ngIf="!UserLoggedIn"></app-login-landing> 
+    <div *ngIf="UserLoggedIn">
+        <app-content-viewer *ngIf="SmallScreen=='false'"></app-content-viewer>
+        <app-content-viewer *ngIf="SmallScreen=='true'"></app-content-viewer>
+    </div>
+ 
+</div> 
+</div>
