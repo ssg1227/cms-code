@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "art-is-worship"
-  }
+    "default": "art-is-worship",
+    "current": "art-is-worship"
+  },
+  "targets": {},
+  "etags": {}
 }

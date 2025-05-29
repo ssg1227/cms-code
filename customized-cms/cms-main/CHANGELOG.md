@@ -1,23 +1,20 @@
 
-# LOG OF CHANGES RECORDED May 1st onward 2025 #
-**CODE FREEZE ANGULAR 16 MAY 16 2025 and Migrate to Angular 17** 
--  Back up folder is  **cms-main-angular16** 
--  Name is self explanatory this code base uses angular 16
-- deploy backup https://art-is-worship-a16-25.web.app/home
--  Steps
-  - **done** update angular in cms-main to latest   (17+) 
-  - refactor and other mandatory changes to make code base angular 17+ ready
-  - **done** test cms-main, and deploy to 'art-is-worship' **(most of it was backward compatible)** 
-  - **done** cms-main-angular16 create firebase project art-is-worship-a16-25 
-  - #### step-wise migrate cms-main sources to take advantage of new features, code optimization and contemporary look
-    - styling: outer frames more contemporary look, 'glass' look **Done for now May18 2025**
-    - combine three into one - landing page functionality adds login-landing and content-viewer *WIP*
-    - thorough testing, delete redundant files *ETA start of memorial weekend 2025*
-    - merging in angular 17 elements (will always be WIP)
-    - drill down styling and optimization
-    - ... 
-
+# LOG OF CHANGES RECORDED W.E.F. May 1st 20245 #
 "CMS Picture Gallery" by Shantanu Gadkari
+- *** May 20 2025 onward**
+  - **May 29 2025 onward**  angular feature based and other optimization look for comments: May 29 2025+ angular feature based and other optimization
+  - **May 27 2025 onward** Changes to expanded image and slide show look for comments: *May 27 2025+  Changes to expanded image and slide show*
+  - a migration to Angular 17+ on the cards and 'cms-main' folder is created and the app is built
+  - ***this*** codebase sits under 'cms-main-angular16'
+  - *However* I pulled back a bit because I felt a lot can be changed and optimized before *finally* getting underway to Angular17
+    - Some of the styling cues for a contemporary look can be completed here
+    - Optimization, code cleanup, delete unwanted files
+    - Trim and slice off deadweight before re-copying sources
+  - **DONE** Latest Uploads timewise doesnt work on smaller screen sizes. ***Workaround***
+    - **May23 2025** changes - look for 'latest uploads workaround and other optimizations May 23 2025 '
+      1. ngx-device-detector code to detect device type. **GAVE ERROR USED isMobile**
+      2. use a service call to preserve state **N.A** 
+      3. for small device type display themewise device only **DONE**
 - *** Predecessor CHANGELOG-2024-2025.md closed May 1 2025**  
   - link to github url of this file.
   - carry over only headers and pending items to new file

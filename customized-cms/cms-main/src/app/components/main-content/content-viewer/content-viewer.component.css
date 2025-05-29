@@ -16,15 +16,16 @@
    /* background-image: linear-gradient(to bottom, red, orange, #F4C430, yellow, lightgreen, aliceblue, skyblue);*/
 }/* ALL THE MODAL to DIV styling */
 #div-container {
-    margin:auto;
-    margin-top: 5px;
+    
+    margin-top: 1px;
     
     flex-wrap: wrap;
     border: 2px outset darkslateblue ;
     border-radius: 9px;
-    background:radial-gradient(darkblue, skyblue);
+    box-shadow: 2px;
+    background:radial-gradient(aliceblue, skyblue);
     height: auto;
-    width:auto;
+    width:100%;
     margin:2px;
     overflow-y: scroll;
     display: none;
@@ -34,8 +35,7 @@
    
 }
 #div-container-landing {
-    margin: 100px;
-    padding: auto;
+    margin: 10px;
     width:90%;
     border: 5px outset darkcyan ;
     background: radial-gradient(cyan, skyblue, darkblue);
@@ -53,10 +53,8 @@
     display: flex;
     flex-wrap: wrap;/*April 24 flex */
     height:5%;
-    justify-content: space-between;
     align-items: center;
-    padding: 5px;
-    width:95%;
+    width:98%;
     margin: 2px;
     background-color: #81b1ff;
     border-bottom: 1px solid #ccc;
@@ -68,7 +66,9 @@
     max-height:90%;
     margin: 1px;
     flex: 1;
-    background-color: #81b1ff;
+    
+
+    background:radial-gradient(aliceblue, skyblue);
 }
   #close-div {
     cursor: pointer;
@@ -86,11 +86,11 @@
     background-color: #008cfa;
     border: 2px outset gray;
     color: white;
-    padding: 10px;
+    padding: 2px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
@@ -101,20 +101,55 @@
     border: 2px inset gray;
     
   }
- 
+#slideshow-controls button {
+    width:25px;
+    height:25px;
+    
+    font-weight: 700;
+    padding:auto;
+    border:3px solid #fefefe;
+    border-radius: 4px;
+}
+#close-div-btn {
+    margin-right:20px; 
+
+    border:3px solid red;
+    background-color: white;
+    color:red ;
+    border-radius: 5px;
+}
+#startBtn {
+    background-color:green;
+    color:green;   
+}
+
+#stopBtn {
+    background-color:red;
+    color:red;
+}
+
+#pauseBtn {
+    background-color:silver;
+    color:black;   
+}
+
+#resumeBtn {
+    background-color:lightblue;
+    color:blue;
+}
 #close-div  {
     
     background-color: white;
     width:35px;
-    height:15px;
+    height:35px;
     font-size:large;
+    text-align: center;
     color:red;
     border: 1px solid red;
 }
 
 #pic-div-container,
 #text-container {
-    
     background: radial-gradient(rgb(165, 218, 242), lightskyblue);
     align-items: left;
     justify-content: left;
@@ -156,7 +191,7 @@
     position: relative;
     top:15 ;
     left:0 ;
-    height:95%;
+    height:auto;
     width:95%;
     margin-top: 10px;
 }
@@ -176,15 +211,15 @@
     
     left: 45; 
     width:auto;
-    height:45px;
+    height:35px;
     padding:5px;
-    margin:5px 100px;
+    margin:5px 10px;
 }
 #next {
     
     left: 55; 
     width:auto;
-    height:45px;
+    height:35px;
     padding:5px;
     margin:5px 100px;
 }
@@ -229,7 +264,7 @@
     float:left ;
 }
 #modaltext  {
-padding:20px;border: 1px solid gray; margin-left:20px;
+            padding:10px;border: 1px solid gray; margin-left:20px;
 }
 
 #modaldivpic  {

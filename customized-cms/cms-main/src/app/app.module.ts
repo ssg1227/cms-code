@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
+
+import { LazyLoadImageModule } from 'ng-lazyload-image'; // latest uploads workaround and other optimizations May 23 2025
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Import FormsModule
 
 import {Router, RouterModule } from '@angular/router';
@@ -10,6 +13,7 @@ import { AppComponent } from './app.component';
 import { AuthService } from './services/auth.service';
 import { CoreContentService } from './services/core-content.service';
 // components and tree
+
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { LoginLandingComponent } from './components/admin-register-login/login-landing/login-landing.component';
 import { ContentViewerComponent } from './components/main-content/content-viewer/content-viewer.component';
@@ -20,7 +24,7 @@ import { RegisterFormComponent } from './components/admin-register-login/registe
 @NgModule({
   declarations: [
     AppComponent,
-     LandingPageComponent,
+    LandingPageComponent,
     LoginLandingComponent,
     ContentViewerComponent,
     // CardComponent,
@@ -30,6 +34,7 @@ import { RegisterFormComponent } from './components/admin-register-login/registe
   ],
   imports: [
     BrowserModule,
+    LazyLoadImageModule, // latest uploads workaround and other optimizations May 23 2025
     FormsModule, ReactiveFormsModule ,
     RouterModule.forRoot([
     {path:'home', component:LandingPageComponent},
@@ -44,6 +49,8 @@ import { RegisterFormComponent } from './components/admin-register-login/registe
   ])
   ],
   providers: [], //, ListsFunnelService, CoreContentService],
-    bootstrap: [AppComponent, AuthService, CoreContentService]
+    bootstrap: [AppComponent, 
+                AuthService, 
+                CoreContentService]
 })
 export class AppModule { }

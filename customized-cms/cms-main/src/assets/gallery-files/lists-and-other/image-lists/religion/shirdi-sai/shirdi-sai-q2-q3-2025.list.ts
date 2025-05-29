@@ -18,6 +18,16 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [
 {
+canvassMaterial:  'Watercolor paper',
+canvassSize:  'A4',
+content:  'soft',
+dateUploaded:  '05-29-2025',
+duplicate:  'false',
+summaryLabel:  `Baba - May 29 2025`,album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 14} ,
+fullFileName: `${this.imageRoot}BabaMay28-2025.jpeg`,
+description: `<ul><li> Baba - May 29 2025 </li><li> Sketch started May 1st week, final touches and upload May 29 </li></ul>`,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  '',
