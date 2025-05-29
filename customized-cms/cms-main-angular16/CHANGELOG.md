@@ -2,6 +2,8 @@
 # LOG OF CHANGES RECORDED W.E.F. May 1st 20245 #
 "CMS Picture Gallery" by Shantanu Gadkari
 - *** May 20 2025 onward**
+  - **May 29 2025 onward**  angular feature based and other optimization look for comments: May 29 2025+ angular feature based and other optimization
+  - **May 27 2025 onward** Changes to expanded image and slide show look for comments: *May 27 2025+  Changes to expanded image and slide show*
   - a migration to Angular 17+ on the cards and 'cms-main' folder is created and the app is built
   - ***this*** codebase sits under 'cms-main-angular16'
   - *However* I pulled back a bit because I felt a lot can be changed and optimized before *finally* getting underway to Angular17
