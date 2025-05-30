@@ -93,7 +93,6 @@ margin:auto;
       
       }
 .card:hover {
-  transform: scale(1.05);
   box-shadow: 0 4px 8px  rgba(25,25,0,0.7);
   cursor: pointer;
 }
@@ -133,7 +132,6 @@ object-fit: contain;
   height:150px;
 }
 .card:hover {
-    transform: scale(1.05);
     box-shadow: 0 4px 8px  rgba(25,25,0,0.7);
   }
 .expand {

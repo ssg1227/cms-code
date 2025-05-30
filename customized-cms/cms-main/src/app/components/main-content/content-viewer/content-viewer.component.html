@@ -28,7 +28,7 @@
             [cardSelected]="currentCellSelected"></app-image-card>
        <!--  </div>--> 
        </div>
-        <div *ngFor="let card of currentCardList; let i = index;">
+        <div *ngFor="let card of currentCardList; let i = index; trackBy: trackById">
            <app-image-card 
             [cardIndex]="i" 
             (clickedIndex)="compareSelected($event,i)" 

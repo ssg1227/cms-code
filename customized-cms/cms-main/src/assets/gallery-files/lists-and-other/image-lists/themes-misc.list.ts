@@ -17,6 +17,15 @@ public allImageList:ImageElement[]  =  [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '05-30-2025',
+duplicate:  'true',
+summaryLabel:  `Chandrayaan2 Vikram Lander Pragyan Rover May 29 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Chandrayaan2VikramPragyanRover.jpeg`,
+description: `<ul><li> Chandrayaan2 Vikram Lander Pragyan Rover May 29 2025 </li><li> One of numerous feathers in ISRO(Indian Space Research Organization)'s cap </li><li> The second moon mission July - Sept 2019 </li><li> Showing Vikram Lander and Pragyan Rover </li></ul>`,
+},{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  '12-06-2024',
 duplicate:  'true',

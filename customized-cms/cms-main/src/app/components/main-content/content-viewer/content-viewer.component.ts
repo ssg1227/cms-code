@@ -56,6 +56,9 @@ export class ContentViewerComponent {
   pageSize = 14;
   viewportHeight:number ;
   currentPage = 1;
+  trackById(index: number, item: any): number {
+  return item.id; // or item.name or any unique property
+}
   //..
   displayDescription(imageELement:any):string // core user type
   {
