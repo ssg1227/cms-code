@@ -11,6 +11,26 @@ export class PlanesShipsCars2ImageList {
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
 {
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  '05-29-2025',
+duplicate:  'true',
+summaryLabel:  `The 'Himalayan Geese' An12 and Il76 (Gajraj) planes Jan 9 / May 29 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/HimalayanGeese-Jan9-2025.jpeg`,
+description: `<ul><li> The 'Himalayan Geese' An12 and Il76 (Gajraj) planes Jan 9 / May 29 2025 </li><li> A 'software stitch' of the two (main) aircraft of IAF 44 Squadron, the 'Himalayan Geese' </li><li> Feature Antonov An12 the previous, and 'Gajraj' IL76, the current main aircraft of the squadron </li><li> Upload May 29 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'soft',
+dateUploaded:  '05-29-2025',
+duplicate:  'true',contentOther: 'Mix of color pencils, charcoal and shading',
+summaryLabel:  `Tejas. Operation Sindoor May 8 - May 29 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/TejasOperationSindoorMay82025.jpeg`,
+description: `<ul><li> Tejas. Operation Sindoor May 8 - May 29 2025 </li><li> One of my unfinished sketches, completed in a Hotel Room at Boston </li><li> Watching reports on how India decimated Pak forces in Operation Sindoor </li><li> The strikes involved 100% successful defence against Pak drones and missiles </li><li> The aircraft is HAL Tejas operated by IAF,  background is symbolic of Maa Kali forehead with bright red 'Sindoor' </li></ul>`,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'soft',

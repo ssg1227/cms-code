@@ -1,0 +1,349 @@
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    height: 100%; /* Ensure the container stretches to full height */
+}
+.outerdiv {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 450px;
+    overflow: scroll;
+   /* background-image: linear-gradient(to bottom, red, orange, #F4C430, yellow, lightgreen, aliceblue, skyblue);*/
+}/* ALL THE MODAL to DIV styling */
+#div-container {
+    
+    margin-top: 1px;
+    
+    flex-wrap: wrap;
+    border: 2px outset darkslateblue ;
+    border-radius: 9px;
+    box-shadow: 2px;
+    background:radial-gradient(aliceblue, skyblue);
+    height: auto;
+    width:100%;
+    margin:2px;
+    overflow-y: scroll;
+    display: none;
+   /*align-items: center;
+    justify-content: center;
+    */
+   
+}
+#div-container-landing {
+    margin: 10px;
+    width:90%;
+    border: 5px outset darkcyan ;
+    background: radial-gradient(cyan, skyblue, darkblue);
+    border-radius: 40px;
+}
+#div-container-landing a {
+    margin:auto;
+    text-decoration: none;
+    color: darkslateblue;
+    text-shadow: 0 4px 8px  rgba(25,25,0,0.7);;;
+    text-align: center;
+}
+
+#modal-div-top-5 {
+    display: flex;
+    flex-wrap: wrap;/*April 24 flex */
+    height:5%;
+    align-items: center;
+    width:98%;
+    margin: 2px;
+    background-color: #81b1ff;
+    border-bottom: 1px solid #ccc;
+  }
+ 
+  #div-lower-95 {
+    height:90%;
+    width:98%;
+    max-height:90%;
+    margin: 1px;
+    flex: 1;
+    
+
+    background:radial-gradient(aliceblue, skyblue);
+}
+  #close-div {
+    cursor: pointer;
+    font-size: 30px;
+    margin-top:2px;
+    align-items: center;
+    text-align: center;
+    background-color: pink;
+    border-radius: 20px;
+    width:40px;
+    height:40px;
+  }
+  
+  button {
+    background-color: #008cfa;
+    border: 2px outset gray;
+    color: white;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #007bb5;
+    border: 2px inset gray;
+    
+  }
+ 
+#close-div  {
+    
+    background-color: white;
+    width:35px;
+    height:15px;
+    font-size:large;
+    color:red;
+    border: 1px solid red;
+}
+
+#pic-div-container,
+#text-container {
+    background: radial-gradient(rgb(165, 218, 242), lightskyblue);
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 88%;
+    overflow-y: auto;
+}
+#modal-container {
+    display: none;
+    position:fixed ;
+    flex-wrap: wrap;
+    border: 9px solid gold;
+    border-radius: 15px;
+    background-color: rgb(248, 248, 255);
+    
+    left: 0;
+    top: 5;
+    margin:12px;
+    margin-top: -115px;
+    width: auto;
+    height: 100%;
+    overflow-y: scroll;
+   /*align-items: center;
+    justify-content: center;
+    */
+   
+}
+#modal-top-5 { /*April 24 flex removed position:relative, etc and replaced with flex*/
+     display:flex;
+    flex-wrap:wrap;
+    
+    height:5%;
+    width:95%;
+   
+    justify-content: center;
+}
+
+#modal-lower-95 {
+    position: relative;
+    top:15 ;
+    left:0 ;
+    height:auto;
+    width:95%;
+    margin-top: 10px;
+}
+#close-modal  {
+    position: relative;
+    top: 0;
+    right : 0;
+    margin-right: 10px;
+    background-color: white;
+    width:35px;
+    height:15px;
+    font-size:large;
+    color:red;
+    border: 1px solid red;
+}
+#prev {
+    
+    left: 45; 
+    width:auto;
+    height:35px;
+    padding:5px;
+    margin:5px 10px;
+}
+#next {
+    
+    left: 55; 
+    width:auto;
+    height:35px;
+    padding:5px;
+    margin:5px 100px;
+}
+
+#title {
+    padding:5px ;
+    font-size: smaller;
+    background-color: beige;
+    border: 2px inset rgb(120,120,60);
+}
+
+#sequence {
+    padding:5px ;
+    font-size: smaller;
+    background-color: skyblue;
+    border: 2px inset darkslateblue;
+    color:darkblue;
+}
+#mutiple-container {
+    overflow-y: scroll;
+}
+#pic-container,
+#text-container {
+    border:inset 2px gray ;
+    background-color: white;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 90%;
+    overflow-y: scroll;
+}
+#pic-container > p {
+    height:100% ;
+
+}
+#modalpic  {
+    width: 40%;
+    height:100%;
+    object-fit: contain;
+    margin-right: 50px;
+    border:2px rgb(25, 80,80) inset;
+    float:left ;
+}
+#modaltext  {
+            padding:10px;border: 1px solid gray; margin-left:20px;
+}
+
+#modaldivpic  {
+    width: 50%;
+    height: auto;
+    object-fit:cover;
+    margin-right: 50px; 
+    max-width: 60%; /* Ensures the image doesn't exceed the container width */
+    object-fit: contain; 
+   
+    background-color: deepskyblue;
+    border:2px rgb(25, 80,80) inset;
+   
+box-shadow: 0 4px 8px  rgba(25,25,0,0.7);;
+    float:left ;
+}
+@media screen and (min-height:800px) {
+    #modaldivpic  {
+        max-height: 580px;
+       
+    }
+}
+@media screen and (max-height:799px) {
+    #modaldivpic  {
+        max-height: 400px;
+    }
+}
+@media screen and (max-height:399px) {
+    #modaldivpic  {
+        max-height: 280px;
+    }
+}
+
+@media screen and (min-width:1029px) {
+    
+   
+}
+@media screen and (max-width:550px) {
+
+    #modal-container {
+        top: 225px;
+    
+        margin:5px;
+        padding:2px;
+        overflow-y: auto;
+    }
+    /*April 24 flex*/
+    /* may need cleanup later*/
+    #div-lower-95 {
+        height:70%;
+        width:98%;
+        max-height:70%;
+        margin: 1px;
+        flex: 1;
+        background-color: #81b1ff;
+        overflow: auto;
+    }
+
+#pic-div-container {  /*April 24 flex*/
+    display: flex;
+    flex-wrap: wrap;
+}
+#modaldivpic  { /*April 24 flex*/
+   width:auto ;
+   margin-right: 3px; 
+    max-width: 98%; /* Ensures the image doesn't exceed the container width */
+}
+#close-modal  {
+    
+    height:35px;
+    font-size:xx-large;
+    color:red;
+    margin-bottom: 2px;
+    
+}
+#prev {
+    
+    width:auto;
+    height:15px;
+    padding:1px;
+    margin:2 5;
+}
+#next {
+    width:auto;
+    height:15px;
+    padding:1px;
+    margin:2;
+}
+#title {
+    display:none;/*April 24 flex.. temporary removed for smaller screens */
+    padding:5px ;
+    background-color: beige;
+    border: 2px inset rgb(120,120,60);
+    width:30%;
+    overflow-y: scroll;
+}
+#modal-top-5 {
+    height: auto;
+    min-height: 0;
+}
+#modalpic {
+    width:95% ;
+}
+
+#modaltext {
+    width:95% ;
+}
+#pic-container,
+#text-container {
+    border:inset 2px gray ;
+    padding:4px;
+    background-color: silver;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 99%;
+}
+}

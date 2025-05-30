@@ -19,6 +19,16 @@ files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '05-29-2025',
+duplicate:  'false',
+summaryLabel:  `Baba Feb 20 2025`,
+fullFileName: `${this.imageRoot}BabaFeb202025.jpeg`,
+description: `<ul><li> Baba Feb 20 2025 </li><li> Uploaded May 29 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'watercolor-pencil',
 dateUploaded:  '04-30-2025',
 duplicate:  'false',

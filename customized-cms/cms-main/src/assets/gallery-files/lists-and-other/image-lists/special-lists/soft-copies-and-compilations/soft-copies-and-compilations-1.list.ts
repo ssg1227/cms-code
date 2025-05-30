@@ -18,6 +18,17 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
+
+{
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  '05-29-2025',
+duplicate:  'false',
+summaryLabel:  `The 'Himalayan Geese' An12 and Il76 (Gajraj) planes Jan 9 / May 29 2025`,
+fullFileName: `${this.imageRoot}HimalayanGeese-Jan9-2025.jpeg`,
+description: `<ul><li> The 'Himalayan Geese' An12 and Il76 (Gajraj) planes Jan 9 / May 29 2025 </li><li> A 'software stitch' of the two (main) aircraft of IAF 44 Squadron, the 'Himalayan Geese' </li><li> Feature Antonov An12 the previous, and 'Gajraj' IL76, the current main aircraft of the squadron </li><li> Upload May 29 2025 </li></ul>`,
+},
 {
 canvassMaterial:  'other',
 canvassSize:  'other',

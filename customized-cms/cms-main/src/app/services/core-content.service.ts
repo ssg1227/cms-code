@@ -312,7 +312,7 @@ export class CoreContentService {
           return { all:  this.allImageList, gen: this.genImageList };
           break ;
           case 'latest-uploads-timewise':
-            if (JSON.stringify(this.deviceIsMobile)==='true') { 
+            if (JSON.stringify(this.deviceIsMobile)==='ftrue') { 
               // latest uploads workaround and other optimizations May 23 2025
               // compiling themewise list
                this.genImageList = { 
@@ -439,6 +439,7 @@ export class CoreContentService {
       ]} ;
      // this.loadLists(latestImageLists) ;
       this.ContentList.forEach((latestImageList:any) => {
+        console.log(`LATEST `)
          if(latestImageList.contentFile.allImageList && 
               latestImageList.contentFile.allImageList[0].files)
           this.loadLatestUploadsTimeLine(latestImageList.contentFile);
@@ -522,7 +523,7 @@ export class CoreContentService {
   }
   loadLatestUploads(currentList:any)  {
 
-    let daysBack = 30 ;
+    let daysBack = 60 ;
     console.log(`LATEST ${JSON.stringify(this.contentList)}`);
     if(currentList.contentFile.allImageList && currentList.contentFile.allImageList[0].files && 
         currentList.contentFile.allImageList[0].files.length > 0) {

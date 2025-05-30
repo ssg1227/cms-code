@@ -21,7 +21,7 @@ files: [
 canvassMaterial:  'Watercolor paper',
 canvassSize:  'A4',
 content:  'soft',
-dateUploaded:  '05-29-2025',
+dateUploaded:  '05-27-2025',
 duplicate:  'false',
 summaryLabel:  `Baba - May 29 2025`,album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 14} ,
 fullFileName: `${this.imageRoot}BabaMay28-2025.jpeg`,

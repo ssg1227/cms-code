@@ -19,6 +19,26 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'soft',
+dateUploaded:  '05-29-2025',
+duplicate:  'true',contentOther: 'Mix of color pencils, charcoal and shading',
+summaryLabel:  `Tejas. Operation Sindoor May 8 - May 29 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/TejasOperationSindoorMay82025.jpeg`,
+description: `<ul><li> Tejas. Operation Sindoor May 8 - May 29 2025 </li><li> One of my unfinished sketches, completed in a Hotel Room at Boston </li><li> Watching reports on how India decimated Pak forces in Operation Sindoor </li><li> The strikes involved 100% successful defence against Pak drones and missiles </li><li> The aircraft is HAL Tejas operated by IAF,  background is symbolic of Maa Kali forehead with bright red 'Sindoor' </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'soft',
+dateUploaded:  '05-29-2025',
+duplicate:  'false',contentOther: 'Mix of color pencils, charcoal and shading',
+summaryLabel:  `Tejas. Operation Sindoor May 8 - May 29 2025`,
+fullFileName: `${this.imageRoot}TejasOperationSindoorMay82025.jpeg`,
+description: `<ul><li> Tejas. Operation Sindoor May 8, Upload May 29 2025 </li><li> One of my unfinished sketches, completed in a Hotel Room at Boston </li><li> Watching reports on how India decimated Pak forces in Operation Sindoor </li><li> The strikes involved 100% successful defence against Pak drones and missiles </li><li> The aircraft is HAL Tejas operated by IAF,  background is symbolic of Maa Kali forehead with bright red 'Sindoor' </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content: 'Other',contentOther: 'Using color pencil, charcoal pencil, metal color pencil',
 dateUploaded:  '05-02-2025',
