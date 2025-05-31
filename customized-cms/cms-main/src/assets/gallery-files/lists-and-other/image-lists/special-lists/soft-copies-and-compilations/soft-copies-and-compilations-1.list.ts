@@ -18,7 +18,17 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
-
+,
+{
+canvassMaterial:  'other',
+canvassSize:  'other',
+content:  'soft',contentOther:'Template based Software edit AND Mix of all drawing "utensils" used so far - crayons, color pencils, watercolor pencils, charcoals, metal color pencils and shading',
+dateUploaded:  '05-31-2025',
+duplicate:  'false',
+summaryLabel:  `Anurag Mendhekar May 31 2025 Birthday. Upload Same day`,
+fullFileName: `${this.imageRoot}Anurag-Birthday-May31-2025.jpeg` ,
+description: `<ul><li>Anurag Mendhekar May 31 2025 Birthday. Upload Same day </li><li> Anurag is a close friend of mine since my Engineering days </li></ul>`,
+},
 {
 canvassMaterial:  'other',
 canvassSize:  'soft',
