@@ -11,6 +11,16 @@ export class PlanesShipsCars2ImageList {
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '05-31-2025',
+duplicate:  'true',
+summaryLabel:  `Beriev A50 AWAC + SU30 May23-31,2025`,
+fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/majestic-lifters-legendary-carriers/IL76BerievA50IAFSu30-0523-05312025.jpeg`,
+description: `<ul><li> Beriev A50 AWAC + SU30 May23-31,2025 </li><li> IAF il76 variant Beriev A50 awac with phalcon radar with 2 su30 </li><li> The No. 50 Squadron were raised in 2009 at Agra Airforce Station of the Central Air Command. Beriev A-50 is based on the air-frame of the Ilyushin Il-76 and fitted by Beriev with PS-90A-76 engines and Israeli radar system EL/W-2090(Phalcon) mounted on the aircraft by Israeli company Elta Electronics Industries. </li><li> Completed May23, uploaded May 31 2025 </li><li> Also shown two Sukhoi Su30 as working with this aircraft </li></ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  'soft',

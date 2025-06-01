@@ -11,6 +11,7 @@ public allImageList:ImageElement[]  =  [
              theme:'Lord Narayan, Maa Laxmi and Avatars, Shree Hanuman',
              themeSummary: `<p>Laxmi and avatars, Rukhmini, Sita, Narayan, Ram, Vithal, Narsimha, Hanuman and others.   </p>`,
              files: [
+
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',

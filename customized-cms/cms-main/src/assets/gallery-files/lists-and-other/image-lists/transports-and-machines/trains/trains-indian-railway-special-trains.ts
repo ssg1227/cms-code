@@ -125,7 +125,7 @@ iterations: [
                         </ul>`}]
       },
         {  
-            fullFileName: `${this.imageRoot}Deccan-Queen-11-25to12-07-2022-FINAL.png`, description: 
+            fullFileName: `${this.imageRoot}Deccan-Queen-11-25to12-07-2022-PhotoEdiL.jpeg`, description: 
             `<ul>
                 <li>Sketch of the 'Queen' during her 'glory color era' - the blue and cream livery and pulled by a WCM1-5 locomotive</li> 
                 <li>The best time of the year and location from various aspects, including colorization - monsoon in the Ghats *</li> 
@@ -142,7 +142,20 @@ iterations: [
                 canvassSize:'A3',
                 content: 'color-pencil',
 
-                iterations:[  {
+                iterations:[  
+                 {
+                    fullFileName: `${this.imageRoot}Deccan-Queen-11-25to12-07-2022-PhotoEdiL.jpeg`, 
+                    description: `<ul>
+                    <li>Dec 2022 Sketch of the 'Queen' during her 'glory color era' - the blue and cream livery and pulled by a WCM1-5 locomotive</li> 
+                    <li>The best time of the year and location from various aspects, including colorization - monsoon in the Ghats *</li> 
+                <li>The Deccan Queen started in 1930 is an icon - this Pune-Mumbai-Pune superfast holds special place in, generally Maharashtrans, but others as well </li> 
+                <li>Many uniques like always having been pulled by an electric loco. Her food is special </li> 
+                <li>It seems many Punekars work in 'Fort Area' Mumbai and use her as a daily / weekday commute </li> 
+                <li>credit to TUSHAR PRADHAN an ex colleague from SISL for suggesting this. I may not have thought of drawing this on my own</li>
+                <li> * this could even pass off for the Indrayani or a Nasik bound train - there are Ghats there too ;) </li><li>..</li>
+                    <li>Photo edited Final version </li>
+                </ul>`},
+                {
                     fullFileName: `${this.imageRoot}Deccan-Queen-11-25to12-07-2022-FINAL.png`, 
                     description: `<ul>
                     <li>Dec 2022 Sketch of the 'Queen' during her 'glory color era' - the blue and cream livery and pulled by a WCM1-5 locomotive</li> 
