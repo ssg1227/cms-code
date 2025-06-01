@@ -22,7 +22,7 @@ public allImageList:ImageElement[]  =  [
                 canvassSize: 'A4', content:'color-pencil black-white',
                 evolution: `- <b>Not the first</b>, but traditionally, one starts something with Lord Ganesh.And also decent enough<br/>
                             - <b>My first color pencil sketch and</b>, also duplicated with black and white sketch using<b>'glass trace'</b>(as will be repeated later)<br/>`,
-                evolutionSequence: 1, evolutionDate: `01-01-1990`,
+                evolutionSequence: 1, evolutionDate: `01-01-1990`,album: { name: 'the-third-album', status: 'added', sequence: 2},
                 iterations:[  
                 { 
                     fullFileName: `${this.imageRoot}Ashtavinayak-color.jpg`, 
@@ -147,7 +147,7 @@ public allImageList:ImageElement[]  =  [
         },]
     }, {  fullFileName: `${this.imageRoot}sangeet-vinayak-Q3-2021/GaneshTabla-2-June2021.jpg`, 
     description: '<p>Inspirational Sketch</p>',
-    canvassSize: 'A4', content:'black-white',
+    canvassSize: 'A4', content:'black-white',album: { name: 'the-third-album', status: 'added', sequence: 5},
     iterations:[{
         fullFileName: `${this.imageRoot}sangeet-vinayak-Q3-2021/GaneshTabla-2-June2021.jpg`, 
         description: `<ul>
@@ -162,7 +162,7 @@ public allImageList:ImageElement[]  =  [
     },]
 }, {  fullFileName: `${this.imageRoot}sangeet-vinayak-Q3-2021/GaneshVeena-2-July32021.jpg`, 
 description: '<p>Inspirational Sketch</p>',
-canvassSize: 'A4', content:'black-white',
+canvassSize: 'A4', content:'black-white',album: { name: 'the-third-album', status: 'added', sequence: 6},
 iterations:[{
     fullFileName: `${this.imageRoot}sangeet-vinayak-Q3-2021/GaneshVeena-2-July32021.jpg`, 
     description: `<ul>
@@ -178,7 +178,7 @@ iterations:[{
 },]
 }, {  fullFileName: `${this.imageRoot}sangeet-vinayak-Q3-2021/GaneshHarmonium-1-July2021.jpeg`, 
 canvassSize: 'A4', content:'black-white',
-description: '<p>Inspirational Sketch</p>',
+description: '<p>Inspirational Sketch</p>',album: { name: 'the-third-album', status: 'added', sequence: 7},
 iterations:[{
 fullFileName: `${this.imageRoot}sangeet-vinayak-Q3-2021/GaneshHarmonium-1-July2021.jpeg`, 
 description: `<ul>
@@ -188,7 +188,7 @@ description: `<ul>
 }]
 },{  fullFileName: `${this.imageRoot}sangeet-vinayak-Q3-2021/GaneshSitar-3-July102021.jpeg`, 
 description: '<p>Inspirational Sketch</p>',
-canvassSize: 'A4', content:'black-white',
+canvassSize: 'A4', content:'black-white',album: { name: 'the-third-album', status: 'added', sequence: 8},
 iterations:[{
     fullFileName: `${this.imageRoot}sangeet-vinayak-Q3-2021/GaneshSitar-3-July102021.jpeg`, 
     description: `<ul>
@@ -211,7 +211,7 @@ iterations:[{
         }]
 },{  fullFileName: `${this.imageRoot}sangeet-vinayak-Q3-2021/GaneshDholak-1-July12-2021.jpeg`, 
 description: '<p>Inspirational Sketch</p>',
-canvassSize: 'A4', content:'black-white',
+canvassSize: 'A4', content:'black-white',album: { name: 'the-third-album', status: 'added', sequence: 9},
 iterations:[{
     fullFileName: `${this.imageRoot}sangeet-vinayak-Q3-2021/GaneshDholak-1-July12-2021.jpeg`, 
     description: `<ul>
@@ -220,7 +220,7 @@ iterations:[{
     </ul>`
     },]
 },{
-    canvassSize: 'A4', content:'black-white',
+    canvassSize: 'A4', content:'black-white',album: { name: 'the-third-album', status: 'added', sequence: 10},
     fullFileName: `${this.imageRoot}sangeet-vinayak-Q3-2021/GaneshTanpura-1July14-26-2021.jpeg`, 
     description: `<ul>
     <li>uly 14-26 2021</li>
@@ -229,7 +229,7 @@ iterations:[{
         <li>.. so hopefully, corrected!! (May add these iterations when I find them)</li>
     </ul>`
     },{
-        canvassSize: 'A4', content:'black-white',
+        canvassSize: 'A4', content:'black-white',album: { name: 'the-third-album', status: 'added', sequence: 11},
         fullFileName: `${this.imageRoot}sangeet-vinayak-Q3-2021/GaneshManjira1-July14-26-2021.jpeg`, 
         description: `<ul>
         <li>July 14-26 2021</li>
@@ -237,7 +237,7 @@ iterations:[{
             <li>(May add iterations when I find them)</li>
         </ul>`
         },{
-            canvassSize: 'soft', content:'black-white',
+            canvassSize: 'soft', content:'black-white',album: { name: 'the-third-album', status: 'added', sequence: 12},
             fullFileName: `${this.imageRoot}sangeet-vinayak-Q3-2021/SangeetVinayakJuly26-27-2021.png`, 
             description: `<ul>
             <li>July 26-27 2021</li>

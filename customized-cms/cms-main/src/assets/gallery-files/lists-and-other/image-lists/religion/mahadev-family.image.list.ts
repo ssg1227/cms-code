@@ -50,7 +50,7 @@ iterations: [
                // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/MahadevJan102022.jpeg
                // /Users/shantanu/Documents/GitHub/js-frameworks/Angular_lte_4/shan-cms-template/src/assets/all-images/religion/mahadev/Shivji2022ShravanMonday_1.jpeg
                fullFileName: `${this.imageRoot}/Mahadev-family-Narsimha-Laxmi-May31-2023-2.jpeg`, 
-               canvassSize: 'A3', content:'color-pencil',
+               canvassSize: 'A3', content:'color-pencil',album: { name: 'the-third-album', status: 'added', sequence: 1},
                description: 
                   `<ul>
                      <li>It had been in my mind to sketch the Full Shiva-Parvati family as famously depicted - the addition of Karthikeya</li>

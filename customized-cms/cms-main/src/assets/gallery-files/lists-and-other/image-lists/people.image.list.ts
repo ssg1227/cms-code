@@ -12,8 +12,29 @@ export class PeopleImageList {
       `Faces, figures sketching started almost at the start of my 'pandemic caused' reconnect with this hobby
          Some off the spur of the moment, spontaneous, others due to their deaths (and we have had a lot of that!!)
          Some, in fact, many are <em><strong>pretty out of shape</strong></em>, but <em>still</em> included because of the significance`,
-     files: [
+     files: [,
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '06-01-2025',
+duplicate:"false",
+fullFileName: `${this.imageRoot}GilmourNov8-2022-June1-2025.jpeg`,
+summaryLabel:  `David Gilmour (Comfortably Numb) Pink Floyd Nov8,'22 Upload June 1 2025`,
+description: `<ul><li> One of the famous 'THE WALL' quartet Waters, Mason, Wright, Gilmour </li>
+<li> He joined in 1967, shortly before the departure of the founder member Syd Barrett.[1] By the early 1980s, Pink Floyd had become one of the highest-selling and most acclaimed acts in music history</li>
+<li>His Guitar solo in "THE WALL:Comfortably Numb" is aclaimed to be one of the best lead solos of all time - it was "an utter master at work, leaving space, repeating and building on licks to give a sense of structure, not overplaying, building to a shrieking climax, and then fading out while leaving the listener wanting more"</li></ul>`,
+},
+{
+canvassMaterial: 'Plain paper',
+canvassSize: 'A4',
+content: 'black-white',
+dateUploaded: '06-01-2025',
+duplicate: 'true',
+summaryLabel: `Sambhajiraje Shivaji Son. Punyatithi 05/14/25.. upload June 1 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/SambhajMay14-2025Ounyatithi0June12025.jpeg`,
+description: `<ul><li> Sambhajiraje Shivaji Son. Punyatithi 05/14/25.. upload June 1 2025 </li><li> The legendary son, Sambhaji of Shivaji Raje, the founder of the Maratha Raj </li><li> Completed for May 14 2025 (the Heir's punyatithi) </li><li> Final touches and upload June 1 2025 </li></ul>`,
+},{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',

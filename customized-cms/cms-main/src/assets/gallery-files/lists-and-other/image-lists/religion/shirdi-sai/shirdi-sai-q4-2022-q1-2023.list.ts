@@ -22,6 +22,16 @@ public allImageList:ImageElement[]  =  [
         files: [ 
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  '06-01-2025',
+duplicate:  'false',
+summaryLabel:  `Baba Nov2022 Upload Jun12025`,
+fullFileName: `${this.imageRoot}BabaNov2022-Jun12025.jpeg`,
+description: `<ul><li> Baba Nov2022 Upload Jun12025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '02-18-2025',album: { name: 'the-first-album', status: 'added', sequence: 13}, 

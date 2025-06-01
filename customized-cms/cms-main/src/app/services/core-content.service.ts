@@ -217,7 +217,8 @@ export class CoreContentService {
         switch (strParam) {
           // .. 
           case 'the-divine-in-colors-so-fine':
-            case 'the-first-album':
+          case 'the-first-album':
+          case 'the-third-album':
               this.genImageList = { 
               allImageList: [ 
                   { 

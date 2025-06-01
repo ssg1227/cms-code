@@ -18,6 +18,25 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  '06-01-2025',
+duplicate:  'true',
+summaryLabel:  `Original Baba Samadhi Mandir -- final touch and upload June 1 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/BabaSamadhiMandirJun12025.jpeg`,
+description: `<ul><li> Original Baba Samadhi Mandir -- final touch and upload June 1 2025 </li><li> This is what the original Samadhi Mandir looked at Shirdi </li></ul>`,
+},
+{
+canvassSize:  '',
+content:  '',
+dateUploaded:  '06-01-2025',
+duplicate:  'true',
+summaryLabel:  `Baba Sketch final touch and upload June 1 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/BabaJun12025.jpeg`,
+description: `<ul><li> Baba Sketch final touch and upload June 1 2025 </li></ul>`,
+},
+{
 canvassMaterial:  'Watercolor paper',
 canvassSize:  'A4',
 content:  'soft',

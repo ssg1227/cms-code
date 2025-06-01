@@ -19,6 +19,18 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',contentOther: 'charcoal and shading',
+dateUploaded:  '06-01-2025',
+duplicate:  'true',
+evolution:  `<b>The first A3 Charcoal sketch. .. Also inserted a copy in 'Charcoal Times Other Colors Shines'<br/></B>`,
+evolutionSequence:  5,
+evolutionDate:  '06-01-2025',
+summaryLabel:  `Hanuman A3 Charcoal May 31, upload June 1, 2025`,
+fullFileName: `assets/gallery-files/images/religion/laxmi-vishnu-hanuman/HanumanMay31-2025.jpeg`,
+description: `<ul><li> CHANGER: The first A3 Charcoal sketch. .. Original inserted in what will be designated as the 3rd album </li></ul>`,
+},{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'soft',
 dateUploaded:  '05-29-2025',

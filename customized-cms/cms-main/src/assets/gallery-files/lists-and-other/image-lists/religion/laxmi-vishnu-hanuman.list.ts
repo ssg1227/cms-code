@@ -11,7 +11,19 @@ public allImageList:ImageElement[]  =  [
              theme:'Lord Narayan, Maa Laxmi and Avatars, Shree Hanuman',
              themeSummary: `<p>Laxmi and avatars, Rukhmini, Sita, Narayan, Ram, Vithal, Narsimha, Hanuman and others.   </p>`,
              files: [
-
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',contentOther: 'charcoal and shading',
+dateUploaded:  '06-01-2025',album: { name: 'the-third-album', status: 'added', sequence: 34},
+duplicate:  'false',
+evolution:  `<b>The first A3 Charcoal sketch. .. Also inserted a copy in 'Charcoal Times Other Colors Shines'<br/></B>`,
+evolutionSequence:  5,
+evolutionDate:  '06-01-2025',
+summaryLabel:  `Hanuman A3 Charcoal May 31, upload June 1, 2025`,
+fullFileName: `${this.imageRoot}HanumanMay31-2025.jpeg`,
+description: `<ul><li> CHANGER: The first A3 Charcoal sketch. .. Also inserted a copy in 'Charcoal Times Other Colors Shines' </li></ul>`,
+},
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
@@ -138,7 +150,7 @@ description: `<ul><li> Sort of commemoratory drawing for the inauguration of Ram
                 {
                 canvassSize:  'A4',
                 content:  'color-pencil',
-                dateUploaded:  '07-15-2023',
+                dateUploaded:  '07-15-2023',album: { name: 'the-third-album', status: 'added', sequence: 32},
                 fullFileName: `${this.imageRoot}MarutiBW080622ToColorApril22023.jpeg`
                 ,
                 description: `<ul><li> Light copy of Hanuman Sketch of Aug 6 2022  </li>
@@ -152,7 +164,7 @@ description: `<ul><li> Sort of commemoratory drawing for the inauguration of Ram
                 {
                 canvassSize:  'A4',
                 content:  'color-pencil',
-                dateUploaded:  '07-15-2023',
+                dateUploaded:  '07-15-2023',album: { name: 'the-third-album', status: 'added', sequence: 33},
                 fullFileName: `${this.imageRoot}HanumanJayantiApril62023.jpeg`
                 ,
                 description: `<ul><li> For Hanuman Jayanti 2023 </li>

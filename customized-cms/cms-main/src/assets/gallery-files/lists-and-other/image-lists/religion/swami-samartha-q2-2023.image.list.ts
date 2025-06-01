@@ -23,6 +23,16 @@ export class SwamiSamarthaQ22023ImageList { // SwamiSamarthaImageList
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '06-01-2025',
+duplicate:  'false',album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 15} ,
+summaryLabel:  `Swami Samartha June 1 2025`,
+fullFileName: `${this.imageRoot}SwamiJune1-2025.jpeg`,
+description: `<ul><li> Swami Samartha June 1 2025 </li><li> Completion and upload June 1 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
 content:  '',
 dateUploaded:  '04-30-2025',
 duplicate:  'true',
