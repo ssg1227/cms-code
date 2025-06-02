@@ -15,6 +15,16 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '06-01-2025',
+duplicate:  'false',
+summaryLabel:  `Experimental sketch of Cock April 22, June 2025`,
+fullFileName: `${this.imageRoot}CockApril20-2022.jpeg`,
+description: `<ul><li> Experimental sketch of Cock April 22, June 2025 </li><li> Shared April 20, 2022, uploaded June 1 2025 </li></ul>`,
+},
   ,
   {
   canvassMaterial:  'Plain paper',

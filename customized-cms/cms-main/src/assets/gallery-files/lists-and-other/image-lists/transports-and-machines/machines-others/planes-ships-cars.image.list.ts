@@ -14,6 +14,16 @@ export class PlanesShipsCarsImageList {
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '06-01-2025',
+duplicate:  'false',
+summaryLabel:  `Possible Mosquito Bomber Juky 2022/ June 2025`,
+fullFileName: `${this.imageRoot}QuestonableMosquiteJuly2022.jpeg`,
+description: `<ul><li> Possible Mosquito Bomber Juky 2022/ June 2025 </li><li> Completed July 5 2022, upload June 1, 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '01-13-2025',
 duplicate:  'false',
