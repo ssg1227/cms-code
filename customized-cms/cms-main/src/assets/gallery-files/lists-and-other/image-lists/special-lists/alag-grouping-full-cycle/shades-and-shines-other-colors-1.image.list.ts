@@ -22,7 +22,7 @@ files: [
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'color-pencil',
-dateUploaded:  '06-01-2025',
+dateUploaded:  '06-01-2025 18:25',
 duplicate:  'false',
 summaryLabel:  `Baba- Shivling Gray June1 2025 SIXHUNDREDTH`,
 fullFileName: `${this.imageRoot}BabaShivlingGrayJune12025-SIXHUNDREDTH.jpeg`,

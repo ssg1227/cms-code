@@ -15,7 +15,7 @@ export class PlacesScenesObjectsImageList {
 canvassMaterial:  'Photo print matt paper',
 canvassSize:  'A4',
 content:  'watercolor-pencil',
-dateUploaded:  '06-01-2025',
+dateUploaded:  '06-01-2025 17:00',
 duplicate:  'false',
 summaryLabel:  `General Sunrise Scene.. March 1 2024, Upload June 1 2025`,
 fullFileName: `assets/gallery-files/images/places-scenes-objects/WCPencilsMar1-2024-June1-2025.jpeg`,

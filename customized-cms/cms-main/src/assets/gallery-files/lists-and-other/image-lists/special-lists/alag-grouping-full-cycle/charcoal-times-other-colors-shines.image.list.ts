@@ -21,7 +21,7 @@ files: [
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',contentOther: 'charcoal and shading',
-dateUploaded:  '06-01-2025',
+dateUploaded:  '06-01-2025 12:00',
 duplicate:  'true',
 evolution:  `<b>The first A3 Charcoal sketch. .. Also inserted a copy in 'Charcoal Times Other Colors Shines'<br/></B>`,
 evolutionSequence:  5,

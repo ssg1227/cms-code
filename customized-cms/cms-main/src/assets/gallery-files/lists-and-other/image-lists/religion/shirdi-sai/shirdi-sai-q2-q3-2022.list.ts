@@ -23,7 +23,7 @@ export class ShirdiSaiQ2Q32022ImageList {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
-dateUploaded:  '06-01-2025',
+dateUploaded:  '06-01-2025 11:30',
 duplicate:  'false',
 summaryLabel:  `Baba Ardhanareshwar Sept 22, June 1 2025`,
 fullFileName: `${this.imageRoot}BabaArdhanareshwar-ShripadhVallabh-Sept012022.jpeg`,

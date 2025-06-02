@@ -446,9 +446,19 @@ export class CoreContentService {
           this.loadLatestUploadsTimeLine(latestImageList.contentFile);
       })
       this.genImageList.allImageList[0].files.sort(function(a:any, b:any) {
+        // a, bFormatDate  June 2 2025 Sort Date down to time 
+         const aFormatDate = new Date(a.dateUploaded.indexOf(':') > 0 ?
+                      a.dateUploaded: `${a.dateUploaded}`) ;
+          const bFormatDate = new Date(b.dateUploaded.indexOf(':') > 0 ?
+                      b.dateUploaded: `${b.dateUploaded}`) ;
+          if (a.dateUploaded.indexOf(':') > 0)
+            console.log(`A: ${a.fullFileName}, ${aFormatDate}`);
+          if (b.dateUploaded.indexOf(':') > 0)
+            console.log(`B: ${b.fullFileName}, ${bFormatDate}`);
         const aDate = new Date(a.dateUploaded);
         const bDate = new Date(b.dateUploaded);
-        return(bDate.getTime()  -  aDate.getTime()) ; // aDate - bDate ;
+         return(bFormatDate.getTime()  -  aFormatDate.getTime())
+    //    return(bDate.getTime()  -  aDate.getTime()) ; // aDate - bDate ;
       });
       /* April 25+ load issues  cache list if unavailable*/
       retLatestListTimewise  = { all:  this.allImageList, gen: this.genImageList }
@@ -529,6 +539,12 @@ export class CoreContentService {
     if(currentList.contentFile.allImageList && currentList.contentFile.allImageList[0].files && 
         currentList.contentFile.allImageList[0].files.length > 0) {
           currentList.contentFile.allImageList[0].files.sort(function(a:any, b:any) {
+            const aFormatDate = new Date(a.dateUploaded.indexOf(':') > 0 ?
+                      a.dateUploaded: `${a.dateUploaded}`) ;
+            const bFormatDate = new Date(b.dateUploaded.indexOf(':') > 0 ?
+                      b.dateUploaded: `${b.dateUploaded}`) ;
+            console.log(`A: ${a.fullFileName}, ${aFormatDate}`);
+            console.log(`B: ${b.fullFileName}, ${bFormatDate}`);
             const aDate = new Date(a.dateUploaded).getTime();
             const bDate = new Date(b.dateUploaded).getTime();
             let c = bDate  -  aDate ; // aDate - bDate ;

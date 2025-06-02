@@ -24,7 +24,7 @@ public allImageList:ImageElement[]  =  [
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
-dateUploaded:  '06-01-2025',
+dateUploaded:  '06-01-2025 16:10',
 duplicate:  'false',
 summaryLabel:  `Baba Dec 16 2021 Uploaded June 1 2025`,
 fullFileName: `${this.imageRoot}BabaDec162021.jpeg`,

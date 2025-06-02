@@ -19,7 +19,7 @@ files: [
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'color-pencil',
-dateUploaded:  '06-01-2025',
+dateUploaded:  '06-01-2025 16:30',
 duplicate:  'false',
 summaryLabel:  `Experimental sketch of Cock April 22, June 2025`,
 fullFileName: `${this.imageRoot}CockApril20-2022.jpeg`,
