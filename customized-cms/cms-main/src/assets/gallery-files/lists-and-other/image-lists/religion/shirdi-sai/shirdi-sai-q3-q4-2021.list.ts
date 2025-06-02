@@ -20,6 +20,16 @@ public allImageList:ImageElement[]  =  [
         `<p> <em><strong>Soo many sketches of Shirdi Sai!!!</strong> that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha</em><br/>
         &nbsp;&nnbsp; * Of late (June 2021) I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
         files: [ // SaiMarch32022.jpeg
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '06-01-2025',
+duplicate:  'false',
+summaryLabel:  `Baba Dec 16 2021 Uploaded June 1 2025`,
+fullFileName: `${this.imageRoot}BabaDec162021.jpeg`,
+description: `<ul><li> Baba Dec 16 2021 Uploaded June 1 2025 </li></ul>`,
+},
         { canvassSize: 'A4', content:'black-white',
         fullFileName: `${this.imageRoot}SaiMarch32022.jpeg`, 
             description: `<ul>

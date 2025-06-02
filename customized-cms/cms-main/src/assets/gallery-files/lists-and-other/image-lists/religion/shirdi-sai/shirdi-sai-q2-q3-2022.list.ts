@@ -21,6 +21,16 @@ export class ShirdiSaiQ2Q32022ImageList {
         files: [ // SaiMarch32022.jpeg
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  '06-01-2025',
+duplicate:  'false',
+summaryLabel:  `Baba Ardhanareshwar Sept 22, June 1 2025`,
+fullFileName: `${this.imageRoot}BabaArdhanareshwar-ShripadhVallabh-Sept012022.jpeg`,
+description: `<ul><li> Baba Ardhanareshwar Sept 22, June 1 2025 </li><li> Inspired by Chapter from Shripad Vallabh Charit, Baba with Shiva Shakti </li><li> Completed Sept 1 2022, upload June 1 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:   'A3',
 content:  'black-white',
 dateUploaded:  '02-17-2025',album: { name: 'the-first-album', status: 'added', sequence: 3},
