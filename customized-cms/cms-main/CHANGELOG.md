@@ -1,6 +1,18 @@
 
 # LOG OF CHANGES RECORDED W.E.F. May 1st 20245 #
 "CMS Picture Gallery" by Shantanu Gadkari
+- *** June 2025 onward** 
+   - ***600 by 06/01!!!*** 
+    - ***June 1, 2025***  *by 6:30 PM PST, I uploaded the ***600th unique drawing image*** to [Art is Worship] https://art-is-worship.web.app/ and ***published*** it* 
+    - Apart from support by friends, thanks to my codebase. Thanks to the full stack automation program.
+   - Coding, upgrade with some 'exam oriented study' (interview ready) work
+    - Continued optimization and other trying to use as many angular methods and features as possible
+      - emphasis on performance (esp loading) and viewability on mobile and other small screens.
+      - code cleanup
+      - debuggig
+      - **Special item DONE June 02** add a timestamp to date uploaded. I must have uploaded at least 10 on June 1, and latest uploads showed them in incorrect time order. look for comments // // June 2 2025 Sort Date down to time 
+      - other 
+    - Styling. Getting there. Slideshow
 - *** May 20 2025 onward**
   - **May 29 2025 onward**  
     - **DONE** moved this back to cms-main, and moved angular17 to cms-main-angular17 (latter to still add to src control)
