@@ -11,6 +11,16 @@ export class PlacesScenesObjectsImageList {
                 themeSummary:`</strong>Scenes, Objects, Structures, (some may be items containing mix modes of transport or something like an air dogfight)<br/>
                 Mumbai gets her due place and a dedicated theme; all Mumbai related sketches will be found in 'Mumbai Meri Jaan'`,
                 files: [ 
+{// /Users/shantanug/Documents/GitHub/cms-code/customized-cms/cms-main/src/assets/gallery-files/images/places-scenes-objects/WCPencilsMar1-2024-June1-2025.jpeg
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  '06-01-2025',
+duplicate:  'false',
+summaryLabel:  `General Sunrise Scene.. March 1 2024, Upload June 1 2025`,
+fullFileName: `assets/gallery-files/images/places-scenes-objects/WCPencilsMar1-2024-June1-2025.jpeg`,
+description: `<ul><li> General Sunrise Scene.. March 1 2024, Upload June 1 2025 </li><li> Watercolor pencils some regular color pencils on matt paper </li></ul>`,
+},
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',

@@ -21,6 +21,16 @@ files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  '06-01-2025',
+duplicate:  'false',
+summaryLabel:  `Baba- Shivling Gray June1 2025 SIXHUNDREDTH`,
+fullFileName: `${this.imageRoot}BabaShivlingGrayJune12025-SIXHUNDREDTH.jpeg`,
+description: `<ul><li> Baba- Shivling Gray June1 2025 SIXHUNDREDTH </li><li> Celebrating my 600th website uploaded sketch them my beloved Baba and Mahadev </li><li> June 1, 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
 content:  '',
 dateUploaded:  '04-30-2025',
 duplicate:  'false',
