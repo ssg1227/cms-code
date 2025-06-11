@@ -2,6 +2,7 @@
 # LOG OF CHANGES RECORDED W.E.F. May 1st 20245 #
 "CMS Picture Gallery" by Shantanu Gadkari
 - *** June 2025 onward** 
+   - **Cleanup and serious optimization Start** 'June 2025 C&O' comments
    - ***600 by 06/01!!!*** 
     - ***June 1, 2025***  *by 6:30 PM PST, I uploaded the ***600th unique drawing image*** to [Art is Worship] https://art-is-worship.web.app/ and ***published*** it* 
     - Apart from support by friends, thanks to my codebase. Thanks to the full stack automation program.

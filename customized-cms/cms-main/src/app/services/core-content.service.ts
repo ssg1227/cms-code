@@ -246,6 +246,7 @@ export class CoreContentService {
               let c = aSeq  -  bSeq ; // aDate - bDate ;
               return  c ;
             });
+            console.log(`Album: ${strParam} count ${this.genImageList.allImageList[0].files.length}`)
             return { all:  this.allImageList, gen: this.genImageList };
             break ;
       
