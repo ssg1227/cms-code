@@ -1,0 +1,18 @@
+<div class="root-frame">
+  <app-login-landing *ngIf="!UserLoggedIn; else contentTpl"></app-login-landing>
+
+  <ng-template #contentTpl>
+    <app-content-viewer ></app-content-viewer>
+  </ng-template>
+</div>
+
+<!-- 'June 2025 C&O' comments
+<div class="root-frame">
+    <app-login-landing *ngIf="!UserLoggedIn"></app-login-landing> 
+    <div *ngIf="UserLoggedIn">
+        <app-content-viewer *ngIf="SmallScreen=='false'"></app-content-viewer>
+        <app-content-viewer *ngIf="SmallScreen=='true'"></app-content-viewer>
+    </div>
+    
+</div> 
+-->

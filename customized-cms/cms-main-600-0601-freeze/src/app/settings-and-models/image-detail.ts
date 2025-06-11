@@ -1,0 +1,50 @@
+interface NameValueNotes {
+    name:string;
+    value:string;
+    notes:string;
+}
+
+export interface ImageDetail {
+    imageFileName?: string; // to replace the one below with this
+    fullFileName?:string; // to remove this 
+    description?: string;
+    summaryLabel?:string;
+    iterativeText?: string;
+    footNote?: string;
+    canvassSize?: string;
+    canvassMaterial?: string;
+    drawingStyle?: string; 
+    content?: string;
+    contentOther?: string; // content:Other, adding contentOther field. initial code changes
+    evolution?: string;
+    evolutionSequence?: number;
+    evolutionDate?: string;
+    duplicate?:boolean;
+    rating?: number;
+    ratingYear?: number;
+    dateUploaded?: string;
+    labelValue?:LabelValue[]
+generic?:string;
+genericCategory?:number; // 1 Ganesh, 2 Goddesses, 3 shiva (+ family), 4 Narayan + family + Hanuman, 5 Gurus
+genericDescription?: string;
+    iterations?:any[];  
+}
+export   interface ImageElement {
+    folder:string;
+    theme?:string;
+    themeSummary?:string;
+    files:any[];
+} 
+
+export interface  LabelValue {
+    label:string ;
+    value:string ;
+    notes:string;
+}
+export   interface ContentList {
+    contentFile:any ;
+    contentCategory:string ;
+    reverseStack?:string;
+    roles:string[]; // maybe multiple, but for now keep it flattened as a csv string
+    latest?:boolean; // for latest uploads
+  }
