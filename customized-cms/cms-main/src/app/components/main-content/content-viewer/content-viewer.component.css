@@ -18,34 +18,37 @@
 #div-container {
     
     margin-top: 1px;
-    
     flex-wrap: wrap;
     border: 2px outset darkslateblue ;
     border-radius: 9px;
+    background: aliceblue;
+    /*overkill
     box-shadow: 2px;
     background:radial-gradient(aliceblue, skyblue);
+    June 2025 C&O styling  keep bare minimum */
     height: auto;
     width:100%;
     margin:2px;
     overflow-y: scroll;
     display: none;
-   /*align-items: center;
-    justify-content: center;
-    */
-   
 }
 #div-container-landing {
     margin: 10px;
     width:90%;
     border: 5px outset darkcyan ;
-    background: radial-gradient(cyan, skyblue, darkblue);
+    background:  skyblue ; 
+    /*overkill 
+    background: radial-gradient(cyan, skyblue, darkblue); 
+    June 2025 C&O styling  keep bare minimum */
     border-radius: 40px;
 }
 #div-container-landing a {
     margin:auto;
     text-decoration: none;
     color: darkslateblue;
+    /*overkill 
     text-shadow: 0 4px 8px  rgba(25,25,0,0.7);;;
+    June 2025 C&O styling  keep bare minimum */
     text-align: center;
 }
 
@@ -66,9 +69,9 @@
     max-height:90%;
     margin: 1px;
     flex: 1;
-    
-
+   /*overkill 
     background:radial-gradient(aliceblue, skyblue);
+    June 2025 C&O styling  keep bare minimum */
 }
   #close-div {
     cursor: pointer;
@@ -281,6 +284,13 @@
 box-shadow: 0 4px 8px  rgba(25,25,0,0.7);;
     float:left ;
 }
+@media screen and (min-width:1129px) {
+
+}
+
+@media screen and (max-width:1128px) {
+
+}
 @media screen and (min-height:800px) {
     #modaldivpic  {
         max-height: 580px;
@@ -298,10 +308,6 @@ box-shadow: 0 4px 8px  rgba(25,25,0,0.7);;
     }
 }
 
-@media screen and (min-width:1029px) {
-    
-   
-}
 @media screen and (max-width:550px) {
 
     #modal-container {

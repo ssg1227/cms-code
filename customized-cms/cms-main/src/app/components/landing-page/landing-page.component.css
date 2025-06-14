@@ -11,5 +11,5 @@
     border-radius: 7px;
     font-size:1vw;
     overflow-y: auto;
-   background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
+    background-image: linear-gradient(to right, lightgreen, aliceblue, skyblue);
 }

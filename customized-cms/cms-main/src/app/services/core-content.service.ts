@@ -695,44 +695,45 @@ export class CoreContentService {
        */
         stylingObject.outer = 'card-default' ;
         stylingObject.image = `card-image` ;
+        /* June 2025 C&O styling  removing the dynamic styling which seems more over fancy overkill  */
         switch(fileDetail.content) {
           case 'watercolor-pencil': 
                   returnHTML = `${returnHTML} including WaterColor Pencils`; 
-                  stylingObject.outer = 'card-default card-watercolor' ;
-                  stylingObject.image = `${stylingObject.image}  card-image-watercolor` ;
+                  // June 2025 C&O styling  stylingObject.outer = 'card-default card-watercolor' ;
+                  // June 2025 C&O styling  stylingObject.image = `${stylingObject.image}  card-image-watercolor` ;
                   break ;
           case 'color-pencil': returnHTML = `${returnHTML}Color Pencils`; 
-                  stylingObject.outer = 'card-default' ;
-                  stylingObject.image = `${stylingObject.image}` ;
+                  // June 2025 C&O styling  stylingObject.outer = 'card-default' ;
+                  // June 2025 C&O styling  stylingObject.image = `${stylingObject.image}` ;
                   break ;
           case 'black-white': returnHTML = `${returnHTML}Black and white with possible shading`;
-                  stylingObject.outer = 'card-default card-mono' ;
-                  stylingObject.image = `${stylingObject.image} card-image-mono` ;
+                  // June 2025 C&O styling  stylingObject.outer = 'card-default card-mono' ;
+                  // June 2025 C&O styling  stylingObject.image = `${stylingObject.image} card-image-mono` ;
                   break ;
           case 'color-crayon': returnHTML = `${returnHTML}Color Crayons`; 
-                  stylingObject.outer = 'card-default' ;
-                  stylingObject.image = `${stylingObject.image}  card-image-crayon` ;
+                  // June 2025 C&O styling  stylingObject.outer = 'card-default' ;
+                  // June 2025 C&O styling  stylingObject.image = `${stylingObject.image}  card-image-crayon` ;
                   break ;
           case 'color-pencil black-white': returnHTML = `${returnHTML}Combination of color + B&W`; 
-                  stylingObject.outer = 'card-default card-mix' ;
-                  stylingObject.image = `${stylingObject.image} card-image-mix` ;
+                  // June 2025 C&O styling  stylingObject.outer = 'card-default card-mix' ;
+                  // June 2025 C&O styling  stylingObject.image = `${stylingObject.image} card-image-mix` ;
                   break ;
           case 'poem black-white': returnHTML = `${returnHTML}Drawing + poetry`; 
-                  stylingObject.outer = 'card-default card-mix' ;
-                  stylingObject.image = `${stylingObject.image}` ;
+                  // June 2025 C&O styling  stylingObject.outer = 'card-default card-mix' ;
+                  // June 2025 C&O styling  stylingObject.image = `${stylingObject.image}` ;
                   break ;
           case 'other-combo': returnHTML = `${returnHTML} Mix of different types, like sketch + photo`; 
-                  stylingObject.outer = 'card-default' ;
-                  stylingObject.image = `${stylingObject.image}` ;
+                  // June 2025 C&O styling  stylingObject.outer = 'card-default' ;
+                  // June 2025 C&O styling  stylingObject.image = `${stylingObject.image}` ;
                   break ;
           default:  fileDetail.contentOther? returnHTML = `${returnHTML}${fileDetail.contentOther}` : returnHTML = `${returnHTML}Other`; 
                   // content:Other, adding contentOther field. initial code changes
-                  stylingObject.outer = 'card-default' ;
-                  stylingObject.image = `${stylingObject.image} card-other` ;break ;
+                  // June 2025 C&O styling  stylingObject.outer = 'card-default' ;
+                  // June 2025 C&O styling  stylingObject.image = `${stylingObject.image} card-other` ;break ;
         }
         if(fileDetail.canvassSize === 'soft' || fileDetail.content ==='other-combo' ) {
           
-          stylingObject.image = `${stylingObject.image} card-image-softcopy`
+          // June 2025 C&O styling  stylingObject.image = `${stylingObject.image} card-image-softcopy`
           console.log(`####fileDetail.canvassSize ${stylingObject.image}`)
         }
       }

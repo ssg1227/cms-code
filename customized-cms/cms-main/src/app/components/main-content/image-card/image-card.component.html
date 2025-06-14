@@ -1,8 +1,16 @@
 <div 
+  class="card-default"   
+  (click)="expand()"
+  
+  >
+  <!--  June 2025 C&O styling remove overkill
+  <div 
   class="card"   
   [ngClass]="getCardCSS()" 
 
-  (mouseover)="toggleCardState()" (mouseout)="toggleCardState()" (click)="expand()" >
+    (mouseover)="toggleCardState()" (mouseout)="toggleCardState()" (click)="expand()"
+  >
+  -->
   <!--div *ngIf="cardInfo.key=='contact'">
     <app-mail-form></app-mail-form>
   </div-->

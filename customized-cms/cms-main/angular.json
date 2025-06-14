@@ -16,6 +16,9 @@
             "outputPath": "dist/cms-picture-gallery",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "allowedCommonJsDependencies": [
+                "long"
+            ],
             "polyfills": [
               "zone.js"
             ],

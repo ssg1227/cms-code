@@ -2,6 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "paths": {
       "@shared/*": ["src/shared/*"], // Maps '@shared' to the 'src/shared' directory

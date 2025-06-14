@@ -2,7 +2,16 @@
 # LOG OF CHANGES RECORDED W.E.F. May 1st 20245 #
 "CMS Picture Gallery" by Shantanu Gadkari
 - *** June 2025 onward** 
-   - **Cleanup and serious optimization Start** 'June 2025 C&O' comments
+   - **Cleanup and serious optimization Start** 'June 2025 C&O ' comments
+    - Image resizing using tensforflow *WIP:**HOLD BACK June 1-15 2025+ issues with JS angular library compatibility*** 
+      - *Let's first get familiar using tensorflow with chaste js, then work on compatibility layer*
+      - new component image-resizer.component 
+      - compile errors  
+        - angular json added  "allowedCommonJsDependencies": [ "long" ],
+        - (sudo) npm install long; npm install --save-dev @types/long
+    - Responsive styling *look for 'June 2025 C&O styling ' comments*
+      - removing fancy styling like box shadow, transient etc for smaller screens 
+   - ***Slideshow tweaked to 1.5 secs*** 
    - ***600 by 06/01!!!*** 
     - ***June 1, 2025***  *by 6:30 PM PST, I uploaded the ***600th unique drawing image*** to [Art is Worship] https://art-is-worship.web.app/ and ***published*** it* 
     - Apart from support by friends, thanks to my codebase. Thanks to the full stack automation program.
