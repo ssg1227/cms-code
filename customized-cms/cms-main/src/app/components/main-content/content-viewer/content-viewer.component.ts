@@ -444,7 +444,7 @@ export class ContentViewerComponent {
    }
    // buttons and slide shows 
    slideshowInterval: any; // Variable to hold interval reference
-    slideshowSpeed: number = 1500; // Default slideshow speed in milliseconds (2 seconds)
+   slideshowSpeed: number = 1500; // Default slideshow speed in milliseconds (1.5 seconds)
 
    next() {
     this.currentCellSelected++;

@@ -3,7 +3,7 @@ import { TreeNodeElement  } from '@settings-and-models/tree-node-element';
 import {  MenuTreeElements } from 'src/assets/content-tree/menu-tree-elements' ;
 import { ImageElement, ContentList } from '@settings-and-models/image-detail' ;
 import { BreadCrumb } from '@settings-and-models/bread-crumbs';
-
+import { LatestUploadedTimewiseImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/latest-uploads/latest-uploaded-timewise.image.list';
 import { ContextedCoreContentService } from './contexted-core-content.service';
 @Injectable({
   providedIn: 'root'
@@ -313,7 +313,12 @@ export class CoreContentService {
 
           return { all:  this.allImageList, gen: this.genImageList };
           break ;
-          case 'latest-uploads-timewise':
+          /* June 2025 C&O hard code lists.. 
+          1. This list is no longer compiled .. see CHANGELOG.md for details 
+          2. MOved to context-core-content.service.ts
+          case 'latest-uploads-timewise': - now in default
+            this.genImageList = new LatestUploadedTimewiseImageList();
+             return { all:  this.allImageList, gen: this.genImageList };
             if (JSON.stringify(this.deviceIsMobile)==='ftrue') { 
               // latest uploads workaround and other optimizations May 23 2025
               // compiling themewise list
@@ -332,6 +337,8 @@ export class CoreContentService {
                   if(latestImageList.latest && latestImageList.latest === true)
                     this.loadLatestUploads(latestImageList);
                 })
+                
+      
                 return { all:  this.allImageList, gen: this.genImageList };
                 console.log(`#### LATEST UPLOAD .. RETURN AFTER SORT`);
             } else {
@@ -340,6 +347,7 @@ export class CoreContentService {
               return retLatestListTimewise ;
             }
             break;
+            */
             case 'latest-uploads-themewise':
               this.genImageList = { 
                 allImageList: [ 
@@ -361,7 +369,7 @@ export class CoreContentService {
                 
               break;
             default: 
-            
+    
             // @ts-ignore: Object is possibly 'null'.
             console.log(strParam) ;
             this.genImageList = this.contentList.find(cl => cl.contentCategory === strParam)? 
@@ -463,6 +471,11 @@ export class CoreContentService {
       });
       /* April 25+ load issues  cache list if unavailable*/
       retLatestListTimewise  = { all:  this.allImageList, gen: this.genImageList }
+      console.log(`#### LATEST START`);
+                this.genImageList.allImageList[0].files.forEach((a:any)=> {
+                  console.log(`,${JSON.stringify(a)}`);
+                })
+                console.log(`#### LATEST END`);
       localStorage.setItem('latest-list-timeline',JSON.stringify(retLatestListTimewise));
       console.log(` One time Cache`);
       return retLatestListTimewise ;

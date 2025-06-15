@@ -19,6 +19,26 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Sat Jun 14 2025 17:34:45 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `DDayJune122025 Upload June 14`,
+fullFileName: `${this.imageRoot}DDayJune122025Shades1Complete.jpeg`,
+description: `<ul><li> DDayJune122025 Upload June 14 </li><li> A belated commemorative of one of several game changing events of WW2 - D Day June 6 1944  The ship numbers on the LCTs are a (tongue in cheek) reference and tribute to the 82nd and 101st airborne:  for  their significant contributions to D-Day </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Sat Jun 14 2025 17:28:45 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Rafi June12 2025 Upload June 14`,
+fullFileName: `${this.imageRoot}RafiJUne122025Shades1Complete.jpeg`,
+description: `<ul><li> Rafi June12 2025 Upload June 14 </li><li> Mohammed Rafi, Legendary Playback singer  </li><li> December 24, 1924, Kotla Sultan Singh, India </li><li> Died July 31, 1980 </li><li> Actually the sketch was completed Dec 24 ish 2024 </li><li> But it needed some work which I finally got down to doin June 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '06-01-2025 10:10',

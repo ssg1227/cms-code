@@ -11,6 +11,16 @@ export class PlacesScenesObjectsImageList {
                 themeSummary:`</strong>Scenes, Objects, Structures, (some may be items containing mix modes of transport or something like an air dogfight)<br/>
                 Mumbai gets her due place and a dedicated theme; all Mumbai related sketches will be found in 'Mumbai Meri Jaan'`,
                 files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Sat Jun 14 2025 17:34:45 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `DDayJune122025 Upload June 14`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/DDayJune122025Shades1Complete.jpeg`,
+description: `<ul><li> DDayJune122025 Upload June 14 </li><li> A belated commemorative of one of several game changing events of WW2 - D Day June 6 1944  The ship numbers on the LCTs are a (tongue in cheek) reference and tribute to the 82nd and 101st airborne:  for  their significant contributions to D-Day </li></ul>`,
+},
 {// /Users/shantanug/Documents/GitHub/cms-code/customized-cms/cms-main/src/assets/gallery-files/images/places-scenes-objects/WCPencilsMar1-2024-June1-2025.jpeg
 canvassMaterial:  'Photo print matt paper',
 canvassSize:  'A4',

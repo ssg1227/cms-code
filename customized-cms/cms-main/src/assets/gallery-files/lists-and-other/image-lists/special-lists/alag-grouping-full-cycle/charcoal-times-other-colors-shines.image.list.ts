@@ -19,6 +19,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'soft',contentOther: 'charcoal and shading',
+dateUploaded:  'Sat Jun 14 2025 17:09:27 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Jag Pradakshina Jun10,25 Charcoal1 Upload Jun14`,
+fullFileName: `${this.imageRoot}JagPradakshinaJun102025Charcoal1Complete.jpeg`,
+description: `<ul><li> Jag Pradakshina Jun10,25 Charcoal1 Upload Jun14 </li><li> Mahadev had a contest where the God would get special status who completed 'Pradakshina' (clockwise religious circumambulation ) fastest of the World </li><li> Shree Ganesh showed His wisdom by doing Pradakshina of His parents who mean the wordl </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',contentOther: 'charcoal and shading',
 dateUploaded:  '06-01-2025 12:00',

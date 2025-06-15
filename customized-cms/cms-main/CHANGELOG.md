@@ -2,6 +2,19 @@
 # LOG OF CHANGES RECORDED W.E.F. May 1st 20245 #
 "CMS Picture Gallery" by Shantanu Gadkari
 - *** June 2025 onward** 
+   - **Hardcoding lists** 
+    - dynamic processing vs additional JSONs
+      - Latest uploads timewise
+        - list is generated dynamically 
+          - *BUT (cons)*
+          - has to scan through all the imagelist JSONs to get the latest by x days on the fly
+          - I've been wanting to change the timestamp dependent 'latest'; just fill the list with the last uploaded x drawings; tricky and/or elaborate to put into logic
+          - *That said (Pros) against hard coded list*
+          - Dont have to occupy hard disk with a new list and maintain it all the time
+          - Will have to add logic to my automation upload to update this list every time an upload is maid AND delete older entries
+          - will have to keep rewriting on hard disk to keep the list up to date
+          
+
    - **Cleanup and serious optimization Start** 'June 2025 C&O ' comments
     - Image resizing using tensforflow *WIP:**HOLD BACK June 1-15 2025+ issues with JS angular library compatibility*** 
       - *Let's first get familiar using tensorflow with chaste js, then work on compatibility layer*
@@ -11,6 +24,16 @@
         - (sudo) npm install long; npm install --save-dev @types/long
     - Responsive styling *look for 'June 2025 C&O styling ' comments*
       - removing fancy styling like box shadow, transient etc for smaller screens 
+    - Hard coding special lists into list.ts files instead of dynamically compiling them Comments 'June 2025 C&O hard code lists'
+      - Creating 'latest-uploads' (*Done for '-timewise'*), 'best', 'changers' and other folders under 'special-lists'
+      - Creating the individual lists like 'latest-uploaded-timewise.image.list.ts' (*Done*) under the respective folder
+      - Initial population using 'console.log(JSON.stringify()) in an array from the compiled list', then copy paste into the .list.ts file
+      - Right now loading is semi-automated using 'Write JSON to file' duplicate entry
+      - 'Semi-automated because the above operation needs to trigger automatically and also something to delete oldest entries as and when the file becomes 
+             large
+      - Another advantage besides performance is that it will ALWAYS HAVE latest uploads irrespective of how long ago
+      - TODO, apart from moving other compiled lists  - permission based population, full automation (including delete of oldest records where applicable)
+          
    - ***Slideshow tweaked to 1.5 secs*** 
    - ***600 by 06/01!!!*** 
     - ***June 1, 2025***  *by 6:30 PM PST, I uploaded the ***600th unique drawing image*** to [Art is Worship] https://art-is-worship.web.app/ and ***published*** it* 

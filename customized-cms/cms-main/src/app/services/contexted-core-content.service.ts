@@ -46,6 +46,9 @@ import { ShadesAndShines1ImageList} from 'src/assets/gallery-files/lists-and-oth
 import { ShadesAndShinesOtherColors1ImageList} from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/alag-grouping-full-cycle/shades-and-shines-other-colors-1.image.list';
 import { SoftCopiesAndCompilations1List } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1.list'
 import { CharcoalTimesOtherColorsShinesImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines.image.list';
+
+import { LatestUploadedTimewiseImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/latest-uploads/latest-uploaded-timewise.image.list';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -123,7 +126,11 @@ export class ContextedCoreContentService {
     contentList.push( { contentFile:new ShadesAndShinesOtherColors1ImageList(),contentCategory:'shades-and-shines-other-colors-1', roles:["any"],latest:true, reverseStack:'true'}) ;      
     contentList.push( { contentFile:new CharcoalTimesOtherColorsShinesImageList(),contentCategory:'charcoal-times-other-colors-shines', roles:["any"],latest:true, reverseStack:'true'}) ;     
     contentList.push( { contentFile:new SoftCopiesAndCompilations1List(),contentCategory:'soft-copies-and-compilations-1', roles:["any"],latest:true, reverseStack:'true'}) ;        
- }
+ 
+    contentList.push( { contentFile:new LatestUploadedTimewiseImageList(),contentCategory:'latest-uploads-timewise', roles:["any"],latest:true, reverseStack:'false'}) ;        
+
+  }
+   
   loadSpecialLists(contentList:ContentList[], specialFiles:any,strParam:string):boolean {
      
    

@@ -13,6 +13,16 @@ public allImageList:ImageElement[]  =  [
              theme:'Themes and Pending categorization',
              themeSummary: `Some theme sketches with components, some as-yet 'one-off' or uncategorized sketches'`,
              files: [   
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Sat Jun 14 2025 17:34:45 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `DDayJune122025 Upload June 14`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/DDayJune122025Shades1Complete.jpeg`,
+description: `<ul><li> DDayJune122025 Upload June 14 </li><li> A belated commemorative of one of several game changing events of WW2 - D Day June 6 1944  The ship numbers on the LCTs are a (tongue in cheek) reference and tribute to the 82nd and 101st airborne:  for  their significant contributions to D-Day </li></ul>`,
+},
 
 {
 canvassMaterial:  'Plain paper',
