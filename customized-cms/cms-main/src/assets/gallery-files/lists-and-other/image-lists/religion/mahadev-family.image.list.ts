@@ -161,7 +161,8 @@ iterations: [
                }]
              },
          {  canvassSize:  'A4',
-         content:  'black-white',fullFileName: `${this.imageRoot}/AumGaShivParKashiVishwCTLightNov172020Final.jpeg`, 
+         dateUploaded: '11-17-2020',
+              content:  'black-white',fullFileName: `${this.imageRoot}/AumGaShivParKashiVishwCTLightNov172020Final.jpeg`, 
          evolution: `<b>Sketch of a sculpture which has always drawn, intrigued and fascinated me... <br/></b>`,
          evolutionSequence: 1, evolutionDate: `11-17-2020`,
                 description: 
@@ -169,6 +170,7 @@ iterations: [
          <br/>Nov 17 2020`},
          {  
             canvassSize:  'A4',
+         dateUploaded: '02-17-2021',
               content:  'black-white',evolution: `<b>A first in sketching action figures, and in dance poses, with the best possible subjects :) <br/></b>`,
             evolutionSequence: 1, evolutionDate: `02-14-2021`,
             fullFileName: `${this.imageRoot}/MahadevParvatiDanceFeb142021.jpeg`, 
@@ -180,6 +182,7 @@ iterations: [
              },
     {  
       canvassSize:  'A4',
+         dateUploaded: '03-11-2021',
       content:  'black-white',fullFileName: `${this.imageRoot}/MahadevParvatiDanceMarch112021Shivratri.jpeg`, 
         description: `<ul>
                                 <li>Another dancing poses Mahadev and consort (Sati/ Parvati)</li>
@@ -189,6 +192,7 @@ iterations: [
         },
         {  
          canvassSize:  'A4',
+         dateUploaded: '04-11-2021',
               content:  'black-white',fullFileName: `${this.imageRoot}/MahadevParvatiDancePoseQ1Q22021i.jpg`, 
          description: `<ul>
                                  <li>Another dancing poses Mahadev and consort (Sati/ Parvati)</li>
@@ -198,6 +202,7 @@ iterations: [
          },
         {  
          canvassSize:  'A4',
+         dateUploaded: '03-11-2021',
               content:  'black-white',fullFileName: `${this.imageRoot}/GaneshMahadevParvatiMarch122021Shivratri+1.jpeg`, 
             description: `<ul>
                             <li>Inspired by the Laxmi Narayan sketch </li>

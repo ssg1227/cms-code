@@ -282,6 +282,7 @@ fullFileName: `${this.imageRoot}KedarnathTemple03012022.jpeg`,
                   </ul>`,
               canvassSize:  'A4',
               content:  'black-white',
+              dateUploaded: '12-27-2020',
               fullFileName: `${this.imageRoot}unsignedShivVeena12272020.jpeg`, 
                  description: 
                     `<ul>
@@ -331,12 +332,15 @@ fullFileName: `${this.imageRoot}KedarnathTemple03012022.jpeg`,
          {  
           canvassSize:  'A4',
           content:  'black-white',
+          dateUploaded:'02-21-2021',
           fullFileName: `${this.imageRoot}MahadevMeditateFeb22021.jpeg`, 
             description: 
                `<ul>
                  <li>Feb 2 2021</li>
                </ul>`
     },  {  
+
+          dateUploaded:'02-23-2021',
       canvassSize:  'A4',
               content:  'color-pencil',
               fullFileName: `${this.imageRoot}Mahadev-color-Q1.jpg`, 
@@ -345,6 +349,8 @@ fullFileName: `${this.imageRoot}KedarnathTemple03012022.jpeg`,
            <li>Q1 2021 - color </li>
          </ul>`
 }, {  
+
+          dateUploaded:'04-23-2021',
   canvassSize:  'A4',
   content:  'black-white',
   fullFileName: `assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-pre-q3-2021/SaiTemplateKhanderaya-May2021-Sai.jpeg`, 
@@ -355,6 +361,7 @@ fullFileName: `${this.imageRoot}KedarnathTemple03012022.jpeg`,
                 <li>Probably April 29 2021</li></ul>
                ` }, {  
                 canvassSize:  'A4',
+                dateUploaded:'04-21-2021',
               content:  'black-white',
               fullFileName: `${this.imageRoot}GeneralShivlingRamNavmi2021.jpg`, 
                 description: 

@@ -1,6 +1,6 @@
  import {  ImageElement } from '@settings-and-models/image-detail'
 // /Users/Shantanu/Documents/GitHub/cms-sources/journey-of-drawings/src/${this.imageRoot}Ganesh-1-March1723.jpeg
-export class LatestUploadedTimewiseImageList {
+export class MostRecentlyUploadedImageList {
  sort: string = 'asc'
  imageRoot=`assets/gallery-files/images/religion/aumkar-shree-ganesh/gte-q1-2024/` ;
 public allImageList:ImageElement[]  =  [

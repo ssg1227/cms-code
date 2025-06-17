@@ -188,7 +188,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '', params:'showpieces', label: 'The Best'}
         ],
     }, 
-     
+     /* June 2025 C&O restructuring 
     { 
         parentKey: "special-lists", key: 'latest-uploads', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["any"], 
         label: 'Latest Uploads', 
@@ -197,6 +197,21 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '', params:'latest-uploads', label: 'Latest Uploads'}
+        ],
+    },
+    */
+    /*  June 2025 C&O restructuring 
+         - 'latest-uploads-timewise' changed to 'most-recently-uploaded' and move up in menu tree
+      - 'latest-uploads-themewise' put in cold storage - stopped making general sense and too much to maintain; too little ROI
+    */
+   { 
+        parentKey: "special-lists", key: 'most-recently-uploaded', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["any"], 
+        label: 'Most Recent Uploads', 
+        description:`The most recent drawings uploaded.`,
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'special-lists', label: 'Special Lists'},
+            {link: '', params:'most-recently-uploaded', label: 'Most Recent Uploads'}
         ],
     },
     {
@@ -532,6 +547,10 @@ Also increasing numbers of Swami Samartha sketches`,
                 {link: '', params:'showpiece-2025', label: 'The Best of 2025'}
             ], 
     },
+     /*  June 2025 C&O restructuring 
+         - 'latest-uploads-timewise' changed to 'most-recently-uploaded' and move up in menu tree
+      - 'latest-uploads-themewise' put in cold storage - stopped making general sense and too much to maintain; too little ROI
+    
     { 
         parentKey: "latest-uploads", key: 'latest-uploads-themewise', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["any"], 
         label: 'Latest Uploads: Theme', 
@@ -542,19 +561,8 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '/view', params:'latest-uploads', label: 'Latest Uploads'},
             {link: '', params:'latest-uploads-themewise', label: 'Latest Uploads: Theme'}
         ],
-    }
-    ,
-    { 
-        parentKey: "latest-uploads", key: 'latest-uploads-timewise', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["any"], 
-        label: 'Latest Uploads: By Timeline', 
-        description:`Images of drawings uploaded the last 60 days.`,
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '/view', params:'special-lists', label: 'Special Lists'},
-            {link: '/view', params:'latest-uploads', label: 'Latest Uploads'},
-            {link: '', params:'latest-uploads-timewise', label: 'Latest Uploads: By Timeline'}
-        ],
     },
+    */
 // ### END SHOWPIECES
  {
     parentKey:"otherbeings-places-events", key: "religion-and-guru", levelIndex:2,isLeafParent:true, roles:['non-religious'],

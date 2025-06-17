@@ -117,12 +117,12 @@ export class AuthService {
     localStorage.setItem('role',this.roleSetter(username));
     // @ts-ignore: Object is possibly 'null'.
        localStorage.setItem('userRoles',this.userList.find(x => x.userName === username).userRoles.toString());// core user type
-    if (directLatet === true) {
-      this.router.navigate(['/view','latest-uploads-timewise']).then( (e) => {
+    if (directLatet === true) { //June 2025 C&O restructuring - from latest-uplpads-timewise
+      this.router.navigate(['/view','most-recently-uploaded']).then( (e) => {
       
         if (e) {
-          localStorage.setItem("key", 'latest-uploads-timewise');
-          localStorage.setItem('current-menu','latest-uploads-timewise');
+          localStorage.setItem("key", 'most-recently-uploaded'); //June 2025 C&O restructuring - from latest-uplpads-timewise
+          localStorage.setItem('current-menu','most-recently-uploaded'); //June 2025 C&O restructuring - from latest-uplpads-timewise
           localStorage.setItem("isLeafParent",'true');
           if (this.coreContentService.TestMode === true)
               console.log("auth service: login  is successful!");

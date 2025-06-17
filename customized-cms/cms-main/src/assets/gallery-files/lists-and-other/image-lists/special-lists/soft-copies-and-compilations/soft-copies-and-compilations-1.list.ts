@@ -22,6 +22,16 @@ files: [
 canvassMaterial:  'other',
 canvassSize:  'other',
 content:  'soft',contentOther:'Template based Software edit AND Mix of all drawing "utensils" used so far - crayons, color pencils, watercolor pencils, charcoals, metal color pencils and shading',
+dateUploaded:  '06-14-2025',
+duplicate:  'false',
+summaryLabel:  `Father's day special Jun 15 2025. Upload Same day`,
+fullFileName: `${this.imageRoot}FathersDay2025.jpeg`, 
+description: `<ul><li>Father's day special Jun 15 2025. Upload Same day</li><li>Shirdi Sai from Dec 2021 to my flower vase template</li></ul>`
+} ,
+  {
+canvassMaterial:  'other',
+canvassSize:  'other',
+content:  'soft',contentOther:'Template based Software edit AND Mix of all drawing "utensils" used so far - crayons, color pencils, watercolor pencils, charcoals, metal color pencils and shading',
 dateUploaded:  '05-31-2025',
 duplicate:  'false',
 summaryLabel:  `Ishaan, my wife Snehal's nephew June 1 2025 Birthday. Upload Same day`,

@@ -3,7 +3,6 @@ import { TreeNodeElement  } from '@settings-and-models/tree-node-element';
 import {  MenuTreeElements } from 'src/assets/content-tree/menu-tree-elements' ;
 import { ImageElement, ContentList } from '@settings-and-models/image-detail' ;
 import { BreadCrumb } from '@settings-and-models/bread-crumbs';
-import { LatestUploadedTimewiseImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/latest-uploads/latest-uploaded-timewise.image.list';
 import { ContextedCoreContentService } from './contexted-core-content.service';
 @Injectable({
   providedIn: 'root'
@@ -364,6 +363,11 @@ export class CoreContentService {
                   if(latestImageList.latest && latestImageList.latest === true)
                     this.loadLatestUploads(latestImageList);
                 })
+                console.log(`#### LATEST START`);
+                this.genImageList.allImageList[0].files.forEach((a:any)=> {
+                  console.log(`,${JSON.stringify(a)}`);
+                })
+                console.log(`#### LATEST END`);
                 return { all:  this.allImageList, gen: this.genImageList };
                 console.log(`#### LATEST UPLOAD .. RETURN AFTER SORT`);
                 
@@ -553,6 +557,9 @@ export class CoreContentService {
     if(currentList.contentFile.allImageList && currentList.contentFile.allImageList[0].files && 
         currentList.contentFile.allImageList[0].files.length > 0) {
           currentList.contentFile.allImageList[0].files.sort(function(a:any, b:any) {
+            if (a.dateUploaded === null || a.dateUploaded == undefined) {
+              console.log(`corecontentservice latest upload: date problem ${JSON.stringify(a)}`)
+            }
             const aFormatDate = new Date(a.dateUploaded.indexOf(':') > 0 ?
                       a.dateUploaded: `${a.dateUploaded}`) ;
             const bFormatDate = new Date(b.dateUploaded.indexOf(':') > 0 ?

@@ -173,13 +173,15 @@ description: `<ul><li> Shree Ganesh, Baba and Maa Saraswati  June 2 2024 </li></
           { canvassSize: 'A4', content:  'black-white',
             fullFileName: 
             `${this.imageRoot}ThreeDevisMahalaxmiTempleQ12021-1.jpg`, 
+             dateUploaded: '01-25-2021',
             description: `<ul><li>Mahalaxmi Temple Mumnbai </li>
             <li>Mahakali, Mahalaxmi, Mahasaraswati -  Sketched  start 2021</li></ul> ` },
            { 
             canvassSize: 'soft', content:  'black-white',
            fullFileName: 
         `${this.imageRoot}navratri-2020/NavDurgaNavratri2020.png`, 
-
+ dateUploaded: '10-25-2020',
+            
         evolution: `- <b> Navratri collage</b><br/>`,
                 evolutionSequence: 2, evolutionDate: `10-09-2020`,
           description: `<ul><li>An 'unplanned' sketch:</li>
