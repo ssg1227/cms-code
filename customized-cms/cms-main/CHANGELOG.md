@@ -26,8 +26,8 @@
       - removing fancy styling like box shadow, transient etc for smaller screens 
     - Hard coding special lists into list.ts files instead of dynamically compiling them Comments 'June 2025 C&O hard code lists'
       - 'June 2025 C&O restructuring'
+       - Creating 'latest-uploads' (*Done for '-timewise'*), 'best', 'changers' and other folders under 'special-lists'
       - Changers2023ImageList, Changers2022AndBeforeList completed June 20
-      - Creating 'latest-uploads' (*Done for '-timewise'*), 'best', 'changers' and other folders under 'special-lists'
       - 'latest-uploads-timewise' changed to 'most-recently-uploaded' and move up in menu tree
       - 'latest-uploads-themewise' put in cold storage - stopped making general sense and too much to maintain; too little ROI
       - Creating the individual lists like 'latest-uploaded-timewise.image.list.ts' (*Done*) under the respective folder
