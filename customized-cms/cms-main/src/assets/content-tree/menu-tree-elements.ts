@@ -444,7 +444,7 @@ Also increasing numbers of Swami Samartha sketches`,
      
 
 // ### END SPECIAL LISTS
-
+   /*  June 2025 C&O restructuring This list is now hard coded and not compiled and merged with changers-2022
     { 
         parentKey: "changers", key: 'changers-b4-2022', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["any"], 
         label: 'Changers: before 2022', 
@@ -454,27 +454,30 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '/view', params:'changers', label: 'Changers'},
             {link: '', params:'changers-b4-2022', label: 'Changers: before 2022'}
         ],
-    },
+    },*/
     { 
-        parentKey: "changers", key: 'changers-2022', levelIndex:3,  isLeafParent: true, isCompiledList:true, roles: ["any"],
-        label:  'Changers: 2022',
+        parentKey: "changers", key: 'changers-2022-and-before', levelIndex:3,  isLeafParent: true, isCompiledList:true, roles: ["any"],
+        label:  'Changers: 2022 and Before',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '/view', params:'changers', label: 'Changers'},
-            {link: '', params:'changers-2022', label: 'Changers: 2022'}
+            {link: '', params:'changers-2022-and-before', label: 'Changers: 2022  and Before'}
         ], 
-    },
+    }, 
+     /*  June 2025 C&O restructuring This list is now hard coded and not compiled */
     { 
         parentKey: "changers",key: 'changers-2023', levelIndex:3,  isLeafParent: true,  roles: ["any"],
-        label:  'Changers: 2023',  
+        label:  'Changers: 2023', 
+         
+        description: 'Changers for 2023',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '/view', params:'changers', label: 'Changers'},
             {link: '', params:'changers-2023', label: 'Changers: 2023'}
         ], 
-    },
+    }, 
     { 
         parentKey: "changers",key: 'changers-2024', levelIndex:3, isLeafParent: true,  roles: ["any"],
         label:  'Changers: 2024', 

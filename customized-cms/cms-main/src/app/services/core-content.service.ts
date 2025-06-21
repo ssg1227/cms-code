@@ -276,9 +276,10 @@ export class CoreContentService {
             this.sortImageList() ;
             return { all:  this.allImageList, gen: this.genImageList };
           break;
-          case 'changers-b4-2022':  
-          case 'changers-2022':  
-          case 'changers-2023': 
+          //  June 2025 C&O case 'changers-b4-2022':  
+          //  June 2025 C&O restructuring moved to list file //
+          // case 'changers-2022':  // changers-2022-and-before
+          //  June 2025 C&O restructuring moved to list file // case 'changers-2023': 
           case 'changers-2024': 
           case 'changers-2025': 
           
@@ -309,7 +310,11 @@ export class CoreContentService {
             let c = aDate  -  bDate ; // aDate - bDate ;
             return  c ;
           });
-
+           console.log(`#### CHANGERS START`);
+                this.genImageList.allImageList[0].files.forEach((a:any)=> {
+                  console.log(`,${JSON.stringify(a)}`);
+                })
+                console.log(`#### CHANGEES END ${strParam} Count ${this.genImageList.allImageList[0].files.length}`);
           return { all:  this.allImageList, gen: this.genImageList };
           break ;
           /* June 2025 C&O hard code lists.. 

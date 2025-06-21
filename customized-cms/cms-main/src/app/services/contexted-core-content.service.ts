@@ -48,6 +48,9 @@ import { SoftCopiesAndCompilations1List } from 'src/assets/gallery-files/lists-a
 import { CharcoalTimesOtherColorsShinesImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines.image.list';
 //June 2025 C&O restructuring - from latest-uplpads-timewise
 import { MostRecentlyUploadedImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/latest-uploads/most-recently-uploaded.image.list';
+//June 2025 C&O restructuring -Changers 
+import {  Changers2023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/changers/changers-2023.image.list';
+import {  Changers2022AndBeforeImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/changers/changers-2022-and-before.image.list';
 // import { LatestUploadedTimewiseImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/latest-uploads/latest-uploaded-timewise.image.list';
 
 @Injectable({
@@ -130,7 +133,10 @@ export class ContextedCoreContentService {
     //June 2025 C&O restructuring - from latest-uplpads-timewise
     // contentList.push( { contentFile:new LatestUploadedTimewiseImageList(),contentCategory:'latest-uploads-timewise', roles:["any"],latest:true, reverseStack:'false'}) ;        
     contentList.push( { contentFile:new MostRecentlyUploadedImageList(),contentCategory:'most-recently-uploaded', roles:["any"],latest:true, reverseStack:'false'}) ;   
-  }
+  //June 2025 C&O restructuring -Changers 
+  contentList.push( { contentFile:new Changers2023ImageList(),contentCategory:'changers-2023', roles:["any"],latest:true, reverseStack:'false'}) ;  
+  contentList.push( { contentFile:new Changers2022AndBeforeImageList(),contentCategory:'changers-2022-and-before', roles:["any"],latest:true, reverseStack:'false'}) ;  
+   }
    
   loadSpecialLists(contentList:ContentList[], specialFiles:any,strParam:string):boolean {
      
