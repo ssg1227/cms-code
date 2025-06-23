@@ -24,11 +24,19 @@
         - (sudo) npm install long; npm install --save-dev @types/long
     - Responsive styling *look for 'June 2025 C&O styling ' comments*
       - removing fancy styling like box shadow, transient etc for smaller screens 
-    - Hard coding special lists into list.ts files instead of dynamically compiling them Comments 'June 2025 C&O hard code lists'
+    - Hard coding special lists into list.ts files instead of dynamically compiling them Comments 'June 2025 C&O restructuring'
       - 'June 2025 C&O restructuring'
        - Creating 'latest-uploads' (*Done for '-timewise'*), 'best', 'changers' and other folders under 'special-lists'
-      - Changers2023ImageList, Changers2022AndBeforeList completed June 20
-      - 'latest-uploads-timewise' changed to 'most-recently-uploaded' and move up in menu tree
+      - **Testing and additional tweaks**
+      -  add a feature to show image count in header *. **DONE:** condition of ngIf direct image parent, display (imageGroups) show imagelist.length*
+      - publish if you need, but uncomment 'case changers*' befor publish and comment after publish to compare(insert alert of console.log for proof of code reached)
+      - test by comparing numbers and 1st and last if time constrains
+
+      - **Changers** 
+      - Changers2025ImageList, Changers2024ImageList completed June 21
+      - Changers2023ImageList, Changers2022AndBeforeImageList completed June 20
+      - **Latest Uploads** 
+     - 'latest-uploads-timewise' changed to 'most-recently-uploaded' and move up in menu tree
       - 'latest-uploads-themewise' put in cold storage - stopped making general sense and too much to maintain; too little ROI
       - Creating the individual lists like 'latest-uploaded-timewise.image.list.ts' (*Done*) under the respective folder
       - Initial population using 'console.log(JSON.stringify()) in an array from the compiled list', then copy paste into the .list.ts file

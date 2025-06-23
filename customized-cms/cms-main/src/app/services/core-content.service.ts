@@ -276,13 +276,16 @@ export class CoreContentService {
             this.sortImageList() ;
             return { all:  this.allImageList, gen: this.genImageList };
           break;
-          //  June 2025 C&O case 'changers-b4-2022':  
+          //  June 2025 C&O 
+          //case 'changers-b4-2022':  
           //  June 2025 C&O restructuring moved to list file //
-          // case 'changers-2022':  // changers-2022-and-before
-          //  June 2025 C&O restructuring moved to list file // case 'changers-2023': 
-          case 'changers-2024': 
-          case 'changers-2025': 
-          
+          //case 'changers-2022':  // changers-2022-and-before
+          //  June 2025 C&O restructuring moved to list file // 
+          //case 'changers-2023': 
+          //  June 2025 C&O restructuring moved to list file // 
+          //case 'changers-2024': 
+          //case 'changers-2025': 
+          console.log(`############### compiled changers ${strParam}`);
           if (strParam.indexOf('b4') < 0 && strParam.indexOf('-') > 0) {
             themeYear =  strParam.split('-')[1] ;
             yearSelected = parseInt(themeYear);

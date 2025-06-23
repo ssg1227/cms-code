@@ -6,7 +6,7 @@
                     [routerLink]="[breadCrumb.link,breadCrumb.params]" 
                             (click)="compareSelected(breadCrumb.params,0)">{{breadCrumb.label}} >>> </a> 
                 <span *ngIf="breadCrumb.link == ''">{{breadCrumb.label}}</span>
-            </span><br/><div>    {{parentDescripion}}</div>
+            </span><br/><div>    {{parentDescripion}}<p *ngIf="isLeafParent=='true' && imageGroups.length > 0">Images: {{imageGroups.length}}</p></div>
         
         </div>
         <div id="upper-ten-central-box">
