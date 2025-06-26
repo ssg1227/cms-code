@@ -16,6 +16,8 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [ 
+  
+  
 {
 canvassMaterial:  'other',
 canvassSize:  '',

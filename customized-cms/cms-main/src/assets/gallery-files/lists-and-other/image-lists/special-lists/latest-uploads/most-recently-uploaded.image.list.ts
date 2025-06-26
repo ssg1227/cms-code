@@ -10,6 +10,8 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [
+         
+         
          {
 canvassMaterial:  'other',
 canvassSize:  'other',
@@ -42,7 +44,7 @@ canvassMaterial: 'Plain paper',
 canvassSize: 'A4',
 content: 'color-pencil',
 dateUploaded: 'Sat Jun 14 2025 17:21:55 GMT-0700 (Pacific Daylight Time)',
-duplicate: 'true',
+duplicate: 'true', roles: ["guru"],
 summaryLabel: `Baba June12 2025 - June 14 upload`,
 fullFileName: `assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q2-q3-2025/BabaJune122025Complete.jpeg`,
 description: `<ul><li> Baba June12 2025 - June 14 upload </li><li> Baba Shirdi Murthy Idol with attempt of Milpitas throne backgrpund </li><li> Gray color pencil. Made decision of not to add to the special list since it wasnt up to the mark </li></ul>`,

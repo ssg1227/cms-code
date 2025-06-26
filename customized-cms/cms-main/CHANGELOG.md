@@ -24,18 +24,39 @@
         - (sudo) npm install long; npm install --save-dev @types/long
     - Responsive styling *look for 'June 2025 C&O styling ' comments*
       - removing fancy styling like box shadow, transient etc for smaller screens 
-    - Hard coding special lists into list.ts files instead of dynamically compiling them Comments 'June 2025 C&O restructuring'
+    - **Hard coding special lists into list.ts files instead of dynamically compiling them. Look for Comments 'June 2025 C&O restructuring'**
+      - **Status Jun 20 - 28 2025**
+        - *DONE*
+          - All 'Changers' lists completed
+          - 'Latest Uploads' = nka (now known as) 'Most Recent Uploads' completed
+          - Automated upload is able to add JSON to the above special lists
+            - **DONE** One click automated upload of 'Most Recent Uploads'
+            - **DONE** One click automated upload of 'Changers' - drop down of file names + button 
+              (we have to move 'Evolution Text' to Description.. warning confirm )  
+        - ***Pending***
+          - Adding the Best lists.
+          - *This is now getting critical* image level permissions
+          - Consider converting the physical album lists to hard code list.ts copies
+      - ***CHANGERS EVOLUTION TEXT NEED TO SEE IF THE LOGIC WORKS BY GENERICIZING*** 
+        - No immediate changes required.. 
+          - old data: the evolution text was copied as description when being displayed on the UI, which was captured in console log (JSON) to copy paste on the list.ts file
+          - new data.. the upload (semi) automation allows you to edit the JSON, so the evolution text can be manually pasted as description
+          - ***NEXT STEPS** automate the changers?*
+      - ***NEED TO BRING Permissions to individual level** 
+        - add individual level permisssion field.
+        - filter of field available filter (x => { let add = true ; !isNullorOrUndefine(x.role )? x.role === userRole: a )
+        - b_Arr = arr.filter((x: any) => { return x.role == null || x.role === userRole; });
       - 'June 2025 C&O restructuring'
        - Creating 'latest-uploads' (*Done for '-timewise'*), 'best', 'changers' and other folders under 'special-lists'
       - **Testing and additional tweaks**
       -  add a feature to show image count in header *. **DONE:** condition of ngIf direct image parent, display (imageGroups) show imagelist.length*
       - publish if you need, but uncomment 'case changers*' befor publish and comment after publish to compare(insert alert of console.log for proof of code reached)
-      - test by comparing numbers and 1st and last if time constrains
-
-      - **Changers** 
+      - test by comparing numbers and 1st and last if time constrains **DONE for changers and latest** See below
+      - Best rated....
+      - **Changers completed and Tested June 22 2025** 
       - Changers2025ImageList, Changers2024ImageList completed June 21
       - Changers2023ImageList, Changers2022AndBeforeImageList completed June 20
-      - **Latest Uploads** 
+      - **Latest Uploads  completed and Tested June 2nd-3rd week 2025** 
      - 'latest-uploads-timewise' changed to 'most-recently-uploaded' and move up in menu tree
       - 'latest-uploads-themewise' put in cold storage - stopped making general sense and too much to maintain; too little ROI
       - Creating the individual lists like 'latest-uploaded-timewise.image.list.ts' (*Done*) under the respective folder
