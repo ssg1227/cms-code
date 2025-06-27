@@ -11,6 +11,19 @@ public allImageList:ImageElement[]  =  [
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [
 {
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  '',
+dateUploaded:  'Fri Jun 27 2025 00:25:43 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+evolution:  `<b>Comemorating fresh Parayan of Unabridged Sai SatCharit Thu June 26<br/></B>`,
+evolutionSequence:  4,
+evolutionDate:  'Fri Jun 27 2025 00:25:43 GMT-0700 (Pacific Daylight Time)',
+summaryLabel:  `Sai Satcharit Chapt1 June 26-27 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/BabaSatCharit1NewParayanJun262025.jpeg`,
+description: `<ul><li> Sai Satcharit Chapt1 June 26-27 2025 </li><li> Sai Satcharit Chapt1 .. Hemadpant who (physically) wrote the script pays obeisance to Shree Ganesh, Maa Saraswati, and the 'Guru' which I depict as Lord Datta, then the main story of Baba grinding wheat to keep away the cholera epidemic </li><li> A collage from previous drawings..  </li><li> Compiled June 26 late evening, uploaded just post midnight June 27 2025 </li></ul>`,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
