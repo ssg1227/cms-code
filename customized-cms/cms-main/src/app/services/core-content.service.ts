@@ -207,6 +207,11 @@ export class CoreContentService {
     this.contentList = [];
     this.userMenu = [] ; 
   }
+  /* In time this will no longer contain  a switch block.. As part of Optimizations ALL lists would be hard coded into 
+  *.image.list.ts files..
+  Look below for OLD CODE preserved for historical and sentimental reasons 
+  Initiated June 2025
+  */
   loadSelectedContent(strParam:string):any {
       if (this.contentList === null || this.contentList.length === 0) {
         this.loadContentList();
@@ -274,112 +279,15 @@ export class CoreContentService {
               this.loadTopUploads(latestImageList,yearSelected);
             });
             this.sortImageList() ;
+             console.log(`#### BEST START`);
+                this.genImageList.allImageList[0].files.forEach((a:any)=> {
+                  console.log(`,${JSON.stringify(a)}`);
+                })
+             console.log(`#### BEST END ${this.genImageList.allImageList[0].files.length}`);
             return { all:  this.allImageList, gen: this.genImageList };
           break;
-          //  June 2025 C&O 
-          //case 'changers-b4-2022':  
-          //  June 2025 C&O restructuring moved to list file //
-          //case 'changers-2022':  // changers-2022-and-before
-          //  June 2025 C&O restructuring moved to list file // 
-          //case 'changers-2023': 
-          //  June 2025 C&O restructuring moved to list file // 
-          //case 'changers-2024': 
-          //case 'changers-2025': 
-          console.log(`############### compiled changers ${strParam}`);
-          if (strParam.indexOf('b4') < 0 && strParam.indexOf('-') > 0) {
-            themeYear =  strParam.split('-')[1] ;
-            yearSelected = parseInt(themeYear);
-          }
-          this.genImageList = { 
-            allImageList: [ 
-                { 
-                  folder:'',
-                  theme:`INTRODUCTION: Milestones in a Journey.. (${themeYear})`,
-                  themeSummary: `These are landmark sketches which I consider a significant change or turn in the progress of my sketches, or maybe a special reason. 
-                                  <i><u>These may not be my best efforts</u></i> but are a new element or entity that was introduced in these drawings.`,
-                  files: [],
-                }
-            ]} ;
-           // let milestoneImageLists:any = [];
-            this.ContentList.forEach((milestoneImageList:any) => {
-              yearSelected ==0 ? 
-                this.getMilestoneSketches(milestoneImageList,0, 1): 
-                this.getMilestoneSketches(milestoneImageList,yearSelected);
-            })
-            
-          this.genImageList.allImageList[0].files.sort(function(a:any, b:any) {
-            const aDate = new Date(a.evolutionDate).getTime();
-            const bDate = new Date(b.evolutionDate).getTime();
-            let c = aDate  -  bDate ; // aDate - bDate ;
-            return  c ;
-          });
-           console.log(`#### CHANGERS START`);
-                this.genImageList.allImageList[0].files.forEach((a:any)=> {
-                  console.log(`,${JSON.stringify(a)}`);
-                })
-                console.log(`#### CHANGEES END ${strParam} Count ${this.genImageList.allImageList[0].files.length}`);
-          return { all:  this.allImageList, gen: this.genImageList };
-          break ;
-          /* June 2025 C&O hard code lists.. 
-          1. This list is no longer compiled .. see CHANGELOG.md for details 
-          2. MOved to context-core-content.service.ts
-          case 'latest-uploads-timewise': - now in default
-            this.genImageList = new LatestUploadedTimewiseImageList();
-             return { all:  this.allImageList, gen: this.genImageList };
-            if (JSON.stringify(this.deviceIsMobile)==='ftrue') { 
-              // latest uploads workaround and other optimizations May 23 2025
-              // compiling themewise list
-               this.genImageList = { 
-                allImageList: [ 
-                    { 
-                      folder:'',
-                      theme:'latest-uploads-themewise',
-                      themeSummary: `Uploads latest by theme`,
-                      files: [],
-                    }
-                ]} ;
-                const latestImageLists:any = [];
-               // this.loadLists(latestImageLists) ;
-                this.ContentList.forEach((latestImageList:any) => {
-                  if(latestImageList.latest && latestImageList.latest === true)
-                    this.loadLatestUploads(latestImageList);
-                })
-                
-      
-                return { all:  this.allImageList, gen: this.genImageList };
-                console.log(`#### LATEST UPLOAD .. RETURN AFTER SORT`);
-            } else {
-              let retLatestListTimewise  = null;
-              retLatestListTimewise = this.loadAndCacheList();
-              return retLatestListTimewise ;
-            }
-            break;
-            */
-            case 'latest-uploads-themewise':
-              this.genImageList = { 
-                allImageList: [ 
-                    { 
-                      folder:'',
-                      theme:'latest-uploads-themewise',
-                      themeSummary: `Uploads latest by theme`,
-                      files: [],
-                    }
-                ]} ;
-                const latestImageLists:any = [];
-               // this.loadLists(latestImageLists) ;
-                this.ContentList.forEach((latestImageList:any) => {
-                  if(latestImageList.latest && latestImageList.latest === true)
-                    this.loadLatestUploads(latestImageList);
-                })
-                console.log(`#### LATEST START`);
-                this.genImageList.allImageList[0].files.forEach((a:any)=> {
-                  console.log(`,${JSON.stringify(a)}`);
-                })
-                console.log(`#### LATEST END`);
-                return { all:  this.allImageList, gen: this.genImageList };
-                console.log(`#### LATEST UPLOAD .. RETURN AFTER SORT`);
-                
-              break;
+          
+        
             default: 
             
             // @ts-ignore: Object is possibly 'null'.
@@ -772,3 +680,113 @@ export class CoreContentService {
   }
   
 }
+/* OLD CODE preserved for historical and sentimental reasons 
+// #### June 2025 C&O restructuring' thses lists are now hard coded into 'image.list.ts' files **
+ loadSelectedContent(strParam:string):any {
+ After    case 'showpiece-2025': break .. 
+ //  June 2025 C&O 
+          //case 'changers-b4-2022':  
+          //  June 2025 C&O restructuring moved to list file //
+          //case 'changers-2022':  // changers-2022-and-before
+          //  June 2025 C&O restructuring moved to list file // 
+          //case 'changers-2023': 
+          //  June 2025 C&O restructuring moved to list file // 
+          //case 'changers-2024': 
+          //case 'changers-2025': 
+          console.log(`############### compiled changers ${strParam}`);
+          if (strParam.indexOf('b4') < 0 && strParam.indexOf('-') > 0) {
+            themeYear =  strParam.split('-')[1] ;
+            yearSelected = parseInt(themeYear);
+          }
+          this.genImageList = { 
+            allImageList: [ 
+                { 
+                  folder:'',
+                  theme:`INTRODUCTION: Milestones in a Journey.. (${themeYear})`,
+                  themeSummary: `These are landmark sketches which I consider a significant change or turn in the progress of my sketches, or maybe a special reason. 
+                                  <i><u>These may not be my best efforts</u></i> but are a new element or entity that was introduced in these drawings.`,
+                  files: [],
+                }
+            ]} ;
+           // let milestoneImageLists:any = [];
+            this.ContentList.forEach((milestoneImageList:any) => {
+              yearSelected ==0 ? 
+                this.getMilestoneSketches(milestoneImageList,0, 1): 
+                this.getMilestoneSketches(milestoneImageList,yearSelected);
+            })
+            
+          this.genImageList.allImageList[0].files.sort(function(a:any, b:any) {
+            const aDate = new Date(a.evolutionDate).getTime();
+            const bDate = new Date(b.evolutionDate).getTime();
+            let c = aDate  -  bDate ; // aDate - bDate ;
+            return  c ;
+          });
+           console.log(`#### CHANGERS START`);
+                this.genImageList.allImageList[0].files.forEach((a:any)=> {
+                  console.log(`,${JSON.stringify(a)}`);
+                })
+                console.log(`#### CHANGEES END ${strParam} Count ${this.genImageList.allImageList[0].files.length}`);
+          return { all:  this.allImageList, gen: this.genImageList };
+          break ;
+          /* June 2025 C&O hard code lists.. 
+          Will keep this in part for historic reasons 
+          1. This list is no longer compiled .. see CHANGELOG.md for details 
+          2. MOved to context-core-content.service.ts
+          case 'latest-uploads-timewise': - now in default
+            this.genImageList = new LatestUploadedTimewiseImageList();
+             return { all:  this.allImageList, gen: this.genImageList };
+            if (JSON.stringify(this.deviceIsMobile)==='ftrue') { 
+              // latest uploads workaround and other optimizations May 23 2025
+              // compiling themewise list
+               this.genImageList = { 
+                allImageList: [ 
+                    { 
+                      folder:'',
+                      theme:'latest-uploads-themewise',
+                      themeSummary: `Uploads latest by theme`,
+                      files: [],
+                    }
+                ]} ;
+                const latestImageLists:any = [];
+               // this.loadLists(latestImageLists) ;
+                this.ContentList.forEach((latestImageList:any) => {
+                  if(latestImageList.latest && latestImageList.latest === true)
+                    this.loadLatestUploads(latestImageList);
+                })
+                
+      
+                return { all:  this.allImageList, gen: this.genImageList };
+                console.log(`#### LATEST UPLOAD .. RETURN AFTER SORT`);
+            } else {
+              let retLatestListTimewise  = null;
+              retLatestListTimewise = this.loadAndCacheList();
+              return retLatestListTimewise ;
+            }
+            break;
+                case 'latest-uploads-themewise': // unused
+              this.genImageList = { 
+                allImageList: [ 
+                    { 
+                      folder:'',
+                      theme:'latest-uploads-themewise',
+                      themeSummary: `Uploads latest by theme`,
+                      files: [],
+                    }
+                ]} ;
+                const latestImageLists:any = [];
+               // this.loadLists(latestImageLists) ;
+                this.ContentList.forEach((latestImageList:any) => {
+                  if(latestImageList.latest && latestImageList.latest === true)
+                    this.loadLatestUploads(latestImageList);
+                })
+                console.log(`#### LATEST START`);
+                this.genImageList.allImageList[0].files.forEach((a:any)=> {
+                  console.log(`,${JSON.stringify(a)}`);
+                })
+                console.log(`#### LATEST END`);
+                return { all:  this.allImageList, gen: this.genImageList };
+                console.log(`#### LATEST UPLOAD .. RETURN AFTER SORT`);
+                
+              break;
+            
+ */

@@ -10,6 +10,32 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Fri Jun 27 2025 00:06:07 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+evolution:  `<b>Commemorative of one of the most disruptive events in  Cricket History<br/>Giving the 'underdog' the power of belief that they can win, make it their day<br/></B>`,
+evolutionSequence:  4,
+evolutionDate:  'Fri Jun 27 2025 00:06:07 GMT-0700 (Pacific Daylight Time)',
+summaryLabel:  `Prudential World Cup Oct 23 - June 25`,
+fullFileName: `assets/gallery-files/images/places-scenes-objects/PrudentialCup83-Oct1723-June262025.jpeg`,
+description: `<ul><li> Prudential World Cup Oct 23 - June 25 </li><li> The Cricketing World was stunned on JUne 25 1983, when the Indian Cricket Team lead by Kapil Dev won the One Day World Cup at Lords England </li><li> Cup shown with a red cricket ball. India defeated West Indies to lift the cup.. a 'nothing short of a miracle event' </li><li> Originally completed Oct 17 2023 - when the latest edition of the World Cup was going on (India, lost the finals, unfortunately, to Australia) </li><li> This was shared on June 25 2025 as a 42nd anniversary commemorative </li><li> Uploaded Midnight June 27 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'soft',
+dateUploaded:  'Thu Jun 26 2025 23:24:18 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+evolution:  `<b>A first with the Deity combination<br/>The 1st upload using one click add to 'Most Recent  Uploads' and 'Changers' (2025)<br/></B>`,
+evolutionSequence:  4,
+evolutionDate:  'Thu Jun 26 2025 23:24:18 GMT-0700 (Pacific Daylight Time)',
+summaryLabel:  `Ganesh Shiv Hanuman, June 24-26 2025 `,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/GaneshShivHanumanJune24-26-2025.jpeg`,
+description: `<ul><li> Ganesh Shiv Hanuman, June 24-26 2025  </li><li> Towards the end of the Jyesth Lunar Month </li><li> Showing Ganesh ji doing milk Abhishek to Shivling and Hanuman ji waiting for His turn </li><li> Showing a 'not waste' concept of the milk being collected from the Shivling </li><li> Completed June 24, uploaded June 26 2025 </li></ul>`,
+},
          
          
          {

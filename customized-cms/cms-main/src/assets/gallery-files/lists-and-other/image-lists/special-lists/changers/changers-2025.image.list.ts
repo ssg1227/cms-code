@@ -10,6 +10,32 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [
+{
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  '',
+dateUploaded:  'Fri Jun 27 2025 00:25:43 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+evolution:  `<b>Comemorating fresh Parayan of Unabridged Sai SatCharit Thu June 26<br/></B>`,
+evolutionSequence:  4,
+evolutionDate:  'Fri Jun 27 2025 00:25:43 GMT-0700 (Pacific Daylight Time)',
+summaryLabel:  `Sai Satcharit Chapt1 June 26-27 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/BabaSatCharit1NewParayanJun262025.jpeg`,
+description: `<b>Comemorating fresh Parayan of Unabridged Sai SatCharit Thu June 26<br/></B><ul><li> Sai Satcharit Chapt1 June 26-27 2025 </li><li> Sai Satcharit Chapt1 .. Hemadpant who (physically) wrote the script pays obeisance to Shree Ganesh, Maa Saraswati, and the 'Guru' which I depict as Lord Datta, then the main story of Baba grinding wheat to keep away the cholera epidemic </li><li> A collage from previous drawings..  </li><li> Compiled June 26 late evening, uploaded just post midnight June 27 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'soft',
+dateUploaded:  'Thu Jun 26 2025 23:24:18 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+evolution:  `<b>A first with the Deity combination<br/>The 1st upload using one click add to 'Most Recent  Uploads' and 'Changers' (2025)<br/></B>`,
+evolutionSequence:  4,
+evolutionDate:  'Thu Jun 26 2025 23:24:18 GMT-0700 (Pacific Daylight Time)',
+summaryLabel:  `Ganesh Shiv Hanuman, June 24-26 2025 `,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/GaneshShivHanumanJune24-26-2025.jpeg`,
+description: `<b>A first with the Deity combination<br/>The 1st upload using one click add to 'Most Recent  Uploads' and 'Changers' (2025)<br/></B><ul><li> Ganesh Shiv Hanuman, June 24-26 2025  </li><li> Towards the end of the Jyesth Lunar Month </li><li> Showing Ganesh ji doing milk Abhishek to Shivling and Hanuman ji waiting for His turn </li><li> Showing a 'not waste' concept of the milk being collected from the Shivling </li><li> Completed June 24, uploaded June 26 2025 </li></ul>`,
+},
          
             {"canvassMaterial":"Plain paper","canvassSize":"A4","content":"color-pencil","dateUploaded":"01-18-2025","duplicate": "true","evolution":"<b>first super speeder exotic<br/></B>","evolutionSequence":5,"evolutionDate":"01-18-2025","summaryLabel":"Koenigsegg Agera RS (Jan-17 2025) sky blue","fullFileName":"assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-other-colors-1/Koenigsegg-Agera-RS-Jan-17-2025.jpeg","description":"<b>first super speeder exotic<br/></B> <ul><li> Koenigsegg Agera RS (Jan-17 2025) sky blue </li><li> One of the fastest street legal cars, this Hyper exotic rubs shoulders with Buggati, Ferrari, Lamborgini, Saleen and others </li><li> Uploaded Jan 18 </li></ul>"}
 ,{"canvassMaterial":"Plain paper","canvassSize":"","content":"watercolor-pencil","album":{"name":"the-divine-in-colors-so-fine","status":"added","sequence":2},"dateUploaded":"02-10-2025","duplicate": "true","summaryLabel":"Vasant Panchami 2025 Saraswati Devi","evolution":"- <b>Introducing concept of albums - the 1st of a set of sketches whose online grouping and album grouping are differnt</b><br/>","evolutionDate":"02-10-2025","evolutionSequence":3,"fullFileName":"assets/gallery-files/images/religion/devi/MaaSaraswati-Feb2-10-VasantPanchami2025.jpeg","description":"- <b>Introducing concept of albums - the 1st of a set of sketches whose online grouping and album grouping are differnt</b><br/> <ul><li> Vasant Panchami 2025 Saraswati Devi </li><li> Based off an earlier template (Dassera 2024) </li><li> (This was based on sculputure at Fine Arts College Davanegere, Karnataka) </li><li> Actually a combination of watercolor pencils and regular pencils </li><li> Resumed an old pending drawing one version for Feb 2 2025 </li><li> Final upload Feb 10 2025 </li></ul>","rating":1,"ratingYear":2025}

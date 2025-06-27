@@ -53,6 +53,10 @@ import {  Changers2025ImageList } from 'src/assets/gallery-files/lists-and-other
 import {  Changers2024ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/changers/changers-2024.image.list';
 import {  Changers2023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/changers/changers-2023.image.list';
 import {  Changers2022AndBeforeImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/changers/changers-2022-and-before.image.list';
+import {  Showpieces2022AndBeforeImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/showpieces/showpieces-2022-and-b4.image.list';
+import {  Showpieces2023ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/showpieces/showpieces-2023.image.list';
+import {  Showpieces2024ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/showpieces/showpieces-2024.image.list';
+import {  Showpieces2025ImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/showpieces/showpieces-2025.image.list';
 // import { LatestUploadedTimewiseImageList } from 'src/assets/gallery-files/lists-and-other/image-lists/special-lists/latest-uploads/latest-uploaded-timewise.image.list';
 
 @Injectable({
@@ -135,12 +139,16 @@ export class ContextedCoreContentService {
     //June 2025 C&O restructuring - from latest-uplpads-timewise
     // contentList.push( { contentFile:new LatestUploadedTimewiseImageList(),contentCategory:'latest-uploads-timewise', roles:["any"],latest:true, reverseStack:'false'}) ;        
     contentList.push( { contentFile:new MostRecentlyUploadedImageList(),contentCategory:'most-recently-uploaded', roles:["any"],latest:true, reverseStack:'false'}) ;   
-  //June 2025 C&O restructuring -Changers 
-  contentList.push( { contentFile:new Changers2025ImageList(),contentCategory:'changers-2025', roles:["any"],latest:true, reverseStack:'false'}) ;  
-  contentList.push( { contentFile:new Changers2024ImageList(),contentCategory:'changers-2024', roles:["any"],latest:true, reverseStack:'false'}) ;  
-  contentList.push( { contentFile:new Changers2023ImageList(),contentCategory:'changers-2023', roles:["any"],latest:true, reverseStack:'false'}) ;  
-  contentList.push( { contentFile:new Changers2022AndBeforeImageList(),contentCategory:'changers-2022-and-before', roles:["any"],latest:true, reverseStack:'false'}) ;  
-   }
+    //June 2025 C&O restructuring -Changers and Best
+    contentList.push( { contentFile:new Changers2025ImageList(),contentCategory:'changers-2025', roles:["any"],latest:true, reverseStack:'false'}) ;  
+    contentList.push( { contentFile:new Changers2024ImageList(),contentCategory:'changers-2024', roles:["any"],latest:true, reverseStack:'false'}) ;  
+    contentList.push( { contentFile:new Changers2023ImageList(),contentCategory:'changers-2023', roles:["any"],latest:true, reverseStack:'false'}) ;  
+    contentList.push( { contentFile:new Changers2022AndBeforeImageList(),contentCategory:'showpieces-2022-and-before', roles:["any"],latest:true, reverseStack:'false'}) ;  
+    contentList.push( { contentFile:new Showpieces2022AndBeforeImageList(),contentCategory:'showpieces-2022', roles:["any"],latest:true, reverseStack:'false'}) ;  
+    contentList.push( { contentFile:new Showpieces2023ImageList(),contentCategory:'showpieces-2023', roles:["any"],latest:true, reverseStack:'false'}) ;  
+    contentList.push( { contentFile:new Showpieces2024ImageList(),contentCategory:'showpieces-2024', roles:["any"],latest:true, reverseStack:'false'}) ;  
+    contentList.push( { contentFile:new Showpieces2025ImageList(),contentCategory:'showpieces-2025', roles:["any"],latest:true, reverseStack:'false'}) ;  
+  }
    
   loadSpecialLists(contentList:ContentList[], specialFiles:any,strParam:string):boolean {
      

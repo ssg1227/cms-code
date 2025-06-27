@@ -26,7 +26,7 @@
       - removing fancy styling like box shadow, transient etc for smaller screens 
     - **Hard coding special lists into list.ts files instead of dynamically compiling them. Look for Comments 'June 2025 C&O restructuring'**
       - **Status Jun 20 - 28 2025**
-        - *DONE*
+        - *DONE and tested (June 26-27)*
           - All 'Changers' lists completed
           - 'Latest Uploads' = nka (now known as) 'Most Recent Uploads' completed
           - Automated upload is able to add JSON to the above special lists

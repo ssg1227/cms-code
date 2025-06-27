@@ -10,6 +10,19 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Fri Jun 27 2025 00:06:07 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+evolution:  `<b>Commemorative of one of the most disruptive events in  Cricket History<br/>Giving the 'underdog' the power of belief that they can win, make it their day<br/></B>`,
+evolutionSequence:  4,
+evolutionDate:  'Fri Jun 27 2025 00:06:07 GMT-0700 (Pacific Daylight Time)',
+summaryLabel:  `Prudential World Cup Oct 23 - June 25`,
+fullFileName: `assets/gallery-files/images/places-scenes-objects/PrudentialCup83-Oct1723-June262025.jpeg`,
+description: `<b>Commemorative of one of the most disruptive events in  Cricket History<br/>Giving the 'underdog' the power of belief that they can win, make it their day<br/>Also testing updating an 'earlier' changers file <br/></B><ul><li> Prudential World Cup Oct 23 - June 25 </li><li> The Cricketing World was stunned on JUne 25 1983, when the Indian Cricket Team lead by Kapil Dev won the One Day World Cup at Lords England </li><li> Cup shown with a red cricket ball. India defeated West Indies to lift the cup.. a 'nothing short of a miracle event' </li><li> Originally completed Oct 17 2023 - when the latest edition of the World Cup was going on (India, lost the finals, unfortunately, to Australia) </li><li> This was shared on June 25 2025 as a 42nd anniversary commemorative </li><li> Uploaded Midnight June 27 2025 </li></ul>`,
+},
          
            /*2023... */
          ,{"duplicate":"true", "fullFileName":"assets/gallery-files/images/salaam-mumbai/mumbai-meri-jaan-2/marine-lines-islam-gym-jan1-2023-final.jpeg","rating":1,"evolution":"<ul><li><strong>2023 Changers</strong></li><li> Covers all genres of my sketches - transport, landmarks, deities, etc </li></ul>","evolutionSequence":3,"evolutionDate":"01-01-2023","canvassSize":"A3","content":"color-pencil","description":"<ul><H4>2023 Changers</H4><li> Covers all genres of my sketches - transport, landmarks, deities, etc </li></ul> <ul>\n            <li>HAPPY NEW YEAR 2023</li>\n            <li>Presenting Imaginary scenario overlooking Marine Lines station over Islam Gymkhana and Marine drive with Ganesh Chaturthi and a Naval air show </li><li>\n            Note: walls painted with pictures of Gods (at the bottom) to prevent messing them, etc</li>\n            </ul>","dateUploaded":"01-24-2023"}
