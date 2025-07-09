@@ -30,10 +30,11 @@ Initial entry being on the changes to address small device performance and respo
 
 ## MAIN CONTENT EXTRACTIONS
  ### June July 2025: Performance and responsiveness issues, and optimizations with specific focus on small devices
-     - Removing fancy styling like box shadow, transient etc for smaller screens. These were increasing (unwanted) memory usage and utlizing processor cycles ('after all the focus ought to be on the content rather than frills')
-     - Some of the image list were being generated dynamically which was causing processing mostly unwanted
-        - **Taking the example of latest uploads** 
+   - Removing fancy styling like box shadow, transient etc for smaller screens. These were increasing (unwanted) memory usage and utlizing processor cycles ('after all the focus ought to be on the content rather than frills')
+   - Some of the image list were being generated dynamically which was causing processing mostly unwanted
+    - **Taking the example of latest uploads** 
         - The logic would scan all the image lists and extract the latest, which was time consuming and sometimes timing out
         - instead, created a latest-uploads json list which is read and processed much quicker
         - corresponding changes in the load program whereby an image json can be loaded to the latest uploads list along with being uploaded to its regular json list
-    - caching and local storage usage
+   - caching and local storage usage
+   
