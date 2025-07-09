@@ -91,6 +91,20 @@ export class AuthService {
     return  needLogin  ;
   }
   constructor(private router:Router, private coreContentService:CoreContentService) { }
+  isSpecialDate(date: Date= new Date()): boolean {
+  const month = date.getMonth(); // 0 = Jan, 5 = June
+  const day = date.getDate();
+  return (
+    (month === 5 && day === 27) || // June 27
+    (month === 6 && day === 4)  || // July 4
+    (month === 6 && day === 19) || // July 19
+    (month === 7 && day === 15)    // August 15
+  );
+}
+  freeForAll():boolean 
+  {
+    return this.isSpecialDate(); 
+  }
   login(username:string, directLatet=false){
     /*
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){

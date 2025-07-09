@@ -3,8 +3,8 @@
     <div class="upper-ten">
         <H2>{{appTitle}}<br/><span id="author" >{{appAuthor}}</span></H2> 
         <div id="upper-ten-central-box">
-            <input type='text' [(ngModel)]='userId' placeholder='User Name (optional)'>  
-            &nbsp;&nbsp; <input type='button' value='Enter'  (click)='cmsLogin()'>
+             <input type='text' *ngIf="freeForAll==false" [(ngModel)]='userId' placeholder='User Name (optional)'> 
+            &nbsp;&nbsp; <input type='button' value='Enter my Gallery'  (click)='cmsLogin()'>
             <p *ngIf="IsMobileScreen == 'false'" ><br/>
             <input type="checkbox" [(ngModel)]="directLatest"> Takes you direct to my latest sketches</p>
         </div>

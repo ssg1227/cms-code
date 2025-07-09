@@ -15,8 +15,10 @@ export class LoginLandingComponent {
  appAuthor= staticText.appAuthor;
  appContent = staticText.introContentList[0];
  userId=""
+ freeForAll = false ;
  constructor(private authService:AuthService) {
-
+  this.freeForAll = authService.freeForAll();
+  this.freeForAll === true? this.userId = 'super': '';
  }
  get IsMobileScreen(): string {
   return JSON.stringify((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) ;
