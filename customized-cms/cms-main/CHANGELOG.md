@@ -1,5 +1,6 @@
 
-# LOG OF CHANGES RECORDED W.E.F. May 1st 20245 #
+# LOG OF CHANGES RECORDED W.E.F. May 1st 2024 #
+## May 2025 onward
 "CMS Picture Gallery" by Shantanu Gadkari
 - *** June 2025 onward** 
    - **Hardcoding lists** 
