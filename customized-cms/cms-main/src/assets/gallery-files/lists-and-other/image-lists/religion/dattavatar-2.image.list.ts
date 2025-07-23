@@ -18,6 +18,17 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
+
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A3',
+content:  '',
+dateUploaded:  'Mon Jul 14 2025 06:48:15 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Baba Gurupoornima 2025 Samadhi Mandir`,
+fullFileName: `assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q2-q3-2025/Baba-Gurupoornima-11x17-A4-july10-25.jpeg`,
+description: `<ul><li> Baba Gurupoornima 2025 Samadhi Mandir </li><li>Added to Spiritual Souls:Datta Lineage, Sikhs, East of India 2 ass well</li><li> Completed a previous unfinished sketch </li><li> Gurupoornima was Thu July 10 2025 </li><li> (Changers 2025 qualifier) to add to the physical album 'The Divine in colors so fine' an A4 copy was made  </li><li> another ground breaker.. allow multiple physical albums if the original list is only a soft copy list like this one </li><li> Uploaded July 14 2025 </li></ul>`,
+},
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',

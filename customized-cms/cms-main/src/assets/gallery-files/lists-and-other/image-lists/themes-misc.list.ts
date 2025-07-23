@@ -15,6 +15,16 @@ public allImageList:ImageElement[]  =  [
              files: [   
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  '',
+dateUploaded:  'Sun Jul 13 2025 21:31:10 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Vari Symbolic July4, 13 2026`,
+fullFileName: `assets/gallery-files/images/religion/laxmi-vishnu-hanuman/Vari-July-4-2025.jpeg`,
+description: `<ul><li> Vari Symbolic July4, 13 2026 </li><li> Ashadi Ekadahi being July 6 this year, Varis(Sacred Pilgrimages) leave from different parts of Maharashtra to end at Pandharpur before this date  </li><li> Symbolic of 'Bhagwa' flags, Paduka Palkhi top, and Vithal Rakhumabai in the top left minature  </li><li> Completed July 4, uploaded July 13 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  'Sat Jun 14 2025 17:34:45 GMT-0700 (Pacific Daylight Time)',

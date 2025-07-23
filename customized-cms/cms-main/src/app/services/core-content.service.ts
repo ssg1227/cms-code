@@ -218,6 +218,7 @@ export class CoreContentService {
       }
       let yearSelected = 0 ;
       let themeYear = 'before 2022';
+      
         switch (strParam) {
           // .. 
           case 'the-divine-in-colors-so-fine':
@@ -236,13 +237,25 @@ export class CoreContentService {
             this.ContentList.forEach((albumImageList:any) => {
               if(albumImageList.contentFile.allImageList && albumImageList.contentFile.allImageList[0].files) {
                 albumImageList.contentFile.allImageList[0].files.forEach((fileItem:any) => {
-                  if (fileItem.album  && fileItem.album.name  && fileItem.album.name.indexOf(strParam) >=0) {
-                    console.log(`'hi' ${JSON.stringify(fileItem.album.name)}`);
-                  this.genImageList.allImageList[0].files.push(fileItem);
+                    if (!fileItem.duplicate || 
+                        (fileItem.duplicate && fileItem.duplicate.toString().toLowerCase().indexOf('false')>=0)) {
+                    console.log(`duplicate null or false`);
+                     if (fileItem.album  && fileItem.album.name  && fileItem.album.name.indexOf(strParam) >=0) {
+                         this.genImageList.allImageList[0].files.push(fileItem);
 
+                      }
+                      if (fileItem.albums  && fileItem.albums.length>0) {
+                    fileItem.albums.forEach((album:any)=>{
+                      if(album.name  &&  album.name.indexOf(strParam) >=0) {
+                          console.log(`'hi' ${JSON.stringify( album.name)}`);
+                          this.genImageList.allImageList[0].files.push(fileItem);
+                      }
+                    });
+                  }
                   }
                 }) ;
               }
+             
             });
             this.genImageList.allImageList[0].files.sort(function(a:any, b:any) {
               const aSeq = a.album.sequence;

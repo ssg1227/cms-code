@@ -11,6 +11,37 @@ public allImageList:ImageElement[]  =  [
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Wed Jul 23 2025 00:53:30 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Konkan S** Steamship Mumbai Panjim July22-23 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/KonkanS---SteamshipMumbaiPanjimJuly232025.jpeg`,
+description: `<b>Nature of picture<br/>First with href; also see description</b><ul><li> Konkan S** Steamship Mumbai Panjim July22-23 2025 </li><li> There used to be a  steamship service between Mumbai and Panjim in the 70s and the 80s.<br/> I traveled by this steamer service once in 1975. My dad had gotten transferred to Goa, Vasco and we decided to travel by the steamer.  Konkan Sevak, Konkan Shakti, - Sarita (not sure if this was renamed Konkan Shakti) and one or two more </li><li>  It was a fantastic and very pleasant journey including a sighting of a dolphin/porpoise that I remember vividly  </li><li> I've captured this <a href="https://art-is-worship.web.app/view/places-scenes-objects">in this list</a> scroll to the bottom </li><li> Completed using regular 4B pencil around July 21, but refreshed with charcoals and uploaded july 23 2025 </li><li>Another interesting aspect: partly coincidence, partly intentional: sketch was worked on during my first cruise in the US Carnival Legend SFO - Baja Mexico July 17-21 2025</li></ul>`,
+
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A3',
+content:  '',
+dateUploaded:  'Mon Jul 14 2025 06:48:15 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Baba Gurupoornima 2025 Samadhi Mandir`,
+fullFileName: `assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q2-q3-2025/Baba-Gurupoornima-11x17-A4-july10-25.jpeg`,
+description: `<b> Two ground breakers<br/>See the (changers 2025) and following list items below<br/></b><ul><li> Baba Gurupoornima 2025 Samadhi Mandir </li><li>Added to Spiritual Souls:Datta Lineage, Sikhs, East of India 2 ass well</li><li> Completed a previous unfinished sketch </li><li> Gurupoornima was Thu July 10 2025 </li><li> (Changers 2025 qualifier) to add to the physical album 'The Divine in colors so fine' an A4 copy was made  </li><li> another ground breaker.. allow multiple physical albums if the original list is only a soft copy list like this one </li><li> Uploaded July 14 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  'Sun Jul 13 2025 15:26:54 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Baba Vari July 3, 13 2025`,
+fullFileName: `assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q2-q3-2025/Baba-Vari-July3-2025.jpeg`,
+description: `<b>Sort of 1st using a 'template of existing sketch' - the Vithal Rakhmabai are from another sketch - copy pasted and reduced in size</b><br/><ul><li> Baba Vari July 3, 13 2025 </li><li> Ashadi Ekadahi being July 6 this year, Varis(Sacred Pilgrimages) leave from different parts of Maharashtra to end at Pandharpur before this date  </li><li> Symbolic of Baba carrying the 'Bhagwa' flag and Vithal Rakhumabai in the top left minature </li><li> Completed July 3, uploaded July 13 2025 </li></ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  '',

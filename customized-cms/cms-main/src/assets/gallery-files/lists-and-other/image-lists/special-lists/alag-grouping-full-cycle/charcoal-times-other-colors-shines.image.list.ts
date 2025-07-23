@@ -19,6 +19,27 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Wed Jul 23 2025 00:53:30 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Konkan S** Steamship Mumbai Panjim July22-23 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/KonkanS---SteamshipMumbaiPanjimJuly232025.jpeg`,
+description: `<ul><li> Konkan S** Steamship Mumbai Panjim July22-23 2025 </li><li> There used to be a  steamship service between Mumbai and Panjim in the 70s and the 80s.<br/> I traveled by this steamer service once in 1975. My dad had gotten transferred to Goa, Vasco and we decided to travel by the steamer.  Konkan Sevak, Konkan Shakti, - Sarita (not sure if this was renamed Konkan Shakti) and one or two more </li><li>  It was a fantastic and very pleasant journey including a sighting of a dolphin/porpoise that I remember vividly  </li><li> I've captured this <a href="https://art-is-worship.web.app/view/places-scenes-objects">in this list</a> scroll to the bottom </li><li> Completed using regular 4B pencil around July 21, but refreshed with charcoals and uploaded july 23 2025 </li>
+<li>Another interesting aspect: partly coincidence, partly intentional: sketch was worked on during my first cruise in the US Carnival Legend SFO - Baja Mexico July 17-21 2025</li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Wed Jul 23 2025 00:53:30 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Konkan S** Steamship Mumbai Panjim July22-23 2025`,
+fullFileName: `${this.imageRoot}KonkanS---SteamshipMumbaiPanjimJuly232025.jpeg`,
+description: `<ul><li> Konkan S** Steamship Mumbai Panjim July22-23 2025 </li><li> There used to be a  steamship service between Mumbai and Panjim in the 70s and the 80s.<br/> I traveled by this steamer service once in 1975. My dad had gotten transferred to Goa, Vasco and we decided to travel by the steamer.  Konkan Sevak, Konkan Shakti, - Sarita (not sure if this was renamed Konkan Shakti) and one or two more </li><li>  It was a fantastic and very pleasant journey including a sighting of a dolphin/porpoise that I remember vividly  </li><li> I've captured this <a href="https://art-is-worship.web.app/view/places-scenes-objects">in this list</a> scroll to the bottom </li><li> Completed using regular 4B pencil around July 21, but refreshed with charcoals and uploaded july 23 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'soft',
 dateUploaded:  'Thu Jun 26 2025 23:24:18 GMT-0700 (Pacific Daylight Time)',
