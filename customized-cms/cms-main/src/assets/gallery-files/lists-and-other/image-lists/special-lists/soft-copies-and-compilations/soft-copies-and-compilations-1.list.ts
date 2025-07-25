@@ -21,6 +21,16 @@ files: [
 {
 canvassMaterial:  'other',
 canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  'Fri Jul 25 2025 10:41:07 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Baba Samadhi to Masjid July 24-25 2025`,
+fullFileName: `${this.imageRoot}BabaSamadhiToMAshidJuly242025.jpeg`,
+description: `<ul><li> Baba Samadhi to Masjid July 24-25 2025 </li><li> Collage of two paper sketches (unless requested) soft copy only </li><li> "समाधि उथ्रोनिया गुरु चला मशीदी कड़े " Part of Baba Kakad arti line - come from Samadhi and go to the Masjid (Dwarkamai) </li><li> compiled July 24, upload July 25, 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'other',
+canvassSize:  'soft',
 content:  '',
 dateUploaded:  'Fri Jun 27 2025 00:25:43 GMT-0700 (Pacific Daylight Time)',
 duplicate:  'false',

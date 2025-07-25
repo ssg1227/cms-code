@@ -19,14 +19,13 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
-canvassSize:  'A4',
+canvassSize:  '',
 content:  'black-white',
-dateUploaded:  'Wed Jul 23 2025 00:53:30 GMT-0700 (Pacific Daylight Time)',
-duplicate:  'true',
-summaryLabel:  `Konkan S** Steamship Mumbai Panjim July22-23 2025`,
-fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/KonkanS---SteamshipMumbaiPanjimJuly232025.jpeg`,
-description: `<ul><li> Konkan S** Steamship Mumbai Panjim July22-23 2025 </li><li> There used to be a  steamship service between Mumbai and Panjim in the 70s and the 80s.<br/> I traveled by this steamer service once in 1975. My dad had gotten transferred to Goa, Vasco and we decided to travel by the steamer.  Konkan Sevak, Konkan Shakti, - Sarita (not sure if this was renamed Konkan Shakti) and one or two more </li><li>  It was a fantastic and very pleasant journey including a sighting of a dolphin/porpoise that I remember vividly  </li><li> I've captured this <a href="https://art-is-worship.web.app/view/places-scenes-objects">in this list</a> scroll to the bottom </li><li> Completed using regular 4B pencil around July 21, but refreshed with charcoals and uploaded july 23 2025 </li>
-<li>Another interesting aspect: partly coincidence, partly intentional: sketch was worked on during my first cruise in the US Carnival Legend SFO - Baja Mexico July 17-21 2025</li></ul>`,
+dateUploaded:  'Fri Jul 25 2025 10:32:45 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `MV Chidambaram SCI Chennai<->Singapore/Penang`,
+fullFileName: `${this.imageRoot}MVChidambaramJuly24-2025.jpeg`,
+description: `<ul><li> MV Chidambaram SCI Chennai<->Singapore/Penang </li><li> MV Chidambaram was owned by  Shipping Corporation of India(SCI). This liner was originally the M.V. Pasteur and was build in Dunkerque, France. It was sold to the Indian government in 1972. </li><li> Service started 1972, she used to ply the route from Madras to Penang, Port Klang and Singapore, then back again to Madras.  </li><li> Unfortunately ended abruptly 1985 when she caught fire and was decommissioned shortly after </li><li> Drawing completed July 24, uploaded July 25, 2025 </li></ul>`,
 },
 {
 canvassMaterial:  'Plain paper',

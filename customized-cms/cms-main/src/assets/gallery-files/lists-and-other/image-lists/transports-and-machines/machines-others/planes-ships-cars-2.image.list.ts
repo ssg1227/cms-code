@@ -12,6 +12,16 @@ export class PlanesShipsCars2ImageList {
         files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Fri Jul 25 2025 10:32:45 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `MV Chidambaram SCI Chennai<->Singapore/Penang`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/MVChidambaramJuly24-2025.jpeg`,
+description: `<ul><li> MV Chidambaram SCI Chennai<->Singapore/Penang </li><li> MV Chidambaram was owned by  Shipping Corporation of India(SCI). This liner was originally the M.V. Pasteur and was build in Dunkerque, France. It was sold to the Indian government in 1972. </li><li> Service started 1972, she used to ply the route from Madras to Penang, Port Klang and Singapore, then back again to Madras.  </li><li> Unfortunately ended abruptly 1985 when she caught fire and was decommissioned shortly after </li><li> Drawing completed July 24, uploaded July 25, 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  'Wed Jul 23 2025 00:53:30 GMT-0700 (Pacific Daylight Time)',
