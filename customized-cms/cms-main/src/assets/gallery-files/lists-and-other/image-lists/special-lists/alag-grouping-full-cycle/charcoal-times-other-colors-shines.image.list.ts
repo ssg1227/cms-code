@@ -19,6 +19,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  'Sat Aug 09 2025 10:11:04 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Kargil War Vijay Din July26 (complete Aug1) 2025`,
+fullFileName: `${this.imageRoot}VijayDinJuly26-CompAug1.jpeg`,
+description: `<ul><li> Kargil War Vijay Din July26 (complete Aug1) 2025 </li><li> Symbolic celebration of Victory at Kargil July 26 1999 </li><li> Photo of  victorious Indian Army at Tololing, a pivotal battle  </li><li> ('victory above the clouds') </li><li> The cylinders at either side, at the bottom are empty artillery shells </li><li> Color pencils with Charcoal finish </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'black-white',
 dateUploaded:  'Fri Jul 25 2025 10:32:45 GMT-0700 (Pacific Daylight Time)',

@@ -11,7 +11,17 @@ export class PlacesScenesObjectsImageList {
                 themeSummary:`</strong>Scenes, Objects, Structures, (some may be items containing mix modes of transport or something like an air dogfight)<br/>
                 Mumbai gets her due place and a dedicated theme; all Mumbai related sketches will be found in 'Mumbai Meri Jaan'`,
                 files: [ 
+   
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  'Sat Aug 09 2025 10:11:04 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Kargil War Vijay Din July26 (complete Aug1) 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/VijayDinJuly26-CompAug1.jpeg`,
+description: `<ul><li> Kargil War Vijay Din July26 (complete Aug1) 2025 </li><li> Symbolic celebration of Victory at Kargil July 26 1999 </li><li> Photo of  victorious Indian Army at Tololing, a pivotal battle  </li><li> ('victory above the clouds') </li><li> The cylinders at either side, at the bottom are empty artillery shells </li><li> Color pencils with Charcoal finish </li></ul>`,
+},{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',

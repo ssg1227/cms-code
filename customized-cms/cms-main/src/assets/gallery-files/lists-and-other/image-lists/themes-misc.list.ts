@@ -12,7 +12,7 @@ public allImageList:ImageElement[]  =  [
         folder:'themes-misc',
              theme:'Themes and Pending categorization',
              themeSummary: `Some theme sketches with components, some as-yet 'one-off' or uncategorized sketches'`,
-             files: [   
+             files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
