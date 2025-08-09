@@ -1,7 +1,8 @@
 
 # LOG OF CHANGES RECORDED W.E.F. April 28 2024 #
 "CMS Picture Gallery" by Shantanu Gadkari
-- ***This File  closed May 1 2025 and saved as CHANGELOG-2024-2025.md and a fresh new  CHANGELOG.md  initated**  
+ng build; sync;sync;sync;sync;sync; firebase deploy- 
+***This File  closed May 1 2025 and saved as CHANGELOG-2024-2025.md and a fresh new  CHANGELOG.md  initated**  
   - link to github url of this file.
   - carry over only headers and pending items to new file
 - This document, along with documents of the same name in full stack component projects - 'cms-automate-fe' (angular) and 'shan-cms-maintain' (java spring boot) attempts to capture changes, and plans in the cms 'suite' from the above date

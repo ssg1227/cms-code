@@ -1,5 +1,6 @@
 
 # LOG OF CHANGES RECORDED W.E.F. May 1st 2024 #
+ng build; sync;sync;sync;sync;sync; firebase deploy
 ## May 2025 onward
 "CMS Picture Gallery" by Shantanu Gadkari
 - *** June 2025 onward** 

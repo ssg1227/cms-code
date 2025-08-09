@@ -19,6 +19,18 @@ export class ShirdiSaiQ2Q32022ImageList {
         themeSummary: 
         `<p> <em><strong>April 2022, my attempt on Shirdi Sai sketch every Thursday going on. Let's see how far this sustains... `,
         files: [ // SaiMarch32022.jpeg
+
+            
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Fri Aug 08 2025 19:00:32 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Baba 2022 --> 2025 RakshaBandan`,
+fullFileName: `${this.imageRoot}BabaAug112022-RakshaBandan-NrliPnima.jpeg`,
+description: `<ul><li> Baba 2022 --> 2025 RakshaBandan </li><li> This sketch of Baba wearing Rakhee (Raksha Bandan), having 'Narali Bhaat' (coconut rice) and sea with coconut trees background ('Narali Poornima') was  completed Aug 11 2022, Raskha Bandan THEN  </li><li> uploaded August 8 2025 Raksha Bandan </li></ul>`,
+},
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
