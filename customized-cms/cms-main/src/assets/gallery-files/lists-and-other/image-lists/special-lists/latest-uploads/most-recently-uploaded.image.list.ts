@@ -10,6 +10,27 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [
+ 
+{ // /Users/shantanug/Documents/GitHub/cms-code/customized-cms/cms-main/src/assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/BabaFeetAug1-2025-Upload-AUg13.jpeg
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Wed Aug 13 2025 19:28:25 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Sai Sitting on Stone,. position of hands and legs - Aug 1 - 13 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/BabaFeetAug1-2025-Upload-AUg13.jpeg`,
+description: `<ul><li> Sai Sitting on Stone,. position of hands and legs - Aug 1 - 13 2025 </li><li> The significance of Baba's fingers over His toe in sitting posture is profound. It symbolizes that if one wishes to see His Light, they should be ego-less and humble, meditating on His toe through the opening between the two branches. This posture reflects a state of awareness and connection to the divine, emphasizing the importance of humility and meditation in spiritual practice.  </li><li> Completed Aug 1 - uploaded Aug 13 2025 </li><li> Shading pencils and Charcoal </li></ul>`,
+},{
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  'Fri Aug 13 2025 12:07:07 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Wife Uncle Deepak 75th Birthday August 13 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/DeepakKakaBirthdayAug13-2025.jpeg`,
+description: `<ul><li>Deepak Rele is my wife's paternal Uncle, who lives in CBD Navi Mumbai (date of this upload)</li>
+<li> 75th (platinum) Birthday </li><li> Created and Uploaded Aug 13 2025 </li></ul>`,
+},
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',

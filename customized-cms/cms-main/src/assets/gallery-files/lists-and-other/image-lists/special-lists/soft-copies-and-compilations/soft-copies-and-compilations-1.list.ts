@@ -22,6 +22,17 @@ files: [
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  'soft',
+dateUploaded:  'Fri Aug 13 2025 12:07:07 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Wife Uncle Deepak 75th Birthday August 13 2025`,
+fullFileName: `${this.imageRoot}DeepakKakaBirthdayAug13-2025.jpeg`,
+description: `<ul><li>Deepak Rele is my wife's paternal Uncle, who lives in CBD Navi Mumbai (date of this upload)</li>
+<li> 75th (platinum) Birthday </li><li> Created and Uploaded Aug 13 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
 dateUploaded:  'Fri Aug 08 2025 19:13:07 GMT-0700 (Pacific Daylight Time)',
 duplicate:  'false',
 summaryLabel:  `Sai ChaturMaas compilation Aug8-2025`,
