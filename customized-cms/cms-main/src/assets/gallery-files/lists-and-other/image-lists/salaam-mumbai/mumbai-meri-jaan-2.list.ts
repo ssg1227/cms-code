@@ -101,7 +101,7 @@ description: `<ul><li> Seagull Feed Elephanta caves, Oct 17 2024 </li><li> Typic
 {
 canvassSize:  'A4',
 content:  'color-pencil',
-dateUploaded:  '07-10-2023',
+dateUploaded:  '07-10-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 5},
 fullFileName: `${this.imageRoot}GatewayTemplateColorJune202023.jpeg`,
 description: `<ul><li> Based off earlier template, color pencilled version </li><li> Final vers June 20 2023 </li></ul>`,
 rating:  1,
@@ -114,7 +114,7 @@ iterations: [
 {
 canvassSize:  'A4',
 content:  'black-white',
-dateUploaded:  '07-09-2023',
+dateUploaded:  '07-09-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 5},
 fullFileName: `${this.imageRoot}taraporewala-juneend-july1.jpeg`,
 description: `<ul><li> Attempt to sketch Taraporewalla Aquarium, one of Mumbai's iconic structures. The Aquarium, on Marine drive, is India's oldest and hosts both marine and fresh water life. </li><li> The aquarium has a 12-foot long and 180 degree acrylic glass tunnel.. The fish are kept in large glass tanks, which will be lit with LED lights </li><li> Sketched ca June 29 - July 1 2023  </li></ul>`,
 },
@@ -189,7 +189,7 @@ description: `<ul><li> Attempt to sketch Taraporewalla Aquarium, one of Mumbai's
             Note: walls painted with pictures of Gods (at the bottom) to prevent messing them, etc</li>
             </ul>`,
             dateUploaded: '01-24-2023',
-            
+            album: { name: 'the-second-album', status: 'added', sequence: 1} 
                  
                   },  {  
                     canvassSize: 'portion', content:'color-pencil',

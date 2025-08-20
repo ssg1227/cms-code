@@ -13,6 +13,16 @@ export class PlanesShipsCars2ImageList {
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  'Tue Aug 19 2025 22:46:24 GMT-0700 (Pacific Daylight Time)',album: { name: 'the-fourth-album', status: 'added', sequence: 22},
+duplicate:  'false',
+summaryLabel:  `Carnival Legend cruise to Ensenada July, (Aug18/19-2025)`,
+fullFileName: `${this.imageRoot}CarnivalLegendEnsenada4July19-Aug18-2025.jpeg`,
+description: `<ul><li> Carnival Legend cruise to Ensenada July, (Aug18/19-2025) </li><li> Our very first cruise!!! Carnival Legend SFO-Ensenada(Baja Mexico)-SFO </li><li> Sail 17th afternoon, dock one day - all day Ensenada 19th.. Return 21st Morning </li><li> A *MUST DO* for complete rest and fooding </li><li> Completed Aug 18, upload Aug 19 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
 content:  'black-white',
 dateUploaded:  'Fri Jul 25 2025 10:32:45 GMT-0700 (Pacific Daylight Time)',
 duplicate:  'true',
@@ -91,7 +101,7 @@ iterations: [
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
-dateUploaded:  '04-30-2025',
+dateUploaded:  '04-30-2025',album: { name: 'the-fourth-album', status: 'added', sequence: 20},
 duplicate:  'false',
 summaryLabel:  `USN Phantom Tomcat Hornet Nuclear SuperCarrier Nov 2023( 04/30/25)`,
 fullFileName: `${this.imageRoot}USN-planes112023-0425.jpeg`,
@@ -353,7 +363,7 @@ iterations: [
 {
 canvassSize:  'A4',
 content:  'color-pencil',
-dateUploaded:  '07-10-2023',
+dateUploaded:  '07-10-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 10},
 fullFileName: `${this.imageRoot}AirIndia-DC3-June92023-f.jpeg`,
 description: `<ul><li> Air India DC3  </li><li> June 9 2023 </li></ul>`,
 iterations: [
@@ -366,7 +376,7 @@ iterations: [
 {
 canvassSize:  'other',
 content:  '',
-dateUploaded:  '07-09-2023',
+dateUploaded:  '07-09-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 6},
 evolution:  `<b>The uniqeness of this sketch - combination of collage + individuals<br/>Also the story behind it<br/></B>`,
 evolutionSequence:  2,
 evolutionDate:  '06-13-2023',
@@ -381,6 +391,42 @@ iterations: [
 {fullFileName: `${this.imageRoot}superconnie-rani-ellora-iaf-2.jpeg`, description: `<ul><li> A Story line of a 'super connie' - Super Constellation as it is affectionately called<br/>-- Delivered to Air-India International February 1955 as L1049E VT-DHM "Rani of Ellora"<br/>- Converted to L1049G<br/> - To Indian Air Force October 30, 1961 as BG575- To Indian Navy by November 1976 as IN315 and converted for maritime reconnaissance use </li><li> - Retired May 1983 and stored at Hansa Naval Air Station (Dabolim Airport), Goa, India along with other ex-Indian Navy Super Constellations<br/> - By April 1999 it was the only surviving aircraft<br/> - By April 2000 it been moved to the Naval Aviation Museum at Dabolim Airport for restoration<br/> - On display at the Naval Aviation Museum near the entrance gate<br/> - On display in good condition February 2013<br> - On display in May 2019 in good condition but could use a bit of exterior TLC </li><li> Credit to 'Connie Survivors' group which posted the story which I refered to </li><li> I drew one, made a scan, rotated 180 degree and printed to get two templates </li><li> This is the completed IAD livery June 13-15 2023 </li></ul>` },
 {fullFileName: `${this.imageRoot}superconnie-rani-ellora-navy.jpeg`, description: `<ul><li> A Story line of a 'super connie' - Super Constellation as it is affectionately called<br/>-- Delivered to Air-India International February 1955 as L1049E VT-DHM "Rani of Ellora"<br/>- Converted to L1049G<br/> - To Indian Air Force October 30, 1961 as BG575- To Indian Navy by November 1976 as IN315 and converted for maritime reconnaissance use </li><li> - Retired May 1983 and stored at Hansa Naval Air Station (Dabolim Airport), Goa, India along with other ex-Indian Navy Super Constellations<br/> - By April 1999 it was the only surviving aircraft<br/> - By April 2000 it been moved to the Naval Aviation Museum at Dabolim Airport for restoration<br/> - On display at the Naval Aviation Museum near the entrance gate<br/> - On display in good condition February 2013<br> - On display in May 2019 in good condition but could use a bit of exterior TLC </li><li> Credit to 'Connie Survivors' group which posted the story which I refered to </li><li> I drew one, made a scan, rotated 180 degree and printed to get two templates </li><li> This is the completed Navy livery June 13-15 2023 </li></ul>` },
 ]
+},
+{
+canvassSize:  'other',
+content:  '',
+dateUploaded:  '07-09-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 7},
+fullFileName: `${this.imageRoot}superconnie-rani-ellora-airindia-1.jpeg`,
+description: `<ul><li> A Story line of a 'super connie' - Super Constellation as it is affectionately called<br/>-- <b>Delivered to Air-India International February 1955 as L1049E VT-DHM "Rani of Ellora"</b><br/>- Converted to L1049G<br/> - To Indian Air Force October 30, 1961 as BG575- To Indian Navy by November 1976 as IN315 and converted for maritime reconnaissance use </li><li> - Retired May 1983 and stored at Hansa Naval Air Station (Dabolim Airport), Goa, India along with other ex-Indian Navy Super Constellations<br/> - By April 1999 it was the only surviving aircraft<br/> - By April 2000 it been moved to the Naval Aviation Museum at Dabolim Airport for restoration<br/> - On display at the Naval Aviation Museum near the entrance gate<br/> - On display in good condition February 2013<br> - On display in May 2019 in good condition but could use a bit of exterior TLC </li><li> Credit to 'Connie Survivors' group which posted the story which I refered to </li><li> Collage - see individual sketches </li><li> June 13-15 2023 </li></ul>`,
+rating:  1,
+ratingYear:  2023,
+
+},
+{
+canvassSize:  'other',
+content:  '',
+dateUploaded:  '07-09-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 8},
+evolution:  `<b>The uniqeness of this sketch - combination of collage + individuals<br/>Also the story behind it<br/></B>`,
+evolutionSequence:  2,
+evolutionDate:  '06-13-2023',
+fullFileName: `${this.imageRoot}superconnie-rani-ellora-iaf-1.jpeg`,
+description: `<ul><li> A Story line of a 'super connie' - Super Constellation as it is affectionately called<br/>-- Delivered to Air-India International February 1955 as L1049E VT-DHM "Rani of Ellora"<br/>-<b> Converted to L1049G<br/> - To Indian Air Force October 30, 1961 as BG575</b>- To Indian Navy by November 1976 as IN315 and converted for maritime reconnaissance use </li><li> - Retired May 1983 and stored at Hansa Naval Air Station (Dabolim Airport), Goa, India along with other ex-Indian Navy Super Constellations<br/> - By April 1999 it was the only surviving aircraft<br/> - By April 2000 it been moved to the Naval Aviation Museum at Dabolim Airport for restoration<br/> - On display at the Naval Aviation Museum near the entrance gate<br/> - On display in good condition February 2013<br> - On display in May 2019 in good condition but could use a bit of exterior TLC </li><li> Credit to 'Connie Survivors' group which posted the story which I refered to </li><li> Collage - see individual sketches </li><li> June 13-15 2023 </li></ul>`,
+rating:  1,
+ratingYear:  2023,
+
+},
+{
+canvassSize:  'other',
+content:  '',
+dateUploaded:  '07-09-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 9},
+evolution:  `<b>The uniqeness of this sketch - combination of collage + individuals<br/>Also the story behind it<br/></B>`,
+evolutionSequence:  2,
+evolutionDate:  '06-13-2023',
+fullFileName: `${this.imageRoot}superconnie-rani-ellora-navy.jpeg`,
+description: `<ul><li> A Story line of a 'super connie' - Super Constellation as it is affectionately called<br/>-- Delivered to Air-India International February 1955 as L1049E VT-DHM "Rani of Ellora"<br/>- Converted to L1049G<br/> - To Indian Air Force October 30, 1961 as BG575- <b>To Indian Navy by November 1976 as IN315 and converted for maritime reconnaissance use </b></li><li> - Retired May 1983 and stored at Hansa Naval Air Station (Dabolim Airport), Goa, India along with other ex-Indian Navy Super Constellations<br/> - By April 1999 it was the only surviving aircraft<br/> - By April 2000 it been moved to the Naval Aviation Museum at Dabolim Airport for restoration<br/> - On display at the Naval Aviation Museum near the entrance gate<br/> - On display in good condition February 2013<br> - On display in May 2019 in good condition but could use a bit of exterior TLC </li><li> Credit to 'Connie Survivors' group which posted the story which I refered to </li><li> Collage - see individual sketches </li><li> June 13-15 2023 </li></ul>`,
+rating:  1,
+ratingYear:  2023,
+
 },
 {
 canvassSize:  'A4',

@@ -240,7 +240,7 @@ ratingYear:  2023,
 {
 canvassSize:  'A4',
 content:  'color-crayon',
-dateUploaded:  '07-09-2023',
+dateUploaded:  '07-09-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 4},
 fullFileName: `${this.imageRoot}TajTemplateJune72023-final.jpeg`,
 description: `<ul><li> I have been using a 'template' of the Taj Mahal sketch originally End 2020 </li><li> Here is one color pencil version </li><li> Photographed version - better than scanned </li><li>June 6-7 2023</li></ul>`,
 iterations: [
@@ -309,14 +309,15 @@ ratingYear:  2023,
                              fullFileName: `${this.imageRoot}HowrahBridge-final-May31-2023.jpeg`, 
                               description: `<ul>
                              <li>Horwah Bridge</li>
+                              
                              <li>Added a Durga Pooja scene where the Devi and Her children are being transported to a pandal in Kolkatta</li>
                              <li>Initial bare bones skectch having gotten the external facing beams and trusses network (sort of) right... </li>
                              <li>I realized that to make the complex network of trusses clear, even an A3 lengthwise was insufficient</li>
                              <li>So I kept the sketch to partial, 'leaving out' the left post pillar section</li>
-                             <li>Got an idea, aligned an A4 to the left edge, in portrait mode, and sketched the missing part</li>
+                             <li>Got an idea, aligned an A4 to the left edge, in portrait mode, and sketched the missing part (<strong>The physical album, there are THREE sheets. the 1st being the main bridge A3 sheet, 2nd the 'missing part' A4, THIRD  a copy and print on A4</strong></li>
                              <li>March 3 2023</li>
                              </ul>`,
-                             dateUploaded: '06-01-2023',
+                             dateUploaded: '06-01-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 1},
                              rating: 1,
                              iterations:[
                               {  fullFileName: `${this.imageRoot}HowrahBridge-final-May31-2023.jpeg`, 
@@ -326,7 +327,7 @@ ratingYear:  2023,
                              <li>Initial bare bones skectch having gotten the external facing beams and trusses network (sort of) right... </li>
                              <li>I realized that to make the complex network of trusses clear, even an A3 lengthwise was insufficient</li>
                              <li>So I kept the sketch to partial, 'leaving out' the left post pillar section</li>
-                             <li>Got an idea, aligned an A4 to the left edge, in portrait mode, and sketched the missing part</li>
+                             <li>Got an idea, aligned an A4 to the left edge, in portrait mode, and sketched the missing part (<strong>The physical album, there are THREE sheets. the 1st being the main bridge A3 sheet, 2nd the 'missing part' A4, THIRD  a copy and print on A4</strong> </li>
                              <li>Started Feb 19, completed May 31 2023</li>
                              </ul>`,}, {  fullFileName: `${this.imageRoot}HowrahBridge-final-May31-2023-A4.jpeg`, 
                              description: `<ul>
@@ -335,7 +336,7 @@ ratingYear:  2023,
                             <li>Initial bare bones skectch having gotten the external facing beams and trusses network (sort of) right... </li>
                             <li>I realized that to make the complex network of trusses clear, even an A3 lengthwise was insufficient</li>
                             <li>So I kept the sketch to partial, 'leaving out' the left post pillar section</li>
-                            <li>Got an idea, aligned an A4 to the left edge, in portrait mode, and sketched the missing part</li>
+                            <li>Got an idea, aligned an A4 to the left edge, in portrait mode, and sketched the missing part (<strong>The physical album, there are THREE sheets. the 1st being the main bridge A3 sheet, 2nd the 'missing part' A4, THIRD  a copy and print on A4</strong></li>
                             <li>Started Feb 19, completed May 31 2023</li>
                              </ul>`,}, {  fullFileName: `${this.imageRoot}howrahBridgeWIP-march2-2023.jpg`, 
                               description: `<ul>
@@ -344,7 +345,7 @@ ratingYear:  2023,
                              <li>Initial bare bones skectch having gotten the external facing beams and trusses network (sort of) right... </li>
                              <li>I realized that to make the complex network of trusses clear, even an A3 lengthwise was insufficient</li>
                              <li>So I kept the sketch to partial, 'leaving out' the left post pillar section</li>
-                             <li>Got an idea, aligned an A4 to the left edge, in portrait mode, and sketched the missing part</li>
+                             <li>Got an idea, aligned an A4 to the left edge, in portrait mode, and sketched the missing part (<strong>The physical album, there are THREE sheets. the 1st being the main bridge A3 sheet, 2nd the 'missing part' A4, THIRD  a copy and print on A4</strong></li>
                              <li>Started Feb 19, completed May 31 2023</li>
                              </ul>`,}],
       

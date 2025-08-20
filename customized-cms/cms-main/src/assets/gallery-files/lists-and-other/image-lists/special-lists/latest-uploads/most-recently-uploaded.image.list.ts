@@ -10,6 +10,26 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A3',
+content:  'color-pencil',
+dateUploaded:  'Tue Aug 19 2025 22:46:24 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Carnival Legend cruise to Ensenada July, (Aug18/19-2025)`,
+fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/planes-ships-cars-2/CarnivalLegendEnsenada4July19-Aug18-2025.jpeg`,
+description: `<ul><li> Carnival Legend cruise to Ensenada July, (Aug18/19-2025) </li><li> Our very first cruise!!! Carnival Legend SFO-Ensenada(Baja Mexico)-SFO </li><li> Sail 17th afternoon, dock one day - all day Ensenada 19th.. Return 21st Morning </li><li> A *MUST DO* for complete rest and fooding </li><li> Completed Aug 18, upload Aug 19 color pencils + charcoal </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A3',
+content:  'color pencils + charcoal',
+dateUploaded:  'Tue Aug 19 2025 19:31:06 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `India 79th Independence Day Theme Aug 15 - Aug 19 2025`,
+fullFileName: `assets/gallery-files/images/themes-misc/India79thIndependenceDay-Aug15-18-2025.jpeg`,
+description: `<ul><li> India 79th Independence Day Theme Aug 15 - Aug 19 2025 </li><li> My August 15 theme.. Made in India  centered around Atal Setu - Nhava Sheva end.. Dhruv Helicopter.. At the top, center right is a sort of Independence Day 'mela' with floats of Vande Bharat, PSLV3, Mumbai Sealink  etc. </li><li> Complete Aug 15, uploaded Aug 19 2025 </li></ul>`,
+},
  
 { // /Users/shantanug/Documents/GitHub/cms-code/customized-cms/cms-main/src/assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/BabaFeetAug1-2025-Upload-AUg13.jpeg
 canvassMaterial:  'Plain paper',

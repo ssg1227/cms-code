@@ -135,7 +135,7 @@ iterations: [
                 <li>credit to TUSHAR PRADHAN an ex colleague from SISL for suggesting this. I may not have thought of drawing this on my own</li>
                 <li> * this could even pass off for the Indrayani or a Nasik bound train - there are Ghats there too ;) </li>
             </ul>`,
-                dateUploaded: '02-02-2023',
+                dateUploaded: '02-02-2023',album: { name: 'the-second-album', status: 'added', sequence: 3},
                 evolution: 'Reputation of the train.. unique ambience.. description below says it all.. !!<br/>',
                 evolutionSequence: 2, evolutionDate: '12-01-2022',
                 rating:1,
@@ -198,7 +198,7 @@ iterations: [
                 <li>Sketch over Aug-Sept 2022 </li>
                 <li>Initial review - zoomed in on locomotive WP5 </li>
             </ul>`,
-                dateUploaded: '02-02-2023',
+                dateUploaded: '02-02-2023',album: { name: 'the-second-album', status: 'added', sequence: 2},
                 evolution: 'Reputation of the train.. my beloved description below says it all.. !!<br/>',
                 evolutionSequence: 2, evolutionDate: '09-01-2022',
                 rating:1,
@@ -249,7 +249,7 @@ iterations: [
             <li>Shown over Minto Bridge New Delhi - sketched Nov 20 2022 </li>
             <li>Final version </li>
         </ul>`,
-            dateUploaded: '02-02-2023',
+            dateUploaded: '02-02-2023',album: { name: 'the-second-album', status: 'added', sequence: 4},
             rating:1,
             canvassSize:'A3',
             content: 'color-pencil',

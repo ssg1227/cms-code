@@ -902,7 +902,18 @@ breadCrumb:[
             {"link":"/view","params":"group-by-physical-scrapbook-album","label":"Group by (Physical, Scrapbook) Album"},
             {"link":"","params":"the-first-album","label":"The First Album"},
             ], emptyMessage: 'Coming soon!!'
-            },{
+            } ,{
+            parentKey: 'group-by-physical-scrapbook-album',key: 'the-second-album', isLeafParent: true, levelIndex: 3,  roles:["superuser","guru"],
+            label: 'The Second Album',  
+            description: `The Second Album/Scrapbook to fill with drawings.
+            This has varied content. Mostly 'non living' - scenes, transport machines - planes, trains, ships, cars.. etc. Color and Black and white pencils **Dunwell A3 size 24 pocket (48 sheet) presentation book. Black cover**`,
+            breadCrumb:[
+            {"link":"/view","params":"top-level","label":"HOME"},
+            {"link":"/view","params":"special-lists","label":"Special Lists"},
+            {"link":"/view","params":"group-by-physical-scrapbook-album","label":"Group by (Physical, Scrapbook) Album"},
+            {"link":"","params":"the-second-album","label":"The Second Album"},
+            ], emptyMessage: 'Coming soon!!'
+            }, {
             parentKey: 'group-by-physical-scrapbook-album',key: 'the-third-album', isLeafParent: true, levelIndex: 3,  roles:["superuser","guru"],
             label: 'The THIRD Album',  
             description: `The Third Album/Scrapbook to fill with drawings.
@@ -912,6 +923,17 @@ breadCrumb:[
             {"link":"/view","params":"special-lists","label":"Special Lists"},
             {"link":"/view","params":"group-by-physical-scrapbook-album","label":"Group by (Physical, Scrapbook) Album"},
             {"link":"","params":"the-third-album","label":"The Third Album"},
+            ], emptyMessage: 'Coming soon!!'
+            },{
+            parentKey: 'group-by-physical-scrapbook-album',key: 'the-fourth-album', isLeafParent: true, levelIndex: 3,  roles:["superuser","guru"],
+            label: 'The Fourth Album',  
+            description: `The Fourth Album/Scrapbook to fill with drawings.
+            This has varied content. Mostly 'non living' - scenes, transport machines - planes, trains, ships, cars.. etc. Color and Black and white pencils **Dunwell A3 size 24 pocket (48 sheet) presentation book. Black cover**`,
+            breadCrumb:[
+            {"link":"/view","params":"top-level","label":"HOME"},
+            {"link":"/view","params":"special-lists","label":"Special Lists"},
+            {"link":"/view","params":"group-by-physical-scrapbook-album","label":"Group by (Physical, Scrapbook) Album"},
+            {"link":"","params":"the-fourth-album","label":"The Fourth Album"},
             ], emptyMessage: 'Coming soon!!'
             }
     /*

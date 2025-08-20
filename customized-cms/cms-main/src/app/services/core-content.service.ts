@@ -223,7 +223,10 @@ export class CoreContentService {
           // .. 
           case 'the-divine-in-colors-so-fine':
           case 'the-first-album':
+
+          case 'the-second-album':
           case 'the-third-album':
+          case 'the-fourth-album':
               this.genImageList = { 
               allImageList: [ 
                   { 

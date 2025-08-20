@@ -15,6 +15,17 @@ public allImageList:ImageElement[]  =  [
              files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A3',
+content:  '',
+dateUploaded:  'Tue Aug 19 2025 19:31:06 GMT-0700 (Pacific Daylight Time)',album: { name: 'the-fourth-album', status: 'added', sequence: 21},
+duplicate:  'false',
+summaryLabel:  `India 79th Independence Day Theme Aug 15 - Aug 19 2025`,
+// /Users/shantanug/Documents/GitHub/cms-code/customized-cms/cms-main/src/assets/gallery-files/images/themes-misc/India79thIndependenceDay-Aug15-18-2025.jpeg
+fullFileName: `${this.imageRoot}India79thIndependenceDay-Aug15-18-2025.jpeg`,
+description: `<ul><li>color pencil + charcoal</li><li> India 79th Independence Day Theme Aug 15 - Aug 19 2025 </li><li> My August 15 theme.. Made in India  centered around Atal Setu - Nhava Sheva end.. Dhruv Helicopter.. At the top, center right is a sort of Independence Day 'mela' with floats of Vande Bharat, PSLV3, Mumbai Sealink  etc. </li><li> Complete Aug 15, uploaded Aug 19 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  '',
 dateUploaded:  'Sun Jul 13 2025 21:31:10 GMT-0700 (Pacific Daylight Time)',
