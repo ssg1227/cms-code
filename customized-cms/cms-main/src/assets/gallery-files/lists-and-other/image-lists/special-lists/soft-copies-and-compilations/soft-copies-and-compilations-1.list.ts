@@ -17,7 +17,18 @@ public allImageList:ImageElement[]  =  [
             folder:'soft-copies-and-compilations-1',
             theme:'<theme>',
             themeSummary: '',
-files: [
+files: [{
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  'Wed Aug 27 2025 7:47:07 Indian Standard Time',
+
+duplicate:  'false',
+summaryLabel:  `Shripad Vallabh Parayan Aug 27 2025, Ganesh Chaturthu`,
+fullFileName: `${this.imageRoot}Guru-Ganesh-Chaturthi-Aug27.jpeg`,
+description: `<ul><li>Collage of Ganesh, Datta and Shripad Vallabh compiled and uploaded Aug 27 2025</li>
+        <li>as part of my chapter read (49th) of Shripad Vallabh charitamrutam</li></ul>`,
+},
 {
 canvassMaterial:  'other',
 canvassSize:  'soft',

@@ -11,6 +11,17 @@ public allImageList:ImageElement[]  =  [
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [
 {
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  'Wed Aug 27 2025 7:47:07 Indian Standard Time',
+
+duplicate:  'false',
+summaryLabel:  `Shripad Vallabh Parayan Aug 27 2025, Ganesh Chaturthu`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Guru-Ganesh-Chaturthi-Aug27.jpeg`,
+description: `<ul><li>Collage of Ganesh, Datta and Shripad Vallabh compiled and uploaded Aug 27 2025</li>
+        <li>as part of my chapter read (49th) of Shripad Vallabh charitamrutam</li></ul>`,
+},{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A3',
 content:  'color-pencil',
