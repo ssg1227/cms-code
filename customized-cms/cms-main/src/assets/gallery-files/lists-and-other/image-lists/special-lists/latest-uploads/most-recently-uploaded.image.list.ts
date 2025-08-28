@@ -14,9 +14,21 @@ public allImageList:ImageElement[]  =  [
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  'soft',
+dateUploaded:  'Thu Aug 28 2025 22:47:07 Indian Standard Time',
+
+duplicate:  'true',
+summaryLabel:  `Gurus with Shree Ganesh Aug 28 2025, Ganesh Chaturthu`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Sai-Ganesh-Chaturthi-Aug27-28.jpeg`,
+description: `<ul><li>Collage of Ganesh, with Gurus compiled and uploaded Aug 28 2025</li>
+        </ul>`,
+},
+{
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
 dateUploaded:  'Wed Aug 27 2025 7:47:07 Indian Standard Time',
 
-duplicate:  'false',
+duplicate:  'true',
 summaryLabel:  `Shripad Vallabh Parayan Aug 27 2025, Ganesh Chaturthu`,
 fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Guru-Ganesh-Chaturthi-Aug27.jpeg`,
 description: `<ul><li>Collage of Ganesh, Datta and Shripad Vallabh compiled and uploaded Aug 27 2025</li>
