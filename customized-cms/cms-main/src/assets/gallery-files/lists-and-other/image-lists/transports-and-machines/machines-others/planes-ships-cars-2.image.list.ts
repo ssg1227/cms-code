@@ -10,6 +10,18 @@ export class PlanesShipsCars2ImageList {
         themeSummary: `My first steps, my first love in this passion for sketching these are planes which I started drawing as a kid. <br/>
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
+            {
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  '09/01/2025',
+
+duplicate:  'true',
+summaryLabel:  `Carnival Legend cruise to Ensenada Gratitude soft copy Sept 1 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/CarnivalLegendEnsenada4-SC-thanksSep125.jpeg`,
+
+description: `<ul><li>Soft copy gratitude</li><li> Carnival Legend cruise to Ensenada July, (Aug18/19-2025) </li><li> Our very first cruise!!! Carnival Legend SFO-Ensenada(Baja Mexico)-SFO </li><li> Sail 17th afternoon, dock one day - all day Ensenada 19th.. Return 21st Morning </li><li> A *MUST DO* for complete rest and fooding </li><li> Completed Aug 18, upload Aug 19 </li></ul>`,
+       },
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
