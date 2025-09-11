@@ -9,7 +9,17 @@ public allImageList:ImageElement[]  =  [
         theme:'Shree Ganesh',
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
-        files: [{
+        files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Wed Sep 10 2025 23:03:04 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Sai Doing Ganesh Visarjan complete: Sept 28 2023 upload: Sept 11 2025`,
+fullFileName: `assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q2-q3-2023/SaiAnantChaturdashi-092823-091025.jpeg`,
+description: `<ul><li> Sai Doing Ganesh Visarjan complete: Sept 28 2023 upload: Sept 11 2025 </li></ul>`,
+},{
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  'soft',

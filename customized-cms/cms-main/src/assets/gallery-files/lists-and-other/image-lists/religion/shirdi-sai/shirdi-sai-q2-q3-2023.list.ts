@@ -19,6 +19,16 @@ public allImageList:ImageElement[]  =  [
         `<p> <em><strong>Soo many sketches of Shirdi Sai!!!</strong> that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha</em><br/>
         &nbsp;&nnbsp; * Of late (June 2021) I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
         files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Wed Sep 10 2025 23:03:04 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Sai Doing Ganesh Visarjan complete: Sept 28 2023 upload: Sept 11 2025`,
+fullFileName: `${this.imageRoot}SaiAnantChaturdashi-092823-091025.jpeg`,
+description: `<ul><li> Sai Doing Ganesh Visarjan complete: Sept 28 2023 upload: Sept 11 2025 </li></ul>`,
+},
 
 {
 canvassSize:  'A4',
