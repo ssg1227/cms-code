@@ -17,7 +17,44 @@ public allImageList:ImageElement[]  =  [
             folder:'soft-copies-and-compilations-1',
             theme:'<theme>',
             themeSummary: '',
-files: [
+files: [ 
+{
+canvassMaterial:  'other',
+canvassSize:  'other',
+content:  'soft',
+dateUploaded:  'Sun Sep 28 2025 15:17:40 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Swami, Datta Sai Chatgpt 09/18 - 9/28/2025`,
+fullFileName: `${this.imageRoot}SwamiDattaSaiSept172025-chatGPT-pasteback-final.jpeg`,
+description: `<ul><li> Swami, Datta Sai Chatgpt 09/18 - 9/28/2025 </li><li> A soft copy compilation with a difference </li><li> FINAL VERSION (Step 4 below) <br/>1. Taking the soft copy of a full sketch of Lord Dattatreya, and Shree Swami Samartha </li><li> 2. Canvass extended and copied a free select outline (using Photo pad) to paste Sai sketch on the blank area </li><li> 3. Asked ChatGPT to extend the background  </li><li> 4. ChatGPT did a GREAT JOB but warped the Guru images, so 'free selected' (Photo pad) them from 1. above and pasted to get the final </li></ul>`,
+iterations: [
+{fullFileName: `${this.imageRoot}SwamiDattaSaiSept172025-chatGPT-pasteback-final.jpeg`, description: `<ul><li> Swami, Datta Sai Chatgpt 09/18 - 9/28/2025 </li><li> A soft copy compilation with a difference </li><li> FINAL VERSION (Step 4 below) <br/>1. Taking the soft copy of a full sketch of Lord Dattatreya, and Shree Swami Samartha </li><li> 2. Canvass extended and copied a free select outline (using Photo pad) to paste Sai sketch on the blank area </li><li> 3. Asked ChatGPT to extend the background  </li><li> 4. ChatGPT did a GREAT JOB but warped the Guru images, so 'free selected' (Photo pad) them from 1. above and pasted to get the final </li></ul>` },
+{fullFileName: `${this.imageRoot}SwamiDattaSaiSept172025-rawl.jpeg`, description: `<ul><li> Swami, Datta Sai Chatgpt 09/18 - 9/28/2025 </li><li> A soft copy compilation with a difference </li><li> Initial RAW VERSION (Step 1 below) <br/>1. Taking the soft copy of a full sketch of Lord Dattatreya, and Shree Swami Samartha </li><li> (next)2. Canvass extended and copied a free select outline (using Photo pad) to paste Sai sketch on the blank area </li><li> (next)3. Asked ChatGPT to extend the background  </li><li> (last) 4. ChatGPT did a GREAT JOB but warped the Guru images, so 'free selected' (Photo pad) them from 1. above and pasted to get the final </li></ul>` },
+{fullFileName: `${this.imageRoot}SwamiDattaSaiSept172025-chatGPT-background.png`, description: `<ul><li> Swami, Datta Sai Chatgpt 09/18 - 9/28/2025 </li><li> A soft copy compilation with a difference </li><li> CHATGPT VERSION (Step 3 below) <br/>1. Taking the soft copy of a full sketch of Lord Dattatreya, and Shree Swami Samartha </li><li> (next)2. Canvass extended and copied a free select outline (using Photo pad) to paste Sai sketch on the blank area </li><li> (next)3. Asked ChatGPT to extend the background  </li><li> (last) 4. ChatGPT did a GREAT JOB but warped the Guru images, so 'free selected' (Photo pad) them from 1. above and pasted to get the final </li></ul>` },
+]
+
+},
+ {
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  '09/11/2025Thu Sep 11 2025 11:03:15 GMT-0700 (Pacific Daylight Time)',
+
+duplicate:  'false',
+summaryLabel:  `Baba and Bajrangbali Sept 11 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Baba-Bajrangbali-0911-2025.jpg`,
+description: `<ul><li>Baba and Bajrangbali compiled and uploaded Sept 11 2025</li></ul>`,
+       },  {
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  '09/11/2025Thu Sep 11 2025 11:02:34 GMT-0700 (Pacific Daylight Time)',
+
+duplicate:  'false',
+summaryLabel:  `A tribute to 4th std Class teacher Ms. Dandekar Sept 10-11 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/MsDandekarThanksCardSept10-11-2025.jpeg`,
+description: `<ul><li>Ms Dandekar was my class teacher in school in the 4th std which was the only year I stood 1st in class</li><li> A couple of our alumni were to visit her Sept 11 lunch time (IST) so was inspired to create this</li><li> My second tribute to a school teacher after Mr Rodricks our Art teacher</ul>`,
+       },
   {
 canvassMaterial:  'other',
 canvassSize:  'soft',

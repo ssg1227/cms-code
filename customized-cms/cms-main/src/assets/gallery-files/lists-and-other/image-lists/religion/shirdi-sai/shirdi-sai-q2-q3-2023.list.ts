@@ -25,9 +25,9 @@ canvassSize:  '',
 content:  'black-white',
 dateUploaded:  'Wed Sep 10 2025 23:03:04 GMT-0700 (Pacific Daylight Time)',
 duplicate:  'false',
-summaryLabel:  `Sai Doing Ganesh Visarjan complete: Sept 28 2023 upload: Sept 11 2025`,
+summaryLabel:  `Sai Doing Ganesh Visarjan complete: Sept 28 2023 upload: Sept 10 2025`,
 fullFileName: `${this.imageRoot}SaiAnantChaturdashi-092823-091025.jpeg`,
-description: `<ul><li> Sai Doing Ganesh Visarjan complete: Sept 28 2023 upload: Sept 11 2025 </li></ul>`,
+description: `<ul><li> Sai Doing Ganesh Visarjan complete: Sept 28 2023 upload: Sept 10 2025 </li></ul>`,
 },
 
 {
