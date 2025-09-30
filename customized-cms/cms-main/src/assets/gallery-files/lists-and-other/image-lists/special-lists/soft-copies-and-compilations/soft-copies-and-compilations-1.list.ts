@@ -18,6 +18,27 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [ 
+
+{
+canvassMaterial:  'other',
+canvassSize:  '',
+content:  'soft',
+dateUploaded:  'Mon Sep 29 2025 19:19:58 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Tushar Pradhan SISL ex colleague Birthday Sept 24`,
+fullFileName: `${this.imageRoot}Falooda-Tushar-Birthday-Sept24-29-2025.jpeg`,
+description: `<ul><li>Tushar Pradhan SISL ex colleague Birthday Sept 24</li><li> Upload Sept 29 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'other',
+canvassSize:  '',
+content:  'soft',
+dateUploaded:  'Mon Sep 29 2025 19:19:58 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Aparna Abhyankar RAIT mate birthday Sept 16`,
+fullFileName: `${this.imageRoot}Falooda-Aparna-Birthday-Sept16-29-2025.jpeg`,
+description: `<ul><li> Aparna Abhyankar RAIT mate birthday Sept 16 </li><li> I affectionately call her Guru Maiyya </li><li> Upload Sept 29 2025 </li></ul>`,
+},
 {
 canvassMaterial:  'other',
 canvassSize:  'other',
