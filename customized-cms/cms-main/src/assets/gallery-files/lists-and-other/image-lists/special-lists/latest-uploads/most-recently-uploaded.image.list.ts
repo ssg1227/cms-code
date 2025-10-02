@@ -10,6 +10,26 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Thu Oct 02 2025 11:10:00 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Kishore Kumar Birthday.. Bhimsen Tribute Scene - 08/08 - Oct 2 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Bhimsen-Kishore-Trbute-Aug8-Oct2-2025.jpeg`,
+description: `<ul><li> Kishore Kumar Birthday.. Bhimsen Tribute Scene - 08/08 - Oct 2 2025 </li><li> A hallmark of artists true to their passion, humble, down to earth, grounded Attempt to capture how legendary classical singer Bharat Ratna Pt Bhimsen Joshi was enamored by  Kishore Kumar's voice and singing ability esp Amar Prem songs </li><li> Complete on Aug8  in celebration of Kishore Da birth anniversary Aug 4 2025 </li><li> Uploaded Oct 2 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Thu Oct 02 2025 10:37:38 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Typical Battle of Britain Scene Complete 09/20 Upl 10/02/2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/BattleOfBritain-Sept20-Oct-2-2025.jpeg`,
+description: `<ul><li> Typical Battle of Britain Scene Complete 09/20 Upl 10/02/2025 </li><li> Actually an enhancement of a previous sketch </li><li> Attempt to show a bombing raid by Heinkel He-111 with Me-109 escorts being attacked by Spitfires </li><li> Enhancement completed Sept 20, uploaded Oct 2 2025 </li></ul>`,
+},
                 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',

@@ -19,6 +19,28 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Thu Oct 02 2025 11:10:00 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Kishore Kumar Birthday.. Bhimsen Tribute Scene - 08/08 - Oct 2 2025`,
+fullFileName: `${this.imageRoot}Bhimsen-Kishore-Trbute-Aug8-Oct2-2025.jpeg`,
+description: `<ul><li><b>Note change of physical( and soft copy) order of completion<br/>
+    Battle of Britain scene sketch is exchanged with (this)Pt Bhimsen Joshi/Kishore Kumar tribute </b></li><li> Kishore Kumar Birthday.. Bhimsen Tribute Scene - 08/08 - Oct 2 2025 </li><li> A hallmark of artists true to their passion, humble, down to earth, grounded Attempt to capture how legendary classical singer Bharat Ratna Pt Bhimsen Joshi was enamored by  Kishore Kumar's voice and singing ability esp Amar Prem songs </li><li> Complete on Aug8  in celebration of Kishore Da birth anniversary Aug 4 2025 </li><li> Uploaded Oct 2 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Thu Oct 02 2025 10:37:38 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Typical Battle of Britain Scene Complete 09/20 Upl 10/02/2025`,
+fullFileName: `${this.imageRoot}BattleOfBritain-Sept20-Oct-2-2025.jpeg`,
+description: `<ul><li><b>Note change of physical( and soft copy) order of completion<br/>
+   (this) Battle of Britain scene sketch is exchanged with Pt Bhimsen Joshi/Kishore Kumar tribute  </b></li><li> Typical Battle of Britain Scene Complete 09/20 Upl 10/02/2025 </li><li> Actually an enhancement of a previous sketch </li><li> Attempt to show a bombing raid by Heinkel He-111 with Me-109 escorts being attacked by Spitfires </li><li> Enhancement completed Sept 20, uploaded Oct 2 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'black-white',
 dateUploaded:  'Sat Jun 14 2025 17:34:45 GMT-0700 (Pacific Daylight Time)',

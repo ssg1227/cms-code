@@ -10,6 +10,16 @@ export class PlanesShipsCars2ImageList {
         themeSummary: `My first steps, my first love in this passion for sketching these are planes which I started drawing as a kid. <br/>
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Thu Oct 02 2025 10:37:38 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Typical Battle of Britain Scene Complete 09/20 Upl 10/02/2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/BattleOfBritain-Sept20-Oct-2-2025.jpeg`,
+description: `<ul><li> Typical Battle of Britain Scene Complete 09/20 Upl 10/02/2025 </li><li> Actually an enhancement of a previous sketch </li><li> Attempt to show a bombing raid by Heinkel He-111 with Me-109 escorts being attacked by Spitfires </li><li> Enhancement completed Sept 20, uploaded Oct 2 2025 </li></ul>`,
+},
             {
 canvassMaterial:  'other',
 canvassSize:  'soft',

@@ -15,6 +15,16 @@ export class PeopleImageList {
      files: [,
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Thu Oct 02 2025 11:10:00 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Kishore Kumar Birthday.. Bhimsen Tribute Scene - 08/08 - Oct 2 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Bhimsen-Kishore-Trbute-Aug8-Oct2-2025.jpeg`,
+description: `<ul><li> Kishore Kumar Birthday.. Bhimsen Tribute Scene - 08/08 - Oct 2 2025 </li><li> A hallmark of artists true to their passion, humble, down to earth, grounded Attempt to capture how legendary classical singer Bharat Ratna Pt Bhimsen Joshi was enamored by  Kishore Kumar's voice and singing ability esp Amar Prem songs </li><li> Complete on Aug8  in celebration of Kishore Da birth anniversary Aug 4 2025 </li><li> Uploaded Oct 2 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'black-white',
 dateUploaded:  'Sat Jun 14 2025 17:28:45 GMT-0700 (Pacific Daylight Time)',
