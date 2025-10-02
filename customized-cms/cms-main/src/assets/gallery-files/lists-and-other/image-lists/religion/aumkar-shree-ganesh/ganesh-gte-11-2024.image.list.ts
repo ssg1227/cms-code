@@ -18,6 +18,23 @@ public allImageList:ImageElement[]  =  [
 files: [ 
 
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Thu Aug 28 2025 22:47:07 Indian Standard Time',
+
+album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 0} ,
+duplicate:  'false',
+summaryLabel:  `Home Ganapati Sept 30 - Oct 2 2025`,
+fullFileName: `${this.imageRoot}HomeGanapatiSept30-Oct2-2025.jpeg`,
+description: `<ul>
+        <li>An appropriate first for a physical album ('The Divine in Colors So Fine') = our 'Home Ganapati' </li>
+         <li>Started around Ganesh Chaturthi 2025 time 1st version was released then.  </li>
+         <li>Completed Sept 30 2025, detailing with new Silver metallic pencil and <b> trying out fluorescent color pencils (see attempt to draw lights around main piC)<b></li>
+         <li>Uploaded Oct 2 2025</li>
+       </ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  'soft',

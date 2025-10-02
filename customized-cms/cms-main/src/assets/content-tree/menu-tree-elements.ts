@@ -441,8 +441,17 @@ Also increasing numbers of Swami Samartha sketches`,
            {link: '', params:'baba-themes-1', label: 'Shirdi Sai: Sai Satcharitra'}
        ] 
        },
-     
 
+          { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q4-2025-q1-2026', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', roles: ['superuser',"guru"],
+              label:  'Shirdi Sai Sketches Q4 2025 Q1 2026', 
+              description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
+              &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
+             emptyMessage: 'Empty Content or Error', breadCrumb:[
+                 {link: '/view', params:'top-level', label: 'HOME'},
+                 {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
+                 {link: '', params:'shirdi-sai-q4-2025-q1-2026', label: 'Shirdi Sai Sketches Q4 2025 Q1 2026'}
+             ] 
+            },
 // ### END SPECIAL LISTS
    /*  June 2025 C&O restructuring This list is now hard coded and not compiled and merged with changers-2022 
     { 

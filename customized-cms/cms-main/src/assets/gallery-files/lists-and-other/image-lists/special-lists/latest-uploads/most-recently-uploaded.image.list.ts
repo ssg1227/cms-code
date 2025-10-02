@@ -10,6 +10,33 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
+                {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  '10-02-2025',
+duplicate:  'true',
+summaryLabel:  `Baba Dassera 2025 - Oct 1- 2 2025`,
+fullFileName: `assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q4-2025-q1-2026/Baba-Dassera-Oct1-Oct2-2025.jpeg`,
+description: `<ul><li> Special sketch for Baba Samadhi using metallic and othe color pencils</li><li> Uploaded Oct 2 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Thu Aug 28 2025 22:47:07 Indian Standard Time',
+
+album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 0} ,
+duplicate:  'true',
+summaryLabel:  `Home Ganapati Sept 30 - Oct 2 2025`,
+fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/ganesh-gte-11-2024/HomeGanapatiSept30-Oct2-2025.jpeg`,
+description: `<ul>
+        <li>An appropriate first for a physical album ('The Divine in Colors So Fine') = our 'Home Ganapati' </li>
+         <li>Started around Ganesh Chaturthi 2025 time 1st version was released then.  </li>
+         <li>Completed Sept 30 2025, detailing with new Silver metallic pencil and <b> trying out fluorescent color pencils (see attempt to draw lights around main piC)<b></li>
+         <li>Uploaded Oct 2 2025</li>
+       </ul>`,
+},
 
 {
 canvassMaterial:  'other',
