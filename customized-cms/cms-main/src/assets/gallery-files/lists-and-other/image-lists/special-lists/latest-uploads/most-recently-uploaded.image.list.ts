@@ -10,7 +10,30 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
+
 {
+canvassMaterial:  'other',
+canvassSize:  '',
+content:  'soft',
+dateUploaded:  'Thu Oct 02 2025 19:19:58 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Dassera special 2025 Oct 1 - 3 2025. Sanskrit Prayer to Maa Saraswati`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/VijayDashmiSaraswatiPrayer-Oct1-Oct2-2025.jpeg`,
+description: `<ul>
+<li>Dassera special 2025 Oct 1 - 3 2025. Sanskrit Prayer to Maa Saraswati</li>
+  <li>(The words mean something like this:)<br/><br/>
+          <ul>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;like a lotus may the mind open with learning and enlightenment.</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;like a lotus may the mind bloom with creativity spreading beautiful pure and innocent art</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like the lotus thrives even in mud, to practise these in any time</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;like a swan, pure, simple, white elegant, yet distinguishing milk from water</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like the swan gliding over water without getting its feathers wet, a calmness to reach my divine goal </li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My devotion carry these O veena pustak dharini</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Offer my prayers at your lotus feet Maa Saraswati</li>
+            <li><b>***** HAPPY VIJAYADASHMI ********</li></ul><br/>(My composition, thought I'd make it extra special by translating to Sanskrit)
+    </li>
+    <li> Upload Oct 2-3 2025 </li></ul>`,
+},{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
