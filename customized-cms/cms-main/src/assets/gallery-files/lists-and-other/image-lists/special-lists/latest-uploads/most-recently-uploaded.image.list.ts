@@ -10,6 +10,16 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Thu Oct 16 2025 07:44:14 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Karva Chauth 2025 Ganesh from Sept 2024`,
+fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/ganesh-gte-11-2024/Ganesh-divine-09-13-25-2-Oct925-Oct16.jpeg`,album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 27} ,
+description: `<ul><li> Karva Chauth 2025 Ganesh from Sept 2024 </li><li> Updated the 'hard copy' final sketch of my sarvajanik idol sequence of Sept 13 2025 </li><li> Added Durva, background, etc </li><li> Completed Oct 9 over the existing (Sept 13 2025) and uploaded Oct 13 </li><li>Note: This makes its way to the album 'Divine in colors so fine' BUT I expect insert: a print out of the earlier version AND insert the Diwali Laxmi Narayan sketch before</li></ul>`,
+},
 
 {
 canvassMaterial:  'other',
