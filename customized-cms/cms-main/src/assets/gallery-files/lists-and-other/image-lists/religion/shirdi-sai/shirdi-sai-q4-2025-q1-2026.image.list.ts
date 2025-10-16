@@ -16,6 +16,16 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [
+{
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  'Thu Oct 16 2025 10:39:13 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Baba Samadhi Anniv (Gregorian) Oct 15 2025 (1918) -> Oct 16 `,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Baba-Samadhi-Gregorian-for-Oct15-2025.jpeg`,
+description: `<ul><li> Baba Samadhi Anniv (Gregorian) Oct 15 2025 (1918) -> Oct 16  </li><li> Sai took Samadhi on Dassera Day 1918 which was Oct 15, Tuesday </li><li> Uploaded Oct 16 2025 </li></ul>`,
+},
   {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',

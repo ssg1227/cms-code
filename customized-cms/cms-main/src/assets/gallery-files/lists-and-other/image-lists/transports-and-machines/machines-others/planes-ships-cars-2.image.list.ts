@@ -11,6 +11,16 @@ export class PlanesShipsCars2ImageList {
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
 {
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  'Thu Oct 16 2025 08:07:38 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Tribute to IAF Mig21 last flight 26 Sept 2025 drawing 1, 09/27-10/16`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Mig21-farewell-tribute-Sept27-2025.jpeg`,
+description: `<ul><li> Tribute to IAF Mig21 last flight 26 Sept 2025 drawing 1, 09/27-10/16 </li><li> A tribute to the Mig21 which was  backbone to Indian Air Force and had its last flight 26 Sept 2025. </li><li> 63 years of service </li><li> This is a soft copy made from two original sketches showing 2 mig 21's and a mig 29 </li><li> compiled and completed Sept 27, uploaded Oct 16 2025 </li></ul>`,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
