@@ -11,6 +11,16 @@ export class PlacesScenesObjectsImageList {
                 themeSummary:`</strong>Scenes, Objects, Structures, (some may be items containing mix modes of transport or something like an air dogfight)<br/>
                 Mumbai gets her due place and a dedicated theme; all Mumbai related sketches will be found in 'Mumbai Meri Jaan'`,
                 files: [ 
+{
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  'Wed Oct 22 2025 10:44:06 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `JRD Tata photo with AI planes - 93rd anniversary Oct 15 2025 - Oct 22 upload`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/AirIndia-Founder-93-Anniv-Oct15-2025.jpg`,
+description: `<ul><li>Felt it needs place under aircraft collection as also events</li><li> JRD Tata photo with AI planes - 93rd anniversary Oct 15 2025 - Oct 22 upload </li><li> Photo of Tata in the center with 4 of (what I think I are) lamndmark aircraft and drawn by me </li><li> DC3 - Dakota, Lokheed Super Connie, 707, Emperor Ashoka 747 </li><li> Compiled and shared Oct 15 2025 (93rd anniv) uploaded Oct 22 </li></ul>`,
+},
    
 {
 canvassMaterial:  'Plain paper',
