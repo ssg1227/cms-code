@@ -21,6 +21,16 @@ public allImageList:ImageElement[]  =  [
 {
 canvassMaterial:  'other',
 canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  'Wed Oct 22 2025 10:54:37 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Baba lighting lamps (2) Diwali 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Baba-Diwali-Oct21-22-2025.jpeg`,
+description: `<ul><li> Baba lighting lamps (2) Diwali 2025 </li><li> Compiled using merge of another of my drawings with ChatGPT </li><li> Compiled Oct 21 upload Oct 22 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'other',
+canvassSize:  'soft',
 content:  '',
 dateUploaded:  'Fri Jun 27 2025 00:25:43 GMT-0700 (Pacific Daylight Time)',
 duplicate:  'true',
