@@ -17,6 +17,16 @@ public allImageList:ImageElement[]  =  [
      files: [ 
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  'Thu Oct 23 2025 16:13:28 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `WDM1 WDP3 unsung diesel heroes of IR 09/12-10/23/2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/IRs-Unsung-Diesel-Heros-Sept12-Oct23-2025.jpeg`,
+description: `<ul><li> WDM1 WDP3 unsung diesel heroes of IR 09/12-10/23/2025 </li><li> Charcoal finish 'Lesser Sung' Workhorses of Indian Railways. </li><li> WDM1 (top) 1957 – mid/late 1990s ... 120 kph </li><li> India’s first mainline diesel-electric locomotive, paving the way for dieselisation, but remembered less than the iconic WDM2 </li><li> ... </li><li> WDP3A (bottom) A high-speed passenger diesel that hauled prestigious trains like the Shatabdi, but never reached the same fame or fleet size as other passenger diesels like the WDP4. Speeds: 160 km/h (trial), ~140–145 km/h in regular service </li><li> Completed Sept 12, uploaded Oct 23 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  '04-23-2025',

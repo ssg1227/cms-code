@@ -11,6 +11,18 @@ export class PlanesShipsCars2ImageList {
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A3',
+content:  'color-pencil',
+dateUploaded:  'Thu Oct 23 2025 16:40:13 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `IAF Mig21 tribute 3 landmark planes Oct9- 23 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/IAF-Mig21-tribute-3-landmark-charcoalA3-A4-Oct9-2025.jpeg`,
+description: `<ul><li> IAF Mig21 tribute 3 landmark planes Oct9- 23 2025 </li><li> Charcoal finish A3 (copy A4 to the charcoal album) </li><li> A tribute to the Mig21 which   backbone to Indian Air Force and had its last flight 26 Sept 2025. </li><li> Attempt to draw 3  versions </li><li> F13 Type 74 - 1963 - the first variant used by IAF  </li><li> FL Type 77 1966 - Longest in service - about 47 years </li><li> Bison - 2001 - the last variant (Note: we had 93rd IAF day on October 8  ) </li><li> complete Oct 9, upload Oct 23 2025 </li></ul>`,
+
+
+},
+{
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  'soft',
