@@ -12,6 +12,16 @@ export class PlanesShipsCars2ImageList {
         files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  'Wed Oct 29 2025 07:40:14 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `IAF Squadron 12 C47 Oct26 29 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Charcoal-lifters-Squad12-C47-Oct26-28-2025.jpeg`,
+description: `<ul><li> IAF Squadron 12 C47 Oct26 29 2025 </li><li> Charcoal finish of C47 Dakota attempted livery of IAF No 12 Squadron 'Yaks' </li><li> Commemorative of Infantry Day Oct 27 </li><li> "In October 1947, No. 12 Squadron played a critical role during a pivotal moment for India. With Srinagar on the brink of being overrun and the Banihal Pass impassable, The Yaks stepped in to intervene. Their operations started on October 27, now commemorated as Infantry Day by the Indian Army"  </li><li> Stationed (at least as of 1947) in Agra </li><li> Completed Oc 26, upload Oct 29 2025 </li><li>(As of upload date, need a color copy to place in album)</li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A3',
 content:  'color-pencil',
 dateUploaded:  'Thu Oct 23 2025 16:40:13 GMT-0700 (Pacific Daylight Time)',
@@ -417,7 +427,7 @@ iterations: [
 {
 canvassSize:  'A4',
 content:  'color-pencil',
-dateUploaded:  '07-10-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 10},
+dateUploaded:  '07-10-2023',
 fullFileName: `${this.imageRoot}AirIndia-DC3-June92023-f.jpeg`,
 description: `<ul><li> Air India DC3  </li><li> June 9 2023 </li></ul>`,
 iterations: [
@@ -430,7 +440,7 @@ iterations: [
 {
 canvassSize:  'other',
 content:  '',
-dateUploaded:  '07-09-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 6},
+dateUploaded:  '07-09-2023',
 evolution:  `<b>The uniqeness of this sketch - combination of collage + individuals<br/>Also the story behind it<br/></B>`,
 evolutionSequence:  2,
 evolutionDate:  '06-13-2023',
@@ -449,7 +459,7 @@ iterations: [
 {
 canvassSize:  'other',
 content:  '',
-dateUploaded:  '07-09-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 7},
+dateUploaded:  '07-09-2023',
 fullFileName: `${this.imageRoot}superconnie-rani-ellora-airindia-1.jpeg`,
 description: `<ul><li> A Story line of a 'super connie' - Super Constellation as it is affectionately called<br/>-- <b>Delivered to Air-India International February 1955 as L1049E VT-DHM "Rani of Ellora"</b><br/>- Converted to L1049G<br/> - To Indian Air Force October 30, 1961 as BG575- To Indian Navy by November 1976 as IN315 and converted for maritime reconnaissance use </li><li> - Retired May 1983 and stored at Hansa Naval Air Station (Dabolim Airport), Goa, India along with other ex-Indian Navy Super Constellations<br/> - By April 1999 it was the only surviving aircraft<br/> - By April 2000 it been moved to the Naval Aviation Museum at Dabolim Airport for restoration<br/> - On display at the Naval Aviation Museum near the entrance gate<br/> - On display in good condition February 2013<br> - On display in May 2019 in good condition but could use a bit of exterior TLC </li><li> Credit to 'Connie Survivors' group which posted the story which I refered to </li><li> Collage - see individual sketches </li><li> June 13-15 2023 </li></ul>`,
 rating:  1,
@@ -459,7 +469,7 @@ ratingYear:  2023,
 {
 canvassSize:  'other',
 content:  '',
-dateUploaded:  '07-09-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 8},
+dateUploaded:  '07-09-2023',
 evolution:  `<b>The uniqeness of this sketch - combination of collage + individuals<br/>Also the story behind it<br/></B>`,
 evolutionSequence:  2,
 evolutionDate:  '06-13-2023',
@@ -472,7 +482,7 @@ ratingYear:  2023,
 {
 canvassSize:  'other',
 content:  '',
-dateUploaded:  '07-09-2023',album: { name: 'the-fourth-album', status: 'added', sequence: 9},
+dateUploaded:  '07-09-2023',
 evolution:  `<b>The uniqeness of this sketch - combination of collage + individuals<br/>Also the story behind it<br/></B>`,
 evolutionSequence:  2,
 evolutionDate:  '06-13-2023',

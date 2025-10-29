@@ -19,6 +19,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-pencil',
+dateUploaded:  'Wed Oct 29 2025 07:40:14 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `IAF Squadron 12 C47 Oct26 29 2025`,
+fullFileName: `${this.imageRoot}Charcoal-lifters-Squad12-C47-Oct26-28-2025.jpeg`,
+description: `<ul><li> IAF Squadron 12 C47 Oct26 29 2025 </li><li> Charcoal finish of C47 Dakota attempted livery of IAF No 12 Squadron 'Yaks' </li><li> Commemorative of Infantry Day Oct 27 </li><li> "In October 1947, No. 12 Squadron played a critical role during a pivotal moment for India. With Srinagar on the brink of being overrun and the Banihal Pass impassable, The Yaks stepped in to intervene. Their operations started on October 27, now commemorated as Infantry Day by the Indian Army"  </li><li> Stationed (at least as of 1947) in Agra </li><li> Completed Oc 26, upload Oct 29 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A3',
 content:  'color-pencil',
 dateUploaded:  'Thu Oct 23 2025 16:40:13 GMT-0700 (Pacific Daylight Time)',

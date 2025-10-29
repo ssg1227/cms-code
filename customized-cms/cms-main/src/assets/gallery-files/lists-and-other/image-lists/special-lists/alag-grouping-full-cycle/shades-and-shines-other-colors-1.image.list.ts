@@ -20,6 +20,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Tue Oct 28 2025 23:23:36 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Lamborghini Aventador LP-780-4 Oct282025`,
+fullFileName: `${this.imageRoot}Lamborghini-Aventador-LP-780-4 Ultimae—221MPH-Oct282025.jpeg`,
+description: `<ul><li> Lamborghini Aventador LP-780-4 Oct282025 </li><li> Ultimae top speed 221MPH </li><li> start to finish to upload Oct282025.jpeg </li><li> black metallic color pencil </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'color-pencil',
 dateUploaded:  '06-01-2025 18:25',

@@ -17,6 +17,16 @@ public allImageList:ImageElement[]  =  [
             theme:'<theme>',
             themeSummary: '',
 files: [  
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Tue Oct 28 2025 23:23:36 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Lamborghini Aventador LP-780-4 Oct282025`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-other-colors-1/Lamborghini-Aventador-LP-780-4 Ultimae—221MPH-Oct282025.jpeg`,
+description: `<ul><li> Lamborghini Aventador LP-780-4 Oct282025 </li><li> Ultimae top speed 221MPH </li><li> start to finish to upload Oct282025.jpeg </li><li> black metallic color pencil </li></ul>`,
+},
 
   {
     canvassMaterial:  'Plain paper',
