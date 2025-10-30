@@ -10,6 +10,16 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [
+{
+canvassMaterial:  'other',
+canvassSize:  'other',
+content:  'soft',
+dateUploaded:  'Wed Oct 29 2025 19:15:13 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Manteca Diwali Sandhya LaxmiNarayan Photoprint exhibition Oct19-29 2025`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Softcopy-Diwali-Sandhya-LaxmiNarayan-Oct19-282025.jpeg`,
+description: `<ul><li>A first in different areas.. <br/>!!! first public display of a drawing of mibe<br/>'reverse or re-engineering' an existing print<br/> Using crayons</li><li> Manteca Diwali Sandhya LaxmiNarayan Photoprint exhibition Oct19-29 2025 </li><li> Oct 19 2025 Marathi community organized a 'Diwali Sandhya'..  </li><li> At Senior Center, I'd made a photo print of a Laxmi Narayan drawing </li><li> However, the original print colors looked very faded  </li><li> To edit/ update, I used sandpaper blocks to roughen the glossiness so I could run pencil and brush over these areas </li><li> There were some gotcha's on the way so I 'threw everything at it' - color-, watercolor-, metallic-, pastel-, charcoal pencils.. Even used crayons  </li><li> Completed Oct 17-18 Uploaded Oct 29 2025 </li></ul>`,
+},
 
 {
 canvassMaterial:  'other',

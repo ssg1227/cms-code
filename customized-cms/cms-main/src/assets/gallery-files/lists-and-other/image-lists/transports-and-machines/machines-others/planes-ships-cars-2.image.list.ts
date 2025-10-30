@@ -12,6 +12,16 @@ export class PlanesShipsCars2ImageList {
         files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Wed Oct 29 2025 23:59:33 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Russian (AirForce?) IL76 Oct29 2025`,
+fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/majestic-lifters-legendary-carriers/Russian(AirForce?)IL76-Oct29-2025.jpeg`,
+description: `<ul><li> Russian (AirForce?) IL76 Oct29 2025 </li><li> Completed and Uploaded Oct 29 (Oct 30 12:00 AM PST) 2025 </li><li> Color pencils (including metallic) </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'color-pencil',
 dateUploaded:  'Wed Oct 29 2025 07:40:14 GMT-0700 (Pacific Daylight Time)',
@@ -341,7 +351,7 @@ iterations: [
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil black-white',
-dateUploaded:  '06-07-2024',
+dateUploaded:  '06-07-2024',album: { name: 'the-fourth-album', status: 'added', sequence: 10},
 summaryLabel:  `Lucid Air - semi exotic EV and competition to Tesla A`,
 fullFileName: `${this.imageRoot}lucid-air-3-june4-2024.jpeg`,
 description: `<ul><li> Lucid Air - semi exotic EV and competition to Tesla A </li><li> Sketched June 4 - 6 2024 </li></ul>`,

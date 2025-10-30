@@ -19,6 +19,16 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Wed Oct 29 2025 19:29:59 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Laxmi Narayan for Diwali Sandhya 2 print 10/12 - 10/29/2025`,
+fullFileName: `${this.imageRoot}Charcoal-Divine-LaxmiNarayan-Oct12-29-2025.jpeg`,
+description: `<ul><li> Laxmi Narayan for Diwali Sandhya 2 print 10/12 - 10/29/2025 </li><li> Oct 19 2025 Manteca Marathi community organized a 'Diwali Sandhya'.. </li><li> This drawing I submitted - made a photo print of 18x24 which itself I edited  </li><li> Note this 'original' looks a bit different from the photo print because of latter 'edits' </li><li> All types of color pencils and charcoal </li><li> Completed around Oct 12 upload Oct 29 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'color-pencil',
 dateUploaded:  'Wed Oct 29 2025 07:40:14 GMT-0700 (Pacific Daylight Time)',

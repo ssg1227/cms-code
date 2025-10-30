@@ -92,7 +92,7 @@ iterations: [
         {
             canvassSize:  'A4',
             content:  'color-pencil black-white',
-            dateUploaded:  '05-27-2024',
+            dateUploaded:  '05-27-2024',album: { name: 'the-fourth-album', status: 'added', sequence: 9},
             fullFileName: `${this.imageRoot}BatasiaLoopApril192022-2.jpeg`,
             description: `<ul><li> Batasia Loop, a point on the Darjeeling Himalayan Railway (Siliguru <->Darjeeling) </li><li> This is at or nearest the highest point  - Ghum </li><li> I travelled on this toy train when I was a kid with parents and brother </li><li> The sketch is based on a more recent photo, the Central portion having the Gorkha War memorial added later on </li><li> April 19 2024 .. final </li></ul>`,
             iterations: [

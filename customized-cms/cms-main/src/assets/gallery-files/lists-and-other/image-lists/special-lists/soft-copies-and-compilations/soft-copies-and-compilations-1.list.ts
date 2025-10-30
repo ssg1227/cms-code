@@ -20,6 +20,16 @@ public allImageList:ImageElement[]  =  [
 files: [ 
 {
 canvassMaterial:  'other',
+canvassSize:  'other',
+content:  'soft',
+dateUploaded:  'Wed Oct 29 2025 19:15:13 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Manteca Diwali Sandhya LaxmiNarayan Photoprint exhibition Oct19-29 2025`,
+fullFileName: `${this.imageRoot}Softcopy-Diwali-Sandhya-LaxmiNarayan-Oct19-282025.jpeg`,
+description: `<ul><li> Manteca Diwali Sandhya LaxmiNarayan Photoprint exhibition Oct19-29 2025 </li><li> Oct 19 2025 Marathi community organized a 'Diwali Sandhya'..  </li><li> At Senior Center, I'd made a photo print of a Laxmi Narayan drawing </li><li> However, the original print colors looked very faded  </li><li> To edit/ update, I used sandpaper blocks to roughen the glossiness so I could run pencil and brush over these areas </li><li> There were some gotcha's on the way so I 'threw everything at it' - color-, watercolor-, metallic-, pastel-, charcoal pencils.. Even used crayons  </li><li> Completed Oct 17-18 Uploaded Oct 29 2025 </li></ul>`,
+},
+{
+canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  'soft',
 dateUploaded:  'Wed Oct 22 2025 10:54:37 GMT-0700 (Pacific Daylight Time)',
