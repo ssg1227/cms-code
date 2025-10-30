@@ -85,7 +85,7 @@ content:  'color-pencil',
 dateUploaded:  'Wed Oct 29 2025 23:59:33 GMT-0700 (Pacific Daylight Time)',
 duplicate:  'false',
 summaryLabel:  `Russian (AirForce?) IL76 Oct29 2025`,
-fullFileName: `${this.imageRoot}Russian(AirForce?)IL76-Oct29-2025.jpeg`,
+fullFileName: `${this.imageRoot}Russian-AirForce-possible-IL76-Oct29-2025.jpeg`,
 description: `<ul><li> Russian (AirForce?) IL76 Oct29 2025 </li><li> Completed and Uploaded Oct 29 (Oct 30 12:00 AM PST) 2025 </li><li> Color pencils (including metallic) </li></ul>`,
 },
 {
