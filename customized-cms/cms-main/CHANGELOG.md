@@ -3,6 +3,20 @@
 ng build; sync;sync;sync;sync;sync; firebase deploy
 ## May 2025 onward
 "CMS Picture Gallery" by Shantanu Gadkari
+- *** August 2025 onwar** 
+ - Diverted, so dedicated time to the CMS dropped 
+ - **Continued Image Lists for 'circle around' physical albums** 
+  *(Recall:*
+    *implementation of album pivot (as on Feb 17 semi-manual **Done**)*
+    *e.g. `album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 11} `*
+    *Adding album names to `menu-tree-elements.ts`*
+   *...)*
+   - For now, added the two remaining populated/semi populated 11x17 albums
+   - The FIRST/THIRD albums - entries already added Gods and persons
+   - *August 18 onward* 
+      - The SECOND/FOURTH albums - entries already added:  Mostly 'non living' - scenes, transport machines -
+- *** SEPT 2025 onward**
+ - Sketch counts - should we exclude iteration uploads?
 - *** June 2025 onward** 
    - **Hardcoding lists** 
     - dynamic processing vs additional JSONs
