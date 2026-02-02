@@ -17,6 +17,16 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [ 
 {
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  '',
+dateUploaded:  'Mon Feb 02 2026 07:04:45 GMT-0800 (Pacific Standard Time)',
+duplicate:  'false',
+summaryLabel:  `Jan 22 (Ganesh Jayanti)- Feb 2 2026(Gurupratipada) upload`,
+fullFileName: `${this.imageRoot}Ganesh-Jayanti-Baba-Thu-Jan22-2026.jpeg`,
+description: `<ul><li> Jan 22 (Ganesh Jayanti)- Feb 2 2026(Gurupratipada) upload </li><li> soft copy merge of Sai with Ganapati </li><li> Publish after long time...  </li></ul>`,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',

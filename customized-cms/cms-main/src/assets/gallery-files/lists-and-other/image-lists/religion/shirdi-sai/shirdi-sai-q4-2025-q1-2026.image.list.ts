@@ -19,6 +19,16 @@ files: [
 {
 canvassMaterial:  'other',
 canvassSize:  'soft',
+content:  '',
+dateUploaded:  'Mon Feb 02 2026 07:04:45 GMT-0800 (Pacific Standard Time)',
+duplicate:  'true',
+summaryLabel:  `Jan 22 (Ganesh Jayanti)- Feb 2 2026(Gurupratipada) upload`,
+fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/ganesh-gte-11-2024/Ganesh-Jayanti-Baba-Thu-Jan22-2026.jpeg`,
+description: `<ul><li> Jan 22 (Ganesh Jayanti)- Feb 2 2026(Gurupratipada) upload </li><li> soft copy merge of Sai with Ganapati </li><li> Publish after long time...  </li></ul>`,
+},
+{
+canvassMaterial:  'other',
+canvassSize:  'soft',
 content:  'soft',
 dateUploaded:  'Wed Oct 22 2025 10:54:37 GMT-0700 (Pacific Daylight Time)',
 duplicate:  'true',
