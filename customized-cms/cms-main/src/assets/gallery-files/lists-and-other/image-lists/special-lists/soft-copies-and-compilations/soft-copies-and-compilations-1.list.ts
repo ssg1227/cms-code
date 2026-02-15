@@ -30,6 +30,17 @@ description: `<ul><li> Jan 22 (Ganesh Jayanti)- Feb 2 2026(Gurupratipada) upload
 },
 {
 canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  '',
+dateUploaded:  'Wed Feb 04 2026 07:04:45 GMT-0800 (Pacific Standard Time)',
+duplicate:  'false',
+summaryLabel:  `Deepa Naik Nov 2 2026 birthday`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/DeepaNailBirthdayNov2-2025.jpeg`,
+description: `<ul><li>Deepa Naik is an RAIT college mate, who is also on a musical whatsapp group fellow member </li>
+  <li>Her husband Ravi (also from RAIT) and I worked together abt 1 year at SanDisk</li></ul>`,
+},
+{
+canvassMaterial:  'other',
 canvassSize:  'other',
 content:  'soft',
 dateUploaded:  'Wed Oct 29 2025 19:15:13 GMT-0700 (Pacific Daylight Time)',

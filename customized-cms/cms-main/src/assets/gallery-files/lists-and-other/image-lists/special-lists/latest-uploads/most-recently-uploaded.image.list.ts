@@ -10,7 +10,18 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
+,
 {
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  '',
+dateUploaded:  'Wed Feb 04 2026 07:04:45 GMT-0800 (Pacific Standard Time)',
+duplicate:  'true',
+summaryLabel:  `Deepa Naik Nov 2 2026 birthday`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/DeepaNailBirthdayNov2-2025.jpeg`,
+description: `<ul><li>Deepa Naik is an RAIT college mate, who is also on a musical whatsapp group fellow member </li>
+  <li>Her husband Ravi (also from RAIT) and I worked together abt 1 year at SanDisk</li></ul>`,
+},{
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  '',
