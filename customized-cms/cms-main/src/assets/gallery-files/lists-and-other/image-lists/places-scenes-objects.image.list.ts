@@ -12,6 +12,17 @@ export class PlacesScenesObjectsImageList {
                 Mumbai gets her due place and a dedicated theme; all Mumbai related sketches will be found in 'Mumbai Meri Jaan'`,
                 files: [ 
 {
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 29} ,
+dateUploaded:  'Sun Feb 15 2026 23:16:22 GMT-0800 (Pacific Standard Time)',
+duplicate:  'false',
+summaryLabel:  `Amol Muzumdar tribute- Harmandar Saheb, Nov 5 2025, Feb 15 2026`,
+fullFileName: `${this.imageRoot}GuruPUrabNov4-5-2025.jpeg`,
+description: `<ul><li> Amol Muzumdar tribute- Harmandar Saheb, Nov 5 2025, Feb 15 2026 </li><li> Sketch of Harmandar Saheb (Golden Temple) </li><li> Wanted to do this for a long time, that too on A3 paper </li><li> Finally got down to A4 and water color pencils </li><li> Completed Nov 5 2025, Upload Feb 15 25 </li><li> Dedicated to Amol Muzumdar, ex cricketer, Achrekar Pupil who never made it big as a player BUT wrote his name in India Cricket History as the coach of the ODI  World cup winning women's team </li></ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  'soft',
