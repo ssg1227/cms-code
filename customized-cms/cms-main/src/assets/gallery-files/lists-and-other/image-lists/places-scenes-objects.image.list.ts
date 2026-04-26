@@ -15,7 +15,7 @@ export class PlacesScenesObjectsImageList {
 canvassMaterial:  'Photo print matt paper',
 canvassSize:  'A4',
 content:  'watercolor-pencil',
-album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 29} ,
+album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 30} ,
 dateUploaded:  'Sun Feb 15 2026 23:16:22 GMT-0800 (Pacific Standard Time)',
 duplicate:  'false',
 summaryLabel:  `Amol Muzumdar tribute- Harmandar Saheb, Nov 5 2025, Feb 15 2026`,

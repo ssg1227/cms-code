@@ -20,6 +20,28 @@ public allImageList:ImageElement[]  =  [
 files: [ 
 {
 canvassMaterial:  'other',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  'Wed Feb 18 2026 23:12:55 GMT-0800 (Pacific Standard Time)',
+duplicate:  'false',
+summaryLabel:  `787 print give away Nov1425 inflight - 2`,
+
+fullFileName: `${this.imageRoot}Soft-copy-changers-111425-Ba135-2-Mumbai-2.jpeg`,
+description: `<ul><li> 787 print give away Nov1425 inflight .. 2 </li><li> Our trip to India.. this is one of two 787 British Airways drawings I gave to two kids on the flight from London to Mumbai </li><li> UNIQUE (THEREFORE CHANGER) since I have only soft copy AND it was drawn complete in flight </li><li> Nov 14-15 2025, uploaded Feb 18 2026 </li></ul>`,
+
+},
+{
+canvassMaterial:  'other',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  'Wed Feb 18 2026 22:37:40 GMT-0800 (Pacific Standard Time)',
+duplicate:  'false',
+summaryLabel:  `787 print give away Nov1425 inflight - 1`,
+fullFileName: `${this.imageRoot}Soft-copy-changers-111425-Ba135-2-Mumbai-1.jpeg`,
+description: `<ul><li> 787 print give away Nov1425 inflight ..1 </li><li> Our trip to India.. this is one of two 787 British Airways drawings I gave to two kids on the flight from London to Mumbai </li><li> UNIQUE (THEREFORE CHANGER) since I have only soft copy AND it was drawn complete in flight </li><li> Nov 14-15 2025, uploaded Feb 18 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  '',
 dateUploaded:  'Mon Feb 02 2026 07:04:45 GMT-0800 (Pacific Standard Time)',

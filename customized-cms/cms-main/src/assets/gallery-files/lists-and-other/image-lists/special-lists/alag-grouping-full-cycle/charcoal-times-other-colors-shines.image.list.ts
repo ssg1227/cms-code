@@ -18,9 +18,21 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [
 {
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  'Mon Feb 16 2026 00:01:05 GMT-0800 (Pacific Standard Time)',
+duplicate:  'false',
+album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 29} ,
+summaryLabel:  `Laxmi (Diwali) Oct20-2025 -> Feb17-2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Laxmi-Oct20-2025-Feb17-2026.jpeg`,
+description: `<ul><li> Laxmi (Diwali) Oct20-2025 -> Feb17-2026 </li><li> Sketched Diwali 2025, uploaded Feb 17 2026 </li><li> Watercolor pencils + charcoal </li></ul>`,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
+album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 28} ,
 dateUploaded:  'Wed Oct 29 2025 19:29:59 GMT-0700 (Pacific Daylight Time)',
 duplicate:  'false',
 summaryLabel:  `Laxmi Narayan for Diwali Sandhya 2 print 10/12 - 10/29/2025`,

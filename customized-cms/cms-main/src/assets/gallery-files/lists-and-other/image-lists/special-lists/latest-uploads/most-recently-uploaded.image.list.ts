@@ -11,6 +11,60 @@ public allImageList:ImageElement[]  =  [
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Sun Apr 26 2026 09:21:31 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Ganesh Pastel colors Mum 12/28/25 -> Apr 26 26`,
+fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/ganesh-gte-11-2024/Divine-33-GaneshMumbai-Dec8-25-pastel-changers.jpeg`,
+description: `<ul><li> Ganesh Pastel colors Mum 12/28/25 -> Apr 26 26 </li><li> My first Ganesh pic with  pastel color pencils usage </li><li> Completed Dec 8 2025 during our long Mumbai Trip Nov 15 25 to Jan 7 2026 </li><li> Uploaded April 26 2026 </li></ul>`,
+},
+
+{
+canvassMaterial:  'other',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  'Wed Feb 18 2026 23:12:55 GMT-0800 (Pacific Standard Time)',
+duplicate:  'true',
+summaryLabel:  `787 print give away Nov1425 inflight - 2`,
+
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Soft-copy-changers-111425-Ba135-2-Mumbai-2.jpeg`,
+description: `<ul><li> 787 print give away Nov1425 inflight .. 2 </li><li> Our trip to India.. this is one of two 787 British Airways drawings I gave to two kids on the flight from London to Mumbai </li><li> UNIQUE (THEREFORE CHANGER) since I have only soft copy AND it was drawn complete in flight </li><li> Nov 14-15 2025, uploaded Feb 18 2026 </li></ul>`,
+
+},
+{
+canvassMaterial:  'other',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  'Wed Feb 18 2026 22:37:40 GMT-0800 (Pacific Standard Time)',
+duplicate:  'true',
+summaryLabel:  `787 print give away Nov1425 inflight - 1`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Soft-copy-changers-111425-Ba135-2-Mumbai-1.jpeg`,
+description: `<ul><li> 787 print give away Nov1425 inflight ..1 </li><li> Our trip to India.. this is one of two 787 British Airways drawings I gave to two kids on the flight from London to Mumbai </li><li> UNIQUE (THEREFORE CHANGER) since I have only soft copy AND it was drawn complete in flight </li><li> Nov 14-15 2025, uploaded Feb 18 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Wed Feb 18 2026 19:40:33 GMT-0800 (Pacific Standard Time)',
+duplicate:  'true',
+summaryLabel:  `SLV3 July 18 1980 (Nov 25->Feb 26) `,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/ISRO-SLV3-112125-Mum-alag-shades1.jpeg`,
+description: `<ul><li> SLV3 July 18 1980 (Nov 25->Feb 26)  </li><li> ndia's first successful SLV-3 (Satellite Launch Vehicle-3) launch occurred on July 18, 1980, from the Satish Dhawan Space Centre (SHAR). The 4-stage solid-propellant rocket successfully placed the 35-kg Rohini (RS-1) satellite into orbit, making India the sixth nation to achieve indigenous satellite launch </li><li> Sketched in Mumbai complete Nov 21 2025 </li><li> Uploaded Feb 18 2026 </li></ul>`,
+},
+
+{
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  'Mon Feb 16 2026 00:01:05 GMT-0800 (Pacific Standard Time)',
+duplicate:  'true',
+summaryLabel:  `Laxmi (Diwali) Oct20-2025 -> Feb17-2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Laxmi-Oct20-2025-Feb17-2026.jpeg`,
+description: `<ul><li> Laxmi (Diwali) Oct20-2025 -> Feb17-2026 </li><li> Sketched Diwali 2025, uploaded Feb 17 2026 </li><li> Watercolor pencils + charcoal </li></ul>`,
+},
+{
 canvassMaterial:  'Photo print matt paper',
 canvassSize:  'A4',
 content:  'watercolor-pencil',

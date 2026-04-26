@@ -17,6 +17,27 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [ 
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Sun Apr 26 2026 09:21:31 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 33} ,
+summaryLabel:  `Ganesh Pastel colors Mum 12/28/25 -> Apr 26 26`,
+fullFileName: `assets/gallery-files/images/religion/aumkar-shree-ganesh/ganesh-gte-11-2024/Divine-33-GaneshMumbai-Dec8-25-pastel-changers.jpeg`,
+description: `<ul><li>My first Ganesh pic with  pastel color pencils usage</li><li> Ganesh Pastel colors Mum 12/28/25 -> Apr 26 26 </li><li> My first Ganesh pic with  pastel color pencils usage </li><li> Completed Dec 8 2025 during our long Mumbai Trip Nov 15 25 to Jan 7 2026 </li><li> Uploaded April 26 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Sun Apr 26 2026 09:21:31 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Ganesh Pastel colors Mum 12/28/25 -> Apr 26 26`,
+fullFileName: `${this.imageRoot}Divine-33-GaneshMumbai-Dec8-25-pastel-changers.jpeg`,
+description: `<ul><li> Ganesh Pastel colors Mum 12/28/25 -> Apr 26 26 </li><li> My first Ganesh pic with  pastel color pencils usage </li><li> Completed Dec 8 2025 during our long Mumbai Trip Nov 15 25 to Jan 7 2026 </li><li> Uploaded April 26 2026 </li></ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  '',

@@ -15,6 +15,16 @@ public allImageList:ImageElement[]  =  [
              files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Wed Feb 18 2026 19:40:33 GMT-0800 (Pacific Standard Time)',
+duplicate:  'true',
+summaryLabel:  `SLV3 July 18 1980 (Nov 25->Feb 26) `,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/ISRO-SLV3-112125-Mum-alag-shades1.jpeg`,
+description: `<ul><li> SLV3 July 18 1980 (Nov 25->Feb 26)  </li><li> ndia's first successful SLV-3 (Satellite Launch Vehicle-3) launch occurred on July 18, 1980, from the Satish Dhawan Space Centre (SHAR). The 4-stage solid-propellant rocket successfully placed the 35-kg Rohini (RS-1) satellite into orbit, making India the sixth nation to achieve indigenous satellite launch </li><li> Sketched in Mumbai complete Nov 21 2025 </li><li> Uploaded Feb 18 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A3',
 content:  '',
 dateUploaded:  'Tue Aug 19 2025 19:31:06 GMT-0700 (Pacific Daylight Time)',album: { name: 'the-fourth-album', status: 'added', sequence: 21},

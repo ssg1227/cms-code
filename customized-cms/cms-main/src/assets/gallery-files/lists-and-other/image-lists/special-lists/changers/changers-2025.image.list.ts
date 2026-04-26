@@ -10,6 +10,39 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [
+
+{
+canvassMaterial:  'other',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  'Wed Feb 18 2026 23:12:55 GMT-0800 (Pacific Standard Time)',
+duplicate:  'true',
+summaryLabel:  `787 print give away Nov1425 inflight - 2`,
+
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Soft-copy-changers-111425-Ba135-2-Mumbai-2.jpeg`,
+description: `<ul><li> 787 print give away Nov1425 inflight .. 2 </li><li> Our trip to India.. this is one of two 787 British Airways drawings I gave to two kids on the flight from London to Mumbai </li><li> UNIQUE (THEREFORE CHANGER) since I have only soft copy AND it was drawn complete in flight </li><li> Nov 14-15 2025, uploaded Feb 18 2026 </li></ul>`,
+
+},
+{
+canvassMaterial:  'other',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  'Wed Feb 18 2026 22:37:40 GMT-0800 (Pacific Standard Time)',
+duplicate:  'true',
+summaryLabel:  `787 print give away Nov1425 inflight - 1`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Soft-copy-changers-111425-Ba135-2-Mumbai-1.jpeg`,
+description: `<ul><li> 787 print give away Nov1425 inflight ..1 </li><li> Our trip to India.. this is one of two 787 British Airways drawings I gave to two kids on the flight from London to Mumbai </li><li> UNIQUE (THEREFORE CHANGER) since I have only soft copy AND it was drawn complete in flight </li><li> Nov 14-15 2025, uploaded Feb 18 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  'Mon Feb 16 2026 00:01:05 GMT-0800 (Pacific Standard Time)',
+duplicate:  'true',
+summaryLabel:  `Laxmi (Diwali) Oct20-2025 -> Feb17-2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Laxmi-Oct20-2025-Feb17-2026.jpeg`,
+description: `<ul><li>Unique, copy of original sketch added to divine in colors so fine</li><li> Laxmi (Diwali) Oct20-2025 -> Feb17-2026 </li><li> Sketched Diwali 2025, uploaded Feb 17 2026 </li><li> Watercolor pencils + charcoal </li></ul>`,
+},
 {
 canvassMaterial:  'other',
 canvassSize:  'other',

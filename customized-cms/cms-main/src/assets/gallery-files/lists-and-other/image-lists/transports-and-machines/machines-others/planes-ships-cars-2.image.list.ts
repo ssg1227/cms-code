@@ -10,7 +10,30 @@ export class PlanesShipsCars2ImageList {
         themeSummary: `My first steps, my first love in this passion for sketching these are planes which I started drawing as a kid. <br/>
                        * At this point, due to few items, this includes 'non-rail' modes of transport but will branch off each as and when the need comes up `,
         files: [
+
+
 {
+canvassMaterial:  'other',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  'Wed Feb 18 2026 23:12:55 GMT-0800 (Pacific Standard Time)',
+duplicate:  'true',
+summaryLabel:  `787 print give away Nov1425 inflight - 2`,
+
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Soft-copy-changers-111425-Ba135-2-Mumbai-2.jpeg`,
+description: `<ul><li> 787 print give away Nov1425 inflight .. 2 </li><li> Our trip to India.. this is one of two 787 British Airways drawings I gave to two kids on the flight from London to Mumbai </li><li> UNIQUE (THEREFORE CHANGER) since I have only soft copy AND it was drawn complete in flight </li><li> Nov 14-15 2025, uploaded Feb 18 2026 </li></ul>`,
+
+},
+{
+canvassMaterial:  'other',
+canvassSize:  'A4',
+content:  '',
+dateUploaded:  'Wed Feb 18 2026 22:37:40 GMT-0800 (Pacific Standard Time)',
+duplicate:  'true',
+summaryLabel:  `787 print give away Nov1425 inflight - 1`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/Soft-copy-changers-111425-Ba135-2-Mumbai-1.jpeg`,
+description: `<ul><li> 787 print give away Nov1425 inflight ..1 </li><li> Our trip to India.. this is one of two 787 British Airways drawings I gave to two kids on the flight from London to Mumbai </li><li> UNIQUE (THEREFORE CHANGER) since I have only soft copy AND it was drawn complete in flight </li><li> Nov 14-15 2025, uploaded Feb 18 2026 </li></ul>`,
+},{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
