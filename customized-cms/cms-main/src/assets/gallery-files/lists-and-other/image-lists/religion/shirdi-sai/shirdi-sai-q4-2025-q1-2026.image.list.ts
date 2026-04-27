@@ -17,6 +17,17 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [
 {
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  'Sun Apr 26 2026 15:48:36 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 31} ,
+summaryLabel:  `Baba-Swami-Nov6-25- Upload 4/26/2026`,
+fullFileName: `${this.imageRoot}Baba-Swami-Nov6-25-Divine-31.jpeg`,
+description: `<ul><li> Baba-Swami-Nov6-25- Upload 4/26/2026 </li><li> Baba with Swami Silhouette </li><li> Watercolor pencils completed Nov 6 2025 </li><li> upload April 26 2026 </li></ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  '',

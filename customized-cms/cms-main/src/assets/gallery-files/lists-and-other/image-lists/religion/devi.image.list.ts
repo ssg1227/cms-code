@@ -12,6 +12,16 @@ public allImageList:ImageElement[]  =  [
     ``,
     files: [ 
 {
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  '',
+content:  'watercolor-pencil',
+dateUploaded:  'Sun Apr 26 2026 16:03:42 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true', album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 32} ,
+summaryLabel:  `Swami in Devi roop Nov7 25 Upload Apr 26 2026`,
+fullFileName: `assets/gallery-files/images/religion/swami-samartha-q2-2023/Swami-Devi-Nov7-25-Divine-32.jpeg`,
+description: `<ul><li> Swami in Devi roop Nov7 25 Upload Apr 26 2026 </li><li> Swami in Devi Roop </li><li> Watercolor pencil completed Nov 7 2025 </li><li> Uploaded Apr 26 2026 </li></ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  'other',
 content:  'soft',

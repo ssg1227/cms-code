@@ -11,6 +11,26 @@ public allImageList:ImageElement[]  =  [
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
 {
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  '',
+content:  'watercolor-pencil',
+dateUploaded:  'Sun Apr 26 2026 16:03:42 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true', album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 32} ,
+summaryLabel:  `Swami in Devi roop Nov7 25 Upload Apr 26 2026`,
+fullFileName: `assets/gallery-files/images/religion/swami-samartha-q2-2023/Swami-Devi-Nov7-25-Divine-32.jpeg`,
+description: `<ul><li> Swami in Devi roop Nov7 25 Upload Apr 26 2026 </li><li> Swami in Devi Roop </li><li> Watercolor pencil completed Nov 7 2025 </li><li> Uploaded Apr 26 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  'A4',
+content:  'watercolor-pencil',
+dateUploaded:  'Sun Apr 26 2026 15:48:36 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Baba-Swami-Nov6-25- Upload 4/26/2026`,
+fullFileName: `assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q4-2025-q1-2026/Baba-Swami-Nov6-25-Divine-31.jpeg`,
+description: `<ul><li> Baba-Swami-Nov6-25- Upload 4/26/2026 </li><li> Baba with Swami Silhouette </li><li> Watercolor pencils completed Nov 6 2025 </li><li> upload April 26 2026 </li></ul>`,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
