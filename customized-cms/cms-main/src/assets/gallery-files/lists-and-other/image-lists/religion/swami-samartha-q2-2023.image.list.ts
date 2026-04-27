@@ -38,7 +38,7 @@ content:  'watercolor-pencil',
 dateUploaded:  'Sun Apr 26 2026 15:48:36 GMT-0700 (Pacific Daylight Time)',
 duplicate:  'true',
 summaryLabel:  `Baba-Swami-Nov6-25- Upload 4/26/2026`,
-fullFileName: `assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q4-2025-q1-2026/Baba-Swami-Nov6-25-Divine-31.jpeg`,
+fullFileName: `assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q4-2025-q2-2026/Baba-Swami-Nov6-25-Divine-31.jpeg`,
 description: `<ul><li> Baba-Swami-Nov6-25- Upload 4/26/2026 </li><li> Baba with Swami Silhouette </li><li> Watercolor pencils completed Nov 6 2025 </li><li> upload April 26 2026 </li></ul>`,
 },
 {

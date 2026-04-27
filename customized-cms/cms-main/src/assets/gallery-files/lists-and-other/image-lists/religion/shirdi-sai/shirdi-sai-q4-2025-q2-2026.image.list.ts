@@ -8,14 +8,24 @@ enum PicsIndex  {
         DeviMaaMay13182021,
         MixGenPlaneSept2020,
     };
-export class ShirdiSaiQ42025Q12026ImageList {
-imageRoot = 'assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q4-2025-q1-2026/'; reverseStack =  'false';
+export class ShirdiSaiQ42025Q22026ImageList {
+imageRoot = 'assets/gallery-files/images/religion/shirdi-sai/shirdi-sai-q4-2025-q2-2026/'; reverseStack =  'false';
 public allImageList:ImageElement[]  =  [
   {  
-            folder:'shirdi-sai-q4-2025-q1-2026',
+            folder:'shirdi-sai-q4-2025-q2-2026',
             theme:'<theme>',
             themeSummary: '',
 files: [
+{
+canvassMaterial:  'Photo print matt paper',
+canvassSize:  '',
+content:  'watercolor-pencil',
+dateUploaded:  'Sun Apr 26 2026 22:19:44 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 34} ,
+summaryLabel:  `Baba Water Colors Apr2- 26 2026 `,
+fullFileName: `${this.imageRoot}Baba-WC-Apr2-26-Divine-34.jpeg`,
+description: `<ul><li> Baba Water Colors Apr2- 26 2026  </li><li> Completed April2. Upload Apr 26 2026 </li></ul>`,
+},
 {
 canvassMaterial:  'Photo print matt paper',
 canvassSize:  'A4',

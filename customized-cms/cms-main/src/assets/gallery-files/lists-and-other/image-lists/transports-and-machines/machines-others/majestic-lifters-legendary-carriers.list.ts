@@ -16,6 +16,26 @@ public allImageList:ImageElement[]  =  [
             theme:'Themed - Special Aircraft in different liveries and formats - A380, 747 and others',
             themeSummary: '',
 files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Sun Apr 26 2026 23:54:18 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `BritishAirways Airbus 380 over Bay Bridge Jan11-April 26 2026`,
+fullFileName: `${this.imageRoot}Majestic-Carriers-2-BritishAirways-380-BayBridge-Jan11-2026.jpeg`,
+description: `<ul><li> BritishAirways Airbus 380 over Bay Bridge Jan11-April 26 2026 </li><li> Bay Bridge Oakland - tongue in cheek showing 4 modes of transport: </li><li> Ships - one carrying rail locomotives, the plane and road traffic on the bridge </li><li> Comp Jan 11, upload Apr 26 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Sun Apr 26 2026 23:48:22 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Air India 787 over Atal Setu Jan10 2026 - Apr 26 26`,
+fullFileName: `${this.imageRoot}Majestic-Carriers-1-787-AI-NewLivery-Atal-Setu-Jan10-2026.jpeg`,
+description: `<ul><li> Air India 787 over Atal Setu Jan10 2026 - Apr 26 26 </li><li> 787 Dreamliner showing off the latest (2026) livery of Air India </li><li> Imaginary scene flying over Mumbai-Uran transharbor link Atal Setu </li><li> Completed Jan 10, uploaded April 26 2026 </li></ul>`,
+},
 
  {
 canvassSize:  'other',
