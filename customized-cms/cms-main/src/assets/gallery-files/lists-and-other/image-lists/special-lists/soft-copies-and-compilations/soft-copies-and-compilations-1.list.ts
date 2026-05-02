@@ -20,6 +20,16 @@ public allImageList:ImageElement[]  =  [
 files: [ 
 {
 canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  'Tue Apr 28 2026 06:50:04 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Anjali Pathak birthday Aprill 28 2026`,
+fullFileName: `${this.imageRoot}SW-Anju-Birthday-Apr28-26.jpeg`,
+description: `<ul><li> Anjali Pathak birthday Aprill 28 2026 </li><li> Wishes to one of my closest friends and 'muh boli' sister from RAIT engineering days!! </li></ul>`,
+},
+{
+canvassMaterial:  'other',
 canvassSize:  'A4',
 content:  '',
 dateUploaded:  'Wed Feb 18 2026 23:12:55 GMT-0800 (Pacific Standard Time)',

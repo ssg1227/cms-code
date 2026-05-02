@@ -12,6 +12,26 @@ public allImageList:ImageElement[]  =  [
         files: [ 
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'color-crayon',
+dateUploaded:  'Tue Apr 28 2026 07:08:12 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `DC3 of Kalinga Air Siang River Arunachal Feb10-26, Apr 28 2026`,
+fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/majestic-lifters-legendary-carriers/Majestic-Carriers-3-DC3-Kalinga-Siangriver-Feb10-26.jpeg`,
+description: `<ul><li> DC3 of Kalinga Air Siang River Arunachal Feb10-26, Apr 28 2026 </li><li> DC3 of Kalinga Airlines, founded in 1947 by Biju Patnaik, aviator and former CM of Odisha, over Siang/Brahmaputra, river, Arunachal( North East was one region the Airline used to service ) </li><li> Completed Feb 26, uploaded April 28 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  'Tue Apr 28 2026 06:50:04 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Anjali Pathak birthday Aprill 28 2026`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/SW-Anju-Birthday-Apr28-26.jpeg`,
+description: `<ul><li> Anjali Pathak birthday Aprill 28 2026 </li><li> Wishes to one of my closest friends and 'muh boli' sister from RAIT engineering days!! </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  'Sun Apr 26 2026 23:54:18 GMT-0700 (Pacific Daylight Time)',
