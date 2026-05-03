@@ -14,6 +14,16 @@ export class MahadevImageList {
          files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Sun May 03 2026 09:12:22 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Mahadev 04/28 Pradosh - Upl May 2 2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Mahadev-charcoal-Apr28-May2-2026.jpeg`,
+description: `<ul><li> Mahadev 04/28 Pradosh - Upl May 2 2026 </li><li> Charcoal touch up </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'soft',
 dateUploaded:  'Thu Jun 26 2025 23:24:18 GMT-0700 (Pacific Daylight Time)',

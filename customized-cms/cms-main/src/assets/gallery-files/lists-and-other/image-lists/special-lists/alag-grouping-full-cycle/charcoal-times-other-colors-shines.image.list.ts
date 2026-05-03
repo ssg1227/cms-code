@@ -18,6 +18,16 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Sun May 03 2026 09:12:22 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Mahadev 04/28 Pradosh - Upl May 2 2026`,
+fullFileName: `${this.imageRoot}Mahadev-charcoal-Apr28-May2-2026.jpeg`,
+description: `<ul><li> Mahadev 04/28 Pradosh - Upl May 2 2026 </li><li> Charcoal touch up </li></ul>`,
+},
+{
 canvassMaterial:  'Photo print matt paper',
 canvassSize:  'A4',
 content:  'watercolor-pencil',
