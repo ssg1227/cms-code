@@ -11,6 +11,18 @@ public allImageList:ImageElement[]  =  [
              theme:'Lord Narayan, Maa Laxmi and Avatars, Shree Hanuman',
              themeSummary: `<p>Laxmi and avatars, Rukhmini, Sita, Narayan, Ram, Vithal, Narsimha, Hanuman and others.   </p>`,
              files: [
+               {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Thu May 07  2026 22:29:59 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Hanuman Ram Chola May 7 2026`
+,album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 35} ,
+fullFileName: `${this.imageRoot}Divine-34-Hanuman-Bahuk-Template-2-color-May726.jpeg`,
+ description: `<ul><li>Hanuman wearimg Ram Chola </li>
+ <li>Completed and uploaded May 7 2026 </li></ul>`,
+              },
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',

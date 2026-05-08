@@ -10,6 +10,17 @@ public allImageList:ImageElement[]  =  [
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
+                 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Thu May 07  2026 22:29:59 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Hanuman Ram Chola May 7 2026` ,
+fullFileName: `assets/gallery-files/images/religion/laxmi-vishnu-hanuman/Divine-34-Hanuman-Bahuk-Template-2-color-May726.jpeg`,
+ description: `<ul><li>Hanuman wearimg Ram Chola </li>
+ <li>Completed and uploaded May 7 2026 </li></ul>`,
+              },
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',

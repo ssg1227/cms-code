@@ -14,7 +14,7 @@ public allImageList:ImageElement[]  =  [
   {  
             folder:'shirdi-sai-q4-2025-q2-2026',
             theme:'<theme>',
-            themeSummary: '',
+            themeSummary: '', 
 files: [
 {
 canvassMaterial:  'Photo print matt paper',
