@@ -6,7 +6,7 @@ export class MostRecentlyUploadedImageList {
 public allImageList:ImageElement[]  =  [
    { 
         folder:'shree-ganesh-gte-q1-2024',
-        theme:'Shree Ganesh',
+        theme:'Shree Ganesh', 
         themeSummary:
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
