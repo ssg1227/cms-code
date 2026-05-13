@@ -12,6 +12,16 @@ export class PlacesScenesObjectsImageList {
                 Mumbai gets her due place and a dedicated theme; all Mumbai related sketches will be found in 'Mumbai Meri Jaan'`,
                 files: [ 
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Tue May 12 2026 16:52:23 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Mangeshi Temple Asha Tai Tribue  4-17->5-11-12 2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/charcoal-times-other-colors-shines/Mangeshi-417-511-12-26.jpeg`,
+description: `<ul><li> Mangeshi Temple Asha Tai Tribue  4-17->5-11-12 2026 </li><li> This attempt to sketch  मंगेशी temple (shiv avatar temple in Goa) a tribute to the Mangeshkar family whose family deity is Lord Mangesh and sort of श्रद्धांजली to Asha Tai who passed away April 12 2026 </li><li>  I had completed it around End April but refined, filled up background and 'charcoal touched up' May 11, and upload May 12 2026 </li></ul>`,
+},
+{
 canvassMaterial:  'Photo print matt paper',
 canvassSize:  'A4',
 content:  'watercolor-pencil',

@@ -14,6 +14,16 @@ public allImageList:ImageElement[]  =  [
              themeSummary: `Some theme sketches with components, some as-yet 'one-off' or uncategorized sketches'`,
              files: [
 {
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  'Tue May 12 2026 17:04:23 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `May 1 2026 Maharashtra Labor Day collage - upload May 12`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/sw-Maharashra-Day-26.png`,
+description: `<ul><li> May 1 2026 Maharashtra Labor Day collage - upload May 12 </li><li>Showing Labour Day Symbol, Raje Shivaji, Tanaji, Lata, Asha, Sunil Sachin</li></ul>`,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',

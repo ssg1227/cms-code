@@ -20,6 +20,18 @@ export class SwamiSamarthaQ22023ImageList { // SwamiSamarthaImageList
             themeSummary:
             `Swami Samartha the 4th Avatar of Shree Dattatreya (sequence include Lord Datta himself). Swami sketches have become numerous, so created this new category Q2 2023 - July 8 2023.`,
             files: [ 
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Tue May 12 2026 17:16:29 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Shree Swami Samartha in Khanderaya  Appear Nov 25 2025 - May 12 2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Shades-And-Shines-SwamiKhanderayaNov2525.jpeg`,
+description: `<ul><li> Shree Swami Samartha in Khanderaya  Appear Nov 25 2025 - May 12 2026 </li><li> Sketch finished in Mumbai Nov 2025 and uploaded May 12 2026 </li></ul>`,
+
+
+},
 
 {
 canvassMaterial:  'Photo print matt paper',

@@ -19,6 +19,28 @@ public allImageList:ImageElement[]  =  [
 files: [
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Tue May 12 2026 17:23:44 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `SS Loyalty Scindia's 1st Ocean Liner 11/28/25 - 5/12/2026`,
+fullFileName: `${this.imageRoot}Shades-and-Shines-SSLoyalty-Nov28-2025-4-Suraj.jpeg`,
+description: `<ul><li> SS Loyalty Scindia's 1st Ocean Liner 11/28/25 - 5/12/2026 </li><li> S.S. Loyalty .. The first Indian Owned Steam Ship to ply between India and the United Kingdom. Originally Empress of India bought for the  Scindia Steam Navigation Company Ltd.   one of the first large Indian-owned shipping companies </li><li> My wife Snehal's friend's husband Suraj Thakur is a ship captain .. this was for him during our India trip Nov 25- Jan 26 </li><li> Completed 11/25/25 Upload May 12 2026 </li><li> (also see the planes ships cars for modified version soft copy only - original gifted to Suraj) </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Tue May 12 2026 17:16:29 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Shree Swami Samartha in Khanderaya  Appear Nov 25 2025 - May 12 2026`,
+fullFileName: `${this.imageRoot}Shades-And-Shines-SwamiKhanderayaNov2525.jpeg`,
+description: `<ul><li> Shree Swami Samartha in Khanderaya  Appear Nov 25 2025 - May 12 2026 </li><li> Sketch finished in Mumbai Nov 2025 and uploaded May 12 2026 </li></ul>`,
+
+ },
+
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  'Wed Feb 18 2026 19:40:33 GMT-0800 (Pacific Standard Time)',
