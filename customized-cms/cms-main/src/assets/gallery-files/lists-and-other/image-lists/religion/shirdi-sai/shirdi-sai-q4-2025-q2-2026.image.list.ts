@@ -17,6 +17,26 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '', 
 files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-crayon',
+dateUploaded:  'Thu May 14 2026 15:15:08 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false', album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 36} ,
+summaryLabel:  `Dwarkamai Template frm May 7 - May 14 2026`,
+fullFileName: `${this.imageRoot}BabaDwarkaMai-Template-May142026.jpeg`,
+description: `<ul><li> Dwarkamai Template frm May 7 - May 14 2026 </li><li> Baba Dwarkamai  </li><li> Template of previous May 7 - completed and  uploaded May 12 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Thu May 14 2026 15:22:53 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `Baba Dwarkamai May 7 - 14 2026 Long gap`,
+fullFileName: `${this.imageRoot}BabaDwarkamaiMay72026.jpeg`,
+description: `<ul><li> Baba Dwarkamai May 7 - 14 2026 Long gap </li><li> A 'from scratch and completion during Kakad' Baba drawing after a long time </li><li> Completed May 7, Uploaded May 14 2026 </li></ul>`,
+},
+{
 canvassMaterial:  'Photo print matt paper',
 canvassSize:  '',
 content:  'watercolor-pencil',
