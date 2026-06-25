@@ -19,6 +19,16 @@ files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Thu Jun 25 2026 08:04:48 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Baba Navagraha Gold Pencil June 25 2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-other-colors-1/Baba-Navagraha-June25-2026-shades-other-colors.jpeg`,
+description: `<ul><li> Baba Navagraha Gold Pencil June 25 2026 </li><li> Showing Baba wth representation of Navagraha </li><li> Surya, Chandra, Mangal (Mars), Budh (Mercury), </li><li> Guru (Jupiter), Shukra (venus),  </li><li> Shani(Saturn), Rahu, Ketu (symbols) </li><li> अनंत कोटी ब्रह्मानंद नायक योगीराज सद्गुरू साई समर्थ महाराज कि जय  </li><li> Gold metallic color pencil </li><li> complete and upload june 25 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'color-crayon',
 dateUploaded:  'Thu May 14 2026 15:15:08 GMT-0700 (Pacific Daylight Time)',
 duplicate:  'false', album: { name: 'the-divine-in-colors-so-fine', status: 'added', sequence: 36} ,
