@@ -19,6 +19,16 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '',
 files: [ 
 {
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  'Fri Jul 03 2026 08:59:30 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'false',
+summaryLabel:  `TEMPLEATE with Ganesh, Sai, Shivling... July 2-3 2026 `,
+fullFileName: `${this.imageRoot}Sw1-Ganesh-Sai-Shiv-July2-3-26.jpeg`,
+description: `<ul><li> TEMPLEATE with Ganesh, Sai, Shivling... July 2-3 2026  </li><li> Featuring this software image compile with a temple template and Shree Ganesh. Samadhi Mandir Baba, Shivling </li><li> right now one B&W multiple gabhara template,. hope to do variations - color, single deity, etc </li><li> completed July 2 upload july 3 2026 </li></ul>`,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
