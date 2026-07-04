@@ -78,5 +78,17 @@ export class LookupValues {
     downloadedImageRootFile2 = `../../../../../../../../../../../../Downloads/Sketch-transit/` ;
     downloadedImageRootFile = `../../../../../../..//../../../../../../shantanu/Downloads/Sketch-transit/`
     albumsInsertTextFile = `/Users/shantanu/Downloads/Sketch-transit-test/AlbumEntry.txt`;
-/// Ganesh07262023-forautoTest-2.jpeg
+    
+    // June 2025 C&O to send update Most Recent Uploads 
+    mostRecentUploads = `${this.galleryRoot}/src/assets/gallery-files/lists-and-other/image-lists/special-lists/latest-uploads/most-recently-uploaded.image.list.ts`;
+    changerYearOptions = [
+    { label: 'select', value: 'select' },
+    { label: '2022 and before', value: 'changers-2022-and-before.image.list.ts' },
+    { label: '2023', value: 'changers-2023.image.list.ts' },
+    { label: '2024', value: 'changers-2024.image.list.ts' },
+    { label: '2025', value: 'changers-2025.image.list.ts' },
+  ];
+  changerYearFolder =`${this.galleryRoot}/src/assets/gallery-files/lists-and-other/image-lists/special-lists/changers/`;
+ 
+    /// Ganesh07262023-forautoTest-2.jpeg
 };

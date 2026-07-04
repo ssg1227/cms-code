@@ -2,6 +2,20 @@
     <div class="tabs">
         <div  style="overflow-y: scroll;background-color: aqua;">
             <button [disabled]="isPostDataReady()" (click)="postJSONUpdate()">Submit</button>
+            <button [disabled]="isPostDataReady()" (click)="postJSONUpdate('recent uploads')">Update Recent Uploads</button>
+            <button [disabled]="isPostDataReady() ||  changerFileToUpdate === 'select'"  (click)="requestConfirmation()">Changers</button>
+             <label for="yearSelect">Choose a file:</label>
+  <select id="yearSelect" [(ngModel)]="changerFileToUpdate" name="fileToUpdate">
+    <option *ngFor="let option of changerYearOptions" [value]="option.value">
+      {{ option.label }}
+    </option>
+  </select>
+
+    <div *ngIf="showConfirm" style="margin-top: 10px;">
+  <p>For changers confirm the 'evolution' text is moved to description</p>
+  <button (click)="confirmUpdate()">Yes</button>
+  <button (click)="cancelUpdate()">No</button>
+</div>
             <button (click)="reset()">RESET SETTINGS</button>
             <ul *ngIf="imageList != null && imageList.length > 0">
                 <li *ngFor="let imageFile of imageList">{{imageFile}}</li>

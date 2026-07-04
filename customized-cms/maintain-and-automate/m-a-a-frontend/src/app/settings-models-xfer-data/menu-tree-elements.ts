@@ -188,7 +188,7 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '', params:'showpieces', label: 'The Best'}
         ],
     }, 
-     
+     /* June 2025 C&O restructuring 
     { 
         parentKey: "special-lists", key: 'latest-uploads', levelIndex:2, isLeafParent: false, isCompiledList:true, roles: ["any"], 
         label: 'Latest Uploads', 
@@ -197,6 +197,21 @@ export const MenuTreeElements:TreeNodeElement[] = [
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '', params:'latest-uploads', label: 'Latest Uploads'}
+        ],
+    },
+    */
+    /*  June 2025 C&O restructuring 
+         - 'latest-uploads-timewise' changed to 'most-recently-uploaded' and move up in menu tree
+      - 'latest-uploads-themewise' put in cold storage - stopped making general sense and too much to maintain; too little ROI
+    */
+   { 
+        parentKey: "special-lists", key: 'most-recently-uploaded', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["any"], 
+        label: 'Most Recent Uploads', 
+        description:`The most recent drawings uploaded.`,
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'special-lists', label: 'Special Lists'},
+            {link: '', params:'most-recently-uploaded', label: 'Most Recent Uploads'}
         ],
     },
     {
@@ -412,6 +427,10 @@ Also increasing numbers of Swami Samartha sketches`,
                  {link: '', params:'religious-shirdi-sai', label: 'Shirdi Sai Sketches Q4 2024 Q1 2025'}
              ] 
              },
+             { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q2-q3-2025', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', roles: ['superuser',"guru"],
+                label:  'Shirdi Sai Sketches Q2 Q3 2025',                
+                description:`With so many sketches of Shirdi Sai (for which I needed to make a separate section with specific periods) this list makes for some tone down.  Going forward, may go every alternate week and/or upload only soft copies(compilations or collages) where Sai is either only or prominent`,            
+                emptyMessage: 'Empty Content or Error', breadCrumb:[                  {link: '/view', params:'top-level', label: 'HOME'},                  {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},                  {link: '', params:'religious-shirdi-sai', label: 'Shirdi Sai Sketches Q2 Q3 2025'}              ]               },  
     { parentKey: "religious-shirdi-sai", key: 'baba-themes-1', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', roles: ['superuser',"guru"],
         label:  'Shirdi Sai: Sai Satcharitra', 
         description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
@@ -422,10 +441,19 @@ Also increasing numbers of Swami Samartha sketches`,
            {link: '', params:'baba-themes-1', label: 'Shirdi Sai: Sai Satcharitra'}
        ] 
        },
-     
 
+          { parentKey: "religious-shirdi-sai", key: 'shirdi-sai-q4-2025-q2-2026', levelIndex:2, isLeafParent:true, dateUploaded: '02-13-2023', roles: ['superuser',"guru"],
+              label:  'Shirdi Sai Sketches Q4 2025 through Q2 2026', 
+              description:`Soo many sketches of Shirdi Sai!!! that I needed to make a separate section with specific period for the last Datta Avatar, Sadguru Shree Sai Samartha
+              &nnbsp; *Since June 2021 I have been attempting on sketch every Thursday. Let's see how far this sustains... `,
+             emptyMessage: 'Empty Content or Error', breadCrumb:[
+                 {link: '/view', params:'top-level', label: 'HOME'},
+                 {link: '/view', params:'religious-shirdi-sai', label: 'Religious: Shirdi Sai Baba'},
+                 {link: '', params:'shirdi-sai-q4-2025-q2-2026', label: 'Shirdi Sai Sketches Q4 2025 Q1 2026'}
+             ] 
+            },
 // ### END SPECIAL LISTS
-
+   /*  June 2025 C&O restructuring This list is now hard coded and not compiled and merged with changers-2022 
     { 
         parentKey: "changers", key: 'changers-b4-2022', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["any"], 
         label: 'Changers: before 2022', 
@@ -435,27 +463,39 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '/view', params:'changers', label: 'Changers'},
             {link: '', params:'changers-b4-2022', label: 'Changers: before 2022'}
         ],
-    },
-    { 
-        parentKey: "changers", key: 'changers-2022', levelIndex:3,  isLeafParent: true, isCompiledList:true, roles: ["any"],
-        label:  'Changers: 2022',
+    }, { 
+        parentKey: "changers", key: 'changers-2022', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["any"], 
+        label: 'Changers:2022', 
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '/view', params:'changers', label: 'Changers'},
-            {link: '', params:'changers-2022', label: 'Changers: 2022'}
+            {link: '', params:'changers-b4-2022', label: 'Changers: 2022'}
+        ],
+    }, */
+    { 
+        parentKey: "changers", key: 'changers-2022-and-before', levelIndex:3,  isLeafParent: true, isCompiledList:true, roles: ["any"],
+        label:  'Changers: 2022 and Before',
+        emptyMessage: 'Empty Content or Error', breadCrumb:[
+            {link: '/view', params:'top-level', label: 'HOME'},
+            {link: '/view', params:'special-lists', label: 'Special Lists'},
+            {link: '/view', params:'changers', label: 'Changers'},
+            {link: '', params:'changers-2022-and-before', label: 'Changers: 2022  and Before'}
         ], 
-    },
+    }, 
+     /*  June 2025 C&O restructuring This list is now hard coded and not compiled */
     { 
         parentKey: "changers",key: 'changers-2023', levelIndex:3,  isLeafParent: true,  roles: ["any"],
-        label:  'Changers: 2023',  
+        label:  'Changers: 2023', 
+         
+        description: 'Changers for 2023',
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
             {link: '/view', params:'special-lists', label: 'Special Lists'},
             {link: '/view', params:'changers', label: 'Changers'},
             {link: '', params:'changers-2023', label: 'Changers: 2023'}
         ], 
-    },
+    }, 
     { 
         parentKey: "changers",key: 'changers-2024', levelIndex:3, isLeafParent: true,  roles: ["any"],
         label:  'Changers: 2024', 
@@ -528,6 +568,10 @@ Also increasing numbers of Swami Samartha sketches`,
                 {link: '', params:'showpiece-2025', label: 'The Best of 2025'}
             ], 
     },
+     /*  June 2025 C&O restructuring 
+         - 'latest-uploads-timewise' changed to 'most-recently-uploaded' and move up in menu tree
+      - 'latest-uploads-themewise' put in cold storage - stopped making general sense and too much to maintain; too little ROI
+    
     { 
         parentKey: "latest-uploads", key: 'latest-uploads-themewise', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["any"], 
         label: 'Latest Uploads: Theme', 
@@ -538,19 +582,8 @@ Also increasing numbers of Swami Samartha sketches`,
             {link: '/view', params:'latest-uploads', label: 'Latest Uploads'},
             {link: '', params:'latest-uploads-themewise', label: 'Latest Uploads: Theme'}
         ],
-    }
-    ,
-    { 
-        parentKey: "latest-uploads", key: 'latest-uploads-timewise', levelIndex:3, isLeafParent: true, isCompiledList:true, roles: ["any"], 
-        label: 'Latest Uploads: By Timeline', 
-        description:`Images of drawings uploaded the last 60 days.`,
-        emptyMessage: 'Empty Content or Error', breadCrumb:[
-            {link: '/view', params:'top-level', label: 'HOME'},
-            {link: '/view', params:'special-lists', label: 'Special Lists'},
-            {link: '/view', params:'latest-uploads', label: 'Latest Uploads'},
-            {link: '', params:'latest-uploads-timewise', label: 'Latest Uploads: By Timeline'}
-        ],
     },
+    */
 // ### END SHOWPIECES
  {
     parentKey:"otherbeings-places-events", key: "religion-and-guru", levelIndex:2,isLeafParent:true, roles:['non-religious'],
@@ -738,7 +771,7 @@ Also increasing numbers of Swami Samartha sketches`,
     }, {
         parentKey:"machines-others", key: "majestic-lifters-legendary-carriers", levelIndex:3,isLeafParent:true, roles:['non-living',  'non-religious','any'],
         label: "Majestic Lifters Legendary Carriers",
-        description:`A Mix of the Colossi and Legendary Cargo planes and Airliners.. AN225, A380, 747 to DC3 and others. This is a 'full cycle'collection, where the online matches the sketchbook insertion of the 'hard copy' physical sketchat least for Dec 2024 onward; others will circle around and add`,
+        description:`A Mix of the Colossi and Legendary Cargo planes and Airliners.. AN225, A380, 747 to DC3 and others. This is a 'full cycle'collection, where the online matches the sketchbook insertion of the 'hard copy' physical sketchat least for Dec 2024 onward; others will circle around and add. **Dunwell A4 size 24 pocket (48 sheet) presentation book. 'Aqua Green(?)' cover**`,
         
         emptyMessage: 'Empty Content or Error', breadCrumb:[
             {link: '/view', params:'top-level', label: 'HOME'},
@@ -770,7 +803,7 @@ breadCrumb:[
 }
 ,{
 parentKey: 'alag-grouping-full-cycle',key: 'charcoal-times-other-colors-shines', isLeafParent: true, levelIndex: 3, roles:["any"],
-description: `First drawings using charcoal pencils started end Feb 1st week March 2025. From only charcoal (hard, soft, medium, white) to charcoal with other drawing elements color and metal color pencils. I'll also be making an effort to sign my drawings going forward`,
+description: `First drawings using charcoal pencils started end Feb 1st week March 2025. From only charcoal (hard, soft, medium, white) to charcoal with other drawing elements color and metal color pencils. I'll also be making an effort to sign my drawings going forward.**Dunwell A4 size 24 pocket (48 sheet) presentation book. White cover**`,
 label: 'Charcoal Times Other Colors Shines',  
 breadCrumb:[
 {"link":"/view","params":"top-level","label":"HOME"},
@@ -781,7 +814,7 @@ breadCrumb:[
 }
 ,{
 parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-other-colors-1', isLeafParent: true, levelIndex: 3, roles:["any"],
-description: `First New entry in 2025, to the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Twist here is that these are using a single 'other' color for each sketch. In addition to other stated 'alag' features, this collection is in ascending order of latest update. Jan 2 2025 onward `,
+description: `First New entry in 2025, to the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Twist here is that these are using a single 'other' color for each sketch. In addition to other stated 'alag' features, this collection is in ascending order of latest update. Jan 2 2025 onward.**Dunwell A4 size 24 pocket (48 sheet) presentation book. 'Dark Blue' cover** `,
 label: 'Shades And Shines Other Colors 1',  
 breadCrumb:[
 {"link":"/view","params":"top-level","label":"HOME"},
@@ -803,7 +836,7 @@ breadCrumb:[
 }
 ,{
 parentKey: 'alag-grouping-full-cycle',key: 'shades-and-shines-1', isLeafParent: true, levelIndex: 3, roles:["any"],
-label: 'Shades And Shines 1',  description: `Kickstart of the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Using the H, HB, and B series shading black pencils. In addition to other stated 'alag' features, this collection is in ascending order of latest update. November 19 2024 onward `,
+label: 'Shades And Shines 1',  description: `Kickstart of the 'alag' (different) series, set of what I like to think high quality sketches featuring shading and attempted shine effect. Using the H, HB, and B series shading black pencils. In addition to other stated 'alag' features, this collection is in ascending order of latest update. November 19 2024 onward **Dunwell A4 size 24 pocket (48 sheet) presentation book. 'Maroon' cover**`,
 breadCrumb:[
 {"link":"/view","params":"top-level","label":"HOME"},
 {"link":"/view","params":"special-lists","label":"Special Lists"},
@@ -815,9 +848,26 @@ breadCrumb:[
 //
 // NEW INSERTS
 ,{
+    parentKey: 'special-lists',key: 'soft-copies-and-compilations', isLeafParent: false, levelIndex: 2, roles:['any'],
+    label: 'Soft Copies And Compilations',  description: `These are not 'drawing drawings as such, but a collection of collages, templates and 'software edited' applications of templates, etc. This node is used as a pass through for reducing clutter.(NOTE: they will not be added in chronological order)`,
+    breadCrumb:[
+        {"link":"/view","params":"top-level","label":"HOME"},
+        {"link":"/view","params":"special-lists","label":"Special Lists"},
+        {"link":"","params":"soft-copies-and-compilations","label":"Soft Copies And Compilations"},],
+}
+,{
+    parentKey: 'soft-copies-and-compilations',key: 'soft-copies-and-compilations-1', isLeafParent: true, levelIndex: 3, roles:['any'],
+    label: 'Soft Copies And Compilations:1',  description: `The 1st compiled list: ... collection of collages, templates and 'software edited' applications of templates, etc. ..(NOTE: they will not be added in chronological order)`,
+    breadCrumb:[
+        {"link":"/view","params":"top-level","label":"HOME"},
+        {"link":"/view","params":"special-lists","label":"Special Lists"},
+        {"link":"/view","params":"soft-copies-and-compilations","label":"Soft Copies And Compilations"},
+        {"link":" ","params":"soft-copies-and-compilations-1","label":"Soft Copies And Compilations:1"},],
+}
+,{
     parentKey: 'special-lists',key: 'alag-grouping-full-cycle', isLeafParent: false, levelIndex: 2, roles:["any"],
     label: 'Alag Grouping Full Cycle',  description: `'Alag' means different in Hindi.. November 2024 onward, I intend creating a grouping of sketches more in execution than content. For example, launch is using sketches using shading and trying to get shining - using black and white shading pencils. 
-    ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded. The drawings here are also what I think top rated`,
+    ALSO 'full life cycle means including the physical drawing in the sketch book in more or less the same order. Unlike others, only one version per entry will be uploaded. The drawings here are also what I think top rated. Mostly will be stored in Dunwell A4 size 24 pocket (48 sheet) presentation book.`,
     breadCrumb:[
     {"link":"/view","params":"top-level","label":"HOME"},
     {"link":"/view","params":"special-lists","label":"Special Lists"},
@@ -860,6 +910,39 @@ breadCrumb:[
             {"link":"/view","params":"special-lists","label":"Special Lists"},
             {"link":"/view","params":"group-by-physical-scrapbook-album","label":"Group by (Physical, Scrapbook) Album"},
             {"link":"","params":"the-first-album","label":"The First Album"},
+            ], emptyMessage: 'Coming soon!!'
+            } ,{
+            parentKey: 'group-by-physical-scrapbook-album',key: 'the-second-album', isLeafParent: true, levelIndex: 3,  roles:["superuser","guru"],
+            label: 'The Second Album',  
+            description: `The Second Album/Scrapbook to fill with drawings.
+            This has varied content. Mostly 'non living' - scenes, transport machines - planes, trains, ships, cars.. etc. Color and Black and white pencils **Dunwell A3 size 24 pocket (48 sheet) presentation book. Black cover**`,
+            breadCrumb:[
+            {"link":"/view","params":"top-level","label":"HOME"},
+            {"link":"/view","params":"special-lists","label":"Special Lists"},
+            {"link":"/view","params":"group-by-physical-scrapbook-album","label":"Group by (Physical, Scrapbook) Album"},
+            {"link":"","params":"the-second-album","label":"The Second Album"},
+            ], emptyMessage: 'Coming soon!!'
+            }, {
+            parentKey: 'group-by-physical-scrapbook-album',key: 'the-third-album', isLeafParent: true, levelIndex: 3,  roles:["superuser","guru"],
+            label: 'The THIRD Album',  
+            description: `The Third Album/Scrapbook to fill with drawings.
+            This has varied content. People, Gods and Gurus. Color and Black and white pencils AND 1+ Charcoal laced A3 **Dunwell A3 size 24 pocket (48 sheet) presentation book. Black cover**`,
+            breadCrumb:[
+            {"link":"/view","params":"top-level","label":"HOME"},
+            {"link":"/view","params":"special-lists","label":"Special Lists"},
+            {"link":"/view","params":"group-by-physical-scrapbook-album","label":"Group by (Physical, Scrapbook) Album"},
+            {"link":"","params":"the-third-album","label":"The Third Album"},
+            ], emptyMessage: 'Coming soon!!'
+            },{
+            parentKey: 'group-by-physical-scrapbook-album',key: 'the-fourth-album', isLeafParent: true, levelIndex: 3,  roles:["superuser","guru"],
+            label: 'The Fourth Album',  
+            description: `The Fourth Album/Scrapbook to fill with drawings.
+            This has varied content. Mostly 'non living' - scenes, transport machines - planes, trains, ships, cars.. etc. Color and Black and white pencils **Dunwell A3 size 24 pocket (48 sheet) presentation book. Black cover**`,
+            breadCrumb:[
+            {"link":"/view","params":"top-level","label":"HOME"},
+            {"link":"/view","params":"special-lists","label":"Special Lists"},
+            {"link":"/view","params":"group-by-physical-scrapbook-album","label":"Group by (Physical, Scrapbook) Album"},
+            {"link":"","params":"the-fourth-album","label":"The Fourth Album"},
             ], emptyMessage: 'Coming soon!!'
             }
     /*

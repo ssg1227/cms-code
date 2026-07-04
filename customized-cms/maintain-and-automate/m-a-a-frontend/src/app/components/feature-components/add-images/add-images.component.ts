@@ -8,12 +8,18 @@ import { ListService } from '../../../services/list.service';
   styleUrls: ['./add-images.component.css']
 })
 export class AddImagesComponent implements OnInit {
+  fileToUpdate = '';
+  test = false ;
   imageList:string[] = [] ;
   imagesMoved = true ;
   jsonListingFile =""
   jsonListing:string[] = [] ;
   showFinalEdit = false ;
   lookupValues = new LookupValues();
+   // June 2025 C&O o oneclick automation for   'changers' and later on 'best' 
+  changerYearOptions:any = this.lookupValues.changerYearOptions;
+  changersFolder = this.lookupValues.changerYearFolder;
+  changerFileToUpdate = this.lookupValues.changerYearOptions[0].value;
   constructor(private listService: ListService, ) { }
 
   ngOnInit(): void {
@@ -79,16 +85,55 @@ export class AddImagesComponent implements OnInit {
     
   }
   isPostDataReady() {
-    return this.jsonListing.length === 0 || this.jsonListingFile === '';
+    return this.test === false ?  this.jsonListing.length === 0 || this.jsonListingFile === '': false;
   }
-  postJSONUpdate() {
+
+
+  showConfirm = false;
+  // Called when user clicks Update File
+  requestConfirmation() {
+    this.showConfirm = true;
+  }
+
+  confirmUpdate() {
+    console.log('Confirmed update for:', this.fileToUpdate);
+    this.postJSONUpdate('changers');
+
+    this.showConfirm = false;
+    // Add your actual update logic here
+  }
+   cancelUpdate() {
+    this.showConfirm = false;
+  }
+  postJSONUpdate(fileType='regular') { 
+    // June 2025 C&O optional fileType. oneclick automation for 'most recent uploads', 'changers' and later on 'best'
+    // also look at the switch... Changers file is selected from drop down and prepended with patj
     console.log(`POSTJSONUPDATE: ${JSON.stringify(this.jsonListing)} ${this.jsonListingFile}`) ;
-    if(this.duplicateEntry === 'true') { // DUPLICATE-11-2024 to substitute
+    if(this.duplicateEntry === 'true' // DUPLICATE-11-2024 to substitute
+          || fileType === 'recent uploads' || fileType === 'changers') {   // June 2025 C&O optional fileType will require path + duplicate true
       // old loop, circle around to use forEach
       for (let i = 0; i < this.jsonListing.length;i++) {  this.jsonListing[i] =  this.jsonListing[i].replace('false','true'); }
       for (let i = 0; i < this.jsonListing.length;i++) {  this.jsonListing[i] =  this.jsonListing[i].replace('${this.imageRoot}',this.listService.ImageRoot);  }
     }
-    this.listService.updateListFile(this.jsonListing, this.jsonListingFile)
+    switch(fileType){
+      case 'recent uploads':
+        this.fileToUpdate = this.lookupValues.mostRecentUploads; 
+        break ;
+      case 'changers':
+        this.fileToUpdate = `${this.changersFolder}${this.changerFileToUpdate}`; 
+        break;
+      default :
+        this.fileToUpdate = this.jsonListingFile; 
+        break ;
+    }
+    if(this.test === true) {
+      alert(this.fileToUpdate);
+      return ;
+    }
+  //  this.fileToUpdate =  fileType === 'recent uploads'? this.lookupValues.mostRecentUploads: this.jsonListingFile;
+  //  this.listService.updateListFile(this.jsonListing, this.jsonListingFile)
+  // // June 2025 C&O latest uploads .. will use for changers and best and other special lists
+     this.listService.updateListFile(this.jsonListing, this.fileToUpdate)
      .subscribe(
       (response:any)=> { 
         console.log('success') ;

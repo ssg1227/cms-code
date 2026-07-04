@@ -8,7 +8,16 @@ Git location '~/cms-code/fullstack-automation/cms-automate-fe/
   - (maybe use noSQL)
 - Optimize and removed hard codes off UpdateMenuTreeServiceEntriesComponent and ImageFolderComponent - level1, level2, etc..
 - Optimization - the 'folder tree select' UI and logic to be made common like move images from dump to loc 
+- **Cleanup and serious optimization Start** 'June 2025 C&O ' phrase in comments (also see 'cms-main')
+  - automate compiling of latest uploads json. 
+  - Upload, however will use a button 'Update Recent Uploads' next to 'Submit'/ 'RESET SETTINGS' 
 - **check order of image add to list files** - it could be stack rather than queue  
+- ***600 by 06/01!!!*** 
+        - ***June 1, 2025***  *by 6:30 PM PST, I uploaded the ***600th unique drawing image*** to [Art is Worship] https://art-is-worship.web.app/ and ***published*** it* 
+        - Apart from support by friends, thanks to my codebase. Thanks to this full stack automation program.
+- cms-main: optimization, performance and styling
+- maintain-and-automate: start fixing issues, clean UI and make it easy to use; minimize having to manually correct the image list files and other stuff
+- work on templatiation + other content types
 
 ### February 2025 onward
 - March 3-4 2025 First Charcoal pencil based drawings being uploaded 

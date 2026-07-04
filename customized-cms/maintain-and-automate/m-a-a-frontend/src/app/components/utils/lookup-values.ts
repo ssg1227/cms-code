@@ -90,6 +90,17 @@ export class LookupValues {
     menutreeFinalPath = '/Users/shantanug/Documents/GitHub/cms-code/customized-cms/cms-main//src/assets/content-tree/menu-tree-elements.ts';
     menutreeTestPath = '/Users/shantanug/Documents/GitHub/cms-code/customized-cms/maintain-and-automate/m-a-a-frontend/src/app/components/utils/menu-tree-one-off.ts';
     menutreeTempPath = '/Users/shantanug/Documents/GitHub/cms-code/customized-cms/maintain-and-automate/m-a-a-frontend/src/app/components/utils/menu-tree-elements_ts';
+     // June 2025 C&O to send update Most Recent Uploads 
+    mostRecentUploads = `${this.galleryRoot}/src/assets/gallery-files/lists-and-other/image-lists/special-lists/latest-uploads/most-recently-uploaded.image.list.ts`;
+    changerYearOptions = [
+    { label: 'select', value: 'select' },
+    { label: '2022 and before', value: 'changers-2022-and-before.image.list.ts' },
+    { label: '2023', value: 'changers-2023.image.list.ts' },
+    { label: '2024', value: 'changers-2024.image.list.ts' },
+    { label: '2025', value: 'changers-2025.image.list.ts' },
+    { label: '2026', value: 'changers-2026.image.list.ts' },
+  ];
+  changerYearFolder =`${this.galleryRoot}/src/assets/gallery-files/lists-and-other/image-lists/special-lists/changers/`;
     // /Users/shantanug/Documents/GitHub/cms-code/customized-cms/maintain-and-automate/m-a-a-frontend/src/app/components/utils/lookup-values.ts
     listFileFrameLines = [
           `import {  ImageElement } from '@settings-and-models/image-detail'`,

@@ -56,7 +56,7 @@ export class CompileJsonContentComponent implements OnInit {
     let monthdn = today.getMonth()+1
     let monthd = monthdn < 10 ? `0${monthdn}`: `${monthdn}`;
     let dated = today.getDate() < 10 ? `0${today.getDate()}`: `${today.getDate()}`;
-    return `${monthd}-${dated}-${today.getFullYear()}`;
+    return `${today}`; //`${monthd}-${dated}-${today.getFullYear()}`;
   }
   dup() {
     this.duplicateImage = !this.duplicateImage ;
