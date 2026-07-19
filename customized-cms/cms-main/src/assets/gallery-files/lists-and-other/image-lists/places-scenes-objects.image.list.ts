@@ -13,6 +13,26 @@ export class PlacesScenesObjectsImageList {
                 files: [ 
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Sat Jul 18 2026 19:16:16 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Hilo Hawaiii Naniloa Hotel (7/9-14), 7/15 - 7/18`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Hilo-Hawaii-Naniloa-July15-26-shades-shines1.jpeg`,
+description: `<B>A first of sorts; 'capture' of live scene<br/><ul><li> Hilo Hawaiii Naniloa Hotel (7/9-14), 7/15 - 7/18 </li><li> View from our room (modified ) Hotel Nanilloa, Hilo Hawaii </li><li> Compl Jul 15, upload Jul 18 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Sat Jul 18 2026 19:16:16 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Hilo Hawaiii Naniloa Hotel (7/9-14), 7/15 - 7/18`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Hilo-Hawaii-Naniloa-July15-26-shades-shines1.jpeg`,
+description: `<ul><li> Hilo Hawaiii Naniloa Hotel (7/9-14), 7/15 - 7/18 </li><li> View from our room (modified ) Hotel Nanilloa, Hilo Hawaii </li><li> Compl Jul 15, upload Jul 18 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  'Tue May 12 2026 16:52:23 GMT-0700 (Pacific Daylight Time)',

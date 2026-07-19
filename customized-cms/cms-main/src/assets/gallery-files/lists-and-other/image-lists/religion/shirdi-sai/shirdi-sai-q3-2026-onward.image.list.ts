@@ -17,6 +17,26 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '', 
 files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Sat Jul 18 2026 19:55:39 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Baba under Banyan.. HWII inspired 07/16-7/18/2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Baba-Banyan-July16-26-shades-shines1.jpeg`,
+description: `<ul><li> Baba under Banyan.. HWII inspired 07/16-7/18/2026 </li><li> During our holidat at Hilo, Hawaii we saw lots of Banyan Trees 'Wata Wruksha' which have significance with the Guru </li><li> Obviously 1st with Baba.. hope to get more in soon.. Gurupoornima '26 coming soon </li><li> Completed Jul 16, upload Jul 18 2026 </li><li>687th upload - reversed 786 - Allah Malik</li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Sat Jul 18 2026 19:55:39 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Baba under Banyan.. HWII inspired 07/16-7/18/2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Baba-Banyan-July16-26-shades-shines1.jpeg`,
+description: `<ul><li> Baba under Banyan.. HWII inspired 07/16-7/18/2026 </li><li> During our holidat at Hilo, Hawaii we saw lots of Banyan Trees 'Wata Wruksha' which have significance with the Guru </li><li> Obviously 1st with Baba.. hope to get more in soon.. Gurupoornima '26 coming soon </li><li> Completed Jul 16, upload Jul 18 2026 </li><li>687th upload - reversed 786 - Allah Malik</li></ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  'soft',

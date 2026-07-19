@@ -19,6 +19,16 @@ files: [
 {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Fri Jul 03 2026 18:41:13 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Sankatahara Chaturthi Jyesth 2026 - July 3 Gajraj 4 engines distaster relief`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/GajrajSuppliesJuly3-2026.jpeg`,
+description: `<ul><li>Original in shades and shines 1. but BOTH this and the other are B&W</li><li> Sankatahara Chaturthi Jyesth 2026 - July 3 Gajraj 4 engines distaster relief </li><li> Template based IL76  </li><li> July 3 2026 completion and upload </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
 content:  'color-pencil',
 dateUploaded:  'Tue Apr 28 2026 07:12:23 GMT-0700 (Pacific Daylight Time)',
 duplicate:  'false',

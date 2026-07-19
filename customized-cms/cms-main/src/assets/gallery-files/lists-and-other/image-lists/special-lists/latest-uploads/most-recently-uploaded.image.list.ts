@@ -11,6 +11,26 @@ public allImageList:ImageElement[]  =  [
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Sat Jul 18 2026 19:16:16 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Hilo Hawaiii Naniloa Hotel (7/9-14), 7/15 - 7/18`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Hilo-Hawaii-Naniloa-July15-26-shades-shines1.jpeg`,
+description: `<ul><li> Hilo Hawaiii Naniloa Hotel (7/9-14), 7/15 - 7/18 </li><li> View from our room (modified ) Hotel Nanilloa, Hilo Hawaii </li><li> Compl Jul 15, upload Jul 18 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Fri Jul 03 2026 18:41:13 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Sankatahara Chaturthi Jyesth 2026 - July 3 Gajraj 4 engines distaster relief`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/GajrajSuppliesJuly3-2026.jpeg`,
+description: `<ul><li> Sankatahara Chaturthi Jyesth 2026 - July 3 Gajraj 4 engines distaster relief </li><li> Template based IL76  </li><li> July 3 2026 completion and upload </li></ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  'soft',
