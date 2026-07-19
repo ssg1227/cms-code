@@ -11,6 +11,16 @@ public allImageList:ImageElement[]  =  [
              theme:'Lord Narayan, Maa Laxmi and Avatars, Shree Hanuman',
              themeSummary: `<p>Laxmi and avatars, Rukhmini, Sita, Narayan, Ram, Vithal, Narsimha, Hanuman and others.   </p>`,
              files: [
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Sat Jul 18 2026 21:30:54 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Hanuman - March thru 07/18/2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Hanuman-July18-26-shades-shines1.jpeg`,
+description: `<ul><li> Hanuman - March thru 07/18/2026 </li><li> Original version in March, final touches and upload July 18 2026 </li></ul>`,
+},
                {
 canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
