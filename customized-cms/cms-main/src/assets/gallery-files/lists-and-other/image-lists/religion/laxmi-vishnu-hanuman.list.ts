@@ -12,6 +12,16 @@ public allImageList:ImageElement[]  =  [
              themeSummary: `<p>Laxmi and avatars, Rukhmini, Sita, Narayan, Ram, Vithal, Narsimha, Hanuman and others.   </p>`,
              files: [
 {
+canvassMaterial:  'other',
+canvassSize:  'soft',
+content:  'soft',
+dateUploaded:  'Thu Jul 23 2026 10:04:36 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Baba And Vithu Rakhumai.. eve of Ashadi Ekadashi 2026 (Jul 23)`,
+fullFileName: `assets/gallery-files/images/special-lists/soft-copies-and-compilations/soft-copies-and-compilations-1/BabaJuly23-2025-AshadiEkadashiEve.jpeg`,
+description: `<ul><li> Baba And Vithu Rakhumai.. eve of Ashadi Ekadashi 2026 (Jul 23) </li><li> compiled and uploaded July 24 2026 </li></ul>`,
+},
+{
 canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'black-white',
