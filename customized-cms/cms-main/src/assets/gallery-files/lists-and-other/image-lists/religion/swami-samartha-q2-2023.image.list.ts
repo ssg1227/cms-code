@@ -22,6 +22,16 @@ export class SwamiSamarthaQ22023ImageList { // SwamiSamarthaImageList
             files: [ 
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Fri Jul 31 2026 00:51:32 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Swami For Guru poornima 07/28 - upload 07/31/2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Swami-Gurupoornima-0728-2026.jpeg`,
+description: `<ul><li> Swami For Guru poornima 07/28 - upload 07/31/2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  'A4',
 content:  'black-white',
 dateUploaded:  'Tue May 12 2026 17:16:29 GMT-0700 (Pacific Daylight Time)',

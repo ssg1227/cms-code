@@ -17,6 +17,16 @@ public allImageList:ImageElement[]  =  [
             themeSummary: '', 
 files: [
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Fri Jul 31 2026 00:47:54 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Sai For Guru poornima 07/28 - upload 07/31/2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Sai-Gurupoornima-0728-2026.jpeg`,
+description: `<ul><li> Sai For Guru poornima 07/28 - upload 07/31/2026 </li></ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  'soft',

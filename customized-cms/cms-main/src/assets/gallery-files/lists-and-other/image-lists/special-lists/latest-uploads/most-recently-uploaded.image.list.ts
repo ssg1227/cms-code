@@ -11,6 +11,26 @@ public allImageList:ImageElement[]  =  [
         `Lord Ganesh, remover of Obstacles. Vigneshwar, Aumkar, Gamapati, Vignahartha - Compilation of sketches Q1 2024 onward. *INCLUDING WATER COLOR SKETCHES`,
         files: [ 
 {
+canvassMaterial:  'Plain paper',
+canvassSize:  '',
+content:  'black-white',
+dateUploaded:  'Fri Jul 31 2026 00:51:32 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Swami For Guru poornima 07/28 - upload 07/31/2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Swami-Gurupoornima-0728-2026.jpeg`,
+description: `<ul><li> Swami For Guru poornima 07/28 - upload 07/31/2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'black-white',
+dateUploaded:  'Fri Jul 31 2026 00:47:54 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Sai For Guru poornima 07/28 - upload 07/31/2026`,
+fullFileName: `assets/gallery-files/images/special-lists/alag-grouping-full-cycle/shades-and-shines-1/Sai-Gurupoornima-0728-2026.jpeg`,
+description: `<ul><li> Sai For Guru poornima 07/28 - upload 07/31/2026 </li></ul>`,
+},
+{
 canvassMaterial:  'other',
 canvassSize:  'soft',
 content:  'soft',
