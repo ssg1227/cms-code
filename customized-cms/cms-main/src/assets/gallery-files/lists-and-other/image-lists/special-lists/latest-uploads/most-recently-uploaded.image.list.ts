@@ -12,6 +12,16 @@ public allImageList:ImageElement[]  =  [
         files: [ 
 {
 canvassMaterial:  'Plain paper',
+canvassSize:  'A4',
+content:  'color-pencil',
+dateUploaded:  'Fri Aug 14 2026 07:53:56 GMT-0700 (Pacific Daylight Time)',
+duplicate:  'true',
+summaryLabel:  `Hypothetical IA A350 Hooghly 2nd bridge Aug 14 2026`,
+fullFileName: `assets/gallery-files/images/transports-and-machines/machines-others/majestic-lifters-legendary-carriers/IA-Hypothetical-A350-Hooghly-2nd-bridge-08-14-2026.jpeg`,
+description: `<ul><li> Hypothetical IA A350 Hooghly 2nd bridge Aug 14 2026 </li><li> Across different eras: Airbus A350 in hypothetical Indian Airlines livery over Vidyasagar Setu, Hooghly river </li><li> completed and uploaded Aug 14 2026 </li></ul>`,
+},
+{
+canvassMaterial:  'Plain paper',
 canvassSize:  '',
 content:  'black-white',
 dateUploaded:  'Fri Jul 31 2026 00:51:32 GMT-0700 (Pacific Daylight Time)',
